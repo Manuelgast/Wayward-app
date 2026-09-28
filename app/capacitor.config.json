@@ -1,0 +1,34 @@
+{
+  "appId": "com.waywardbooks.app",
+  "appName": "Wayward",
+  "webDir": "www",
+  "backgroundColor": "#0F0D1E",
+  "android": {
+    "backgroundColor": "#0F0D1E",
+    "allowMixedContent": false,
+    "captureInput": false,
+    "webContentsDebuggingEnabled": false
+  },
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "css",
+      "style": "DARK",
+      "hidden": true,
+      "initialViewportFitValueHint": "cover"
+    },
+    "SplashScreen": {
+      "launchShowDuration": 900,
+      "launchAutoHide": true,
+      "backgroundColor": "#0F0D1E",
+      "showSpinner": false,
+      "androidScaleType": "CENTER_CROP"
+    }
+  },
+  "ios": {
+    "backgroundColor": "#0F0D1E",
+    "contentInset": "never",
+    "scrollEnabled": false,
+    "allowsLinkPreview": false,
+    "preferredContentMode": "mobile"
+  }
+}

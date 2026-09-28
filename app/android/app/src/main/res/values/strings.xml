@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Wayward</string>
+    <string name="title_activity_main">Wayward</string>
+    <string name="package_name">com.waywardbooks.app</string>
+    <string name="custom_url_scheme">com.waywardbooks.app</string>
+</resources>

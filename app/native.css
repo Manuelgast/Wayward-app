@@ -1,0 +1,6 @@
+/* Android shell fixes (packaging layer). Remove once the same rules are in the web source. */
+/* Horizontal drags on the book belong to the page turn, not to the browser's panning (otherwise pointercancel after the first move). */
+.tome-pages{touch-action:pan-y}
+
+/* iOS: no long-press callout (save image, look up) on the book and its pictures */
+.native-ios #app,.native-ios img{-webkit-touch-callout:none}

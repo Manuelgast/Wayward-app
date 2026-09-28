@@ -1,0 +1,29 @@
+# secrets never go into the repo
+keys/
+*.jks
+*.p8
+*.pem
+app/keystore.properties
+# build output
+dist/
+*.log
+app/node_modules/
+app/www/
+app/android/.gradle/
+app/android/build/
+app/android/app/build/
+app/android/app/src/main/assets/public/
+app/android/app/src/main/assets/capacitor.config.json
+app/android/app/src/main/assets/capacitor.plugins.json
+app/ios/App/App/public/
+app/ios/App/App/capacitor.config.json
+app/ios/App/App/config.xml
+# working files
+graphics/raw-*/
+graphics/store-b2/
+graphics/store-*/
+graphics/gallery/img/
+graphics/*.png
+shots/
+shot*.js
+web-src-*/

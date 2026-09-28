@@ -1,0 +1,76 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  html,body{margin:0;padding:0;background:transparent}
+  body{width:1024px;height:1024px;overflow:hidden}
+  svg{display:block}
+</style></head>
+<body>
+<!-- mode via ?m=full|fg|bg -->
+<svg id="s" width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0" stop-color="#4A2F8C"/>
+      <stop offset=".45" stop-color="#241852"/>
+      <stop offset="1" stop-color="#0D0A1C"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FFD98A" stop-opacity=".55"/>
+      <stop offset=".35" stop-color="#E8B85A" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#E8B85A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF1C4"/>
+      <stop offset=".45" stop-color="#E9B653"/>
+      <stop offset="1" stop-color="#8A5A1C"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#05030F" flood-opacity=".6"/>
+    </filter>
+  </defs>
+
+  <g id="bgLayer">
+    <rect width="1024" height="1024" fill="url(#bg)"/>
+    <g fill="#FFE7A8">
+      <circle cx="190" cy="230" r="3" opacity=".7"/><circle cx="820" cy="190" r="2.5" opacity=".6"/>
+      <circle cx="870" cy="700" r="3" opacity=".5"/><circle cx="160" cy="780" r="2.5" opacity=".55"/>
+      <circle cx="300" cy="120" r="2" opacity=".5"/><circle cx="740" cy="880" r="2" opacity=".45"/>
+      <circle cx="110" cy="520" r="2" opacity=".45"/><circle cx="930" cy="450" r="2" opacity=".5"/>
+    </g>
+  </g>
+
+  <g id="fgLayer" transform="translate(512 512)">
+    <circle r="330" fill="url(#glow)"/>
+    <g filter="url(#soft)">
+      <!-- bezel -->
+      <circle r="232" fill="none" stroke="url(#ring)" stroke-width="10"/>
+      <circle r="206" fill="none" stroke="#E8B85A" stroke-opacity=".45" stroke-width="3"/>
+      <g stroke="#F6D27C" stroke-width="5" stroke-linecap="round" opacity=".9">
+        <line x1="0" y1="-206" x2="0" y2="-186"/><line x1="0" y1="206" x2="0" y2="186"/>
+        <line x1="-206" y1="0" x2="-186" y2="0"/><line x1="206" y1="0" x2="186" y2="0"/>
+      </g>
+      <!-- diagonal short points -->
+      <g transform="rotate(45)">
+        <path d="M0 -150 L-26 -26 L0 0Z" fill="#F2CF7E"/><path d="M0 -150 L26 -26 L0 0Z" fill="#B98433"/>
+        <path d="M150 0 L26 -26 L0 0Z" fill="#E8B85A"/><path d="M150 0 L26 26 L0 0Z" fill="#9A6724"/>
+        <path d="M0 150 L26 26 L0 0Z" fill="#A87428"/><path d="M0 150 L-26 26 L0 0Z" fill="#7C4E16"/>
+        <path d="M-150 0 L-26 26 L0 0Z" fill="#C9933C"/><path d="M-150 0 L-26 -26 L0 0Z" fill="#F6D88E"/>
+      </g>
+      <!-- main points (like the Wayward emblem) -->
+      <path d="M0 -300 L-52 -52 L0 0Z" fill="#FFF3CC"/><path d="M0 -300 L52 -52 L0 0Z" fill="#E0A94A"/>
+      <path d="M300 0 L52 -52 L0 0Z" fill="#F6D27C"/><path d="M300 0 L52 52 L0 0Z" fill="#B07A2A"/>
+      <path d="M0 300 L52 52 L0 0Z" fill="#C98E36"/><path d="M0 300 L-52 52 L0 0Z" fill="#8E5E1E"/>
+      <path d="M-300 0 L-52 52 L0 0Z" fill="#D9A24A"/><path d="M-300 0 L-52 -52 L0 0Z" fill="#FFE3A0"/>
+      <circle r="18" fill="#FFF6DC"/>
+      <circle r="18" fill="none" stroke="#8A5A1C" stroke-width="4"/>
+    </g>
+  </g>
+</svg>
+<script>
+  const m = new URLSearchParams(location.search).get('m') || 'full';
+  const fg = document.getElementById('fgLayer'), bg = document.getElementById('bgLayer');
+  if (m === 'bg') fg.remove();
+  if (m === 'fg') { bg.remove(); fg.setAttribute('transform', 'translate(512 512) scale(.62)'); }
+  if (m === 'splash') { fg.setAttribute('transform', 'translate(512 512) scale(.5)'); }
+</script>
+</body></html>

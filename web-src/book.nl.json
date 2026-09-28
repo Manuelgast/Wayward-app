@@ -1,0 +1,927 @@
+{
+ "id": "hollow-mountain",
+ "title": "De Holle Berg",
+ "series": "De Veyra-cyclus · Boek I",
+ "imprint": "Een Wayward-uitgave",
+ "tagline": "Je leermeester verdween in een berg. Het laatste wat ze je schreef: volg me niet.",
+ "warning": "Lees dit boek niet van begin tot eind. Onderaan elke bladzijde beslis jij wat er daarna gebeurt. Sommige keuzes leiden tot roem. Andere naar de bodem van een put.",
+ "start": 1,
+ "scenes": {
+  "mountain": {
+   "title": "De voet van de Veyra",
+   "focus": "50% 58%"
+  },
+  "village": {
+   "title": "Laag-Veyra in de schemering",
+   "focus": "50% 55%"
+  },
+  "procession": {
+   "title": "De lantaarnprocessie",
+   "focus": "50% 50%"
+  },
+  "ridge": {
+   "title": "De Naaldkam",
+   "focus": "50% 50%"
+  },
+  "river": {
+   "title": "De Zwarte Rivier",
+   "focus": "50% 55%"
+  },
+  "lake": {
+   "title": "Het meer van de slapende boten",
+   "focus": "50% 55%"
+  },
+  "chamber": {
+   "title": "De Kompaskamer",
+   "focus": "50% 55%"
+  },
+  "lanternhall": {
+   "title": "De Lantaarnzaal",
+   "focus": "50% 55%"
+  },
+  "stairs": {
+   "title": "Negenhonderd treden",
+   "focus": "50% 45%"
+  },
+  "bell": {
+   "title": "De binnenplaats met de klok",
+   "focus": "50% 50%"
+  },
+  "library": {
+   "title": "Het scriptorium",
+   "focus": "50% 55%"
+  },
+  "heart": {
+   "title": "Het Hart van de berg",
+   "focus": "50% 60%"
+  },
+  "dawn": {
+   "title": "Ochtend boven de wolken",
+   "focus": "50% 55%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Proloog",
+   "scene": "mountain",
+   "text": [
+    "De brief in je jas is drie weken oud. Er staat alleen: “De berg is hol. Volg me niet.” Hij is ondertekend door Ines Arden, koninklijk cartograaf, de vrouw die je alles heeft geleerd wat je over kaarten weet, ook dat de beste kaarten dingen weglaten. Vier jaar lang was je haar leerling. De ochtend nadat de brief kwam, was haar tafel op het kaartenbureau leeg en was haar lantaarn weg.",
+    "Je bent haar toch gevolgd. De berg Veyra staat op geen enkele kaart die je bezit, en daaraan wist je dat je hem had gevonden. Nu zakt de zon achter de top weg. Aan de voet ademt een grot warme lucht uit die naar kaarsrook ruikt. Ernaast klimt een oude trap de mist in. Beneden in het dal gaan de lichten van een dorp een voor een aan."
+   ],
+   "choices": [
+    {
+     "text": "Als je je lantaarn aansteekt en de grot in stapt,",
+     "to": 16
+    },
+    {
+     "text": "Als je de trap op klimt, de mist in,",
+     "to": 22
+    },
+    {
+     "text": "Als je eerst naar het dorp afdaalt om naar Ines te vragen,",
+     "to": 6
+    }
+   ]
+  },
+  "6": {
+   "chapter": "Laag-Veyra",
+   "scene": "village",
+   "text": [
+    "Laag-Veyra is het vriendelijkste dorp waar je ooit bent geweest, en dat maakt je meteen achterdochtig. Iedereen glimlacht. Niemand heeft ooit gehoord van een cartograaf die Ines heet. En het valt je op dat iedereen precies dezelfde koperen lantaarn heeft als Ines, tot en met [[dent|de deuk in het hengsel]].",
+    "In de herberg biedt Marta, de waardin, je haar laatste kamer aan, “zolang je hem nodig hebt”. Buiten verkoopt een jongen, Pim, kaarten van de berg uit een bak om zijn nek. Als je er een openvouwt, is hij [[blankmap|volkomen blanco]]. “Dat is de nauwkeurige versie,” zegt Pim. Dan knikt hij naar het oude puthuisje aan de overkant van het plein, alsof het een winkel is die hij van harte aanraadt."
+   ],
+   "choices": [
+    {
+     "text": "Als je Marta’s kamer neemt en de ochtend afwacht,",
+     "to": 9
+    },
+    {
+     "text": "Als je de blanco kaart koopt en vannacht nog de berg beklimt,",
+     "to": 12
+    },
+    {
+     "text": "Als je Pim naar het puthuisje volgt,",
+     "to": 49
+    }
+   ]
+  },
+  "9": {
+   "chapter": "De herberg",
+   "scene": "procession",
+   "text": [
+    "Marta brengt je soep en een kaars en vraagt niet waarom je gekomen bent. Het is het eerste in Laag-Veyra dat eerlijk aanvoelt. Je kamer kijkt uit op het plein. Je wilt wakker blijven en op de uitkijk staan, en een tijdje lukt dat ook.",
+    "Om middernacht luidt ergens hoog op de berg een klok. Eén keer. Dan gaat in Laag-Veyra de ene deur na de andere open.",
+    "Vanuit je raam zie je de dorpelingen naar buiten komen in hun nachthemd, met hun ogen dicht en hun lantaarn aan. Marta is er ook bij. In een zwijgende rij lopen ze door het dal omhoog, naar de berg, en niemand struikelt over de keien."
+   ],
+   "choices": [
+    {
+     "text": "Als je je laarzen aantrekt en ze volgt,",
+     "to": 17
+    },
+    {
+     "text": "Als je je deur op slot doet en weer in bed kruipt,",
+     "to": 11
+    }
+   ]
+  },
+  "11": {
+   "chapter": "Een einde",
+   "scene": "village",
+   "text": [
+    "Je slaapt beter dan in jaren. ’s Ochtends zet Marta een kom pap voor je neer en vraagt wat je naar Laag-Veyra heeft gebracht. Je doet je mond open om het te vertellen en merkt dat je het niet meer precies weet.",
+    "Het lijkt ook niet belangrijk. Het dorp kan wel iemand gebruiken die verstand heeft van kaarten, en jij blijkt daar heel veel verstand van te hebben. Jaren later komt er een zenuwachtige vreemdeling vragen naar een vermiste leerling. Je verkoopt hem een kaart van de berg. Die is volkomen blanco. Het is ook, verzeker je hem, de nauwkeurige versie."
+   ],
+   "ending": {
+    "no": "I",
+    "title": "Een rustig dorp",
+    "kind": "strange",
+    "epilogue": "Je slaapt elke nacht goed. Daar zorgt de klok wel voor.",
+    "hint": "Sommige deuren kun je beter op slot laten. Of toch niet?"
+   }
+  },
+  "12": {
+   "chapter": "De blanco kaart",
+   "scene": "mountain",
+   "text": [
+    "Pim vraagt er één koperstuk voor en laat je beloven dat je je geld niet terugvraagt. Halverwege de klim, onder de maan, begint de blanco kaart in je hand zich te vullen.",
+    "Er verschijnt een lijn, dan nog een: dunne, zelfverzekerde streken in bruine inkt, getrokken door niemand. Dat handschrift ken je. Je hebt het vier jaar lang nagetekend. Ines tekent een route over de oostflank van de berg, langs een kam die je van hieruit niet kunt zien, met er maar één woord bij: “Veilig.” De inkt is nog nat."
+   ],
+   "choices": [
+    {
+     "text": "Als je de route volgt die ze aan het tekenen is,",
+     "to": 19
+    },
+    {
+     "text": "Als je de kaart opvouwt en toch naar de grot gaat,",
+     "to": 16
+    }
+   ]
+  },
+  "14": {
+   "chapter": "De Zwarte Rivier",
+   "scene": "river",
+   "text": [
+    "Je lantaarn maakt een klein kamertje van licht om je heen, en de tunnel voert je bergafwaarts, wel een uur lang, zo lijkt het. Dan wordt hij smaller en komt hij uit in een zaal die zo groot is dat je lantaarn het plafond niet kan vinden. Een rivier glijdt voorbij, zwart en geluidloos. Aan de oever ligt een bootje met twee letters in de boeg gekerfd: [[ia|I.A.]] Ines kon nu eenmaal niets ongesigneerd laten. Het touw druipt nog, alsof het bootje nog maar net terug is.",
+    "Langs de oever zijn gezichten in de rots uitgehakt. Het eerste is hoger dan een huis, elk volgend een beetje kleiner. Ze hebben allemaal hun ogen dicht. Allemaal, behalve het laatste."
+   ],
+   "choices": [
+    {
+     "text": "Als je de boot van Ines losmaakt en je door de rivier laat meevoeren,",
+     "to": 31
+    },
+    {
+     "text": "Als je te voet de uitgehakte gezichten volgt, dieper de berg in,",
+     "to": 38
+    }
+   ]
+  },
+  "16": {
+   "chapter": "De mond van de grot",
+   "scene": "mountain",
+   "text": [
+    "Warme lucht rolt de grot uit als de adem van een slapend dier. Vlak achter de ingang is de rots door handen gladgesleten, en op het gladde stuk staan namen: honderden, gekrast met messen en spijkers en haarspelden, de oudste ouder dan [[oldestname|elk alfabet dat je kent]].",
+    "De nieuwste is INES ARDEN, in een handschrift dat je overal zou herkennen. Daaronder is precies genoeg plek voor nog één naam."
+   ],
+   "choices": [
+    {
+     "text": "Als je verder het donker in gaat,",
+     "to": 14
+    },
+    {
+     "text": "Als je je eigen naam onder de hare krast,",
+     "to": 20
+    }
+   ]
+  },
+  "17": {
+   "chapter": "De lantaarnprocessie",
+   "scene": "procession",
+   "text": [
+    "Op veilige afstand volg je de lichtjes door het dal omhoog. De slapers lopen zonder haast en zonder stil te staan, en waar het pad zich splitst, nemen ze allemaal zonder een woord dezelfde afslag.",
+    "Aan de voet van de berg is een deur, op een plek waar vanmiddag alleen rots was. De randen gloeien zacht goud. Een voor een lopen de dorpelingen erdoorheen, lantaarn voorop. Marta is de laatste van de rij. Als ze langsloopt, strijkt haar hand langs de jouwe. Die is zo koud als de berg."
+   ],
+   "choices": [
+    {
+     "text": "Als je achter haar aan door de deur glipt,",
+     "to": 25
+    },
+    {
+     "text": "Als je Marta bij de arm grijpt en haar wakker maakt,",
+     "to": 30
+    }
+   ]
+  },
+  "19": {
+   "chapter": "De Naaldkam",
+   "scene": "ridge",
+   "text": [
+    "De route voert je over een kam die niet breder is dan een tuinmuur, met aan weerszijden driehonderd meter wolk. De wind heeft zo zijn mening over je evenwicht.",
+    "De kaart blijft tekenen, steeds één stap voor je uit. Dan doet de lijn iets wat geen verstandige lijn zou doen: hij verlaat de kam en koerst rechtdoor de lege lucht in, naar een verlicht raam in de flank van de berg. Naast de kam loopt een prima richel in een ruime boog om de berg heen: stevig, breed en overduidelijk."
+   ],
+   "choices": [
+    {
+     "text": "Als je doet wat de kaart zegt en op niets stapt,",
+     "to": 27
+    },
+    {
+     "text": "Als je op je ogen vertrouwt en de stevige richel neemt,",
+     "to": 24
+    }
+   ]
+  },
+  "20": {
+   "chapter": "Een einde",
+   "scene": "mountain",
+   "text": [
+    "Je naam krassen duurt langer dan je dacht, en hij wordt scheef. Maar daar staat hij dan: het bewijs dat je zo ver bent gekomen. Je doet een stap achteruit en bewondert hem. Ergens diep in de grot zucht iets.",
+    "’s Ochtends loop je naar huis met het merkwaardige gevoel dat het af is. De rest van je leven vertel je het verhaal op etentjes, en het is een goed verhaal, en aan het eind stelt iedereen altijd dezelfde vraag: “Maar wat zat erin?” Je hebt nooit een antwoord. De naam op de muur ook niet."
+   ],
+   "ending": {
+    "no": "V",
+    "title": "Bewijs van aanwezigheid",
+    "kind": "strange",
+    "epilogue": "Je bent hier geweest. Meer zal niemand ooit weten.",
+    "hint": "Laat je sporen na voordat je naar binnen gaat."
+   }
+  },
+  "22": {
+   "chapter": "Negenhonderd treden",
+   "scene": "bell",
+   "moment": {
+    "line": "Door de mist draait de gestalte zich naar je om, de lantaarn van Ines in de hand.",
+    "seconds": 10,
+    "default": 52,
+    "head": "Kies voordat de mist zich sluit",
+    "sub": "Wacht je te lang, dan kiest de mist voor je.",
+    "defaultLabel": "DE KEUZE VAN DE MIST",
+    "timeout": "De mist kiest voor je…"
+   },
+   "text": [
+    "De trap gaat langer door dan de berg hoog is. Bij negenhonderd houd je op met tellen. De mist sluit zich achter je, tot er alleen nog de volgende tree is, en de tree daarna.",
+    "Bovenaan ligt een klooster in puin. Op de binnenplaats hangt een bronzen klok, groen uitgeslagen van ouderdom, maar [[rope|het touw is nieuw]]. In de mist staat een gestalte naar je te kijken, met de lantaarn van Ines in de hand. Dat gedeukte hengsel herken je uit duizenden."
+   ],
+   "choices": [
+    {
+     "text": "Als je de klok luidt,",
+     "short": "Luid de klok",
+     "to": 47
+    },
+    {
+     "text": "Als je de gestalte de mist in volgt,",
+     "short": "Volg de gestalte de mist in",
+     "to": 52
+    }
+   ]
+  },
+  "24": {
+   "chapter": "Een einde",
+   "scene": "ridge",
+   "text": [
+    "Elf stappen lang is de richel precies zo stevig als hij eruitziet. Bij de twaalfde blijkt hij geschilderd te zijn: een heel goed schilderij van een richel, op een doek dat over de afgrond is gespannen.",
+    "Je valt heel lang. Lang genoeg om te zien dat de kunstenaar het doek [[signature|heeft gesigneerd]], in de hoek, in kleine bruine letters die je maar al te goed kent."
+   ],
+   "ending": {
+    "no": "III",
+    "title": "Gezond verstand",
+    "kind": "bad",
+    "epilogue": "Het verstandige pad was het pad dat iemand voor je had geschilderd.",
+    "hint": "Op de kam is de weg die voor de hand ligt ook de kortste weg naar beneden."
+   }
+  },
+  "25": {
+   "chapter": "De Lantaarnzaal",
+   "scene": "lanternhall",
+   "text": [
+    "Achter de deur ligt een zaal waar geen eind aan lijkt te komen. De muren zitten vol nissen, als een honingraat, en in bijna elke nis brandt een lantaarn. De dorpelingen zetten de hunne in lege nissen, draaien zich om met hun ogen nog altijd dicht en lopen naar huis.",
+    "Aan elke lantaarn hangt een koperen naamplaatje. MARTA OSK. PIM OSK. Een heel dorp, zachtjes brandend op een rij. Verderop worden de plaatjes ouder, dan uitheems, dan onleesbaar. En in de nis het dichtst bij je hand staat, al aangestoken, een lantaarn met jouw naam erop."
+   ],
+   "choices": [
+    {
+     "text": "Als je de lantaarn met jouw naam pakt,",
+     "to": 33
+    },
+    {
+     "text": "Als je de zaal afzoekt naar de lantaarn van Ines,",
+     "to": 28
+    },
+    {
+     "text": "Als je de lantaarn met jouw naam uitblaast,",
+     "to": 36
+    }
+   ]
+  },
+  "27": {
+   "chapter": "De onzichtbare brug",
+   "scene": "ridge",
+   "text": [
+    "Je stapt van de kam af. Eén verschrikkelijke hartslag lang is er niets onder je laars. Dan is er iets: een brug die precies zo ver bestaat als de inkt is gekomen, en geen duimbreed verder.",
+    "Je steekt de hemel over, natte lijn na natte lijn. Als je bij het verlichte raam bent, houdt de kaart in je hand op met tekenen. In de hoek is in hetzelfde handschrift een notitie verschenen: “Goed zo. Je luistert nog.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je door het raam naar binnen klimt,",
+     "to": 35
+    }
+   ]
+  },
+  "28": {
+   "chapter": "Andermans lantaarns",
+   "scene": "lanternhall",
+   "text": [
+    "Het kost je een uur om de hare te vinden. INES ARDEN, staat er op het plaatje, en de lantaarn is koud. Niet uitgeblazen: de pit is nieuw en heeft nog nooit gebrand. Waar Ines in deze berg ook mee bezig is, haar licht heeft ze er niet aan gegeven.",
+    "Als je haar lantaarn optilt, wordt het in de zaal stiller dan een zaal eigenlijk kan worden. Ergens beneden, heel diep, draait iets zich naar je om."
+   ],
+   "choices": [
+    {
+     "text": "Als je de koude lantaarn van Ines naar beneden draagt, naar wat zich daar omdraaide,",
+     "to": 41
+    },
+    {
+     "text": "Als je hem terugzet en in plaats daarvan je eigen lantaarn pakt,",
+     "to": 33
+    }
+   ]
+  },
+  "30": {
+   "chapter": "Een einde",
+   "scene": "village",
+   "text": [
+    "Marta wordt naar adem happend wakker, en de rest ook: allemaal tegelijk, de hele rij, op blote voeten op een berg, midden in de nacht. De gouden deur vervaagt weer tot rots. Niemand zegt iets. Het is de ongemakkelijkste stilte die je ooit hebt gehoord.",
+    "Voor zonsopgang heb je te eten gekregen, ben je bedankt en heeft een comité van uiterst beleefde mensen je naar de rand van het dal gebracht. Ze geven je een afscheidscadeautje: een kaart van de berg, volkomen blanco. “Goede reis,” zegt Marta, en ze meent het, en ze laat je elleboog pas los als je over de grens bent."
+   ],
+   "ending": {
+    "no": "VI",
+    "title": "Beleefd uitgeleide gedaan",
+    "kind": "strange",
+    "epilogue": "Laag-Veyra wenst je het allerbeste. Van een afstandje.",
+    "hint": "Maak nooit een slaapwandelaar wakker. Tenzij je wilt zien wat er gebeurt."
+   }
+  },
+  "31": {
+   "chapter": "Een einde",
+   "scene": "lake",
+   "text": [
+    "De rivier draagt je urenlang mee, of minutenlang. Hier beneden is dat moeilijk te zeggen. De stroom levert je af bij een meer dat van onderaf verlicht is, waar honderd boten in trage cirkels ronddrijven, elk met een slapende reiziger aan boord, een lantaarn bij de voeten.",
+    "In een ervan vind je Ines, glimlachend in haar slaap. Je bent van plan haar wakker te maken. Je gaat alleen eerst heel even zitten."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "De rivier vergeet niets",
+    "kind": "strange",
+    "epilogue": "Het meer houdt iedereen bij zich die even stopt om uit te rusten. Het is er heel rustgevend.",
+    "hint": "Haar boot weet de weg. De vraag is: waarheen."
+   }
+  },
+  "33": {
+   "chapter": "Jouw lantaarn",
+   "scene": "lanternhall",
+   "text": [
+    "De lantaarn is warm, alsof iemand hem voor je heeft gedragen. Als je hem uit de nis tilt, helt de vlam over, niet mee met de tocht maar ertegenin, en wijst een zijgang in, als een kompasnaald die haar noorden heeft gevonden.",
+    "Tegelijk voel je een nauwelijks merkbare trek naar boven, uit een smalle schoorsteen in het plafond, waardoor koude nachtlucht en de geur van oud papier omlaag zakken."
+   ],
+   "choices": [
+    {
+     "text": "Als je je door de lantaarn naar beneden laat leiden,",
+     "to": 41
+    },
+    {
+     "text": "Als je de schoorsteen in klimt, naar de geur van papier,",
+     "to": 43
+    }
+   ]
+  },
+  "35": {
+   "chapter": "Het hoge raam",
+   "scene": "library",
+   "text": [
+    "Je tuimelt door het raam een kamer vol kaarten in. Ze bedekken de muren, de tafels en de vloer; ze hangen aan de balken als wasgoed. Aan elke lessenaar slaapt een monnik, met zijn wang op zijn werk.",
+    "Midden in de kamer, op een lessenaar waar niemand aan zit, schrijft een ganzenveer uit zichzelf. Je krabbelt overeind, klopt de hemel van je jas en gaat kijken wat ze tekent."
+   ],
+   "choices": [
+    {
+     "text": "Als je kijkt,",
+     "to": 43
+    }
+   ]
+  },
+  "36": {
+   "chapter": "Een einde",
+   "scene": "dawn",
+   "text": [
+    "Je blaast de vlam uit. Even gebeurt er niets. Dan merk je dat je je het gezicht van je moeder niet meer kunt herinneren, en dan dat je niet meer weet waarom dat ooit nodig was.",
+    "Bij het ochtendgloren loop je de berg uit, licht als een veertje en twee keer zo onbeschreven. Geen register kent je naam. Geen kaart geeft aan waar je bent geweest. Terwijl je in de opkomende zon staat, zonder ergens heen te hoeven, besluit je dat dit de grootste vrijheid is die iemand ooit heeft gehad. Er is niemand die je tegenspreekt."
+   ],
+   "ending": {
+    "no": "VII",
+    "title": "Nergens op de kaart",
+    "kind": "strange",
+    "epilogue": "Niemand zal je ooit vinden. Niemand zal ooit zoeken.",
+    "hint": "Wat gebeurt er met een naam als zijn licht uitgaat?"
+   }
+  },
+  "38": {
+   "chapter": "De gezichten",
+   "scene": "river",
+   "text": [
+    "Je volgt de uitgehakte gezichten langs de oever. Ze worden kleiner naarmate je verder komt, ouder en verweerder, tot het laatste niet groter is dan dat van jou. Zijn ogen zijn open, en ze zijn [[amber|van barnsteen]], en ze volgen je.",
+    "“Weer eentje,” zegt het gezicht, met een stem als grind dat tot rust komt. “Zeg het snel, voordat de rivier het hoort. Ben jij een cartograaf? Of ben je een kaart?”"
+   ],
+   "choices": [
+    {
+     "text": "Als je antwoordt: “Een cartograaf”,",
+     "to": 42
+    },
+    {
+     "text": "Als je antwoordt: “Een kaart”,",
+     "to": 45
+    }
+   ]
+  },
+  "41": {
+   "chapter": "De weg van de lantaarn",
+   "scene": "heart",
+   "text": [
+    "Omlaag ga je, lantaarn voorop, een uitgehakte wenteltrap af, rondje na rondje, tot de muur aan één kant wegvalt en er alleen nog een touwleuning is, en het donker.",
+    "Dan houdt het donker op. Onder je ligt een holte die zo groot is dat ze haar eigen weer heeft. Op de bodem, als een meer over de hele vloer van de berg, ligt een gesloten oog. Onder het ooglid lekt licht vandaan. Aan de rand staat iemand met een pen zo lang als een speer. Zelfs van deze hoogte herken je die schouders: Ines."
+   ],
+   "choices": [
+    {
+     "text": "Als je afdaalt om haar tegemoet te gaan,",
+     "to": 80
+    }
+   ]
+  },
+  "42": {
+   "chapter": "De Kompaskamer",
+   "scene": "chamber",
+   "text": [
+    "“Goed antwoord,” zegt het gezicht, en het zwaait open als een deur. Daarachter ligt een ronde kamer, uitgehakt als de binnenkant van een kompas, en in het midden, gebogen over een tafel vol kaarten, staat Ines: magerder, stoffiger en woedend dat ze je ziet.",
+    "“Ik zei toch dat je me niet moest volgen,” zegt ze. Dan kijkt ze naar je handen en houdt je een pen voor die bijna zo lang is als zijzelf. “Mooi. Ik heb vastere handen nodig dan de mijne.” De kaart op tafel is van de berg. De inkt is nog nat."
+   ],
+   "choices": [
+    {
+     "text": "Als je de pen aanpakt en begint te tekenen,",
+     "to": 50
+    },
+    {
+     "text": "Als je eerst vraagt waar de kaart voor dient,",
+     "to": 53
+    }
+   ]
+  },
+  "43": {
+   "chapter": "Het scriptorium",
+   "scene": "library",
+   "text": [
+    "Je bent hoog op de berg, in het scriptorium van een oud klooster. Elke kaart hier toont hetzelfde dal, en elke kaart is gedateerd. Oogsten. Overstromingen. Een bruiloft. Een brand in de bakkerij. De data beginnen honderd jaar geleden en lopen nog honderd jaar door. Aan elke lessenaar dommelt een monnik, op één na. Op die ene schrijft een ganzenveer uit zichzelf: het dorp beneden, met het opschrift LAAG-VEYRA, zoals het er volgende week dinsdag uit zal zien.",
+    "Ernaast ligt, onder een inktpot, een brief aan jou in het handschrift van Ines. Hij is gedateerd op morgen. Aan de andere kant van de kamer, in een zetel die statiger is dan de rest, zit een oude abdis te snurken."
+   ],
+   "choices": [
+    {
+     "text": "Als je de brief leest,",
+     "to": 59
+    },
+    {
+     "text": "Als je de kaarten in brand steekt,",
+     "to": 62
+    },
+    {
+     "text": "Als je de abdis wakker maakt,",
+     "to": 65
+    }
+   ]
+  },
+  "45": {
+   "chapter": "De glijgoot",
+   "scene": "lake",
+   "text": [
+    "Het gezicht lacht, en uit een gezicht is dat een afschuwelijk geluid. Dan kiept de vloer je in een gladde stenen glijgoot. Je glijdt lang door het donker en verzamelt onderweg snelheid en meningen.",
+    "Je schiet eruit, koud water in. Als je bovenkomt, drijf je in een ondergronds meer dat van onderaf verlicht is, tussen honderd ronddobberende boten. In elke boot slaapt een reiziger, een lantaarn bij de voeten. Een boot vlakbij is leeg. De lantaarn erin brandt. Er hangt een plaatje aan met jouw naam."
+   ],
+   "choices": [
+    {
+     "text": "Als je in de lege boot klimt,",
+     "to": 55
+    },
+    {
+     "text": "Als je naar de lichtjes aan de overkant zwemt,",
+     "to": 58
+    }
+   ]
+  },
+  "47": {
+   "chapter": "Een einde",
+   "scene": "bell",
+   "text": [
+    "De stem van de klok rolt als onweer de berg af, en de lucht klaart op. Terwijl de laatste toon wegsterft, staat de klokwachter ineens naast je: een oude monnik met een lantaarn, huilend van opluchting.",
+    "“Dertig jaar,” zegt hij, terwijl hij je vingers om het touw vouwt. “Iemand moet hem elke nacht luiden, anders wordt de berg wakker.” Tegen de tijd dat je eraan denkt om naar Ines te vragen, of naar wat er gebeurt als de berg wakker wordt, is hij al halverwege de trap, fluitend."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "De klokwachter",
+    "kind": "strange",
+    "epilogue": "Over dertig jaar leer jij ook fluiten.",
+    "hint": "Een nieuw touw aan een oude klok wacht op nieuwe handen."
+   }
+  },
+  "49": {
+   "chapter": "Een einde",
+   "scene": "village",
+   "text": [
+    "Pim neemt je mee het puthuisje in, wijst omlaag, de put in, en zegt: “Afsteekje.” Je buigt je voorover om te kijken. Hij is, eerlijk is eerlijk, maar een heel klein jongetje, en jij leunt, eerlijk is eerlijk, wel heel erg ver voorover.",
+    "De put is droog, diep en verrassend comfortabel. Vanaf de bodem zie je [[stars|een volmaakte kring van sterren]]. ’s Ochtends laat Pim een blanco kaart en een boterham naar beneden zakken, wat jou de juiste volgorde van prioriteiten lijkt. Het boek had je nog zo gewaarschuwd."
+   ],
+   "ending": {
+    "no": "VIII",
+    "title": "De bodem van een put",
+    "kind": "bad",
+    "epilogue": "In Laag-Veyra is alleen de put wat hij lijkt.",
+    "hint": "Lees de waarschuwing op het omslag nog eens."
+   }
+  },
+  "50": {
+   "chapter": "Een einde",
+   "scene": "chamber",
+   "text": [
+    "Je pakt de pen aan. De eerste lijn die je trekt is beverig, en de berg verschuift heel even om erbij te passen. De tweede gaat beter. Bij de tiende valt het je al niet meer op dat de lijnen verschijnen een tel voordat je hand er is.",
+    "Ines knikt tevreden en laat je je gang gaan. Je ziet niet waar ze heen gaat. De kaart wordt nog getekend, en je naam staat er al op: in de legenda, onder “Reliëf”."
+   ],
+   "ending": {
+    "no": "IX",
+    "title": "De stenen kaart",
+    "kind": "strange",
+    "epilogue": "Je werd een zeer verdienstelijk cartograaf. Je bent inmiddels ook een heuveltje.",
+    "hint": "Pak nooit een pen aan voordat je weet wat hij schrijft."
+   }
+  },
+  "52": {
+   "chapter": "De gestalte in de mist",
+   "scene": "stairs",
+   "text": [
+    "Je volgt de lantaarn van de trap af, over een pad dat zich tegen de kloostermuur vastklampt, steeds twintig passen erachter. Ga jij sneller lopen, dan doet de gestalte dat ook. Blijf je staan, dan wacht ze.",
+    "Bij een lage deur met een windroos erop blijft de gestalte eindelijk staan, hangt de lantaarn van Ines aan een haak ernaast en loopt dwars door de muur, zonder iets open te doen. De deur staat op een kier. De lantaarn schommelt zachtjes, alsof hij iemand uitnodigt hem mee te nemen en de andere kant op te gaan: het rotspad af, terug naar het dal."
+   ],
+   "choices": [
+    {
+     "text": "Als je door de deur gaat,",
+     "to": 43
+    },
+    {
+     "text": "Als je de lantaarn meeneemt en het rotspad naar beneden volgt,",
+     "to": 56
+    }
+   ]
+  },
+  "53": {
+   "chapter": "Waar de kaart voor dient",
+   "scene": "chamber",
+   "text": [
+    "Ines zucht, als iemand die er al die tijd op heeft gewacht dat je het zou vragen. “Het is geen kaart van de berg,” zegt ze. “De berg is een kaart. Van het dal. Wat hier getekend wordt, gebeurt daar beneden. De monniken luiden al eeuwen elke nacht een klok om hem in slaap te houden, zodat hij niets kan tekenen wat hun niet bevalt.”",
+    "Ze tikt op een groepje huizen: Laag-Veyra. “Al drie weken teken ik mooi weer voor ze. Minder overstromingen. Een betere oogst.” Ze zegt het trots, zoals de monniken het ooit gezegd moeten hebben. “Nu jij er bent, kunnen we zoveel meer.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je haar helpt het dorp een betere toekomst te tekenen,",
+     "to": 57
+    },
+    {
+     "text": "Als je een deur uit de berg tekent, voor jullie allebei,",
+     "to": 61
+    },
+    {
+     "text": "Als je de kaart doormidden scheurt,",
+     "to": 64
+    }
+   ]
+  },
+  "55": {
+   "chapter": "Een einde",
+   "scene": "lake",
+   "text": [
+    "De boot schommelt als je erin klimt en komt dan tot rust, alsof hij precies op jouw gewicht heeft gewacht. De lantaarn is warm. De deken is warm. Het water fluistert iets over hoe ver je al bent gekomen en hoe weinig je nog hoeft te doen.",
+    "Je valt in slaap terwijl je nog twijfelt of je dat wel wilt. Ergens boven je slaapt een dorp een tikje vaster, nu het één lichtje meer te lenen heeft."
+   ],
+   "ending": {
+    "no": "X",
+    "title": "De slapende passagier",
+    "kind": "strange",
+    "epilogue": "Het was al jouw boot, lang voordat het jouw idee was.",
+    "hint": "Een lege boot met jouw naam erop is geen uitnodiging."
+   }
+  },
+  "56": {
+   "chapter": "Een einde",
+   "scene": "dawn",
+   "text": [
+    "Je neemt de lantaarn mee het rotspad af, over wortels en los gesteente, tot het pad ophoudt bij een richel boven het dal. Het wordt licht. Onder je wordt het dorp Laag-Veyra wakker.",
+    "Over de enige weg loopt iemand naar de berg: iemand die precies op jou lijkt, met een brief in de jas. Je doet je mond open om een waarschuwing te roepen. Wat eruit komt, met je eigen stem, volmaakt gedragen door de ochtendlucht, is: “Volg me niet.”"
+   ],
+   "ending": {
+    "no": "XI",
+    "title": "De tweede brief",
+    "kind": "strange",
+    "epilogue": "Die volgt je toch wel. Dat deed jij ook.",
+    "hint": "Neem mee wat de gestalte achterlaat."
+   }
+  },
+  "57": {
+   "chapter": "Een einde",
+   "scene": "village",
+   "text": [
+    "Samen tekenen jullie voor Laag-Veyra zonneschijn, zachte regen, een recordoogst en een mooie nieuwe brug. Je tekent dat de bakkerij nooit in brand vliegt. Je tekent de slechte knie van de waardin weer beter. Het is het bevredigendste werk van je leven.",
+    "De jaren verstrijken. Het dorp bloeit. Het zaait ook niets meer tot jij de regen tekent, en bouwt niets meer tot jij de brug tekent, en in het voorjaar dat jij een week ziek bent, komt er in Laag-Veyra helemaal niemand meer uit bed. Ze wachtten alleen maar op de lijnen."
+   ],
+   "ending": {
+    "no": "XII",
+    "title": "Altijd mooi weer",
+    "kind": "strange",
+    "epilogue": "Jij gaf ze alles. Zij gaven jou hun volle aandacht.",
+    "hint": "Hulp die nooit ophoudt, wordt iets anders."
+   }
+  },
+  "58": {
+   "chapter": "De overkant",
+   "scene": "lake",
+   "text": [
+    "Je zwemt tot je armen vergeten dat het armen zijn. De lichtjes aan de overkant blijken kaarsen te zijn, op een rij langs een stenen kade, en daarachter loopt een trap recht omhoog door de rots.",
+    "Druipend klim je omhoog, zo te voelen de hele berg door. De trap eindigt bij een valluik. Daarboven hoor je papier ritselen, en gesnurk, en het gekras van een ganzenveer die door niemand wordt vastgehouden."
+   ],
+   "choices": [
+    {
+     "text": "Als je het valluik openduwt,",
+     "to": 43
+    }
+   ]
+  },
+  "59": {
+   "chapter": "De brief van morgen",
+   "scene": "library",
+   "text": [
+    "“Als je dit leest,” staat er in de brief, “dan ben je me gevolgd. Goed zo. Dat was precies de bedoeling. Het spijt me van die andere brief. Als ik het je had gevraagd, was je nooit gekomen.",
+    "“Vannacht moet de klok worden geluid door iemand die hem nog nooit heeft geluid. Dan opent de berg zijn oog, en wacht ik in het Hart, helemaal onder in de berg, met de pen die het dal tekent. Wees niet bang. Hier zijn cartografen voor. — I.” [[ink|De inkt is droog]], wat vreemd is voor een brief die morgen geschreven wordt."
+   ],
+   "choices": [
+    {
+     "text": "Als je doet wat ze vraagt en de klok luidt,",
+     "to": 71
+    },
+    {
+     "text": "Als je de klok laat voor wat hij is en meteen afdaalt naar het Hart,",
+     "to": 69
+    }
+   ]
+  },
+  "61": {
+   "chapter": "Een einde",
+   "scene": "dawn",
+   "text": [
+    "Je neemt de pen uit de hand van Ines en tekent een deur in de flank van de berg, de eenvoudigste deur die je kunt maken: een lijn, een lijn, een lijn, een klink. Hij gaat open, en daarachter is het ochtend.",
+    "Samen stappen jullie naar buiten, het zonlicht in. Achter jullie is de berg een beetje kleiner dan eerst, en een beetje minder zeker van zichzelf. Je raakt de grote pen nooit meer aan. Dat hoeft ook niet: vanaf die dag staat op elke kaart ter wereld een berg boven Laag-Veyra, met de naam erbij in jouw handschrift."
+   ],
+   "ending": {
+    "no": "XVIII",
+    "title": "De deur die jij tekende",
+    "kind": "good",
+    "star": true,
+    "epilogue": "De beste kaarten laten dingen weg. Jij liet het laatste woord van de berg weg.",
+    "hint": "Het eenvoudigste wat je kunt tekenen, is een uitweg."
+   }
+  },
+  "62": {
+   "chapter": "Brand in het scriptorium",
+   "scene": "library",
+   "text": [
+    "De eerste kaart vat vlam alsof hij daar zijn hele leven op heeft gewacht. De tweede vat vlam aan de eerste. Tegen de tijd dat de monniken hoestend wakker worden, zijn de kasten een muur van oranje licht.",
+    "De abdis staart naar de vlammen, dan naar jou, en dan, vreemd genoeg, uit het raam naar het dal. “Die kaarten hielden dat dorp precies waar het is,” zegt ze zacht. “Elk veld. Elk dak. Elk mens. Waar dacht je dat ze voor waren?”"
+   ],
+   "choices": [
+    {
+     "text": "Als je helpt het vuur te blussen,",
+     "to": 67
+    },
+    {
+     "text": "Als je het laat branden,",
+     "to": 76
+    }
+   ]
+  },
+  "64": {
+   "chapter": "De scheur",
+   "scene": "heart",
+   "moment": {
+    "line": "Je valt. Ines reikt naar je hand. De grote pen tolt net buiten je bereik.",
+    "seconds": 8,
+    "default": 72,
+    "head": "Kies voordat je neerkomt",
+    "sub": "Val je lang genoeg, dan kiest de zwaartekracht voor je.",
+    "defaultLabel": "DE KEUZE VAN DE ZWAARTEKRACHT",
+    "timeout": "De zwaartekracht kiest voor je…"
+   },
+   "text": [
+    "De kaart scheurt met een geluid als donder in het binnenste van een wolk. De kamer slingert. De windroos in de vloer splijt langs haar windstreken, en jij en Ines vallen erdoorheen, een holte in die zo groot is dat je de omvang ervan op je huid voelt.",
+    "Ines valt naast je en reikt naar je hand. De grote pen valt naast jullie allebei, tollend, net buiten bereik. Je hebt tijd om een van de twee te grijpen."
+   ],
+   "choices": [
+    {
+     "text": "Als je de hand van Ines grijpt,",
+     "short": "Grijp Ines’ hand",
+     "to": 72
+    },
+    {
+     "text": "Als je de pen grijpt,",
+     "short": "Grijp de pen",
+     "to": 75
+    }
+   ]
+  },
+  "65": {
+   "chapter": "De abdis",
+   "scene": "library",
+   "text": [
+    "De abdis wordt wakker zoals oude katten dat doen: meteen, en al geërgerd. Ze schuift je brief onder de inktpot vandaan en leest hem zonder te vragen. “Ah,” zegt ze. “Arden. Die kwam drie weken geleden bij ons en stelde uitstekende vragen. We hadden voorzichtiger moeten zijn met de antwoorden.”",
+    "“De berg droomt dit dal,” vertelt ze je. “Wij luiden de klok zodat hij blijft dromen, en het dal blijft waar het is. Je leermeester is afgedaald naar het Hart, helemaal onder in de berg. Ze wil hem wekken en zelf de pen vasthouden waarmee hij droomt. Ze denkt dat zij het beter zou dromen.” De oude vrouw haalt haar schouders op. “Dat denkt iedereen.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je de abdis helpt de klok te luiden en de berg in slaap te houden,",
+     "to": 71
+    },
+    {
+     "text": "Als je afdaalt naar het Hart om Ines te zoeken,",
+     "to": 69
+    }
+   ]
+  },
+  "67": {
+   "chapter": "Water en as",
+   "scene": "bell",
+   "text": [
+    "Zij aan zij met de monniken sjouw je emmers tot de laatste kast sissend in rook opgaat. De helft van de kaarten is weg. Beneden in het dal, hoor je later, wist het halve dorp niet meer welke dag het was, en stroomde een rivier even bergop.",
+    "Bij zonsopgang vindt de klokwachter van het klooster, een stokoude monnik, je tussen de as. Hij kijkt lang naar je verbrande handen en houdt je dan het klokkentouw voor. “Wie een brand blust om kaarten te redden die hij haat,” zegt hij, “die kan ik dit toevertrouwen. Je vriendin Arden wilde het niet aannemen. Die is in plaats daarvan afgedaald naar het Hart van de berg.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je het touw aanneemt en de klok luidt,",
+     "to": 47
+    },
+    {
+     "text": "Als je weigert en afdaalt om Ines te zoeken,",
+     "to": 69
+    }
+   ]
+  },
+  "69": {
+   "chapter": "De lange trap omlaag",
+   "scene": "heart",
+   "text": [
+    "De trap naar het Hart begint achter de kloosterkeuken, de minst dramatische plek die je je ervoor kunt voorstellen. Hij gaat omlaag en nog eens omlaag, langs de wortels van de berg, langs water, langs een rotslaag vol schelpen en een andere vol iets wat weleens botten zou kunnen zijn.",
+    "Eindelijk wijken de wanden, en door een drijvende wolk kijk je neer op een gesloten oog zo breed als een meer. Onder het ooglid lekt licht vandaan. Aan de rand staat Ines, met een pen zo lang als een speer."
+   ],
+   "choices": [
+    {
+     "text": "Als je naar haar afdaalt,",
+     "to": 80
+    }
+   ]
+  },
+  "71": {
+   "chapter": "Een einde",
+   "scene": "bell",
+   "text": [
+    "Buiten op de binnenplaats luid je de oude klok. Diep in de berg antwoordt een tweede klok: een die jij nog nooit hebt gehoord, en een die de monniken, te oordelen naar hun gezichten, alleen van horen zeggen kennen.",
+    "De twee klokken luiden samen, en de berg draait zich om in zijn slaap, als iemand die gestoord wordt door gestommel beneden. ’s Ochtends ligt het hele dal drie kilometer verder naar het oosten. Laag-Veyra wordt op een andere plek wakker en schuift het op het weer. Ines, waar ze ook is, mag haar kaart opnieuw beginnen."
+   ],
+   "ending": {
+    "no": "XIII",
+    "title": "Twee klokken",
+    "kind": "strange",
+    "epilogue": "De berg slaapt nog steeds. Alleen nu ergens anders.",
+    "hint": "Een klok die door nieuwe handen wordt geluid, klinkt anders."
+   }
+  },
+  "72": {
+   "chapter": "Een einde",
+   "scene": "heart",
+   "text": [
+    "Je grijpt haar hand. Ze houdt vast. Een lang, vreemd moment vallen jullie samen door het donker, en het is bijna vredig, en ze zegt: “Ik had toch echt gezegd dat je me niet moest volgen,” en jij lacht, en zij ook.",
+    "Je landt zacht, in de droom van de berg, en dat is een heel zachte plek. Ver boven je, in een zaal vol lantaarns, laaien twee vlammen tegelijk op. Op hun plaatjes staan INES ARDEN en jouw naam, en ze branden naast elkaar, heel fel, heel lang."
+   ],
+   "ending": {
+    "no": "XIV",
+    "title": "Samen, even",
+    "kind": "bad",
+    "epilogue": "Jij vond haar. De berg vond jullie allebei.",
+    "hint": "In een val kun je maar één ding vasthouden."
+   }
+  },
+  "75": {
+   "chapter": "De pen tussen hemel en aarde",
+   "scene": "heart",
+   "text": [
+    "Je vingers sluiten zich om de pen. Hij is zwaarder dan een pen hoort te zijn en lichter dan een speer, en hij is nog nat. Zonder na te denken trek je een lijn onder je voeten.",
+    "De lijn houdt. Je stopt zo abrupt met vallen dat je knieën protesteren. Je staat op een brug van inkt boven een enorme holte, en op de bodem ligt een gesloten oog zo groot als een dorp. Ines klautert op het andere eind van je brug. Dankbaar kijkt ze niet. Ze steekt haar hand uit, en de pen glipt uit de jouwe en gaat naar haar toe als een hond die wordt teruggeroepen."
+   ],
+   "choices": [
+    {
+     "text": "Als je haar tegemoet loopt, boven het oog,",
+     "to": 80
+    }
+   ]
+  },
+  "76": {
+   "chapter": "Een einde",
+   "scene": "dawn",
+   "text": [
+    "Je laat het branden. De monniken houden je niet tegen. Ze staan op de binnenplaats en kijken hoe de rook opstijgt, en een van hen begint te huilen, heel zachtjes, als op een begrafenis die hij al jaren zag aankomen.",
+    "Bij zonsopgang kijk je neer in het dal. Er is geen dorp. Er zijn geen velden, geen daken, geen rivier. Er is een schoon, groen, leeg dal, het soort dat een kaart wit zou laten. Het is prachtig. Het is vrij. Er is niemand die daarvan kan genieten."
+   ],
+   "ending": {
+    "no": "XV",
+    "title": "Het blanco dal",
+    "kind": "bad",
+    "epilogue": "Ergens is een blanco kaart van Laag-Veyra eindelijk nauwkeurig.",
+    "hint": "Een kaart verbranden maakt het land niet altijd vrij."
+   }
+  },
+  "80": {
+   "chapter": "Het Hart",
+   "scene": "heart",
+   "moment": {
+    "line": "Het oog gaat open. Ines houdt je de grote pen voor. De hele berg houdt zijn adem in.",
+    "seconds": 12,
+    "default": 88,
+    "head": "Kies voordat het oog opengaat",
+    "sub": "Wacht je te lang, dan kiest de berg voor je.",
+    "defaultLabel": "DE KEUZE VAN DE BERG",
+    "timeout": "De berg kiest voor je…"
+   },
+   "text": [
+    "Van dichtbij is het oog niet van steen. Het is huid, of iets wat erop lijkt, grijs en traag en warm, en het begint open te gaan. Langs de naad stroomt gouden licht naar buiten. De hele berg houdt zijn adem in.",
+    "Ines kijkt je aan alsof je precies op tijd bent. “De berg wordt wakker,” zegt ze, en ze houdt je de grote pen voor. “Als het oog opengaat, droomt wie dit vasthoudt het dal. Dat kun jij zijn. Dat kan ik zijn. Of we laten hem wakker worden met niets in handen, en kijken wat hij doet.” Het ooglid gaat nog een duimbreed omhoog."
+   ],
+   "choices": [
+    {
+     "text": "Als je de pen aanneemt en zelf het dal droomt,",
+     "short": "Neem de pen",
+     "to": 84
+    },
+    {
+     "text": "Als je de berg met lege handen laat ontwaken,",
+     "short": "Laat hem ontwaken",
+     "to": 88
+    },
+    {
+     "text": "Als je de hand van Ines pakt en wegloopt,",
+     "short": "Loop weg met Ines",
+     "to": 92
+    }
+   ]
+  },
+  "84": {
+   "chapter": "Een einde",
+   "scene": "heart",
+   "text": [
+    "Je neemt de pen aan. Het oog gaat open, kijkt je aan, kijkt echt, en sluit zich weer, tevreden. Er zakt iets over je schouders, als een jas die past.",
+    "Je droomt het dal. Je droomt het goed: mild weer, goede oogsten, en om middernacht een rij lantaarns die door het dal omhoogklimt om je gezelschap te houden. Elke nacht luidt ver boven je een klok om je in slaap te houden, en elke nacht ben je er dankbaar voor, en nooit vraag je je af wie hem luidt, of waarom."
+   ],
+   "ending": {
+    "no": "XVI",
+    "title": "De nieuwe dromer",
+    "kind": "strange",
+    "epilogue": "Jij houdt nu de pen. Iemand anders het touw.",
+    "hint": "Wie de pen vasthoudt, wordt erdoor vastgehouden."
+   }
+  },
+  "88": {
+   "chapter": "Een einde",
+   "scene": "dawn",
+   "text": [
+    "Je doet een stap achteruit, weg van de pen. Ines ook, uiteindelijk. Het oog gaat helemaal open, en voor het eerst in zijn leven kijkt de berg naar de wereld zonder haar te dromen.",
+    "Hij staat op. Langzaam, als een heel oude man, komt de Veyra overeind, schudt de sneeuw van zijn schouders en loopt weg, naar de zee. Achter hem blijft Laag-Veyra liggen, elk dak en elk veld en elke verbouwereerde dorpeling in nachthemd, eindelijk echt en op eigen benen. Jij en Ines zitten in het nieuwe zonlicht op een vlakte die nog nooit op een kaart heeft gestaan. Zij pakt een potlood. Jij pakt een potlood. Geen van beiden tekent iets."
+   ],
+   "ending": {
+    "no": "XIX",
+    "title": "Goedemorgen, berg",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Geen van jullie beiden legt het potlood weg.",
+    "hint": "Soms is de dapperste keuze om niets vast te houden."
+   }
+  },
+  "92": {
+   "chapter": "Een einde",
+   "scene": "mountain",
+   "text": [
+    "Je pakt haar hand. Ze laat je hem even vasthouden en trekt hem dan zachtjes terug. “Ga,” zegt Ines. “Iemand moet gaan.” Ze draait zich weer naar het oog.",
+    "Je klimt in je eentje naar buiten en loopt de wereld in, en na verloop van tijd word je een beroemd cartograaf, het soort waar leerlingen brieven aan schrijven. Op een herfstdag komt er een brief van een van je eigen leerlingen, drie weken oud: “Ik denk dat ik weet waar ze heen is gegaan. Maak je om mij geen zorgen.” Je pakt je lantaarn in. Op de achterkant van de brief schrijf je, zorgvuldig: “De berg is hol. Volg me niet.”"
+   ],
+   "ending": {
+    "no": "XVII",
+    "title": "De leermeester",
+    "kind": "strange",
+    "epilogue": "Je werd het soort cartograaf dat leerlingen achternagaan.",
+    "hint": "Weglopen is ook een manier van volgen."
+   }
+  }
+ }
+}

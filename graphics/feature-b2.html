@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../app/www/fonts/fonts.css">
+<style>
+  html,body{margin:0}
+  body{width:1024px;height:500px;overflow:hidden;position:relative;background:#0F0D1E}
+  /* the real app: page 1, the book at the foot of Mount Veyra (text hidden) */
+  .shot{position:absolute;left:0;top:0;width:1024px;height:auto;transform-origin:0 0}
+  /* mist rising around the book, warm lantern light from below */
+  .mist{position:absolute;inset:0;pointer-events:none;
+    background:
+      radial-gradient(ellipse 50% 40% at 6% 88%, rgba(214,196,245,.6), rgba(214,196,245,0) 70%),
+      radial-gradient(ellipse 48% 38% at 96% 90%, rgba(236,214,250,.55), rgba(236,214,250,0) 70%),
+      radial-gradient(ellipse 70% 22% at 50% 108%, rgba(246,236,255,.28), rgba(246,236,255,0) 72%),
+      radial-gradient(ellipse 40% 22% at 50% 76%, rgba(255,214,150,.18), rgba(255,214,150,0) 70%);
+    filter:blur(6px)}
+  .wisp{position:absolute;border-radius:50%;background:radial-gradient(ellipse, rgba(236,226,255,.62), rgba(236,226,255,0) 66%);filter:blur(8px)}
+  .vig{position:absolute;inset:0;background:radial-gradient(ellipse 75% 85% at 50% 45%, rgba(10,8,24,0) 55%, rgba(10,8,24,.55) 100%)}
+  .word{position:absolute;right:58px;top:40px;font-family:'Cormorant Garamond';font-weight:700;font-size:66px;letter-spacing:.22em;line-height:1;
+    background:linear-gradient(180deg,#FFF6DC 0%,#F6D588 42%,#E0A548 74%,#A8702A 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+    filter:drop-shadow(0 4px 18px rgba(8,4,20,.65))}
+</style></head>
+<body>
+<img class="shot" id="shot">
+<div class="wisp" style="left:-140px;top:215px;width:560px;height:210px"></div>
+<div class="wisp" style="left:620px;top:205px;width:580px;height:220px"></div>
+<div class="wisp" style="left:150px;top:262px;width:460px;height:100px;opacity:.8"></div>
+<div class="wisp" style="left:500px;top:270px;width:420px;height:90px;opacity:.75"></div>
+<div class="wisp" style="left:260px;top:420px;width:520px;height:120px;opacity:.55"></div>
+<div class="mist"></div>
+<div class="vig"></div>
+<div class="word">WAYWARD</div>
+<script>
+  const q = new URLSearchParams(location.search);
+  const img = document.getElementById('shot'), y0 = +(q.get('y') || 170);
+  img.src = q.get('img');
+  img.onload = () => { const s = 1024 / img.naturalWidth; img.style.transform = `translateY(${-y0 * s}px)`; };
+</script>
+</body></html>

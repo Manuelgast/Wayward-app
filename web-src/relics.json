@@ -1,0 +1,294 @@
+{
+ "tiers": [
+  {
+   "count": 4,
+   "id": "gilt",
+   "name": {
+    "en": "Gilded Edges",
+    "nl": "Verguld op snee"
+   },
+   "desc": {
+    "en": "Your book’s pages are now edged in gold.",
+    "nl": "De bladzijden van je boek hebben nu een gouden rand."
+   }
+  },
+  {
+   "count": 8,
+   "id": "honestmap",
+   "name": {
+    "en": "The Honest Map",
+    "nl": "De eerlijke kaart"
+   },
+   "desc": {
+    "en": "The path map now shows the outline of every page you have not found yet.",
+    "nl": "De padenkaart toont nu de omtrek van elke bladzijde die je nog niet hebt gevonden."
+   }
+  },
+  {
+   "count": 12,
+   "id": "margin",
+   "name": {
+    "en": "Page 0 · The Margin",
+    "nl": "Bladzijde 0 · De marge"
+   },
+   "desc": {
+    "en": "A page that is not in the book.",
+    "nl": "Een bladzijde die niet in het boek staat."
+   }
+  }
+ ],
+ "relics": [
+  {
+   "id": "blankmap",
+   "page": 6,
+   "where": "text",
+   "icon": "map",
+   "name": {
+    "en": "The Accurate Map",
+    "nl": "De nauwkeurige kaart"
+   },
+   "riddle": {
+    "en": "The most honest thing in Low Veyra has nothing to say.",
+    "nl": "Het eerlijkste in Laag-Veyra heeft niets te zeggen."
+   },
+   "lore": {
+    "en": "Pim’s maps are blank because in Low Veyra, anything drawn on paper has a habit of turning up the next morning. The village learned this the year someone doodled a dragon in the margin of the tax roll. Since then the only honest map of the mountain is the empty one, and Pim is the only honest salesman in the valley. He charges double.",
+    "nl": "De kaarten van Pim zijn blanco omdat in Laag-Veyra alles wat op papier wordt getekend de gewoonte heeft de volgende ochtend op te duiken. Het dorp leerde dat in het jaar waarin iemand een draakje in de kantlijn van het belastingregister krabbelde. Sindsdien is de enige eerlijke kaart van de berg de lege, en is Pim de enige eerlijke verkoper in het dal. Hij vraagt er het dubbele voor."
+   }
+  },
+  {
+   "id": "dent",
+   "page": 6,
+   "where": "text",
+   "icon": "lantern",
+   "name": {
+    "en": "The Dent",
+    "nl": "De deuk"
+   },
+   "riddle": {
+    "en": "Count the flaws in the village. There is only one, repeated.",
+    "nl": "Tel de gebreken in het dorp. Er is er maar één, telkens herhaald."
+   },
+   "lore": {
+    "en": "Ines dropped her lantern once, on the first step of the stair, the night she arrived. The mountain was watching. Now every lantern in the valley has the same dent, because the mountain dreams in copies and is very bad at telling a detail from a mistake.",
+    "nl": "Ines liet haar lantaarn één keer vallen, op de eerste tree van de trap, in de nacht dat ze aankwam. De berg keek toe. Nu heeft elke lantaarn in het dal dezelfde deuk, want de berg droomt in kopieën en kan een detail heel slecht van een vergissing onderscheiden."
+   }
+  },
+  {
+   "id": "oldestname",
+   "page": 16,
+   "where": "text",
+   "icon": "chisel",
+   "name": {
+    "en": "The First Name",
+    "nl": "De eerste naam"
+   },
+   "riddle": {
+    "en": "At the cave mouth, read past the alphabet.",
+    "nl": "Lees bij de mond van de grot voorbij het alfabet."
+   },
+   "lore": {
+    "en": "The oldest name on the wall is not written in letters. It is a small scratched drawing of the mountain with a door in its side. The first person to come here was a cartographer, and cartographers sign with what they found.",
+    "nl": "De oudste naam op de muur is niet in letters geschreven. Het is een kleine, gekraste tekening van de berg met een deur in de flank. De eerste die hier kwam, was een cartograaf, en cartografen tekenen met wat ze hebben gevonden."
+   }
+  },
+  {
+   "id": "ia",
+   "page": 14,
+   "where": "text",
+   "icon": "boat",
+   "name": {
+    "en": "Two Carved Letters",
+    "nl": "Twee gekerfde letters"
+   },
+   "riddle": {
+    "en": "A boat that signs its name.",
+    "nl": "Een boot die parafeert."
+   },
+   "lore": {
+    "en": "The boat always comes back. Nobody unties it. The river returns everything to the bank where the mountain last saw it, which is why Low Veyra has never lost a boat, a hat or, until recently, a cartographer.",
+    "nl": "De boot komt altijd terug. Niemand maakt hem los. De rivier brengt alles terug naar de oever waar de berg het voor het laatst zag, en daarom is Laag-Veyra nog nooit een boot, een hoed of, tot voor kort, een cartograaf kwijtgeraakt."
+   }
+  },
+  {
+   "id": "rope",
+   "page": 22,
+   "where": "text",
+   "icon": "bell",
+   "name": {
+    "en": "The New Rope",
+    "nl": "Het nieuwe touw"
+   },
+   "riddle": {
+    "en": "An old bell with something young about it.",
+    "nl": "Een oude klok met iets jeugdigs."
+   },
+   "lore": {
+    "en": "The bell-rope is replaced every thirty years, whether it needs it or not. The monks braid it from the ribbons of every map ever rolled up in the scriptorium, so each time the bell is rung, the whole valley is pulled a little tighter together.",
+    "nl": "Het klokkentouw wordt elke dertig jaar vervangen, of het nu nodig is of niet. De monniken vlechten het uit de lintjes van alle kaarten die ooit in het scriptorium zijn opgerold, zodat het hele dal, telkens als de klok wordt geluid, een beetje strakker wordt aangehaald."
+   }
+  },
+  {
+   "id": "signature",
+   "page": 24,
+   "where": "text",
+   "icon": "brush",
+   "name": {
+    "en": "The Painter’s Signature",
+    "nl": "De handtekening van de schilder"
+   },
+   "riddle": {
+    "en": "Every fall has an artist. Look in the corner.",
+    "nl": "Elke val heeft een kunstenaar. Kijk in de hoek."
+   },
+   "lore": {
+    "en": "Ines painted the ledge on the Needle Ridge herself, one autumn, as a test. She considered it her finest work. “Anyone who takes the obvious path,” she wrote in her notebook, “was never going to be a cartographer. They were going to be a very brief tourist.”",
+    "nl": "Ines schilderde de richel op de Naaldkam zelf, op een herfstdag, als test. Ze beschouwde het als haar beste werk. “Wie het voor de hand liggende pad neemt,” schreef ze in haar notitieboek, “zou nooit cartograaf worden. Hooguit een zeer kortstondige toerist.”"
+   }
+  },
+  {
+   "id": "amber",
+   "page": 38,
+   "where": "text",
+   "icon": "eye",
+   "name": {
+    "en": "The Amber Eye",
+    "nl": "Het barnstenen oog"
+   },
+   "riddle": {
+    "en": "By the river, the smallest face is the most awake.",
+    "nl": "Aan de rivier is het kleinste gezicht het wakkerst."
+   },
+   "lore": {
+    "en": "The faces along the Black River are the bell-keepers, one for every thirty years. Each is smaller than the one before, because the mountain remembers each of them a little less. The last face still has its eyes open. It is not yet sure it has been forgotten.",
+    "nl": "De gezichten langs de Zwarte Rivier zijn de klokwachters, één voor elke dertig jaar. Elk is kleiner dan het vorige, omdat de berg zich ieder van hen een beetje minder herinnert. Het laatste gezicht heeft zijn ogen nog open. Het weet nog niet zeker of het vergeten is."
+   }
+  },
+  {
+   "id": "stars",
+   "page": 49,
+   "where": "text",
+   "icon": "star",
+   "name": {
+    "en": "A Circle of Stars",
+    "nl": "Een kring van sterren"
+   },
+   "riddle": {
+    "en": "Fall for the oldest trick in the book. Then look up.",
+    "nl": "Loop in de oudste val uit het boek. Kijk dan omhoog."
+   },
+   "lore": {
+    "en": "From the bottom of the well in Low Veyra you can see the stars even at noon. Pim says this is because the well is very deep. The truth is that the sky above the valley is part of the dream, and the well is the one place the mountain forgot to paint over.",
+    "nl": "Vanaf de bodem van de put in Laag-Veyra zie je zelfs midden op de dag de sterren. Pim zegt dat dat komt doordat de put zo diep is. De waarheid is dat de hemel boven het dal deel uitmaakt van de droom, en dat de put de enige plek is die de berg vergat over te schilderen."
+   }
+  },
+  {
+   "id": "ink",
+   "page": 59,
+   "where": "text",
+   "icon": "quill",
+   "name": {
+    "en": "Tomorrow’s Ink",
+    "nl": "De inkt van morgen"
+   },
+   "riddle": {
+    "en": "A letter from the future should still be wet.",
+    "nl": "Een brief uit de toekomst hoort nog nat te zijn."
+   },
+   "lore": {
+    "en": "The scriptorium makes its ink from the soot of the Hall of Lanterns, where the flames burn in both directions of time. A letter written in it is dry before it is written. Ines uses it for all her correspondence, which is why she is never late and always slightly smug.",
+    "nl": "Het scriptorium maakt zijn inkt van het roet uit de Lantaarnzaal, waar de vlammen in beide richtingen van de tijd branden. Een brief die ermee wordt geschreven, is droog voordat hij geschreven is. Ines gebruikt hem voor al haar correspondentie, en daarom is ze nooit te laat en altijd een tikje zelfvoldaan."
+   }
+  },
+  {
+   "id": "moon",
+   "page": null,
+   "scene": "mountain",
+   "where": "scene",
+   "x": 24,
+   "y": 12,
+   "r": 11,
+   "icon": "moon",
+   "name": {
+    "en": "The Painted Moon",
+    "nl": "De geschilderde maan"
+   },
+   "riddle": {
+    "en": "At the foot of the mountain, lift the page and look up. Someone missed a spot.",
+    "nl": "Til aan de voet van de berg de bladzijde op en kijk omhoog. Iemand heeft een plekje overgeslagen."
+   },
+   "lore": {
+    "en": "Look long enough and you will see the brushstrokes. The moon over Mount Veyra is a painting, touched up every night by the mountain in its sleep. It gets the phases wrong on purpose, to see if anyone is paying attention. You are.",
+    "nl": "Kijk lang genoeg en je ziet de penseelstreken. De maan boven de Veyra is een schilderij, dat de berg elke nacht in zijn slaap bijwerkt. Hij schildert de schijngestalten expres verkeerd, om te zien of er iemand oplet. Jij wel."
+   }
+  },
+  {
+   "id": "rosewindow",
+   "page": null,
+   "scene": "library",
+   "where": "scene",
+   "x": 60,
+   "y": 26,
+   "r": 12,
+   "icon": "window",
+   "name": {
+    "en": "The Rose Window",
+    "nl": "Het roosvenster"
+   },
+   "riddle": {
+    "en": "In the scriptorium, lift the page and look at the moon from the inside.",
+    "nl": "Til in het scriptorium de bladzijde op en bekijk de maan van binnenuit."
+   },
+   "lore": {
+    "en": "The scriptorium’s window looks out on the same moon as the valley, only from the inside. The monks say that on clear nights you can watch the mountain dreaming through it: a village, a well, a boy with a tray of blank maps, and a traveller on a path, reading.",
+    "nl": "Het raam van het scriptorium kijkt uit op dezelfde maan als het dal, alleen van binnenuit. De monniken zeggen dat je er op heldere nachten de berg doorheen kunt zien dromen: een dorp, een put, een jongen met een bak vol blanco kaarten om zijn nek, en een reiziger op een pad, lezend."
+   }
+  },
+  {
+   "id": "compass",
+   "page": null,
+   "where": "ui",
+   "icon": "compass",
+   "name": {
+    "en": "The Wayward Compass",
+    "nl": "Het Wayward-kompas"
+   },
+   "riddle": {
+    "en": "The emblem above the library is patient. Knock seven times.",
+    "nl": "Het embleem boven de bibliotheek is geduldig. Klop zeven keer."
+   },
+   "lore": {
+    "en": "A Wayward compass does not point north. It points to whoever is holding the book. Ines carried one for forty years and claimed it had never once been wrong about where she was.",
+    "nl": "Een Wayward-kompas wijst niet naar het noorden. Het wijst naar wie het boek vasthoudt. Ines had er veertig jaar lang een bij zich en beweerde dat het zich geen enkele keer had vergist in waar ze was."
+   }
+  }
+ ],
+ "secret": {
+  "title": {
+   "en": "The Margin",
+   "nl": "De marge"
+  },
+  "label": {
+   "en": "Page 0",
+   "nl": "Bladzijde 0"
+  },
+  "text": {
+   "en": [
+    "Every map has a margin: the strip at the edge where the cartographer writes what doesn’t fit. This is the margin of this book, and you are not supposed to be here. Well done.",
+    "“If you are reading this,” writes Ines, in the small brown letters you know very well, “you have looked into every corner of my mountain, including the ones I painted. I owe you the truth, so here it is, briefly. The mountain is not the only dreamer. Far to the east there is a sea that dreams of salt, and a city that has been asleep for four hundred years and has started to toss and turn.",
+    "“I’ve left you a map. It is blank, of course. It’s the accurate version.”",
+    "Pressed flat between this page and the cover, where no page should be, is a single grain of salt."
+   ],
+   "nl": [
+    "Elke kaart heeft een marge: de strook langs de rand waar de cartograaf opschrijft wat er niet op past. Dit is de marge van dit boek, en je hoort hier niet te zijn. Goed gedaan.",
+    "“Als je dit leest,” schrijft Ines, in de kleine bruine letters die je maar al te goed kent, “dan heb je in elke hoek van mijn berg gekeken, ook in de hoeken die ik heb geschilderd. Ik ben je de waarheid schuldig, dus hier komt ze, in het kort. De berg is niet de enige dromer. Ver naar het oosten ligt een zee die van zout droomt, en een stad die al vierhonderd jaar slaapt en is gaan woelen.",
+    "“Ik heb een kaart voor je achtergelaten. Hij is blanco, uiteraard. Het is de nauwkeurige versie.”",
+    "Platgedrukt tussen deze bladzijde en het omslag, waar geen bladzijde hoort te zitten, ligt één enkele zoutkorrel."
+   ]
+  },
+  "sign": {
+   "en": "The Veyra Cycle continues in Book II.",
+   "nl": "De Veyra-cyclus gaat verder in Boek II."
+  }
+ }
+}

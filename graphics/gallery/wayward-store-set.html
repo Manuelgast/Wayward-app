@@ -1,0 +1,64 @@
+<title>Wayward Store Set</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{color-scheme:dark;--bg:#0F0D1E;--panel:#171330;--ink:#F4EAD5;--muted:#B7AECB;--gold:#E8B85A;--line:rgba(255,255,255,.12);
+    --serif:'Cormorant Garamond',Georgia,serif;--sans:'Manrope',system-ui,sans-serif}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);padding:0 16px}
+  main{max-width:1180px;margin:0 auto;padding-block:32px 64px;display:flex;flex-direction:column;gap:28px}
+  header{display:flex;flex-direction:column;gap:6px}
+  .eyebrow{margin:0;font-size:11px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+  h1{margin:0;font-family:var(--serif);font-weight:700;font-size:40px;line-height:1.05}
+  .sub{margin:0;color:var(--muted);font-size:14px;line-height:1.5;max-width:70ch}
+  .tabs{display:flex;gap:4px;padding:4px;border-radius:999px;background:var(--panel);border:1px solid var(--line);width:max-content}
+  .tabs button{font:inherit;font-size:13px;font-weight:800;letter-spacing:.06em;color:var(--muted);background:none;border:0;border-radius:999px;padding:8px 16px;cursor:pointer}
+  .tabs button[aria-pressed="true"]{background:linear-gradient(180deg,#FDE7A8,#D9A248);color:#2A1A05}
+  .tabs button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  h2{margin:0;font-family:var(--serif);font-weight:700;font-size:26px}
+  .feature{border-radius:14px;overflow:hidden;border:1px solid var(--line);max-width:760px}
+  .feature img{display:block;width:100%;height:auto}
+  .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+  @media (max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  figure{margin:0;display:flex;flex-direction:column;gap:8px}
+  figure img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line)}
+  figcaption{font-size:12px;color:var(--muted);line-height:1.4}
+  figcaption b{color:var(--ink);font-weight:700}
+  .note{font-size:13px;color:var(--muted);line-height:1.5;border-top:1px solid var(--line);padding-top:16px}
+</style>
+<main>
+  <header>
+    <p class="eyebrow">Wayward · Google Play</p>
+    <h1>Store-beelden ter goedkeuring</h1>
+    <p class="sub">8 schermafbeeldingen per taal en de feature graphic. Alles komt uit de echte app (Play-build 1.0.3, bijgewerkt 28-09 na tekstronde 2). Elke kop is een zin in de toon van het boek, zonder badges of uitroeptekens.</p>
+  </header>
+  <div class="tabs" role="group" aria-label="Taal">
+    <button type="button" data-l="en" aria-pressed="true">English</button>
+    <button type="button" data-l="nl" aria-pressed="false">Nederlands</button>
+  </div>
+  <section style="display:flex;flex-direction:column;gap:12px">
+    <h2>Feature graphic · 1024 × 500</h2>
+    <div class="feature"><img src="img/feature.jpg" alt="Feature graphic: het boek aan de voet van de berg, in de mist, met het woord Wayward"></div>
+  </section>
+  <section style="display:flex;flex-direction:column;gap:12px">
+    <h2>Telefoon · 1080 × 1920</h2>
+    <div class="grid" id="grid"></div>
+  </section>
+  <p class="note">Na goedkeuring gaan deze beelden in de store-vermelding zodra het Play-account weer actief is. Past de Wayward-chat de tekst in de app nog aan, dan maak ik de schermen in één stap opnieuw.</p>
+</main>
+<script>
+  const SHOTS = [
+    ['1-mist', 'Mist die uit het scherm komt'], ['2-book', 'Het oude boek in zijn omgeving'], ['3-choice', 'Een keuzebladzijde'],
+    ['4-scene', 'Interactieve scène: het klokkentouw'], ['5-map', 'De padenkaart'], ['6-ending', 'Een einde'],
+    ['7-relics', 'Een relikwie'], ['8-omen', 'Een omen: ogen en een tentakel']
+  ];
+  const grid = document.getElementById('grid');
+  function render(l) {
+    grid.innerHTML = SHOTS.map(([f, t], i) => `<figure><img src="img/${l}-phone-${f}.jpg" alt="${t}" loading="lazy"><figcaption><b>${i + 1}.</b> ${t}</figcaption></figure>`).join('');
+    document.querySelectorAll('.tabs button').forEach(b => b.setAttribute('aria-pressed', b.dataset.l === l ? 'true' : 'false'));
+    try { localStorage.setItem('ww-lang', l); } catch (e) {}
+  }
+  document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => render(b.dataset.l)));
+  let start = 'en'; try { start = localStorage.getItem('ww-lang') || 'en'; } catch (e) {}
+  render(start);
+</script>

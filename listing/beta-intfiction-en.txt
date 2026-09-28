@@ -1,0 +1,18 @@
+Beta readers wanted: Wayward, an illustrated gamebook for Android (49 pages, 19 endings)
+
+Hi all. I'm Manuel, and I've been building Wayward: a gamebook for phones that tries to feel like reading an old leather-bound book rather than tapping through menus. You turn pages by dragging the corner, the text appears at reading pace, and a few scenes let you reach into the world around the book (wiping a misted window, pulling a bell rope).
+
+Book I, The Hollow Mountain, has 49 pages and 19 endings, two of them true endings. It's a classic branching structure, closer to Fighting Fantasy and Choose Your Own Adventure than to parser IF, in English and Dutch.
+
+It's in an open beta on Google Play: [BETALINK]
+Android only for now: tap "Become a tester", then install it from the Play Store.
+
+What I'd love to hear, as bluntly as you like:
+- Do the choices feel meaningful, or are some of them fake?
+- Where does the pace drag?
+- Endings that feel unearned or abrupt
+- Anything that breaks, typos, awkward English
+
+There's a "Give feedback" button in Settings and on every ending screen, or just reply here. I'll read everything and post what I changed.
+
+Thanks!

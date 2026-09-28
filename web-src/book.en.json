@@ -1,0 +1,927 @@
+{
+ "id": "hollow-mountain",
+ "title": "The Hollow Mountain",
+ "series": "The Veyra Cycle · Book I",
+ "imprint": "A Wayward Original",
+ "tagline": "Your mentor vanished inside a mountain. Her last words to you: don’t follow me.",
+ "warning": "Don’t read this book from start to finish. At the end of each page, you decide what happens next. Some choices lead to glory. Others, to the bottom of a well.",
+ "start": 1,
+ "scenes": {
+  "mountain": {
+   "title": "The foot of Mount Veyra",
+   "focus": "50% 58%"
+  },
+  "village": {
+   "title": "Low Veyra at twilight",
+   "focus": "50% 55%"
+  },
+  "procession": {
+   "title": "The lantern procession",
+   "focus": "50% 50%"
+  },
+  "ridge": {
+   "title": "The Needle Ridge",
+   "focus": "50% 50%"
+  },
+  "river": {
+   "title": "The Black River",
+   "focus": "50% 55%"
+  },
+  "lake": {
+   "title": "The lake of sleeping boats",
+   "focus": "50% 55%"
+  },
+  "chamber": {
+   "title": "The Compass Chamber",
+   "focus": "50% 55%"
+  },
+  "lanternhall": {
+   "title": "The Hall of Lanterns",
+   "focus": "50% 55%"
+  },
+  "stairs": {
+   "title": "Nine hundred steps",
+   "focus": "50% 45%"
+  },
+  "bell": {
+   "title": "The bell courtyard",
+   "focus": "50% 50%"
+  },
+  "library": {
+   "title": "The scriptorium",
+   "focus": "50% 55%"
+  },
+  "heart": {
+   "title": "The Heart of the Mountain",
+   "focus": "50% 60%"
+  },
+  "dawn": {
+   "title": "Morning above the clouds",
+   "focus": "50% 55%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Prologue",
+   "scene": "mountain",
+   "text": [
+    "The letter in your coat is three weeks old. It says only: “The mountain is hollow. Don’t follow me.” It is signed by Ines Arden, royal cartographer, the woman who taught you everything you know about maps, including that the best ones leave things out. You were her apprentice for four years. The morning after the letter came, her desk at the map office was empty and her lantern was gone.",
+    "You followed her anyway. Mount Veyra does not appear on any map you own, which is how you knew you had found it. Now the sun is going down behind it. At its foot a cave breathes warm air that smells of candle smoke. Beside it, an old stairway climbs into the fog. Below you, in the valley, the windows of a village are lighting up one by one."
+   ],
+   "choices": [
+    {
+     "text": "If you light your lantern and step into the cave,",
+     "to": 16
+    },
+    {
+     "text": "If you climb the stairway into the fog,",
+     "to": 22
+    },
+    {
+     "text": "If you go down to the village to ask about Ines first,",
+     "to": 6
+    }
+   ]
+  },
+  "6": {
+   "chapter": "Low Veyra",
+   "scene": "village",
+   "text": [
+    "Low Veyra is the friendliest village you have ever visited, which makes you suspicious at once. Everyone smiles. Nobody has heard of a cartographer called Ines. And everyone, you notice, carries the same brass lantern: the exact model Ines carries, down to [[dent|the dent in the handle]].",
+    "At the inn, Marta the innkeeper offers you her last room “for as long as you need it.” Outside, a boy called Pim is selling maps of the mountain from a tray. When you unfold one, it is [[blankmap|completely blank]]. “That’s the accurate version,” says Pim. Then he nods at the old well-house across the square, as if it were a shop he could recommend."
+   ],
+   "choices": [
+    {
+     "text": "If you take Marta’s room and wait for morning,",
+     "to": 9
+    },
+    {
+     "text": "If you buy the blank map and climb back up tonight,",
+     "to": 12
+    },
+    {
+     "text": "If you follow Pim to the well-house,",
+     "to": 49
+    }
+   ]
+  },
+  "9": {
+   "chapter": "The Inn",
+   "scene": "procession",
+   "text": [
+    "Marta brings you soup and a candle and does not ask why you have come, which is the first thing in Low Veyra that feels honest. Your room looks out over the square. You mean to stay awake and watch, and for a while you do.",
+    "At midnight a bell rings somewhere high on the mountain. Once. Then, one by one, every door in Low Veyra opens.",
+    "From your window you watch the villagers step out in their nightclothes, eyes closed, lanterns lit. Marta is among them. They walk in a silent line up the valley towards the mountain, and not one of them trips on the cobbles."
+   ],
+   "choices": [
+    {
+     "text": "If you pull on your boots and follow them,",
+     "to": 17
+    },
+    {
+     "text": "If you lock your door and go back to bed,",
+     "to": 11
+    }
+   ]
+  },
+  "11": {
+   "chapter": "An ending",
+   "scene": "village",
+   "text": [
+    "You sleep better than you have in years. In the morning Marta serves you porridge and asks what brought you to Low Veyra. You open your mouth to tell her, and find you can’t quite remember.",
+    "It doesn’t seem important. The village needs someone good with maps, and you are, it turns out, very good with maps. Years later a nervous stranger arrives asking about a missing apprentice. You sell them a map of the mountain. It is completely blank. It is also, you assure them, the accurate version."
+   ],
+   "ending": {
+    "no": "I",
+    "title": "A Quiet Village",
+    "kind": "strange",
+    "epilogue": "You sleep well every night. The bell makes sure of it.",
+    "hint": "Some doors are best left locked. Or are they?"
+   }
+  },
+  "12": {
+   "chapter": "The Blank Map",
+   "scene": "mountain",
+   "text": [
+    "Pim charges you one copper coin and makes you promise not to ask for a refund. Halfway up the valley, under the moon, the blank map in your hand begins to fill.",
+    "A line appears, then another: thin, confident strokes in brown ink, drawn from nowhere. You know that handwriting. You have spent four years copying it. Ines is drawing a route across the mountain’s eastern face, along a ridge you cannot see from here, marked with a single word: “Safe.” The ink is still wet."
+   ],
+   "choices": [
+    {
+     "text": "If you follow the route she is drawing,",
+     "to": 19
+    },
+    {
+     "text": "If you fold the map away and head for the cave instead,",
+     "to": 16
+    }
+   ]
+  },
+  "14": {
+   "chapter": "The Black River",
+   "scene": "river",
+   "text": [
+    "Your lantern makes a small room of light around you, and the tunnel walks you downhill for what feels like an hour. Then it narrows, and opens into a hall so vast your lantern can’t find the ceiling. A river slides past, black and silent. Moored at the bank is a small boat with two letters carved into the bow: [[ia|I.A.]] Ines never could leave a thing unsigned. The boat’s rope is dripping, as if it has only just come back.",
+    "Along the bank, faces have been cut into the rock, the first one taller than a house, each one after it a little smaller. Every one of them has its eyes closed. Every one except the last."
+   ],
+   "choices": [
+    {
+     "text": "If you untie Ines’s boat and let the river carry you,",
+     "to": 31
+    },
+    {
+     "text": "If you follow the carved faces deeper on foot,",
+     "to": 38
+    }
+   ]
+  },
+  "16": {
+   "chapter": "The Cave Mouth",
+   "scene": "mountain",
+   "text": [
+    "Warm air rolls out of the cave like breath from a sleeping animal. Just inside the entrance the rock has been polished smooth by hands, and on the smooth part there are names: hundreds of them, scratched with knives and nails and hairpins, going back [[oldestname|further than any alphabet you know]].",
+    "The newest one says INES ARDEN, in a hand you would know anywhere. Beneath it there is exactly enough room for one more name."
+   ],
+   "choices": [
+    {
+     "text": "If you go on into the dark,",
+     "to": 14
+    },
+    {
+     "text": "If you scratch your own name beneath hers,",
+     "to": 20
+    }
+   ]
+  },
+  "17": {
+   "chapter": "The Lantern Procession",
+   "scene": "procession",
+   "text": [
+    "You follow the lights up the valley at a careful distance. The sleepers walk without hurrying and without stopping, and when the path forks they all take the same fork without a word.",
+    "At the foot of the mountain there is a door where, this afternoon, there was only rock. Its outline glows faintly gold. One by one the villagers walk through it, lanterns first. Marta is the last in line. As she passes, her hand brushes yours, and it is as cold as the mountain."
+   ],
+   "choices": [
+    {
+     "text": "If you slip through the door behind her,",
+     "to": 25
+    },
+    {
+     "text": "If you grab Marta’s arm and wake her,",
+     "to": 30
+    }
+   ]
+  },
+  "19": {
+   "chapter": "The Needle Ridge",
+   "scene": "ridge",
+   "text": [
+    "The route leads you onto a ridge no wider than a garden wall, with a thousand feet of cloud on either side. The wind has opinions about your balance.",
+    "The map keeps drawing, always one step ahead of you. Then the line does something no sensible line would do: it leaves the ridge and heads straight out across empty air, towards a lit window in the mountain’s side. Beside the ridge, a perfectly good ledge curves the long way round, solid and wide and obvious."
+   ],
+   "choices": [
+    {
+     "text": "If you step where the map says, onto nothing,",
+     "to": 27
+    },
+    {
+     "text": "If you trust your eyes and take the solid ledge,",
+     "to": 24
+    }
+   ]
+  },
+  "20": {
+   "chapter": "An ending",
+   "scene": "mountain",
+   "text": [
+    "Your name takes longer to scratch than you expect, and it comes out crooked. Still, there it is: proof that you came this far. You stand back and admire it. Somewhere deep in the cave, something sighs.",
+    "You walk home in the morning feeling oddly finished. For the rest of your life you tell the story at dinners, and it is a good story, and everyone always asks the same question at the end: “But what was inside?” You never have an answer. Neither does the name on the wall."
+   ],
+   "ending": {
+    "no": "V",
+    "title": "Proof of Visit",
+    "kind": "strange",
+    "epilogue": "You were here. That is all anyone will ever know.",
+    "hint": "Leave your mark before you go in."
+   }
+  },
+  "22": {
+   "chapter": "Nine Hundred Steps",
+   "scene": "bell",
+   "moment": {
+    "line": "Through the fog, the figure turns towards you. It is holding Ines’s lantern.",
+    "seconds": 10,
+    "default": 52,
+    "head": "Choose before the fog closes",
+    "sub": "Wait too long, and the fog chooses for you.",
+    "defaultLabel": "THE FOG’S CHOICE",
+    "timeout": "The fog chooses for you…"
+   },
+   "text": [
+    "The stairway goes on longer than the mountain is tall. You stop counting at nine hundred. The fog closes in behind you, until there is only the next step, and the one after that.",
+    "At the top, a monastery lies in ruins. In its courtyard hangs a bronze bell, green with age, but [[rope|its rope is new]]. Through the fog, a figure is watching you. It is holding Ines’s lantern. You would know that dented handle anywhere."
+   ],
+   "choices": [
+    {
+     "text": "If you ring the bell,",
+     "short": "Ring the bell",
+     "to": 47
+    },
+    {
+     "text": "If you follow the figure into the fog,",
+     "short": "Follow the figure into the fog",
+     "to": 52
+    }
+   ]
+  },
+  "24": {
+   "chapter": "An ending",
+   "scene": "ridge",
+   "text": [
+    "The ledge is exactly as solid as it looks for eleven steps. On the twelfth it turns out to have been painted: a very good painting of a ledge, on a sheet of canvas stretched over the drop.",
+    "You fall for a long time. Long enough to notice that the artist [[signature|signed it]], in the corner, in small brown letters you know very well."
+   ],
+   "ending": {
+    "no": "III",
+    "title": "Common Sense",
+    "kind": "bad",
+    "epilogue": "The sensible path was the one someone painted for you.",
+    "hint": "On the ridge, the obvious way down is the obvious way down."
+   }
+  },
+  "25": {
+   "chapter": "The Hall of Lanterns",
+   "scene": "lanternhall",
+   "text": [
+    "Behind the door is a hall with no end in sight. Its walls are honeycombed with niches, and in nearly every niche burns a lantern. The villagers place theirs in empty niches, turn around with their eyes still closed, and walk home.",
+    "Each lantern has a small brass tag. MARTA OSK. PIM OSK. A whole village, burning quietly in a row. Further in, the tags grow older, then foreign, then unreadable. And in the niche nearest your hand, already lit, is a lantern with your name on it."
+   ],
+   "choices": [
+    {
+     "text": "If you take the lantern with your name,",
+     "to": 33
+    },
+    {
+     "text": "If you search the hall for Ines’s lantern,",
+     "to": 28
+    },
+    {
+     "text": "If you blow out the lantern with your name,",
+     "to": 36
+    }
+   ]
+  },
+  "27": {
+   "chapter": "The Invisible Bridge",
+   "scene": "ridge",
+   "text": [
+    "You step off the ridge. For one terrible heartbeat there is nothing under your boot. Then there is something: a bridge that exists exactly as far as the ink has reached, and not an inch further.",
+    "You cross the sky one wet line at a time. When you reach the lit window, the map in your hand stops drawing. In the corner, in the same handwriting, a note has appeared: “Good. You still listen.”"
+   ],
+   "choices": [
+    {
+     "text": "If you climb through the window,",
+     "to": 35
+    }
+   ]
+  },
+  "28": {
+   "chapter": "Other People’s Lanterns",
+   "scene": "lanternhall",
+   "text": [
+    "It takes an hour to find hers. INES ARDEN, the tag says, and the lantern is cold. Not blown out: the wick is new and has never been lit. Whatever Ines is doing inside this mountain, she has not given it her light.",
+    "When you lift her lantern, the hall goes quiet in a way that halls should not be able to. Somewhere below, very far down, something turns towards you."
+   ],
+   "choices": [
+    {
+     "text": "If you carry Ines’s cold lantern down towards whatever turned,",
+     "to": 41
+    },
+    {
+     "text": "If you put it back and take your own lantern instead,",
+     "to": 33
+    }
+   ]
+  },
+  "30": {
+   "chapter": "An ending",
+   "scene": "village",
+   "text": [
+    "Marta wakes with a gasp, and so does everyone else: all at once, the whole line, standing barefoot on a mountain in the middle of the night. The golden door fades back into rock. Nobody says anything. It is the most embarrassed silence you have ever heard.",
+    "By sunrise you have been fed, thanked, and walked to the edge of the valley by a committee of very polite people. They give you a parting gift: a map of the mountain, completely blank. “Safe travels,” says Marta, and means it, and does not let go of your elbow until you are over the border."
+   ],
+   "ending": {
+    "no": "VI",
+    "title": "Politely Removed",
+    "kind": "strange",
+    "epilogue": "Low Veyra wishes you well. From a distance.",
+    "hint": "Never wake a sleepwalker. Unless you want to see what happens."
+   }
+  },
+  "31": {
+   "chapter": "An ending",
+   "scene": "lake",
+   "text": [
+    "The river carries you for hours, or minutes. Down here it is hard to tell. It delivers you to a lake lit from below, where a hundred boats drift in slow circles, each carrying a sleeping traveller with a lantern at their feet.",
+    "You find Ines in one of them, smiling in her sleep. You mean to wake her. You only sit down for a moment first."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "The River Remembers",
+    "kind": "strange",
+    "epilogue": "The lake keeps everyone who stops to rest. It is very restful.",
+    "hint": "Her boat knows the way. The question is where."
+   }
+  },
+  "33": {
+   "chapter": "Your Lantern",
+   "scene": "lanternhall",
+   "text": [
+    "The lantern is warm, as if someone has been carrying it for you. When you lift it from the niche the flame leans, not with the draught but against it, pointing down a side passage like a compass needle that has found its north.",
+    "At the same time you feel the faintest pull upward, from a narrow chimney in the ceiling where cold night air and the smell of old paper drift down."
+   ],
+   "choices": [
+    {
+     "text": "If you let the lantern lead you down,",
+     "to": 41
+    },
+    {
+     "text": "If you climb the chimney towards the smell of paper,",
+     "to": 43
+    }
+   ]
+  },
+  "35": {
+   "chapter": "The High Window",
+   "scene": "library",
+   "text": [
+    "You tumble through the window into a room full of maps. They cover the walls, the tables and the floor; they hang from the rafters like laundry. Monks sleep at every desk with their cheeks on their work.",
+    "In the middle of the room, on a desk nobody is sitting at, a quill is writing on its own. You pick yourself up, dust off the sky, and walk over to see what it is drawing."
+   ],
+   "choices": [
+    {
+     "text": "If you look,",
+     "to": 43
+    }
+   ]
+  },
+  "36": {
+   "chapter": "An ending",
+   "scene": "dawn",
+   "text": [
+    "You blow the flame out. For a moment nothing happens. Then you notice you can’t remember your mother’s face, and then that you can’t remember needing to.",
+    "You walk out of the mountain at dawn, light as a feather and twice as unrecorded. No register holds your name. No map marks where you have been. It is, you decide, standing in the sunrise with nowhere to be, the most freedom anyone has ever had. Nobody is there to disagree."
+   ],
+   "ending": {
+    "no": "VII",
+    "title": "Off the Map",
+    "kind": "strange",
+    "epilogue": "Nobody will ever find you. Nobody will ever look.",
+    "hint": "What happens to a name when its light goes out?"
+   }
+  },
+  "38": {
+   "chapter": "The Faces",
+   "scene": "river",
+   "text": [
+    "You follow the carved faces along the bank. They grow smaller as you go, older and more worn, until the last one is no bigger than your own. Its eyes are open, and they are [[amber|made of amber]], and they follow you.",
+    "“Another one,” says the face, in a voice like gravel settling. “Tell me quickly, before the river hears. Are you a cartographer? Or are you a map?”"
+   ],
+   "choices": [
+    {
+     "text": "If you answer, “A cartographer,”",
+     "to": 42
+    },
+    {
+     "text": "If you answer, “A map,”",
+     "to": 45
+    }
+   ]
+  },
+  "41": {
+   "chapter": "The Lantern Road",
+   "scene": "heart",
+   "text": [
+    "Down you go, lantern first, by a stair cut in spirals, round and round, until the wall falls away on one side and there is only a rope railing and the dark.",
+    "Then the dark ends. Below you lies a hollow so large it has weather. At the bottom, filling the floor of the mountain like a lake, is a closed eye. Light leaks from under the lid. Someone is standing at its edge, holding a pen as tall as a spear. Even from this height you know the set of those shoulders: Ines."
+   ],
+   "choices": [
+    {
+     "text": "If you go down to meet her,",
+     "to": 80
+    }
+   ]
+  },
+  "42": {
+   "chapter": "The Compass Chamber",
+   "scene": "chamber",
+   "text": [
+    "“Good answer,” says the face, and swings open like a door. Behind it is a round chamber carved like the inside of a compass, and at its centre, bent over a table of maps, is Ines: thinner, dustier, and furious to see you.",
+    "“I told you not to follow me,” she says. Then she looks at your hands and holds out a pen nearly as tall as she is. “Good. I need steadier ones.” The map on the table is of the mountain. The ink is still wet."
+   ],
+   "choices": [
+    {
+     "text": "If you take the pen and start drawing,",
+     "to": 50
+    },
+    {
+     "text": "If you ask what the map is for first,",
+     "to": 53
+    }
+   ]
+  },
+  "43": {
+   "chapter": "The Scriptorium",
+   "scene": "library",
+   "text": [
+    "You are high on the mountain, in the scriptorium of an old monastery. Every map here is of the same valley, and every one is dated. Harvests. Floods. A wedding. A fire in the bakery. The dates begin a hundred years ago and go on for another hundred. Monks doze at every desk but one. On that one a quill is writing by itself: the village below, labelled LOW VEYRA, as it will be next Tuesday.",
+    "Beside it, weighed down by an inkpot, lies a letter addressed to you in Ines’s handwriting. It is dated tomorrow. Across the room, in a chair grander than the others, an old abbess snores."
+   ],
+   "choices": [
+    {
+     "text": "If you read the letter,",
+     "to": 59
+    },
+    {
+     "text": "If you set fire to the maps,",
+     "to": 62
+    },
+    {
+     "text": "If you wake the abbess,",
+     "to": 65
+    }
+   ]
+  },
+  "45": {
+   "chapter": "The Chute",
+   "scene": "lake",
+   "text": [
+    "The face laughs, which is a terrible sound from a face, and the floor tips you into a smooth stone chute. You slide for a long time in the dark, gathering speed and opinions.",
+    "You shoot out into cold water. When you surface you are in an underground lake lit from below, among a hundred drifting boats. In each boat a traveller sleeps with a lantern at their feet. One boat nearby is empty. Its lantern is lit. The tag on it has your name."
+   ],
+   "choices": [
+    {
+     "text": "If you climb into the empty boat,",
+     "to": 55
+    },
+    {
+     "text": "If you swim for the lights on the far shore,",
+     "to": 58
+    }
+   ]
+  },
+  "47": {
+   "chapter": "An ending",
+   "scene": "bell",
+   "text": [
+    "The bell’s voice rolls down the mountain like weather, and the air goes clear. As the last note fades, the bell-keeper is at your elbow: an old monk with a lantern, weeping with relief.",
+    "“Thirty years,” he says, closing your fingers around the rope. “Someone must ring it every night, or the mountain wakes.” By the time you think to ask about Ines, or about what happens if the mountain wakes, he is halfway down the stairs, whistling."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "The Keeper of the Bell",
+    "kind": "strange",
+    "epilogue": "In thirty years, you too will learn to whistle.",
+    "hint": "A new rope on an old bell is waiting for new hands."
+   }
+  },
+  "49": {
+   "chapter": "An ending",
+   "scene": "village",
+   "text": [
+    "Pim leads you into the well-house, points down the well and says, “Shortcut.” You lean over to look. He is, in fairness, a very small boy, and you are, in fairness, leaning a very long way.",
+    "The well is dry, deep and surprisingly comfortable. From the bottom you can see [[stars|a perfect circle of stars]]. In the morning Pim lowers down a blank map and a sandwich, which you feel is the right order of priorities. The book did warn you."
+   ],
+   "ending": {
+    "no": "VIII",
+    "title": "The Bottom of a Well",
+    "kind": "bad",
+    "epilogue": "In Low Veyra, only the well is what it looks like.",
+    "hint": "Read the warning on the cover again."
+   }
+  },
+  "50": {
+   "chapter": "An ending",
+   "scene": "chamber",
+   "text": [
+    "You take the pen. The first line you draw is shaky, and the mountain shifts very slightly to match it. The second is better. By the tenth you have stopped noticing that the lines appear a moment before your hand arrives.",
+    "Ines nods, satisfied, and leaves you to it. You don’t see where she goes. The map is still being drawn, and your name is already on it: in the legend, under “Features”."
+   ],
+   "ending": {
+    "no": "IX",
+    "title": "The Map of Stone",
+    "kind": "strange",
+    "epilogue": "You became a very fine cartographer. You are also, now, a small hill.",
+    "hint": "Never take a pen before you know what it writes."
+   }
+  },
+  "52": {
+   "chapter": "The Figure in the Fog",
+   "scene": "stairs",
+   "text": [
+    "You follow the lantern off the stairs and along a path that clings to the monastery wall, always twenty steps behind. When you hurry, the figure hurries. When you stop, it waits.",
+    "At a low door marked with a compass rose the figure finally stops, hangs Ines’s lantern on a hook beside it, and walks straight through the wall without opening anything. The door is ajar. The lantern swings gently, as if inviting someone to take it and go the other way: down the cliff path, back towards the valley."
+   ],
+   "choices": [
+    {
+     "text": "If you go through the door,",
+     "to": 43
+    },
+    {
+     "text": "If you take the lantern and follow the cliff path down,",
+     "to": 56
+    }
+   ]
+  },
+  "53": {
+   "chapter": "What the Map Is For",
+   "scene": "chamber",
+   "text": [
+    "Ines sighs like someone who has been waiting to be asked. “It isn’t a map of the mountain,” she says. “The mountain is a map. Of the valley. Whatever is drawn here happens down there. The monks ring a bell every night to keep it asleep, and have done for centuries, so it can’t draw anything they don’t like.”",
+    "She taps a small cluster of houses: Low Veyra. “For three weeks I’ve been drawing them good weather. Fewer floods. A better harvest.” She says it proudly, the way the monks must once have said it. “Now you’re here, we can do so much more.”"
+   ],
+   "choices": [
+    {
+     "text": "If you help her draw the village a better future,",
+     "to": 57
+    },
+    {
+     "text": "If you draw a door out of the mountain, for both of you,",
+     "to": 61
+    },
+    {
+     "text": "If you tear the map in half,",
+     "to": 64
+    }
+   ]
+  },
+  "55": {
+   "chapter": "An ending",
+   "scene": "lake",
+   "text": [
+    "The boat rocks as you climb in, then settles, as if it has been waiting for your exact weight. The lantern is warm. The blanket is warm. The water whispers something about how far you have come and how little you still need to do.",
+    "You fall asleep in the middle of deciding whether to. Somewhere above you, a village sleeps a little more soundly, having one more light to borrow."
+   ],
+   "ending": {
+    "no": "X",
+    "title": "The Sleeping Passenger",
+    "kind": "strange",
+    "epilogue": "It was your boat long before it was your idea.",
+    "hint": "An empty boat with your name on it is not an invitation."
+   }
+  },
+  "56": {
+   "chapter": "An ending",
+   "scene": "dawn",
+   "text": [
+    "You take the lantern down the cliff path, over roots and loose stone, until the path gives out at a ledge above the valley. Dawn is coming. Below you, the village of Low Veyra is waking up.",
+    "On its only road, someone who looks exactly like you is walking towards the mountain, a letter in their coat. You open your mouth to shout a warning. What comes out, in your own voice, carried perfectly by the morning air, is: “Don’t follow me.”"
+   ],
+   "ending": {
+    "no": "XI",
+    "title": "The Second Letter",
+    "kind": "strange",
+    "epilogue": "They will follow anyway. You did.",
+    "hint": "Take what the figure leaves behind."
+   }
+  },
+  "57": {
+   "chapter": "An ending",
+   "scene": "village",
+   "text": [
+    "Together you draw Low Veyra sunshine, gentle rain, a bumper harvest and a fine new bridge. You draw the bakery never catching fire. You draw the innkeeper’s bad knee better. It is the most satisfying work of your life.",
+    "Years pass. The village thrives. It also stops planting until you draw the rain, and stops building until you draw the bridge, and one spring, when you are ill for a week, nobody in Low Veyra gets out of bed at all. They were only waiting for the lines."
+   ],
+   "ending": {
+    "no": "XII",
+    "title": "Fair Weather Forever",
+    "kind": "strange",
+    "epilogue": "You gave them everything. They gave you their whole attention.",
+    "hint": "Help, when it never stops, becomes something else."
+   }
+  },
+  "58": {
+   "chapter": "The Far Shore",
+   "scene": "lake",
+   "text": [
+    "You swim until your arms forget they are arms. The lights on the far shore turn out to be candles, set in a row along a stone quay, and behind them a staircase climbs straight up through the rock.",
+    "You climb, dripping, for what feels like the whole height of the mountain. The stair ends at a trapdoor. Above it you can hear paper rustling, and snoring, and a quill scratching with nobody to hold it."
+   ],
+   "choices": [
+    {
+     "text": "If you push open the trapdoor,",
+     "to": 43
+    }
+   ]
+  },
+  "59": {
+   "chapter": "The Letter Dated Tomorrow",
+   "scene": "library",
+   "text": [
+    "“If you are reading this,” the letter says, “you followed me. Good. I needed you to. I am sorry about the other letter. You would never have come if I had asked.",
+    "“Tonight the bell must be rung by someone who has never rung it before. Then the mountain will open its eye, and I will be waiting in the Heart, at the very bottom of the mountain, with the pen that draws the valley. Don’t be afraid. This is what cartographers are for. — I.” [[ink|The ink is dry]], which is strange for a letter written tomorrow."
+   ],
+   "choices": [
+    {
+     "text": "If you do as she asks and ring the bell,",
+     "to": 71
+    },
+    {
+     "text": "If you ignore the bell and go straight down to the Heart,",
+     "to": 69
+    }
+   ]
+  },
+  "61": {
+   "chapter": "An ending",
+   "scene": "dawn",
+   "text": [
+    "You take the pen from Ines’s hand and draw a door in the side of the mountain, the plainest door you can manage: a line, a line, a line, a handle. It opens onto morning.",
+    "You walk out together into the sunlight. Behind you the mountain is a little smaller than before, and a little less sure of itself. You never touch the great pen again. You don’t need to: from that day on, every map in the world shows a mountain above Low Veyra, labelled in your handwriting."
+   ],
+   "ending": {
+    "no": "XVIII",
+    "title": "The Door You Drew",
+    "kind": "good",
+    "star": true,
+    "epilogue": "The best maps leave things out. You left out the mountain’s last word.",
+    "hint": "The simplest thing you can draw is a way out."
+   }
+  },
+  "62": {
+   "chapter": "Fire in the Scriptorium",
+   "scene": "library",
+   "text": [
+    "The first map catches as if it has been waiting its whole life to. The second catches from the first. By the time the monks wake, coughing, the shelves are a wall of orange light.",
+    "The abbess stares at the flames, then at you, then, oddly, out of the window towards the valley. “Those maps were keeping that village exactly where it is,” she says quietly. “Every field. Every roof. Every person. What did you think they were for?”"
+   ],
+   "choices": [
+    {
+     "text": "If you help put the fire out,",
+     "to": 67
+    },
+    {
+     "text": "If you let it burn,",
+     "to": 76
+    }
+   ]
+  },
+  "64": {
+   "chapter": "The Tear",
+   "scene": "heart",
+   "moment": {
+    "line": "You are falling. Ines reaches for your hand. The great pen spins just out of reach.",
+    "seconds": 8,
+    "default": 72,
+    "head": "Choose before you land",
+    "sub": "Fall long enough, and gravity chooses for you.",
+    "defaultLabel": "GRAVITY’S CHOICE",
+    "timeout": "Gravity chooses for you…"
+   },
+   "text": [
+    "The map tears with a sound like thunder heard from inside a cloud. The chamber lurches. The compass-rose floor splits along its points, and you and Ines drop through it into a hollow so huge you can feel the size of it on your skin.",
+    "Ines falls beside you, reaching for your hand. The great pen falls beside you both, spinning, just out of reach. You have time to grab one of them."
+   ],
+   "choices": [
+    {
+     "text": "If you grab Ines’s hand,",
+     "short": "Grab Ines’s hand",
+     "to": 72
+    },
+    {
+     "text": "If you grab the pen,",
+     "short": "Grab the pen",
+     "to": 75
+    }
+   ]
+  },
+  "65": {
+   "chapter": "The Abbess",
+   "scene": "library",
+   "text": [
+    "The abbess wakes the way old cats do: instantly, and already annoyed. She slides your letter out from under the inkpot and reads it without asking. “Ah,” she says. “Arden. She came to us three weeks ago and asked very good questions. We should have been more careful with the answers.”",
+    "“The mountain dreams this valley,” she tells you. “We ring the bell so it keeps dreaming, and the valley stays where it is. Your mentor has gone down to the Heart, at the very bottom of the mountain. She wants to wake it and hold the pen it dreams with. She thinks she would dream it better.” The old woman shrugs. “Everyone does.”"
+   ],
+   "choices": [
+    {
+     "text": "If you help the abbess ring the bell and keep the mountain asleep,",
+     "to": 71
+    },
+    {
+     "text": "If you go down to the Heart to find Ines,",
+     "to": 69
+    }
+   ]
+  },
+  "67": {
+   "chapter": "Water and Ash",
+   "scene": "bell",
+   "text": [
+    "You haul buckets beside the monks until the last shelf hisses into smoke. Half the maps are gone. Down in the valley, you learn later, half the village forgot what day it was, and a river briefly flowed uphill.",
+    "At dawn the monastery’s bell-keeper, a very old monk, finds you sitting in the ashes. He looks at your burnt hands for a long time, then holds out the bell rope. “Anyone who fights a fire for maps they hate,” he says, “can be trusted with this. Your friend Arden wouldn’t take it. She went down to the Heart of the mountain instead.”"
+   ],
+   "choices": [
+    {
+     "text": "If you take the rope and ring the bell,",
+     "to": 47
+    },
+    {
+     "text": "If you refuse and go down to find Ines,",
+     "to": 69
+    }
+   ]
+  },
+  "69": {
+   "chapter": "The Long Stair Down",
+   "scene": "heart",
+   "text": [
+    "The stair to the Heart begins behind the monastery kitchen, which is the least dramatic place you can imagine for it. It goes down and down, past the roots of the mountain, past water, past a layer of rock full of seashells and another full of something that might be bones.",
+    "At last the walls open, and you are looking down through a drifting cloud at a closed eye as wide as a lake. Light leaks from under the lid. Ines stands at its edge, holding a pen as tall as a spear."
+   ],
+   "choices": [
+    {
+     "text": "If you go down to her,",
+     "to": 80
+    }
+   ]
+  },
+  "71": {
+   "chapter": "An ending",
+   "scene": "bell",
+   "text": [
+    "Out in the courtyard, you ring the old bell. Deep inside the mountain a second bell answers: one you have never heard, and one the monks, judging by their faces, have only ever heard about.",
+    "The two bells ring together, and the mountain turns over in its sleep like someone disturbed by a noise downstairs. In the morning the whole valley is two miles further east. Low Veyra wakes up in a different place and blames the weather. Ines, wherever she is, will have to start her map again."
+   ],
+   "ending": {
+    "no": "XIII",
+    "title": "Two Bells",
+    "kind": "strange",
+    "epilogue": "The mountain is still asleep. It just sleeps somewhere else now.",
+    "hint": "A bell rung by new hands sounds different."
+   }
+  },
+  "72": {
+   "chapter": "An ending",
+   "scene": "heart",
+   "text": [
+    "You catch her hand. She holds on. For a long, strange moment you fall together through the dark, and it is almost peaceful, and she says, “I really did tell you not to follow me,” and you laugh, and so does she.",
+    "You land softly, in the mountain’s dream, which is a very soft place. Far above you, in a hall full of lanterns, two flames flare up at once. Their tags say INES ARDEN and your name, and they burn side by side, very bright, for a very long time."
+   ],
+   "ending": {
+    "no": "XIV",
+    "title": "Together, Briefly",
+    "kind": "bad",
+    "epilogue": "You found her. The mountain found you both.",
+    "hint": "In a fall, you can only hold on to one thing."
+   }
+  },
+  "75": {
+   "chapter": "The Pen in Mid-Air",
+   "scene": "heart",
+   "text": [
+    "Your fingers close around the pen. It is heavier than a pen should be and lighter than a spear, and it is still wet. Without thinking, you draw a line beneath your feet.",
+    "The line holds. You stop falling so suddenly that your knees complain. You are standing on a bridge of ink above an enormous hollow, and at the bottom is a closed eye the size of a village. Ines is climbing onto the far end of your bridge. She does not look grateful. She holds out her hand, and the pen slips out of yours and goes to her like a dog called home."
+   ],
+   "choices": [
+    {
+     "text": "If you walk out to meet her above the eye,",
+     "to": 80
+    }
+   ]
+  },
+  "76": {
+   "chapter": "An ending",
+   "scene": "dawn",
+   "text": [
+    "You let it burn. The monks do not stop you. They stand in the courtyard and watch the smoke go up, and one of them starts to cry, very quietly, as if at a funeral he has been expecting for years.",
+    "At dawn you look down into the valley. There is no village. There are no fields, no roofs, no river. There is a clean, green, empty valley, the kind a map would leave white. It is beautiful. It is free. There is no one in it to enjoy that."
+   ],
+   "ending": {
+    "no": "XV",
+    "title": "The Blank Valley",
+    "kind": "bad",
+    "epilogue": "Somewhere, a blank map of Low Veyra is finally accurate.",
+    "hint": "Burning a map does not always free the land."
+   }
+  },
+  "80": {
+   "chapter": "The Heart",
+   "scene": "heart",
+   "moment": {
+    "line": "The eye is opening. Ines holds out the great pen. The whole mountain holds its breath.",
+    "seconds": 12,
+    "default": 88,
+    "head": "Choose before the eye opens",
+    "sub": "Wait too long, and the mountain chooses for you.",
+    "defaultLabel": "THE MOUNTAIN’S CHOICE",
+    "timeout": "The mountain chooses for you…"
+   },
+   "text": [
+    "Up close, the eye is not stone. It is skin, or something like it, grey and slow and warm, and it is beginning to open. Golden light pours out along the seam. The whole mountain holds its breath.",
+    "Ines looks at you as if you are exactly on time. “It’s waking,” she says, and holds out the great pen. “When it opens, whoever holds this dreams the valley. It could be you. It could be me. Or we could let it wake up with nothing in its hands, and see what it does.” The lid lifts another inch."
+   ],
+   "choices": [
+    {
+     "text": "If you take the pen and dream the valley yourself,",
+     "short": "Take the pen",
+     "to": 84
+    },
+    {
+     "text": "If you let the mountain wake with empty hands,",
+     "short": "Let it wake",
+     "to": 88
+    },
+    {
+     "text": "If you take Ines’s hand and walk away,",
+     "short": "Walk away with Ines",
+     "to": 92
+    }
+   ]
+  },
+  "84": {
+   "chapter": "An ending",
+   "scene": "heart",
+   "text": [
+    "You take the pen. The eye opens, looks at you, really looks, and closes again, content. Something settles over your shoulders like a coat that fits.",
+    "You dream the valley. You dream it well: kind weather, good harvests, and at midnight a line of lanterns climbing the valley to keep you company. Every night, far above, a bell rings to keep you sleeping, and every night you are grateful for it, and never once do you wonder who is ringing it, or why."
+   ],
+   "ending": {
+    "no": "XVI",
+    "title": "The New Dreamer",
+    "kind": "strange",
+    "epilogue": "You hold the pen now. Someone else holds the rope.",
+    "hint": "Whoever holds the pen is held by it."
+   }
+  },
+  "88": {
+   "chapter": "An ending",
+   "scene": "dawn",
+   "text": [
+    "You step back from the pen. So does Ines, eventually. The eye opens all the way, and for the first time in its life the mountain looks at the world without dreaming it.",
+    "It gets up. Slowly, like a very old man, Mount Veyra stands, shakes the snow off its shoulders and walks away towards the sea. Behind it Low Veyra remains, every roof and field and astonished villager in a nightgown, real at last and on its own. You and Ines sit in the new sunlight on a plain no map has ever shown. She takes out a pencil. You take out a pencil. Neither of you draws a thing."
+   ],
+   "ending": {
+    "no": "XIX",
+    "title": "Morning, Mountain",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Neither of you puts the pencil away.",
+    "hint": "Sometimes the bravest choice is to hold nothing."
+   }
+  },
+  "92": {
+   "chapter": "An ending",
+   "scene": "mountain",
+   "text": [
+    "You take her hand. She lets you hold it for a moment, then gently takes it back. “Go,” says Ines. “Someone should.” She turns back to the eye.",
+    "You climb out alone and walk down into the world, and in time you become a famous cartographer, the kind apprentices write to. One autumn a letter arrives from one of your own apprentices, three weeks old: “I think I know where she went. Don’t worry about me.” You pack your lantern. On the back of their letter you write, carefully: “The mountain is hollow. Don’t follow me.”"
+   ],
+   "ending": {
+    "no": "XVII",
+    "title": "The Mentor",
+    "kind": "strange",
+    "epilogue": "You became the kind of cartographer apprentices follow.",
+    "hint": "Walking away is also a way of following."
+   }
+  }
+ }
+}
