@@ -2,19 +2,20 @@
 # Builds the same web book as the Android app, signs it for the App Store and uploads it to App Store Connect.
 # Sending it to Apple for review is not done here: that stays a manual step after Manuel's yes.
 #
-# Needs one environment group "appstore" in Codemagic (all four marked Secure):
-#   APP_STORE_CONNECT_ISSUER_ID       Issuer ID from App Store Connect > Users and Access > Integrations
-#   APP_STORE_CONNECT_KEY_IDENTIFIER  Key ID of the API key made there
-#   APP_STORE_CONNECT_PRIVATE_KEY     the full text of the downloaded AuthKey_XXXX.p8
-#   CERTIFICATE_PRIVATE_KEY           the full text of ios-distribution-certificate-key.pem (from the release folder)
+# Signing and upload go through the App Store Connect API key stored in Codemagic
+# (Settings > Integrations > Developer Portal, key name "Wayward"), plus the Apple Distribution certificate and
+# the App Store profile for com.waywardbooks.app under Code signing identities. No secrets live in this file.
 workflows:
   ios-appstore:
     name: Wayward iOS to App Store Connect
     instance_type: mac_mini_m2
     max_build_duration: 45
+    integrations:
+      app_store_connect: Wayward
     environment:
-      groups:
-        - appstore
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.waywardbooks.app
       vars:
         BUNDLE_ID: com.waywardbooks.app
         XCODE_PROJECT: app/ios/App/App.xcodeproj
@@ -36,13 +37,8 @@ workflows:
         script: |
           gem list -i xcodeproj >/dev/null || gem install xcodeproj --no-document
           ruby app/scripts/add_privacy_manifest.rb
-      - name: Signing (bundle ID, distribution certificate and App Store profile are created when missing)
-        script: |
-          app-store-connect bundle-ids create "$BUNDLE_ID" --name "Wayward" --platform IOS || echo "Bundle ID already registered"
-          keychain initialize
-          app-store-connect fetch-signing-files "$BUNDLE_ID" --type IOS_APP_STORE --create
-          keychain add-certificates
-          xcode-project use-profiles --project "$XCODE_PROJECT"
+      - name: Signing settings on the Xcode project (certificate and profile come from Codemagic)
+        script: xcode-project use-profiles --project "$XCODE_PROJECT"
       - name: Build the ipa
         script: xcode-project build-ipa --project "$XCODE_PROJECT" --scheme "$XCODE_SCHEME"
     artifacts:
@@ -50,8 +46,6 @@ workflows:
       - /tmp/xcodebuild_logs/*.log
     publishing:
       app_store_connect:
-        api_key: $APP_STORE_CONNECT_PRIVATE_KEY
-        key_id: $APP_STORE_CONNECT_KEY_IDENTIFIER
-        issuer_id: $APP_STORE_CONNECT_ISSUER_ID
+        auth: integration
         submit_to_testflight: false
         submit_to_app_store: false

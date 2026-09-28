@@ -1,10 +1,13 @@
 // Brief B2: raw in-app captures (1080x1920) from the real build, per language.
 // usage: node capture-b2.js en|nl [only]
+// VIEW=wxhxdsf and RAW=<folder> override the phone size and output folder (App Store set: VIEW=440x956x3 RAW=raw-ios)
+const VIEW = (process.env.VIEW || '432x768x2.5').split('x').map(Number);
+const RAWDIR = process.env.RAW || 'raw-b2';
 const { chromium } = require('/opt/node22/lib/node_modules/playwright');
 const lang = process.argv[2] || 'en';
 const only = process.argv[3] || '';
 const BASE = 'http://localhost:8768/index.html';
-const OUT = __dirname + '/raw-b2/';
+const OUT = __dirname + '/' + RAWDIR + '/';
 const seedBase = {
   trail: [1], visited: [1, 6, 9, 11, 16, 14, 17, 22, 47, 52, 43, 59, 56, 71, 69, 80, 92, 19, 27, 12, 28],
   found: [11, 47, 56, 71, 92], finger: null, lastNew: null,
@@ -13,7 +16,7 @@ const seedBase = {
 (async () => {
   require('fs').mkdirSync(OUT, { recursive: true });
   const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium', args: ['--autoplay-policy=no-user-gesture-required', '--use-gl=swiftshader', '--enable-webgl', '--ignore-gpu-blocklist'] });
-  const ctx = await b.newContext({ viewport: { width: 432, height: 768 }, deviceScaleFactor: 2.5, isMobile: true, hasTouch: true, locale: lang === 'nl' ? 'nl-NL' : 'en-US' });
+  const ctx = await b.newContext({ viewport: { width: VIEW[0], height: VIEW[1] }, deviceScaleFactor: VIEW[2], isMobile: true, hasTouch: true, locale: lang === 'nl' ? 'nl-NL' : 'en-US' });
   const p = await ctx.newPage();
   p.on('pageerror', e => console.log('PAGEERROR', e.message));
   const snap = async (n) => { await p.screenshot({ path: `${OUT}${lang}-${n}.png` }); console.log('shot', lang, n); };
