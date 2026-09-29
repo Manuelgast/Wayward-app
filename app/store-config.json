@@ -1,5 +1,5 @@
 {
-  "_note": "Wayward store and ads settings for the native app (no secrets). Product ids must match shop.js (T11). Ad ids below are Google's public TEST ids until Manuel's AdMob account exists; set testing to false and fill in the real ids then.",
+  "_note": "Wayward store and ads settings for the native app (no secrets). Product ids must match shop.js (T11). Ad ids are the real AdMob ids (account ca-app-pub-2062611170657455, apps Wayward Android/iOS, rewarded unit \"Wayward rewarded - extra pages\"). While testing is true the plugin swaps in Google's test ad units, so no real ads are shown; set testing to false only for the store release. build_www.py copies the app ids into strings.xml and Info.plist.",
   "products": [
     { "id": "book_sea", "type": "book", "kind": "inapp" },
     { "id": "book_ash", "type": "book", "kind": "inapp" },
@@ -9,7 +9,7 @@
   ],
   "ads": {
     "testing": true,
-    "android": { "appId": "ca-app-pub-3940256099942544~3347511713", "rewarded": "ca-app-pub-3940256099942544/5224354917" },
-    "ios": { "appId": "ca-app-pub-3940256099942544~1458002511", "rewarded": "ca-app-pub-3940256099942544/1712485313" }
+    "android": { "appId": "ca-app-pub-2062611170657455~6090057707", "rewarded": "ca-app-pub-2062611170657455/1951502148" },
+    "ios": { "appId": "ca-app-pub-2062611170657455~9091800576", "rewarded": "ca-app-pub-2062611170657455/9837731029" }
   }
 }

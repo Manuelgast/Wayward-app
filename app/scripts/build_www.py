@@ -73,6 +73,27 @@ def build_fonts(out_dir, font_css):
     return len(faces)
 
 
+def sync_admob_app_ids():
+    """The AdMob app ids live in store-config.json; copy them into the native projects so they never drift."""
+    cfg = json.load(open(os.path.join(ROOT, 'store-config.json'), encoding='utf-8')).get('ads', {})
+    targets = [
+        (os.path.join(ROOT, 'android', 'app', 'src', 'main', 'res', 'values', 'strings.xml'),
+         r'(<string name="admob_app_id">)[^<]*(</string>)', cfg.get('android', {}).get('appId')),
+        (os.path.join(ROOT, 'ios', 'App', 'App', 'Info.plist'),
+         r'(<key>GADApplicationIdentifier</key>\s*<string>)[^<]*(</string>)', cfg.get('ios', {}).get('appId')),
+    ]
+    for path, pat, app_id in targets:
+        if not app_id or not os.path.isfile(path):
+            continue
+        src = open(path, encoding='utf-8').read()
+        new, k = re.subn(pat, lambda m: m.group(1) + app_id + m.group(2), src)
+        if not k:
+            sys.exit('AdMob app id slot not found in %s' % path)
+        if new != src:
+            open(path, 'w', encoding='utf-8').write(new)
+            print('AdMob app id set in %s' % os.path.relpath(path, ROOT))
+
+
 def main():
     if not os.path.isfile(os.path.join(SRC, 'index.html')):
         sys.exit('No index.html in %s' % SRC)
@@ -117,6 +138,7 @@ def main():
         sys.exit('No <script src> found in index.html')
     glue = '<script src="native.js"></script>\n'
     # store bridge (real purchases + rewarded ads) only for a web book that has a shop
+    sync_admob_app_ids()
     if os.path.isfile(os.path.join(OUT, 'shop.js')):
         shutil.copy(os.path.join(ROOT, 'store.js'), os.path.join(OUT, 'store.js'))
         cfg = json.load(open(os.path.join(ROOT, 'store-config.json'), encoding='utf-8'))
