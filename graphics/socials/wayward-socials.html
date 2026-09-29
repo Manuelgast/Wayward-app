@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wayward logo en banner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5ECD8; --card:#FBF5E8; --ink:#2A2218; --muted:#6E604A; --gold:#8A5A1C; --rule:#DCC9A2; --frame:#1A1433;
+    --serif:'Cormorant Garamond',Georgia,serif; --read:'Literata',Georgia,serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){color-scheme:dark;--bg:#0F0D1E;--card:#171330;--ink:#F1E7D2;--muted:#B7AECB;--gold:#E8B85A;--rule:#3A3160;--frame:#080614}
+  }
+  :root[data-theme="dark"]{color-scheme:dark;--bg:#0F0D1E;--card:#171330;--ink:#F1E7D2;--muted:#B7AECB;--gold:#E8B85A;--rule:#3A3160;--frame:#080614}
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);font-family:var(--read);font-size:16px;line-height:1.55;padding:0 16px}
+  main{max-width:720px;margin:0 auto;padding:28px 0 56px}
+  .brand{font-family:var(--serif);font-weight:700;font-size:15px;letter-spacing:.32em;color:var(--gold);margin:0}
+  h1{font-family:var(--serif);font-weight:700;font-size:38px;line-height:1.05;margin:4px 0 10px}
+  .intro{margin:0;color:var(--muted);max-width:60ch}
+  .how{margin:16px 0 0;padding:12px 14px;background:var(--card);border:1px solid var(--rule);border-radius:10px}
+  .how b{color:var(--gold)}
+  section{margin-top:26px;padding:18px;background:var(--card);border:1px solid var(--rule);border-radius:14px}
+  h2{font-family:var(--serif);font-weight:700;font-size:27px;line-height:1.1;margin:0}
+  .spec{margin:2px 0 14px;font-size:14px;color:var(--muted)}
+  .pics{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  .pics img{display:block;border-radius:10px;background:var(--frame)}
+  .sq{width:min(100%,300px);height:auto}
+  .round{width:112px;height:112px;border-radius:50% !important}
+  .roundwrap{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:13px;color:var(--muted)}
+  .banner{position:relative;width:100%}
+  .banner img{width:100%;height:auto}
+  .safe{position:absolute;left:19.8%;top:35.3%;width:60.4%;height:29.4%;border:2px dashed rgba(255,231,168,.85);border-radius:4px;pointer-events:none;display:none}
+  .banner.show .safe{display:block}
+  .row{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-top:12px;font-size:14px}
+  a{color:var(--gold);font-weight:600}
+  button{font:inherit;font-size:14px;color:var(--gold);background:none;border:1px solid var(--rule);border-radius:999px;padding:6px 12px;cursor:pointer}
+  button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  ul{margin:8px 0 0;padding-left:20px}
+  li{margin:2px 0}
+  .pc{margin-top:26px;font-size:14px;color:var(--muted)}
+  code{font-size:13px;overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<main>
+  <p class="brand">WAYWARD</p>
+  <h1>Logo en banner</h1>
+  <p class="intro">De goede bestanden voor Instagram, TikTok en YouTube, in het juiste formaat.</p>
+  <p class="how"><b>Opslaan op je telefoon:</b> houd de afbeelding ingedrukt en kies <em>Afbeelding downloaden</em>. Hij staat daarna in je Galerij (map Downloads). Lukt ingedrukt houden niet, tik dan op <em>Volledige grootte</em> en houd hem daar ingedrukt.</p>
+
+  <section>
+    <h2>Profielfoto</h2>
+    <p class="spec">1080 × 1080 · voor Instagram, TikTok en de kanaalfoto van YouTube</p>
+    <div class="pics">
+      <img class="sq" src="img/wayward-profielfoto-1080.png" width="1080" height="1080" alt="Wayward-logo: gouden kompas op paarse achtergrond">
+      <div class="roundwrap"><img class="round" src="img/wayward-profielfoto-1080.png" alt="" aria-hidden="true">zo ziet het eruit als rondje</div>
+    </div>
+    <div class="row"><a href="img/wayward-profielfoto-1080.png" target="_blank" rel="noopener">Volledige grootte</a></div>
+  </section>
+
+  <section>
+    <h2>YouTube-banner</h2>
+    <p class="spec">2560 × 1440 · kanaalbanner (YouTube Studio → Aanpassen → Branding → Bannerafbeelding)</p>
+    <div class="banner" id="banner">
+      <img src="img/wayward-youtube-banner-2560x1440.png" width="2560" height="1440" alt="YouTube-banner: kompas, WAYWARD en 'Every choice turns a page.' op sterrenhemel">
+      <div class="safe" aria-hidden="true"></div>
+    </div>
+    <div class="row">
+      <a href="img/wayward-youtube-banner-2560x1440.png" target="_blank" rel="noopener">Volledige grootte</a>
+      <button type="button" id="safeBtn" aria-pressed="false">Toon wat overal zichtbaar is</button>
+    </div>
+    <ul>
+      <li>Logo en tekst staan in het middenvak dat op telefoon, laptop en tv altijd te zien is; YouTube snijdt de rest per scherm anders bij.</li>
+      <li>YouTube vraagt bij uploaden om het bijsnijden te controleren: gewoon op <em>Klaar</em> tikken.</li>
+    </ul>
+  </section>
+
+  <p class="pc">Op je laptop staan dezelfde bestanden in <code>Documenten\Wayward-release\socials</code>.</p>
+</main>
+<script>
+  (function(){
+    var b=document.getElementById('safeBtn'), w=document.getElementById('banner');
+    b.addEventListener('click',function(){var on=w.classList.toggle('show');b.setAttribute('aria-pressed',on?'true':'false');b.textContent=on?'Verberg middenvak':'Toon wat overal zichtbaar is';});
+  })();
+</script>
+</body>
+</html>
