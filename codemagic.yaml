@@ -39,6 +39,10 @@ workflows:
           ruby app/scripts/add_privacy_manifest.rb
       - name: Signing (certificate and App Store profile are fetched, or created when missing)
         script: |
+          if [ -z "$CERTIFICATE_PRIVATE_KEY" ]; then
+            echo "CERTIFICATE_PRIVATE_KEY is missing: add it under Environment variables, group code-signing (task TL1 step 5c)."
+            exit 1
+          fi
           keychain initialize
           app-store-connect fetch-signing-files "$BUNDLE_ID" --type IOS_APP_STORE --create
           keychain add-certificates
