@@ -66,6 +66,6 @@ Apple review screenshot per product: a screenshot of the shop sheet (needed once
 ## 5. In the build (monetization branch)
 
 - Done: store.js bridge, plugins, test ad ids, UMP consent, ATT prompt text EN + NL (InfoPlist.strings, commit fcaadd9), app localized en + nl.
-- After TL3 AdMob: create app "Wayward" (Android + iOS) and one rewarded ad unit each; put the ids in store-config.json, set testing false. app-ads.txt needs a developer website; skip it for the launch (ads still serve, AdMob only shows a warning).
+- AdMob done 29-09 (account ca-app-pub-2062611170657455, existing MBTIcomics account, payments via AdSense Netherlands): app Wayward Android ~6090057707 with rewarded unit /1951502148, app Wayward iOS ~9091800576 with rewarded unit /9837731029 (both "Wayward rewarded - extra pages", reward 1 "Extra pages"), in store-config.json on branch monetization (testing stays true until the release build). EU consent message "Wayward GDPR (EN/NL)" published for both apps: Consent, Do not consent (all regions) and Manage options, privacy URL = current policy. Both AdMob apps say "Requires review": add the store listing in AdMob once the app is live (Apps > Wayward > App settings > Add store). app-ads.txt needs a developer website; skip it for the launch (ads still serve, AdMob only shows a warning).
 - After T11: build www with shop.js, run test/store-bridge.js and the flow tests, install on Manuel's phone with Google's test ads.
 - Privacy policy: listing/privacy/wayward-privacy-v2.html, publish over the current one when 1.1 is submitted, not earlier.
