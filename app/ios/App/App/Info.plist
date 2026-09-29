@@ -14,6 +14,11 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>nl</string>
+	</array>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
@@ -29,7 +34,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSUserTrackingUsageDescription</key>
-	<string>Wayward shows an optional ad only when you choose to watch one for extra pages. This lets the ad be more relevant; you can say no and still watch it.</string>
+	<string>Wayward shows an ad only when you choose to watch one for extra pages. With your permission the ad can be more relevant to you. If you say no, you can still watch it.</string>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>
