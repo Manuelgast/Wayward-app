@@ -3,8 +3,9 @@
 # Sending it to Apple for review is not done here: that stays a manual step after Manuel's yes.
 #
 # Signing and upload go through the App Store Connect API key stored in Codemagic
-# (Settings > Integrations > Developer Portal, key name "Wayward"), plus the Apple Distribution certificate and
-# the App Store profile for com.waywardbooks.app under Code signing identities. No secrets live in this file.
+# (Settings > Integrations > Developer Portal, key name "Wayward"). The distribution certificate and the App Store
+# profile for com.waywardbooks.app are fetched or created during the build; that needs one secret variable,
+# CERTIFICATE_PRIVATE_KEY (group "code-signing", the text of ios-distribution-certificate-key.pem). No secrets live in this file.
 workflows:
   ios-appstore:
     name: Wayward iOS to App Store Connect
@@ -13,9 +14,8 @@ workflows:
     integrations:
       app_store_connect: Wayward
     environment:
-      ios_signing:
-        distribution_type: app_store
-        bundle_identifier: com.waywardbooks.app
+      groups:
+        - code-signing
       vars:
         BUNDLE_ID: com.waywardbooks.app
         XCODE_PROJECT: app/ios/App/App.xcodeproj
@@ -37,8 +37,12 @@ workflows:
         script: |
           gem list -i xcodeproj >/dev/null || gem install xcodeproj --no-document
           ruby app/scripts/add_privacy_manifest.rb
-      - name: Signing settings on the Xcode project (certificate and profile come from Codemagic)
-        script: xcode-project use-profiles --project "$XCODE_PROJECT"
+      - name: Signing (certificate and App Store profile are fetched, or created when missing)
+        script: |
+          keychain initialize
+          app-store-connect fetch-signing-files "$BUNDLE_ID" --type IOS_APP_STORE --create
+          keychain add-certificates
+          xcode-project use-profiles --project "$XCODE_PROJECT"
       - name: Build the ipa
         script: xcode-project build-ipa --project "$XCODE_PROJECT" --scheme "$XCODE_SCHEME"
     artifacts:
