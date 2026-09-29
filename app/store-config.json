@@ -1,0 +1,15 @@
+{
+  "_note": "Wayward store and ads settings for the native app (no secrets). Product ids must match shop.js (T11). Ad ids below are Google's public TEST ids until Manuel's AdMob account exists; set testing to false and fill in the real ids then.",
+  "products": [
+    { "id": "book_sea", "type": "book", "kind": "inapp" },
+    { "id": "book_ash", "type": "book", "kind": "inapp" },
+    { "id": "book_stardust", "type": "book", "kind": "inapp" },
+    { "id": "pass_monthly", "type": "pass", "kind": "subs", "plan": "monthly", "period": "month" },
+    { "id": "pass_lifetime", "type": "pass", "kind": "inapp", "period": "lifetime" }
+  ],
+  "ads": {
+    "testing": true,
+    "android": { "appId": "ca-app-pub-3940256099942544~3347511713", "rewarded": "ca-app-pub-3940256099942544/5224354917" },
+    "ios": { "appId": "ca-app-pub-3940256099942544~1458002511", "rewarded": "ca-app-pub-3940256099942544/1712485313" }
+  }
+}

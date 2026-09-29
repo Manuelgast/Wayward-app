@@ -6,6 +6,7 @@ Usage: python3 scripts/build_www.py [path/to/web-src]
 - replaces Google Fonts (network) with bundled font files, so the app works fully offline
 - injects native.js (Android back button + pause audio in background)
 """
+import json
 import os, re, shutil, sys, glob
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -114,7 +115,15 @@ def main():
     first_script = re.search(r'<script src="[^"]+"></script>', html)
     if not first_script:
         sys.exit('No <script src> found in index.html')
-    html = html[:first_script.start()] + '<script src="native.js"></script>\n' + html[first_script.start():]
+    glue = '<script src="native.js"></script>\n'
+    # store bridge (real purchases + rewarded ads) only for a web book that has a shop
+    if os.path.isfile(os.path.join(OUT, 'shop.js')):
+        shutil.copy(os.path.join(ROOT, 'store.js'), os.path.join(OUT, 'store.js'))
+        cfg = json.load(open(os.path.join(ROOT, 'store-config.json'), encoding='utf-8'))
+        cfg.pop('_note', None)
+        glue += '<script>window.WAYWARD_STORE = %s;</script>\n<script src="store.js"></script>\n' % json.dumps(cfg, separators=(',', ':'))
+        print('store bridge included (%d products, ads %s)' % (len(cfg.get('products', [])), 'TEST ids' if cfg.get('ads', {}).get('testing') else 'live ids'))
+    html = html[:first_script.start()] + glue + html[first_script.start():]
     left = re.findall(r'https?://(?!www\.w3\.org)[^\s"\')]+', html)
     open(p, 'w', encoding='utf-8').write(html)
 
