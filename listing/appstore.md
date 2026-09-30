@@ -34,7 +34,7 @@ Your mentor vanished inside a mountain. Her last words to you: don’t follow me
 Wayward is an illustrated adventure book in which you decide what happens next. Every page ends with a choice, and every choice turns you to a different page. Some roads lead to glory. Others lead to the bottom of a well.
 
 BOOK I · THE HOLLOW MOUNTAIN
-Follow the royal cartographer Ines Arden to Mount Veyra, a mountain that appears on no map. Wander through a village where every lantern has the same dent, a hall with a lantern for every name, and a black river that returns everything it takes.
+Follow the royal cartographer Edda Marlow to Mount Veyra, a mountain that appears on no map. Wander through a village where every lantern has the same dent, a hall with a lantern for every name, and a black river that returns everything it takes.
 • 49 pages and 19 different endings, two of them true endings
 • Made to be read more than once: every ending reveals a little more of the mountain
 
@@ -75,7 +75,7 @@ Je leermeester is verdwenen in een berg. Haar laatste woorden aan jou: volg me n
 Wayward is een geïllustreerd avonturenboek waarin jij bepaalt wat er gebeurt. Elke bladzijde eindigt met een keuze, en elke keuze stuurt je naar een andere bladzijde. Sommige wegen leiden naar glorie. Andere naar de bodem van een put.
 
 BOEK I · DE HOLLE BERG
-Volg koninklijk cartograaf Ines Arden naar de Veyra, een berg die op geen enkele kaart staat. Dwaal door een dorp waar elke lantaarn dezelfde deuk heeft, een zaal met een lantaarn voor elke naam, en een zwarte rivier die alles teruggeeft wat ze meeneemt.
+Volg koninklijk cartograaf Edda Marlow naar de Veyra, een berg die op geen enkele kaart staat. Dwaal door een dorp waar elke lantaarn dezelfde deuk heeft, een zaal met een lantaarn voor elke naam, en een zwarte rivier die alles teruggeeft wat ze meeneemt.
 • 49 bladzijden en 19 verschillende eindes, waarvan twee gouden eindes
 • Gemaakt om vaker te lezen: elk einde onthult iets meer van de berg
 
