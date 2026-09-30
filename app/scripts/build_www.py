@@ -106,10 +106,11 @@ def main():
     gradle = open(os.path.join(ROOT, 'android', 'app', 'build.gradle'), encoding='utf-8').read()
     vn = re.search(r'versionName "([^"]+)"', gradle).group(1)
     vc = re.search(r'versionCode (\d+)', gradle).group(1)
-    build = 'Android %s (%s)' % (vn, vc)
+    build = '%s (%s)' % (vn, vc)
     nj = os.path.join(OUT, 'native.js')
     glue = open(nj, encoding='utf-8').read()
-    open(nj, 'w', encoding='utf-8').write("window.WAYWARD_BUILD = '%s';\n" % build + glue)
+    # same version on both platforms; the platform name is filled in on the phone
+    open(nj, 'w', encoding='utf-8').write("window.WAYWARD_BUILD = ((window.Capacitor && window.Capacitor.getPlatform && window.Capacitor.getPlatform() === 'ios') ? 'iOS ' : 'Android ') + '%s';\n" % build + glue)
     fb = os.path.join(OUT, 'feedback.js')
     if os.path.isfile(fb):
         src = open(fb, encoding='utf-8').read()

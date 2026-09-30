@@ -1,0 +1,140 @@
+{
+ "12": {
+  "type": "lantern",
+  "lines": {
+   "en": [
+    "Two o’clock. Under the bay, a light comes on.",
+    "Out of the fog, a ship. On its bow, a name."
+   ],
+   "nl": [
+    "Twee uur. Onder de baai gaat een licht aan.",
+    "Uit de mist komt een schip. Op de boeg staat een naam."
+   ]
+  },
+  "prompt": {
+   "en": "Raise your lantern",
+   "nl": "Houd je lantaarn omhoog"
+  },
+  "done": {
+   "en": "MARIGOLD, 1826. The paint is still wet.",
+   "nl": "MARIGOLD, 1826. De verf is nog nat."
+  },
+  "x": null,
+  "y": null
+ },
+ "18": {
+  "type": "wipe",
+  "lines": {
+   "en": [
+    "The crust is thin where her rake has passed.",
+    "Something underneath has been growing all night."
+   ],
+   "nl": [
+    "Waar haar hark is geweest, is de korst dun.",
+    "Eronder is de hele nacht iets gegroeid."
+   ]
+  },
+  "prompt": {
+   "en": "Brush the salt away",
+   "nl": "Veeg het zout weg"
+  },
+  "done": {
+   "en": "A tower, no taller than your thumb.",
+   "nl": "Een toren, niet groter dan je duim."
+  },
+  "x": null,
+  "y": null
+ },
+ "93": {
+  "type": "tap",
+  "lines": {
+   "en": [
+    "The keeper strikes match after match.",
+    "The wick is black and dry."
+   ],
+   "nl": [
+    "De wachter strijkt lucifer na lucifer af.",
+    "De pit is zwart en droog."
+   ]
+  },
+  "prompt": {
+   "en": "Light the wick",
+   "nl": "Steek de pit aan"
+  },
+  "done": {
+   "en": "A spark, then nothing. It needs the oil.",
+   "nl": "Een vonk, en dan niets. Er moet olie in."
+  },
+  "x": null,
+  "y": null
+ },
+ "24": {
+  "type": "hold",
+  "lines": {
+   "en": [
+    "The stair walks into the sea without slowing down.",
+    "Take a deep breath and hold it all the way down."
+   ],
+   "nl": [
+    "De trap loopt de zee in zonder vaart te minderen.",
+    "Haal diep adem en houd hem in, helemaal tot beneden."
+   ]
+  },
+  "prompt": {
+   "en": "Hold your breath",
+   "nl": "Houd je adem in"
+  },
+  "done": {
+   "en": "The sea stands back, like a wall of glass.",
+   "nl": "De zee wijkt terug, als een wand van glas."
+  },
+  "x": null,
+  "y": null
+ },
+ "48": {
+  "type": "lantern",
+  "lines": {
+   "en": [
+    "The stair ends. The dark does not.",
+    "Something very large is lying on the seabed."
+   ],
+   "nl": [
+    "De trap houdt op. Het donker niet.",
+    "Op de zeebodem ligt iets heel groots."
+   ]
+  },
+  "prompt": {
+   "en": "Raise your lantern",
+   "nl": "Houd je lantaarn omhoog"
+  },
+  "done": {
+   "en": "A tower, lying down. A door, ajar.",
+   "nl": "Een toren die ligt. Een deur op een kier."
+  },
+  "x": null,
+  "y": null
+ },
+ "67": {
+  "type": "turn",
+  "lines": {
+   "en": [
+    "The great lens hangs like a wave that forgot to fall.",
+    "It hasn’t moved in a hundred years. It would like to."
+   ],
+   "nl": [
+    "De grote lens hangt als een golf die vergat te vallen.",
+    "Hij heeft in honderd jaar niet bewogen. Hij zou wel willen."
+   ]
+  },
+  "prompt": {
+   "en": "Turn the lens",
+   "nl": "Draai de lens"
+  },
+  "done": {
+   "en": "It turns. The keeper smiles in his sleep.",
+   "nl": "Hij draait. De wachter glimlacht in zijn slaap."
+  },
+  "x": null,
+  "y": null
+ }
+}

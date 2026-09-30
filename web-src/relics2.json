@@ -1,0 +1,324 @@
+{
+ "tiers": [
+  {
+   "count": 4,
+   "id": "salted",
+   "name": {
+    "en": "Salted Edges",
+    "nl": "Gezouten op snee"
+   },
+   "desc": {
+    "en": "The edges of your book’s pages are now crusted with salt.",
+    "nl": "De bladzijden van je boek hebben nu een rand van zoutkristallen."
+   }
+  },
+  {
+   "count": 8,
+   "id": "tidetable",
+   "name": {
+    "en": "The Tide Table",
+    "nl": "De getijdentafel"
+   },
+   "desc": {
+    "en": "The path map now shows every page you have not found yet as a sandbank.",
+    "nl": "De routekaart toont nu elke bladzijde die je nog niet hebt gevonden als een zandbank."
+   }
+  },
+  {
+   "count": 12,
+   "id": "wake",
+   "name": {
+    "en": "Page 0 · The Wake",
+    "nl": "Bladzijde 0 · De wake"
+   },
+   "desc": {
+    "en": "A page that washed up where no page should be.",
+    "nl": "Een bladzijde die is aangespoeld waar geen bladzijde hoort te zitten."
+   }
+  }
+ ],
+ "relics": [
+  {
+   "id": "extraship",
+   "page": 4,
+   "where": "text",
+   "icon": "window",
+   "name": {
+    "en": "The Rounding Error",
+    "nl": "De afrondingsfout"
+   },
+   "riddle": {
+    "en": "Hester’s books are perfect, give or take a ship.",
+    "nl": "Hesters boeken kloppen, op één schip na."
+   },
+   "lore": {
+    "en": "Grey Harbour has counted its ships every morning for a hundred years, and for a hundred years the count has been one too many. The early harbourmasters crossed the extra one out. Then ink went up in price, and a Vane with a head for figures replaced the crossing-out with two words in the margin. “Rounding error” has now been written some thirty-six thousand times. Nobody has ever tried rounding down.",
+    "nl": "Grijshaven telt al honderd jaar elke ochtend zijn schepen, en al honderd jaar komt de telling er één te hoog uit. De eerste havenmeesters streepten het extra schip door. Toen werd inkt duurder, en een Vane met een rekenknobbel verving het doorstrepen door één woord in de kantlijn. Inmiddels staat er zo’n zesendertigduizend keer “afrondingsfout”. Niemand heeft ooit geprobeerd naar beneden af te ronden."
+   }
+  },
+  {
+   "id": "marigold",
+   "page": 12,
+   "where": "text",
+   "icon": "boat",
+   "name": {
+    "en": "Wet Paint",
+    "nl": "Pas geverfd"
+   },
+   "riddle": {
+    "en": "At two o’clock, read the only name in Grey Harbour that is still wet.",
+    "nl": "Lees om twee uur ’s nachts de enige naam in Grijshaven die nog nat is."
+   },
+   "lore": {
+    "en": "The Marigold was repainted the week before her last voyage, and Captain Lorne was particular about it: three coats of black, and the name in yellow, each letter edged by hand. The paint has not had a chance to dry since. Children in Grey Harbour dare each other to touch the bow at two o’clock. They come home with yellow fingertips no soap will shift, and at dawn, when the ship goes out, the colour goes with it.",
+    "nl": "De Marigold werd de week voor haar laatste reis opnieuw geverfd, en kapitein Lorne was daar precies in: drie lagen zwart, en de naam in geel, elke letter met de hand afgebiesd. Sindsdien heeft de verf geen kans gehad om te drogen. Kinderen in Grijshaven dagen elkaar uit: wie durft er om twee uur aan de boeg te komen? Ze komen thuis met gele vingertoppen waar geen zeep tegen helpt, en bij het ochtendgloren, als het schip uitvaart, gaat de kleur mee."
+   }
+  },
+  {
+   "id": "goodprice",
+   "page": 15,
+   "where": "text",
+   "icon": "quill",
+   "name": {
+    "en": "Sold On",
+    "nl": "Doorverkocht"
+   },
+   "riddle": {
+    "en": "In the oldest ledger, find the bargain that cost the most.",
+    "nl": "Zoek in het oudste grootboek het koopje dat het duurst uitviel."
+   },
+   "lore": {
+    "en": "Silas Vane was harbourmaster for thirty-one years and wrote “at a good price” in the ledger more than four hundred times. It was his favourite phrase. The clerks who came after him say the last one is different: pressed so hard that the nib split and the words went through to the next page, where they can still be read backwards. He never wrote the phrase again. He never wrote much again.",
+    "nl": "Silas Vane was eenendertig jaar havenmeester en schreef meer dan vierhonderd keer “tegen een goede prijs” in het grootboek. Het was zijn lievelingsuitdrukking. De klerken na hem zeggen dat de laatste keer anders is: zo hard neergezet dat de penpunt spleet en de woorden doordrukten op de volgende bladzijde, waar ze nog altijd in spiegelschrift te lezen zijn. Hij heeft ze nooit meer geschreven. Hij heeft überhaupt weinig meer geschreven."
+   }
+  },
+  {
+   "id": "clocks",
+   "page": 21,
+   "where": "text",
+   "icon": "compass",
+   "name": {
+    "en": "The Keeper’s Clocks",
+    "nl": "De klokken van de wachter"
+   },
+   "riddle": {
+    "en": "In the cottage on the cape, every face agrees on the time.",
+    "nl": "In het huisje op de kaap zijn alle wijzerplaten het eens over de tijd."
+   },
+   "lore": {
+    "en": "There are eleven clocks in the keeper’s cottage, because a keeper must know the time to the minute and Tobias Wren liked to be sure. All eleven stopped on the night of the Great Storm. A clockmaker from the capital once spent an afternoon on the kitchen clock. He found good springs, clean wheels and nothing wrong. He set it to the right time. It ticked politely back to two, like a guest who knows which room is his.",
+    "nl": "In het huisje van de wachter hangen elf klokken, want een wachter moet de tijd op de minuut weten en Tobias Wren wist het graag zeker. Alle elf bleven stilstaan in de nacht van de Grote Storm. Een klokkenmaker uit de hoofdstad heeft ooit een middag aan de keukenklok gewerkt. Hij vond goede veren, schone raderen en niets wat mankeerde. Hij zette hem op de juiste tijd. De klok tikte beleefd terug naar twee uur, als een gast die weet welke kamer de zijne is."
+   }
+  },
+  {
+   "id": "saltletter",
+   "page": 40,
+   "where": "text",
+   "icon": "quill",
+   "name": {
+    "en": "The Salt Letter",
+    "nl": "De zoutbrief"
+   },
+   "riddle": {
+    "en": "Ines wrote one letter without ink; it will cost you a story to read it.",
+    "nl": "Ines schreef één brief zonder inkt; lezen kost je een verhaal."
+   },
+   "lore": {
+    "en": "Ines learned salt-writing from a harbour clerk in the south, who kept his accounts on the drying pans because the tide audited them twice a day. You write in seawater on black paper and let the sun finish the sentence. Salt letters keep for years, unless somebody cries on them, which is why so few survive. The clerk’s books are long gone. Ines’s letters, somehow, always arrive dry.",
+    "nl": "Ines leerde zoutschrift van een havenklerk in het zuiden, die zijn boekhouding op de droogpannen bijhield omdat het tij die twee keer per dag kwam controleren. Je schrijft met zeewater op zwart papier en laat de zon de zin afmaken. Zoutbrieven blijven jaren goed, tenzij iemand erop huilt, en daarom zijn er zo weinig bewaard gebleven. De boeken van de klerk zijn allang verdwenen. De brieven van Ines komen, op de een of andere manier, altijd droog aan."
+   }
+  },
+  {
+   "id": "spectacles",
+   "page": 44,
+   "where": "text",
+   "icon": "eye",
+   "name": {
+    "en": "The Cracked Lens",
+    "nl": "Het gebarsten glas"
+   },
+   "riddle": {
+    "en": "In the keeper’s cottage, the broken half sees further.",
+    "nl": "In het huisje van de wachter kijkt de gebroken helft verder."
+   },
+   "lore": {
+    "en": "Keepers were issued spectacles along with the oil, the logbook and the wick-trimmer, whether they needed them or not. Tobias Wren didn’t, but he wore them for the logbook, out of respect. On the night of the Great Storm the wind took the cottage door and the left lens cracked. The right lens went on showing the room as it is. The left one kept watch. Nobody has told it yet that it may stop.",
+    "nl": "Wachters kregen een bril uitgereikt, samen met de olie, het logboek en de pitschaar, of ze hem nu nodig hadden of niet. Tobias Wren had hem niet nodig, maar droeg hem uit respect bij het logboek. In de nacht van de Grote Storm rukte de wind de deur van het huisje open en barstte het linkerglas. Het rechterglas bleef de kamer laten zien zoals hij is. Het linker hield de wacht. Niemand heeft het glas nog verteld dat het mag ophouden."
+   }
+  },
+  {
+   "id": "bellbuoy",
+   "page": 48,
+   "where": "text",
+   "icon": "bell",
+   "name": {
+    "en": "A Note Between Notes",
+    "nl": "Een toon tussen de tonen"
+   },
+   "riddle": {
+    "en": "On the seabed, listen upwards for a note no piano owns.",
+    "nl": "Luister op de zeebodem omhoog, naar een toon die geen piano heeft."
+   },
+   "lore": {
+    "en": "The bell buoy over the fallen tower was anchored the spring after the Great Storm, the way you might leave flowers. For a week it rang in a sensible key. Then the sea retuned it. Musicians who row out agree it sits between two notes, where nothing should be. One of them spent a summer writing a lullaby in it and never found the ending. A girl on the salt pans, he says, was humming it the whole time.",
+    "nl": "De belboei boven de omgevallen toren werd in het voorjaar na de Grote Storm verankerd, zoals je bloemen neerlegt. Een week lang luidde hij in een fatsoenlijke toonsoort. Toen stemde de zee hem opnieuw. Muzikanten die erheen roeien, zijn het erover eens dat hij tussen twee tonen in zit, waar niets hoort te zijn. Een van hen schreef er een hele zomer lang een slaapliedje in en vond nooit het slot. Een meisje op de zoutpannen, zegt hij, neuriede het al die tijd al."
+   }
+  },
+  {
+   "id": "shiplantern",
+   "page": 60,
+   "where": "text",
+   "icon": "lantern",
+   "name": {
+    "en": "The Borrowed Flame",
+    "nl": "De geleende vlam"
+   },
+   "riddle": {
+    "en": "Stay aboard past dawn, and the captain will lend you a light to see you ashore.",
+    "nl": "Blijf na zonsopgang aan boord, en de kapitein leent je een licht om veilig aan wal te komen."
+   },
+   "lore": {
+    "en": "Ships of the Marigold’s day carried one lantern that was never allowed to go out. It was lit on the quay at the start of a voyage and put out only at the end. The Marigold’s voyage never ended. Its lantern holds exactly one night’s oil and has burned the same night ever since, so it has never needed filling. Captain Lorne lends it out with the courtesy of someone who expects it back.",
+    "nl": "Schepen uit de tijd van de Marigold voerden één lantaarn die nooit uit mocht gaan. Hij werd aan het begin van een reis op de kade aangestoken en pas aan het eind gedoofd. De reis van de Marigold is nooit afgelopen. Haar lantaarn bevat precies één nacht olie en brandt sindsdien steeds dezelfde nacht, dus hij hoeft nooit te worden bijgevuld. Kapitein Lorne leent hem uit met de hoffelijkheid van iemand die hem terug verwacht."
+   }
+  },
+  {
+   "id": "shillings",
+   "page": 65,
+   "where": "text",
+   "icon": "star",
+   "name": {
+    "en": "The Shilling Prices",
+    "nl": "De shillingprijzen"
+   },
+   "riddle": {
+    "en": "In the oldest shop in town, everything costs money nobody has.",
+    "nl": "In de oudste winkel van de stad kost alles geld dat niemand heeft."
+   },
+   "lore": {
+    "en": "Grey Harbour gave up shillings when the new coinage came in, except at Marsh & Sons. Abel’s great-grandfather refused on principle, his grandfather out of habit, and his father because he had lost the new labels. Abel keeps it up out of honesty: an old thing, he says, should cost what it cost. He takes modern money, grudgingly, and gives change in coins that no longer exist. Nobody has ever complained. Most people keep them.",
+    "nl": "Grijshaven deed de shilling de deur uit toen het nieuwe geld kwam, behalve bij Marsh & Zonen. Abels overgrootvader weigerde uit principe, zijn grootvader uit gewoonte en zijn vader omdat hij de nieuwe prijskaartjes kwijt was. Abel houdt het vol uit eerlijkheid: een oud ding, zegt hij, hoort te kosten wat het kostte. Hij neemt het nieuwe geld aan, met tegenzin, en geeft wisselgeld terug in munten die niet meer bestaan. Niemand heeft ooit geklaagd. De meeste mensen bewaren ze."
+   }
+  },
+  {
+   "id": "lullaby",
+   "page": 69,
+   "where": "text",
+   "icon": "moon",
+   "name": {
+    "en": "Nell’s Lullaby",
+    "nl": "Nells wiegenlied"
+   },
+   "riddle": {
+    "en": "Ask the rower where her tune comes from, then look at what she keeps in her pocket.",
+    "nl": "Vraag de roeister waar haar wijsje vandaan komt, en kijk dan wat ze in haar zak bewaart."
+   },
+   "lore": {
+    "en": "Rakers on the old coast say the pans grow whatever the raker is thinking of, which is why good rakers try to think of nothing. Nell has never managed it. Her tune appears in no songbook in Grey Harbour, but old sailors who hear it across the pans go quiet and check the sky. One of them swears it was sung on Cape Seren once, to make a storm sound like rocking.",
+    "nl": "Zoutharkers aan de oude kust zeggen dat er in de pannen groeit waar de harker aan denkt, en daarom proberen goede harkers aan niets te denken. Dat is Nell nooit gelukt. Haar wijsje staat in geen enkel liedboek van Grijshaven, maar oude zeelui die het over de pannen horen aanwaaien, worden stil en kijken naar de lucht. Een van hen zweert dat het ooit op Kaap Seren werd gezongen, om een storm te laten klinken als wiegen."
+   }
+  },
+  {
+   "id": "lastcan",
+   "page": 99,
+   "where": "text",
+   "icon": "lantern",
+   "name": {
+    "en": "The Last Can",
+    "nl": "Het laatste blik"
+   },
+   "riddle": {
+    "en": "Look under the one floorboard only a child would know is loose.",
+    "nl": "Kijk onder de enige vloerplank waarvan alleen een kind weet dat hij loszit."
+   },
+   "lore": {
+    "en": "Keepers were issued oil by the harbour and trusted to account for every drop. Tobias Wren kept a thimbleful back each week and entered the shortfall in his logbook as “evaporation”. It is the only lie in eleven years of entries. He scratched Nell’s name on the lid so that nobody would mistake it for the harbour’s oil, and so that nobody would mistake whose it was.",
+    "nl": "Vuurtorenwachters kregen hun olie van de haven en moesten elke druppel verantwoorden. Tobias Wren hield elke week een vingerhoedje achter en schreef het tekort in zijn logboek op als “verdamping”. Het is de enige leugen in elf jaar aantekeningen. Hij kraste Nells naam in het deksel, zodat niemand het voor olie van de haven zou aanzien, en zodat niemand zich kon vergissen in van wie het was."
+   }
+  },
+  {
+   "id": "facelight",
+   "page": null,
+   "where": "scene",
+   "icon": "eye",
+   "scene": "baynight",
+   "name": {
+    "en": "The Face in the Light",
+    "nl": "Het gezicht in het licht"
+   },
+   "riddle": {
+    "en": "In the bay at two, lift the page and look into the water: the drowned light is looking back.",
+    "nl": "Til in de baai om twee uur de bladzijde op en kijk in het water: het verdronken licht kijkt terug."
+   },
+   "lore": {
+    "en": "Fishermen in Grey Harbour don’t look at the drowned light for long. Those who do say there is a face in it, turning with the beam: patient, polite, soaked to the collar. It isn’t searching the sea for ships. It is watching the harbour, the way you watch a road for a cart that is late. The town finds this bad for business and has agreed not to mention it.",
+    "nl": "Vissers in Grijshaven kijken nooit lang naar het verdronken licht. Wie het wel doet, zegt dat er een gezicht in zit dat met de bundel meedraait: geduldig, beleefd, doorweekt tot op de kraag. Het speurt de zee niet af naar schepen. Het tuurt naar de haven, zoals je een weg afkijkt naar een kar die te laat is. De stad vindt dat slecht voor de zaken en heeft afgesproken er niet over te beginnen."
+   }
+  },
+  {
+   "id": "initials",
+   "page": null,
+   "where": "scene",
+   "icon": "chisel",
+   "scene": "lanternroom",
+   "name": {
+    "en": "I.A., Again",
+    "nl": "Alweer I.A."
+   },
+   "riddle": {
+    "en": "In the lamp room, lift the page and check the brass: Ines never could leave a room unsigned.",
+    "nl": "Til in de lantaarnkamer de bladzijde op en bekijk het koper: Ines kon nu eenmaal geen kamer ongesigneerd laten."
+   },
+   "lore": {
+    "en": "Ines signs her failures as neatly as her maps; a good survey, she says, marks where you went wrong as clearly as where you went right. She scratched these letters with the point of her compass the night her lamp oil turned out to be the wrong vintage. Then she sat with the sleeping keeper until the tide came back, and left him a note. It is still under his cheek.",
+    "nl": "Ines signeert haar mislukkingen even netjes als haar kaarten; een goede opmeting, zegt ze, laat net zo duidelijk zien waar je verkeerd ging als waar je goed ging. Ze kraste deze letters met de punt van haar passer, de nacht dat haar lampolie van de verkeerde jaargang bleek te zijn. Daarna bleef ze bij de slapende wachter zitten tot het tij terugkwam, en liet een briefje voor hem achter. Het ligt nog onder zijn wang."
+   }
+  },
+  {
+   "id": "grain",
+   "page": null,
+   "where": "ui",
+   "icon": "star",
+   "name": {
+    "en": "The Grain of Salt",
+    "nl": "De zoutkorrel"
+   },
+   "riddle": {
+    "en": "In the library, hold the grain of salt on this book’s cover until it gives in.",
+    "nl": "Houd in de bibliotheek de zoutkorrel op het omslag van dit boek vast tot hij het opgeeft."
+   },
+   "lore": {
+    "en": "Ines pressed it into the last book, where no page should be. A grain of salt is the sea’s smallest handwriting: a perfect cube that remembers the water it came from. This one came from the salt pans of Grey Harbour. Hold it long enough and it melts into a single drop that smells of tea, wet rope and 1826, and then, very briefly, of a lullaby.",
+    "nl": "Ines drukte hem in het vorige boek, op een plek waar geen bladzijde hoort te zitten. Een zoutkorrel is het kleinste handschrift van de zee: een volmaakt kubusje dat zich het water herinnert waar het uit kwam. Deze komt uit de zoutpannen van Grijshaven. Houd hem lang genoeg vast en hij smelt tot één druppel die ruikt naar thee, nat touw en 1826, en dan, heel even, naar een wiegenlied."
+   }
+  }
+ ],
+ "secret": {
+  "title": {
+   "en": "The Wake",
+   "nl": "De wake"
+  },
+  "label": {
+   "en": "Page 0",
+   "nl": "Bladzijde 0"
+  },
+  "text": {
+   "en": [
+    "A wake is the line a ship leaves on the water after it has gone. It is also the night you sit up beside someone, and the moment a sleeper opens their eyes. This page is all three. You are not supposed to be here. Well done.",
+    "“I am writing this on the night train east,” writes Ines, in small brown letters that jump at every set of points. “Station Nine is on no timetable I can find, which is how I knew I had the right train. The conductor says nobody gets off there. When I asked why he sells tickets to it, he said the city likes to know who is coming.",
+    "“If you are reading this, you have looked into every corner of the bay, including the ones under water. So you know what I know now: the sea would rather dream a night a hundred times than finish it once. A city can be just as stubborn, for four hundred years. This one has started to toss and turn, and I would like to be there when it wakes. Don’t follow me. You will anyway. Bring a warmer coat.”",
+    "Pressed flat between this page and the cover, where no page should be, is a railway ticket: one way, third class, punched once. Where the destination should be printed there is only a number, and the ink is still wet."
+   ],
+   "nl": [
+    "Een wake is de nacht dat je opblijft naast iemand die slaapt, tot die de ogen opendoet. Een kielzog is de streep die een schip op het water achterlaat als het al weg is. Deze bladzijde is allebei. Je hoort hier niet te zijn. Goed gedaan.",
+    "“Ik schrijf dit in de nachttrein naar het oosten,” schrijft Ines, in kleine bruine letters die bij elke wissel opspringen. “Station Negen staat in geen enkele dienstregeling die ik kan vinden, en zo wist ik dat ik de goede trein had. De conducteur zegt dat daar nooit iemand uitstapt. Toen ik vroeg waarom hij er dan kaartjes voor verkoopt, zei hij dat de stad graag weet wie er komt.",
+    "“Als je dit leest, dan heb je in elke hoek van de baai gekeken, ook in de hoeken onder water. Dan weet je wat ik nu weet: de zee droomt liever honderd keer dezelfde nacht dan dat ze hem één keer afmaakt. Een stad kan net zo koppig zijn, vierhonderd jaar lang. Deze is gaan woelen, en ik wil erbij zijn als ze wakker wordt. Volg me niet. Je doet het toch wel. Neem een warmere jas mee.”",
+    "Platgedrukt tussen deze bladzijde en het omslag, waar geen bladzijde hoort te zitten, ligt een treinkaartje: enkele reis, derde klas, één keer geknipt. Waar de bestemming gedrukt had moeten staan, staat alleen een getal, en de inkt is nog nat."
+   ]
+  },
+  "sign": {
+   "en": "The Veyra Cycle continues in Book III.",
+   "nl": "De Veyra-cyclus gaat verder in Boek III."
+  }
+ }
+}

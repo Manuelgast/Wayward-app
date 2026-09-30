@@ -17,6 +17,12 @@
   var platform = cap.getPlatform();
   var PRODUCTS = CFG.products || [];
 
+  // The store build always shows the shop: shop.js v2 reads this switch when it starts.
+  try { localStorage.setItem('wayward.shop.dev', '1'); } catch (e) {}
+  // Links in the shop: the privacy policy everywhere, Apple's standard terms of use only on iPhone.
+  var LINKS = CFG.links || {};
+  window.WAYWARD_LINKS = { privacy: LINKS.privacy, terms: platform === 'ios' ? LINKS.termsIos : LINKS.termsAndroid };
+
   function call(plugin, method, opts) { return cap.nativePromise(plugin, method, opts || {}); }
   function conf(id) { for (var i = 0; i < PRODUCTS.length; i++) if (PRODUCTS[i].id === id) return PRODUCTS[i]; return { id: id, kind: 'inapp', type: 'book' }; }
   function ids(kind) { return PRODUCTS.filter(function (p) { return (p.kind === 'subs') === (kind === 'subs'); }).map(function (p) { return p.id; }); }

@@ -526,6 +526,7 @@
     var files = {};
     Object.keys(SM.map).forEach(function (k) { SM.map[k].forEach(function (f) { files[f] = 1; }); });
     Object.keys(files).forEach(function (f) {
+      if (SM.buf[f]) return;
       fetch(SM.base + f + '.mp3').then(function (r) { if (!r.ok) throw 0; return r.arrayBuffer(); }).then(function (ab) {
         return new Promise(function (res, rej) { var p = E.ctx.decodeAudioData(ab, res, rej); if (p && p.then) p.then(res, rej); });
       }).then(function (b) { SM.buf[f] = b; }).catch(function () {});
@@ -616,6 +617,10 @@
     _music: function () { return { name: MU.name, playing: !!(MU.cur && !MU.cur.el.paused), t: MU.cur ? MU.cur.el.currentTime : 0, idx: MU.pl.indexOf(MU.cur), paused: MU.pl.map(function (p) { return p.el.paused; }) }; },
     _seekEnd: function (s) { if (MU.cur) MU.cur.el.currentTime = MU.cur.el.duration - (s || 6); },
     samples: function (base, map, gains) { SM.base = base; SM.map = map || {}; SM.gain = gains || {}; loadSamples(); },
+    addSamples: function (map, gains) { // extra recorded sounds from add-on modules (merged, loaded when the audio is unlocked)
+      Object.keys(map || {}).forEach(function (k) { SM.map[k] = map[k]; }); Object.keys(gains || {}).forEach(function (k) { SM.gain[k] = gains[k]; });
+      if (SM.loading && E.ctx) { SM.loading = false; loadSamples(); }
+    },
     _samplesReady: function () { return Object.keys(SM.buf).length; },
     setMusic: function (on) {
       on = !!on; if (on === E.music) return; E.music = on;

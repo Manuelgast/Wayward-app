@@ -1,0 +1,33 @@
+New sounds for the v4.5 scenes (scenes2.js). All Freesound recordings released under CC0 1.0 (public domain);
+the high-quality previews were trimmed, faded, made mono and peak-normalised to about -2 dBFS with ffmpeg
+(script: /home/claude/wayward/sfx/build45.py).
+
+knock1, knock2
+  "Someone knock on door (4 knocks).mp3" by AUDACITIER
+  https://freesound.org/people/AUDACITIER/sounds/621234/
+  Licence: Creative Commons 0 (CC0 1.0)
+
+unfold1, unfold2
+  "Unfold a map" by Breviceps
+  https://freesound.org/people/Breviceps/sounds/447931/
+  Licence: Creative Commons 0 (CC0 1.0)
+
+rub1, rub2
+  "Packaging Paper Rub Sliding Between Hands.wav" by afleetingspeck
+  https://freesound.org/people/afleetingspeck/sounds/140463/
+  Licence: Creative Commons 0 (CC0 1.0)
+
+brush1, brush2, brush3
+  "Dust_Rustle.wav" by Galbenshire
+  https://freesound.org/people/Galbenshire/sounds/464579/
+  Licence: Creative Commons 0 (CC0 1.0)
+
+step1, step2, step3
+  "120807 Footsteps up stone stairs, slow, boots, echo, Aarhus.wav" by TRP
+  https://freesound.org/people/TRP/sounds/616615/
+  Licence: Creative Commons 0 (CC0 1.0)
+
+door
+  "short creaks creek creaky door open close.wav" by HowardV
+  https://freesound.org/people/HowardV/sounds/393800/
+  Licence: Creative Commons 0 (CC0 1.0)

@@ -81,7 +81,8 @@
      "text": "Als je eerst naar het dorp afdaalt om naar Ines te vragen,",
      "to": 6
     }
-   ]
+   ],
+   "nr": 1
   },
   "6": {
    "chapter": "Laag-Veyra",
@@ -103,7 +104,8 @@
      "text": "Als je Pim naar het puthuisje volgt,",
      "to": 49
     }
-   ]
+   ],
+   "nr": 44
   },
   "9": {
    "chapter": "De herberg",
@@ -122,7 +124,8 @@
      "text": "Als je je deur op slot doet en weer in bed kruipt,",
      "to": 11
     }
-   ]
+   ],
+   "nr": 18
   },
   "11": {
    "chapter": "Een einde",
@@ -137,7 +140,8 @@
     "kind": "strange",
     "epilogue": "Je slaapt elke nacht goed. Daar zorgt de klok wel voor.",
     "hint": "Sommige deuren kun je beter op slot laten. Of toch niet?"
-   }
+   },
+   "nr": 38
   },
   "12": {
    "chapter": "De blanco kaart",
@@ -155,7 +159,8 @@
      "text": "Als je de kaart opvouwt en toch naar de grot gaat,",
      "to": 16
     }
-   ]
+   ],
+   "nr": 23
   },
   "14": {
    "chapter": "De Zwarte Rivier",
@@ -173,7 +178,8 @@
      "text": "Als je te voet de uitgehakte gezichten volgt, dieper de berg in,",
      "to": 38
     }
-   ]
+   ],
+   "nr": 2
   },
   "16": {
    "chapter": "De mond van de grot",
@@ -191,7 +197,8 @@
      "text": "Als je je eigen naam onder de hare krast,",
      "to": 20
     }
-   ]
+   ],
+   "nr": 33
   },
   "17": {
    "chapter": "De lantaarnprocessie",
@@ -209,7 +216,8 @@
      "text": "Als je Marta bij de arm grijpt en haar wakker maakt,",
      "to": 30
     }
-   ]
+   ],
+   "nr": 27
   },
   "19": {
    "chapter": "De Naaldkam",
@@ -227,7 +235,8 @@
      "text": "Als je op je ogen vertrouwt en de stevige richel neemt,",
      "to": 24
     }
-   ]
+   ],
+   "nr": 39
   },
   "20": {
    "chapter": "Een einde",
@@ -242,7 +251,8 @@
     "kind": "strange",
     "epilogue": "Je bent hier geweest. Meer zal niemand ooit weten.",
     "hint": "Laat je sporen na voordat je naar binnen gaat."
-   }
+   },
+   "nr": 7
   },
   "22": {
    "chapter": "Negenhonderd treden",
@@ -271,7 +281,8 @@
      "short": "Volg de gestalte de mist in",
      "to": 52
     }
-   ]
+   ],
+   "nr": 4
   },
   "24": {
    "chapter": "Een einde",
@@ -286,7 +297,8 @@
     "kind": "bad",
     "epilogue": "Het verstandige pad was het pad dat iemand voor je had geschilderd.",
     "hint": "Op de kam is de weg die voor de hand ligt ook de kortste weg naar beneden."
-   }
+   },
+   "nr": 3
   },
   "25": {
    "chapter": "De Lantaarnzaal",
@@ -308,7 +320,8 @@
      "text": "Als je de lantaarn met jouw naam uitblaast,",
      "to": 36
     }
-   ]
+   ],
+   "nr": 49
   },
   "27": {
    "chapter": "De onzichtbare brug",
@@ -322,7 +335,8 @@
      "text": "Als je door het raam naar binnen klimt,",
      "to": 35
     }
-   ]
+   ],
+   "nr": 13
   },
   "28": {
    "chapter": "Andermans lantaarns",
@@ -340,7 +354,8 @@
      "text": "Als je hem terugzet en in plaats daarvan je eigen lantaarn pakt,",
      "to": 33
     }
-   ]
+   ],
+   "nr": 43
   },
   "30": {
    "chapter": "Een einde",
@@ -355,7 +370,8 @@
     "kind": "strange",
     "epilogue": "Laag-Veyra wenst je het allerbeste. Van een afstandje.",
     "hint": "Maak nooit een slaapwandelaar wakker. Tenzij je wilt zien wat er gebeurt."
-   }
+   },
+   "nr": 20
   },
   "31": {
    "chapter": "Een einde",
@@ -370,7 +386,8 @@
     "kind": "strange",
     "epilogue": "Het meer houdt iedereen bij zich die even stopt om uit te rusten. Het is er heel rustgevend.",
     "hint": "Haar boot weet de weg. De vraag is: waarheen."
-   }
+   },
+   "nr": 36
   },
   "33": {
    "chapter": "Jouw lantaarn",
@@ -388,7 +405,8 @@
      "text": "Als je de schoorsteen in klimt, naar de geur van papier,",
      "to": 43
     }
-   ]
+   ],
+   "nr": 14
   },
   "35": {
    "chapter": "Het hoge raam",
@@ -402,7 +420,8 @@
      "text": "Als je kijkt,",
      "to": 43
     }
-   ]
+   ],
+   "nr": 31
   },
   "36": {
    "chapter": "Een einde",
@@ -417,7 +436,8 @@
     "kind": "strange",
     "epilogue": "Niemand zal je ooit vinden. Niemand zal ooit zoeken.",
     "hint": "Wat gebeurt er met een naam als zijn licht uitgaat?"
-   }
+   },
+   "nr": 34
   },
   "38": {
    "chapter": "De gezichten",
@@ -435,7 +455,8 @@
      "text": "Als je antwoordt: “Een kaart”,",
      "to": 45
     }
-   ]
+   ],
+   "nr": 47
   },
   "41": {
    "chapter": "De weg van de lantaarn",
@@ -449,7 +470,8 @@
      "text": "Als je afdaalt om haar tegemoet te gaan,",
      "to": 80
     }
-   ]
+   ],
+   "nr": 21
   },
   "42": {
    "chapter": "De Kompaskamer",
@@ -467,7 +489,8 @@
      "text": "Als je eerst vraagt waar de kaart voor dient,",
      "to": 53
     }
-   ]
+   ],
+   "nr": 16
   },
   "43": {
    "chapter": "Het scriptorium",
@@ -489,7 +512,8 @@
      "text": "Als je de abdis wakker maakt,",
      "to": 65
     }
-   ]
+   ],
+   "nr": 46
   },
   "45": {
    "chapter": "De glijgoot",
@@ -507,7 +531,8 @@
      "text": "Als je naar de lichtjes aan de overkant zwemt,",
      "to": 58
     }
-   ]
+   ],
+   "nr": 19
   },
   "47": {
    "chapter": "Een einde",
@@ -522,7 +547,8 @@
     "kind": "strange",
     "epilogue": "Over dertig jaar leer jij ook fluiten.",
     "hint": "Een nieuw touw aan een oude klok wacht op nieuwe handen."
-   }
+   },
+   "nr": 40
   },
   "49": {
    "chapter": "Een einde",
@@ -537,7 +563,8 @@
     "kind": "bad",
     "epilogue": "In Laag-Veyra is alleen de put wat hij lijkt.",
     "hint": "Lees de waarschuwing op het omslag nog eens."
-   }
+   },
+   "nr": 26
   },
   "50": {
    "chapter": "Een einde",
@@ -552,7 +579,8 @@
     "kind": "strange",
     "epilogue": "Je werd een zeer verdienstelijk cartograaf. Je bent inmiddels ook een heuveltje.",
     "hint": "Pak nooit een pen aan voordat je weet wat hij schrijft."
-   }
+   },
+   "nr": 42
   },
   "52": {
    "chapter": "De gestalte in de mist",
@@ -570,7 +598,8 @@
      "text": "Als je de lantaarn meeneemt en het rotspad naar beneden volgt,",
      "to": 56
     }
-   ]
+   ],
+   "nr": 37
   },
   "53": {
    "chapter": "Waar de kaart voor dient",
@@ -592,7 +621,8 @@
      "text": "Als je de kaart doormidden scheurt,",
      "to": 64
     }
-   ]
+   ],
+   "nr": 11
   },
   "55": {
    "chapter": "Een einde",
@@ -607,7 +637,8 @@
     "kind": "strange",
     "epilogue": "Het was al jouw boot, lang voordat het jouw idee was.",
     "hint": "Een lege boot met jouw naam erop is geen uitnodiging."
-   }
+   },
+   "nr": 10
   },
   "56": {
    "chapter": "Een einde",
@@ -622,7 +653,8 @@
     "kind": "strange",
     "epilogue": "Die volgt je toch wel. Dat deed jij ook.",
     "hint": "Neem mee wat de gestalte achterlaat."
-   }
+   },
+   "nr": 12
   },
   "57": {
    "chapter": "Een einde",
@@ -637,7 +669,8 @@
     "kind": "strange",
     "epilogue": "Jij gaf ze alles. Zij gaven jou hun volle aandacht.",
     "hint": "Hulp die nooit ophoudt, wordt iets anders."
-   }
+   },
+   "nr": 15
   },
   "58": {
    "chapter": "De overkant",
@@ -651,7 +684,8 @@
      "text": "Als je het valluik openduwt,",
      "to": 43
     }
-   ]
+   ],
+   "nr": 29
   },
   "59": {
    "chapter": "De brief van morgen",
@@ -669,7 +703,8 @@
      "text": "Als je de klok laat voor wat hij is en meteen afdaalt naar het Hart,",
      "to": 69
     }
-   ]
+   ],
+   "nr": 41
   },
   "61": {
    "chapter": "Een einde",
@@ -685,7 +720,8 @@
     "star": true,
     "epilogue": "De beste kaarten laten dingen weg. Jij liet het laatste woord van de berg weg.",
     "hint": "Het eenvoudigste wat je kunt tekenen, is een uitweg."
-   }
+   },
+   "nr": 45
   },
   "62": {
    "chapter": "Brand in het scriptorium",
@@ -703,7 +739,8 @@
      "text": "Als je het laat branden,",
      "to": 76
     }
-   ]
+   ],
+   "nr": 32
   },
   "64": {
    "chapter": "De scheur",
@@ -732,7 +769,8 @@
      "short": "Grijp de pen",
      "to": 75
     }
-   ]
+   ],
+   "nr": 25
   },
   "65": {
    "chapter": "De abdis",
@@ -750,7 +788,8 @@
      "text": "Als je afdaalt naar het Hart om Ines te zoeken,",
      "to": 69
     }
-   ]
+   ],
+   "nr": 35
   },
   "67": {
    "chapter": "Water en as",
@@ -768,7 +807,8 @@
      "text": "Als je weigert en afdaalt om Ines te zoeken,",
      "to": 69
     }
-   ]
+   ],
+   "nr": 8
   },
   "69": {
    "chapter": "De lange trap omlaag",
@@ -782,7 +822,8 @@
      "text": "Als je naar haar afdaalt,",
      "to": 80
     }
-   ]
+   ],
+   "nr": 30
   },
   "71": {
    "chapter": "Een einde",
@@ -797,7 +838,8 @@
     "kind": "strange",
     "epilogue": "De berg slaapt nog steeds. Alleen nu ergens anders.",
     "hint": "Een klok die door nieuwe handen wordt geluid, klinkt anders."
-   }
+   },
+   "nr": 22
   },
   "72": {
    "chapter": "Een einde",
@@ -812,7 +854,8 @@
     "kind": "bad",
     "epilogue": "Jij vond haar. De berg vond jullie allebei.",
     "hint": "In een val kun je maar één ding vasthouden."
-   }
+   },
+   "nr": 48
   },
   "75": {
    "chapter": "De pen tussen hemel en aarde",
@@ -826,7 +869,8 @@
      "text": "Als je haar tegemoet loopt, boven het oog,",
      "to": 80
     }
-   ]
+   ],
+   "nr": 6
   },
   "76": {
    "chapter": "Een einde",
@@ -841,7 +885,8 @@
     "kind": "bad",
     "epilogue": "Ergens is een blanco kaart van Laag-Veyra eindelijk nauwkeurig.",
     "hint": "Een kaart verbranden maakt het land niet altijd vrij."
-   }
+   },
+   "nr": 17
   },
   "80": {
    "chapter": "Het Hart",
@@ -875,7 +920,8 @@
      "short": "Loop weg met Ines",
      "to": 92
     }
-   ]
+   ],
+   "nr": 9
   },
   "84": {
    "chapter": "Een einde",
@@ -890,7 +936,8 @@
     "kind": "strange",
     "epilogue": "Jij houdt nu de pen. Iemand anders het touw.",
     "hint": "Wie de pen vasthoudt, wordt erdoor vastgehouden."
-   }
+   },
+   "nr": 24
   },
   "88": {
    "chapter": "Een einde",
@@ -906,7 +953,8 @@
     "star": true,
     "epilogue": "Geen van jullie beiden legt het potlood weg.",
     "hint": "Soms is de dapperste keuze om niets vast te houden."
-   }
+   },
+   "nr": 5
   },
   "92": {
    "chapter": "Een einde",
@@ -921,7 +969,8 @@
     "kind": "strange",
     "epilogue": "Je werd het soort cartograaf dat leerlingen achternagaan.",
     "hint": "Weglopen is ook een manier van volgen."
-   }
+   },
+   "nr": 28
   }
  }
 }

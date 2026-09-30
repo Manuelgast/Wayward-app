@@ -6,8 +6,11 @@
   var app = $('#app');
   var I18N = window.WAYWARD_I18N, IL = window.WAYWARD_INTERLUDES || {}, FX = window.WaywardFX;
   var AU = window.WaywardAudio || { unlock: function () {}, setScene: function () {}, sfx: function () {}, setMusic: function () {}, setSfx: function () {}, setVolume: function () {}, tracks: function () {}, duck: function () {}, state: function () { return {}; } };
-  var STORE = 'wayward.hollow-mountain.v1', PREF = 'wayward.prefs.v1';
-  var VEIL = 'fog'; // this book's intro veil; other books get sea spray, ash and stardust
+  var SHELF = (window.WAYWARD_BOOKS || [{ id: 'hollow-mountain', no: 1, file: 'book', relics: 'relics.json', store: 'wayward.hollow-mountain.v1', coverScene: 'mountain', veil: 'fog', ui: 'compass', creep: { 22: 'fog' }, roles: { edge: 'gilt', map: 'honestmap', secret: 'margin' } }]);
+  var BK = SHELF[0]; // the book that is open on the shelf (T10: every book keeps its own progress, endings and relics)
+  function bookById(id) { return SHELF.filter(function (b) { return b.id === id && !b.soon; })[0]; }
+  var PREF = 'wayward.prefs.v1';
+  var VEIL = 'fog'; // this book's intro veil: mist for Book I, sea spray for Book II, later ash and stardust
   var BOOKS = {}, BOOK, S, KEYS, ENDS, TOTAL_END, REL;
   var fresh = function () { return { page: null, trail: [], visited: [], found: [], finger: null, lastNew: null, relics: [], scenes: [], hint: 0 }; };
   var st = fresh();
@@ -16,8 +19,9 @@
   var timers = [], tick = null;
   function later(fn, ms) { var t = setTimeout(fn, ms); timers.push(t); return t; }
   function clearTimers() { timers.forEach(clearTimeout); timers = []; if (tick) { clearInterval(tick); tick = null; } }
-  function load() { try { var raw = localStorage.getItem(STORE); if (raw) { var o = JSON.parse(raw); if (o && typeof o === 'object') Object.assign(st, o); } } catch (e) {} try { var p = localStorage.getItem(PREF); if (p) Object.assign(prefs, JSON.parse(p)); } catch (e) {} }
-  function save() { try { localStorage.setItem(STORE, JSON.stringify(st)); } catch (e) {} }
+  function loadState() { try { var raw = localStorage.getItem(BK.store); if (raw) { var o = JSON.parse(raw); if (o && typeof o === 'object') Object.assign(st, o); } } catch (e) {} }
+  function load() { try { var p = localStorage.getItem(PREF); if (p) Object.assign(prefs, JSON.parse(p)); } catch (e) {} BK = bookById(prefs.book) || SHELF[0]; VEIL = BK.veil || 'fog'; loadState(); }
+  function save() { try { localStorage.setItem(BK.store, JSON.stringify(st)); } catch (e) {} }
   function savePrefs() { try { localStorage.setItem(PREF, JSON.stringify(prefs)); } catch (e) {} }
   function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
   function t(k, v) { var s = (I18N[lang] && I18N[lang][k]) || I18N.en[k] || k; if (v) s = s.replace(/\{(\w+)\}/g, function (m, n) { return v[n] != null ? v[n] : m; }); return s; }
@@ -45,7 +49,7 @@
   function applyI18n() {
     document.documentElement.lang = lang;
     $$('[data-i18n]').forEach(function (el) { el.textContent = t(el.getAttribute('data-i18n')); });
-    $$('[data-i18n-html]').forEach(function (el) { el.innerHTML = t(el.getAttribute('data-i18n-html')); });
+    $$('[data-i18n-html]').forEach(function (el) { var k = el.getAttribute('data-i18n-html'); el.innerHTML = k === 'libTitle' ? libTitle() : t(k); });
     $$('[data-i18n-aria]').forEach(function (el) { el.setAttribute('aria-label', t(el.getAttribute('data-i18n-aria'))); });
     $$('[data-book="title"]').forEach(function (el) { el.textContent = BOOK ? BOOK.title : ''; });
     $$('[data-lang]').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-lang') === lang ? 'true' : 'false'); });
@@ -59,12 +63,39 @@
     return b;
   }
   function getBook(l) {
-    if (BOOKS[l]) return Promise.resolve(BOOKS[l]);
-    return fetch('book.' + l + '.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (b) { BOOKS[l] = normBook(b); return BOOKS[l]; });
+    var key = BK.file + '.' + l;
+    if (BOOKS[key]) return Promise.resolve(BOOKS[key]);
+    return fetch(key + '.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (b) { BOOKS[key] = normBook(b); return BOOKS[key]; });
   }
+  function getJSON(u) { return fetch(u).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }); }
+  var IL_HOME = {}; Object.keys(IL).forEach(function (k) { IL_HOME[k] = IL[k]; }); // Book I's scenes (i18n.js + scenes2.js)
+  var ILSETS = { 'hollow-mountain': IL_HOME };
+  function setIL(set) { Object.keys(IL).forEach(function (k) { delete IL[k]; }); Object.keys(set).forEach(function (k) { IL[k] = set[k]; }); }
+  function fixIL(raw) { // another book's scenes: positions on its pictures, its own veil for wiping
+    var out = {}; Object.keys(raw).forEach(function (k) { var il = Object.assign({}, raw[k]), sp = BK.spots && BK.spots[k];
+      if (il.x == null && sp) { il.x = sp[0]; il.y = sp[1]; } if (il.x == null) { il.x = 50; il.y = 45; }
+      if (il.type === 'wipe' && !il.preset) il.preset = BK.veil || 'fog'; out[k] = il; }); return out; }
+  function fixRelics(r) { (r.relics || []).forEach(function (x) { var sp = BK.relicSpots && BK.relicSpots[x.id]; if (x.where === 'scene' && x.x == null && sp) { x.x = sp[0]; x.y = sp[1]; } }); return r; }
+  function loadBookData() { // texts, relics and scenes of the open book
+    return Promise.all([getBook(lang), getJSON(BK.relics), BK.interludes && !ILSETS[BK.id] ? getJSON(BK.interludes) : Promise.resolve(null)]).then(function (res) {
+      useBook(res[0]); REL = fixRelics(res[1]); if (res[2]) ILSETS[BK.id] = fixIL(res[2]); setIL(ILSETS[BK.id] || {});
+      st.visited = st.visited.filter(function (k) { return S[k]; }); st.found = st.found.filter(function (k) { return S[k]; });
+      st.relics = st.relics.filter(function (id) { return relic(id); }); if (st.page && !S[st.page]) st.page = null;
+      LAYOUT = null; app.dataset.book = BK.id;
+    });
+  }
+  function switchBook(id) { // open another book from the shelf: its own progress, endings and relics
+    var nb = bookById(id); if (!nb) return Promise.resolve(false);
+    if (nb === BK && BOOK) return Promise.resolve(true);
+    save(); BK = nb; prefs.book = nb.id; savePrefs(); VEIL = nb.veil || 'fog';
+    st = fresh(); loadState(); R.p = null; BG.cur = null;
+    return loadBookData().then(function () { applyI18n(); return true; });
+  }
+  function PN(k) { var s = S[k]; return s && s.nr ? s.nr : k; } // the page number a reader sees (1..N, no gaps); ids stay internal
   function useBook(b) {
     BOOK = b; S = {};
     Object.keys(b.sections).forEach(function (k) { S[+k] = b.sections[k]; });
+    if (BK.no && !b.no) b.no = BK.no;
     KEYS = Object.keys(S).map(Number); ENDS = KEYS.filter(function (k) { return S[k].ending; }); TOTAL_END = ENDS.length;
   }
   function setLang(l) {
@@ -96,6 +127,7 @@
       setTimeout(function () { if (!prev.classList.contains('on')) prev.pause(); }, 950);
     }
     next.onloadeddata = reveal; next.onplaying = reveal;
+    if (BK.noVideo) { BG.a.classList.remove('on'); BG.b.classList.remove('on'); BG.a.pause(); BG.b.pause(); return; } // (temporary pictures, no loops yet)
     vidURL(scene).then(function (u) {
       if (BG.cur !== scene) return;
       next.src = u; next.defaultPlaybackRate = 0.85; next.playbackRate = 0.85;
@@ -145,7 +177,7 @@
     opts = opts || {}; p = Number(p);
     if (opts.push !== false && st.trail[st.trail.length - 1] !== p) st.trail.push(p);
     st.page = p;
-    R.fresh = st.visited.indexOf(p) === -1;
+    R.fresh = st.visited.indexOf(p) === -1; R.arrived = true; // arrived by navigation (not a re-render): a scene may play
     if (R.fresh) st.visited.push(p);
     st.lastNew = null;
     if (S[p].ending && st.found.indexOf(p) === -1) { st.found.push(p); st.lastNew = p; }
@@ -181,6 +213,8 @@
     R.introShort = short;
     var low = /[?&]fxlow=1/.test(location.search), sm = window.WaywardSmoke && window.WaywardSmoke.create(app, { dissipation: 0.9, velDissipation: 0.35, curl: 30, pointerTarget: app, wipe: true, sim: low ? 48 : 0, dye: low ? 160 : 0, iter: low ? 4 : 0 });
     AU.sfx('fogin', short ? { gain: 0.6 } : {});
+    var DYE = VEIL === 'sea' ? [0.74, 0.98, 1.02] : [0.9, 0.8, 1.3]; // lilac mist (Book I), sea spray (Book II)
+    if (VEIL === 'sea') saltCrystals(short ? 14 : 28);
     if (!sm) { FX.veil(app, { preset: VEIL, onCovered: function (rel) { onCovered(function () { AU.sfx('open'); rel(); }); }, onBurst: onBurst, onDone: onDone }); return; }
     SMK = sm; sm.awake(20000);
     var cover = document.createElement('div'); cover.className = 'fx-cover'; app.appendChild(cover);
@@ -200,7 +234,7 @@
       for (var k = 0; k < 5; k++) {
         var side = Math.floor(Math.random() * 4), u = Math.random(), x = side === 0 ? u * W : side === 1 ? W + 10 : side === 2 ? u * W : -10, y = side === 0 ? -10 : side === 1 ? u * H : side === 2 ? H + 10 : u * H;
         var dx = W / 2 - x, dy = H * 0.5 - y, l = Math.hypot(dx, dy) || 1;
-        var v = 0.07 + Math.random() * 0.09; sm.splat(x, y, dx / l * 1500, dy / l * 1500, [v * 0.9, v * 0.8, v * 1.3], 0.36);
+        var v = 0.07 + Math.random() * 0.09; sm.splat(x, y, dx / l * 1500, dy / l * 1500, [v * DYE[0], v * DYE[1], v * DYE[2]], 0.36);
       }
       if (++n >= T.n) clearInterval(pour);
     }, T.iv);
@@ -218,7 +252,7 @@
             if (SMK !== sm) return;
             sm.set({ dissipation: 0.1, velDissipation: 1.2 });
             var tr = $('#tome').getBoundingClientRect(), ar = app.getBoundingClientRect();
-            for (var q = 0; q < T.wisps; q++) { var g = 0.22 + Math.random() * 0.12; sm.splat(tr.left - ar.left + (0.08 + Math.random() * 0.84) * tr.width, tr.top - ar.top + (0.08 + Math.random() * 0.84) * tr.height, (Math.random() - 0.5) * 320, -70 - Math.random() * 120, [g * 0.92, g * 0.86, g * 1.15], 0.07 + Math.random() * 0.06); }
+            for (var q = 0; q < T.wisps; q++) { var g = 0.22 + Math.random() * 0.12; sm.splat(tr.left - ar.left + (0.08 + Math.random() * 0.84) * tr.width, tr.top - ar.top + (0.08 + Math.random() * 0.84) * tr.height, (Math.random() - 0.5) * 320, -70 - Math.random() * 120, [g * DYE[0] * 1.02, g * DYE[1] * 1.07, g * DYE[2] * 0.88], 0.07 + Math.random() * 0.06); }
           }, 1300);
           setTimeout(function () { cover.remove(); wrap.remove(); onDone(); }, 950);
           SMK_T = setTimeout(function () { if (SMK === sm) sm.fadeOut(3000, function () { if (SMK === sm) SMK = null; }); }, 15000);
@@ -226,20 +260,53 @@
       });
     }, T.at);
   }
+  function saltCrystals(n) { // Book II: fine salt crystals glint in the spray; your finger melts them
+    var box = document.createElement('div'); box.className = 'fx-salt'; app.appendChild(box); var W = app.clientWidth, H = app.clientHeight, xs = [];
+    for (var i = 0; i < n; i++) { var c = document.createElement('i'); c.className = 'fx-saltx'; var x = W * (0.08 + Math.random() * 0.84), y = H * (0.12 + Math.random() * 0.7); c.style.left = x + 'px'; c.style.top = y + 'px'; c.style.animationDelay = (Math.random() * 1.8).toFixed(2) + 's'; box.appendChild(c); xs.push([c, x, y]); }
+    function melt(e) { var r = app.getBoundingClientRect(), px = e.clientX - r.left, py = e.clientY - r.top; xs.forEach(function (q) { if (!q[3] && Math.abs(q[1] - px) < 46 && Math.abs(q[2] - py) < 46) { q[3] = 1; q[0].classList.add('gone'); } }); }
+    app.addEventListener('pointermove', melt); app.addEventListener('pointerdown', melt);
+    setTimeout(function () { box.classList.add('out'); }, 5200);
+    setTimeout(function () { app.removeEventListener('pointermove', melt); app.removeEventListener('pointerdown', melt); box.remove(); }, 6400);
+  }
+  function renderGrain() { // Book II's library relic: a grain of salt on the cover; hold it until it melts
+    var old = $('#heroGrain'), want = BK.ui === 'grain' && REL && relic('grain') && st.relics.indexOf('grain') === -1;
+    if (!want) { if (old) old.remove(); return; } if (old) return;
+    var g = document.createElement('button'); g.id = 'heroGrain'; g.className = 'grain'; g.setAttribute('aria-label', L(relic('grain').name));
+    g.style.left = (BK.grain || [63, 30])[0] + '%'; g.style.top = (BK.grain || [63, 30])[1] + '%'; $('#hero').appendChild(g);
+    var tm = null;
+    g.addEventListener('pointerdown', function (e) { e.stopPropagation(); g.classList.add('melt'); AU.sfx('tick', { gain: 0.4 }); clearTimeout(tm);
+      tm = setTimeout(function () { var r = g.getBoundingClientRect(), a = app.getBoundingClientRect(); g.remove(); foundRelic('grain', { x: r.left - a.left + r.width / 2, y: r.top - a.top + r.height / 2 }); }, 1600); });
+    ['pointerup', 'pointerleave', 'pointercancel'].forEach(function (ev) { g.addEventListener(ev, function () { clearTimeout(tm); g.classList.remove('melt'); }); });
+    g.addEventListener('click', function (e) { e.stopPropagation(); });
+  }
   // the book's typefaces must be in before pages are measured
   var FONTS_OK = !document.fonts, FONTS_READY = document.fonts ? Promise.all(['18px "EB Garamond"', 'italic 18px "EB Garamond"', '25px "IM Fell English"', '13px "IM Fell English SC"'].map(function (f) { return document.fonts.load(f); })).then(function () { FONTS_OK = true; }, function () { FONTS_OK = true; }) : Promise.resolve();
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------------- library ---------------- */
   function pipsHTML() { return ENDS.map(function (k) { var f = st.found.indexOf(k) > -1; return '<b class="' + (f ? (S[k].ending.star ? 'star' : 'on') : '') + '"></b>'; }).join(''); }
-  function renderLibrary() {
+  function libTitle() { // the question follows the clock, like the greeting: tonight / today (NL: vanavond, vannacht, vandaag)
     var hr = new Date().getHours();
+    return t(hr < 5 ? 'libTitleNight' : hr < 18 ? 'libTitleDay' : 'libTitleEve');
+  }
+  function renderShelf() {
+    var open = SHELF.filter(function (b) { return !b.soon; }).length;
+    if ($('#shelfOpen')) $('#shelfOpen').textContent = t('shelfOpen', { n: open });
+    $$('[data-bookid]').forEach(function (el) { el.classList.toggle('cur', el.getAttribute('data-bookid') === BK.id); el.setAttribute('aria-label', el.textContent.trim()); });
+    if ($('#heroBookNo')) $('#heroBookNo').textContent = t('bookNo', { n: ROMAN[(BK.no || 1) - 1] });
+    var hi = $('#heroStage img.layer'); if (hi && BK.coverScene) { var src = 'img/' + BK.coverScene + '.webp'; if (hi.getAttribute('src') !== src) hi.setAttribute('src', src); }
+    renderGrain();
+  }
+  function renderLibrary() {
+    renderShelf();
+    var hr = new Date().getHours();
+    $$('.lib-title').forEach(function (el) { el.innerHTML = libTitle(); });
     $('#greet').textContent = t(hr < 5 ? 'greetNight' : hr < 12 ? 'greetMorning' : hr < 18 ? 'greetAfternoon' : 'greetEvening');
     $('#heroPips').innerHTML = pipsHTML();
     $('#heroCount').textContent = t('endingsFound', { n: st.found.length, t: TOTAL_END });
     var started = !!st.page;
     $('#heroGoLabel').textContent = t(started ? 'resume' : 'begin');
-    $('#heroPill').textContent = started ? t('pillContinue', { p: st.page }) : t('pillNew');
+    $('#heroPill').textContent = started ? t('pillContinue', { p: PN(st.page) }) : t('pillNew');
     renderTabBadge();
   }
   function renderTabBadge() {
@@ -251,21 +318,21 @@
     var now = Date.now(); if (now - compassT > 4000) compassTaps = 0; compassT = now; compassTaps++;
     this.querySelector('svg').style.transform = 'rotate(' + (compassTaps * 51.4) + 'deg)';
     AU.sfx('tap');
-    if (compassTaps >= 7) { compassTaps = 0; var r = this.getBoundingClientRect(), a = app.getBoundingClientRect(); foundRelic('compass', { x: r.left - a.left + r.width / 2, y: r.top - a.top + r.height / 2 }); }
+    if (compassTaps >= 7 && BK.ui === 'compass') { compassTaps = 0; var r = this.getBoundingClientRect(), a = app.getBoundingClientRect(); foundRelic('compass', { x: r.left - a.left + r.width / 2, y: r.top - a.top + r.height / 2 }); }
     e.stopPropagation();
   });
 
   /* ---------------- cover ---------------- */
   function renderCover() {
-    bgScene('mountain');
-    $('#coverKicker').textContent = BOOK.imprint + ' · ' + t('bookOne');
+    bgScene(BK.coverScene || 'mountain');
+    $('#coverKicker').textContent = BOOK.imprint + ' · ' + t('bookNo', { n: ROMAN[(BK.no || 1) - 1] });
     $('#coverTitle').innerHTML = esc(BOOK.title).replace(' ', '<br>');
     $('#coverTag').textContent = BOOK.tagline;
     $('#coverWarn').textContent = BOOK.warning;
     $('#chipEnd').textContent = t('chipEndings', { n: TOTAL_END });
     $('#chipPages').textContent = t('chipPages', { n: KEYS.length });
     var started = !!st.page;
-    $('#coverGoLabel').textContent = started ? t('continueFrom', { p: st.page }) : t('openBook');
+    $('#coverGoLabel').textContent = started ? t('continueFrom', { p: PN(st.page) }) : t('openBook');
     $('#coverRestart').hidden = !started;
   }
 
@@ -298,7 +365,7 @@
   }
   function blocksFor(p) {
     var s = S[p], blocks = [], idx = 0;
-    blocks.push({ type: 'fixed', html: '<div class="phead"><div class="pcoin" aria-hidden="true">' + p + '</div><div class="ptitles"><span class="caps">' + esc(t('pageOf', { p: p, title: BOOK.title })) + '</span><h2>' + esc(s.chapter) + '</h2></div></div>' + FLOURISH });
+    blocks.push({ type: 'fixed', html: '<div class="phead"><div class="pcoin" aria-hidden="true">' + PN(p) + '</div><div class="ptitles"><span class="caps">' + esc(t('pageOf', { p: PN(p), title: BOOK.title })) + '</span><h2>' + esc(s.chapter) + '</h2></div></div>' + FLOURISH });
     s.text.forEach(function (para, i) { var tk = tokenize(para, idx); idx = tk.next; blocks.push({ type: 'para', toks: tk.toks, first: i === 0 }); });
     var extra = '';
     if (s.moment) extra += '<button class="minor" data-act="moment">' + esc(t('playMoment')) + '</button>';
@@ -307,18 +374,18 @@
     if (s.ending) blocks.push({ type: 'fixed', html: '<div class="after endblock">' + FLOURISH + '<div class="theend">' + esc(t('theEnd')) + '</div><button class="btn-gold lg" data-act="ending">' + esc(t('seeEnding')) + '<span class="shine"></span></button>' + extra + '</div>' });
     else blocks.push({ type: 'fixed', html: '<div class="after"><div class="whatdo"><span class="caps">' + esc(t('whatDo')) + '</span><i></i></div><div class="choices">' + s.choices.map(function (c) {
       var seen = st.visited.indexOf(c.to) > -1 ? '<span class="seen">' + esc(t('readTag')) + '</span>' : '';
-      return '<button class="choice" data-to="' + c.to + '"><span class="ct">' + esc(c.text) + ' <em>' + esc(t('turnTo', { p: c.to })) + '</em>' + seen + '</span><span class="coin" aria-hidden="true">' + c.to + '</span></button>';
+      return '<button class="choice" data-to="' + c.to + '"><span class="ct">' + esc(c.text) + ' <em>' + esc(t('turnTo', { p: PN(c.to) })) + '</em>' + seen + '</span><span class="coin" aria-hidden="true">' + PN(c.to) + '</span></button>';
     }).join('') + '</div>' + extra + '</div>' });
     return blocks;
   }
   var PCACHE = {};
   function pageKey(p) {
     var s = S[p], m = measurer();
-    return [p, lang, m.clientWidth, m.clientHeight, (s.choices || []).map(function (c) { return st.visited.indexOf(c.to) > -1 ? 1 : 0; }).join(''), st.relics.length].join('|');
+    return [BK.id, p, lang, m.clientWidth, m.clientHeight, (s.choices || []).map(function (c) { return st.visited.indexOf(c.to) > -1 ? 1 : 0; }).join(''), st.relics.length].join('|');
   }
   function pagesFor(p) {
     var k = pageKey(p); if (PCACHE[k]) return PCACHE[k];
-    return (PCACHE[k] = paginate(blocksFor(p), '<div class="runhead">' + esc(t('page', { p: p })) + ' · ' + esc(S[p].chapter) + '</div>'));
+    return (PCACHE[k] = paginate(blocksFor(p), '<div class="runhead">' + esc(t('page', { p: PN(p) })) + ' · ' + esc(S[p].chapter) + '</div>'));
   }
   // lay out the pages a reader can turn to next while they are still reading, one per idle moment
   var idle = window.requestIdleCallback || function (f) { return setTimeout(function () { f({ timeRemaining: function () { return 8; } }); }, 200); };
@@ -412,13 +479,14 @@
     R.p = p; R.mode = 'read'; R.turning = false; CURL.end();
     bgScene(s.scene); AU.setScene(s.scene);
     var tome = $('#tome');
-    tome.classList.remove('look', 'scene'); tome.classList.toggle('gilt', hasTier('gilt')); tome.setAttribute('data-scene', s.scene);
+    tome.classList.remove('look', 'scene'); edgeClass(tome); tome.setAttribute('data-scene', s.scene);
+    var lt = BK.light && BK.light[s.scene]; if (lt) { tome.style.setProperty('--lt1', lt[0]); tome.style.setProperty('--lt2', lt[1]); } else { tome.style.removeProperty('--lt1'); tome.style.removeProperty('--lt2'); }
     if (R.intro) tome.classList.add('intro');
     $('#lookUi').classList.remove('on'); $('#hot').classList.remove('on'); $('#rLook').setAttribute('aria-pressed', 'false');
     renderFinger();
     var go = function () {
       R.sheets = pagesFor(p);
-      var instant = o.instant || !R.fresh;
+      var instant = o.instant || (!R.fresh && !(prefs.firstRead && R.arrived)); // 'read as if for the first time': a page you arrive at is written out again
       R.rev = R.sheets.map(function () { return instant; });
       R.idx = Math.min(keep, R.sheets.length - 1);
       $('#linUnder').innerHTML = '';
@@ -430,13 +498,16 @@
     if (!FONTS_OK) { var done = false; var run = function () { if (!done) { done = true; if (current === 'reader' && R.p === p) go(); } }; FONTS_READY.then(run, run); setTimeout(run, 2500); }
     else go();
   }
-  function afterArrive() { // scene first (if any and new), then ink
-    var p = R.p;
-    if (IL[p] && st.scenes.indexOf(p) === -1 && !R.rev[R.idx]) runScene(p, startReveal);
-    else if (R.rev[R.idx]) afterReveal(); else startReveal();
+  function afterArrive() { // scene first (the full one the first time, a short one on a later visit), then ink
+    var p = R.p, arrived = R.arrived; R.arrived = false;
+    var go = function () { if (R.rev[R.idx]) afterReveal(); else startReveal(); };
+    if (IL[p] && R.forceScene === p) { R.forceScene = null; runScene(p, go); } // (a timed moment's scene, replayed because of 'read as if for the first time')
+    else if (IL[p] && st.scenes.indexOf(p) === -1 && (arrived || !R.rev[R.idx])) runScene(p, go);
+    else if (IL[p] && arrived && R.idx === 0) runScene(p, go, prefs.firstRead ? undefined : { short: true }); // the full scene again when the reader asked for it
+    else go();
   }
   function prefetchChoices(s) {
-    (s.choices || []).forEach(function (c) { var sc = S[c.to] && S[c.to].scene; if (sc && sc !== s.scene) vidURL(sc); });
+    if (!BK.noVideo) (s.choices || []).forEach(function (c) { var sc = S[c.to] && S[c.to].scene; if (sc && sc !== s.scene) vidURL(sc); });
     preparePages((s.choices || []).map(function (c) { return c.to; }));
   }
   function startReveal() {
@@ -502,7 +573,12 @@
       CURL.turnBack(function () { R.idx = to; $('#linUnder').innerHTML = ''; R.turning = false; paintFoot(); });
     }
   }
+  function paid(to, run) { if (shopOn() && window.WaywardShop.page) window.WaywardShop.page(to, run); else run(); } // T11: a new page or ending may use today's allowance
   function chooseTo(to) {
+    if (R.turning || R.mode !== 'read') return;
+    paid(to, function () { chooseToNow(to); });
+  }
+  function chooseToNow(to) {
     if (R.turning || R.mode !== 'read') return;
     hintTurn(false);
     AU.sfx('choice');
@@ -526,58 +602,133 @@
     });
   }
 
-  /* scenes: the book lowers, the scene plays around it, and you take part. No skipping, but the scene helps
-     you along if you get stuck. */
-  function runScene(p, then) {
+  /* scenes: the book lowers, the scene plays around it, and you take part. The first time there is no skipping:
+     after ~6 s without a touch a soft hint shows the gesture (never text), and from ~14 s on the scene helps
+     itself along if you still do nothing. On a later visit (another route, rereading) arriving at the page plays
+     a short version by itself: the change in the surroundings, its sound and the closing line, in about three
+     seconds. The replay button on the page always plays the full scene. */
+  var SCN = { hintIdle: 6000, autoAt: 14000, autoShown: 2500, autoMax: 26000 };
+  function runScene(p, then, o) {
+    o = o || {};
     var il = IL[p]; if (!il || current !== 'reader') { then(); return; }
-    R.mode = 'scene'; var tome = $('#tome'), host = $('#ilHost'), done = false, ctl = null, helpers = [];
+    var short = !!o.short;
+    if (R.sceneKill) R.sceneKill();
+    R.mode = 'scene'; var tome = $('#tome'), host = $('#ilHost'), done = false, ctl = null, helpers = [], unwatch = null;
+    var log = R.scn = { p: p, short: short, t0: performance.now(), tPrompt: 0, tDone: 0, tEnd: 0, hints: 0, hintOn: false, auto: false };
     tome.classList.add('scene'); $('#turnBtn').classList.remove('on');
-    host.innerHTML = ''; host.classList.add('on');
+    host.innerHTML = ''; host.classList.remove('il-out'); host.classList.add('on'); host.classList.toggle('il-short', short); host.removeAttribute('data-hint');
     var lines = L(il.lines), linesEl = $('#ilLines'), prompt = $('#ilPrompt');
     linesEl.innerHTML = ''; prompt.textContent = ''; prompt.style.visibility = 'hidden';
-    lines.forEach(function (ln, i) { later(function () { var sp = document.createElement('span'); sp.className = 'w'; sp.textContent = (i ? ' ' : '') + ln; linesEl.appendChild(sp); requestAnimationFrame(function () { sp.classList.add('on'); }); }, 500 + i * 1500); });
-    later(function () { prompt.textContent = L(il.prompt); prompt.style.visibility = 'visible'; start(); }, 500 + lines.length * 1500);
+    function kill() { // leaving the reader mid-scene: stop every timer and listener of this scene
+      if (unwatch) { unwatch(); unwatch = null; }
+      helpers.forEach(function (h) { clearTimeout(h); clearInterval(h); }); helpers = [];
+      host.removeAttribute('data-hint');
+      if (R.sceneKill === abort) R.sceneKill = null;
+    }
+    function abort() { done = true; kill(); }
+    R.sceneKill = abort;
+    if (short) { // the closing line straight away, the change plays by itself
+      linesEl.innerHTML = '<span class="w">' + esc(L(il.done)) + '</span>'; requestAnimationFrame(function () { var w = linesEl.firstChild; if (w) w.classList.add('on'); });
+      log.tDone = performance.now();
+      later(start, 420);
+    } else {
+      // the two captions arrive quickly (prompt at ~2.5 s, CD brief B4); they stay on the page while the scene plays
+      lines.forEach(function (ln, i) { later(function () { var sp = document.createElement('span'); sp.className = 'w'; sp.textContent = (i ? ' ' : '') + ln; linesEl.appendChild(sp); requestAnimationFrame(function () { sp.classList.add('on'); }); }, 350 + i * 1050); });
+      later(function () { prompt.textContent = L(il.prompt); prompt.style.visibility = 'visible'; start(); }, 350 + lines.length * 1075);
+    }
     function help(ms, fn) { helpers.push(setTimeout(function () { if (!done && current === 'reader') fn(); }, ms)); }
+    function watchIdle() { // the soft hint after ~6 s without a touch, and the scene's own help after ~14 s
+      var t0 = performance.now(), last = t0, down = false, hinting = false, hintAt = 0, autoed = false;
+      function hide() { if (!hinting) return; hinting = false; log.hintOn = false; host.removeAttribute('data-hint'); if (ctl && ctl.unhint) ctl.unhint(); }
+      function act(e) { last = performance.now(); if (e.type === 'pointerdown') down = true; else if (e.type !== 'pointermove') down = false; hide(); }
+      var EV = ['pointerdown', 'pointermove', 'pointerup', 'pointercancel'];
+      EV.forEach(function (ev) { host.addEventListener(ev, act, true); });
+      window.addEventListener('pointerup', act, true); window.addEventListener('pointercancel', act, true);
+      var iv = setInterval(function () {
+        if (done || current !== 'reader' || !ctl || autoed) return;
+        var now = performance.now(), idle = down ? 0 : now - last, el = now - t0;
+        if ((el >= SCN.autoAt && hinting && now - hintAt >= SCN.autoShown) || el >= SCN.autoMax) { autoed = true; hide(); log.auto = true; if (ctl.auto) ctl.auto(); return; }
+        if (!hinting && idle >= SCN.hintIdle && ctl.hint && ctl.hint() !== false) { hinting = true; hintAt = now; log.hints++; log.hintOn = true; host.setAttribute('data-hint', '1'); }
+      }, 200);
+      helpers.push(iv);
+      unwatch = function () { EV.forEach(function (ev) { host.removeEventListener(ev, act, true); }); window.removeEventListener('pointerup', act, true); window.removeEventListener('pointercancel', act, true); };
+    }
     function start() {
       if (done || current !== 'reader') return;
+      log.tPrompt = performance.now();
       var pt, lastSq = 0;
       if (il.type === 'wipe') {
-        ctl = FX.wipe(host, { preset: il.preset || 'fog', threshold: 0.42, puffs: 40, baseAlpha: 0.72, brush: 44, onStroke: function () { var n = performance.now(); if (n - lastSq > 500) { lastSq = n; AU.sfx('wipe', { gain: 0.8 }); } }, onDone: function () { ctl = null; AU.sfx('sparkle', { gain: 0.6 }); finish(true); } });
-        help(14000, function () { if (ctl && ctl.auto) ctl.auto(); });
+        ctl = FX.wipe(host, { preset: il.preset || 'fog', threshold: 0.25, puffs: 40, baseAlpha: 0.72, brush: 60, onStroke: function () { var n = performance.now(); if (n - lastSq > 500) { lastSq = n; AU.sfx('wipe', { gain: 0.8 }); } }, onDone: function () { ctl = null; AU.sfx('sparkle', { gain: 0.6 }); finish(true); } });
+        if (short) help(200, function () { if (ctl) ctl.auto(true); });
       } else if (il.type === 'lantern') {
         pt = mapPt(il.x, il.y, host);
-        ctl = FX.lantern(host, { x: pt.x, y: pt.y, onFound: function () { AU.sfx('sparkle'); FX.sparkle(host, pt.x, pt.y, { n: 20 }); }, onDone: function () { ctl = null; finish(true); } });
-        var dripIv = setInterval(function () { if (done) { clearInterval(dripIv); return; } AU.sfx('drip', { pan: Math.random() * 1.6 - 0.8, gain: 0.5, wet: 0.5 }); }, 2600); helpers.push(dripIv);
-        help(16000, function () { if (ctl && ctl.guide) ctl.guide(); });
+        ctl = FX.lantern(host, { x: pt.x, y: pt.y, fast: short, hold: 550, onFound: function () { AU.sfx('sparkle'); FX.sparkle(host, pt.x, pt.y, { n: 20 }); }, onDone: function () { ctl = null; finish(true); } });
+        if (!short) { AU.sfx('drip', { pan: -0.4, gain: 0.5, wet: 0.5 }); var dripIv = setInterval(function () { if (done) { clearInterval(dripIv); return; } AU.sfx('drip', { pan: Math.random() * 1.6 - 0.8, gain: 0.5, wet: 0.5 }); }, 2600); helpers.push(dripIv); }
+        else AU.sfx('drip', { pan: 0.3, gain: 0.5, wet: 0.5 });
       } else if (il.type === 'tap') {
         pt = mapPt(il.x, il.y, host);
-        ctl = FX.tapTarget(host, { x: pt.x, y: pt.y, hold: 1000, hidden: true, onHold: function () { AU.sfx('grab', { gain: 0.5 }); }, onTap: function () { AU.sfx('fire', { gain: 0.8 }); AU.sfx('sparkle'); $('#bg').classList.add('flare'); setTimeout(function () { $('#bg').classList.remove('flare'); }, 1400); setTimeout(function () { finish(true); }, 900); } });
-        help(9000, function () { if (ctl && ctl.hint) ctl.hint(); }); help(26000, function () { if (ctl && ctl.auto) ctl.auto(); });
+        ctl = FX.tapTarget(host, { x: pt.x, y: pt.y, hold: 1300, hidden: il.hidden != null ? il.hidden : (BK.no || 1) === 1, onHold: function () { AU.sfx('grab', { gain: 0.5 }); }, onTap: function () {
+          AU.sfx('fire', { gain: 0.8 }); AU.sfx('sparkle');
+          FX.glow(host, pt.x, pt.y, { r: Math.max(host.clientWidth, host.clientHeight) * 0.42, dur: 1700, rest: 0.75 }); // the whole hall warms (was a CSS filter on the background)
+          help(short ? 700 : 1200, function () { finish(true); });
+        } });
+        if (short) help(250, function () { if (ctl) ctl.auto(); });
       } else if (il.type === 'trace') {
         var pts = il.path.map(function (q) { var m = mapPt(q[0], q[1], host); return [m.x, m.y]; }), quillAt = 0;
-        ctl = FX.trace(host, { pts: pts, onStart: function () { var n = performance.now(); if (n - quillAt > 1500) { quillAt = n; AU.sfx('quill', { gain: 0.8 }); } }, onDone: function () { AU.sfx('relic'); finish(true); } });
-        help(20000, function () { if (ctl && ctl.auto) ctl.auto(); });
+        ctl = FX.trace(host, { pts: pts, inkSecs: 3.4, onStart: function () { var n = performance.now(); if (n - quillAt > 1500) { quillAt = n; AU.sfx('quill', { gain: 0.8 }); } }, onDone: function () { AU.sfx('relic'); finish(true); } });
+        if (short) help(250, function () { if (ctl) ctl.auto(true); });
+      } else if (il.type === 'hold') { // hold your finger down = hold your breath; let go when the ring is full (Book II p24)
+        pt = mapPt(il.x, il.y, host);
+        ctl = FX.tapTarget(host, { x: pt.x, y: pt.y, hold: short ? 400 : 1900, hidden: false, r: 90, onHold: function () { AU.sfx('heartbeat', { gain: 0.6 }); }, onTap: function () {
+          AU.sfx('whoosh', { gain: 0.7 }); FX.glow(host, pt.x, pt.y, { r: Math.max(host.clientWidth, host.clientHeight) * 0.4, dur: 1500, rest: 0.6 });
+          help(short ? 600 : 1100, function () { finish(true); });
+        } });
+        if (short) help(250, function () { if (ctl) ctl.auto(); });
+      } else if (il.type === 'turn') { // turn the great lens: draw an arc with your finger (Book II p67)
+        var c0 = mapPt(il.x, il.y, host), rad = Math.min(host.clientWidth * 0.3, 130), arc = [];
+        for (var ai = 0; ai <= 6; ai++) { var an = Math.PI * (1.08 + ai * 0.14); arc.push([c0.x + Math.cos(an) * rad, c0.y + Math.sin(an) * rad * 0.8]); }
+        ctl = FX.trace(host, { pts: arc, inkSecs: 2.4, onStart: function () { AU.sfx('creak', { gain: 0.6 }); }, onDone: function () { AU.sfx('sparkle'); FX.glow(host, c0.x, c0.y, { r: Math.max(host.clientWidth, host.clientHeight) * 0.45, dur: 1600, rest: 0.55 }); finish(true); } });
+        if (short) help(250, function () { if (ctl) ctl.auto(true); });
       } else if (il.type === 'rope') {
         var a = mapPt(il.x, il.y, host), bell = mapPt(il.bell[0], il.bell[1], host);
         var tomeTop = tome.getBoundingClientRect().top - host.getBoundingClientRect().top;
-        ctl = FX.rope(host, { x: a.x, y: a.y, len: Math.max(28, Math.min(56, tomeTop - a.y - 44)), onGrab: function () { AU.sfx('creak', { gain: 0.9 }); }, onPull: function () {
-          AU.sfx('bell'); AU.sfx('rumble', { gain: 0.5 }); FX.ripple(host, bell.x, bell.y, 4);
-          app.classList.add('shake'); setTimeout(function () { app.classList.remove('shake'); }, 650);
-          if (OMENS) OMENS.play('bell', 'quake');
-          setTimeout(function () { finish(true); }, 2600);
-        } });
-        help(22000, function () { if (ctl && ctl.auto) ctl.auto(); });
+        ctl = FX.rope(host, { x: a.x, y: a.y, len: Math.max(28, Math.min(56, tomeTop - a.y - 44)), pulls: short ? 1 : 2, onGrab: function () { AU.sfx('creak', { gain: 0.9 }); },
+          onTug: function () { AU.sfx('creak', { gain: 0.8, rate: 0.7 }); AU.sfx('rumble', { gain: 0.25 }); FX.ripple(host, bell.x, bell.y, 1); }, // the bell swings, but does not ring yet
+          onPull: function () {
+            AU.sfx('bell'); AU.sfx('rumble', { gain: 0.5 }); FX.ripple(host, bell.x, bell.y, 4);
+            FX.glow(host, bell.x, bell.y, { r: Math.min(host.clientWidth, host.clientHeight) * 0.42, dur: 1400, peak: 0.9, rest: 0.5 }); // the bronze keeps humming with light
+            app.classList.add('shake'); setTimeout(function () { app.classList.remove('shake'); }, 650);
+            if (OMENS && !short) OMENS.play('bell', 'quake');
+            help(short ? 1200 : 1700, function () { finish(true); });
+          } });
+        if (short) help(300, function () { if (ctl) ctl.auto(); });
+      } else if (window.WaywardScenes && window.WaywardScenes[il.type]) {
+        ctl = window.WaywardScenes[il.type]({ host: host, il: il, p: p, tome: tome, app: app, bg: $('#bg'), FX: FX, OMENS: OMENS, L: L, lang: function () { return lang; }, short: short,
+          mapPt: function (x, y) { return mapPt(x, y, host); }, sfx: function (n, o) { AU.sfx(n, o); }, help: help, finish: finish,
+          setPrompt: function (txt) { if (short) return; prompt.textContent = txt; prompt.style.visibility = txt ? 'visible' : 'hidden'; } });
       }
+      if (ctl) { var d0 = ctl.destroy; ctl.destroy = function () { done = true; kill(); if (d0) d0.apply(this, arguments); }; }
       R.ctl = ctl;
+      if (!short && ctl) watchIdle();
     }
     function finish(withDone) {
       if (done) return; done = true;
-      helpers.forEach(function (h) { clearTimeout(h); clearInterval(h); });
-      if (ctl && ctl.destroy) ctl.destroy();
-      R.ctl = null;
+      kill();
       if (st.scenes.indexOf(p) === -1) { st.scenes.push(p); save(); }
-      var close = function () { if (current !== 'reader') return; host.innerHTML = ''; host.classList.remove('on'); tome.classList.remove('scene'); R.mode = 'read'; setTimeout(function () { if (current === 'reader' && R.p === p) then(); }, 750); };
-      if (withDone && L(il.done)) { linesEl.innerHTML = '<span class="w on">' + esc(L(il.done)) + '</span>'; prompt.style.visibility = 'hidden'; later(close, 2100); }
+      // the reward (open door, open letter, the bridge, the lit hall...) stays in view while the closing line is
+      // read, and fades as the book rises
+      var close = function () {
+        if (current !== 'reader') return;
+        log.tEnd = performance.now();
+        var c = ctl; ctl = null; R.ctl = null; if (c && c.destroy) c.destroy();
+        host.classList.remove('on'); host.classList.add('il-out'); tome.classList.remove('scene'); R.mode = 'read';
+        setTimeout(function () {
+          if (R.scn === log && R.mode !== 'scene') { host.innerHTML = ''; host.classList.remove('il-short', 'il-out'); }
+          if (current === 'reader' && R.p === p) then();
+        }, 750);
+      };
+      if (short) { later(close, 800); return; }
+      if (withDone && L(il.done)) { log.tDone = performance.now(); linesEl.innerHTML = '<span class="w on">' + esc(L(il.done)) + '</span>'; prompt.style.visibility = 'hidden'; later(close, 2100); }
       else close();
     }
   }
@@ -653,10 +804,10 @@
   function renderMoment() {
     var p = st.page, s = S[p], m = s.moment;
     bgScene(s.scene); AU.setScene('moment');
-    $('#mPage').textContent = t('page', { p: p }); $('#mChapter').textContent = s.chapter;
+    $('#mPage').textContent = t('page', { p: PN(p) }); $('#mChapter').textContent = s.chapter;
     $('#mDecide').hidden = true;
     var fxHost = $('#momentFx'); if (MCREEP) { MCREEP.destroy(); MCREEP = null; } fxHost.innerHTML = '';
-    var creep = MCREEP = (p === 22 && FX) ? FX.creep(fxHost, { preset: 'fog' }) : null;
+    var creep = MCREEP = (BK.creep && BK.creep[p] && FX) ? FX.creep(fxHost, { preset: BK.creep[p] }) : null;
     var lines = s.text.map(strip), idx = 0, total = lines.length + 1, prog = $('#mProg');
     function step() {
       if (idx < lines.length) {
@@ -673,7 +824,7 @@
       $('#mSkip').hidden = true; $('#mDecide').hidden = false;
       $('#mChoices').innerHTML = s.choices.map(function (c, i) {
         var def = c.to === m.default;
-        return '<button class="mchoice' + (def ? ' default' : '') + '" data-to="' + c.to + '" style="animation-delay:' + (i * 0.12) + 's"><span class="coin" aria-hidden="true">' + c.to + '</span><span class="mt"><b>' + esc(c.short || c.text) + '</b><span>' + esc(t('turnToShort', { p: c.to })) + '</span>' + (def ? '<span class="fogtag">' + esc((m.defaultLabel || '') + t('ifYouWait')) + '</span>' : '') + '</span></button>';
+        return '<button class="mchoice' + (def ? ' default' : '') + '" data-to="' + c.to + '" style="animation-delay:' + (i * 0.12) + 's"><span class="coin" aria-hidden="true">' + PN(c.to) + '</span><span class="mt"><b>' + esc(c.short || c.text) + '</b><span>' + esc(t('turnToShort', { p: PN(c.to) })) + '</span>' + (def ? '<span class="fogtag">' + esc((m.defaultLabel || '') + t('ifYouWait')) + '</span>' : '') + '</span></button>';
       }).join('');
       var secs = m.seconds || 10, t0 = Date.now(), ring = $('#mRing'), lastSec = secs;
       $('#mSec').textContent = secs;
@@ -687,7 +838,7 @@
         if (left <= 0) {
           clearInterval(tick); tick = null;
           toast(m.timeout || t('momentTimeout'), 1600);
-          later(function () { goTo(m.default); }, 1500);
+          later(function () { paid(m.default, function () { goTo(m.default); }); }, 1500);
         }
       }, 100);
     }
@@ -729,13 +880,13 @@
     $('#eTitle').textContent = e.title; $('#eEpi').textContent = e.epilogue;
     var tr = st.trail.slice(), h = '';
     if (tr.length > 6) { h += '<span class="more">…</span><span class="ar">→</span>'; tr = tr.slice(-5); }
-    tr.forEach(function (n, i) { h += (i ? '<span class="ar" aria-hidden="true">→</span>' : '') + '<span class="pc' + (i === tr.length - 1 ? ' last' : '') + '">' + n + '</span>'; });
+    tr.forEach(function (n, i) { h += (i ? '<span class="ar" aria-hidden="true">→</span>' : '') + '<span class="pc' + (i === tr.length - 1 ? ' last' : '') + '">' + PN(n) + '</span>'; });
     $('#ePath').innerHTML = h;
     $('#eCount').textContent = t('youFound', { n: st.found.length, t: TOTAL_END });
     var prevP = st.trail.length > 1 ? st.trail[st.trail.length - 2] : BOOK.start;
-    $('#eRewindLabel').textContent = t('rewindTo', { p: prevP });
+    $('#eRewindLabel').textContent = t('rewindTo', { p: PN(prevP) });
     var fb = $('#eFinger');
-    if (st.finger && st.finger !== prevP && st.finger !== p && S[st.finger]) { fb.hidden = false; fb.textContent = t('backToFinger', { p: st.finger }); } else fb.hidden = true;
+    if (st.finger && st.finger !== prevP && st.finger !== p && S[st.finger]) { fb.hidden = false; fb.textContent = t('backToFinger', { p: PN(st.finger) }); } else fb.hidden = true;
   }
 
   /* ---------------- map ---------------- */
@@ -771,7 +922,7 @@
   function curve(a, b) { var my = (a.y + 12 + b.y - 12) / 2; return 'M' + a.x + ' ' + (a.y + 12) + ' C' + a.x + ' ' + my + ' ' + b.x + ' ' + my + ' ' + b.x + ' ' + (b.y - 12); }
   function renderMap() {
     if (!LAYOUT) LAYOUT = layout();
-    var Lm = LAYOUT, P = Lm.P, vis = {}, frontier = {}, honest = hasTier('honestmap');
+    var Lm = LAYOUT, P = Lm.P, vis = {}, frontier = {}, honest = hasRole('map');
     st.visited.forEach(function (v) { vis[v] = 1; });
     st.visited.forEach(function (v) { (S[v].choices || []).forEach(function (c) { if (!vis[c.to]) frontier[c.to] = 1; }); });
     if (!st.visited.length) frontier[BOOK.start] = 1;
@@ -791,9 +942,9 @@
     Object.keys(P).map(Number).sort(function (a, b) { return P[a].y - P[b].y || P[a].x - P[b].x; }).forEach(function (k) {
       var q = P[k], s = S[k];
       if (vis[k]) {
-        nodes += '<g class="node" tabindex="0" role="button" data-node="' + k + '" aria-label="' + esc(t('page', { p: k }) + ', ' + s.chapter) + '">';
+        nodes += '<g class="node" tabindex="0" role="button" data-node="' + k + '" aria-label="' + esc(t('page', { p: PN(k) }) + ', ' + s.chapter) + '">';
         if (st.page === k) nodes += '<circle class="beacon" cx="' + q.x + '" cy="' + q.y + '" r="30" fill="none" stroke="#F6D27C" stroke-width="2"/>';
-        nodes += tile(q.x, q.y, PAL[s.scene] || PAL.mountain) + '<text x="' + q.x + '" y="' + (q.y + 4) + '" text-anchor="middle" font-family="Manrope, sans-serif" font-size="11" font-weight="800" fill="#1A1030" fill-opacity=".85">' + k + '</text></g>';
+        nodes += tile(q.x, q.y, PAL[s.scene] || PAL.mountain) + '<text x="' + q.x + '" y="' + (q.y + 4) + '" text-anchor="middle" font-family="Manrope, sans-serif" font-size="11" font-weight="800" fill="#1A1030" fill-opacity=".85">' + PN(k) + '</text></g>';
         if (s.ending) gems += gem(q.x, q.y - 34, !!s.ending.star);
       } else if (frontier[k]) fogs += fogTile(q.x, q.y);
       else if (honest) fogs += fogTile(q.x, q.y, true);
@@ -825,10 +976,10 @@
   var sheetTarget = null;
   function openSheet(k) {
     var s = S[k]; sheetTarget = k;
-    $('#sheetCaps').textContent = t('page', { p: k }) + (s.ending ? t('sheetEnding', { no: s.ending.no }) : '');
+    $('#sheetCaps').textContent = t('page', { p: PN(k) }) + (s.ending ? t('sheetEnding', { no: s.ending.no }) : '');
     $('#sheetTitle').textContent = s.ending ? s.ending.title : s.chapter;
     var tx = strip(s.text[0]); $('#sheetText').textContent = tx.slice(0, 140) + (tx.length > 140 ? '…' : '');
-    $('#sheetGo').textContent = t('readPage', { p: k });
+    $('#sheetGo').textContent = t('readPage', { p: PN(k) });
     $('#sheet').hidden = false; $('#sheetBg').hidden = false; $('#sheetGo').focus();
   }
   function closeSheet() { $('#sheet').hidden = true; if ($('#settings').hidden) $('#sheetBg').hidden = true; }
@@ -863,8 +1014,14 @@
   };
   function iconSVG(k, color) { return '<svg viewBox="0 0 24 24" fill="none" stroke="' + (color || '#3A2406') + '" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (ICON[k] || ICON.star) + '</svg>'; }
   function relic(id) { return REL && REL.relics.filter(function (r) { return r.id === id; })[0]; }
+  // the shop (shop.js) is switched off by default; while off, everything stays free as before
+  function shopOn() { return !!(window.WaywardShop && window.WaywardShop.enabled && window.WaywardShop.enabled()); }
+  function gated(kind, run) { if (shopOn() && window.WaywardShop.gate) window.WaywardShop.gate(kind, run); else run(); }
+  function withShelf(map) { SHELF.forEach(function (b) { if (b.music) Object.keys(b.music).forEach(function (k) { if (!map[k]) map[k] = b.music[k]; }); }); return map; } // every book's music by place
+  function hasRole(role) { return !!(BK.roles && BK.roles[role]) && hasTier(BK.roles[role]); } // edge (gilt/salted), map, secret
+  function edgeClass(el) { var on = hasRole('edge'), kind = BK.roles && BK.roles.edge; el.classList.toggle('gilt', on && kind === 'gilt'); el.classList.toggle('salted', on && kind === 'salted'); }
   function hasTier(id) { if (!REL) return false; var tr = REL.tiers.filter(function (x) { return x.id === id; })[0]; return !!tr && st.relics.length >= tr.count; }
-  function whereText(r) { return r.where === 'text' ? t('foundOnPage', { p: r.page }) : r.where === 'scene' ? t('foundScene') : t('foundUi'); }
+  function whereText(r) { return r.where === 'text' ? t('foundOnPage', { p: PN(r.page) }) : r.where === 'scene' ? t('foundScene') : t('foundUi'); }
   function foundRelic(id, pt) {
     var r = relic(id); if (!r) return;
     var isNew = st.relics.indexOf(id) === -1, before = st.relics.length;
@@ -874,14 +1031,14 @@
     $$('.egg[data-egg="' + id + '"]').forEach(function (el) { el.classList.add('got'); });
     $$('.hotspot[data-hot="' + id + '"]').forEach(function (el) { el.classList.add('found'); });
     var unlocked = isNew ? REL.tiers.filter(function (x) { return before < x.count && st.relics.length >= x.count; }) : [];
-    if (unlocked.length) { $('#tome').classList.toggle('gilt', hasTier('gilt')); }
+    if (unlocked.length) { edgeClass($('#tome')); }
     renderTabBadge();
     setTimeout(function () { showRelicCard(r, isNew, unlocked); }, isNew ? 420 : 0);
   }
   function showRelicCard(r, isNew, unlocked) {
     var i = st.relics.indexOf(r.id) + 1, host = $('#cardHost');
     var unl = (unlocked || []).map(function (x) { return '<div class="unlock">✦ ' + esc(t('rewardUnlocked')) + ': ' + esc(L(x.name)) + '<br><span style="font-weight:600;color:var(--muted)">' + esc(L(x.desc)) + '</span></div>'; }).join('');
-    var secretBtn = (unlocked || []).some(function (x) { return x.id === 'margin'; }) ? '<button class="btn-glass" id="cardSecret" style="width:100%">' + esc(t('openSecret')) + '</button>' : '';
+    var secretBtn = (unlocked || []).some(function (x) { return x.id === (BK.roles && BK.roles.secret); }) ? '<button class="btn-glass" id="cardSecret" style="width:100%">' + esc(t('openSecret')) + '</button>' : '';
     host.innerHTML = '<div class="card-bg" id="cardBg"><div class="rcard" role="dialog" aria-modal="true" aria-labelledby="rcTitle"><div class="rays"></div><div class="relic-coin">' + iconSVG(r.icon) + '</div>' +
       '<span class="caps gold">' + esc(isNew ? t('relicFound') + ' · ' + t('relicNo', { i: i, t: REL.relics.length }) : t('relicNo', { i: i, t: REL.relics.length })) + '</span>' +
       '<h3 class="gold-foil" id="rcTitle">' + esc(L(r.name)) + '</h3><div class="lore">' + esc(L(r.lore)) + '</div><span class="where">' + esc(whereText(r)) + '</span>' + unl +
@@ -904,12 +1061,12 @@
       return '<div class="rslot"><span class="relic-coin none"><svg viewBox="0 0 24 24" aria-hidden="true"><text x="12" y="17" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="16" font-weight="700" fill="#DCD2FF" fill-opacity=".55">?</text></svg></span><span class="rr" hidden data-riddle="' + r.id + '">' + esc(L(r.riddle)) + '</span><button class="hintbtn" data-riddlebtn="' + r.id + '">' + esc(t('showRiddle')) + '</button></div>';
     }).join('');
     $('#relTiers').innerHTML = REL.tiers.map(function (x) {
-      var on = n >= x.count, btn = on && x.id === 'margin' ? '<button class="btn-gold sm" data-go="secret">' + esc(t('openSecret')) + '</button>' : '<span class="tstate">' + esc(on ? t('unlocked') : t('rewardAt', { n: x.count })) + '</span>';
-      return '<div class="tier' + (on ? ' on' : '') + '"><span class="relic-coin' + (on ? '' : ' none') + '" style="width:44px;height:44px;flex-basis:44px">' + iconSVG(x.id === 'gilt' ? 'brush' : x.id === 'honestmap' ? 'map' : 'quill', on ? '#3A2406' : '#DCD2FF') + '</span><div class="ti"><b>' + esc(L(x.name)) + '</b><span>' + esc(L(x.desc)) + '</span></div>' + btn + '</div>';
+      var on = n >= x.count, btn = on && x.id === (BK.roles && BK.roles.secret) ? '<button class="btn-gold sm" data-go="secret">' + esc(t('openSecret')) + '</button>' : '<span class="tstate">' + esc(on ? t('unlocked') : t('rewardAt', { n: x.count })) + '</span>';
+      return '<div class="tier' + (on ? ' on' : '') + '"><span class="relic-coin' + (on ? '' : ' none') + '" style="width:44px;height:44px;flex-basis:44px">' + iconSVG(x.id === (BK.roles && BK.roles.edge) ? 'brush' : x.id === (BK.roles && BK.roles.map) ? 'map' : 'quill', on ? '#3A2406' : '#DCD2FF') + '</span><div class="ti"><b>' + esc(L(x.name)) + '</b><span>' + esc(L(x.desc)) + '</span></div>' + btn + '</div>';
     }).join('');
   }
   function renderSecret() {
-    if (!REL || !hasTier('margin')) { show('relics'); return; }
+    if (!REL || !hasRole('secret')) { show('relics'); return; }
     var s = REL.secret;
     $('#secLabel').textContent = L(s.label); $('#secTitle').textContent = L(s.label) + ' · ' + L(s.title);
     $('#secText').innerHTML = (s.text[lang] || s.text.en).map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('');
@@ -921,15 +1078,18 @@
     $$('#setLang button').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-lang') === lang ? 'true' : 'false'); });
     $('#volMusic').value = prefs.musicVol; $('#volSfx').value = prefs.sfxVol; paintVol();
     $$('#setSpeed button').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-v') === prefs.speed ? 'true' : 'false'); });
+    $$('#setFirst button').forEach(function (b) { b.setAttribute('aria-pressed', (b.getAttribute('data-v') === 'on') === !!prefs.firstRead ? 'true' : 'false'); });
   }
   function openSettings() { renderSettings(); $('#settings').hidden = false; $('#sheetBg').hidden = false; } // no ducking here: you hear the level you set
   function closeSettings() { if ($('#settings').hidden) return; $('#settings').hidden = true; if ($('#sheet').hidden) $('#sheetBg').hidden = true; }
   $('#settings').addEventListener('click', function (e) {
     var b = e.target.closest('button'); if (!b) return;
     if (b.id === 'setDone') { closeSettings(); return; }
+    if (b.id === 'setCredits') { $('#crBody').innerHTML = t('creditsHtml'); $('#settings').hidden = true; $('#credits').hidden = false; $('#crBody').scrollTop = 0; return; }
     var seg = b.parentElement.id;
     if (seg === 'setLang') setLang(b.getAttribute('data-lang'));
     if (seg === 'setSpeed') prefs.speed = b.getAttribute('data-v');
+    if (seg === 'setFirst') prefs.firstRead = b.getAttribute('data-v') === 'on'; // off by default
     savePrefs(); renderSettings();
   });
 
@@ -948,16 +1108,26 @@
     $('#' + id).addEventListener('change', savePrefs);
   });
 
+  // hidden test switch for the (switched-off) shop: tap the credits title five times
+  (function () { var n = 0, tt = 0; $('#crTitle').addEventListener('click', function () {
+    var now = Date.now(); n = now - tt < 700 ? n + 1 : 1; tt = now; if (n < 5) return; n = 0;
+    var on = false; try { on = localStorage.getItem('wayward.shop.dev') === '1'; localStorage.setItem('wayward.shop.dev', on ? '0' : '1'); } catch (e) {}
+    toast(lang === 'nl' ? (on ? 'Winkel-voorproef uit' : 'Winkel-voorproef aan') : (on ? 'Shop preview off' : 'Shop preview on'), 1400);
+    setTimeout(function () { location.reload(); }, 1300);
+  }); })();
+  $('#crDone').addEventListener('click', function () { $('#credits').hidden = true; if ($('#sheet').hidden && $('#settings').hidden) $('#sheetBg').hidden = true; });
+
   var RENDER = { library: renderLibrary, cover: renderCover, reader: renderReader, moment: renderMoment, ending: renderEnding, map: renderMap, endings: renderEndings, relics: renderRelics, secret: renderSecret };
 
   /* ---------------- events ---------------- */
   app.addEventListener('pointerdown', function () { AU.unlock(); playActive(); }, true);
   app.addEventListener('click', function (e) {
-    var tg = e.target.closest('[data-go],[data-tab],.choice,.mchoice,[data-hintbtn],[data-riddlebtn],[data-relic],[data-act],[data-settings],[data-lang],[data-soon],.egg.on,.hotspot');
+    var tg = e.target.closest('[data-bookid],[data-go],[data-tab],.choice,.mchoice,[data-hintbtn],[data-riddlebtn],[data-relic],[data-act],[data-settings],[data-lang],[data-soon],.egg.on,.hotspot');
     if (!tg) return;
     if (tg.closest('#settings')) return;
     if (tg.classList.contains('egg')) { var r = tg.getBoundingClientRect(), a = app.getBoundingClientRect(); foundRelic(tg.getAttribute('data-egg'), { x: r.left - a.left + r.width / 2, y: r.top - a.top + r.height / 2 }); return; }
     if (tg.classList.contains('hotspot')) { var hr = tg.getBoundingClientRect(), ar = app.getBoundingClientRect(); foundRelic(tg.getAttribute('data-hot'), { x: hr.left - ar.left + hr.width / 2, y: hr.top - ar.top + hr.height / 2 }); return; }
+    if (tg.hasAttribute('data-bookid')) { AU.sfx('tap'); var bid = tg.getAttribute('data-bookid'); switchBook(bid).then(function (ok) { if (ok) show('cover'); }); return; }
     if (tg.hasAttribute('data-settings')) { AU.sfx('tap'); openSettings(); return; }
     if (tg.hasAttribute('data-lang')) { AU.sfx('tap'); setLang(tg.getAttribute('data-lang')); return; }
     if (tg.hasAttribute('data-soon')) {
@@ -966,8 +1136,8 @@
       AU.sfx('whoosh'); FX.veil(app, { preset: preset, onCovered: function (rel) { setTimeout(rel, 350); }, onDone: function () { toast(t('soonToast', { title: title }), 2000); } });
       return;
     }
-    if (tg.hasAttribute('data-hintbtn')) { var k = tg.getAttribute('data-hintbtn'), h = app.querySelector('[data-hint="' + k + '"]'); if (h) h.hidden = false; tg.hidden = true; return; }
-    if (tg.hasAttribute('data-riddlebtn')) { var rk = tg.getAttribute('data-riddlebtn'), rr = app.querySelector('[data-riddle="' + rk + '"]'); if (rr) rr.hidden = false; tg.hidden = true; return; }
+    if (tg.hasAttribute('data-hintbtn')) { gated('hint', function () { var k = tg.getAttribute('data-hintbtn'), h = app.querySelector('[data-hint="' + k + '"]'); if (h) h.hidden = false; tg.hidden = true; }); return; }
+    if (tg.hasAttribute('data-riddlebtn')) { gated('riddle', function () { var rk = tg.getAttribute('data-riddlebtn'), rr = app.querySelector('[data-riddle="' + rk + '"]'); if (rr) rr.hidden = false; tg.hidden = true; }); return; }
     if (tg.hasAttribute('data-relic')) { showRelicCard(relic(tg.getAttribute('data-relic')), false, []); return; }
     if (tg.hasAttribute('data-act')) {
       var act = tg.getAttribute('data-act');
@@ -977,7 +1147,7 @@
       return;
     }
     if (tg.classList.contains('choice')) { chooseTo(+tg.getAttribute('data-to')); return; }
-    if (tg.classList.contains('mchoice')) { clearTimers(); AU.sfx('choice'); goTo(+tg.getAttribute('data-to')); return; }
+    if (tg.classList.contains('mchoice')) { clearTimers(); var mto = +tg.getAttribute('data-to'); paid(mto, function () { AU.sfx('choice'); goTo(mto); }); return; }
     var go = tg.getAttribute('data-go') || tg.getAttribute('data-tab');
     if (go) { AU.sfx('tap'); show(go); }
   });
@@ -988,7 +1158,7 @@
   $('#sceneHit').addEventListener('click', function () { if (R.mode === 'read') setLook(true); else if (R.mode === 'look') setLook(false); });
   $('#rLook').addEventListener('click', function () { setLook(R.mode !== 'look'); });
   $('#lookBack').addEventListener('click', function () { setLook(false); });
-  $('#rFinger').addEventListener('click', function () { st.finger = st.finger === st.page ? null : st.page; save(); renderFinger(); AU.sfx('tap'); toast(st.finger ? t('fingerOn', { p: st.page }) : t('fingerOff'), 1200); });
+  $('#rFinger').addEventListener('click', function () { st.finger = st.finger === st.page ? null : st.page; save(); renderFinger(); AU.sfx('tap'); toast(st.finger ? t('fingerOn', { p: PN(st.page) }) : t('fingerOff'), 1200); });
   $('#mAsText').addEventListener('click', function () { clearTimers(); show('reader'); });
   $('#eRewind').addEventListener('click', function () { if (st.trail.length > 1) st.trail.pop(); goTo(st.trail[st.trail.length - 1] || BOOK.start, { push: false, asText: true }); });
   $('#eFinger').addEventListener('click', function () { var f = st.finger, i = st.trail.lastIndexOf(f); if (i > -1) st.trail = st.trail.slice(0, i + 1); else st.trail.push(f); goTo(f, { push: false, asText: true }); });
@@ -996,14 +1166,14 @@
   $('#mapBack').addEventListener('click', function () { show(prevScreen === 'reader' || prevScreen === 'ending' ? prevScreen : 'library'); });
   $('#mapLocate').addEventListener('click', centerMap);
   $('#sheetClose').addEventListener('click', closeSheet);
-  $('#sheetBg').addEventListener('click', function () { closeSheet(); closeSettings(); });
+  $('#sheetBg').addEventListener('click', function () { $('#credits').hidden = true; closeSheet(); closeSettings(); if ($('#sheet').hidden && $('#settings').hidden) $('#sheetBg').hidden = true; });
   $('#sheetGo').addEventListener('click', function () { var k = sheetTarget; closeSheet(); if (k) goTo(k, { asText: true }); });
   if ($('#resetAll')) $('#resetAll').addEventListener('click', function () {
     if (!resetArmed) { resetArmed = true; this.textContent = t('eraseConfirm'); return; }
     st = fresh(); save(); show('library'); toast(t('erased'), 1400);
   });
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') { closeSheet(); closeSettings(); if ($('#cardOk')) $('#cardOk').click(); }
+    if (e.key === 'Escape') { $('#credits').hidden = true; closeSheet(); closeSettings(); if ($('#cardOk')) $('#cardOk').click(); }
     if (current === 'reader' && R.mode === 'read') { if (e.key === 'ArrowRight') turnSheet(1); if (e.key === 'ArrowLeft') turnSheet(-1); }
   });
   var lastSize = [app.clientWidth, app.clientHeight];
@@ -1026,8 +1196,9 @@
   if (prefs.musicVol == null) prefs.musicVol = prefs.music === false ? 0 : 45;
   if (prefs.sfxVol == null) prefs.sfxVol = prefs.sfx === false ? 0 : 45;
   applyVol();
-  AU.tracks('music/', { menu: 'menu.mp3', mountain: 'mountain.mp3', village: 'village.mp3', procession: 'procession.mp3', ridge: 'ridge.mp3', river: 'river.mp3', lake: 'lake.mp3',
-    chamber: 'chamber.mp3', heart: 'heart.mp3', lanternhall: 'lanternhall.mp3', library: 'library.mp3', stairs: 'stairs.mp3', bell: 'bell.mp3', dawn: 'dawn.mp3' });
+  (function () { var OM = window.WaywardOmens && window.WaywardOmens.scenes; SHELF.forEach(function (b) { if (OM && b.omens) Object.keys(b.omens).forEach(function (k) { if (!OM[k]) OM[k] = b.omens[k]; }); }); })(); // every book's omens
+  AU.tracks('music/', withShelf({ menu: 'menu.mp3', mountain: 'mountain.mp3', village: 'village.mp3', procession: 'procession.mp3', ridge: 'ridge.mp3', river: 'river.mp3', lake: 'lake.mp3',
+    chamber: 'chamber.mp3', heart: 'heart.mp3', lanternhall: 'lanternhall.mp3', library: 'library.mp3', stairs: 'stairs.mp3', bell: 'bell.mp3', dawn: 'dawn.mp3' }));
   if (!SPEED[prefs.speed]) prefs.speed = 'read';
   if (AU.samples) AU.samples('sfx/', {
     page: ['page1', 'page2', 'page3'], grab: ['grab'], open: ['open'], close: ['close'], choice: ['choice'], tap: ['tap'], tick: ['tick'], heartbeat: ['heartbeat'],
@@ -1044,17 +1215,17 @@
     var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="' + d + ' Z" fill="#000"/></svg>';
     document.documentElement.style.setProperty('--deckle', 'url("data:image/svg+xml;utf8,' + encodeURIComponent(svg) + '")');
   })();
-  Promise.all([getBook(lang), fetch('relics.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })]).then(function (res) {
-    useBook(res[0]); REL = res[1];
-    st.visited = st.visited.filter(function (k) { return S[k]; }); st.found = st.found.filter(function (k) { return S[k]; });
-    st.relics = st.relics.filter(function (id) { return relic(id); });
-    if (st.page && !S[st.page]) st.page = null;
+  loadBookData().then(function () {
     applyI18n();
     var hash = (location.hash || '').replace('#', '');
+    if (window.WaywardShop && window.WaywardShop.init) { try { window.WaywardShop.init(window.WaywardApp); } catch (e) { if (window.console) console.warn('shop', e); } }
     if (hash && RENDER[hash] && ['library', 'cover', 'map', 'endings', 'relics'].indexOf(hash) > -1) show(hash); else show('library');
   }).catch(function () {
     app.insertAdjacentHTML('beforeend', '<p class="loaderr">' + esc(t('loadErr')) + '</p>');
   });
 
-  window.__wayward = { prefs: function () { return prefs; }, omens: function () { return OMENS; }, curl: function () { return CURL; }, smoke: function () { return SMK; }, st: function () { return st; }, R: R, goTo: goTo, show: show, setLang: setLang, foundRelic: foundRelic, openBook: openBook, resume: resume, startBook: startBook, turnSheet: turnSheet, chooseTo: chooseTo, runScene: runScene, setLook: setLook, finishReveal: finishReveal, mapPt: mapPt, current: function () { return current; } };
+  window.WaywardApp = { st: function () { return st; }, prefs: function () { return prefs; }, save: save, savePrefs: savePrefs, t: t, L: L, lang: function () { return lang; },
+    toast: toast, sfx: function (n, o) { AU.sfx(n, o); }, AU: AU, FX: FX, show: show, current: function () { return current; }, book: function () { return BOOK; },
+    relics: function () { return REL; }, bookDef: function () { return BK; }, hasTier: hasTier, esc: esc, $: $, $$: $$, app: app, shopOn: shopOn, openSettings: function () { openSettings(); }, closeSettings: function () { closeSettings(); } };
+  window.__wayward = { pn: PN, book: function () { return BK; }, switchBook: switchBook, prefs: function () { return prefs; }, omens: function () { return OMENS; }, curl: function () { return CURL; }, smoke: function () { return SMK; }, st: function () { return st; }, R: R, goTo: goTo, show: show, setLang: setLang, foundRelic: foundRelic, openBook: openBook, resume: resume, startBook: startBook, turnSheet: turnSheet, chooseTo: chooseTo, runScene: runScene, setLook: setLook, finishReveal: finishReveal, mapPt: mapPt, current: function () { return current; } };
 })();

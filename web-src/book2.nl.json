@@ -1,0 +1,1063 @@
+{
+ "id": "drowned-lighthouse",
+ "title": "De Verdronken Vuurtoren",
+ "series": "De Veyra-cyclus · Boek II",
+ "imprint": "Een Wayward-uitgave",
+ "tagline": "Elke nacht om twee uur gaat onder de zee een vuurtoren aan die honderd jaar geleden verdronk.",
+ "warning": "Lees dit boek niet van voor naar achter. Aan het eind van elke bladzijde beslis jij wat er gebeurt. Sommige keuzes brengen een schip thuis. Andere keuzes jou.",
+ "start": 1,
+ "scenes": {
+  "harbour": {
+   "title": "Grijshaven bij valavond",
+   "focus": "50% 55%"
+  },
+  "office": {
+   "title": "Het havenkantoor",
+   "focus": "50% 55%"
+  },
+  "saltpans": {
+   "title": "De zoutpannen",
+   "focus": "50% 55%"
+  },
+  "cape": {
+   "title": "Kaap Seren",
+   "focus": "50% 55%"
+  },
+  "cottage": {
+   "title": "Het huisje van de wachter",
+   "focus": "50% 55%"
+  },
+  "baynight": {
+   "title": "De baai om twee uur",
+   "focus": "50% 55%"
+  },
+  "wreck": {
+   "title": "De Marigold aan de kade",
+   "focus": "50% 55%"
+  },
+  "stair": {
+   "title": "De verdronken trap",
+   "focus": "50% 55%"
+  },
+  "seabed": {
+   "title": "De zeebodem",
+   "focus": "50% 55%"
+  },
+  "sunken": {
+   "title": "In de gezonken toren",
+   "focus": "50% 55%"
+  },
+  "lanternroom": {
+   "title": "De lantaarnkamer",
+   "focus": "50% 55%"
+  },
+  "storm": {
+   "title": "De Grote Storm van 1826",
+   "focus": "50% 55%"
+  },
+  "dawnsea": {
+   "title": "Ochtend bij laagtij",
+   "focus": "50% 55%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Proloog",
+   "scene": "harbour",
+   "text": [
+    "Wat er binnen in de Veyra ook is gebeurd, je bent eruit gekomen met een blanco kaart en één enkele zoutkorrel. Het zout zat in een briefje van Ines: een halve zin, in kleine bruine letters. “Een zee die van zout droomt.” De avondkoets zet je af in Grijshaven, dat ruikt naar nat touw en, zonder dat je kunt zien waarom, naar thee.",
+    "Een visser die zijn netten zit te boeten, vertelt je zoals een ander over het weer begint: elke nacht om twee uur gaat er onder de baai een licht aan. “Draait ook,” zegt hij er nog bij. “Stipter dan het getij.” Je kijkt waar hij naar knikt. Op Kaap Seren, waar oudere zeekaarten nog een vuurtoren aangeven, is niets dan wind."
+   ],
+   "choices": [
+    {
+     "text": "Als je bij het havenkantoor naar Ines vraagt,",
+     "short": "Vraag het bij het havenkantoor",
+     "to": 4
+    },
+    {
+     "text": "Als je naar Kaap Seren wandelt,",
+     "short": "Wandel naar Kaap Seren",
+     "to": 8
+    },
+    {
+     "text": "Als je tot twee uur ’s nachts op de kade wacht,",
+     "short": "Wacht tot twee uur",
+     "to": 12
+    }
+   ],
+   "nr": 1
+  },
+  "4": {
+   "chapter": "Het havenkantoor",
+   "scene": "office",
+   "text": [
+    "Het havenkantoor bestaat uit één raam op de kade en een eeuw aan grootboeken, per jaar op de plank gezet. Eén rug is bleek gesleten van het vastpakken: 1826. Hester Vane, de havenmeesteres, maakt eerst haar kolom af voor ze opkijkt. Ines Arden? Die naam heeft ze nog nooit gehoord. Ze zegt het twee keer, en de tweede keer slaat ze haar grootboek dicht, alsof je de naam ondersteboven zou kunnen lezen.",
+    "Haar boeken zijn tot in de puntjes in orde, alleen telt ze elke ochtend [[extraship|één schip te veel]]. “Een afrondingsfout.” Ze bekijkt je zoals ze een optelsom bekijkt. Ze heeft nog een kamer vrij, en werk: schepen tellen. “Wil je vragen stellen, dan moet je bij het zoutmeisje zijn. Voor een verhaal vertelt die je alles.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je vraagt of je het grootboek van 1826 mag zien,",
+     "short": "Bekijk het grootboek van 1826",
+     "to": 15
+    },
+    {
+     "text": "Als je het zoutmeisje gaat zoeken,",
+     "short": "Zoek het zoutmeisje",
+     "to": 18
+    },
+    {
+     "text": "Als je de kamer en het werk aanneemt,",
+     "short": "Neem kamer en werk aan",
+     "to": 7
+    }
+   ],
+   "nr": 34
+  },
+  "7": {
+   "chapter": "Een einde",
+   "scene": "office",
+   "text": [
+    "De kamer boven kijkt uit over de hele haven, en in de tweede week zit de stoel je als gegoten. Bij het eerste licht tel je de boten. Je bent er erg goed in: beter dan Hester, geeft ze toe, en uit haar mond is dat een liefdesbrief. Elke ochtend is er één te veel, en elke ochtend schrijf je “afrondingsfout” in de kantlijn.",
+    "De jaren gaan voorbij in keurige kolommen. Op een winterochtend trekt de mist vroeg op en zie je het extra schip uitvaren. Aan de reling staat een officier met een eigen grootboek, die prevelend de haven telt. Bij jouw raam blijft zijn pen hangen. Hij fronst, precies zoals jij altijd doet. Dan schrijft hij één lang woord in de kantlijn."
+   ],
+   "ending": {
+    "no": "I",
+    "title": "Eén te veel",
+    "kind": "strange",
+    "epilogue": "Het grootboek klopt. Het klopte altijd al.",
+    "hint": "Wie telt, wordt zelf ook geteld."
+   },
+   "nr": 21
+  },
+  "8": {
+   "chapter": "Kaap Seren",
+   "scene": "cape",
+   "text": [
+    "De wandeling naar Kaap Seren duurt een uur, en dat hele uur bestaat uit wind. Waar de vuurtoren stond, is alleen de fundering nog over: een ring van zwarte steen, op kniehoogte afgebroken, als een kaarsstomp. Wat verder van de rand staat het huisje van de wachter nog overeind. De schoorsteen is koud. De deur was ooit hoopvol groen geverfd.",
+    "Dan vind je de trap. Hij is in de rotswand uitgehakt, in het midden hol gesleten, en loopt omlaag tot aan de waterlijn. Daar houdt hij niet op. De treden gaan gewoon door, de zee in, bleek onder het groene water, dieper en dieper, zo ver je kunt kijken. Iemand heeft ooit gedacht dat ze nog van pas zouden komen."
+   ],
+   "choices": [
+    {
+     "text": "Als je het huisje van de wachter binnengaat,",
+     "short": "Ga het huisje binnen",
+     "to": 21
+    },
+    {
+     "text": "Als je de trap afgaat, de zee in,",
+     "short": "Neem de trap omlaag",
+     "to": 24
+    },
+    {
+     "text": "Als je tot twee uur ’s nachts op de rand van de klif wacht,",
+     "short": "Wacht tot twee uur",
+     "to": 26
+    }
+   ],
+   "nr": 17
+  },
+  "12": {
+   "chapter": "De kade om twee uur",
+   "scene": "baynight",
+   "text": [
+    "Bij het vallen van de avond loopt de kade leeg, en dan vol mist. Om twee uur gaat er zonder enig vertoon onder de baai een licht aan. Het is goud en heel diep, en het draait zoals een vuurtoren draait, langs de onderkant van het water. Het gezoem trekt door de stenen omhoog, je laarzen in. Dan, uit de mist: een boeg.",
+    "Het schip komt binnen zonder een zuchtje wind en meert aan alsof het dat elke nacht doet. Op de boeg: [[marigold|MARIGOLD, 1826, de verf nog nat]]. Langs de haven gaan deuren open. De bewoners komen in hun nachtgoed naar beneden, met karren en kruiwagens, en knikken elkaar toe, als mensen op weg naar een markt die ze nog nooit hebben gemist."
+   ],
+   "choices": [
+    {
+     "text": "Als je helpt met lossen,",
+     "short": "Help met lossen",
+     "to": 29
+    },
+    {
+     "text": "Als je stilletjes aan boord glipt,",
+     "short": "Glip aan boord",
+     "to": 33
+    }
+   ],
+   "nr": 8
+  },
+  "15": {
+   "chapter": "Het grootboek van 1826",
+   "scene": "office",
+   "text": [
+    "Hester haalt het grootboek van 1826 zelf van de plank en laat je er dan mee alleen, want de avondboten komen binnen en die tellen zichzelf niet. De boekingen zijn keurig en saai, tot aan de nacht van de Grote Storm: Marigold, kapt. Lorne, twintig aan boord, verwacht. De boeking van de ochtend erna is twee woorden lang. Niet aangekomen.",
+    "Een paar regels hoger, een dag eerder gedateerd, staat de rekening van het Serenlicht. Lampolie, de voorraad voor de winter: doorverkocht, [[goodprice|tegen een goede prijs]]. S.V. In de kantlijn ernaast heeft iemand, in kleine bruine letters die je uit duizenden herkent, een eeuw te laat iets bijgeschreven: “De zee bewaart wat ze niet af kan maken. — I.A.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je naar de zoutpannen gaat,",
+     "short": "Ga naar de zoutpannen",
+     "to": 18
+    },
+    {
+     "text": "Als je vannacht om twee uur naar de kade gaat,",
+     "short": "Ga vannacht naar de kade",
+     "to": 12
+    },
+    {
+     "text": "Als je het grootboek onder je jas stopt en vertrekt,",
+     "short": "Neem het grootboek mee",
+     "to": 37
+    }
+   ],
+   "nr": 24
+  },
+  "18": {
+   "chapter": "De zoutpannen",
+   "scene": "saltpans",
+   "text": [
+    "Voorbij de laatste huizen liggen de zoutpannen, vlak en wit, als een bladzijde waarop nog niemand iets heeft durven schrijven. Een meisje harkt ze op blote voeten, een jaar of tien, met het geduld van iemand die veel ouder is. Waar haar hark is geweest, is de korst dun, en daaronder heeft het zout niet stilgezeten: piepkleine torens, piepkleine scheepjes, elk touwtje op zijn plek.",
+    "“De mevrouw met de initialen betaalde in verhalen,” zegt Nell, zonder op te kijken. “Ze liet een brief achter voor de leerling die zou komen vragen. Jij komt vragen.” Ze steekt een hand uit, wit tot aan de pols. “Eén verhaal. Een goed verhaal. Zeemeerminnen heb ik al gehad.” Achter haar ligt een roeibootje op het slik te wachten op het tij."
+   ],
+   "choices": [
+    {
+     "text": "Als je haar een verhaal vertelt en de brief leest,",
+     "short": "Vertel haar een verhaal",
+     "to": 40
+    },
+    {
+     "text": "Als je haar liever vraagt of ze je bij laagtij de baai op roeit,",
+     "short": "Vraag Nell om te roeien",
+     "to": 42
+    }
+   ],
+   "nr": 49
+  },
+  "21": {
+   "chapter": "Het huisje van de wachter",
+   "scene": "cottage",
+   "text": [
+    "De deur zit niet op slot. Binnen is alles netjes, zoals in een huis dat iemand terugverwacht: een ketel op het koude fornuis, twee bekers aan hun haakjes, waarvan één klein. Er staan twee bedden: dat van de wachter, smal en hard, en een kinderbed, opgemaakt, de deken bij één hoek teruggeslagen. En [[clocks|alle klokken staan stil op twee uur]].",
+    "Op het bureau ligt het logboek open, de laatste aantekening in een hoekig, zorgvuldig handschrift: “Geen olie van de haven. Houd de wacht met wat ik heb. Nell slaapt.” Op de bladzijde ligt een bril, alsof de eigenaar maar even naar buiten is. Door het raam zie je de trap rustig verder de zee in lopen."
+   ],
+   "choices": [
+    {
+     "text": "Als je de bril opzet en verder leest,",
+     "short": "Zet de bril op",
+     "to": 44
+    },
+    {
+     "text": "Als je toch de trap naar zee afgaat,",
+     "short": "Neem toch de trap",
+     "to": 24
+    },
+    {
+     "text": "Als je even op het bed van de wachter gaat liggen,",
+     "short": "Rust even uit",
+     "to": 46
+    }
+   ],
+   "nr": 32
+  },
+  "24": {
+   "chapter": "De verdronken trap",
+   "scene": "stair",
+   "text": [
+    "Bij de waterlijn haal je diep adem en stap je omlaag. De zee blijft weg. Ze wijkt aan weerszijden van de trap terug, groen en rechtop, als glas dat nog niet helemaal heeft besloten om glas te zijn. Je laarzen blijven droog. Na een tijdje laat je je adem gaan en merk je dat de lucht hier beneden gewoon lucht is.",
+    "De treden gaan omlaag en omlaag. Het licht wordt groen, dan blauw, dan de kleur van de binnenkant van een schelp. Vissen komen naar de wand om je te bekijken, met één rond oog tegelijk en de beleefde belangstelling van bezoekers in een aquarium. Het is vrij duidelijk aan welke kant van het glas jij staat."
+   ],
+   "choices": [
+    {
+     "text": "Als je verder naar beneden gaat,",
+     "short": "Ga verder omlaag",
+     "to": 48
+    },
+    {
+     "text": "Als je je hand tegen het glas legt,",
+     "short": "Raak het glas aan",
+     "to": 50
+    }
+   ],
+   "nr": 45
+  },
+  "26": {
+   "chapter": "De klifrand om twee uur",
+   "scene": "cape",
+   "text": [
+    "Je wacht. Om middernacht gaat de wind liggen, alsof iemand hem dat heeft opgedragen. Om één uur worden de ramen van Grijshaven donker, en dan, vreemd genoeg, gaat een flink aantal weer aan. Beneden op de kade verzamelen zich kleine lantaarns, als mensen die een afspraak hebben.",
+    "Precies om twee uur licht de baai van onderen op. Het is de bundel van een vuurtoren, groen door het water heen, die langzaam ronddraait op de zeebodem, waar geen vuurtoren staat. Hij strijkt over de havenmond, over de rotsen onder je, en begint aan de klif. Hij mindert vaart, zoals een lantaarn vaart mindert als hij het bijna zeker weet."
+   ],
+   "choices": [
+    {
+     "text": "Als je naar de kade rent,",
+     "short": "Ren naar de kade",
+     "to": 12
+    },
+    {
+     "text": "Als je blijft staan en de lichtbundel je laat vinden,",
+     "short": "Blijf staan",
+     "to": 53
+    }
+   ],
+   "moment": {
+    "line": "De lichtbundel klimt de klif op, naar jou toe.",
+    "seconds": 10,
+    "default": 53,
+    "head": "Kies voordat het tij keert",
+    "sub": "Wacht je te lang, dan kiest de zee voor je.",
+    "defaultLabel": "DE KEUZE VAN DE ZEE",
+    "timeout": "De zee kiest voor je…"
+   },
+   "nr": 37
+  },
+  "29": {
+   "chapter": "De lading",
+   "scene": "wreck",
+   "text": [
+    "Jij pakt het ene eind van een kist, de bakker het andere. Om twee uur ’s nachts vraagt niemand wie je bent; iedereen is een paar handen. Uit het ruim komt thee die naar 1826 ruikt, rollen kant, klokken die door elkaar heen tikken, en een postzak, opgezwollen van het vocht, die voorzichtig apart wordt gezet.",
+    "Hester komt eraan, een goede jas over haar nachtpon, grootboek onder de arm, en vinkt kisten af. Ze geneert zich nergens voor. De hoofdstad, legt ze uit, betaalt goed voor antiek, en het allerbest voor antiek dat niet bestaat. “Elk stadje moet ergens van leven.” Ze heeft een voorstel voor je, als je even mee naar het kantoor loopt. Achter haar beginnen de bewoners over prijzen te bakkeleien."
+   ],
+   "choices": [
+    {
+     "text": "Als je naar haar voorstel luistert,",
+     "short": "Hoor haar voorstel aan",
+     "to": 55
+    },
+    {
+     "text": "Als je de postzak openmaakt,",
+     "short": "Maak de postzak open",
+     "to": 57
+    },
+    {
+     "text": "Als je aan boord glipt terwijl ze over prijzen bakkeleien,",
+     "short": "Glip aan boord",
+     "to": 33
+    }
+   ],
+   "nr": 43
+  },
+  "33": {
+   "chapter": "Aan boord van de Marigold",
+   "scene": "wreck",
+   "text": [
+    "Niemand houdt je tegen. De bemanning beweegt over het dek als mensen die slaapwandelen: ze rollen touwen op die al opgerold zijn, hun jassen doorweekt van een regen die niet valt. Kapitein Ada Lorne komt van het roer naar beneden, tikt aan haar pet en heet je welkom aan boord alsof je een overtocht had geboekt. “We verwachten het licht,” zegt ze hoffelijk, en ze kijkt langs je heen naar de kaap.",
+    "Je wacht met haar bij de reling terwijl de karren af en aan rijden. Ze vraagt je twee keer hoe laat het is, bedankt je elke keer en gelooft je niet. Dan wordt de lucht boven de kaap grijs. De bemanning gaat naar de trossen zonder wakker te worden. Achter je komt de loopplank omhoog."
+   ],
+   "choices": [
+    {
+     "text": "Als je aan boord blijft,",
+     "short": "Blijf aan boord",
+     "to": 60
+    },
+    {
+     "text": "Als je naar de kade springt,",
+     "short": "Spring naar de kade",
+     "to": 62
+    }
+   ],
+   "moment": {
+    "line": "De loopplank komt omhoog. De kade ligt één grote stap verderop, en de stap wordt steeds groter.",
+    "seconds": 10,
+    "default": 60,
+    "head": "Kies voordat het tij keert",
+    "sub": "Wacht je te lang, dan kiest de zee voor je.",
+    "defaultLabel": "DE KEUZE VAN DE ZEE",
+    "timeout": "De zee kiest voor je…"
+   },
+   "nr": 15
+  },
+  "37": {
+   "chapter": "Een einde",
+   "scene": "harbour",
+   "text": [
+    "Niemand houdt je tegen, en in Grijshaven zou dat als waarschuwing moeten gelden. Op de trap van het kantoor weegt het grootboek wat een grootboek weegt. Op de kade weegt het meer, en bij elke stap nog meer, alsof de namen erin het zich gemakkelijk maken voor de reis: twintig van de Marigold, één vuurtorenwachter, een eeuw aan schepen die één keer te vaak zijn geteld.",
+    "Aan het eind van de kade draag je het in beide armen, als iets wat slaapt. Je wilt het alleen even op de rand neerzetten. Het grootboek, van jullie tweeën de zwaarste, heeft andere plannen. Het water is koud, dan stil, dan heel geduldig. De zee bewaart wat ze niet af kan maken."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "Zwaarder dan papier",
+    "kind": "bad",
+    "epilogue": "Je bent nu een boeking: verwacht, niet aangekomen.",
+    "hint": "Sommige boeken mogen de deur niet uit."
+   },
+   "nr": 46
+  },
+  "40": {
+   "chapter": "De brief van Ines",
+   "scene": "saltpans",
+   "text": [
+    "Je vertelt haar over een berg die in kopieën droomde. Nell luistert met haar hele gezicht en zegt dan dat het middenstuk te lang is en er te veel trappen in zitten. Ze betaalt toch: zwart papier, met de brief erop [[saltletter|in zout geschreven]], elk woord wit opgedroogd.",
+    "“De zee droomt de stormnacht,” schrijft Ines, “en maakt elke keer dezelfde fout, als een scholier die een vergissing uit zijn hoofd kent. Ik heb de lamp geprobeerd. Mijn olie was honderd jaar te nieuw: niets uit onze eeuw brandt in een droom van 1826. Ik ben door naar het oosten, naar de stad die niet wil blijven slapen. Volg me niet. Je doet het toch wel. I.A.” Dan, kleiner: “P.S. Vraag de scheepsleverancier wat hij al die tijd bewaard heeft.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je de scheepsleverancier gaat opzoeken,",
+     "short": "Zoek de scheepsleverancier op",
+     "to": 65
+    },
+    {
+     "text": "Als je Nell vraagt of ze je bij laagtij de baai op roeit,",
+     "short": "Vraag Nell om te roeien",
+     "to": 42
+    }
+   ],
+   "nr": 20
+  },
+  "42": {
+   "chapter": "Roeien bij laagtij",
+   "scene": "dawnsea",
+   "text": [
+    "Nell roeit voor een verhaal heen en een verhaal terug, vooruitbetaald. Het tij is vanochtend het laagste in honderd jaar, en het hele stadje is druk bezig er niet naar te kijken. Terwijl ze roeit, neuriet ze: een traag wijsje dat wiegt als een boot. Als ze het merkt, houdt ze op, alsof ze zichzelf betrapt in de jas van een ander.",
+    "Halverwege tikt een riem tegen glas. De top van de lantaarnkamer steekt boven de baai uit als een glazen hoed, met slierten wier erop en droog vanbinnen. Er ontbreekt één ruit. Daaronder draait een trap naar beneden, het groen in. Nell neuriet weer, en lijkt het zelf niet te merken."
+   ],
+   "choices": [
+    {
+     "text": "Als je door het raam de lantaarnkamer in klimt,",
+     "short": "Klim door het raam",
+     "to": 67
+    },
+    {
+     "text": "Als je Nell vraagt waar ze dat liedje heeft geleerd,",
+     "short": "Vraag naar het liedje",
+     "to": 69
+    }
+   ],
+   "nr": 30
+  },
+  "44": {
+   "chapter": "Door de bril",
+   "scene": "cottage",
+   "text": [
+    "De bril is je te klein en ruikt vaag naar lamprook. Door het rechterglas is het logboek een oud logboek: droge inkt, vergeeld papier, een laatste aantekening die al honderd jaar koud is. Door [[spectacles|het gebarsten linkerglas]] is de inkt nat. Onder de laatste regel wordt in hetzelfde hoekige handschrift een nieuwe geschreven, vannacht, zonder dat er een pen aan te pas komt.",
+    "“Barometer daalt. Regen op de ramen van de lantaarnkamer.” De inkt stokt. Dan: “Iemand aan de deur.” De inkt is nog niet droog als er wordt geklopt. Drie klopjes, beleefd en zonder haast, van iemand die daar zo te horen al een tijdje staat om moed te verzamelen."
+   ],
+   "choices": [
+    {
+     "text": "Als je de deur opendoet,",
+     "short": "Doe de deur open",
+     "to": 71
+    },
+    {
+     "text": "Als je je onder het kinderbed verstopt,",
+     "short": "Verstop je onder het bed",
+     "to": 73
+    }
+   ],
+   "nr": 28
+  },
+  "46": {
+   "chapter": "Een einde",
+   "scene": "cottage",
+   "text": [
+    "Je wilt alleen even je ogen dichtdoen. Het bed van de wachter is smal en hard en ruikt naar wol en zout, en je slaapt erin zoals je niet meer hebt geslapen sinds je klein was: tot op de bodem, zonder één droom, alsof iemand de hele nacht de wacht hield, zodat jij dat niet hoefde.",
+    "Je wordt om twaalf uur ’s middags wakker, uitgerust tot in je botten. In de koets naar huis blijft je zakhorloge op twee uur staan. De klok in de herberg ook, en die in je kamers, en daarna elke klok die je ooit bezit, hoe goed ook. Je went eraan. Mensen vinden je opvallend rustig als het om afspraken gaat."
+   ],
+   "ending": {
+    "no": "III",
+    "title": "Twee uur",
+    "kind": "strange",
+    "epilogue": "Je bent nooit te laat, hooguit honderd jaar te vroeg.",
+    "hint": "Rust nooit uit in de wacht van een ander."
+   },
+   "nr": 40
+  },
+  "48": {
+   "chapter": "De deur op de zeebodem",
+   "scene": "seabed",
+   "text": [
+    "Beneden houdt de trap op en welft de zee zich boven je als een koepel van donker glas. Je lantaarn vindt grijs zand, geribbeld als een pannendak, en dan de toren. Hij ligt op zijn zij als een omgevallen kaars, met zijn top de helling op, het donker in. Vlak bij de voet staat een deur op een kier. Hoog boven je luidt een belboei [[bellbuoy|in een toonsoort die niet bestaat]].",
+    "Vlak achter het glas drijven kleine visjes voorbij. Het duurt even voor je ziet dat ze de vorm van letters hebben. Ze klonteren samen, spellen een half woord en verliezen hun belangstelling: LICH. WACH. NEL. Dan stuiven ze uiteen en proberen het opnieuw, als iemand die heel erg zijn best doet om op een naam te komen."
+   ],
+   "choices": [
+    {
+     "text": "Als je door de deur de toren ingaat,",
+     "short": "Ga de toren in",
+     "to": 75
+    },
+    {
+     "text": "Als je de lettervissen volgt,",
+     "short": "Volg de lettervissen",
+     "to": 77
+    }
+   ],
+   "nr": 22
+  },
+  "50": {
+   "chapter": "Een einde",
+   "scene": "stair",
+   "text": [
+    "Je legt je handpalm plat tegen de wand van water. Die is koel en glad en een heel klein beetje zacht, als het vel op warme melk. Een vis komt je hand van de andere kant inspecteren. Even bekijken jullie elkaar door het glas, en jullie gedragen je allebei, vind je, uitzonderlijk netjes.",
+    "Dan leun je, maar een klein beetje, zoals je tegen een deur leunt waarvan je vrij zeker weet dat hij dicht is. Het glas geeft in één keer mee, met iets wat op opluchting lijkt. De zee was alleen maar beleefd. Ze sluit zich zonder geluid boven de trap, en de vis, die dit al eens eerder heeft gezien, zwemt weg om het de anderen te vertellen."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "Het glas geeft mee",
+    "kind": "bad",
+    "epilogue": "Sommige muren zijn alleen maar goede manieren.",
+    "hint": "Leun nooit op de zee."
+   },
+   "nr": 31
+  },
+  "53": {
+   "chapter": "Een einde",
+   "scene": "cape",
+   "text": [
+    "Je blijft staan. De bundel bereikt je laarzen, je jas, je gezicht, en blijft daar. Hij is warm, wat je niet had verwacht, en heel fel, en hij heeft totaal geen haast om verder te gaan. Je steekt een hand op tegen het licht. Het is het laatste wat je besluit.",
+    "Er varen nog altijd schepen langs Kaap Seren. Om twee uur zien hun uitkijken een gestalte op de klif, van onderen verlicht, één hand opgeheven, en ze houden ruim afstand van de rotsen en komen veilig thuis. Eén schip ziet je nooit. Dat komt elke nacht uit de mist binnen, op zoek naar een ander licht."
+   ],
+   "ending": {
+    "no": "V",
+    "title": "De uitkijk",
+    "kind": "strange",
+    "epilogue": "Je werd een baken. Eindelijk sta je goed op de kaart.",
+    "hint": "Niet elk licht is naar jou op zoek."
+   },
+   "nr": 13
+  },
+  "55": {
+   "chapter": "Een aandeel",
+   "scene": "office",
+   "text": [
+    "Om drie uur ’s nachts ruikt het kantoor naar natte wol. Hester schenkt twee kopjes thee uit 1826 in en doet je een aanbod: een tiende van de opbrengst, zolang de zee blijft dromen. Ze zegt er niet bij: “En jij houdt je mond.” Dat deel komt in de kantlijn, waar de belangrijke dingen staan.",
+    "Dan slaat ze, zuiver voor de boekhouding, het grootboek van 1826 open en laat je zien wat Silas Vane, haar betovergrootvader, in de week van de Grote Storm met de olie van de vuurtoren deed. “Uitstekende prijs. Het licht bleef uit. De rest ligt in het ruim.” Ze steekt haar hand uit. “Als de zee wakker wordt, zijn we een gewoon stadje. Weet je wat een gewoon stadje verdient?”"
+   ],
+   "choices": [
+    {
+     "text": "Als je haar de hand schudt,",
+     "short": "Schud haar de hand",
+     "to": 79
+    },
+    {
+     "text": "Als je eerst de onbestelde brieven leest,",
+     "short": "Lees eerst de brieven",
+     "to": 57
+    },
+    {
+     "text": "Als je het hele stadje vertelt wat er in het grootboek staat,",
+     "short": "Vertel het hele stadje",
+     "to": 95
+    }
+   ],
+   "nr": 47
+  },
+  "57": {
+   "chapter": "De nooit bezorgde brieven",
+   "scene": "wreck",
+   "text": [
+    "Op de postzak, stijf van het zout, staat in sjabloonletters MARIGOLD. Erin zitten brieven die nooit zijn aangekomen: een rekening, een verontschuldiging, een huwelijksaanzoek, een krentenbroodrecept waarvan de laatste regel is weggespoeld. Papier brengt in de hoofdstad niets op, dus niemand wil ze.",
+    "Eén brief is niet gefrankeerd, alleen verzegeld met vuurtorenwas. Hij hoort niet in een postzak thuis; de zee sorteert kennelijk op datum. Tobias Wren, vuurtorenwachter, aan “mijn Nell”, de nacht van de storm: “Als de lamp niet wil branden, steek hem dan voor mij aan. Je weet waar de laatste olie bewaard wordt.” De enige Nell in Grijshaven, zegt een voerman, is het zoutmeisje. “Verkeerde Nell,” voegt hij eraan toe. “Die is tien.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je de brief naar het zoutmeisje brengt,",
+     "short": "Zoek het zoutmeisje op",
+     "to": 81
+    },
+    {
+     "text": "Als je de brief op zak steekt en aan boord gaat,",
+     "short": "Neem hem mee aan boord",
+     "to": 60
+    }
+   ],
+   "nr": 4
+  },
+  "60": {
+   "chapter": "Met het tij mee",
+   "scene": "storm",
+   "text": [
+    "Bij het eerste licht gaat de loopplank omhoog en glipt de Marigold met het tij naar buiten. Dan doet de ochtend iets wat ochtenden niet doen: hij gaat terug. De lucht wordt donker, de wind draait, de zee komt overeind in lange grijze ruggen, en tegen de tijd dat je bij de reling bent, is het 1826 en komt de regen van opzij.",
+    "Op de kaap staat het Serenlicht, ongeschonden, hoog en volkomen donker. De roerganger stuurt met zijn ogen dicht. Kapitein Lorne komt naar je toe, zo hoffelijk als een gastvrouw tegen een gast die te laat is. “We verwachten het licht,” zegt ze, en ze geeft je [[shiplantern|de scheepslantaarn, die nog brandt]]. Dan laat ze een sloep voor je strijken, alsof je erom had gevraagd."
+   ],
+   "choices": [
+    {
+     "text": "Als je met de scheepslantaarn naar de toren roeit,",
+     "short": "Roei naar de toren",
+     "to": 84
+    },
+    {
+     "text": "Als je het roer overneemt en het schip zelf stuurt,",
+     "short": "Neem het roer over",
+     "to": 85
+    }
+   ],
+   "nr": 48
+  },
+  "62": {
+   "chapter": "Een einde",
+   "scene": "harbour",
+   "text": [
+    "Je landt op je knieën tussen de theekisten op de kade, en wie je als eerste overeind helpt, heeft een grootboek onder de arm. Mensen die op het laatste moment springen, zegt Hester, hebben gevoel voor timing. Zou je iets zien in een winkel in de hoofdstad? Zij heeft de voorraad. Ze zoekt alleen nog een gezicht dat er eerlijk uitziet.",
+    "In de hoofdstad verkoop je thee aan mensen die nooit 1826 hebben geproefd, kant dat niemand ooit heeft gedragen, brieven die niemand ooit heeft geopend, en alles gaat als warme broodjes, want elk stuk is precies wat het zegt te zijn. Eens per maand komt er een kist uit Grijshaven die naar zee ruikt. Je vraagt nooit hoe het met het schip gaat."
+   ],
+   "ending": {
+    "no": "VI",
+    "title": "Antiek",
+    "kind": "strange",
+    "epilogue": "Alles in je winkel is authentiek. Niets ervan is echt.",
+    "hint": "Niet alles wat je binnenhaalt, is gered."
+   },
+   "nr": 27
+  },
+  "65": {
+   "chapter": "De scheepsleverancier",
+   "scene": "harbour",
+   "text": [
+    "Marsh & Zonen, Scheepsleveranciers, is de oudste winkel van Grijshaven en de enige die geen antiek verkoopt. Alles op de planken, touw, lampenpitten, scheepsbeschuit, heeft een datum in krijt, en alles is [[shillings|geprijsd in shillings die niet meer bestaan]]. Abel Marsh zelf is het oudste stuk in de zaak, en het enige zonder prijs.",
+    "Als je naar lampolie vraagt, houdt hij zich niet van den domme. Van onder de toonbank tilt hij een verzegeld blik, met de datum op de zijkant geschilderd: 1826. “Silas Vane heeft het aan mijn overgrootvader verkocht. Vuurtorenolie. Het leek ons nooit fatsoenlijk om het op te maken.” Hij zet het tussen jullie in neer als een bewijsstuk. “Zat al te wachten tot iemand ernaar vroeg.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je het koopt en er bij laagtij mee naar de toren roeit,",
+     "short": "Roei ermee naar de toren",
+     "to": 91
+    },
+    {
+     "text": "Als je het koopt en het liever aan Hester aanbiedt,",
+     "short": "Bied het Hester aan",
+     "to": 98
+    }
+   ],
+   "nr": 35
+  },
+  "67": {
+   "chapter": "De lantaarnkamer",
+   "scene": "lanternroom",
+   "text": [
+    "Het raam geeft met een zucht mee, en je klimt naar beneden, een kamer in die honderd jaar onder zee heeft gelegen en volkomen droog is, als een geperste bloem. Midden in de kamer staat de grote lens, een golf van glas die halverwege het breken is gestold. Nell komt tot aan de vensterbank en niet verder, alsof het andermans slaapkamer is.",
+    "Aan de tafel slaapt een vuurtorenwachter op zijn logboek, honderd jaar diep. In de koperen rand van de lens gekrast, klein en netjes: I.A. Ines was je voor. De lamp is kurkdroog. Je eigen lantaarn daarentegen brandt uitstekend."
+   ],
+   "choices": [
+    {
+     "text": "Als je de wachter wakker maakt,",
+     "short": "Maak de wachter wakker",
+     "to": 87
+    },
+    {
+     "text": "Als je de lamp probeert aan te steken met je eigen lantaarn,",
+     "short": "Gebruik je eigen lantaarn",
+     "to": 89
+    }
+   ],
+   "nr": 14
+  },
+  "69": {
+   "chapter": "Nells liedje",
+   "scene": "dawnsea",
+   "text": [
+    "“Van de zee, denk ik,” zegt Nell, en ze trekt aan de riemen alsof de zaak daarmee is afgedaan. Je vraagt wie het haar heeft geleerd. Ze denkt er langer over na dan een kind van tien nodig zou moeten hebben. “Niemand. Het was er gewoon. Net als mijn voeten.”",
+    "Ze keert haar zak om op de roeibank, om je te laten zien wat er de laatste tijd in het zout is gegroeid: torens, torens, torens, allemaal dezelfde toren, [[lullaby|en één piepklein huisje]], met een lichtje waar het zout dun is. Op Kaap Seren is ze nog nooit geweest, zegt ze. Als je vraagt hoe je er komt, wijst ze zonder te kijken."
+   ],
+   "choices": [
+    {
+     "text": "Als je doorroeit naar de lantaarnkamer,",
+     "short": "Roei door naar de lantaarnkamer",
+     "to": 67
+    },
+    {
+     "text": "Als je terugroeit en in je eentje naar het huisje van de vuurtorenwachter loopt,",
+     "short": "Ga alleen naar het huisje",
+     "to": 21
+    }
+   ],
+   "nr": 39
+  },
+  "71": {
+   "chapter": "Er wordt geklopt",
+   "scene": "cottage",
+   "text": [
+    "Op de stoep staat een man, druipnat, zijn pet in zijn handen. Hij draagt een wachtersjas met koperen knopen, en het water loopt van hem af alsof hij net uit zee is opgekomen, waar je maar liever niet bij stilstaat. Achter je wijzen alle klokken twee uur aan. Voor één keer, vermoed je, hebben ze gelijk.",
+    "“Goedenavond. Tobias Wren. Excuses voor het storen.” Hij kijkt naar je lege handen, dan beleefd naar je gezicht. “Heeft de haven de olie gestuurd?” Achter hem steekt de wind op, de zee is wit tot aan de horizon, en op de kaap, waar alleen een stomp stond, staat het Serenlicht, ongeschonden en donker."
+   ],
+   "choices": [
+    {
+     "text": "Als je nee zegt en olie gaat zoeken,",
+     "short": "Ga olie zoeken",
+     "to": 65
+    },
+    {
+     "text": "Als je nu meteen met hem naar de toren gaat,",
+     "short": "Ga nu met hem mee",
+     "to": 83
+    }
+   ],
+   "nr": 6
+  },
+  "73": {
+   "chapter": "Een einde",
+   "scene": "cottage",
+   "text": [
+    "Je wurmt je onder het kinderbed, dat niet gemaakt is voor iemand van jouw formaat, en merkt dat de plek al bezet is. Er ligt een klein meisje in het stof, blootsvoets, knieën opgetrokken, klaarwakker. Ze kijkt je aan zonder verbazing, zoals je kijkt naar iemand die te laat is, en legt een vinger op haar lippen. Er wordt opnieuw geklopt. Jullie verroeren je geen van beiden.",
+    "Er komt niemand binnen. Na lange tijd houdt het kloppen op, en na nog langere tijd val je in slaap met je wang op de planken. ’s Ochtends is ze weg. Waar ze lag, ligt een fijn wit stof. Je proeft eraan. Zout."
+   ],
+   "ending": {
+    "no": "VII",
+    "title": "Verstoppertje",
+    "kind": "strange",
+    "epilogue": "Er wacht nog altijd iemand om gevonden te worden.",
+    "hint": "Verstoppen was haar manier van wachten. Probeer het eens met zoeken."
+   },
+   "nr": 9
+  },
+  "75": {
+   "chapter": "Binnen in de gezonken toren",
+   "scene": "sunken",
+   "text": [
+    "Binnen heeft de toren nog niet gehoord dat hij is omgevallen. De wenteltrap gaat omhoog, zoals altijd, en jij ook. Het water staat tot je knieën, dan tot je enkels, dan alleen nog in de kieren. Bij elke draai is de witkalk verser. Aan een spijker hangt een getijdentafel van 1826, dag voor dag afgestreept, tot vannacht. Boven je roffelt regen op glas.",
+    "Halverwege zit een man in een wachtersjas te slapen tegen de muur, de pet over zijn ogen, alsof hij maar even is gaan zitten op weg naar iets belangrijks. Zijn laarzen zijn nat. Zijn handen zijn gekromd om niets, zoals je een klein vlammetje uit de wind houdt."
+   ],
+   "choices": [
+    {
+     "text": "Als je verder klimt, naar de lantaarnkamer,",
+     "short": "Klim verder",
+     "to": 83
+    },
+    {
+     "text": "Als je naast de slapende wachter gaat zitten,",
+     "short": "Ga bij de wachter zitten",
+     "to": 88
+    }
+   ],
+   "nr": 3
+  },
+  "77": {
+   "chapter": "Een einde",
+   "scene": "seabed",
+   "text": [
+    "Je volgt de lettervissen weg van de toren, het water in dat steeds donkerder en aandachtiger wordt. Ze cirkelen om je heen, elke keer dichterbij, en bij de derde ronde spellen ze je naam. Foutloos. Zelfs het stukje waar iedereen altijd de mist mee ingaat.",
+    "Dan een zin over jou, die klopt, al is hij wat onaardig over je handschrift. Dan een alinea. Dan een hele bladzijde, dicht gezet, met royale marges; Ines zou de marges goedkeuren. Tegen de tijd dat je aan omkeren denkt, is er geen terug meer, alleen de volgende regel. Je hoort nu bij de droom van de zee, en je bent er een heel goed geschreven deel van."
+   ],
+   "ending": {
+    "no": "VIII",
+    "title": "Ingeschreven",
+    "kind": "strange",
+    "epilogue": "De zee leest je elke nacht.",
+    "hint": "Volg niets wat je niet hardop kunt lezen."
+   },
+   "nr": 11
+  },
+  "79": {
+   "chapter": "Een einde",
+   "scene": "office",
+   "text": [
+    "Hesters handdruk is droog en precies zo stevig als nodig is. Grijshaven bloeit op. De bakker koopt een tweede oven, de kerk een nieuwe klok, en jouw tiende komt binnen in enveloppen die vaag naar 1826 ruiken. Elke nacht om twee uur sta je op de kade en tel je de Marigold binnen, en elke dageraad tel je haar weer de haven uit.",
+    "Elke ochtend ben je een beetje rijker en een beetje vermoeider. In het derde jaar slaap je overdag en word je stipt om twee uur wakker. In het tiende knikt de bemanning van de Marigold je toe als een van hen. Je knikt terug. Iets anders zou onbeleefd zijn, en bovendien doen jullie nu samen zaken."
+   ],
+   "ending": {
+    "no": "IX",
+    "title": "Stille vennoot",
+    "kind": "strange",
+    "epilogue": "Je aandeel komt elke nacht binnen, met rente.",
+    "hint": "Een tiende is ook een aandeel."
+   },
+   "nr": 7
+  },
+  "81": {
+   "chapter": "Nell en de brief",
+   "scene": "saltpans",
+   "text": [
+    "Nell leest de brief één keer, snel, zoals je iets leest dat voor iemand anders bedoeld is. Dan nog eens, langzaam. De derde keer leest ze hem helemaal niet. Ze houdt hem alleen vast, en achter haar valt haar hark om, en geen van jullie raapt hem op.",
+    "“Hij zei altijd dat mijn tenen er nog eens af zouden vriezen,” zegt ze. Haar stem is tien jaar oud, en honderdtien. Ze kijkt naar Kaap Seren, waar niets staat, en ziet een huisje, een lamp, een man in een natte jas. “Hij heeft het laatste blik onder mijn bed verstopt.” Een stilte, heel klein. “Voor mij.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je met haar meegaat naar het huisje om onder de vloer te kijken,",
+     "short": "Ga mee naar het huisje",
+     "to": 99
+    },
+    {
+     "text": "Als je haar liever meeneemt naar de scheepsleverancier,",
+     "short": "Breng haar naar de scheepsleverancier",
+     "to": 65
+    }
+   ],
+   "nr": 18
+  },
+  "83": {
+   "chapter": "De toren in de storm",
+   "scene": "storm",
+   "text": [
+    "Na de laatste bocht van de trap sta je in de lantaarnkamer, midden in de ergste nacht van 1826. De regen roffelt op het glas als applaus. De wachter staat al bij de lamp, zoals mensen in dromen altijd al ergens zijn, druipend, en knipt een pit bij die niets heeft om te branden. Door de stromende ruiten komen de lichten van de Marigold op de rotsen af.",
+    "“Olie,” zegt hij, zonder zich om te draaien. “Heb je olie meegebracht?” Je klopt op je zakken, alsof er achter de blanco kaart een blik lampolie verstopt kan zitten. Nee dus. Hij knikt, alsof hij van de haven niet anders had verwacht. Beneden maakt de zee het geluid dat ze maakt vlak voordat ze een besluit neemt."
+   ],
+   "choices": [
+    {
+     "text": "Als je door honderd jaar heen rent om olie te halen,",
+     "short": "Ren om olie te halen",
+     "to": 65
+    },
+    {
+     "text": "Als je blijft en met hem de wacht houdt,",
+     "short": "Blijf en houd de wacht",
+     "to": 88
+    }
+   ],
+   "nr": 41
+  },
+  "84": {
+   "chapter": "De scheepslantaarn",
+   "scene": "storm",
+   "text": [
+    "Je roeit met de lantaarn tussen je knieën, en de zee, die dit vaker heeft gedaan, zet je af aan de voet van de toren. De trap draait rond en rond, als een gedachte die je niet af kunt maken. Boven, in de lantaarnkamer, staat een vuurtorenwachter in een doorweekte oliejas naast een koude lamp.",
+    "Hij draait zich om, ziet wat je bij je hebt, en zijn gezicht doet wat gezichten op een kade doen als er toch nog een schip binnenkomt dat ze al hadden opgegeven. “Kijk eens aan,” zegt hij zacht, meer tegen de lantaarn dan tegen jou. Achter het stromende glas komen de lichten van de Marigold laag en snel naderbij. Er is tijd voor één ding."
+   ],
+   "choices": [
+    {
+     "text": "Als je de grote lamp aansteekt met de scheepslantaarn,",
+     "short": "Steek de grote lamp aan",
+     "to": 86
+    },
+    {
+     "text": "Als je met de lantaarn zwaait om het schip een teken te geven,",
+     "short": "Geef het schip een teken",
+     "to": 90
+    }
+   ],
+   "moment": {
+    "line": "De lichten van de Marigold zijn bijna op de rotsen.",
+    "seconds": 10,
+    "default": 90,
+    "head": "Kies voordat het tij keert",
+    "sub": "Wacht je te lang, dan kiest de zee voor je.",
+    "defaultLabel": "DE KEUZE VAN DE ZEE",
+    "timeout": "De zee kiest voor je…"
+   },
+   "nr": 10
+  },
+  "85": {
+   "chapter": "Een einde",
+   "scene": "storm",
+   "text": [
+    "De roerganger stapt opzij zonder wakker te worden, en jij neemt het roer over. Je hebt heel wat zeekaarten bestudeerd. Je weet precies waar de rotsen voor Kaap Seren liggen: laag, glad, in rood aangegeven, zoals de zee ze in honderd jaar zal hebben afgesleten.",
+    "Je gevoel is honderd jaar te nieuw. De rotsen liggen precies waar ze lagen. De Marigold loopt erop met een lang, beleefd gekreun, als een heel grote deur die dichtgaat, en de zee komt aan boord zonder te kloppen. Kapitein Lorne staat naast je aan het roer en blijft er hoffelijk onder. “We hadden het licht verwacht,” zegt ze, niet onvriendelijk, terwijl het water langs je knieën omhoogkruipt."
+   ],
+   "ending": {
+    "no": "X",
+    "title": "Varen op gevoel",
+    "kind": "bad",
+    "epilogue": "De Marigold zinkt opnieuw. Dit keer met een stuurman.",
+    "hint": "Sommige schepen wachten op een licht, niet op een kapitein."
+   },
+   "nr": 42
+  },
+  "86": {
+   "chapter": "Een einde",
+   "scene": "storm",
+   "text": [
+    "Je opent de scheepslantaarn en houdt de vlam bij de grote pit. Een lang ogenblik gebeurt er niets. Dan vat de pit vlam, klein en blauw en weifelend, en de lens werpt dat kleine licht uit over de storm, veel groter dan het eigenlijk mag. Beneden aarzelen de lichten van de Marigold, en dan zwenken ze af.",
+    "De wachter kijkt tot het schip veilig in de baai ligt. Dan schudt hij je de hand, nat en plechtig, bedankt je namens het Serenlicht, en is aan zijn tafel in slaap gevallen nog voor zijn pet af is. De zee droomt verder, maar een mildere droom. Aan de kust draait een klein meisje zich om in haar slaap, en wordt niet wakker."
+   ],
+   "ending": {
+    "no": "XI",
+    "title": "Een klein licht",
+    "kind": "good",
+    "epilogue": "Elke nacht om twee uur haalt de Marigold het. Bijna iedereen slaapt beter.",
+    "hint": "Een geleende vlam is ook een vlam. Maar in wiens hand hoort hij?"
+   },
+   "nr": 19
+  },
+  "87": {
+   "chapter": "De wachter wordt wakker",
+   "scene": "lanternroom",
+   "text": [
+    "Je raakt zijn schouder aan. Hij doet één oog open zoals zeelui dat doen: in één keer, en meteen een en al oor. Hij kijkt naar het raam, dan naar de klok aan de muur, die op twee uur staat en dat al heel lang doet.",
+    "“Is het al twee uur?” Hij gaat rechtop zitten en zet zijn pet recht, een man die zich schaamt dat hij slapend op zijn post is betrapt. “Wren. Vuurtorenwachter. Heeft de haven de olie gestuurd?” Hij vraagt het luchtig, zoals je vraagt naar een brief waar je al jaren niet meer op rekent. Bij het raam neuriet Nell, een oud wijsje zonder woorden. De wachter fronst bij het wijsje, als bij een naam die op het puntje van zijn tong ligt."
+   ],
+   "choices": [
+    {
+     "text": "Als je belooft dat je olie voor hem gaat halen,",
+     "short": "Beloof olie te halen",
+     "to": 65
+    },
+    {
+     "text": "Als je niets zegt en met hem de wacht houdt,",
+     "short": "Houd de wacht met hem",
+     "to": 88
+    }
+   ],
+   "nr": 26
+  },
+  "88": {
+   "chapter": "Een einde",
+   "scene": "lanternroom",
+   "text": [
+    "Dus houd je de wacht. De vuurtorenwachter is blij met het gezelschap, en te beleefd om dat vaker dan één keer per nacht te zeggen. Hij leert je een pit bijknippen, het weer aflezen aan een zeurende knie, koper poetsen tot je de storm erin ziet. Om twee uur begint de regen, komen de lichten van de Marigold binnen, en staan jullie samen aan het donkere glas te kijken.",
+    "Daarna zet hij water op. De thee is uit 1826 en zo smaakt hij ook. In het logboek, onder WACHT GEHOUDEN DOOR, schrijft hij jouw naam onder de zijne. Honderd jaar diep is minder eenzaam dan het klinkt, een beetje zoals de laatste twee gasten die op een feest nog wakker zijn."
+   ],
+   "ending": {
+    "no": "XII",
+    "title": "De wacht houden",
+    "kind": "strange",
+    "epilogue": "Het licht blijft uit. Het gezelschap is voortreffelijk.",
+    "hint": "De wacht houden is nog geen licht geven."
+   },
+   "nr": 23
+  },
+  "89": {
+   "chapter": "Een einde",
+   "scene": "lanternroom",
+   "text": [
+    "Je opent je lantaarn en houdt de vlam bij de grote pit. De vlam deinst ervoor terug, zoals een kat voor een bad. Hij flakkert, krimpt tot een blauw kraaltje en gaat uit met een klein, verontschuldigend tikje.",
+    "Dan gaat ook de rest van de kamer uit: het koper, de tafel, de slapende wachter, de lens, en als allerlaatste het idee dat je hier droog zit. Niets uit jouw eeuw brandt hier, en niets uit jouw eeuw mag blijven. Proestend kom je boven in de grijze baai. Nell trekt je aan je kraag de boot in en zegt niets, en dat is erger. Waar de glazen hoed was, zijn alleen nog kringen op het water."
+   ],
+   "ending": {
+    "no": "XIII",
+    "title": "De verkeerde eeuw",
+    "kind": "bad",
+    "epilogue": "Ines had je nog zo gewaarschuwd. In zout.",
+    "hint": "Alleen oude olie brandt in een oude droom."
+   },
+   "nr": 36
+  },
+  "90": {
+   "chapter": "Een einde",
+   "scene": "storm",
+   "text": [
+    "Je arm is sneller dan je verstand. Je duwt met je schouder de deur naar de galerij open en zwaait de scheepslantaarn boven je hoofd heen en weer, wijd en dringend, zoals je een postkoets zou aanhouden. Achter je roept de wachter iets. De wind neemt het mee.",
+    "Op het water ziet kapitein Lorne eindelijk een licht op Kaap Seren, en het licht zwaait. Ze is een hoffelijke vrouw. Ze wordt al de hele nacht verwacht, en daar staat iemand die haar binnenwuift. De Marigold gaat overstag en komt blij en recht op je af, en op de rotsen tussen jullie in, die nog nooit zo goed verlicht zijn geweest. Naast je neemt de wachter zijn pet af."
+   ],
+   "ending": {
+    "no": "XIV",
+    "title": "Verkeerd sein",
+    "kind": "bad",
+    "epilogue": "Je hebt de droom een nieuw einde geleerd.",
+    "hint": "Een schip zoekt een vuurtoren, geen zwaaiende hand."
+   },
+   "nr": 16
+  },
+  "91": {
+   "chapter": "Met de olie de baai op",
+   "scene": "dawnsea",
+   "text": [
+    "Nell, het meisje van de zoutpannen, roeit voor de prijs van één verhaal. Het blik olie uit 1826 staat tussen jullie in op de roeibank, als een passagier die voor de hele bank heeft betaald. De baai staat zo droog dat het slik glimt, en verderop, waar nog water is, ligt de top van de lantaarnkamer als een glazen hoed die iemand heeft laten liggen.",
+    "Eén ruit hangt open. Nell kijkt ernaar, en dan naar het water, dat heel zachtjes begint terug te komen. “Is het eenmaal vloed, dan zit je daar tot twee uur,” zegt ze. “Dan kom ik je halen.” Ze zegt ‘twee uur’ zoals een ander ‘etenstijd’ zegt."
+   ],
+   "choices": [
+    {
+     "text": "Als je naar binnen klimt en daar op twee uur wacht,",
+     "short": "Klim naar binnen en wacht",
+     "to": 93
+    },
+    {
+     "text": "Als je terugroeit en vannacht op de kade wacht,",
+     "short": "Wacht op de kade",
+     "to": 12
+    }
+   ],
+   "nr": 12
+  },
+  "93": {
+   "chapter": "De lantaarnkamer om twee uur",
+   "scene": "lanternroom",
+   "text": [
+    "Je wacht de hele dag onder water, in een glazen kamer, met een blik olie en een grote lens die je je gezicht in stukjes teruggeeft. Om twee uur wordt het water buiten zilver. Dan is het geen water meer. Het is regen die tegen de ruiten beukt, en de lantaarnkamer staat ongeschonden op de kaap, midden in de Grote Storm van 1826.",
+    "De vuurtorenwachter, een man in een doorweekte jas, staat over de droge lamp gebogen en strijkt de ene lucifer na de andere af. Buiten in het donker komen de lichten van de Marigold op de rotsen af. Hij heeft je nog niet gezien. Jij hebt de olie in handen."
+   ],
+   "choices": [
+    {
+     "text": "Als je de olie aan de wachter geeft,",
+     "short": "Geef hem de olie",
+     "to": 94
+    },
+    {
+     "text": "Als je de lamp zelf vult en aansteekt,",
+     "short": "Steek hem zelf aan",
+     "to": 97
+    }
+   ],
+   "nr": 38
+  },
+  "94": {
+   "chapter": "Een einde",
+   "scene": "dawnsea",
+   "text": [
+    "Je houdt hem het blik voor. De wachter vraagt niet waar het al die tijd is geweest. Hij vult de lamp met handen die weten hoe het moet, en de pit vat vlam alsof hij alleen maar had gewacht tot iemand erom vroeg. De bundel zwaait uit over de storm; de Marigold zwenkt af. Onderweg vangt het licht een bootje dat je komt halen, en de wachter wordt heel stil, als iemand die zijn naam hoort roepen.",
+    "’s Ochtends is de baai gewoon een baai. Nells boot ligt op het strand, de riemen keurig binnenboord, en op de roeibank staat een huisje van zout met de deur open, alsof er iemand naar huis is gegaan. Grijshaven wordt wakker, doodgewoon en woedend. Tegen de middag weet iemand weer waar boten eigenlijk voor zijn."
+   ],
+   "ending": {
+    "no": "XVIII",
+    "title": "Het bewaarde licht",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Voor het eerst in honderd jaar klopt het grootboek.",
+    "hint": "Laat wie gewacht heeft zijn eigen wacht afmaken."
+   },
+   "nr": 5
+  },
+  "95": {
+   "chapter": "Een einde",
+   "scene": "harbour",
+   "text": [
+    "Je klimt op een viskist en leest het grootboek hardop voor: de olie, de prijs, de initialen, het schip dat nooit aankwam en sindsdien elke nacht aankomt. Grijshaven is diep verontwaardigd, zeker een middag lang. Tegen de avond is er vergaderd, is Hester weggestemd en ben jij gekozen, want jij bent duidelijk eerlijk en iemand moet nu eenmaal tellen.",
+    "Op de deur staat nog altijd HAVENMEESTERES, en het stadje, zuinig als het is, ziet geen reden om dat over te schilderen. Op je eerste ochtend sla je bij het raam het grootboek open en tel je de boten. Eén te veel. Beneden op de kade wacht het stadje, heel beleefd. Je pakt de pen."
+   ],
+   "ending": {
+    "no": "XV",
+    "title": "De nieuwe havenmeesteres",
+    "kind": "strange",
+    "epilogue": "Elk stadje moet ergens van leven. Dit stadje leeft van jou.",
+    "hint": "Een nieuwe boekhouder maakt nog geen nieuwe boeken."
+   },
+   "nr": 25
+  },
+  "96": {
+   "chapter": "Een einde",
+   "scene": "dawnsea",
+   "text": [
+    "Om twee uur wordt de baai de storm. Nell beklimt de trap van haar eigen nacht, het kleine blik in beide armen, en boven draait haar vader zich om van de donkere lamp en herkent haar meteen. “Daar ben je,” zegt hij, alsof ze alleen wat te laat is voor het avondeten. Samen steken ze de lamp aan, zijn handen om de hare. De Marigold zwenkt af.",
+    "Dan droomt de zee haar droom uit, en wordt wakker. ’s Ochtends is de toren weg, is de Marigold weg, en is Nell er nog: op het strand, tien jaar oud, zout in haar haar, het enige wat de zee heeft teruggegeven. Grijshaven wordt wakker, doodgewoon, één schip tekort en woedend. Niemand schrijft Nell op."
+   ],
+   "ending": {
+    "no": "XIX",
+    "title": "De dochter van de wachter",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Ze vraagt of je de weg naar het oosten weet. Zo ongeveer.",
+    "hint": "Sommige brieven komen honderd jaar te laat aan, en precies op tijd."
+   },
+   "nr": 44
+  },
+  "97": {
+   "chapter": "Een einde",
+   "scene": "lanternroom",
+   "text": [
+    "Je stapt langs de wachter, vult de lamp zelf en strijkt een van zijn lucifers af. De lamp vat vlam. De olie is oud genoeg, en jouw handen kunnen er, zo blijkt, ook mee door. De bundel zwaait uit en de Marigold vaart veilig voorbij. De wachter glimlacht naar je als iemand die zijn sleutels overdraagt, en lost, opgelucht, op in de regen.",
+    "De zee is dankbaar. Ze laat het merken zoals de zee dat doet: ze houdt je bij zich. Elke nacht om twee uur rijst de toren op en klim jij naar boven, en komt de Marigold thuis. Soms roeit er bij laagtij een meisje naartoe dat tegen het glas neuriet, een wijsje dat jullie geen van beiden kunnen thuisbrengen."
+   ],
+   "ending": {
+    "no": "XVI",
+    "title": "De nieuwe wachter",
+    "kind": "strange",
+    "epilogue": "Het is vast werk, met een prachtig uitzicht.",
+    "hint": "Het licht moet worden aangestoken door iemand die bij die nacht hoort."
+   },
+   "nr": 33
+  },
+  "98": {
+   "chapter": "Een einde",
+   "scene": "office",
+   "text": [
+    "Hester bekijkt het blik van alle kanten, zoals ze een kolom cijfers naloopt: op zoek naar de fout. Ze vindt er geen. Ze betaalt goed; dat doet ze altijd. Dan sluit ze de olie op in de brandkast van het havenkantoor, naast de grootboeken, waar niemand er ooit nog last van kan hebben.",
+    "Die nacht ga je met geld op zak om twee uur naar de kade en loop je de loopplank van de Marigold op, om eens te zien waar al die ophef over gaat. Het is een mooi schip. De thee ruikt naar 1826. Pas als de loopplank achter je omhooggaat, kijk je naar de kaap, en zie je dat de toren donker is."
+   ],
+   "ending": {
+    "no": "XVII",
+    "title": "Een goede prijs",
+    "kind": "bad",
+    "epilogue": "S.V. verkocht het tegen een goede prijs. Jij ook.",
+    "hint": "De geschiedenis herhaalt zich zolang er iemand aan verdient."
+   },
+   "nr": 29
+  },
+  "99": {
+   "chapter": "Onder de vloer",
+   "scene": "cottage",
+   "text": [
+    "Het huisje is precies zo netjes als ze het heeft achtergelaten, en dat ziet Nell als eerste. Ze knielt bij het kleine bed en tilt zonder te kijken de derde plank op, alsof ze dat gisteren nog deed. Voor haar was dat misschien ook zo.",
+    "Eronder ligt, in wasdoek gewikkeld, een klein blik met [[lastcan|haar naam in het deksel gekrast, in het handschrift van haar vader]], de letters schuin, net als in zijn logboek. Ze drukt het tegen haar borst als iets warms. Alle klokken in het huisje staan op twee uur. Voor één keer lopen ze bijna gelijk."
+   ],
+   "choices": [
+    {
+     "text": "Als je Nell om twee uur naar de toren roeit,",
+     "short": "Roei Nell naar de toren",
+     "to": 96
+    },
+    {
+     "text": "Als je het blik zelf houdt en op de kade wacht,",
+     "short": "Houd het blik",
+     "to": 12
+    }
+   ],
+   "nr": 2
+  }
+ }
+}

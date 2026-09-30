@@ -25,7 +25,7 @@ let fails = 0; const ok = (name, cond, extra) => { console.log((cond ? 'PASS ' :
     if (m === 'getPurchases') return { purchases: [{ productIdentifier: 'book_sea', purchaseState: '1' }, { productIdentifier: 'book_ash', purchaseState: '0' }, { productIdentifier: 'pass_lifetime', purchaseState: 'PURCHASED' }] };
   });
   const prods = await t.win.WaywardBilling.products();
-  ok('products: 5 items with prices', prods.length === 5 && prods.every(p => p.price), JSON.stringify(prods.map(p => p.id + ' ' + p.price)));
+  ok('products: 6 items with prices', prods.length === 6 && prods.every(p => p.price), JSON.stringify(prods.map(p => p.id + ' ' + p.price)));
   const q = t.calls.filter(c => c[1] === 'getProducts');
   ok('products: inapp and subs queried one after another', q.length === 2 && q[0][2].productType === 'inapp' && q[1][2].productType === 'subs');
   await t.win.WaywardBilling.purchase('pass_monthly');

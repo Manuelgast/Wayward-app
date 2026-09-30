@@ -81,7 +81,8 @@
      "text": "If you go down to the village to ask about Ines first,",
      "to": 6
     }
-   ]
+   ],
+   "nr": 1
   },
   "6": {
    "chapter": "Low Veyra",
@@ -103,7 +104,8 @@
      "text": "If you follow Pim to the well-house,",
      "to": 49
     }
-   ]
+   ],
+   "nr": 44
   },
   "9": {
    "chapter": "The Inn",
@@ -122,7 +124,8 @@
      "text": "If you lock your door and go back to bed,",
      "to": 11
     }
-   ]
+   ],
+   "nr": 18
   },
   "11": {
    "chapter": "An ending",
@@ -137,7 +140,8 @@
     "kind": "strange",
     "epilogue": "You sleep well every night. The bell makes sure of it.",
     "hint": "Some doors are best left locked. Or are they?"
-   }
+   },
+   "nr": 38
   },
   "12": {
    "chapter": "The Blank Map",
@@ -155,7 +159,8 @@
      "text": "If you fold the map away and head for the cave instead,",
      "to": 16
     }
-   ]
+   ],
+   "nr": 23
   },
   "14": {
    "chapter": "The Black River",
@@ -173,7 +178,8 @@
      "text": "If you follow the carved faces deeper on foot,",
      "to": 38
     }
-   ]
+   ],
+   "nr": 2
   },
   "16": {
    "chapter": "The Cave Mouth",
@@ -191,7 +197,8 @@
      "text": "If you scratch your own name beneath hers,",
      "to": 20
     }
-   ]
+   ],
+   "nr": 33
   },
   "17": {
    "chapter": "The Lantern Procession",
@@ -209,7 +216,8 @@
      "text": "If you grab Marta’s arm and wake her,",
      "to": 30
     }
-   ]
+   ],
+   "nr": 27
   },
   "19": {
    "chapter": "The Needle Ridge",
@@ -227,7 +235,8 @@
      "text": "If you trust your eyes and take the solid ledge,",
      "to": 24
     }
-   ]
+   ],
+   "nr": 39
   },
   "20": {
    "chapter": "An ending",
@@ -242,7 +251,8 @@
     "kind": "strange",
     "epilogue": "You were here. That is all anyone will ever know.",
     "hint": "Leave your mark before you go in."
-   }
+   },
+   "nr": 7
   },
   "22": {
    "chapter": "Nine Hundred Steps",
@@ -271,7 +281,8 @@
      "short": "Follow the figure into the fog",
      "to": 52
     }
-   ]
+   ],
+   "nr": 4
   },
   "24": {
    "chapter": "An ending",
@@ -286,7 +297,8 @@
     "kind": "bad",
     "epilogue": "The sensible path was the one someone painted for you.",
     "hint": "On the ridge, the obvious way down is the obvious way down."
-   }
+   },
+   "nr": 3
   },
   "25": {
    "chapter": "The Hall of Lanterns",
@@ -308,7 +320,8 @@
      "text": "If you blow out the lantern with your name,",
      "to": 36
     }
-   ]
+   ],
+   "nr": 49
   },
   "27": {
    "chapter": "The Invisible Bridge",
@@ -322,7 +335,8 @@
      "text": "If you climb through the window,",
      "to": 35
     }
-   ]
+   ],
+   "nr": 13
   },
   "28": {
    "chapter": "Other People’s Lanterns",
@@ -340,7 +354,8 @@
      "text": "If you put it back and take your own lantern instead,",
      "to": 33
     }
-   ]
+   ],
+   "nr": 43
   },
   "30": {
    "chapter": "An ending",
@@ -355,7 +370,8 @@
     "kind": "strange",
     "epilogue": "Low Veyra wishes you well. From a distance.",
     "hint": "Never wake a sleepwalker. Unless you want to see what happens."
-   }
+   },
+   "nr": 20
   },
   "31": {
    "chapter": "An ending",
@@ -370,7 +386,8 @@
     "kind": "strange",
     "epilogue": "The lake keeps everyone who stops to rest. It is very restful.",
     "hint": "Her boat knows the way. The question is where."
-   }
+   },
+   "nr": 36
   },
   "33": {
    "chapter": "Your Lantern",
@@ -388,7 +405,8 @@
      "text": "If you climb the chimney towards the smell of paper,",
      "to": 43
     }
-   ]
+   ],
+   "nr": 14
   },
   "35": {
    "chapter": "The High Window",
@@ -402,7 +420,8 @@
      "text": "If you look,",
      "to": 43
     }
-   ]
+   ],
+   "nr": 31
   },
   "36": {
    "chapter": "An ending",
@@ -417,7 +436,8 @@
     "kind": "strange",
     "epilogue": "Nobody will ever find you. Nobody will ever look.",
     "hint": "What happens to a name when its light goes out?"
-   }
+   },
+   "nr": 34
   },
   "38": {
    "chapter": "The Faces",
@@ -435,7 +455,8 @@
      "text": "If you answer, “A map,”",
      "to": 45
     }
-   ]
+   ],
+   "nr": 47
   },
   "41": {
    "chapter": "The Lantern Road",
@@ -449,7 +470,8 @@
      "text": "If you go down to meet her,",
      "to": 80
     }
-   ]
+   ],
+   "nr": 21
   },
   "42": {
    "chapter": "The Compass Chamber",
@@ -467,7 +489,8 @@
      "text": "If you ask what the map is for first,",
      "to": 53
     }
-   ]
+   ],
+   "nr": 16
   },
   "43": {
    "chapter": "The Scriptorium",
@@ -489,7 +512,8 @@
      "text": "If you wake the abbess,",
      "to": 65
     }
-   ]
+   ],
+   "nr": 46
   },
   "45": {
    "chapter": "The Chute",
@@ -507,7 +531,8 @@
      "text": "If you swim for the lights on the far shore,",
      "to": 58
     }
-   ]
+   ],
+   "nr": 19
   },
   "47": {
    "chapter": "An ending",
@@ -522,7 +547,8 @@
     "kind": "strange",
     "epilogue": "In thirty years, you too will learn to whistle.",
     "hint": "A new rope on an old bell is waiting for new hands."
-   }
+   },
+   "nr": 40
   },
   "49": {
    "chapter": "An ending",
@@ -537,7 +563,8 @@
     "kind": "bad",
     "epilogue": "In Low Veyra, only the well is what it looks like.",
     "hint": "Read the warning on the cover again."
-   }
+   },
+   "nr": 26
   },
   "50": {
    "chapter": "An ending",
@@ -552,7 +579,8 @@
     "kind": "strange",
     "epilogue": "You became a very fine cartographer. You are also, now, a small hill.",
     "hint": "Never take a pen before you know what it writes."
-   }
+   },
+   "nr": 42
   },
   "52": {
    "chapter": "The Figure in the Fog",
@@ -570,7 +598,8 @@
      "text": "If you take the lantern and follow the cliff path down,",
      "to": 56
     }
-   ]
+   ],
+   "nr": 37
   },
   "53": {
    "chapter": "What the Map Is For",
@@ -592,7 +621,8 @@
      "text": "If you tear the map in half,",
      "to": 64
     }
-   ]
+   ],
+   "nr": 11
   },
   "55": {
    "chapter": "An ending",
@@ -607,7 +637,8 @@
     "kind": "strange",
     "epilogue": "It was your boat long before it was your idea.",
     "hint": "An empty boat with your name on it is not an invitation."
-   }
+   },
+   "nr": 10
   },
   "56": {
    "chapter": "An ending",
@@ -622,7 +653,8 @@
     "kind": "strange",
     "epilogue": "They will follow anyway. You did.",
     "hint": "Take what the figure leaves behind."
-   }
+   },
+   "nr": 12
   },
   "57": {
    "chapter": "An ending",
@@ -637,7 +669,8 @@
     "kind": "strange",
     "epilogue": "You gave them everything. They gave you their whole attention.",
     "hint": "Help, when it never stops, becomes something else."
-   }
+   },
+   "nr": 15
   },
   "58": {
    "chapter": "The Far Shore",
@@ -651,7 +684,8 @@
      "text": "If you push open the trapdoor,",
      "to": 43
     }
-   ]
+   ],
+   "nr": 29
   },
   "59": {
    "chapter": "The Letter Dated Tomorrow",
@@ -669,7 +703,8 @@
      "text": "If you ignore the bell and go straight down to the Heart,",
      "to": 69
     }
-   ]
+   ],
+   "nr": 41
   },
   "61": {
    "chapter": "An ending",
@@ -685,7 +720,8 @@
     "star": true,
     "epilogue": "The best maps leave things out. You left out the mountain’s last word.",
     "hint": "The simplest thing you can draw is a way out."
-   }
+   },
+   "nr": 45
   },
   "62": {
    "chapter": "Fire in the Scriptorium",
@@ -703,7 +739,8 @@
      "text": "If you let it burn,",
      "to": 76
     }
-   ]
+   ],
+   "nr": 32
   },
   "64": {
    "chapter": "The Tear",
@@ -732,7 +769,8 @@
      "short": "Grab the pen",
      "to": 75
     }
-   ]
+   ],
+   "nr": 25
   },
   "65": {
    "chapter": "The Abbess",
@@ -750,7 +788,8 @@
      "text": "If you go down to the Heart to find Ines,",
      "to": 69
     }
-   ]
+   ],
+   "nr": 35
   },
   "67": {
    "chapter": "Water and Ash",
@@ -768,7 +807,8 @@
      "text": "If you refuse and go down to find Ines,",
      "to": 69
     }
-   ]
+   ],
+   "nr": 8
   },
   "69": {
    "chapter": "The Long Stair Down",
@@ -782,7 +822,8 @@
      "text": "If you go down to her,",
      "to": 80
     }
-   ]
+   ],
+   "nr": 30
   },
   "71": {
    "chapter": "An ending",
@@ -797,7 +838,8 @@
     "kind": "strange",
     "epilogue": "The mountain is still asleep. It just sleeps somewhere else now.",
     "hint": "A bell rung by new hands sounds different."
-   }
+   },
+   "nr": 22
   },
   "72": {
    "chapter": "An ending",
@@ -812,7 +854,8 @@
     "kind": "bad",
     "epilogue": "You found her. The mountain found you both.",
     "hint": "In a fall, you can only hold on to one thing."
-   }
+   },
+   "nr": 48
   },
   "75": {
    "chapter": "The Pen in Mid-Air",
@@ -826,7 +869,8 @@
      "text": "If you walk out to meet her above the eye,",
      "to": 80
     }
-   ]
+   ],
+   "nr": 6
   },
   "76": {
    "chapter": "An ending",
@@ -841,7 +885,8 @@
     "kind": "bad",
     "epilogue": "Somewhere, a blank map of Low Veyra is finally accurate.",
     "hint": "Burning a map does not always free the land."
-   }
+   },
+   "nr": 17
   },
   "80": {
    "chapter": "The Heart",
@@ -875,7 +920,8 @@
      "short": "Walk away with Ines",
      "to": 92
     }
-   ]
+   ],
+   "nr": 9
   },
   "84": {
    "chapter": "An ending",
@@ -890,7 +936,8 @@
     "kind": "strange",
     "epilogue": "You hold the pen now. Someone else holds the rope.",
     "hint": "Whoever holds the pen is held by it."
-   }
+   },
+   "nr": 24
   },
   "88": {
    "chapter": "An ending",
@@ -906,7 +953,8 @@
     "star": true,
     "epilogue": "Neither of you puts the pencil away.",
     "hint": "Sometimes the bravest choice is to hold nothing."
-   }
+   },
+   "nr": 5
   },
   "92": {
    "chapter": "An ending",
@@ -921,7 +969,8 @@
     "kind": "strange",
     "epilogue": "You became the kind of cartographer apprentices follow.",
     "hint": "Walking away is also a way of following."
-   }
+   },
+   "nr": 28
   }
  }
 }

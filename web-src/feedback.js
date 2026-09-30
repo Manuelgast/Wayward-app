@@ -91,7 +91,7 @@
     return '';
   }
   function currentPageNum() {
-    try { if (window.__wayward && window.__wayward.R && window.__wayward.R.p) return window.__wayward.R.p; } catch (e) {}
+    try { var W = window.__wayward; if (W && W.R && W.R.p) { var n = W.pn ? W.pn(W.R.p) : W.R.p, bk = W.book && W.book() && W.book().no > 1 ? 'B' + W.book().no + ' ' : ''; return bk + (n === W.R.p ? n : n + ' (#' + W.R.p + ')'); } } catch (e) {} // the number the reader sees, plus the internal id
     return null;
   }
 
