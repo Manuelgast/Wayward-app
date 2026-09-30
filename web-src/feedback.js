@@ -78,6 +78,7 @@
      the dev/test title carries it ("Wayward 4.5 test"); failing that, shop.js
      (WaywardShop) only exists in the 4.5 build, proto lacks it entirely. */
   function getVersion() {
+    try { if (window.WAYWARD_VERSION) return String(window.WAYWARD_VERSION); } catch (e) {} // set by the app build (e.g. '1.1.0')
     try { var m = /(\d+\.\d+)/.exec(document.title || ''); if (m) return m[1]; } catch (e) {}
     try { if (window.WaywardShop) return '4.5'; } catch (e) {}
     return '4.4';

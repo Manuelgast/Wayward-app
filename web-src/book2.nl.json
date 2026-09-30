@@ -65,12 +65,12 @@
    "chapter": "Proloog",
    "scene": "harbour",
    "text": [
-    "Wat er binnen in de Veyra ook is gebeurd, je bent eruit gekomen met een blanco kaart en één enkele zoutkorrel. Het zout zat in een briefje van Ines: een halve zin, in kleine bruine letters. “Een zee die van zout droomt.” De avondkoets zet je af in Grijshaven, dat ruikt naar nat touw en, zonder dat je kunt zien waarom, naar thee.",
+    "Wat er binnen in de Veyra ook is gebeurd, je bent eruit gekomen met een blanco kaart en één enkele zoutkorrel. Het zout zat in een briefje van Edda: een halve zin, in kleine bruine letters. “Een zee die van zout droomt.” De avondkoets zet je af in Grijshaven, dat ruikt naar nat touw en, zonder dat je kunt zien waarom, naar thee.",
     "Een visser die zijn netten zit te boeten, vertelt je zoals een ander over het weer begint: elke nacht om twee uur gaat er onder de baai een licht aan. “Draait ook,” zegt hij er nog bij. “Stipter dan het getij.” Je kijkt waar hij naar knikt. Op Kaap Seren, waar oudere zeekaarten nog een vuurtoren aangeven, is niets dan wind."
    ],
    "choices": [
     {
-     "text": "Als je bij het havenkantoor naar Ines vraagt,",
+     "text": "Als je bij het havenkantoor naar Edda vraagt,",
      "short": "Vraag het bij het havenkantoor",
      "to": 4
     },
@@ -91,7 +91,7 @@
    "chapter": "Het havenkantoor",
    "scene": "office",
    "text": [
-    "Het havenkantoor bestaat uit één raam op de kade en een eeuw aan grootboeken, per jaar op de plank gezet. Eén rug is bleek gesleten van het vastpakken: 1826. Hester Vane, de havenmeesteres, maakt eerst haar kolom af voor ze opkijkt. Ines Arden? Die naam heeft ze nog nooit gehoord. Ze zegt het twee keer, en de tweede keer slaat ze haar grootboek dicht, alsof je de naam ondersteboven zou kunnen lezen.",
+    "Het havenkantoor bestaat uit één raam op de kade en een eeuw aan grootboeken, per jaar op de plank gezet. Eén rug is bleek gesleten van het vastpakken: 1826. Hester Vane, de havenmeesteres, maakt eerst haar kolom af voor ze opkijkt. Edda Marlow? Die naam heeft ze nog nooit gehoord. Ze zegt het twee keer, en de tweede keer slaat ze haar grootboek dicht, alsof je de naam ondersteboven zou kunnen lezen.",
     "Haar boeken zijn tot in de puntjes in orde, alleen telt ze elke ochtend [[extraship|één schip te veel]]. “Een afrondingsfout.” Ze bekijkt je zoals ze een optelsom bekijkt. Ze heeft nog een kamer vrij, en werk: schepen tellen. “Wil je vragen stellen, dan moet je bij het zoutmeisje zijn. Voor een verhaal vertelt die je alles.”"
    ],
    "choices": [
@@ -181,7 +181,7 @@
    "scene": "office",
    "text": [
     "Hester haalt het grootboek van 1826 zelf van de plank en laat je er dan mee alleen, want de avondboten komen binnen en die tellen zichzelf niet. De boekingen zijn keurig en saai, tot aan de nacht van de Grote Storm: Marigold, kapt. Lorne, twintig aan boord, verwacht. De boeking van de ochtend erna is twee woorden lang. Niet aangekomen.",
-    "Een paar regels hoger, een dag eerder gedateerd, staat de rekening van het Serenlicht. Lampolie, de voorraad voor de winter: doorverkocht, [[goodprice|tegen een goede prijs]]. S.V. In de kantlijn ernaast heeft iemand, in kleine bruine letters die je uit duizenden herkent, een eeuw te laat iets bijgeschreven: “De zee bewaart wat ze niet af kan maken. — I.A.”"
+    "Een paar regels hoger, een dag eerder gedateerd, staat de rekening van het Serenlicht. Lampolie, de voorraad voor de winter: doorverkocht, [[goodprice|tegen een goede prijs]]. S.V. In de kantlijn ernaast heeft iemand, in kleine bruine letters die je uit duizenden herkent, een eeuw te laat iets bijgeschreven: “De zee bewaart wat ze niet af kan maken. — E.M.”"
    ],
    "choices": [
     {
@@ -373,11 +373,11 @@
    "nr": 46
   },
   "40": {
-   "chapter": "De brief van Ines",
+   "chapter": "De brief van Edda",
    "scene": "saltpans",
    "text": [
     "Je vertelt haar over een berg die in kopieën droomde. Nell luistert met haar hele gezicht en zegt dan dat het middenstuk te lang is en er te veel trappen in zitten. Ze betaalt toch: zwart papier, met de brief erop [[saltletter|in zout geschreven]], elk woord wit opgedroogd.",
-    "“De zee droomt de stormnacht,” schrijft Ines, “en maakt elke keer dezelfde fout, als een scholier die een vergissing uit zijn hoofd kent. Ik heb de lamp geprobeerd. Mijn olie was honderd jaar te nieuw: niets uit onze eeuw brandt in een droom van 1826. Ik ben door naar het oosten, naar de stad die niet wil blijven slapen. Volg me niet. Je doet het toch wel. I.A.” Dan, kleiner: “P.S. Vraag de scheepsleverancier wat hij al die tijd bewaard heeft.”"
+    "“De zee droomt de stormnacht,” schrijft Edda, “en maakt elke keer dezelfde fout, als een scholier die een vergissing uit zijn hoofd kent. Ik heb de lamp geprobeerd. Mijn olie was honderd jaar te nieuw: niets uit onze eeuw brandt in een droom van 1826. Ik ben door naar het oosten, naar de stad die niet wil blijven slapen. Volg me niet. Je doet het toch wel. E.M.” Dan, kleiner: “P.S. Vraag de scheepsleverancier wat hij al die tijd bewaard heeft.”"
    ],
    "choices": [
     {
@@ -614,7 +614,7 @@
    "scene": "lanternroom",
    "text": [
     "Het raam geeft met een zucht mee, en je klimt naar beneden, een kamer in die honderd jaar onder zee heeft gelegen en volkomen droog is, als een geperste bloem. Midden in de kamer staat de grote lens, een golf van glas die halverwege het breken is gestold. Nell komt tot aan de vensterbank en niet verder, alsof het andermans slaapkamer is.",
-    "Aan de tafel slaapt een vuurtorenwachter op zijn logboek, honderd jaar diep. In de koperen rand van de lens gekrast, klein en netjes: I.A. Ines was je voor. De lamp is kurkdroog. Je eigen lantaarn daarentegen brandt uitstekend."
+    "Aan de tafel slaapt een vuurtorenwachter op zijn logboek, honderd jaar diep. In de koperen rand van de lens gekrast, klein en netjes: E.M. Edda was je voor. De lamp is kurkdroog. Je eigen lantaarn daarentegen brandt uitstekend."
    ],
    "choices": [
     {
@@ -714,7 +714,7 @@
    "scene": "seabed",
    "text": [
     "Je volgt de lettervissen weg van de toren, het water in dat steeds donkerder en aandachtiger wordt. Ze cirkelen om je heen, elke keer dichterbij, en bij de derde ronde spellen ze je naam. Foutloos. Zelfs het stukje waar iedereen altijd de mist mee ingaat.",
-    "Dan een zin over jou, die klopt, al is hij wat onaardig over je handschrift. Dan een alinea. Dan een hele bladzijde, dicht gezet, met royale marges; Ines zou de marges goedkeuren. Tegen de tijd dat je aan omkeren denkt, is er geen terug meer, alleen de volgende regel. Je hoort nu bij de droom van de zee, en je bent er een heel goed geschreven deel van."
+    "Dan een zin over jou, die klopt, al is hij wat onaardig over je handschrift. Dan een alinea. Dan een hele bladzijde, dicht gezet, met royale marges; Edda zou de marges goedkeuren. Tegen de tijd dat je aan omkeren denkt, is er geen terug meer, alleen de volgende regel. Je hoort nu bij de droom van de zee, en je bent er een heel goed geschreven deel van."
    ],
    "ending": {
     "no": "VIII",
@@ -893,7 +893,7 @@
     "no": "XIII",
     "title": "De verkeerde eeuw",
     "kind": "bad",
-    "epilogue": "Ines had je nog zo gewaarschuwd. In zout.",
+    "epilogue": "Edda had je nog zo gewaarschuwd. In zout.",
     "hint": "Alleen oude olie brandt in een oude droom."
    },
    "nr": 36

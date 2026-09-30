@@ -65,7 +65,7 @@
    "chapter": "Proloog",
    "scene": "mountain",
    "text": [
-    "De brief in je jas is drie weken oud. Er staat alleen: “De berg is hol. Volg me niet.” Hij is ondertekend door Ines Arden, koninklijk cartograaf, de vrouw die je alles heeft geleerd wat je over kaarten weet, ook dat de beste kaarten dingen weglaten. Vier jaar lang was je haar leerling. De ochtend nadat de brief kwam, was haar tafel op het kaartenbureau leeg en was haar lantaarn weg.",
+    "De brief in je jas is drie weken oud. Er staat alleen: “De berg is hol. Volg me niet.” Hij is ondertekend door Edda Marlow, koninklijk cartograaf, de vrouw die je alles heeft geleerd wat je over kaarten weet, ook dat de beste kaarten dingen weglaten. Vier jaar lang was je haar leerling. De ochtend nadat de brief kwam, was haar tafel op het kaartenbureau leeg en was haar lantaarn weg.",
     "Je bent haar toch gevolgd. De berg Veyra staat op geen enkele kaart die je bezit, en daaraan wist je dat je hem had gevonden. Nu zakt de zon achter de top weg. Aan de voet ademt een grot warme lucht uit die naar kaarsrook ruikt. Ernaast klimt een oude trap de mist in. Beneden in het dal gaan de lichten van een dorp een voor een aan."
    ],
    "choices": [
@@ -78,7 +78,7 @@
      "to": 22
     },
     {
-     "text": "Als je eerst naar het dorp afdaalt om naar Ines te vragen,",
+     "text": "Als je eerst naar het dorp afdaalt om naar Edda te vragen,",
      "to": 6
     }
    ],
@@ -88,7 +88,7 @@
    "chapter": "Laag-Veyra",
    "scene": "village",
    "text": [
-    "Laag-Veyra is het vriendelijkste dorp waar je ooit bent geweest, en dat maakt je meteen achterdochtig. Iedereen glimlacht. Niemand heeft ooit gehoord van een cartograaf die Ines heet. En het valt je op dat iedereen precies dezelfde koperen lantaarn heeft als Ines, tot en met [[dent|de deuk in het hengsel]].",
+    "Laag-Veyra is het vriendelijkste dorp waar je ooit bent geweest, en dat maakt je meteen achterdochtig. Iedereen glimlacht. Niemand heeft ooit gehoord van een cartograaf die Edda heet. En het valt je op dat iedereen precies dezelfde koperen lantaarn heeft als Edda, tot en met [[dent|de deuk in het hengsel]].",
     "In de herberg biedt Marta, de waardin, je haar laatste kamer aan, “zolang je hem nodig hebt”. Buiten verkoopt een jongen, Pim, kaarten van de berg uit een bak om zijn nek. Als je er een openvouwt, is hij [[blankmap|volkomen blanco]]. “Dat is de nauwkeurige versie,” zegt Pim. Dan knikt hij naar het oude puthuisje aan de overkant van het plein, alsof het een winkel is die hij van harte aanraadt."
    ],
    "choices": [
@@ -148,7 +148,7 @@
    "scene": "mountain",
    "text": [
     "Pim vraagt er één koperstuk voor en laat je beloven dat je je geld niet terugvraagt. Halverwege de klim, onder de maan, begint de blanco kaart in je hand zich te vullen.",
-    "Er verschijnt een lijn, dan nog een: dunne, zelfverzekerde streken in bruine inkt, getrokken door niemand. Dat handschrift ken je. Je hebt het vier jaar lang nagetekend. Ines tekent een route over de oostflank van de berg, langs een kam die je van hieruit niet kunt zien, met er maar één woord bij: “Veilig.” De inkt is nog nat."
+    "Er verschijnt een lijn, dan nog een: dunne, zelfverzekerde streken in bruine inkt, getrokken door niemand. Dat handschrift ken je. Je hebt het vier jaar lang nagetekend. Edda tekent een route over de oostflank van de berg, langs een kam die je van hieruit niet kunt zien, met er maar één woord bij: “Veilig.” De inkt is nog nat."
    ],
    "choices": [
     {
@@ -166,12 +166,12 @@
    "chapter": "De Zwarte Rivier",
    "scene": "river",
    "text": [
-    "Je lantaarn maakt een klein kamertje van licht om je heen, en de tunnel voert je bergafwaarts, wel een uur lang, zo lijkt het. Dan wordt hij smaller en komt hij uit in een zaal die zo groot is dat je lantaarn het plafond niet kan vinden. Een rivier glijdt voorbij, zwart en geluidloos. Aan de oever ligt een bootje met twee letters in de boeg gekerfd: [[ia|I.A.]] Ines kon nu eenmaal niets ongesigneerd laten. Het touw druipt nog, alsof het bootje nog maar net terug is.",
+    "Je lantaarn maakt een klein kamertje van licht om je heen, en de tunnel voert je bergafwaarts, wel een uur lang, zo lijkt het. Dan wordt hij smaller en komt hij uit in een zaal die zo groot is dat je lantaarn het plafond niet kan vinden. Een rivier glijdt voorbij, zwart en geluidloos. Aan de oever ligt een bootje met twee letters in de boeg gekerfd: [[ia|E.M.]] Edda kon nu eenmaal niets ongesigneerd laten. Het touw druipt nog, alsof het bootje nog maar net terug is.",
     "Langs de oever zijn gezichten in de rots uitgehakt. Het eerste is hoger dan een huis, elk volgend een beetje kleiner. Ze hebben allemaal hun ogen dicht. Allemaal, behalve het laatste."
    ],
    "choices": [
     {
-     "text": "Als je de boot van Ines losmaakt en je door de rivier laat meevoeren,",
+     "text": "Als je de boot van Edda losmaakt en je door de rivier laat meevoeren,",
      "to": 31
     },
     {
@@ -186,7 +186,7 @@
    "scene": "mountain",
    "text": [
     "Warme lucht rolt de grot uit als de adem van een slapend dier. Vlak achter de ingang is de rots door handen gladgesleten, en op het gladde stuk staan namen: honderden, gekrast met messen en spijkers en haarspelden, de oudste ouder dan [[oldestname|elk alfabet dat je kent]].",
-    "De nieuwste is INES ARDEN, in een handschrift dat je overal zou herkennen. Daaronder is precies genoeg plek voor nog één naam."
+    "De nieuwste is EDDA MARLOW, in een handschrift dat je overal zou herkennen. Daaronder is precies genoeg plek voor nog één naam."
    ],
    "choices": [
     {
@@ -258,7 +258,7 @@
    "chapter": "Negenhonderd treden",
    "scene": "bell",
    "moment": {
-    "line": "Door de mist draait de gestalte zich naar je om, de lantaarn van Ines in de hand.",
+    "line": "Door de mist draait de gestalte zich naar je om, de lantaarn van Edda in de hand.",
     "seconds": 10,
     "default": 52,
     "head": "Kies voordat de mist zich sluit",
@@ -268,7 +268,7 @@
    },
    "text": [
     "De trap gaat langer door dan de berg hoog is. Bij negenhonderd houd je op met tellen. De mist sluit zich achter je, tot er alleen nog de volgende tree is, en de tree daarna.",
-    "Bovenaan ligt een klooster in puin. Op de binnenplaats hangt een bronzen klok, groen uitgeslagen van ouderdom, maar [[rope|het touw is nieuw]]. In de mist staat een gestalte naar je te kijken, met de lantaarn van Ines in de hand. Dat gedeukte hengsel herken je uit duizenden."
+    "Bovenaan ligt een klooster in puin. Op de binnenplaats hangt een bronzen klok, groen uitgeslagen van ouderdom, maar [[rope|het touw is nieuw]]. In de mist staat een gestalte naar je te kijken, met de lantaarn van Edda in de hand. Dat gedeukte hengsel herken je uit duizenden."
    ],
    "choices": [
     {
@@ -313,7 +313,7 @@
      "to": 33
     },
     {
-     "text": "Als je de zaal afzoekt naar de lantaarn van Ines,",
+     "text": "Als je de zaal afzoekt naar de lantaarn van Edda,",
      "to": 28
     },
     {
@@ -342,12 +342,12 @@
    "chapter": "Andermans lantaarns",
    "scene": "lanternhall",
    "text": [
-    "Het kost je een uur om de hare te vinden. INES ARDEN, staat er op het plaatje, en de lantaarn is koud. Niet uitgeblazen: de pit is nieuw en heeft nog nooit gebrand. Waar Ines in deze berg ook mee bezig is, haar licht heeft ze er niet aan gegeven.",
+    "Het kost je een uur om de hare te vinden. EDDA MARLOW, staat er op het plaatje, en de lantaarn is koud. Niet uitgeblazen: de pit is nieuw en heeft nog nooit gebrand. Waar Edda in deze berg ook mee bezig is, haar licht heeft ze er niet aan gegeven.",
     "Als je haar lantaarn optilt, wordt het in de zaal stiller dan een zaal eigenlijk kan worden. Ergens beneden, heel diep, draait iets zich naar je om."
    ],
    "choices": [
     {
-     "text": "Als je de koude lantaarn van Ines naar beneden draagt, naar wat zich daar omdraaide,",
+     "text": "Als je de koude lantaarn van Edda naar beneden draagt, naar wat zich daar omdraaide,",
      "to": 41
     },
     {
@@ -378,7 +378,7 @@
    "scene": "lake",
    "text": [
     "De rivier draagt je urenlang mee, of minutenlang. Hier beneden is dat moeilijk te zeggen. De stroom levert je af bij een meer dat van onderaf verlicht is, waar honderd boten in trage cirkels ronddrijven, elk met een slapende reiziger aan boord, een lantaarn bij de voeten.",
-    "In een ervan vind je Ines, glimlachend in haar slaap. Je bent van plan haar wakker te maken. Je gaat alleen eerst heel even zitten."
+    "In een ervan vind je Edda, glimlachend in haar slaap. Je bent van plan haar wakker te maken. Je gaat alleen eerst heel even zitten."
    ],
    "ending": {
     "no": "II",
@@ -463,7 +463,7 @@
    "scene": "heart",
    "text": [
     "Omlaag ga je, lantaarn voorop, een uitgehakte wenteltrap af, rondje na rondje, tot de muur aan één kant wegvalt en er alleen nog een touwleuning is, en het donker.",
-    "Dan houdt het donker op. Onder je ligt een holte die zo groot is dat ze haar eigen weer heeft. Op de bodem, als een meer over de hele vloer van de berg, ligt een gesloten oog. Onder het ooglid lekt licht vandaan. Aan de rand staat iemand met een pen zo lang als een speer. Zelfs van deze hoogte herken je die schouders: Ines."
+    "Dan houdt het donker op. Onder je ligt een holte die zo groot is dat ze haar eigen weer heeft. Op de bodem, als een meer over de hele vloer van de berg, ligt een gesloten oog. Onder het ooglid lekt licht vandaan. Aan de rand staat iemand met een pen zo lang als een speer. Zelfs van deze hoogte herken je die schouders: Edda."
    ],
    "choices": [
     {
@@ -477,7 +477,7 @@
    "chapter": "De Kompaskamer",
    "scene": "chamber",
    "text": [
-    "“Goed antwoord,” zegt het gezicht, en het zwaait open als een deur. Daarachter ligt een ronde kamer, uitgehakt als de binnenkant van een kompas, en in het midden, gebogen over een tafel vol kaarten, staat Ines: magerder, stoffiger en woedend dat ze je ziet.",
+    "“Goed antwoord,” zegt het gezicht, en het zwaait open als een deur. Daarachter ligt een ronde kamer, uitgehakt als de binnenkant van een kompas, en in het midden, gebogen over een tafel vol kaarten, staat Edda: magerder, stoffiger en woedend dat ze je ziet.",
     "“Ik zei toch dat je me niet moest volgen,” zegt ze. Dan kijkt ze naar je handen en houdt je een pen voor die bijna zo lang is als zijzelf. “Mooi. Ik heb vastere handen nodig dan de mijne.” De kaart op tafel is van de berg. De inkt is nog nat."
    ],
    "choices": [
@@ -497,7 +497,7 @@
    "scene": "library",
    "text": [
     "Je bent hoog op de berg, in het scriptorium van een oud klooster. Elke kaart hier toont hetzelfde dal, en elke kaart is gedateerd. Oogsten. Overstromingen. Een bruiloft. Een brand in de bakkerij. De data beginnen honderd jaar geleden en lopen nog honderd jaar door. Aan elke lessenaar dommelt een monnik, op één na. Op die ene schrijft een ganzenveer uit zichzelf: het dorp beneden, met het opschrift LAAG-VEYRA, zoals het er volgende week dinsdag uit zal zien.",
-    "Ernaast ligt, onder een inktpot, een brief aan jou in het handschrift van Ines. Hij is gedateerd op morgen. Aan de andere kant van de kamer, in een zetel die statiger is dan de rest, zit een oude abdis te snurken."
+    "Ernaast ligt, onder een inktpot, een brief aan jou in het handschrift van Edda. Hij is gedateerd op morgen. Aan de andere kant van de kamer, in een zetel die statiger is dan de rest, zit een oude abdis te snurken."
    ],
    "choices": [
     {
@@ -539,7 +539,7 @@
    "scene": "bell",
    "text": [
     "De stem van de klok rolt als onweer de berg af, en de lucht klaart op. Terwijl de laatste toon wegsterft, staat de klokwachter ineens naast je: een oude monnik met een lantaarn, huilend van opluchting.",
-    "“Dertig jaar,” zegt hij, terwijl hij je vingers om het touw vouwt. “Iemand moet hem elke nacht luiden, anders wordt de berg wakker.” Tegen de tijd dat je eraan denkt om naar Ines te vragen, of naar wat er gebeurt als de berg wakker wordt, is hij al halverwege de trap, fluitend."
+    "“Dertig jaar,” zegt hij, terwijl hij je vingers om het touw vouwt. “Iemand moet hem elke nacht luiden, anders wordt de berg wakker.” Tegen de tijd dat je eraan denkt om naar Edda te vragen, of naar wat er gebeurt als de berg wakker wordt, is hij al halverwege de trap, fluitend."
    ],
    "ending": {
     "no": "IV",
@@ -571,7 +571,7 @@
    "scene": "chamber",
    "text": [
     "Je pakt de pen aan. De eerste lijn die je trekt is beverig, en de berg verschuift heel even om erbij te passen. De tweede gaat beter. Bij de tiende valt het je al niet meer op dat de lijnen verschijnen een tel voordat je hand er is.",
-    "Ines knikt tevreden en laat je je gang gaan. Je ziet niet waar ze heen gaat. De kaart wordt nog getekend, en je naam staat er al op: in de legenda, onder “Reliëf”."
+    "Edda knikt tevreden en laat je je gang gaan. Je ziet niet waar ze heen gaat. De kaart wordt nog getekend, en je naam staat er al op: in de legenda, onder “Reliëf”."
    ],
    "ending": {
     "no": "IX",
@@ -587,7 +587,7 @@
    "scene": "stairs",
    "text": [
     "Je volgt de lantaarn van de trap af, over een pad dat zich tegen de kloostermuur vastklampt, steeds twintig passen erachter. Ga jij sneller lopen, dan doet de gestalte dat ook. Blijf je staan, dan wacht ze.",
-    "Bij een lage deur met een windroos erop blijft de gestalte eindelijk staan, hangt de lantaarn van Ines aan een haak ernaast en loopt dwars door de muur, zonder iets open te doen. De deur staat op een kier. De lantaarn schommelt zachtjes, alsof hij iemand uitnodigt hem mee te nemen en de andere kant op te gaan: het rotspad af, terug naar het dal."
+    "Bij een lage deur met een windroos erop blijft de gestalte eindelijk staan, hangt de lantaarn van Edda aan een haak ernaast en loopt dwars door de muur, zonder iets open te doen. De deur staat op een kier. De lantaarn schommelt zachtjes, alsof hij iemand uitnodigt hem mee te nemen en de andere kant op te gaan: het rotspad af, terug naar het dal."
    ],
    "choices": [
     {
@@ -605,7 +605,7 @@
    "chapter": "Waar de kaart voor dient",
    "scene": "chamber",
    "text": [
-    "Ines zucht, als iemand die er al die tijd op heeft gewacht dat je het zou vragen. “Het is geen kaart van de berg,” zegt ze. “De berg is een kaart. Van het dal. Wat hier getekend wordt, gebeurt daar beneden. De monniken luiden al eeuwen elke nacht een klok om hem in slaap te houden, zodat hij niets kan tekenen wat hun niet bevalt.”",
+    "Edda zucht, als iemand die er al die tijd op heeft gewacht dat je het zou vragen. “Het is geen kaart van de berg,” zegt ze. “De berg is een kaart. Van het dal. Wat hier getekend wordt, gebeurt daar beneden. De monniken luiden al eeuwen elke nacht een klok om hem in slaap te houden, zodat hij niets kan tekenen wat hun niet bevalt.”",
     "Ze tikt op een groepje huizen: Laag-Veyra. “Al drie weken teken ik mooi weer voor ze. Minder overstromingen. Een betere oogst.” Ze zegt het trots, zoals de monniken het ooit gezegd moeten hebben. “Nu jij er bent, kunnen we zoveel meer.”"
    ],
    "choices": [
@@ -710,7 +710,7 @@
    "chapter": "Een einde",
    "scene": "dawn",
    "text": [
-    "Je neemt de pen uit de hand van Ines en tekent een deur in de flank van de berg, de eenvoudigste deur die je kunt maken: een lijn, een lijn, een lijn, een klink. Hij gaat open, en daarachter is het ochtend.",
+    "Je neemt de pen uit de hand van Edda en tekent een deur in de flank van de berg, de eenvoudigste deur die je kunt maken: een lijn, een lijn, een lijn, een klink. Hij gaat open, en daarachter is het ochtend.",
     "Samen stappen jullie naar buiten, het zonlicht in. Achter jullie is de berg een beetje kleiner dan eerst, en een beetje minder zeker van zichzelf. Je raakt de grote pen nooit meer aan. Dat hoeft ook niet: vanaf die dag staat op elke kaart ter wereld een berg boven Laag-Veyra, met de naam erbij in jouw handschrift."
    ],
    "ending": {
@@ -746,7 +746,7 @@
    "chapter": "De scheur",
    "scene": "heart",
    "moment": {
-    "line": "Je valt. Ines reikt naar je hand. De grote pen tolt net buiten je bereik.",
+    "line": "Je valt. Edda reikt naar je hand. De grote pen tolt net buiten je bereik.",
     "seconds": 8,
     "default": 72,
     "head": "Kies voordat je neerkomt",
@@ -755,13 +755,13 @@
     "timeout": "De zwaartekracht kiest voor je…"
    },
    "text": [
-    "De kaart scheurt met een geluid als donder in het binnenste van een wolk. De kamer slingert. De windroos in de vloer splijt langs haar windstreken, en jij en Ines vallen erdoorheen, een holte in die zo groot is dat je de omvang ervan op je huid voelt.",
-    "Ines valt naast je en reikt naar je hand. De grote pen valt naast jullie allebei, tollend, net buiten bereik. Je hebt tijd om een van de twee te grijpen."
+    "De kaart scheurt met een geluid als donder in het binnenste van een wolk. De kamer slingert. De windroos in de vloer splijt langs haar windstreken, en jij en Edda vallen erdoorheen, een holte in die zo groot is dat je de omvang ervan op je huid voelt.",
+    "Edda valt naast je en reikt naar je hand. De grote pen valt naast jullie allebei, tollend, net buiten bereik. Je hebt tijd om een van de twee te grijpen."
    ],
    "choices": [
     {
-     "text": "Als je de hand van Ines grijpt,",
-     "short": "Grijp Ines’ hand",
+     "text": "Als je de hand van Edda grijpt,",
+     "short": "Grijp Edda’s hand",
      "to": 72
     },
     {
@@ -776,7 +776,7 @@
    "chapter": "De abdis",
    "scene": "library",
    "text": [
-    "De abdis wordt wakker zoals oude katten dat doen: meteen, en al geërgerd. Ze schuift je brief onder de inktpot vandaan en leest hem zonder te vragen. “Ah,” zegt ze. “Arden. Die kwam drie weken geleden bij ons en stelde uitstekende vragen. We hadden voorzichtiger moeten zijn met de antwoorden.”",
+    "De abdis wordt wakker zoals oude katten dat doen: meteen, en al geërgerd. Ze schuift je brief onder de inktpot vandaan en leest hem zonder te vragen. “Ah,” zegt ze. “Marlow. Die kwam drie weken geleden bij ons en stelde uitstekende vragen. We hadden voorzichtiger moeten zijn met de antwoorden.”",
     "“De berg droomt dit dal,” vertelt ze je. “Wij luiden de klok zodat hij blijft dromen, en het dal blijft waar het is. Je leermeester is afgedaald naar het Hart, helemaal onder in de berg. Ze wil hem wekken en zelf de pen vasthouden waarmee hij droomt. Ze denkt dat zij het beter zou dromen.” De oude vrouw haalt haar schouders op. “Dat denkt iedereen.”"
    ],
    "choices": [
@@ -785,7 +785,7 @@
      "to": 71
     },
     {
-     "text": "Als je afdaalt naar het Hart om Ines te zoeken,",
+     "text": "Als je afdaalt naar het Hart om Edda te zoeken,",
      "to": 69
     }
    ],
@@ -796,7 +796,7 @@
    "scene": "bell",
    "text": [
     "Zij aan zij met de monniken sjouw je emmers tot de laatste kast sissend in rook opgaat. De helft van de kaarten is weg. Beneden in het dal, hoor je later, wist het halve dorp niet meer welke dag het was, en stroomde een rivier even bergop.",
-    "Bij zonsopgang vindt de klokwachter van het klooster, een stokoude monnik, je tussen de as. Hij kijkt lang naar je verbrande handen en houdt je dan het klokkentouw voor. “Wie een brand blust om kaarten te redden die hij haat,” zegt hij, “die kan ik dit toevertrouwen. Je vriendin Arden wilde het niet aannemen. Die is in plaats daarvan afgedaald naar het Hart van de berg.”"
+    "Bij zonsopgang vindt de klokwachter van het klooster, een stokoude monnik, je tussen de as. Hij kijkt lang naar je verbrande handen en houdt je dan het klokkentouw voor. “Wie een brand blust om kaarten te redden die hij haat,” zegt hij, “die kan ik dit toevertrouwen. Je vriendin Marlow wilde het niet aannemen. Die is in plaats daarvan afgedaald naar het Hart van de berg.”"
    ],
    "choices": [
     {
@@ -804,7 +804,7 @@
      "to": 47
     },
     {
-     "text": "Als je weigert en afdaalt om Ines te zoeken,",
+     "text": "Als je weigert en afdaalt om Edda te zoeken,",
      "to": 69
     }
    ],
@@ -815,7 +815,7 @@
    "scene": "heart",
    "text": [
     "De trap naar het Hart begint achter de kloosterkeuken, de minst dramatische plek die je je ervoor kunt voorstellen. Hij gaat omlaag en nog eens omlaag, langs de wortels van de berg, langs water, langs een rotslaag vol schelpen en een andere vol iets wat weleens botten zou kunnen zijn.",
-    "Eindelijk wijken de wanden, en door een drijvende wolk kijk je neer op een gesloten oog zo breed als een meer. Onder het ooglid lekt licht vandaan. Aan de rand staat Ines, met een pen zo lang als een speer."
+    "Eindelijk wijken de wanden, en door een drijvende wolk kijk je neer op een gesloten oog zo breed als een meer. Onder het ooglid lekt licht vandaan. Aan de rand staat Edda, met een pen zo lang als een speer."
    ],
    "choices": [
     {
@@ -830,7 +830,7 @@
    "scene": "bell",
    "text": [
     "Buiten op de binnenplaats luid je de oude klok. Diep in de berg antwoordt een tweede klok: een die jij nog nooit hebt gehoord, en een die de monniken, te oordelen naar hun gezichten, alleen van horen zeggen kennen.",
-    "De twee klokken luiden samen, en de berg draait zich om in zijn slaap, als iemand die gestoord wordt door gestommel beneden. ’s Ochtends ligt het hele dal drie kilometer verder naar het oosten. Laag-Veyra wordt op een andere plek wakker en schuift het op het weer. Ines, waar ze ook is, mag haar kaart opnieuw beginnen."
+    "De twee klokken luiden samen, en de berg draait zich om in zijn slaap, als iemand die gestoord wordt door gestommel beneden. ’s Ochtends ligt het hele dal drie kilometer verder naar het oosten. Laag-Veyra wordt op een andere plek wakker en schuift het op het weer. Edda, waar ze ook is, mag haar kaart opnieuw beginnen."
    ],
    "ending": {
     "no": "XIII",
@@ -846,7 +846,7 @@
    "scene": "heart",
    "text": [
     "Je grijpt haar hand. Ze houdt vast. Een lang, vreemd moment vallen jullie samen door het donker, en het is bijna vredig, en ze zegt: “Ik had toch echt gezegd dat je me niet moest volgen,” en jij lacht, en zij ook.",
-    "Je landt zacht, in de droom van de berg, en dat is een heel zachte plek. Ver boven je, in een zaal vol lantaarns, laaien twee vlammen tegelijk op. Op hun plaatjes staan INES ARDEN en jouw naam, en ze branden naast elkaar, heel fel, heel lang."
+    "Je landt zacht, in de droom van de berg, en dat is een heel zachte plek. Ver boven je, in een zaal vol lantaarns, laaien twee vlammen tegelijk op. Op hun plaatjes staan EDDA MARLOW en jouw naam, en ze branden naast elkaar, heel fel, heel lang."
    ],
    "ending": {
     "no": "XIV",
@@ -862,7 +862,7 @@
    "scene": "heart",
    "text": [
     "Je vingers sluiten zich om de pen. Hij is zwaarder dan een pen hoort te zijn en lichter dan een speer, en hij is nog nat. Zonder na te denken trek je een lijn onder je voeten.",
-    "De lijn houdt. Je stopt zo abrupt met vallen dat je knieën protesteren. Je staat op een brug van inkt boven een enorme holte, en op de bodem ligt een gesloten oog zo groot als een dorp. Ines klautert op het andere eind van je brug. Dankbaar kijkt ze niet. Ze steekt haar hand uit, en de pen glipt uit de jouwe en gaat naar haar toe als een hond die wordt teruggeroepen."
+    "De lijn houdt. Je stopt zo abrupt met vallen dat je knieën protesteren. Je staat op een brug van inkt boven een enorme holte, en op de bodem ligt een gesloten oog zo groot als een dorp. Edda klautert op het andere eind van je brug. Dankbaar kijkt ze niet. Ze steekt haar hand uit, en de pen glipt uit de jouwe en gaat naar haar toe als een hond die wordt teruggeroepen."
    ],
    "choices": [
     {
@@ -892,7 +892,7 @@
    "chapter": "Het Hart",
    "scene": "heart",
    "moment": {
-    "line": "Het oog gaat open. Ines houdt je de grote pen voor. De hele berg houdt zijn adem in.",
+    "line": "Het oog gaat open. Edda houdt je de grote pen voor. De hele berg houdt zijn adem in.",
     "seconds": 12,
     "default": 88,
     "head": "Kies voordat het oog opengaat",
@@ -902,7 +902,7 @@
    },
    "text": [
     "Van dichtbij is het oog niet van steen. Het is huid, of iets wat erop lijkt, grijs en traag en warm, en het begint open te gaan. Langs de naad stroomt gouden licht naar buiten. De hele berg houdt zijn adem in.",
-    "Ines kijkt je aan alsof je precies op tijd bent. “De berg wordt wakker,” zegt ze, en ze houdt je de grote pen voor. “Als het oog opengaat, droomt wie dit vasthoudt het dal. Dat kun jij zijn. Dat kan ik zijn. Of we laten hem wakker worden met niets in handen, en kijken wat hij doet.” Het ooglid gaat nog een duimbreed omhoog."
+    "Edda kijkt je aan alsof je precies op tijd bent. “De berg wordt wakker,” zegt ze, en ze houdt je de grote pen voor. “Als het oog opengaat, droomt wie dit vasthoudt het dal. Dat kun jij zijn. Dat kan ik zijn. Of we laten hem wakker worden met niets in handen, en kijken wat hij doet.” Het ooglid gaat nog een duimbreed omhoog."
    ],
    "choices": [
     {
@@ -916,8 +916,8 @@
      "to": 88
     },
     {
-     "text": "Als je de hand van Ines pakt en wegloopt,",
-     "short": "Loop weg met Ines",
+     "text": "Als je de hand van Edda pakt en wegloopt,",
+     "short": "Loop weg met Edda",
      "to": 92
     }
    ],
@@ -943,8 +943,8 @@
    "chapter": "Een einde",
    "scene": "dawn",
    "text": [
-    "Je doet een stap achteruit, weg van de pen. Ines ook, uiteindelijk. Het oog gaat helemaal open, en voor het eerst in zijn leven kijkt de berg naar de wereld zonder haar te dromen.",
-    "Hij staat op. Langzaam, als een heel oude man, komt de Veyra overeind, schudt de sneeuw van zijn schouders en loopt weg, naar de zee. Achter hem blijft Laag-Veyra liggen, elk dak en elk veld en elke verbouwereerde dorpeling in nachthemd, eindelijk echt en op eigen benen. Jij en Ines zitten in het nieuwe zonlicht op een vlakte die nog nooit op een kaart heeft gestaan. Zij pakt een potlood. Jij pakt een potlood. Geen van beiden tekent iets."
+    "Je doet een stap achteruit, weg van de pen. Edda ook, uiteindelijk. Het oog gaat helemaal open, en voor het eerst in zijn leven kijkt de berg naar de wereld zonder haar te dromen.",
+    "Hij staat op. Langzaam, als een heel oude man, komt de Veyra overeind, schudt de sneeuw van zijn schouders en loopt weg, naar de zee. Achter hem blijft Laag-Veyra liggen, elk dak en elk veld en elke verbouwereerde dorpeling in nachthemd, eindelijk echt en op eigen benen. Jij en Edda zitten in het nieuwe zonlicht op een vlakte die nog nooit op een kaart heeft gestaan. Zij pakt een potlood. Jij pakt een potlood. Geen van beiden tekent iets."
    ],
    "ending": {
     "no": "XIX",
@@ -960,7 +960,7 @@
    "chapter": "Een einde",
    "scene": "mountain",
    "text": [
-    "Je pakt haar hand. Ze laat je hem even vasthouden en trekt hem dan zachtjes terug. “Ga,” zegt Ines. “Iemand moet gaan.” Ze draait zich weer naar het oog.",
+    "Je pakt haar hand. Ze laat je hem even vasthouden en trekt hem dan zachtjes terug. “Ga,” zegt Edda. “Iemand moet gaan.” Ze draait zich weer naar het oog.",
     "Je klimt in je eentje naar buiten en loopt de wereld in, en na verloop van tijd word je een beroemd cartograaf, het soort waar leerlingen brieven aan schrijven. Op een herfstdag komt er een brief van een van je eigen leerlingen, drie weken oud: “Ik denk dat ik weet waar ze heen is gegaan. Maak je om mij geen zorgen.” Je pakt je lantaarn in. Op de achterkant van de brief schrijf je, zorgvuldig: “De berg is hol. Volg me niet.”"
    ],
    "ending": {

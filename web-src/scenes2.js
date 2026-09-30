@@ -1,5 +1,5 @@
 /* scenes2.js — new interactive scenes (v4.5)
-   Six scenes for the early pages: Ines's letter (p1), the inn door (p6), the blank map (p12), the names in the
+   Six scenes for the early pages: Edda's letter (p1), the inn door (p6), the blank map (p12), the names in the
    cave mouth (p16), Marta's lantern (p17) and the nine hundred steps (p22).
    Performance rules for slow phones: soft layers (fog, dust, glow) are canvases at half resolution; crisp ink is a
    canvas that is only stamped into, never redrawn whole; everything else moves with transform/opacity only;
@@ -128,7 +128,7 @@
     return function (withDone) { if (fired) return; fired = true; ctx.finish(withDone !== false); if (via) backToMoment(ctx.p); };
   }
 
-  /* ---------------- 1. Ines's letter: unfold it, fold by fold (p1) ---------------- */
+  /* ---------------- 1. Edda's letter: unfold it, fold by fold (p1) ---------------- */
   SC.letter = function (ctx) {
     var S = stage(ctx, 's2-sc-letter'), A = S.A, root = S.root, il = ctx.il, fin = finisher(ctx, S), SH = !!ctx.short;
     var LW = Math.round(Math.min(A.W - 60, 312)), PH = Math.round(Math.min(LW * 0.43, (A.h - 36) / 3)), LH = PH * 3;
@@ -141,7 +141,7 @@
       return { el: p, ink: el('div', 's2-ink', p), back: el('div', 's2-back', p), shade: el('div', 's2-shade', p) };
     }
     var mid = panel('mid', 1), bot = panel('bot', 2), top = panel('top', 0);
-    var words = ctx.L(il.text) || ['', ''], sign = il.sign || 'Ines Arden';
+    var words = ctx.L(il.text) || ['', ''], sign = il.sign || 'Edda Marlow';
     top.ink.innerHTML = '<span class="s2-hand s2-l1">' + esc(words[0]) + '</span>';
     mid.ink.innerHTML = '<span class="s2-hand s2-l2">' + esc(words[1]) + '</span>';
     bot.ink.innerHTML = '<span class="s2-sig">' + esc(sign) + '</span><svg class="s2-flour" viewBox="0 0 120 16" aria-hidden="true"><path d="M3 9 C 26 3, 52 14, 76 8 S 108 4, 117 10"/></svg><i class="s2-blot"></i>';
@@ -401,7 +401,7 @@
         g.stroke();
       }
     }
-    // Ines's route (normalised): from where you stand, up the valley to the place she marked
+    // Edda's route (normalised): from where you stand, up the valley to the place she marked
     var ROUTE = il.route || [[0.36, 0.86], [0.45, 0.81], [0.55, 0.77], [0.65, 0.72], [0.74, 0.67], [0.8, 0.62], [0.79, 0.57], [0.74, 0.53], [0.68, 0.49], [0.62, 0.46], [0.57, 0.44]];
     var route = sampler(ROUTE.map(function (p) { return U(p[0], p[1]); }), 2);
     var word = ctx.L(il.word) || 'Safe';
@@ -641,7 +641,7 @@
       // the newest one, freshly cut: pale stone inside the letters, in a hand you would know anywhere
       g.save(); g.translate(SW / 2, nameY); g.rotate(-0.025); g.font = nameFs + 'px "IM Fell English", Georgia, serif'; g.textAlign = 'center'; g.textBaseline = 'middle';
       if ('letterSpacing' in g) g.letterSpacing = Math.round(nameFs * 0.12) + 'px';
-      g.fillStyle = 'rgba(4,2,6,.8)'; g.fillText(il.name || 'INES ARDEN', -1, -0.8); g.fillStyle = 'rgba(236,222,204,.92)'; g.fillText(il.name || 'INES ARDEN', 0, 0);
+      g.fillStyle = 'rgba(4,2,6,.8)'; g.fillText(il.name || 'EDDA MARLOW', -1, -0.8); g.fillStyle = 'rgba(236,222,204,.92)'; g.fillText(il.name || 'EDDA MARLOW', 0, 0);
       g.restore();
       // the rim of the slab: lit where it faces the lantern, dark where it turns away
       var rim = g.createLinearGradient(0, 0, SW, SH); rim.addColorStop(0, 'rgba(255,214,170,.42)'); rim.addColorStop(0.45, 'rgba(120,90,80,.1)'); rim.addColorStop(1, 'rgba(0,0,0,.7)');
@@ -650,7 +650,7 @@
       // and the same name once more in gold, for the moment it is read
       var q2 = gold.g; q2.save(); q2.translate(SW / 2, nameY); q2.rotate(-0.025); q2.font = nameFs + 'px "IM Fell English", Georgia, serif'; q2.textAlign = 'center'; q2.textBaseline = 'middle';
       if ('letterSpacing' in q2) q2.letterSpacing = Math.round(nameFs * 0.12) + 'px';
-      q2.shadowColor = 'rgba(255,190,90,.9)'; q2.shadowBlur = 14; q2.fillStyle = '#F6D27C'; q2.fillText(il.name || 'INES ARDEN', 0, 0); q2.shadowBlur = 0; q2.fillStyle = '#FFF1C8'; q2.fillText(il.name || 'INES ARDEN', 0, 0); q2.restore();
+      q2.shadowColor = 'rgba(255,190,90,.9)'; q2.shadowBlur = 14; q2.fillStyle = '#F6D27C'; q2.fillText(il.name || 'EDDA MARLOW', 0, 0); q2.shadowBlur = 0; q2.fillStyle = '#FFF1C8'; q2.fillText(il.name || 'EDDA MARLOW', 0, 0); q2.restore();
       // a lip of rough rock
       g.save(); shape(g); g.strokeStyle = 'rgba(8,5,10,.85)'; g.lineWidth = 2; g.stroke(); g.restore();
     }
@@ -920,8 +920,8 @@
     lines: { en: ['The letter in your coat is three weeks old.', 'You know it by heart. You read it again anyway.'],
              nl: ['De brief in je jas is drie weken oud.', 'Je kent hem uit je hoofd, maar je leest hem nog een keer.'] },
     prompt: { en: 'Unfold the letter', nl: 'Vouw de brief open' },
-    done: { en: 'Signed: Ines Arden. You followed her anyway.', nl: 'Getekend: Ines Arden. Je bent haar toch gevolgd.' },
-    text: { en: ['The mountain is hollow.', 'Don’t follow me.'], nl: ['De berg is hol.', 'Volg me niet.'] }, sign: 'Ines Arden',
+    done: { en: 'Signed: Edda Marlow. You followed her anyway.', nl: 'Getekend: Edda Marlow. Je bent haar toch gevolgd.' },
+    text: { en: ['The mountain is hollow.', 'Don’t follow me.'], nl: ['De berg is hol.', 'Volg me niet.'] }, sign: 'Edda Marlow',
     addr: { en: 'To my apprentice', nl: 'Aan mijn leerling' } };
   IL[6] = { type: 'knock', knocks: 3, zoom: [74, 50],
     lines: { en: ['Everyone in Low Veyra smiles at you.', 'The inn has a heavy oak door, with light behind it.'],
@@ -934,7 +934,7 @@
     prompt: { en: 'Trace her line', nl: 'Trek haar lijn na' },
     done: { en: 'One word, in her hand: Safe. The ink is still wet.', nl: 'Eén woord, in haar handschrift: Veilig. De inkt is nog nat.' },
     word: { en: 'Safe', nl: 'Veilig' }, village: { en: 'Low Veyra', nl: 'Laag-Veyra' } };
-  IL[16] = { type: 'dust', name: 'INES ARDEN',
+  IL[16] = { type: 'dust', name: 'EDDA MARLOW',
     lines: { en: ['Warm air breathes out of the cave.', 'Just inside, the rock has been worn smooth by hands.'],
              nl: ['De grot ademt warme lucht uit.', 'Vlak achter de ingang is de rots door handen gladgesleten.'] },
     prompt: { en: 'Brush away the dust', nl: 'Veeg het stof weg' },

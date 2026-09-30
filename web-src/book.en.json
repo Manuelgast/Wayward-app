@@ -65,7 +65,7 @@
    "chapter": "Prologue",
    "scene": "mountain",
    "text": [
-    "The letter in your coat is three weeks old. It says only: “The mountain is hollow. Don’t follow me.” It is signed by Ines Arden, royal cartographer, the woman who taught you everything you know about maps, including that the best ones leave things out. You were her apprentice for four years. The morning after the letter came, her desk at the map office was empty and her lantern was gone.",
+    "The letter in your coat is three weeks old. It says only: “The mountain is hollow. Don’t follow me.” It is signed by Edda Marlow, royal cartographer, the woman who taught you everything you know about maps, including that the best ones leave things out. You were her apprentice for four years. The morning after the letter came, her desk at the map office was empty and her lantern was gone.",
     "You followed her anyway. Mount Veyra does not appear on any map you own, which is how you knew you had found it. Now the sun is going down behind it. At its foot a cave breathes warm air that smells of candle smoke. Beside it, an old stairway climbs into the fog. Below you, in the valley, the windows of a village are lighting up one by one."
    ],
    "choices": [
@@ -78,7 +78,7 @@
      "to": 22
     },
     {
-     "text": "If you go down to the village to ask about Ines first,",
+     "text": "If you go down to the village to ask about Edda first,",
      "to": 6
     }
    ],
@@ -88,7 +88,7 @@
    "chapter": "Low Veyra",
    "scene": "village",
    "text": [
-    "Low Veyra is the friendliest village you have ever visited, which makes you suspicious at once. Everyone smiles. Nobody has heard of a cartographer called Ines. And everyone, you notice, carries the same brass lantern: the exact model Ines carries, down to [[dent|the dent in the handle]].",
+    "Low Veyra is the friendliest village you have ever visited, which makes you suspicious at once. Everyone smiles. Nobody has heard of a cartographer called Edda. And everyone, you notice, carries the same brass lantern: the exact model Edda carries, down to [[dent|the dent in the handle]].",
     "At the inn, Marta the innkeeper offers you her last room “for as long as you need it.” Outside, a boy called Pim is selling maps of the mountain from a tray. When you unfold one, it is [[blankmap|completely blank]]. “That’s the accurate version,” says Pim. Then he nods at the old well-house across the square, as if it were a shop he could recommend."
    ],
    "choices": [
@@ -148,7 +148,7 @@
    "scene": "mountain",
    "text": [
     "Pim charges you one copper coin and makes you promise not to ask for a refund. Halfway up the valley, under the moon, the blank map in your hand begins to fill.",
-    "A line appears, then another: thin, confident strokes in brown ink, drawn from nowhere. You know that handwriting. You have spent four years copying it. Ines is drawing a route across the mountain’s eastern face, along a ridge you cannot see from here, marked with a single word: “Safe.” The ink is still wet."
+    "A line appears, then another: thin, confident strokes in brown ink, drawn from nowhere. You know that handwriting. You have spent four years copying it. Edda is drawing a route across the mountain’s eastern face, along a ridge you cannot see from here, marked with a single word: “Safe.” The ink is still wet."
    ],
    "choices": [
     {
@@ -166,12 +166,12 @@
    "chapter": "The Black River",
    "scene": "river",
    "text": [
-    "Your lantern makes a small room of light around you, and the tunnel walks you downhill for what feels like an hour. Then it narrows, and opens into a hall so vast your lantern can’t find the ceiling. A river slides past, black and silent. Moored at the bank is a small boat with two letters carved into the bow: [[ia|I.A.]] Ines never could leave a thing unsigned. The boat’s rope is dripping, as if it has only just come back.",
+    "Your lantern makes a small room of light around you, and the tunnel walks you downhill for what feels like an hour. Then it narrows, and opens into a hall so vast your lantern can’t find the ceiling. A river slides past, black and silent. Moored at the bank is a small boat with two letters carved into the bow: [[ia|E.M.]] Edda never could leave a thing unsigned. The boat’s rope is dripping, as if it has only just come back.",
     "Along the bank, faces have been cut into the rock, the first one taller than a house, each one after it a little smaller. Every one of them has its eyes closed. Every one except the last."
    ],
    "choices": [
     {
-     "text": "If you untie Ines’s boat and let the river carry you,",
+     "text": "If you untie Edda’s boat and let the river carry you,",
      "to": 31
     },
     {
@@ -186,7 +186,7 @@
    "scene": "mountain",
    "text": [
     "Warm air rolls out of the cave like breath from a sleeping animal. Just inside the entrance the rock has been polished smooth by hands, and on the smooth part there are names: hundreds of them, scratched with knives and nails and hairpins, going back [[oldestname|further than any alphabet you know]].",
-    "The newest one says INES ARDEN, in a hand you would know anywhere. Beneath it there is exactly enough room for one more name."
+    "The newest one says EDDA MARLOW, in a hand you would know anywhere. Beneath it there is exactly enough room for one more name."
    ],
    "choices": [
     {
@@ -258,7 +258,7 @@
    "chapter": "Nine Hundred Steps",
    "scene": "bell",
    "moment": {
-    "line": "Through the fog, the figure turns towards you. It is holding Ines’s lantern.",
+    "line": "Through the fog, the figure turns towards you. It is holding Edda’s lantern.",
     "seconds": 10,
     "default": 52,
     "head": "Choose before the fog closes",
@@ -268,7 +268,7 @@
    },
    "text": [
     "The stairway goes on longer than the mountain is tall. You stop counting at nine hundred. The fog closes in behind you, until there is only the next step, and the one after that.",
-    "At the top, a monastery lies in ruins. In its courtyard hangs a bronze bell, green with age, but [[rope|its rope is new]]. Through the fog, a figure is watching you. It is holding Ines’s lantern. You would know that dented handle anywhere."
+    "At the top, a monastery lies in ruins. In its courtyard hangs a bronze bell, green with age, but [[rope|its rope is new]]. Through the fog, a figure is watching you. It is holding Edda’s lantern. You would know that dented handle anywhere."
    ],
    "choices": [
     {
@@ -313,7 +313,7 @@
      "to": 33
     },
     {
-     "text": "If you search the hall for Ines’s lantern,",
+     "text": "If you search the hall for Edda’s lantern,",
      "to": 28
     },
     {
@@ -342,12 +342,12 @@
    "chapter": "Other People’s Lanterns",
    "scene": "lanternhall",
    "text": [
-    "It takes an hour to find hers. INES ARDEN, the tag says, and the lantern is cold. Not blown out: the wick is new and has never been lit. Whatever Ines is doing inside this mountain, she has not given it her light.",
+    "It takes an hour to find hers. EDDA MARLOW, the tag says, and the lantern is cold. Not blown out: the wick is new and has never been lit. Whatever Edda is doing inside this mountain, she has not given it her light.",
     "When you lift her lantern, the hall goes quiet in a way that halls should not be able to. Somewhere below, very far down, something turns towards you."
    ],
    "choices": [
     {
-     "text": "If you carry Ines’s cold lantern down towards whatever turned,",
+     "text": "If you carry Edda’s cold lantern down towards whatever turned,",
      "to": 41
     },
     {
@@ -378,7 +378,7 @@
    "scene": "lake",
    "text": [
     "The river carries you for hours, or minutes. Down here it is hard to tell. It delivers you to a lake lit from below, where a hundred boats drift in slow circles, each carrying a sleeping traveller with a lantern at their feet.",
-    "You find Ines in one of them, smiling in her sleep. You mean to wake her. You only sit down for a moment first."
+    "You find Edda in one of them, smiling in her sleep. You mean to wake her. You only sit down for a moment first."
    ],
    "ending": {
     "no": "II",
@@ -463,7 +463,7 @@
    "scene": "heart",
    "text": [
     "Down you go, lantern first, by a stair cut in spirals, round and round, until the wall falls away on one side and there is only a rope railing and the dark.",
-    "Then the dark ends. Below you lies a hollow so large it has weather. At the bottom, filling the floor of the mountain like a lake, is a closed eye. Light leaks from under the lid. Someone is standing at its edge, holding a pen as tall as a spear. Even from this height you know the set of those shoulders: Ines."
+    "Then the dark ends. Below you lies a hollow so large it has weather. At the bottom, filling the floor of the mountain like a lake, is a closed eye. Light leaks from under the lid. Someone is standing at its edge, holding a pen as tall as a spear. Even from this height you know the set of those shoulders: Edda."
    ],
    "choices": [
     {
@@ -477,7 +477,7 @@
    "chapter": "The Compass Chamber",
    "scene": "chamber",
    "text": [
-    "“Good answer,” says the face, and swings open like a door. Behind it is a round chamber carved like the inside of a compass, and at its centre, bent over a table of maps, is Ines: thinner, dustier, and furious to see you.",
+    "“Good answer,” says the face, and swings open like a door. Behind it is a round chamber carved like the inside of a compass, and at its centre, bent over a table of maps, is Edda: thinner, dustier, and furious to see you.",
     "“I told you not to follow me,” she says. Then she looks at your hands and holds out a pen nearly as tall as she is. “Good. I need steadier ones.” The map on the table is of the mountain. The ink is still wet."
    ],
    "choices": [
@@ -497,7 +497,7 @@
    "scene": "library",
    "text": [
     "You are high on the mountain, in the scriptorium of an old monastery. Every map here is of the same valley, and every one is dated. Harvests. Floods. A wedding. A fire in the bakery. The dates begin a hundred years ago and go on for another hundred. Monks doze at every desk but one. On that one a quill is writing by itself: the village below, labelled LOW VEYRA, as it will be next Tuesday.",
-    "Beside it, weighed down by an inkpot, lies a letter addressed to you in Ines’s handwriting. It is dated tomorrow. Across the room, in a chair grander than the others, an old abbess snores."
+    "Beside it, weighed down by an inkpot, lies a letter addressed to you in Edda’s handwriting. It is dated tomorrow. Across the room, in a chair grander than the others, an old abbess snores."
    ],
    "choices": [
     {
@@ -539,7 +539,7 @@
    "scene": "bell",
    "text": [
     "The bell’s voice rolls down the mountain like weather, and the air goes clear. As the last note fades, the bell-keeper is at your elbow: an old monk with a lantern, weeping with relief.",
-    "“Thirty years,” he says, closing your fingers around the rope. “Someone must ring it every night, or the mountain wakes.” By the time you think to ask about Ines, or about what happens if the mountain wakes, he is halfway down the stairs, whistling."
+    "“Thirty years,” he says, closing your fingers around the rope. “Someone must ring it every night, or the mountain wakes.” By the time you think to ask about Edda, or about what happens if the mountain wakes, he is halfway down the stairs, whistling."
    ],
    "ending": {
     "no": "IV",
@@ -571,7 +571,7 @@
    "scene": "chamber",
    "text": [
     "You take the pen. The first line you draw is shaky, and the mountain shifts very slightly to match it. The second is better. By the tenth you have stopped noticing that the lines appear a moment before your hand arrives.",
-    "Ines nods, satisfied, and leaves you to it. You don’t see where she goes. The map is still being drawn, and your name is already on it: in the legend, under “Features”."
+    "Edda nods, satisfied, and leaves you to it. You don’t see where she goes. The map is still being drawn, and your name is already on it: in the legend, under “Features”."
    ],
    "ending": {
     "no": "IX",
@@ -587,7 +587,7 @@
    "scene": "stairs",
    "text": [
     "You follow the lantern off the stairs and along a path that clings to the monastery wall, always twenty steps behind. When you hurry, the figure hurries. When you stop, it waits.",
-    "At a low door marked with a compass rose the figure finally stops, hangs Ines’s lantern on a hook beside it, and walks straight through the wall without opening anything. The door is ajar. The lantern swings gently, as if inviting someone to take it and go the other way: down the cliff path, back towards the valley."
+    "At a low door marked with a compass rose the figure finally stops, hangs Edda’s lantern on a hook beside it, and walks straight through the wall without opening anything. The door is ajar. The lantern swings gently, as if inviting someone to take it and go the other way: down the cliff path, back towards the valley."
    ],
    "choices": [
     {
@@ -605,7 +605,7 @@
    "chapter": "What the Map Is For",
    "scene": "chamber",
    "text": [
-    "Ines sighs like someone who has been waiting to be asked. “It isn’t a map of the mountain,” she says. “The mountain is a map. Of the valley. Whatever is drawn here happens down there. The monks ring a bell every night to keep it asleep, and have done for centuries, so it can’t draw anything they don’t like.”",
+    "Edda sighs like someone who has been waiting to be asked. “It isn’t a map of the mountain,” she says. “The mountain is a map. Of the valley. Whatever is drawn here happens down there. The monks ring a bell every night to keep it asleep, and have done for centuries, so it can’t draw anything they don’t like.”",
     "She taps a small cluster of houses: Low Veyra. “For three weeks I’ve been drawing them good weather. Fewer floods. A better harvest.” She says it proudly, the way the monks must once have said it. “Now you’re here, we can do so much more.”"
    ],
    "choices": [
@@ -710,7 +710,7 @@
    "chapter": "An ending",
    "scene": "dawn",
    "text": [
-    "You take the pen from Ines’s hand and draw a door in the side of the mountain, the plainest door you can manage: a line, a line, a line, a handle. It opens onto morning.",
+    "You take the pen from Edda’s hand and draw a door in the side of the mountain, the plainest door you can manage: a line, a line, a line, a handle. It opens onto morning.",
     "You walk out together into the sunlight. Behind you the mountain is a little smaller than before, and a little less sure of itself. You never touch the great pen again. You don’t need to: from that day on, every map in the world shows a mountain above Low Veyra, labelled in your handwriting."
    ],
    "ending": {
@@ -746,7 +746,7 @@
    "chapter": "The Tear",
    "scene": "heart",
    "moment": {
-    "line": "You are falling. Ines reaches for your hand. The great pen spins just out of reach.",
+    "line": "You are falling. Edda reaches for your hand. The great pen spins just out of reach.",
     "seconds": 8,
     "default": 72,
     "head": "Choose before you land",
@@ -755,13 +755,13 @@
     "timeout": "Gravity chooses for you…"
    },
    "text": [
-    "The map tears with a sound like thunder heard from inside a cloud. The chamber lurches. The compass-rose floor splits along its points, and you and Ines drop through it into a hollow so huge you can feel the size of it on your skin.",
-    "Ines falls beside you, reaching for your hand. The great pen falls beside you both, spinning, just out of reach. You have time to grab one of them."
+    "The map tears with a sound like thunder heard from inside a cloud. The chamber lurches. The compass-rose floor splits along its points, and you and Edda drop through it into a hollow so huge you can feel the size of it on your skin.",
+    "Edda falls beside you, reaching for your hand. The great pen falls beside you both, spinning, just out of reach. You have time to grab one of them."
    ],
    "choices": [
     {
-     "text": "If you grab Ines’s hand,",
-     "short": "Grab Ines’s hand",
+     "text": "If you grab Edda’s hand,",
+     "short": "Grab Edda’s hand",
      "to": 72
     },
     {
@@ -776,7 +776,7 @@
    "chapter": "The Abbess",
    "scene": "library",
    "text": [
-    "The abbess wakes the way old cats do: instantly, and already annoyed. She slides your letter out from under the inkpot and reads it without asking. “Ah,” she says. “Arden. She came to us three weeks ago and asked very good questions. We should have been more careful with the answers.”",
+    "The abbess wakes the way old cats do: instantly, and already annoyed. She slides your letter out from under the inkpot and reads it without asking. “Ah,” she says. “Marlow. She came to us three weeks ago and asked very good questions. We should have been more careful with the answers.”",
     "“The mountain dreams this valley,” she tells you. “We ring the bell so it keeps dreaming, and the valley stays where it is. Your mentor has gone down to the Heart, at the very bottom of the mountain. She wants to wake it and hold the pen it dreams with. She thinks she would dream it better.” The old woman shrugs. “Everyone does.”"
    ],
    "choices": [
@@ -785,7 +785,7 @@
      "to": 71
     },
     {
-     "text": "If you go down to the Heart to find Ines,",
+     "text": "If you go down to the Heart to find Edda,",
      "to": 69
     }
    ],
@@ -796,7 +796,7 @@
    "scene": "bell",
    "text": [
     "You haul buckets beside the monks until the last shelf hisses into smoke. Half the maps are gone. Down in the valley, you learn later, half the village forgot what day it was, and a river briefly flowed uphill.",
-    "At dawn the monastery’s bell-keeper, a very old monk, finds you sitting in the ashes. He looks at your burnt hands for a long time, then holds out the bell rope. “Anyone who fights a fire for maps they hate,” he says, “can be trusted with this. Your friend Arden wouldn’t take it. She went down to the Heart of the mountain instead.”"
+    "At dawn the monastery’s bell-keeper, a very old monk, finds you sitting in the ashes. He looks at your burnt hands for a long time, then holds out the bell rope. “Anyone who fights a fire for maps they hate,” he says, “can be trusted with this. Your friend Marlow wouldn’t take it. She went down to the Heart of the mountain instead.”"
    ],
    "choices": [
     {
@@ -804,7 +804,7 @@
      "to": 47
     },
     {
-     "text": "If you refuse and go down to find Ines,",
+     "text": "If you refuse and go down to find Edda,",
      "to": 69
     }
    ],
@@ -815,7 +815,7 @@
    "scene": "heart",
    "text": [
     "The stair to the Heart begins behind the monastery kitchen, which is the least dramatic place you can imagine for it. It goes down and down, past the roots of the mountain, past water, past a layer of rock full of seashells and another full of something that might be bones.",
-    "At last the walls open, and you are looking down through a drifting cloud at a closed eye as wide as a lake. Light leaks from under the lid. Ines stands at its edge, holding a pen as tall as a spear."
+    "At last the walls open, and you are looking down through a drifting cloud at a closed eye as wide as a lake. Light leaks from under the lid. Edda stands at its edge, holding a pen as tall as a spear."
    ],
    "choices": [
     {
@@ -830,7 +830,7 @@
    "scene": "bell",
    "text": [
     "Out in the courtyard, you ring the old bell. Deep inside the mountain a second bell answers: one you have never heard, and one the monks, judging by their faces, have only ever heard about.",
-    "The two bells ring together, and the mountain turns over in its sleep like someone disturbed by a noise downstairs. In the morning the whole valley is two miles further east. Low Veyra wakes up in a different place and blames the weather. Ines, wherever she is, will have to start her map again."
+    "The two bells ring together, and the mountain turns over in its sleep like someone disturbed by a noise downstairs. In the morning the whole valley is two miles further east. Low Veyra wakes up in a different place and blames the weather. Edda, wherever she is, will have to start her map again."
    ],
    "ending": {
     "no": "XIII",
@@ -846,7 +846,7 @@
    "scene": "heart",
    "text": [
     "You catch her hand. She holds on. For a long, strange moment you fall together through the dark, and it is almost peaceful, and she says, “I really did tell you not to follow me,” and you laugh, and so does she.",
-    "You land softly, in the mountain’s dream, which is a very soft place. Far above you, in a hall full of lanterns, two flames flare up at once. Their tags say INES ARDEN and your name, and they burn side by side, very bright, for a very long time."
+    "You land softly, in the mountain’s dream, which is a very soft place. Far above you, in a hall full of lanterns, two flames flare up at once. Their tags say EDDA MARLOW and your name, and they burn side by side, very bright, for a very long time."
    ],
    "ending": {
     "no": "XIV",
@@ -862,7 +862,7 @@
    "scene": "heart",
    "text": [
     "Your fingers close around the pen. It is heavier than a pen should be and lighter than a spear, and it is still wet. Without thinking, you draw a line beneath your feet.",
-    "The line holds. You stop falling so suddenly that your knees complain. You are standing on a bridge of ink above an enormous hollow, and at the bottom is a closed eye the size of a village. Ines is climbing onto the far end of your bridge. She does not look grateful. She holds out her hand, and the pen slips out of yours and goes to her like a dog called home."
+    "The line holds. You stop falling so suddenly that your knees complain. You are standing on a bridge of ink above an enormous hollow, and at the bottom is a closed eye the size of a village. Edda is climbing onto the far end of your bridge. She does not look grateful. She holds out her hand, and the pen slips out of yours and goes to her like a dog called home."
    ],
    "choices": [
     {
@@ -892,7 +892,7 @@
    "chapter": "The Heart",
    "scene": "heart",
    "moment": {
-    "line": "The eye is opening. Ines holds out the great pen. The whole mountain holds its breath.",
+    "line": "The eye is opening. Edda holds out the great pen. The whole mountain holds its breath.",
     "seconds": 12,
     "default": 88,
     "head": "Choose before the eye opens",
@@ -902,7 +902,7 @@
    },
    "text": [
     "Up close, the eye is not stone. It is skin, or something like it, grey and slow and warm, and it is beginning to open. Golden light pours out along the seam. The whole mountain holds its breath.",
-    "Ines looks at you as if you are exactly on time. “It’s waking,” she says, and holds out the great pen. “When it opens, whoever holds this dreams the valley. It could be you. It could be me. Or we could let it wake up with nothing in its hands, and see what it does.” The lid lifts another inch."
+    "Edda looks at you as if you are exactly on time. “It’s waking,” she says, and holds out the great pen. “When it opens, whoever holds this dreams the valley. It could be you. It could be me. Or we could let it wake up with nothing in its hands, and see what it does.” The lid lifts another inch."
    ],
    "choices": [
     {
@@ -916,8 +916,8 @@
      "to": 88
     },
     {
-     "text": "If you take Ines’s hand and walk away,",
-     "short": "Walk away with Ines",
+     "text": "If you take Edda’s hand and walk away,",
+     "short": "Walk away with Edda",
      "to": 92
     }
    ],
@@ -943,8 +943,8 @@
    "chapter": "An ending",
    "scene": "dawn",
    "text": [
-    "You step back from the pen. So does Ines, eventually. The eye opens all the way, and for the first time in its life the mountain looks at the world without dreaming it.",
-    "It gets up. Slowly, like a very old man, Mount Veyra stands, shakes the snow off its shoulders and walks away towards the sea. Behind it Low Veyra remains, every roof and field and astonished villager in a nightgown, real at last and on its own. You and Ines sit in the new sunlight on a plain no map has ever shown. She takes out a pencil. You take out a pencil. Neither of you draws a thing."
+    "You step back from the pen. So does Edda, eventually. The eye opens all the way, and for the first time in its life the mountain looks at the world without dreaming it.",
+    "It gets up. Slowly, like a very old man, Mount Veyra stands, shakes the snow off its shoulders and walks away towards the sea. Behind it Low Veyra remains, every roof and field and astonished villager in a nightgown, real at last and on its own. You and Edda sit in the new sunlight on a plain no map has ever shown. She takes out a pencil. You take out a pencil. Neither of you draws a thing."
    ],
    "ending": {
     "no": "XIX",
@@ -960,7 +960,7 @@
    "chapter": "An ending",
    "scene": "mountain",
    "text": [
-    "You take her hand. She lets you hold it for a moment, then gently takes it back. “Go,” says Ines. “Someone should.” She turns back to the eye.",
+    "You take her hand. She lets you hold it for a moment, then gently takes it back. “Go,” says Edda. “Someone should.” She turns back to the eye.",
     "You climb out alone and walk down into the world, and in time you become a famous cartographer, the kind apprentices write to. One autumn a letter arrives from one of your own apprentices, three weeks old: “I think I know where she went. Don’t worry about me.” You pack your lantern. On the back of their letter you write, carefully: “The mountain is hollow. Don’t follow me.”"
    ],
    "ending": {

@@ -11,6 +11,8 @@
    - Hints and riddles are free (no candles).
    Switched OFF by default: then nothing is added to the page and every call runs the action for free.
    Switch: ?shop=1, localStorage 'wayward.shop.dev' = '1', or tap the credits title 5x (app.js).
+   App build (launch, W27 A): store.js sets window.WAYWARD_SHOP = true before shop.js loads; then the shop is on
+   for everyone and the test switch is hidden (it only shows without native WaywardBilling).
 
    STORE / AD ADAPTERS (the launch chat's store.js, loaded before shop.js in the app build)
      window.WaywardBilling = { products(), purchase(id), restore() -> [ids], active() -> [ids], manage() }
@@ -83,7 +85,7 @@
   var App = null, ent = null, built = false;
   function urlFlag() { return /(^|[?&])shop=1(&|$)/.test(location.search); }
   function devFlag() { try { return localStorage.getItem(DEV_KEY) === '1'; } catch (e) { return false; } }
-  function enabled() { return urlFlag() || devFlag(); }
+  function enabled() { return window.WAYWARD_SHOP === true || urlFlag() || devFlag(); } // WAYWARD_SHOP: set by the app build (store.js), W27 A
   function lang() { return App ? App.lang() : 'en'; }
   function tt(k, v) { var s = (STR[lang()] && STR[lang()][k] != null) ? STR[lang()][k] : STR.en[k]; if (v) s = s.replace(/\{(\w+)\}/g, function (m, n) { return v[n] != null ? v[n] : m; }); return s; }
   function money(v) { var s = v % 1 ? v.toFixed(2) : String(v); if (lang() === 'nl') s = s.replace('.', ','); return '€' + s; }
@@ -152,7 +154,17 @@
     return list;
   }
   function labelFor(id) { var b = bookBySku(id); return b ? bookTitle(b) : id === 'pass_monthly' ? tt('pMonth') : tt('pLife'); }
-  function priceFor(id) { return id === 'pass_monthly' ? tt('month', { p: money(PRICE.month) }) : id === 'pass_lifetime' ? money(PRICE.lifetime) : money(PRICE.book); }
+  // prices as the store shows them (local currency, from WaywardBilling.products() in the app build); our own € prices otherwise
+  var STORE_PRICE = {};
+  function storePrices(list) {
+    if (!list) return; if (!Array.isArray(list)) list = Object.keys(list).map(function (k) { return typeof list[k] === 'object' ? Object.assign({ id: k }, list[k]) : { id: k, price: list[k] }; });
+    list.forEach(function (p) { if (!p) return; var id = p.id || p.productId || p.identifier || p.productIdentifier || p.sku, pr = p.priceString || p.displayPrice || p.localizedPrice || p.formattedPrice || (typeof p.price === 'string' ? p.price : null);
+      if (id && pr) STORE_PRICE[id] = String(pr); });
+  }
+  function pBook(sku) { return STORE_PRICE[sku] || money(PRICE.book); }
+  function pMonth() { return STORE_PRICE.pass_monthly || money(PRICE.month); }
+  function pLife() { return STORE_PRICE.pass_lifetime || money(PRICE.lifetime); }
+  function priceFor(id) { return id === 'pass_monthly' ? tt('month', { p: pMonth() }) : id === 'pass_lifetime' ? pLife() : pBook(id); }
   function bookTitle(b) { var cur = App.bookDef(); if (cur && cur.id === b.id && App.book()) return App.book().title; return App.t(b.id === 'hollow-mountain' ? 'bookHollow' : b.id === 'drowned-lighthouse' ? 'bookLighthouse' : (b.titleKey || b.id)); }
   function buy(id, after) {
     billing().purchase(id).then(function () {
@@ -241,7 +253,7 @@
       if (s.owned) right = '<span class="shop-tag">' + E(tt('bookOwned')) + '</span>';
       else if (s.done) right = '<span class="shop-tag">' + E(tt('bookDone').split(':')[0]) + '</span>';
       else if (passActive()) right = '<span class="shop-tag">' + E(tt('bookPassed')) + '</span>';
-      else right = '<button class="shop-buy" data-shop="buy" data-id="' + b.sku + '">' + E(money(PRICE.book)) + '</button>';
+      else right = '<button class="shop-buy" data-shop="buy" data-id="' + b.sku + '">' + E(pBook(b.sku)) + '</button>';
       var sub = s.owned ? tt('bookOwned') : s.done ? tt('bookDone') : s.left > 0 ? tt('bookFree', { n: s.left, t: b.freeEndings || 4 }) : tt('bookFreeNone');
       h += '<div class="shop-row"><span class="shop-cover" style="background-image:url(' + (b.cover || '') + ')"></span><span class="shop-info"><b>' + E(bookTitle(b)) + '</b><span>' + E(sub) + '</span></span>' + right + '</div>';
     });
@@ -250,8 +262,8 @@
     h += '<div class="shop-sec" id="shopPassSec"><h4>' + E(tt('passHead')) + '</h4><div class="shop-card shop-pass"><p class="shop-small" style="margin-top:0">' + E(tt('passDesc')) + '</p>';
     if (pa) h += '<p class="shop-small" style="color:var(--gold2);font-weight:800">' + E(ent.lifetime ? tt('passLife') : tt('passUntil', { d: new Date(ent.passUntil).toLocaleDateString(lang() === 'nl' ? 'nl-NL' : 'en-GB') })) + '</p>' +
       (!ent.lifetime && window.WaywardBilling && window.WaywardBilling.manage ? '<button class="shop-linkbtn" data-shop="manage">' + E(tt('manage')) + '</button>' : '');
-    else h += '<div class="shop-plans"><div class="shop-plan"><b>' + E(tt('month', { p: money(PRICE.month) })) + '</b><i>' + E(tt('monthNote')) + '</i><button data-shop="buy" data-id="pass_monthly">' + E(tt('buy')) + '</button></div>' +
-      '<div class="shop-plan"><b>' + E(tt('lifetime', { p: money(PRICE.lifetime) })) + '</b><i>' + E(tt('lifetimeNote')) + '</i><button data-shop="buy" data-id="pass_lifetime">' + E(tt('buy')) + '</button></div></div>' +
+    else h += '<div class="shop-plans"><div class="shop-plan"><b>' + E(tt('month', { p: pMonth() })) + '</b><i>' + E(tt('monthNote')) + '</i><button data-shop="buy" data-id="pass_monthly">' + E(tt('buy')) + '</button></div>' +
+      '<div class="shop-plan"><b>' + E(tt('lifetime', { p: pLife() })) + '</b><i>' + E(tt('lifetimeNote')) + '</i><button data-shop="buy" data-id="pass_lifetime">' + E(tt('buy')) + '</button></div></div>' +
       (window.WaywardBilling && window.WaywardBilling.manage ? '<button class="shop-linkbtn" data-shop="manage" style="margin-top:10px">' + E(tt('manage')) + '</button>' : '');
     h += '</div></div>';
     var L = window.WAYWARD_LINKS || {};
@@ -295,7 +307,7 @@
     var g = document.createElement('div'); g.className = 'shop-gate'; g.id = 'shopGate'; g.setAttribute('role', 'dialog');
     g.innerHTML = '<h3>' + E(bookOut ? tt('gateBookTitle') : kind === 'endings' ? tt('gateEndTitle') : tt('gateTitle')) + '</h3><p>' + E(bookOut ? tt('gateBookBody') : tt('gateBody')) + '</p>' +
       (ent.adsToday < AD.max ? '<button class="btn-gold sm" data-g="ad">' + E(tt('gateAd')) + '</button><small>' + E(tt('adCount', { n: ent.adsToday })) + '</small>' : '<small>' + E(tt('adDone')) + '</small>') +
-      '<button class="btn-glass" data-g="buy">' + E(tt('gateBuy', { title: bookTitle(bk), p: money(PRICE.book) })) + '</button>' +
+      '<button class="btn-glass" data-g="buy">' + E(tt('gateBuy', { title: bookTitle(bk), p: pBook(bk.sku) })) + '</button>' +
       '<button class="btn-glass" data-g="pass">' + E(tt('gatePass')) + '</button>' +
       '<button class="btn-ghost" data-g="later">' + E(tt('gateLater')) + '</button>';
     App.app.appendChild(g);
@@ -329,6 +341,7 @@
     App = app; ent = load(); ensureDay();
     if (!enabled()) return;
     build();
+    if (window.WaywardBilling && window.WaywardBilling.products) { try { Promise.resolve(window.WaywardBilling.products()).then(function (l) { storePrices(l); refresh(); }).catch(function () {}); } catch (e) {} }
     if (window.WaywardBilling && window.WaywardBilling.active) { // what the store says is active now (the Pass per month may have lapsed)
       window.WaywardBilling.active().then(function (ids) { ids = ids || []; if (ids.indexOf('pass_monthly') < 0 && !ent.lifetime) ent.passUntil = 0; ids.forEach(grant); persist(); refresh(); }).catch(function () {});
     }

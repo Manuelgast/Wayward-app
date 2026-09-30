@@ -65,12 +65,12 @@
    "chapter": "Prologue",
    "scene": "harbour",
    "text": [
-    "Whatever happened inside Mount Veyra, you came out of it with a blank map and a single grain of salt. The salt came in a note from Ines: half a sentence, in small brown letters. “A sea that dreams of salt.” The evening coach sets you down in Grey Harbour, which smells of wet rope and, for no reason you can see, of tea.",
+    "Whatever happened inside Mount Veyra, you came out of it with a blank map and a single grain of salt. The salt came in a note from Edda: half a sentence, in small brown letters. “A sea that dreams of salt.” The evening coach sets you down in Grey Harbour, which smells of wet rope and, for no reason you can see, of tea.",
     "A fisherman mending nets tells you, the way other people mention rain, that every night at two a light comes on under the bay. “Turns, too,” he adds. “More regular than the tide.” You follow his nod. Out on Cape Seren, where the older charts still mark a lighthouse, there is only wind."
    ],
    "choices": [
     {
-     "text": "If you ask at the harbour office about Ines,",
+     "text": "If you ask at the harbour office about Edda,",
      "short": "Ask at the harbour office",
      "to": 4
     },
@@ -91,7 +91,7 @@
    "chapter": "The Harbour Office",
    "scene": "office",
    "text": [
-    "The harbour office is one window onto the quay and a century of ledgers, shelved by year. One spine is worn pale with handling: 1826. Hester Vane, harbourmistress, finishes her column before she looks up. Ines Arden? She has never heard the name. She says so twice, and the second time she closes her ledger, as if the name might be read upside down.",
+    "The harbour office is one window onto the quay and a century of ledgers, shelved by year. One spine is worn pale with handling: 1826. Hester Vane, harbourmistress, finishes her column before she looks up. Edda Marlow? She has never heard the name. She says so twice, and the second time she closes her ledger, as if the name might be read upside down.",
     "Her books are in perfect order, except that every morning’s count has [[extraship|one ship too many]]. “A rounding error.” She studies you the way she studies a sum. She has a room going spare, and a job: counting ships. “If it’s questions you want, try the salt girl. She’ll answer anything for a story.”"
    ],
    "choices": [
@@ -181,7 +181,7 @@
    "scene": "office",
    "text": [
     "Hester takes the 1826 ledger down herself, then leaves you alone with it, because the evening boats are coming in and they will not count themselves. The entries are neat and dull right up to the night of the Great Storm: Marigold, Capt. Lorne, twenty aboard, expected. The next morning’s entry is two words long. Not arrived.",
-    "A few lines higher, dated the day before, is the account for the Seren Light. Lamp oil, the winter’s supply: sold on, [[goodprice|at a good price]]. S.V. In the margin beside it, in small brown letters you would know anywhere, someone has added a note a century late: “The sea keeps what it can’t finish. — I.A.”"
+    "A few lines higher, dated the day before, is the account for the Seren Light. Lamp oil, the winter’s supply: sold on, [[goodprice|at a good price]]. S.V. In the margin beside it, in small brown letters you would know anywhere, someone has added a note a century late: “The sea keeps what it can’t finish. — E.M.”"
    ],
    "choices": [
     {
@@ -373,11 +373,11 @@
    "nr": 46
   },
   "40": {
-   "chapter": "Ines’s Letter",
+   "chapter": "Edda’s Letter",
    "scene": "saltpans",
    "text": [
     "You tell her about a mountain that dreamed in copies. Nell listens with her whole face, then says the middle drags and there are too many stairs. She pays anyway: black paper, the letter on it [[saltletter|written in salt]], every word dried white.",
-    "“The sea dreams the storm night,” Ines writes, “and gets it wrong the same way every time, like a pupil who learned a mistake by heart. I tried the lamp. My oil was a hundred years too new: nothing from our century burns in a dream of 1826. I have gone east, to the city that won’t stay asleep. Don’t follow me. You will anyway. I.A.” Then, smaller: “PS. Ask the chandler what he’s been saving.”"
+    "“The sea dreams the storm night,” Edda writes, “and gets it wrong the same way every time, like a pupil who learned a mistake by heart. I tried the lamp. My oil was a hundred years too new: nothing from our century burns in a dream of 1826. I have gone east, to the city that won’t stay asleep. Don’t follow me. You will anyway. E.M.” Then, smaller: “PS. Ask the chandler what he’s been saving.”"
    ],
    "choices": [
     {
@@ -614,7 +614,7 @@
    "scene": "lanternroom",
    "text": [
     "The window gives with a sigh, and you climb down into a room that has been under the sea for a hundred years and is perfectly dry, like a pressed flower. The great lens fills the middle of it, a wave of glass that stopped halfway through breaking. Nell comes as far as the sill and no further, as if it were someone else’s bedroom.",
-    "At the desk a keeper sleeps on his logbook, a hundred years deep. Scratched into the brass rim of the lens, small and neat: I.A. Ines got here first. The lamp is bone dry. Your own lantern, by contrast, is burning perfectly well."
+    "At the desk a keeper sleeps on his logbook, a hundred years deep. Scratched into the brass rim of the lens, small and neat: E.M. Edda got here first. The lamp is bone dry. Your own lantern, by contrast, is burning perfectly well."
    ],
    "choices": [
     {
@@ -714,7 +714,7 @@
    "scene": "seabed",
    "text": [
     "You follow the letter-fish away from the tower, into water that grows darker and more attentive. They circle you, closer each time, and on the third pass they spell your name. Correctly. Even the part people usually get wrong.",
-    "Then a sentence about you, which is fair, if a little unkind about your handwriting. Then a paragraph. Then a whole page, closely set, with generous margins; Ines would approve of the margins. By the time you think of turning back, there is no back, only the next line. You are part of the sea’s dream now, and a very well-written part."
+    "Then a sentence about you, which is fair, if a little unkind about your handwriting. Then a paragraph. Then a whole page, closely set, with generous margins; Edda would approve of the margins. By the time you think of turning back, there is no back, only the next line. You are part of the sea’s dream now, and a very well-written part."
    ],
    "ending": {
     "no": "VIII",
@@ -893,7 +893,7 @@
     "no": "XIII",
     "title": "Wrong Century",
     "kind": "bad",
-    "epilogue": "Ines did warn you. In salt.",
+    "epilogue": "Edda did warn you. In salt.",
     "hint": "Only old oil burns in an old dream."
    },
    "nr": 36

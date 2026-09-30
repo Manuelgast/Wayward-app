@@ -110,7 +110,7 @@ def main():
     nj = os.path.join(OUT, 'native.js')
     glue = open(nj, encoding='utf-8').read()
     # same version on both platforms; the platform name is filled in on the phone
-    open(nj, 'w', encoding='utf-8').write("window.WAYWARD_BUILD = ((window.Capacitor && window.Capacitor.getPlatform && window.Capacitor.getPlatform() === 'ios') ? 'iOS ' : 'Android ') + '%s';\n" % build + glue)
+    open(nj, 'w', encoding='utf-8').write("window.WAYWARD_BUILD = ((window.Capacitor && window.Capacitor.getPlatform && window.Capacitor.getPlatform() === 'ios') ? 'iOS ' : 'Android ') + '%s';\nwindow.WAYWARD_VERSION = window.WAYWARD_BUILD;\n" % build + glue)
     fb = os.path.join(OUT, 'feedback.js')
     if os.path.isfile(fb):
         src = open(fb, encoding='utf-8').read()

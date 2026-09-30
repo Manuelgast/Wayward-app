@@ -17,8 +17,8 @@
   var platform = cap.getPlatform();
   var PRODUCTS = CFG.products || [];
 
-  // The store build always shows the shop: shop.js v2 reads this switch when it starts.
-  try { localStorage.setItem('wayward.shop.dev', '1'); } catch (e) {}
+  // The store build always shows the shop (shop.js v2 reads this switch when it starts; W27 A).
+  window.WAYWARD_SHOP = true;
   // Links in the shop: the privacy policy everywhere, Apple's standard terms of use only on iPhone.
   var LINKS = CFG.links || {};
   window.WAYWARD_LINKS = { privacy: LINKS.privacy, terms: platform === 'ios' ? LINKS.termsIos : LINKS.termsAndroid };
