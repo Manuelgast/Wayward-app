@@ -1,5 +1,6 @@
 # Wayward 1.1: shop and ads, store paperwork (TL2)
 
+Status 01-10: prepared, nothing submitted. 6 products (book_mountain added 29-09 by T11; ids as in app/store-config.json). Play Console work waits until Manuel is back (6 Oct).
 Status 29-09: prepared, nothing submitted. Fill in when the Play account is back (D2) and TL3 (Apple Paid Apps, AdMob, Google tax) is done.
 Sources checked 29-09: AdMob Play data disclosure (developers.google.com/admob/android/privacy/play-data-disclosure),
 AdMob App Store data disclosure (developers.google.com/admob/ios/privacy/data-disclosure).
@@ -8,13 +9,14 @@ AdMob App Store data disclosure (developers.google.com/admob/ios/privacy/data-di
 
 | id | Play type | App Store type | Price (EUR) | EN name | NL name |
 |---|---|---|---|---|---|
+| book_mountain | One-time product | Non-Consumable | 2.00 | Book I: The Hollow Mountain | Boek I: De Holle Berg |
 | book_sea | One-time product | Non-Consumable | 2.00 | Book II: The Drowned Lighthouse | Boek II: De Verdronken Vuurtoren |
 | book_stardust | One-time product | Non-Consumable | 2.00 | Book III: Station Nine | Boek III: Station Negen |
 | book_ash | One-time product | Non-Consumable | 2.00 | Book IV: Ash & Orchid | Boek IV: As & Orchidee |
 | pass_monthly | Subscription, base plan `monthly`, auto-renewing, 1 month | Auto-Renewable Subscription, group "Wayward Pass", 1 month | 5.00 / month | Wayward Pass (monthly) | Wayward Pass (maand) |
 | pass_lifetime | One-time product | Non-Consumable | 20.00 | Wayward Pass (lifetime) | Wayward Pass (levenslang) |
 
-Titles of books II-IV: working titles from the Wayward chat; confirm before creating the products (names can be edited later, ids cannot).
+Book I is free for its first 8 endings; book_mountain unlocks the rest (T11). Titles of books II-IV: working titles from the Wayward chat; confirm before creating the products (names can be edited later, ids cannot).
 Apple price points: pick 1.99 / 4.99 / 19.99 if a round EUR point is not offered.
 
 Descriptions (max 55 chars on Apple, 80 on Play):
@@ -58,7 +60,7 @@ Apple review screenshot per product: a screenshot of the shop sheet (needed once
   - Diagnostics > Crash Data: Analytics, Third-Party Advertising. Not linked. Not tracking.
   - Diagnostics > Performance Data: Analytics, Third-Party Advertising. Linked. Tracking.
   - Purchases: not collected by Wayward (StoreKit handles it at Apple; no own server).
-- In-App Purchases and Subscriptions: create the 5 products above, each with EN + NL display name/description, review screenshot and review note "Unlocks book content inside the app. Every book starts with free endings; the rest opens with a purchase or an optional ad."
+- In-App Purchases and Subscriptions: create the 6 products above, each with EN + NL display name/description, review screenshot and review note "Unlocks book content inside the app. Every book starts with free endings; the rest opens with a purchase or an optional ad."
 - App description: add "Terms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" and the privacy URL (required for auto-renewing subscriptions).
 - Age rating: where the questionnaire asks about advertising or in-app purchases, answer Yes; the rest stays as in appstore.md.
 - Paid Apps agreement must be Active (TL3) before products can be tested or sold.
