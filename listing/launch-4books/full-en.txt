@@ -3,7 +3,7 @@ Your mentor vanished inside a mountain. Her last words to you: don’t follow me
 Wayward is a library of illustrated adventure books in which you decide what happens next. Every page ends with a choice, and every choice turns you to a different page. Some roads lead to glory. Others lead to the bottom of a well.
 
 FOUR BOOKS ON THE SHELF
-Book I is completely free. Every other book starts with free endings.
+Every book starts with free endings: 8 in Book I, 4 in each of the others.
 
 BOOK I · THE HOLLOW MOUNTAIN
 Follow the royal cartographer Edda Marlow to Mount Veyra, a mountain that appears on no map. Wander through a village where every lantern has the same dent, a hall with a lantern for every name, and a black river that returns everything it takes.
