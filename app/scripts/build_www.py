@@ -94,12 +94,48 @@ def sync_admob_app_ids():
             print('AdMob app id set in %s' % os.path.relpath(path, ROOT))
 
 
+def referenced_images(out_dir):
+    """Every picture name the app can load: literal img/<name>.webp in code, styles and data, plus the scene,
+    picture and cover names in the book data (the app builds 'img/' + scene + '.webp' from those)."""
+    names = set()
+    for d, _, fs in os.walk(out_dir):
+        if os.path.relpath(d, out_dir).split(os.sep)[0] in ('img', 'music', 'sfx', 'vid', 'fonts'):
+            continue
+        for f in fs:
+            if not f.endswith(('.js', '.html', '.css', '.json')):
+                continue
+            s = open(os.path.join(d, f), encoding='utf-8').read()
+            names |= set(re.findall(r'img/([A-Za-z0-9_-]+)\.webp', s))
+            names |= set(re.findall(r'"(?:scene|img|bg|cover|coverScene|image|pic)"\s*:\s*"([A-Za-z0-9_-]+)"', s))
+            names |= set(re.findall(r"\b(?:scene|img|bg|cover|coverScene|image|pic)\s*:\s*'([A-Za-z0-9_-]+)'", s))
+    return names
+
+
+def prune_unused(out_dir):
+    """Leave out files the app never loads, so the download stays small without touching quality.
+    Set WAYWARD_NO_PRUNE=1 to keep everything (for a comparison build)."""
+    if os.environ.get('WAYWARD_NO_PRUNE'):
+        print('prune: skipped (WAYWARD_NO_PRUNE)')
+        return
+    gone, size = [], 0
+    # videos stay as they are: app.js plays .mp4 where the device decodes H.264 and falls back to .webm (VP9) elsewhere
+    used = referenced_images(out_dir)
+    for p in glob.glob(os.path.join(out_dir, 'img', '*.webp')):
+        name = os.path.basename(p)[:-5]
+        if name not in used:
+            size += os.path.getsize(p); gone.append(os.path.relpath(p, out_dir)); os.remove(p)
+    print('prune: left out %d files the app never loads (%.1f MB)' % (len(gone), size / 1e6))
+    with open(os.path.join(ROOT, 'pruned.txt'), 'w', encoding='utf-8') as f:
+        f.write('\n'.join(sorted(gone)) + '\n')
+
+
 def main():
     if not os.path.isfile(os.path.join(SRC, 'index.html')):
         sys.exit('No index.html in %s' % SRC)
     if os.path.isdir(OUT):
         shutil.rmtree(OUT)
     shutil.copytree(SRC, OUT)
+    prune_unused(OUT)
     n = build_fonts(OUT, font_css_from_google(open(os.path.join(OUT, 'index.html'), encoding='utf-8').read()))
     shutil.copy(os.path.join(ROOT, 'native.js'), os.path.join(OUT, 'native.js'))
     # the Play version (from build.gradle) goes into feedback mails, so every report says which build it came from
