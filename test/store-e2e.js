@@ -39,7 +39,7 @@ let fails = 0; const ok = (n, c, x) => { console.log((c ? 'PASS ' : 'FAIL ') + n
   ok('shop is on in the store build', st.shopOn);
   ok('privacy link set', !!(st.links && st.links.privacy));
   ok(platform === 'ios' ? 'Apple terms link on iOS' : 'no Apple terms link on Android', platform === 'ios' ? /apple\.com/.test(st.links.terms || '') : !st.links.terms, JSON.stringify(st.links));
-  ok('version string', /1\.1\.0 \(5\)/.test(st.build || ''), st.build);
+  ok('version string', /1\.1\.1 \(6\)/.test(st.build || ''), st.build);
   await p.evaluate(() => window.WaywardShop.open());
   await p.waitForTimeout(800);
   const shop = await p.evaluate(() => { const s = document.querySelector('#shopBody'); return s ? s.innerText : ''; });

@@ -7,7 +7,7 @@ Status 03-10: Book III and IV premises filled in from the finished texts (T12 ar
 - Book III: 49 pages, 18 endings (2 golden), 15 relics. Book IV: 49 pages, 19 endings (2 golden), 14 relics.
 
 Open before use:
-- Re-check the Book III/IV counts against the built version (T13 / RC2); they may change during the build.
+- Re-check the Book III/IV counts against the built version (T13 / RC2): done 09-10 on RC2 1.1.1 (6) from VTjY v28 (app/www book3/book4 json, relics3/4.json): III 49 pages, 18 endings, 2 golden, 15 relics; IV 49 pages, 19 endings, 2 golden, 14 relics. All match, texts unchanged (EN 3231, NL 3523 characters, limit 4000).
 - Counts for Book I/II come from web-src (book*.json, relics*.json): 49 pages, 19 endings, 2 golden, 12 and 14 relics.
 - Limits: Play full description 4000 characters, App Store 4000. Now EN 3226, NL 3522 (03-10).
 - "Secret choices" bullet assumes the T13 engine (hidden choices) ships in RC2.

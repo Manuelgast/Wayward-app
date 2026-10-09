@@ -10,7 +10,8 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 APP = os.path.join(ROOT, 'app')
 IOS = os.path.join(APP, 'ios', 'App')
 BUNDLE_ID = 'com.waywardbooks.app'
-PRODUCTS = {'book_mountain', 'book_sea', 'book_stardust', 'book_ash', 'pass_monthly', 'pass_lifetime'}
+BOOKS = ['book_mountain', 'book_sea', 'book_stardust', 'book_ash']
+PRODUCTS = set(BOOKS + [b + t for b in BOOKS for t in ('_b', '_c')] + ['pass_monthly', 'pass_lifetime'])  # price tiers _b/_c since web book v28 (W30 A)
 GOOGLE_SKAN = 'cstr6suwn9.skadnetwork'
 
 fails, notes = [], []
@@ -64,8 +65,8 @@ for p in ('CapacitorCommunityAdmob', 'CapgoNativePurchases'):
     check(p in spm, '%s linked in the iOS package' % p)
 
 # Store config
-check(cfg['ads'].get('testing') is True, 'Ads in test mode (only Google test ads)')
-check({p['id'] for p in cfg['products']} == PRODUCTS, '6 product ids as decided')
+check(cfg['ads'].get('testing') is False, 'Ads live for the store release (testing false, real AdMob ids)')
+check({p['id'] for p in cfg['products']} == PRODUCTS, '14 product ids as decided (4 books x 3 price tiers + 2 Pass)')
 check(cfg['links'].get('termsIos', '').startswith('https://www.apple.com/legal/internet-services/itunes/dev/stdeula'), "Terms link is Apple's standard EULA")
 
 # Codemagic never submits

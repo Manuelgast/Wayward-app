@@ -1,7 +1,7 @@
 // Feedback button in the Play build: opens from Settings (and exists on the ending screen), builds a mailto with the Play version
 const { chromium } = require('/opt/node22/lib/node_modules/playwright');
 const BASE = 'http://localhost:8768/index.html';
-const BUILD = process.argv[2] || 'Android 1.0.3 (4)';
+const BUILD = process.argv[2] || 'Android 1.1.1 (6)';
 (async () => {
   const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
   let ok = true; const res = [];
