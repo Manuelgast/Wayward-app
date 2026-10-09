@@ -13,3 +13,13 @@ wayward-1.1.1-6.aab / .apk  release candidate 2, version 1.1.1 (versionCode 6), 
     check_ios 24/24, smoke-4books 40/40 (all 4 books from the library in EN and NL: open, turn a page,
     make a choice, 0 page errors; price tier bought through the store bridge).
   Code: branch monetization, commit f4583b7.
+
+wayward-1.1.2-7.aab / .apk  launch candidate, version 1.1.2 (versionCode 7), built 09-10-2026 14:15, signed with the upload key.
+  Source: VTjY version 29 (RC5: 12 scenes in every book, slower timed moments) + the T28 candidate fix by the
+    launch-chat (branch t28-candidate): library header fits 360/390/412 px with the shop on (settings and
+    ad-privacy button reachable), the shop's price note shows the store's prices, feedback goes to studio.wayward01@gmail.com.
+  Same store build as 1.1.1 (6) otherwise: live AdMob ads, shop on, 14 products.
+  SHA-256 aab 9074e7a8871f408f291c77d35574f0cfafdf8b9ddbeb3a6826f9179b834a65ba
+  SHA-256 apk 0875e72e6ee86ca312c7c5d73d0fb460652b29f60c46153dcc4fb3045900300a
+  Tests (all pass): header-fit 18/18 (EN/NL x 360/390/412), store-e2e android and ios, smoke-4books, check_ios 24/24.
+  Use this one only after Manuel's go on board item WL7 (or after the app-chat confirms the same fix in VTjY).
