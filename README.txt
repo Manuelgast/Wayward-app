@@ -23,3 +23,12 @@ wayward-1.1.2-7.aab / .apk  launch candidate, version 1.1.2 (versionCode 7), bui
   SHA-256 apk 0875e72e6ee86ca312c7c5d73d0fb460652b29f60c46153dcc4fb3045900300a
   Tests (all pass): header-fit 18/18 (EN/NL x 360/390/412), store-e2e android and ios, smoke-4books, check_ios 24/24.
   Use this one only after Manuel's go on board item WL7 (or after the app-chat confirms the same fix in VTjY).
+
+wayward-1.1.3-8.aab / .apk  launch build, version 1.1.3 (versionCode 8), built 09-10-2026 17:22, signed with the upload key.
+  Same as 1.1.2 (7) (VTjY v29 RC5 + T28 fix), minus 48 pictures the app never loads (unused small variants and
+  leftovers, list in app/pruned.txt on branch monetization). No change in what the reader sees or hears.
+  Size: bundle 44.7 MB (was 51.4), download per phone 44.2-44.3 MB (bundletool get-size total).
+  SHA-256 aab baf29c48fffde7c05c69aae42e61bd11f6002b15cf2817f3b108163509632b02
+  SHA-256 apk eac825a97d3f8c609d78c5427e0fd7a395ef8bff80a7fee16e06251cb9640cec
+  Tests (all pass): assets-walk (all 196 pages, no missing file), header-fit 18/18, store-e2e android and ios,
+    smoke-4books, check_ios 24/24.
