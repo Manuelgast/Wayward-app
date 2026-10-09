@@ -7,6 +7,9 @@
    - A rewarded ad gives +2 endings and +6 pages for today, max 5 ads a day; ads also work once a book's free
      endings are used up.
    - A book €2 (book_<sku>), the Pass €5 a month (pass_monthly) or €20 for life (pass_lifetime): no limits.
+   - Price tiers per book (Manuel 09-10, W30 A): the further you have read, the less you pay. From 6 endings found
+     the book costs €1.49 (product book_<sku>_b), from 12 endings €0.99 (book_<sku>_c). Each tier is its own store
+     product and gives the same book; the app offers the tier that fits the reader's progress.
    - All endings of a book found = that book is free for ever. Your progress always stays.
    - Hints and riddles are free (no candles).
    Switched OFF by default: then nothing is added to the page and every call runs the action for free.
@@ -17,8 +20,8 @@
    STORE / AD ADAPTERS (the launch chat's store.js, loaded before shop.js in the app build)
      window.WaywardBilling = { products(), purchase(id), restore() -> [ids], active() -> [ids], manage() }
      window.WaywardAds = { show() -> resolves when a rewarded ad was watched in full, privacyOptions() }
-   Product ids: book_mountain, book_sea, book_stardust, book_ash (one-off), pass_monthly (subscription),
-   pass_lifetime (one-off). Without adapters: MockBilling (a confirm card, nothing is charged) and MockAds
+   Product ids: book_mountain, book_sea, book_stardust, book_ash (one-off), each also as _b (€1.49) and _c (€0.99),
+   pass_monthly (subscription), pass_lifetime (one-off). Without adapters: MockBilling (a confirm card, nothing is charged) and MockAds
    (a 5 s test ad; 1 s with ?fxlow=1).
 
    ENTITLEMENTS (localStorage 'wayward.shop.v2')
@@ -29,6 +32,7 @@
   'use strict';
   var ENT_KEY = 'wayward.shop.v2', DEV_KEY = 'wayward.shop.dev', RECEIPT_KEY = 'wayward.mockbilling.receipts.v2';
   var PRICE = { book: 2, month: 5, lifetime: 20 };
+  var TIERS = [{ min: 0, suffix: '', price: 2 }, { min: 6, suffix: '_b', price: 1.49 }, { min: 12, suffix: '_c', price: 0.99 }]; // endings found -> product (W30 A)
   var DAY = { endings: 2, pages: 6 }, AD = { endings: 2, pages: 6, max: 5 };
   var MONTH_MS = 30 * 24 * 3600 * 1000;
   var AD_SECONDS = /[?&]fxlow=1/.test(location.search) ? 1 : 5;
@@ -55,7 +59,8 @@
       confirmTitle: 'Test version', confirmBody: 'Nothing is charged. In the store version this is a real purchase: {label} · {p}.', confirm: 'Confirm', cancel: 'Cancel',
       boughtBook: '{title} is yours', boughtPass: 'Welcome to the Pass',
       adTitle: 'Advertisement (test)', adWait: 'Ends in {n}…', adReward: '+2 endings · +6 pages', adFail: 'The ad did not play to the end',
-      adsPrivacy: 'Ad privacy choices', pMonth: 'Pass · monthly', pLife: 'Pass · for life'
+      adsPrivacy: 'Ad privacy choices', pMonth: 'Pass · monthly', pLife: 'Pass · for life',
+      yourPrice: '{n} endings found: your price', priceNote: 'The further you read, the less you pay: {p0}, from 6 endings found {p1}, from 12 endings {p2}. Find every ending and the book is free.'
     },
     nl: {
       shopBtn: 'Winkel', shopTitle: 'Wayward-winkel', close: 'Sluiten',
@@ -78,7 +83,8 @@
       confirmTitle: 'Testversie', confirmBody: 'Er wordt niets afgerekend. In de winkelversie is dit een echte aankoop: {label} · {p}.', confirm: 'Bevestigen', cancel: 'Annuleren',
       boughtBook: '{title} is van jou', boughtPass: 'Welkom bij de Pass',
       adTitle: 'Advertentie (test)', adWait: 'Nog {n}…', adReward: '+2 eindes · +6 bladzijden', adFail: 'De advertentie is niet tot het eind afgespeeld',
-      adsPrivacy: 'Privacykeuzes advertenties', pMonth: 'Pass · per maand', pLife: 'Pass · levenslang'
+      adsPrivacy: 'Privacykeuzes advertenties', pMonth: 'Pass · per maand', pLife: 'Pass · levenslang',
+      yourPrice: '{n} eindes gevonden: jouw prijs', priceNote: 'Hoe verder je bent, hoe minder je betaalt: {p0}, vanaf 6 gevonden eindes {p1}, vanaf 12 eindes {p2}. Vind je alle eindes, dan is het boek gratis.'
     }
   };
 
@@ -92,7 +98,8 @@
   function pad2(n) { return n < 10 ? '0' + n : '' + n; }
   function today() { var d = new Date(); return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate()); }
   function shelf() { return (window.WAYWARD_BOOKS || []).filter(function (b) { return !b.soon; }); }
-  function bookBySku(sku) { return (window.WAYWARD_BOOKS || []).filter(function (b) { return b.sku === sku; })[0]; }
+  function baseSku(id) { return String(id || '').replace(/_(b|c)$/, ''); }
+  function bookBySku(sku) { sku = baseSku(sku); return (window.WAYWARD_BOOKS || []).filter(function (b) { return b.sku === sku; })[0]; }
   function E(s) { return App.esc(s); }
 
   /* ---------------- entitlements ---------------- */
@@ -105,14 +112,15 @@
     var st = bk.id === App.bookDef().id ? App.st() : readState(bk), book = bk.id === App.bookDef().id ? App.book() : null;
     var total = book ? Object.keys(book.sections).filter(function (k) { return book.sections[k].ending; }).length : (bk.totalEndings || 0);
     var done = total > 0 && (st.found || []).length >= total;
-    return { owned: !!ent.owned[bk.sku], done: done, left: Math.max(0, (bk.freeEndings || 4) - (ent.used[bk.id] || 0)) };
+    var found = (st.found || []).length, tier = TIERS.filter(function (t) { return found >= t.min; }).pop();
+    return { owned: !!ent.owned[bk.sku], done: done, left: Math.max(0, (bk.freeEndings || 4) - (ent.used[bk.id] || 0)), found: found, tier: tier, sku: bk.sku + tier.suffix };
   }
   function readState(bk) { try { var o = JSON.parse(localStorage.getItem(bk.store) || '{}'); return o && typeof o === 'object' ? o : {}; } catch (e) { return {}; } }
   function unlimited(bk) { var s = bookState(bk); return passActive() || s.owned || s.done; }
   function grant(id) {
     if (id === 'pass_lifetime') ent.lifetime = true;
     else if (id === 'pass_monthly') ent.passUntil = Math.max(ent.passUntil, Date.now()) + MONTH_MS;
-    else if (id.indexOf('book_') === 0) ent.owned[id] = true;
+    else if (id.indexOf('book_') === 0) ent.owned[baseSku(id)] = true; // any price tier gives the same book
   }
 
   /* ---------------- the step the reader wants to take ---------------- */
@@ -149,7 +157,7 @@
   function billing() { return window.WaywardBilling || MockBilling; }
   function ads() { return window.WaywardAds || MockAds; }
   function catalog() {
-    var list = (window.WAYWARD_BOOKS || []).map(function (b) { return { id: b.sku, type: 'book', price: money(PRICE.book) }; });
+    var list = []; (window.WAYWARD_BOOKS || []).forEach(function (b) { TIERS.forEach(function (t) { list.push({ id: b.sku + t.suffix, type: 'book', price: money(t.price) }); }); });
     list.push({ id: 'pass_monthly', type: 'pass', period: 'month', price: money(PRICE.month) }, { id: 'pass_lifetime', type: 'pass', price: money(PRICE.lifetime) });
     return list;
   }
@@ -161,7 +169,8 @@
     list.forEach(function (p) { if (!p) return; var id = p.id || p.productId || p.identifier || p.productIdentifier || p.sku, pr = p.priceString || p.displayPrice || p.localizedPrice || p.formattedPrice || (typeof p.price === 'string' ? p.price : null);
       if (id && pr) STORE_PRICE[id] = String(pr); });
   }
-  function pBook(sku) { return STORE_PRICE[sku] || money(PRICE.book); }
+  function tierPrice(sku) { var m = /_(b|c)$/.exec(sku || ''), t = TIERS.filter(function (x) { return x.suffix === (m ? '_' + m[1] : ''); })[0]; return t ? t.price : PRICE.book; }
+  function pBook(sku) { return STORE_PRICE[sku] || money(tierPrice(sku)); }
   function pMonth() { return STORE_PRICE.pass_monthly || money(PRICE.month); }
   function pLife() { return STORE_PRICE.pass_lifetime || money(PRICE.lifetime); }
   function priceFor(id) { return id === 'pass_monthly' ? tt('month', { p: pMonth() }) : id === 'pass_lifetime' ? pLife() : pBook(id); }
@@ -206,6 +215,7 @@
       '.shop-info{flex:1;min-width:0}.shop-info b{display:block;font-family:var(--serif);font-size:15.5px;line-height:1.2;color:var(--text)}.shop-info span{display:block;margin-top:2px;font-size:11.5px;font-weight:700;color:var(--muted)}' +
       '.shop-tag{flex:0 0 auto;padding:6px 11px;border-radius:999px;font-size:11.5px;font-weight:800;background:rgba(232,184,90,.14);border:1px solid rgba(232,184,90,.35);color:var(--gold2)}' +
       '.shop-buy{flex:0 0 auto;height:36px;padding:0 14px;border-radius:999px;font-size:13px;font-weight:800;background:linear-gradient(180deg,#FDE7A8,#D9A248);color:#2A1A05;box-shadow:0 3px 0 #8A5A1C}' +
+      '.shop-buy.deal{box-shadow:0 3px 0 #8A5A1C,0 0 0 2px rgba(111,242,226,.55),0 0 14px rgba(111,242,226,.35)}' +
       '.shop-pass{background:linear-gradient(160deg,rgba(232,184,90,.14),rgba(124,92,255,.10));border-color:rgba(246,210,124,.4)}' +
       '.shop-plans{display:flex;gap:10px;margin-top:10px}.shop-plan{flex:1;min-width:0;border-radius:14px;padding:10px 8px;text-align:center;background:rgba(10,8,24,.5);border:1px solid rgba(255,255,255,.14);display:flex;flex-direction:column;gap:6px}' +
       '.shop-plan b{font-family:var(--serif);font-size:16px;color:var(--gold2)}.shop-plan i{font-style:normal;font-size:10.5px;line-height:1.35;color:var(--muted)}' +
@@ -253,10 +263,12 @@
       if (s.owned) right = '<span class="shop-tag">' + E(tt('bookOwned')) + '</span>';
       else if (s.done) right = '<span class="shop-tag">' + E(tt('bookDone').split(':')[0]) + '</span>';
       else if (passActive()) right = '<span class="shop-tag">' + E(tt('bookPassed')) + '</span>';
-      else right = '<button class="shop-buy" data-shop="buy" data-id="' + b.sku + '">' + E(pBook(b.sku)) + '</button>';
+      else right = '<button class="shop-buy' + (s.tier.suffix ? ' deal' : '') + '" data-shop="buy" data-id="' + s.sku + '">' + E(pBook(s.sku)) + '</button>';
       var sub = s.owned ? tt('bookOwned') : s.done ? tt('bookDone') : s.left > 0 ? tt('bookFree', { n: s.left, t: b.freeEndings || 4 }) : tt('bookFreeNone');
+      if (!s.owned && !s.done && !passActive() && s.tier.suffix) sub += ' · ' + tt('yourPrice', { n: s.found });
       h += '<div class="shop-row"><span class="shop-cover" style="background-image:url(' + (b.cover || '') + ')"></span><span class="shop-info"><b>' + E(bookTitle(b)) + '</b><span>' + E(sub) + '</span></span>' + right + '</div>';
     });
+    h += '<p class="shop-small" style="margin:8px 2px 0">' + E(tt('priceNote', { p0: money(TIERS[0].price), p1: money(TIERS[1].price), p2: money(TIERS[2].price) })) + '</p>';
     h += '</div></div>';
     var pa = passActive();
     h += '<div class="shop-sec" id="shopPassSec"><h4>' + E(tt('passHead')) + '</h4><div class="shop-card shop-pass"><p class="shop-small" style="margin-top:0">' + E(tt('passDesc')) + '</p>';
@@ -307,7 +319,7 @@
     var g = document.createElement('div'); g.className = 'shop-gate'; g.id = 'shopGate'; g.setAttribute('role', 'dialog');
     g.innerHTML = '<h3>' + E(bookOut ? tt('gateBookTitle') : kind === 'endings' ? tt('gateEndTitle') : tt('gateTitle')) + '</h3><p>' + E(bookOut ? tt('gateBookBody') : tt('gateBody')) + '</p>' +
       (ent.adsToday < AD.max ? '<button class="btn-gold sm" data-g="ad">' + E(tt('gateAd')) + '</button><small>' + E(tt('adCount', { n: ent.adsToday })) + '</small>' : '<small>' + E(tt('adDone')) + '</small>') +
-      '<button class="btn-glass" data-g="buy">' + E(tt('gateBuy', { title: bookTitle(bk), p: pBook(bk.sku) })) + '</button>' +
+      '<button class="btn-glass" data-g="buy">' + E(tt('gateBuy', { title: bookTitle(bk), p: pBook(bookState(bk).sku) })) + '</button>' +
       '<button class="btn-glass" data-g="pass">' + E(tt('gatePass')) + '</button>' +
       '<button class="btn-ghost" data-g="later">' + E(tt('gateLater')) + '</button>';
     App.app.appendChild(g);
@@ -315,7 +327,7 @@
       var b = e.target.closest('[data-g]'); if (!b) return; var a = b.getAttribute('data-g');
       if (a === 'later') { closeGate(); return; }
       if (a === 'pass') { closeGate(); openShop('pass'); return; }
-      if (a === 'buy') { buy(bk.sku, function () { closeGate(); run(); }); return; }
+      if (a === 'buy') { buy(bookState(bk).sku, function () { closeGate(); run(); }); return; }
       if (a === 'ad') watchAd(function () { closeGate(); if (!cost(to) || spend(kind)) run(); });
     });
   }

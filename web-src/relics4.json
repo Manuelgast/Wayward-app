@@ -1,0 +1,312 @@
+{
+ "tiers": [
+  {
+   "count": 4,
+   "id": "salt",
+   "name": {
+    "en": "Salt Crust",
+    "nl": "Zoutkorst"
+   },
+   "desc": {
+    "en": "The cover’s edges crust white with salt, and a gold orchid blooms on the spine.",
+    "nl": "De randen van het omslag korsten wit aan van het zout, en op de rug bloeit een gouden orchidee."
+   }
+  },
+  {
+   "count": 8,
+   "id": "survey",
+   "name": {
+    "en": "The Survey",
+    "nl": "De opmeting"
+   },
+   "desc": {
+    "en": "Your path map shows the pages you have not found yet as uncharted coast, hatched and sounded.",
+    "nl": "Je padenkaart toont de bladzijden die je nog niet hebt gevonden als onbekende kust, gearceerd en met dieptelodingen."
+   }
+  },
+  {
+   "count": 12,
+   "id": "page0",
+   "name": {
+    "en": "Page 0 · Uncharted",
+    "nl": "Bladzijde 0 · Onbekend gebied"
+   },
+   "desc": {
+    "en": "A page that is on no map at all opens at last.",
+    "nl": "Eindelijk gaat een bladzijde open die op geen enkele kaart staat."
+   }
+  }
+ ],
+ "relics": [
+  {
+   "id": "cairn",
+   "page": 7,
+   "where": "text",
+   "icon": "window",
+   "name": {
+    "en": "The Flagless Pole",
+    "nl": "De stok zonder vlag"
+   },
+   "riddle": {
+    "en": "Look down through the lagoon: somebody once left a claim standing on the old summit.",
+    "nl": "Kijk omlaag door de lagune: op de oude top heeft ooit iemand zijn aanspraak laten staan."
+   },
+   "lore": {
+    "en": "Every claim in these waters was once marked the same way: a cairn of stones, a pole, and a flag sewn by whoever stayed at home. Flags are the first thing the sea takes. It has no use for them and unpicks them thread by thread. The fisherfolk of Lesser Sound say you can date a drowned island by its pole. If the flag is gone, they say, so is everyone who saluted it.",
+    "nl": "Wie in deze wateren land opeiste, markeerde dat vroeger altijd op dezelfde manier: een steenhoop, een stok en een vlag, genaaid door wie thuisbleef. Vlaggen zijn het eerste wat de zee neemt. Ze heeft er niets aan en haalt ze draad voor draad uit elkaar. De vissers van Klein Sont zeggen dat je een verdronken eiland aan zijn stok kunt dateren. Is de vlag weg, zeggen ze, dan is iedereen die hem groette dat ook."
+   }
+  },
+  {
+   "id": "notch",
+   "page": 8,
+   "where": "text",
+   "icon": "moon",
+   "name": {
+    "en": "Jory’s Stick",
+    "nl": "Jory’s stok"
+   },
+   "riddle": {
+    "en": "A boy who counts everything keeps one count where the tide can read it.",
+    "nl": "Een jongen die alles telt, houdt één telling bij waar het tij hem kan lezen."
+   },
+   "lore": {
+    "en": "Jory Oyelaran has counted since he could talk: gulls, oar strokes, the freckles on Dr Quill (two hundred and six, at last attempt). His grandmother gave him the stick so he would count something useful. He cuts a notch each sunrise with a fish knife and has never missed one. The stick is driftwood from an older shore, hard as horn. Jory says it was counting long before him, only more slowly.",
+    "nl": "Jory Oyelaran telt al sinds hij kan praten: meeuwen, riemslagen, de sproeten van dr. Quill (tweehonderdzes, bij de laatste poging). Zijn grootmoeder gaf hem de stok, zodat hij eens iets nuttigs zou tellen. Elke zonsopgang snijdt hij er met een vismes een kerf in, en hij heeft er nog nooit een overgeslagen. De stok is drijfhout van een oudere kust, hard als hoorn. Volgens Jory telde hij al lang vóór hem, alleen langzamer."
+   }
+  },
+  {
+   "id": "hanging",
+   "page": 12,
+   "where": "text",
+   "icon": "lantern",
+   "name": {
+    "en": "Root Rigging",
+    "nl": "Wortelwant"
+   },
+   "riddle": {
+    "en": "Lift a light underground and you will find the ceiling rigged like a ship.",
+    "nl": "Hef onder de grond een lamp en je ziet het plafond opgetuigd als een schip."
+   },
+   "lore": {
+    "en": "Sailors ashore here take to the lava tube at once: it is the only cool place on the island, and the roof looks like home. They name the roots as they would rope, stays and shrouds and halyards. An old bosun from the Patience tested one with his full weight, swinging, and pronounced it better than anything in Carrow’s stores. Afterwards he made his men walk underneath on tiptoe, and could not say why.",
+    "nl": "Zeelui die hier aan land komen, trekken meteen de lavatunnel in: het is de enige koele plek op het eiland, en het dak doet ze aan thuis denken. Ze noemen de wortels zoals ze touw zouden noemen: stagen, wanten en vallen. Een oude bootsman van de Geduld testte er een met zijn volle gewicht, slingerend, en verklaarde hem beter dan alles in Carrows voorraad. Daarna liet hij zijn mannen er op hun tenen onderdoor lopen, en hij kon niet zeggen waarom."
+   }
+  },
+  {
+   "id": "tidebook",
+   "page": 14,
+   "where": "text",
+   "icon": "compass",
+   "name": {
+    "en": "Rook’s Columns",
+    "nl": "Rooks kolommen"
+   },
+   "riddle": {
+    "en": "Aboard the Patience, somebody’s arithmetic climbs two ladders at once.",
+    "nl": "Aan boord van de Geduld beklimt iemands rekenwerk twee ladders tegelijk."
+   },
+   "lore": {
+    "en": "Bastian Rook has kept a tide book since he was nine, when his father gave him one instead of a birthday. He has filled thirty-one. They record water, wind, the price of onions in every port, and, in a column headed only Fools, a running total nobody has ever been allowed to see. His crew swear the number has gone down, twice. Rook denies it twice as often.",
+    "nl": "Bastian Rook houdt een getijdenboek bij sinds zijn negende, toen zijn vader hem er een gaf in plaats van een verjaardag. Hij heeft er eenendertig volgeschreven. Ze vermelden water, wind, de prijs van uien in elke haven en, in een kolom met alleen het kopje Dwazen, een lopend totaal dat nog nooit iemand heeft mogen zien. Zijn bemanning zweert dat het getal twee keer is gedaald. Rook ontkent dat twee keer zo vaak."
+   }
+  },
+  {
+   "id": "emptysea",
+   "page": 18,
+   "where": "text",
+   "icon": "map",
+   "name": {
+    "en": "Edda’s Empty Sea",
+    "nl": "Edda’s lege zee"
+   },
+   "riddle": {
+    "en": "Under Rook’s teacup lies the most accurate chart of nothing you will ever see.",
+    "nl": "Onder Rooks theekopje ligt de nauwkeurigste kaart van niets die je ooit zult zien."
+   },
+   "lore": {
+    "en": "Edda Marlow charted this water years ago from a borrowed boat, in a week of flat calm. She found nothing at all and drew it beautifully anyway: soundings, currents, one small note about a whale. Most mapmakers leave a blank sea blank. She initialled hers and sold it to House Carrow for a good price. Someone aboard has since pencilled “which it was” in the margin, as if defending her.",
+    "nl": "Edda Marlow bracht dit water jaren geleden in kaart vanuit een geleende boot, in een week van windstilte. Ze vond helemaal niets en tekende het toch prachtig: dieptecijfers, stromingen, één klein notitietje over een walvis. De meeste kaartenmakers laten een lege zee leeg. Zij parafeerde de hare en verkocht haar voor een goede prijs aan het Huis Carrow. Sindsdien heeft iemand aan boord met potlood “en dat was ze ook” in de marge gezet, alsof hij het voor haar opnam."
+   }
+  },
+  {
+   "id": "sickle",
+   "page": 19,
+   "where": "text",
+   "icon": "chisel",
+   "name": {
+    "en": "Napkin Sickle",
+    "nl": "Servetsikkel"
+   },
+   "riddle": {
+    "en": "Carrow’s men carry their blades the way His Lordship likes his dinner served.",
+    "nl": "Carrows mannen dragen hun bladen zoals Zijne Heerlijkheid zijn diner graag opgediend ziet."
+   },
+   "lore": {
+    "en": "Lord Carrow has never landed, but he does send linen. Every ship of his house carries six hundred napkins, starched, embroidered with the crest, and counted in and out by a steward who answers to His Lordship alone. Sailors use them for everything: blade-wrapping, signalling, mopping, once a sail. The steward records each one as ‘dining’. By the ledgers, House Carrow’s men are the best-fed in the world.",
+    "nl": "Heer Carrow is nooit aan land gegaan, maar linnen stuurt hij wel. Elk schip van zijn huis vervoert zeshonderd servetten, gesteven, geborduurd met het familiewapen en in- en uitgeteld door een hofmeester die alleen aan Zijne Heerlijkheid verantwoording aflegt. Zeelui gebruiken ze voor alles: bladen inwikkelen, seinen, dweilen, één keer als zeil. De hofmeester boekt ze allemaal als ‘diner’. Volgens de grootboeken zijn de mannen van het Huis Carrow de best gevoede ter wereld."
+   }
+  },
+  {
+   "id": "press",
+   "page": 20,
+   "where": "text",
+   "icon": "brush",
+   "name": {
+    "en": "Blotting Sheet",
+    "nl": "Vloeiblad"
+   },
+   "riddle": {
+    "en": "Dr Quill’s flower goes to bed between two sheets that smell of weather.",
+    "nl": "De bloem van dr. Quill gaat naar bed tussen twee lakens die naar weer ruiken."
+   },
+   "lore": {
+    "en": "Society blotting paper comes from one mill on a cold river, pulped from rags the Fellows donate: old shirts, mostly, and one admiral’s nightgown, which is still spoken of. A flower lies between the sheets for forty days, and after that it is a fact. Quill claims she can tell a Society sheet blindfold. Asked what it smells of, she says: whatever went into it last.",
+    "nl": "Het vloeipapier van het Genootschap komt van één molen aan een koude rivier, gemaakt van lompen die de leden schenken: vooral oude overhemden, en één nachthemd van een admiraal waar nog altijd over gepraat wordt. Een bloem ligt veertig dagen tussen de vellen, en daarna is ze een feit. Quill beweert dat ze een vel van het Genootschap geblinddoekt herkent. Vraag je waar het naar ruikt, dan zegt ze: naar wat er het laatst in is gegaan."
+   }
+  },
+  {
+   "id": "licence",
+   "page": 22,
+   "where": "text",
+   "icon": "star",
+   "name": {
+    "en": "The Licence Letter",
+    "nl": "De vergunningsbrief"
+   },
+   "riddle": {
+    "en": "In the crate you followed south, a letter is counting ships before they sail.",
+    "nl": "In de kist die je naar het zuiden volgde, telt een brief schepen nog voor ze uitvaren."
+   },
+   "lore": {
+    "en": "The Society first sold collecting licences two centuries ago, to pay for a new roof. The roof leaked, so they sold more. Each licence is engraved with a star, numbered by hand and signed by the President, who once signed four hundred in an afternoon and had to have his wrist bound. Holders receive a dinner and a pin. Nobody has ever been refused one, and the Council is very proud of that.",
+    "nl": "Het Genootschap verkocht twee eeuwen geleden voor het eerst verzamelvergunningen, om een nieuw dak te betalen. Het dak lekte, dus verkochten ze er meer. Elke vergunning is gegraveerd met een ster, met de hand genummerd en ondertekend door de voorzitter, die er ooit vierhonderd op één middag tekende en zijn pols moest laten verbinden. Houders krijgen een diner en een speld. Nog nooit is iemand er een geweigerd, en daar is de Raad erg trots op."
+   }
+  },
+  {
+   "id": "ring",
+   "page": 30,
+   "where": "text",
+   "icon": "lantern",
+   "name": {
+    "en": "The Ring",
+    "nl": "De ring"
+   },
+   "riddle": {
+    "en": "Up where the tea tastes of eggs, the vents that stand are wearing jewellery.",
+    "nl": "Daarboven, waar de thee naar eieren smaakt, dragen de stoomgaten die blijven staan sieraden."
+   },
+   "lore": {
+    "en": "On the Salt Coast a ring of flowers round a well means the water is sweet, and couples marry standing inside one, for luck. Visitors find this charming. Coast people find it practical: a ring that has stood for years marks a well that has not fallen in. The oldest ring on the coast surrounds a well that ran dry a century ago. Nobody has had the heart to fill it.",
+    "nl": "Aan de Zoutkust betekent een ring van bloemen rond een put dat het water zoet is, en bruidsparen trouwen erin staand, voor het geluk. Bezoekers vinden dat charmant. Kustbewoners vinden het praktisch: een ring die al jaren staat, markeert een put die niet is ingestort. De oudste ring van de kust omringt een put die een eeuw geleden droogviel. Niemand heeft het hart gehad hem dicht te gooien."
+   }
+  },
+  {
+   "id": "letter",
+   "page": 33,
+   "where": "text",
+   "icon": "quill",
+   "name": {
+    "en": "Either Way",
+    "nl": "Hoe dan ook"
+   },
+   "riddle": {
+    "en": "His Lordship’s heavy paper says only one thing plainly, and it is not about flowers.",
+    "nl": "Het zware papier van Zijne Heerlijkheid zegt maar één ding duidelijk, en dat gaat niet over bloemen."
+   },
+   "lore": {
+    "en": "Lord Emmerich Carrow writes every letter standing at a lectern, because he believes a seated man makes concessions. His secretary blots, folds and seals; His Lordship never reads them back. In thirty years he has sent ships to nine coasts he has never seen, and keeps a framed map of each in the long gallery, hung at the height of his eye. He walks it after dinner. He calls this travel.",
+    "nl": "Heer Emmerich Carrow schrijft elke brief staand aan een lessenaar, want hij gelooft dat een man die zit toegevingen doet. Zijn secretaris dept, vouwt en verzegelt; Zijne Heerlijkheid leest ze nooit terug. In dertig jaar heeft hij schepen gestuurd naar negen kusten die hij nooit heeft gezien, en van elk hangt een ingelijste kaart in de lange galerij, precies op ooghoogte. Na het eten loopt hij ze af. Dat noemt hij reizen."
+   }
+  },
+  {
+   "id": "gannet",
+   "page": 36,
+   "where": "text",
+   "icon": "eye",
+   "name": {
+    "en": "The Chalk Marks",
+    "nl": "De krijtstrepen"
+   },
+   "riddle": {
+    "en": "On the loudest rock on the island, somebody keeps a diary in chalk.",
+    "nl": "Op de luidste rots van het eiland houdt iemand een dagboek bij in krijt."
+   },
+   "lore": {
+    "en": "Gannets come back to the same ledge every year, to the inch, and then quarrel about the inch. Lesser Sound children learn to count on them: one bird, two birds, the bird who is wrong. Jory reckons there are four thousand on Gannet Rock and has named the loudest after His Lordship. The bird has not been told. Neither, so far, has His Lordship, who would want it on a map.",
+    "nl": "Jan-van-genten keren elk jaar terug naar dezelfde richel, tot op de centimeter, en maken dan ruzie over die centimeter. Kinderen in Klein Sont leren erop tellen: één vogel, twee vogels, de vogel die ongelijk heeft. Jory schat dat er vierduizend op de Jan-van-Gentrots zitten en heeft de luidste naar Zijne Heerlijkheid vernoemd. De vogel weet het nog niet. Zijne Heerlijkheid evenmin; die zou hem op een kaart willen."
+   }
+  },
+  {
+   "id": "catalogue",
+   "page": 40,
+   "where": "text",
+   "icon": "quill",
+   "name": {
+    "en": "Entry No. 41",
+    "nl": "Inschrijving nr. 41"
+   },
+   "riddle": {
+    "en": "In the Society’s tent, a book carried like a baby lies open at a page much older than the island.",
+    "nl": "In de tent van het Genootschap ligt een boek dat als een baby wordt rondgedragen open bij een bladzijde die veel ouder is dan het eiland."
+   },
+   "lore": {
+    "en": "The Royal Botanic Society has kept one catalogue since its founding, copied out fresh every thirty years by a clerk chosen for the steadiness of her hand. Numbers are never reused, not even for mistakes: No. 7 is a teacup somebody pressed by accident, and it is still listed, with regret. Each copyist may add one flourish of her own. The present clerk chose a full stop shaped like a seed. Nobody has noticed. She is delighted.",
+    "nl": "Het Koninklijk Botanisch Genootschap houdt sinds zijn oprichting één catalogus bij, die elke dertig jaar opnieuw wordt overgeschreven door een klerk die is gekozen om haar vaste hand. Nummers worden nooit hergebruikt, ook niet voor vergissingen: nr. 7 is een theekopje dat iemand per ongeluk heeft geperst, en het staat er nog steeds in, met spijt. Elke kopiist mag één eigen krul toevoegen. De huidige klerk koos een punt in de vorm van een zaadje. Niemand heeft het gemerkt. Ze is in de wolken."
+   }
+  },
+  {
+   "id": "roots",
+   "page": 42,
+   "where": "text",
+   "icon": "window",
+   "name": {
+    "en": "Darned Ash",
+    "nl": "Gestopte as"
+   },
+   "riddle": {
+    "en": "On a shore that ticks in the sun, brush the dust off the window under your boots.",
+    "nl": "Op een kust die tikt in de zon: veeg het stof van het raam onder je laarzen."
+   },
+   "lore": {
+    "en": "On the Salt Coast nobody is trusted with a net until they can darn a sock heel so neatly the join cannot be found. The old women test it by pulling. A good darn, they say, makes every thread answerable to the next. None of them has seen the glass beach. When the fishermen describe it, they nod, entirely unsurprised, and want to know who taught it.",
+    "nl": "Aan de Zoutkust krijgt niemand een net toevertrouwd voordat hij een sokhiel zo netjes kan stoppen dat je de naad niet terugvindt. De oude vrouwen testen het door eraan te trekken. Een goede stop, zeggen ze, maakt elke draad verantwoordelijk voor de volgende. Geen van hen heeft het glasstrand gezien. Als de vissers het beschrijven, knikken ze, totaal niet verrast, en willen ze weten wie het dat heeft geleerd."
+   }
+  },
+  {
+   "id": "tag",
+   "page": 45,
+   "where": "text",
+   "icon": "boat",
+   "name": {
+    "en": "Brass Tag No. 41",
+    "nl": "Koperen label nr. 41"
+   },
+   "riddle": {
+    "en": "Marit’s evening net brings up rock, stems and one small thing that has waited a long time to be read.",
+    "nl": "Het avondnet van Marit brengt rots boven, stengels en één klein ding dat lang heeft gewacht om gelezen te worden."
+   },
+   "lore": {
+    "en": "The Society’s brass tags are stamped in a cellar off the Salt Coast road by a family that has stamped nothing else for ninety years: one letter, one tap, one number. They keep a ledger of every tag sent out and a second ledger for tags that came back. The second ledger is blank. The grandfather says brass outlasts paper, botanists and the Society. His grandchildren hope he is joking.",
+    "nl": "De koperen labels van het Genootschap worden geslagen in een kelder aan de weg langs de Zoutkust, door een familie die al negentig jaar niets anders slaat: één letter, één tik, één nummer. Ze houden een register bij van elk label dat de deur uitgaat, en een tweede voor labels die terugkomen. Het tweede register is leeg. Grootvader zegt dat koper het langer volhoudt dan papier, botanici en het Genootschap. Zijn kleinkinderen hopen dat hij een grapje maakt."
+   }
+  }
+ ],
+ "secret": {
+  "title": {
+   "en": "Page 0 · Uncharted",
+   "nl": "Bladzijde 0 · Onbekend gebied"
+  },
+  "label": {
+   "en": "Footprints, not yours",
+   "nl": "Voetsporen, niet de jouwe"
+  },
+  "text": {
+   "en": "The mountain has finished speaking. The ash settles on the new shore, grey and smooth as a sheet nobody has written on, and for a whole morning nothing on the island moves but the gold coming up through it. Then, out of the sea and up the black sand, comes a single line of fresh footprints. They are not yours. They are wet at the heel and steady, as if whoever made them knew the way, and they walk inland without once turning round.",
+   "nl": "De berg is uitgesproken. De as komt tot rust op de nieuwe kust, grijs en glad als een vel waarop nog niemand heeft geschreven, en een hele ochtend beweegt er niets op het eiland behalve het goud dat erdoorheen omhoogkomt. Dan komt er uit zee, het zwarte zand op, één enkel spoor van verse voetafdrukken. Ze zijn niet van jou. Ze zijn nat bij de hiel en gelijkmatig, alsof wie ze maakte de weg kende, en ze lopen landinwaarts zonder één keer om te kijken."
+  },
+  "sign": {
+   "en": "The Wayward story continues.",
+   "nl": "Het Wayward-verhaal gaat verder."
+  }
+ }
+}

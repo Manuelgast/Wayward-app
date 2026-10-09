@@ -1,0 +1,220 @@
+{
+ "12": {
+  "type": "lantern",
+  "lines": {
+   "en": [
+    "Overhead, the dark drips, ticks and creaks like a ship.",
+    "Something up there is holding very still."
+   ],
+   "nl": [
+    "Boven je hoofd druppelt, tikt en kraakt het donker als een schip.",
+    "Daarboven houdt iets zich doodstil."
+   ]
+  },
+  "prompt": {
+   "en": "Raise your lantern",
+   "nl": "Hef je lantaarn"
+  },
+  "done": {
+   "en": "Roots. Thousands of them. All pulling.",
+   "nl": "Wortels. Duizenden. En ze trekken allemaal."
+  },
+  "x": 42,
+  "y": 20
+ },
+ "14": {
+  "type": "turn",
+  "lines": {
+   "en": [
+    "Salt has glued the pages at the corners.",
+    "Two columns of numbers, climbing side by side."
+   ],
+   "nl": [
+    "Het zout heeft de hoeken van de bladzijden aan elkaar geplakt.",
+    "Twee kolommen getallen, die zij aan zij omhoogklimmen."
+   ]
+  },
+  "prompt": {
+   "en": "Turn the pages",
+   "nl": "Sla de bladzijden om"
+  },
+  "done": {
+   "en": "Ninety-one. Underlined twice.",
+   "nl": "Eenennegentig. Twee keer onderstreept."
+  },
+  "x": 38,
+  "y": 50
+ },
+ "20": {
+  "type": "hold",
+  "lines": {
+   "en": [
+    "The press creaks. Something inside wants to open.",
+    "Under your knees, the warm ash shifts."
+   ],
+   "nl": [
+    "De pers kraakt. Iets daarbinnen wil open.",
+    "Onder je knieën verschuift de warme as."
+   ]
+  },
+  "prompt": {
+   "en": "Hold it shut",
+   "nl": "Hou hem dicht"
+  },
+  "done": {
+   "en": "Flat now. Pressed. Recorded.",
+   "nl": "Nu plat. Geperst. Vastgelegd."
+  },
+  "x": 59,
+  "y": 61
+ },
+ "21": {
+  "type": "hold",
+  "lines": {
+   "en": [
+    "Heat climbs your wrists. The paper starts to sweat.",
+    "Every camp on the island is watching."
+   ],
+   "nl": [
+    "De hitte kruipt langs je polsen omhoog. Het papier begint te zweten.",
+    "Elk kamp op het eiland kijkt toe."
+   ]
+  },
+  "prompt": {
+   "en": "Hold it over",
+   "nl": "Hou hem erboven"
+  },
+  "done": {
+   "en": "One breath. Six days, gone.",
+   "nl": "Eén adem. Zes dagen, weg."
+  },
+  "x": 48,
+  "y": 34
+ },
+ "32": {
+  "type": "trace",
+  "lines": {
+   "en": [
+    "Your Day 2 coast, inked with care, in your hand.",
+    "The real one lies below you, and does not agree."
+   ],
+   "nl": [
+    "Je kust van dag 2, zorgvuldig geïnkt, in je hand.",
+    "De echte ligt onder je, en is het er niet mee eens."
+   ]
+  },
+  "prompt": {
+   "en": "Trace the new coast",
+   "nl": "Trek de nieuwe kust na"
+  },
+  "done": {
+   "en": "Everywhere, your finger stays inside the ink.",
+   "nl": "Overal blijft je vinger binnen de inkt."
+  },
+  "path": [
+   [
+    86,
+    14
+   ],
+   [
+    79,
+    15.5
+   ],
+   [
+    77,
+    18
+   ],
+   [
+    81,
+    20.5
+   ],
+   [
+    87,
+    22
+   ],
+   [
+    82,
+    24.5
+   ],
+   [
+    79,
+    27
+   ],
+   [
+    81,
+    30
+   ]
+  ]
+ },
+ "36": {
+  "type": "tap",
+  "lines": {
+   "en": [
+    "White chalk marks climb the rock, one for each day.",
+    "The gannets watch you count. They counted first."
+   ],
+   "nl": [
+    "Witte krijtstrepen klimmen de rots op, één voor elke dag.",
+    "De jan-van-genten kijken hoe je telt. Zij telden eerst."
+   ]
+  },
+  "prompt": {
+   "en": "Tap each mark",
+   "nl": "Tik elke streep aan"
+  },
+  "done": {
+   "en": "Each one a finger higher.",
+   "nl": "Elke streep een vinger hoger."
+  },
+  "x": 83,
+  "y": 48
+ },
+ "42": {
+  "type": "wipe",
+  "lines": {
+   "en": [
+    "The glass is hot enough to fry an egg on.",
+    "A skin of grey ash lies over all of it."
+   ],
+   "nl": [
+    "Het glas is heet genoeg om er een ei op te bakken.",
+    "Er ligt een vel grijze as overheen."
+   ]
+  },
+  "prompt": {
+   "en": "Brush the glass",
+   "nl": "Veeg het glas schoon"
+  },
+  "done": {
+   "en": "Clear as a window. Something white below.",
+   "nl": "Helder als een raam. Iets wits eronder."
+  }
+ },
+ "45": {
+  "type": "rope",
+  "lines": {
+   "en": [
+    "The net is coming up heavier than fish.",
+    "Marit nods at the wet rope. “Pull.”"
+   ],
+   "nl": [
+    "Het net komt zwaarder omhoog dan vis.",
+    "Marit knikt naar het natte touw. “Trekken.”"
+   ]
+  },
+  "prompt": {
+   "en": "Haul the net",
+   "nl": "Haal het net binnen"
+  },
+  "done": {
+   "en": "Black rock. Grey stems. Something green, swinging.",
+   "nl": "Zwarte rots. Grijze stengels. Iets groens dat zwaait."
+  },
+  "x": 76,
+  "y": 56,
+  "bell": [
+   72,
+   50
+  ]
+ }
+}

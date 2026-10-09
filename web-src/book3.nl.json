@@ -1,0 +1,1203 @@
+{
+ "id": "station-nine",
+ "title": "Station Negen",
+ "series": "De Veyra-cyclus · Boek III",
+ "imprint": "Een Wayward-uitgave",
+ "tagline": "Niemand gaat de IJzeren Pas over onder zijn eigen naam. Iemand is al onderweg onder de jouwe.",
+ "warning": "Lees dit boek niet van voor naar achter. Aan het eind van elke bladzijde beslis jij wat er gebeurt. Sommige keuzes lijken veilig. Weeg ze.",
+ "start": 1,
+ "scenes": {
+  "platform": {
+   "title": "Knooppunt Hollin bij ochtendgloren",
+   "focus": "50% 50%"
+  },
+  "corridor": {
+   "title": "De gang van de Oostexpres",
+   "focus": "50% 50%"
+  },
+  "luggage": {
+   "title": "De bagagewagen",
+   "focus": "50% 50%"
+  },
+  "dining": {
+   "title": "De restauratiewagen",
+   "focus": "50% 50%"
+  },
+  "sleeper": {
+   "title": "Coupé 4",
+   "focus": "50% 50%"
+  },
+  "post": {
+   "title": "De postwagen",
+   "focus": "50% 50%"
+  },
+  "roof": {
+   "title": "Op het dak, boven de sneeuwvelden",
+   "focus": "50% 50%"
+  },
+  "observation": {
+   "title": "De uitzichtwagen",
+   "focus": "50% 50%"
+  },
+  "engine": {
+   "title": "De locomotief",
+   "focus": "50% 50%"
+  },
+  "brakevan": {
+   "title": "De remwagen",
+   "focus": "50% 50%"
+  },
+  "pass": {
+   "title": "De grenspost in de IJzeren Pas",
+   "focus": "50% 50%"
+  },
+  "station": {
+   "title": "Station Negen, de douanehal",
+   "focus": "50% 50%"
+  },
+  "city": {
+   "title": "Het grensstadje Negen",
+   "focus": "50% 50%"
+  },
+  "tower": {
+   "title": "De registerkamer",
+   "focus": "50% 50%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Halte 1 · Knooppunt Hollin",
+   "scene": "platform",
+   "tag": "Knooppunt Hollin. Namen in, strookjes uit.",
+   "text": [
+    "Ochtendgloren op Knooppunt Hollin: rijp op de rails, kolenrook, een kruier die op zijn vingers blaast. De Oostexpres staat te stomen, groen en geduldig. Je hebt het kaartje nog waarmee je kwam: enkele reis, derde klas, 9, [[crescent|één keer geknipt, een klein halvemaantje]]. Waar een naam hoort te staan, is de inkt nog nat. Er staat geen naam.",
+    "Boven het loket hangt een bord: NIEMAND STEEKT DE PAS OVER ONDER ZIJN EIGEN NAAM. Eronder schuifelt een rij. Een heer in het grijs draagt het breiwerk van een oude dame voor haar, alsof het de kroonjuwelen zijn. In de deur van de remwagen staat een vrouw in een leren jas pijp te roken. Ze kijkt, volkomen openlijk, naar je kaartje."
+   ],
+   "choices": [
+    {
+     "text": "Als je aansluit in de rij voor het loket,",
+     "short": "Sluit aan in de rij",
+     "to": 4
+    },
+    {
+     "text": "Als je de heer in het grijs om hulp vraagt,",
+     "short": "Vraag de grijze heer",
+     "to": 5
+    },
+    {
+     "text": "Als je naar de remwagen loopt,",
+     "short": "Loop naar de remwagen",
+     "to": 3
+    }
+   ],
+   "nr": 1
+  },
+  "2": {
+   "chapter": "Een einde",
+   "scene": "platform",
+   "tag": "Dhr. Peterselie. Derde klas.",
+   "text": [
+    "Je schrijft “Peterselie” in je mooiste handschrift, en Tobiah blaast het voor je droog. Niemand in de Oostexpres stelt er vragen over. Op de pas leest de grenswachter het hardop voor zonder met zijn ogen te knipperen; hij heeft wel gekkere dingen voorgelezen.",
+    "In Negen geeft de klerk je precies terug wat je opschreef: een woord. Geen huis, geen schulden, geen brieven, niemand die bij het hek op je wacht. Het is verrassend rustgevend. Je wordt voor heel veel diners gevraagd, waar je naast de vis zit, en de mensen zeggen, niet onvriendelijk, dat je er goed bij past."
+   ],
+   "ending": {
+    "no": "I",
+    "title": "Garnering",
+    "kind": "strange",
+    "epilogue": "Je bent wat je opschreef.",
+    "hint": "Een reservenaam is maar een woord."
+   },
+   "nr": 16
+  },
+  "3": {
+   "chapter": "Halte 1 · Knooppunt Hollin",
+   "scene": "brakevan",
+   "tag": "Remwagen. Mej. M. Dusk, vracht.",
+   "text": [
+    "Mirela Dusk haalt haar pijp alleen uit haar mond om nog botter te kunnen zijn. “Dat is een blanco. Je houdt hem vast als een boterham.” Ze verplaatst namen, zegt ze, voor mensen die moeten ophouden te zijn wie ze waren. “Verboden. En het enige eerlijke vak op deze lijn.”",
+    "De rest vertelt ze zakelijk, als een dienstregeling. [[heavy|Namen hebben gewicht]]: een kruier voelt een gestolen naam in een tas. En een naam die je op het verkeerde moment hardop zegt, blijft plakken, als een klis in wol. Ze steekt haar hand uit. Schoon is die niet. “Geef hier. Ik breng hem naar Negen.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je haar je kaartje geeft,",
+     "short": "Geef haar het kaartje",
+     "to": 8
+    },
+    {
+     "text": "Als je haar aangeeft bij de inspecteur van kaartjes,",
+     "short": "Geef haar aan",
+     "to": 5
+    },
+    {
+     "text": "Als je nu je eigen naam op het kaartje zet, zodat niemand anders het kan,",
+     "short": "Zet je eigen naam erop",
+     "to": 7
+    }
+   ],
+   "nr": 6
+  },
+  "4": {
+   "chapter": "Halte 1 · Knooppunt Hollin",
+   "scene": "platform",
+   "tag": "Loket 1. Namen met dank ontvangen.",
+   "text": [
+    "Achter het loket vraagt een klerk met mouwophouders naar je naam, dan hoe je die spelt, dan om een ogenblikje. Hij slaat een bladzijde in zijn boek terug. En nog een. Verderop op het perron verkoopt een jongen iets uit een vogelkooi.",
+    "“Al ingeleverd,” zegt de klerk, “[[twentytosix|vanochtend om twintig voor zes]]. Een heer, zeer beleefd. Gepast geld.” Zijn vinger vindt de regel. “Strookje uitgegeven: dhr. N. Ashby.” Een naam kan niet twee keer worden ingeleverd, zegt hij er met oprecht medeleven bij; het staat op het bord. Je kijkt naar je blanco kaartje. Op dit moment is dat alles wat je bent. De fluit gaat."
+   ],
+   "choices": [
+    {
+     "text": "Als je de diefstal meldt bij de inspecteur van kaartjes,",
+     "short": "Meld de diefstal",
+     "to": 5
+    },
+    {
+     "text": "Als je een reservenaam koopt van de jongen met de kooi,",
+     "short": "Koop een reservenaam",
+     "to": 6
+    },
+    {
+     "text": "Als je naar de trein rent nu de fluit gaat,",
+     "short": "Ren naar de trein",
+     "to": 3
+    }
+   ],
+   "nr": 39
+  },
+  "5": {
+   "chapter": "Halte 1 · Knooppunt Hollin",
+   "scene": "corridor",
+   "tag": "Dhr. A. Voss, inspecteur. Pepermunt op verzoek.",
+   "text": [
+    "De heer in het grijs is Aurel Voss, inspecteur van kaartjes, en hij stelt zich voor alsof hij zich ervoor verontschuldigt. Grijze jas, een pepermuntje voordat je erom vraagt, manieren waar je de klok op kunt gelijkzetten. Zijn zilveren kniptang knipt een klein halvemaantje. Hij bewondert je blanco zoals je een geladen pistool bewondert: hartelijk, van een afstandje.",
+    "“Er zitten naamdieven op deze lijn,” zegt hij. “Een blanco is wat ze het liefst willen.” Hij bewaart hem graag in zijn koffer tot Negen. Er is toevallig ook nog een plaats vrij in Coupé 4. “Thee in Larixmeer. Ik sta erop.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je hem het kaartje in bewaring geeft,",
+     "short": "Laat hem het bewaren",
+     "to": 9
+    },
+    {
+     "text": "Als je de plaats in Coupé 4 aanneemt,",
+     "short": "Neem de plaats aan",
+     "to": 10
+    },
+    {
+     "text": "Als je hem bedankt en op zoek gaat naar ontbijt,",
+     "short": "Ga ontbijt zoeken",
+     "to": 12
+    }
+   ],
+   "nr": 23
+  },
+  "6": {
+   "chapter": "Halte 1 · Knooppunt Hollin",
+   "scene": "platform",
+   "tag": "Reservenamen. Een stuiver per stuk. Niet ruilen.",
+   "text": [
+    "Tobiah verkoopt [[cage|reservenamen uit een vogelkooi]], klein opgerold en tussen de tralies geschoven: Peterselie, Dinsdag, Admiraal. “Het zijn maar woorden,” zegt hij. “Net als die van iedereen.” Hij heeft het praatje van een jongen die het duizend keer heeft gezegd, en de hoest van een jongen die het in de vorst heeft gezegd.",
+    "Dan ziet hij je kaartje en houdt hij op met glimlachen. Een blanco, zegt hij zacht, is meer waard dan de trein. Wie er een naam op schrijft, gaat over als die naam en krijgt in Negen alles wat die naam bezit. “Huis, schulden, hond. Alles.” Hij houdt je Peterselie toch voor. “Stuiver.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je “Peterselie” op je kaartje schrijft,",
+     "short": "Schrijf “Peterselie”",
+     "to": 2
+    },
+    {
+     "text": "Als je er voor de zekerheid je eigen naam op zet,",
+     "short": "Zet je eigen naam erop",
+     "to": 7
+    },
+    {
+     "text": "Als je de heer in het grijs vraagt wat een blanco waard is,",
+     "short": "Vraag de grijze heer",
+     "to": 5
+    }
+   ],
+   "nr": 20
+  },
+  "7": {
+   "chapter": "Een einde",
+   "scene": "pass",
+   "tag": "Smokkelwaar: één naam, eigen.",
+   "text": [
+    "Je tekent in je mooiste handschrift en voelt je meteen beter, zoals mensen zich vaak voelen vlak voor een vergissing. Op de IJzeren Pas leest de grenswachter je kaartje, leest het nog eens, en laat een formulier halen.",
+    "Je eigen naam, op een kaartje over de pas, is smokkelwaar. Hij wordt met grote zorg in beslag genomen, tegen een ontvangstbewijs in drievoud. Met dat bewijs in de hand loop je terug naar Hollin, en een paar jaar lang is dat officieel wie je bent: één stuk, ontvangen, in behandeling. De klerken van Loket 1 zijn er heel lief over."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "Aangegeven",
+    "kind": "bad",
+    "epilogue": "Aangegeven, en naar behoren in beslag genomen.",
+    "hint": "Niemand gaat over onder zijn eigen naam. Jij ook niet."
+   },
+   "nr": 45
+  },
+  "8": {
+   "chapter": "Halte 1 · Knooppunt Hollin",
+   "scene": "brakevan",
+   "tag": "Mej. O. Fenn, hoedenmaakster. Koudwater.",
+   "text": [
+    "Mirela tornt een naad in haar jas los, schuift je blanco erin en naait hem in zes steken dicht, de pijp tussen haar tanden. In ruil geeft ze je [[fenn|een strookje: mej. O. Fenn, hoedenmaakster]], uit Koudwater. “Jij maakt nu hoeden. Ga er ook zo bij staan.” De fluit gaat. Hollin glijdt achteruit weg, kruiers, rijp en al.",
+    "“Advies,” zegt ze. “Gratis, en dat is zeldzaam. Als er een blanco zoekraakt, komt er altijd iemand naar zoeken.” Ze steekt haar pijp weer aan. “Let op wie.” Dan draait ze zich weer naar haar kisten, die talrijk zijn, en zwaar, en niet jouw zaak, zoals ze twee keer zegt."
+   ],
+   "choices": [
+    {
+     "text": "Als je haar helpt kisten te verschuiven in de bagagewagen,",
+     "short": "Help met de kisten",
+     "to": 11
+    },
+    {
+     "text": "Als je naar voren loopt en als juffrouw Fenn een plaats zoekt,",
+     "short": "Zoek een plaats als Fenn",
+     "to": 17
+    },
+    {
+     "text": "Als je het kaartje terugneemt en toch naar de inspecteur gaat,",
+     "short": "Ga toch naar de inspecteur",
+     "to": 5
+    }
+   ],
+   "nr": 34
+  },
+  "9": {
+   "chapter": "Een einde",
+   "scene": "station",
+   "tag": "Niet afgehaald. Retour Hollin.",
+   "text": [
+    "Meneer Voss bewaart je kaartje voorbeeldig. Hij bewaart het helemaal tot Negen, waar de douaneklerk je naam voorleest, en een beleefde heer in het grijs “Hier” zegt, een strookje laat zien en wordt bedankt.",
+    "Jij hebt geen kaartje en geen strookje. Niemand in het bijzonder is je kwijt. De kruiers, die aardig zijn, schrijven met krijt een nummer op je jas, geven je een broodje en sturen je in de bagagewagen terug over de lijn, als onafgehaald goed. Met de goede kant boven."
+   ],
+   "ending": {
+    "no": "III",
+    "title": "In goede handen",
+    "kind": "bad",
+    "epilogue": "Bewaring hangt af van wie er bewaart.",
+    "hint": "Vriendelijk zijn en vriendelijk doen is niet hetzelfde."
+   },
+   "nr": 4
+  },
+  "10": {
+   "chapter": "Halte 2 · Larixmeer",
+   "scene": "sleeper",
+   "tag": "Coupé 4: dhr. A. Voss, inspecteur.",
+   "text": [
+    "Coupé 4 heeft kanten hoofdsteunen, thee, en een koffer met het opschrift SCHRIJFWAREN, die Voss met twee handen verschuift, met een kreuntje waarvan hij doet alsof het niet van hem kwam. Eenendertig jaar zit hij op deze lijn, zegt hij onder het inschenken. Hij kent elke halte aan de bokking.",
+    "“De vrouw in de remwagen is een smokkelaarster,” zegt hij er nog bij. “Voor we in Harrow zijn, ben je je blanco aan haar kwijt.” Hij doet suiker in zijn thee, kijkt op zijn horloge en staat op: kaartjes knippen. Zijn jas blijft aan de haak bij de deur hangen. De sleutel van de koffer ging in de zak; je zag het gebeuren."
+   ],
+   "choices": [
+    {
+     "text": "Als je zijn koffer openmaakt,",
+     "short": "Maak de koffer open",
+     "to": 14
+    },
+    {
+     "text": "Als je hem door de trein volgt,",
+     "short": "Volg hem",
+     "to": 12
+    },
+    {
+     "text": "Als je zelf gaat kijken bij de vrouw in de remwagen,",
+     "short": "Ga zelf bij haar kijken",
+     "to": 3
+    }
+   ],
+   "nr": 36
+  },
+  "11": {
+   "chapter": "Halte 2 · Larixmeer",
+   "scene": "luggage",
+   "tag": "Bagagewagen. Eerst wegen, dan tillen.",
+   "text": [
+    "Mirela weegt alles op de balansweegschaal voordat ze het optilt; haar rug, zegt ze, is meer waard dan de vracht. Een hutkoffer met het label A. VOSS · SCHRIJFWAREN · 9 PD gaat op de schaal, en [[scale|de balk zegt negentig]]. Mirela haalt haar pijp uit haar mond. “Daar reist iemand zwaar.” Ze stopt hem terug.",
+    "Achter de koffer staat een kist met [[island|een adres op een eiland]] waar je nog nooit van hebt gehoord, en jij hebt zo ongeveer alle eilanden getekend die er zijn. De dakladder rammelt mee met de rails. Voorin roept de conducteur “Larixmeer!” alsof het hem persoonlijk heeft teleurgesteld."
+   ],
+   "choices": [
+    {
+     "text": "Als je de zware koffer openbreekt,",
+     "short": "Breek de koffer open",
+     "to": 13
+    },
+    {
+     "text": "Als je de ladder op klimt, het dak op,",
+     "short": "Klim het dak op",
+     "to": 20
+    },
+    {
+     "text": "Als je naar voren gaat om de conducteur te zoeken,",
+     "short": "Zoek de conducteur",
+     "to": 15
+    }
+   ],
+   "nr": 48
+  },
+  "12": {
+   "chapter": "Halte 2 · Larixmeer",
+   "scene": "dining",
+   "tag": "Mevr. A. Moll. Elfde overtocht.",
+   "text": [
+    "Bokking, witte tafellakens, lariksbossen die voorbijtrekken. Mevrouw Agathe Moll breit een sjaal van [[scarf|elf strepen, één voor elke naam waaronder ze is overgestoken]]. “Het gele was bakkerin. Het grijze was weduwe. Het groene was onaardig tegen haar zus.” Voss komt door de wagen en knipt haar kaartje: een keurig halvemaantje. “Dank u, inspecteur.”",
+    "“Elf namen,” zegt ze als hij weg is, “en hij heeft ze allemaal geknipt.” In Negen, vertelt ze, leest de klerk de echte namen voor, een voor een; wie het bijpassende strookje heeft, antwoordt en krijgt die naam. “Meestal de juiste persoon.” Ze telt een toer. “Meestal.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je mevrouw Moll over je blanco kaartje vertelt,",
+     "short": "Vertel het mevrouw Moll",
+     "to": 16
+    },
+    {
+     "text": "Als je in Harrowbrug uitstapt om een kaart te posten,",
+     "short": "Post een kaart in Harrow",
+     "to": 22
+    },
+    {
+     "text": "Als je teruggaat naar Coupé 4,",
+     "short": "Ga terug naar Coupé 4",
+     "to": 10
+    }
+   ],
+   "nr": 43
+  },
+  "13": {
+   "chapter": "Een einde",
+   "scene": "luggage",
+   "tag": "Dhr. B. Oake, tabakshandelaar. Gepensioneerd.",
+   "text": [
+    "Je wilt alleen even kijken. Maar de strookjes zijn warm van al dat bewaren, en er komt er een los tussen je vingers, alsof het op een hand heeft gewacht. Dhr. B. Oake, tabakshandelaar. Je probeert het terug te leggen. Het wil niet terug. Het is zwaarder dan papier het recht heeft te zijn, en nu zit het in je zak. Jij ook.",
+    "In Negen leest de klerk “Bertram Oake” voor, en je mond zegt “Hier” voor je hem kunt tegenhouden. Een klein vrouwtje met een paarse hoed komt op een drafje door het hek. “Bertie! Je bent afgevallen. Je bent je snor kwijt.” Je wordt mee naar huis genomen, krijgt soep, en wordt vergeven voor een bruiloft waar je nooit bent geweest."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "Gevonden voorwerpen",
+    "kind": "strange",
+    "epilogue": "Iemand heeft je gemist. Niet jou.",
+    "hint": "Andermans namen zijn zwaarder dan ze lijken."
+   },
+   "nr": 9
+  },
+  "14": {
+   "chapter": "Halte 2 · Larixmeer",
+   "scene": "sleeper",
+   "tag": "Schrijfwaren. Voorzichtig behandelen.",
+   "text": [
+    "De sleutel draait alsof hij er speciaal voor geolied is. In de koffer zit helemaal geen papier. Er zitten strookjes in: tientallen bundeltjes, met postkantoortouw bijeengebonden, elk een andere geleende naam. Mej. P. Hale. Dhr. T. Grieve. Ds. Lark. Allemaal geknipt met een klein halvemaantje. Je tilt een bundeltje op. Het is erg zwaar, voor papier.",
+    "“Ah.” Voss staat in de deuropening, een pepermuntje halverwege zijn mond. Boos lijkt hij niet. Eerder blij dat je belangstelling toont. “Gevonden voorwerpen. Mensen laten hun strookjes vallen als handschoenen. Elk strookje op deze lijn komt vroeg of laat bij mij terecht.” Hij houdt zijn hand op voor het bundeltje, geduldig als een ober."
+   ],
+   "choices": [
+    {
+     "text": "Als je een strookje in je zak laat glijden terwijl hij praat,",
+     "short": "Pik een strookje",
+     "to": 13
+    },
+    {
+     "text": "Als je je verontschuldigt en zijn uitleg aanneemt,",
+     "short": "Bied je excuses aan",
+     "to": 22
+    },
+    {
+     "text": "Als je hem op de man af vraagt wiens namen dit zijn,",
+     "short": "Vraag wiens namen dit zijn",
+     "to": 28
+    }
+   ],
+   "nr": 30
+  },
+  "15": {
+   "chapter": "Halte 2 · Larixmeer",
+   "scene": "corridor",
+   "tag": "Conducteur O. Pell. Kent het verdrag.",
+   "text": [
+    "Octavian Pell heeft een snor als een bezem en achter elk oor een potlood. Hij kijkt naar je strookje en snuift. “Fenn? Fenn is vijftig, op zijn minst.” Hij vouwt zijn lijst open. “[[list|Negen namen, acht hoofden]]. Jou niet meegerekend, en dat doe ik ook niet.” Coupé 4: dhr. A. Voss, inspecteur. Dhr. N. Ashby. Eén bed opgemaakt.",
+    "“Artikel zeven,” zegt hij ongevraagd op, zoals andere mannen neuriën. “De klerk te Negen geeft iedere naam terug aan wie het strookje ervan heeft, en weegt alle bagage die een reiziger gewogen wil hebben.” Hij vouwt de lijst dicht. “Niemand vraagt het. Houdt de rij op.” Hij likt aan zijn potlood. “Zo. Hoedenmaakster, of probleem?”"
+   ],
+   "choices": [
+    {
+     "text": "Als je een plaats zoekt in de restauratiewagen,",
+     "short": "Zoek een plaats",
+     "to": 17
+    },
+    {
+     "text": "Als je voor Harrow teruggaat naar de remwagen,",
+     "short": "Ga terug naar de remwagen",
+     "to": 24
+    },
+    {
+     "text": "Als je Pell vraagt de inspecteur erbij te halen,",
+     "short": "Haal de inspecteur erbij",
+     "to": 23
+    }
+   ],
+   "nr": 32
+  },
+  "16": {
+   "chapter": "Een einde",
+   "scene": "dining",
+   "tag": "Mevr. A. Moll. Twaalf strepen.",
+   "text": [
+    "Mevrouw Moll hoort alles aan zonder een steek te laten vallen. “Een blanco,” zegt ze. “Ach, arm schaap. Niemand in deze trein blijft daar met zijn vingers van af.” Ze zet een nieuwe kleur op, het grijsblauw van een winterochtend, en vraagt je je naam te zeggen, zachtjes, alleen tegen haar, één keer maar.",
+    "Dat doe je. Ze breit hem erin. Bij Harrow is het een twaalfde streep, zacht en egaal, en niemand kan hem van je afpakken, want niemand kan hem vinden. Jij ook niet. Om hem eruit te krijgen zou ze eerst elf vrouwen moeten uithalen, en ze is erg op ze gesteld. In Negen leent ze je de sjaal op koude dagen."
+   ],
+   "ending": {
+    "no": "V",
+    "title": "De twaalfde streep",
+    "kind": "strange",
+    "epilogue": "Je naam is warm, en niet helemaal van jou.",
+    "hint": "Een naam verstoppen is niet hetzelfde als hem houden."
+   },
+   "nr": 14
+  },
+  "17": {
+   "chapter": "Halte 2 · Larixmeer",
+   "scene": "dining",
+   "tag": "Mej. O. Fenn, hoedenmaakster. Tafel zes.",
+   "text": [
+    "Mevrouw Agathe Moll schuift het toastrekje naar je toe en vraagt wat voor hoeden je maakt. “Kleine,” zeg je. Ze knikt, alsof dat veel verklaart. Haar naalden tikken. Buiten trekken de lariksen voorbij als een rij die nooit korter wordt.",
+    "Voss werkt de wagen af, kaartje voor kaartje, en verontschuldigt zich aan elke tafel. “Routine, mevrouw. Er zwerft een blanco kaartje door de trein.” Bij jou knipt hij het strookje van Fenn: een keurig halvemaantje. Dan kijkt hij er een ogenblik langer naar dan naar dat van ieder ander, en geeft het met een kleine buiging terug. “Juffrouw Fenn. Zo’n druk vak, hoeden.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je teruggaat naar de remwagen,",
+     "short": "Ga terug naar de remwagen",
+     "to": 19
+    },
+    {
+     "text": "Als je de inspecteur vertelt dat de smokkelaarster de blanco heeft,",
+     "short": "Vertel het de inspecteur",
+     "to": 23
+    },
+    {
+     "text": "Als je blijft zitten tot Harrowbrug,",
+     "short": "Blijf zitten tot Harrow",
+     "to": 24
+    }
+   ],
+   "nr": 44
+  },
+  "18": {
+   "chapter": "Halte 2 · Larixmeer",
+   "scene": "post",
+   "tag": "Postwagen. Pas op de namen.",
+   "text": [
+    "Je laat je door het luik zakken, midden in een berg postzakken. De postbode staat niet op. Hij heeft iets van een man op wie wel vaker mensen vallen. “Het dak is geen perron,” zegt hij, en hij gaat verder met het bewaken van [[namebox|de namenkist van Hollin]]: een ijzeren kist met banden als een ton, en nergens een sleutelgat.",
+    "Elke naam die in Hollin wordt ingeleverd, reist erin mee naar Negen, vertelt hij, en onderweg is hij nog nooit opengegaan. Er zijn twee man nodig om hem te tillen. “Elk jaar zwaarder,” zegt hij, en hij klopt erop zoals je een paard klopt. “Mensen bewaren meer van zichzelf dan vroeger.” Onder je voeten beginnen de remmen te zingen voor Harrow."
+   ],
+   "choices": [
+    {
+     "text": "Als je teruggaat om Mirela te zoeken wanneer de trein in Harrow stopt,",
+     "short": "Zoek Mirela op",
+     "to": 24
+    },
+    {
+     "text": "Als je naar voren gaat, naar de conducteur,",
+     "short": "Zoek de conducteur",
+     "to": 15
+    }
+   ],
+   "nr": 19
+  },
+  "19": {
+   "chapter": "Halte 2 · Larixmeer",
+   "scene": "brakevan",
+   "tag": "Remwagen. Alleen personeel en vracht.",
+   "text": [
+    "Mirela zit op een kist met een schrijfplankje op schoot, te vervalsen. Ze kijkt niet op. “Een vrouw die bij haar man weggaat,” zegt ze, en ze dept een strookje. “Een jongen die bij een schuld weggaat.” Deppen. “Een man die bij een koor weggaat. Niet vragen.” Elk strookje heeft een ander handschrift, en elk is volmaakt.",
+    "Je vertelt haar over de inspecteur en je strookje. Ze haalt haar schouders op. “Hij knipt iedereen.” Dan, terwijl ze haar pijp aansteekt: “Twintig voor zes, ik stond in Hollin te laden. Zag een man een naam inleveren bij Loket 1. Zijn gezicht niet. Zijn munten wel. [[coins|Gepast, twee keer geteld]], op de richel.” Ze schudt de lucifer uit. “Grijze handschoenen. Heel schoon.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je met haar wacht tot Harrowbrug,",
+     "short": "Wacht met Mirela",
+     "to": 24
+    },
+    {
+     "text": "Als je bij de bagage gaat kijken,",
+     "short": "Bekijk de bagage",
+     "to": 11
+    }
+   ],
+   "nr": 7
+  },
+  "20": {
+   "chapter": "Halte 3 · Harrowbrug",
+   "scene": "roof",
+   "tag": "Op het dak. Afgeraden.",
+   "text": [
+    "De wind neemt je adem en geeft hem niet terug. Voor je glanzen sneeuwvelden, zo fel dat het pijn doet; beneden gaapt de kloof van Harrow als een boek dat met de rug omhoog is gevallen. Je ligt plat op het dak van het slaaprijtuig. Door het dakraam van Coupé 4, recht onder je, zie je Voss met zijn koffer open op schoot strookjes tellen. Bij elk tiende likt hij aan zijn duim.",
+    "Hij heeft er heel veel. Hij haast zich niet. Voor je klimmen de liggers van Harrowbrug uit de kloof omhoog, kriskras als stopwerk. Bij je elleboog zit een luik naar de gang, en een wagen verder naar achteren nog een, boven de postwagen."
+   ],
+   "choices": [
+    {
+     "text": "Als je door het luik de gang in zakt,",
+     "short": "Zak de gang in",
+     "to": 15
+    },
+    {
+     "text": "Als je door het luik van de postwagen zakt,",
+     "short": "Zak de postwagen in",
+     "to": 18
+    },
+    {
+     "text": "Als je naar voren kruipt om te zien wat hij telt,",
+     "short": "Kruip naar voren",
+     "to": 21
+    }
+   ],
+   "moment": {
+    "line": "De liggers van Harrowbrug razen op je af.",
+    "seconds": 10,
+    "default": 21,
+    "head": "Kies voor de brug",
+    "sub": "Wacht je te lang, dan kiest de trein voor je.",
+    "defaultLabel": "DE KEUZE VAN DE TREIN",
+    "timeout": "De trein kiest voor je…"
+   },
+   "nr": 15
+  },
+  "21": {
+   "chapter": "Een einde",
+   "scene": "roof",
+   "tag": "Ziekenzaal Harrow. Naam: in behandeling.",
+   "text": [
+    "Je kruipt naar voren. Je ziet heel duidelijk dat hij namen telt, en dat op het bovenste strookje Ashby staat. Je vraagt je nog af waarom dat ertoe doet, als Harrowbrug zich aandient. Die is gebouwd voor treinen, niet voor mensen die erop liggen, en maakt dat duidelijk. Eén keer, met nadruk.",
+    "Je wordt wakker in de ziekenzaal van Harrow, met een verband en uitzicht op de kloof. De verpleegster vraagt je naam voor op de kaart. Je hebt er geen bij je. Ze zet een klein streepje, heel netjes, en brengt je bouillon. Je brengt er de zomer door en wordt beter in alles, behalve in iemand zijn. De trein, hoor je, was op tijd."
+   ],
+   "ending": {
+    "no": "VI",
+    "title": "Lage liggers",
+    "kind": "bad",
+    "epilogue": "Opgenomen: één. Naam: in behandeling.",
+    "hint": "Kijk minder omlaag. Kijk meer vooruit."
+   },
+   "nr": 40
+  },
+  "22": {
+   "chapter": "Halte 3 · Harrowbrug",
+   "scene": "post",
+   "tag": "Harrowbrug. Tien minuten. Postkantoor.",
+   "text": [
+    "Harrow is één straat, een brug en een postkantoor dat naar lijm ruikt. Naast de deur hangt een koperen plaquette: NAMENKANTOOR HARROW. [[plaque|Eenendertig jaar geleden afgebrand, met register en al]]. Dienstdoend klerk: C. Grell. Nooit gevonden. Iemand heeft de letters gepoetst tot de randen zacht zijn.",
+    "Voss is je naar buiten gevolgd, wrijvend over een knie. “Zou u zo vriendelijk willen zijn?” Hij houdt een crèmekleurige envelop op, in schoonschrift geadresseerd: Aan de douaneklerk, Station Negen. Per bode. “Mijn knieën en die trappen zijn het nooit eens geworden. Over acht minuten gaat de fluit.” Hij glimlacht. Het is een heel goede glimlach. Er is zuinig op geweest."
+   ],
+   "choices": [
+    {
+     "text": "Als je hem post zonder hem te lezen,",
+     "short": "Post de brief",
+     "to": 28
+    },
+    {
+     "text": "Als je hem achter het postkantoor openmaakt,",
+     "short": "Maak hem stiekem open",
+     "to": 25
+    },
+    {
+     "text": "Als je in Harrow blijft, ver weg van dit alles, en de trein laat gaan,",
+     "short": "Blijf in Harrow",
+     "to": 26
+    }
+   ],
+   "nr": 26
+  },
+  "23": {
+   "chapter": "Een einde",
+   "scene": "brakevan",
+   "tag": "In beslag genomen. Bewijs afgegeven, met excuses.",
+   "text": [
+    "De inspecteur is dankbaar. Hij is voorzichtig. Hij vraagt juffrouw Dusk, uit beleefdheid, haar jas uit te trekken, vindt je blanco in de voering, precies waar hij was ingenaaid, en houdt hem tegen het licht als een goede wijn. “Dank u,” zegt hij, tegen jou, en knipt hem. Een klein halvemaantje.",
+    "Mirela wordt tussen twee beambten afgevoerd, de pijp nog in haar mond. Ze kijkt je niet aan, en dat is erger dan als ze het wel had gedaan. De blanco gaat in zijn koffer, met een prachtig ingevuld ontvangstbewijs. In Negen leest de klerk namen voor, en de jouwe is er niet bij. Officieel ben je niemand. Officieus ook."
+   ],
+   "ending": {
+    "no": "VII",
+    "title": "Routinecontrole",
+    "kind": "bad",
+    "epilogue": "Alles ging volgens het boekje. Dat was het probleem.",
+    "hint": "Meld een diefstal bij de juiste persoon."
+   },
+   "nr": 11
+  },
+  "24": {
+   "chapter": "Halte 3 · Harrowbrug",
+   "scene": "platform",
+   "tag": "Harrowbrug. Tien minuten.",
+   "text": [
+    "Met een zucht komt de trein tot stilstand in Harrowbrug. Mirela knoopt haar jas dicht over de voering waar je blanco in zit, stapt het perron op en loopt weg zonder om te kijken. Geen woord. Geen knik. Haar pijprook volgt haar de hoek van het postkantoor om.",
+    "Het perron is kort en erg leeg. De stationschef kijkt op zijn horloge, dan naar de lucht, dan weer op zijn horloge, en heft zijn vlag. De locomotief verzamelt zijn krachten. Op het strookje in je zak staat mej. O. Fenn, hoedenmaakster, en op dit moment voelt het als het dunste wat je bezit."
+   ],
+   "choices": [
+    {
+     "text": "Als je uit de trein springt en haar achternagaat,",
+     "short": "Ga haar achterna",
+     "to": 27
+    },
+    {
+     "text": "Als je de inspecteur vertelt dat ze ervandoor is met een blanco,",
+     "short": "Vertel het de inspecteur",
+     "to": 23
+    },
+    {
+     "text": "Als je aan boord blijft en niets zegt,",
+     "short": "Blijf zitten, zeg niets",
+     "to": 32
+    }
+   ],
+   "nr": 41
+  },
+  "25": {
+   "chapter": "Halte 3 · Harrowbrug",
+   "scene": "post",
+   "tag": "Aan de douaneklerk. Per bode.",
+   "text": [
+    "Achter het postkantoor staan een kolenhok, een kat en verder niemand. De envelop is maar aan één hoek dichtgeplakt: vertrouwen, of de schijn ervan. Je houdt hem omhoog tegen de schittering van de sneeuw. Eén vel, in schoonschrift zo gelijkmatig dat het gestreken lijkt, en [[letter|gedateerd op gisteren]].",
+    "“Vooraankondiging. Een reiziger zonder naam, met een blanco kaartje, zal vandaag proberen de grens over te gaan. Houd deze persoon aan. Bruine reisjas, inkt op de linkermanchet, derde knoop ontbreekt. A. Voss, inspecteur.” Je kijkt omlaag. Inkt op de linkermanchet. De derde knoop ontbreekt nog steeds; je wilde er al een tijdje iets aan doen. Voor het station roept de wachter: nog twee minuten."
+   ],
+   "choices": [
+    {
+     "text": "Als je hem verscheurt en weer instapt,",
+     "short": "Verscheur hem en stap in",
+     "to": 28
+    },
+    {
+     "text": "Als je hem toch post en met een onschuldig gezicht instapt,",
+     "short": "Post hem en kijk onschuldig",
+     "to": 33
+    },
+    {
+     "text": "Als je hem houdt en in Harrow blijft, buiten zijn bereik,",
+     "short": "Blijf in Harrow",
+     "to": 26
+    }
+   ],
+   "nr": 10
+  },
+  "26": {
+   "chapter": "Een einde",
+   "scene": "post",
+   "tag": "Naamkantoor Harrow. Klerk gevraagd.",
+   "text": [
+    "De fluit gaat, de Oostexpres trekt zijn lange grijze zin over de brug, en jij blijft precies waar je bent, wat bijna een uur lang verstandig voelt. Verderop langs de lijn reist je naam zonder jou door naar Negen. Niemand in Harrow vraagt ernaar. Dat zijn ze hier ontwend.",
+    "Het nieuwe naamkantoor bestaat uit twee kamers boven de bakker en een kaartje achter het raam: KLERK GEVRAAGD. Je bent er erg goed in. Je schrijft netjes, verliest nooit een formulier en stempelt de namen van anderen met echte tederheid door. Elk voorjaar denk je erover om toch de grens over te gaan. Elk voorjaar moet er eerst inkt besteld worden."
+   ],
+   "ending": {
+    "no": "VIII",
+    "title": "Harrow, één inwoner erbij",
+    "kind": "strange",
+    "epilogue": "Jij stapte vroeg uit. Je naam niet.",
+    "hint": "De veiligste halte is niet het eindpunt."
+   },
+   "nr": 42
+  },
+  "27": {
+   "chapter": "Een einde",
+   "scene": "platform",
+   "tag": "Bakkerij Harrow. Broodjes een stuiver.",
+   "text": [
+    "Je springt eruit, glijdt uit op het bevroren perron en rent haar achterna, onder de stationsboog door, langs het postkantoor, een bakkerij in die naar kaneel en heet ijzer ruikt. Ze staat aan de toonbank. Ze koopt broodjes. “Zes,” zegt ze tegen de bakker. “Nee, zeven. Onze hoedenmaakster ziet wat pips.” Dan draait ze zich om, ziet jou en zegt iets korts en onvervalst Hollins.",
+    "De fluit gaat. Mirela rent, de zak hoog in de lucht, en haalt de remwagen op een handbreedte. Vanuit de rijdende trein zwaait ze met een broodje naar je. Je naam, hoor je later, was een dag eerder in Negen dan jij, in de zak van een ander. Je koopt een achtste broodje. Het is buitengewoon lekker."
+   ],
+   "ending": {
+    "no": "IX",
+    "title": "Broodjes uit Harrow",
+    "kind": "strange",
+    "epilogue": "Zij kwam terug. Jij niet.",
+    "hint": "Niet iedereen die wegloopt, gaat ook weg."
+   },
+   "nr": 2
+  },
+  "28": {
+   "chapter": "Halte 4 · De IJzeren Pas",
+   "scene": "observation",
+   "tag": "Uitzichtrijtuig. Alleen staanplaatsen.",
+   "text": [
+    "Het uitzichtrijtuig is één en al glas en ellebogen. Vooruit klimt de IJzeren Pas uit de lariksen, wit op wit, de rails een potloodlijn die iemand nog had willen uitgummen. Voss vindt je zonder zichtbaar te zoeken. “Pepermuntje?” Een papieren zakje, dan een opgevouwen afschrift van het verdrag, één artikel licht aangestreept: een reiziger zonder naam draagt vermoedelijk die van een ander bij zich.",
+    "“Een formaliteit,” zegt hij, “maar op de pas hebben formaliteiten tanden.” Hij schroeft een vulpen open. “Laat mij een naam op je blanco kaartje schrijven. Welke je maar wilt. De grenswachters kennen mijn hand. Dan ben je veilig.” Hij wacht met de pen in de aanslag, zoals een ober wacht tot je de wijn hebt geproefd."
+   ],
+   "choices": [
+    {
+     "text": "Als je hem een naam voor je laat opschrijven,",
+     "short": "Laat hem een naam schrijven",
+     "to": 31
+    },
+    {
+     "text": "Als je naar voren gaat om de pas vanaf de locomotief te zien,",
+     "short": "Ga naar de locomotief",
+     "to": 30
+    },
+    {
+     "text": "Als je naar buiten stapt, het achterbalkon op,",
+     "short": "Stap het balkon op",
+     "to": 29
+    }
+   ],
+   "nr": 47
+  },
+  "29": {
+   "chapter": "Halte 4 · De IJzeren Pas",
+   "scene": "roof",
+   "tag": "Achterbalkon. Houd de reling vast.",
+   "text": [
+    "Buiten is de kou zo schoon dat hij rinkelt. De sneeuwvelden kaatsen de zon dubbel zo hard terug, en de reling bijt door je handschoenen heen. Achter je gaat de deur open. Voss, hoed in de hand, alsof het balkon een kapel is. “Ik ben ooit klerk geweest in Harrow,” zegt hij. “Heel jong. Heel onbeduidend. Je zou me niet aardig hebben gevonden.”",
+    "“Vreselijke geschiedenis, die brand. Niemand heeft zijn naam ooit teruggekregen.” Hij haalt [[tin|een blikje met de letters C.G.]] tevoorschijn en schudt een pepermuntje in zijn grijze handschoen. “Van mijn vader,” zegt hij erbij, voor je iets kunt vragen. De trein mindert vaart. Vooruit staat een geverfde paal alleen in de sneeuw, en daarachter een hut met een draadje rook."
+   ],
+   "choices": [
+    {
+     "text": "Als je weer naar binnen gaat nu de trein vaart mindert voor de grens,",
+     "short": "Ga weer naar binnen",
+     "to": 33
+    },
+    {
+     "text": "Als je uitstapt bij de grenspaal,",
+     "short": "Stap uit bij de paal",
+     "to": 34
+    }
+   ],
+   "nr": 25
+  },
+  "30": {
+   "chapter": "Halte 4 · De IJzeren Pas",
+   "scene": "engine",
+   "tag": "Locomotief. Alleen voor de machinist.",
+   "text": [
+    "De cabine van de locomotief is een oven met goede manieren. De machinist kijkt niet om. “Zeshonderd keer over de pas,” zegt hij als je het vraagt. “Elke keer als Machinist. Scheelt papierwerk. Mijn vrouw noemt me nu ook zo. Zegt dat het me staat.” Hij geeft je een schep alsof je erom had gevraagd, en kijkt openlijk teleurgesteld toe hoe je hem gebruikt.",
+    "Vooruit staat een geverfde paal alleen in de sneeuw, aan de ene kant rood, aan de andere wit. Zuchtend komt de trein ernaast tot stilstand. Verderop langs de wagons begint een wachter elk strookje hardop voor te lezen, de ene geleende naam na de andere. “Bij de paal stapt niemand uit,” zegt Machinist, terwijl hij zijn pijp stopt. “Dan sta je aan geen enkele kant.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je uitstapt bij de paal,",
+     "short": "Stap uit bij de paal",
+     "to": 34
+    },
+    {
+     "text": "Als je op de locomotief meerijdt door de grenspost,",
+     "short": "Rij mee op de locomotief",
+     "to": 33
+    }
+   ],
+   "nr": 13
+  },
+  "31": {
+   "chapter": "Een einde",
+   "scene": "station",
+   "tag": "In schoonschrift. Zeer leesbaar.",
+   "text": [
+    "Hij schrijft zorgvuldig, alsof hij een trouwkaart adresseert. A, U, R, E, L. De inkt blijft even nat op het kaartje liggen, zoals die eerste inkt, en dan trekt hij in. VOSS. “Ziezo,” zegt hij, en hij blaast erop. “Daar zal niemand iets van zeggen.” Niemand zegt er iets van. De wachter op de pas salueert zelfs.",
+    "In Negen leest de klerk AUREL VOSS voor, en je mond antwoordt voor je hem kunt tegenhouden. Je krijgt een loodzware koffer, een bevelschrift van eenendertig jaar oud en de onverdeelde aandacht van twee heren met notitieboekjes. Aan de overkant van de hal meldt een man die je niet meer helemaal herkent zich bij jouw naam, neemt hem in ontvangst en loopt ermee de zonsondergang in. Hij staat hem prachtig."
+   ],
+   "ending": {
+    "no": "X",
+    "title": "Persoonsverwisseling",
+    "kind": "bad",
+    "epilogue": "Je was heel mooi geschreven.",
+    "hint": "Let op wiens handschrift je wordt."
+   },
+   "nr": 38
+  },
+  "32": {
+   "chapter": "Halte 4 · De IJzeren Pas",
+   "scene": "pass",
+   "tag": "Grenspost. Mej. O. Fenn, hoedenmaakster.",
+   "text": [
+    "Je zegt niets, de trein vertrekt uit Harrow zonder haar, en de hele kloof lang zit je op haar kisten, de domste hoedenmaakster die er bestaat. Dan slaat de achterdeur. Mirela, sneeuw op haar schouders, een zak broodjes uit Harrow onder haar arm. Ze geeft je er een. “Je dacht dat ik weg was. Het staat op je gezicht. Doe iets aan je gezicht.”",
+    "Bij de grenspost leest de wachter de strookjes voor. “Mej. O. Fenn.” “Hier,” zeg je. Hij kijkt naar het strookje, naar jou, naar je hoed, die niet het idee is dat een hoedenmaakster van een hoed heeft, en laat het erbij. De kisten van Mirela worden aan touwen de berm af gelaten voor inspectie."
+   ],
+   "choices": [
+    {
+     "text": "Als je met haar in de remwagen de tunnel in rijdt,",
+     "short": "Blijf in de remwagen",
+     "to": 36
+    },
+    {
+     "text": "Als je bij de grenspaal uitstapt om je benen te strekken,",
+     "short": "Strek je benen buiten",
+     "to": 34
+    }
+   ],
+   "nr": 21
+  },
+  "33": {
+   "chapter": "Halte 4 · De IJzeren Pas",
+   "scene": "pass",
+   "tag": "Grenspost. Strookjes worden voorgelezen.",
+   "text": [
+    "De grenspost is een hut, een vlag en een sergeant met een stem die gebouwd is om voor te lezen. Strookje voor strookje werkt hij de trein af. “Mevr. A. Moll. Machinist. Mej. O. Fenn.” Bij jou pakt hij je kaartje, draait het om en weer terug, alsof de naam misschien op de achterkant staat. Dat is niet zo. De hele wagon vindt de sneeuw ineens reuze boeiend.",
+    "“Geen naam,” zegt hij. “Je weet wat het verdrag dan vermoedt.” Dan een geur van pepermunt en een grijze mouw bij je schouder. “Die hoort bij mij, sergeant,” zegt Voss vriendelijk. “Een ongelukkig geval. Ik sta er in Negen voor in.” De sergeant gaat rechtop staan. Ergens achter je houdt mevrouw Moll op met breien."
+   ],
+   "choices": [
+    {
+     "text": "Als je Voss voor je laat instaan,",
+     "short": "Laat Voss voor je instaan",
+     "to": 35
+    },
+    {
+     "text": "Als je je echte naam hardop tegen de wachter zegt,",
+     "short": "Zeg je echte naam",
+     "to": 37
+    }
+   ],
+   "nr": 28
+  },
+  "34": {
+   "chapter": "Een einde",
+   "scene": "pass",
+   "tag": "Grenspaal. Niet uitstappen.",
+   "text": [
+    "Je stapt uit, tot je schenen in de sneeuw. De geverfde paal staat vlak naast je, aan de ene kant rood, aan de andere wit, en jij staat precies op de grens van de verf. Achter je toetert de trein één keer beleefd en vertrekt. Elk land bekijkt je vanaf zijn eigen helft van de sneeuw. Geen van beide zet de eerste stap.",
+    "Het wachthuisje neemt je op, want verder doet niemand het. Je leert thee op twee manieren zetten, sterk voor het oosten en met veel melk voor het westen, en elk kopje door het juiste raampje aan te reiken. Beide sergeanten raken op je gesteld. Geen van beiden vindt een formulier waar je in past. Bij elke trein die langskomt, zwaaien beide kanten."
+   ],
+   "ending": {
+    "no": "XI",
+    "title": "Aan geen van beide kanten",
+    "kind": "strange",
+    "epilogue": "Beide kanten zwaaien. Geen van beide schrijft.",
+    "hint": "Een grens is een slechte plek om stil te staan."
+   },
+   "nr": 33
+  },
+  "35": {
+   "chapter": "Halte 5 · De Douanetunnel",
+   "scene": "corridor",
+   "tag": "Douanetunnel. Twintig minuten, geen licht.",
+   "text": [
+    "De tunnel slokt de trein in één keer op. Het licht gaat wagon voor wagon uit, zoals het reglement voorschrijft, en het donker dat volgt ruikt naar kolen en natte steen. Ergens lacht een kind; ergens sust een moeder het. Je voelt de wand van de gang in je rug, en warme pepermuntadem bij je oor.",
+    "“Laat mij in Negen het woord doen,” zegt Voss heel zacht. “Klerken nemen alles letterlijk. En geef me dat blanco kaartje nu maar, wees eens een brave reiziger. In het donker ziet niemand het, en niemand hoeft ooit te weten dat jij het had.” Zijn gehandschoende hand vindt je pols, licht, zoals je een glas in evenwicht houdt. Ver vooruit gaat in een wagon het licht weer aan."
+   ],
+   "choices": [
+    {
+     "text": "Als je het hem geeft,",
+     "short": "Geef hem het kaartje",
+     "to": 9
+    },
+    {
+     "text": "Als je het houdt en zegt dat je het zelf wel redt,",
+     "short": "Houd het, red je zelf",
+     "to": 38
+    }
+   ],
+   "moment": {
+    "line": "Het licht gaat weer aan, wagon voor wagon.",
+    "seconds": 10,
+    "default": 38,
+    "head": "Kies voordat het licht aangaat",
+    "sub": "Wacht je te lang, dan kiest de trein voor je.",
+    "defaultLabel": "DE KEUZE VAN DE TREIN",
+    "timeout": "De trein kiest voor je…"
+   },
+   "nr": 18
+  },
+  "36": {
+   "chapter": "Halte 5 · De Douanetunnel",
+   "scene": "brakevan",
+   "tag": "Douanetunnel. Remwagen.",
+   "text": [
+    "De tunnel neemt het daglicht mee. De remwagen wordt zo zwart als de binnenkant van een jaszak, tot Mirela een lucifer afstrijkt en haar lantaarn een knus salonnetje maakt van de kisten, de broodjes en haar gezicht, dat nergens van opkijkt. “Twintig minuten,” zegt ze. “Eet wat. De douane valt zwaarder op een lege maag.”",
+    "De klink van de gangdeur draait. Stopt. Draait weer, langzamer, alsof wie daar ook staat er beleefd over wil zijn. Mirela haalt de pijp uit haar mond en doet verder helemaal niets. Je houdt de lantaarn bij het raampje in de deur en ziet alleen jezelf terugkijken, nogal bleek, onder een hoedenmaakstershoed."
+   ],
+   "choices": [
+    {
+     "text": "Als je de deur opendoet,",
+     "short": "Doe de deur open",
+     "to": 23
+    },
+    {
+     "text": "Als je de deur dichthoudt en je stilhoudt,",
+     "short": "Houd hem dicht, zwijg",
+     "to": 39
+    }
+   ],
+   "nr": 8
+  },
+  "37": {
+   "chapter": "Een einde",
+   "scene": "station",
+   "tag": "Naam uitgesproken. Naam gehouden.",
+   "text": [
+    "Je zegt je naam. Duidelijk en helemaal, zoals je voor een pakketje tekent, en even hangt hij in de koude lucht, blij dat hij eruit is. Dan zoekt hij een plek om neer te strijken, en strijkt neer, als een mot op een mouw, op het dichtstbijzijnde strookje. Het dichtstbijzijnde strookje zit in een grijze handschoen.",
+    "“Dank u wel,” zegt Voss, en hij steekt hem warm weg. “Dan is dat geregeld.” Iedereen is het erover eens dat het geregeld is. Het papierwerk is prachtig. Je reist verder als een blanco kaartje met een halvemaantje erin, en als iemand vraagt wie je bent, doe je je mond open en merk je dat het woord al gebruikt is."
+   ],
+   "ending": {
+    "no": "XII",
+    "title": "Uitgesproken",
+    "kind": "bad",
+    "epilogue": "Jij sprak hem uit. Hij hield hem.",
+    "hint": "Op deze lijn blijven woorden plakken."
+   },
+   "nr": 22
+  },
+  "38": {
+   "chapter": "Halte 6 · Station Negen",
+   "scene": "station",
+   "tag": "Station Negen. Aankomst 18.52 uur.",
+   "text": [
+    "Station Negen valt tegen voor wie drama verwacht. De zon zakt achter de goederenloods, duiven patrouilleren over het perron als jonge ambtenaren, en een rij voor de douane schuifelt naar een deur met het opschrift NAMEN RETOUR. Iemand verkoopt warme kastanjes. Iemand anders heeft een hond meegenomen om een naam van de trein te halen.",
+    "Twee kruiers dragen de koffer van Voss tussen zich in en zetten hem met een kreun neer. Hij geeft elk van hen een fooi, precies afgepast. “Ga achter mij staan,” zegt hij, en hij trekt je kraag recht alsof je zijn neefje bent. “Zeg niets. Ik heb dit al heel vaak gedaan.” Achter de slagboom staat de stadspoort open, en niemand let erop."
+   ],
+   "choices": [
+    {
+     "text": "Als je achter hem in de rij gaat staan,",
+     "short": "Sluit achter hem aan",
+     "to": 40
+    },
+    {
+     "text": "Als je door de stadspoort wegglipt,",
+     "short": "Glip door de poort",
+     "to": 41
+    }
+   ],
+   "nr": 46
+  },
+  "39": {
+   "chapter": "Halte 6 · Station Negen",
+   "scene": "station",
+   "tag": "Douanehal. Hier krijgt u uw naam terug.",
+   "text": [
+    "De douanehal is warm, gevernist en heel stil, als een bank waaraan net een geheim is verteld. Hendrika Aldewin zit aan een hoge lessenaar, het register open naast zich en een koperen weegschaal bij haar elleboog. Aan de muur, in bladgoud: ARTIKEL ZEVEN, met een heleboel kleine lettertjes eronder.",
+    "Met heldere, vriendelijke stem leest ze namen voor, en mensen stappen naar voren om ze terug te nemen. Een weduwe. Een bakker. Een man die in tranen uitbarst en zich daarvoor verontschuldigt. Mirela, naast je, ruikt naar pijptabak en broodjes uit Harrow. Dan leest de klerk jouw naam voor, de echte. Aan de overkant van de hal schraapt een heer in het grijs zijn keel."
+   ],
+   "choices": [
+    {
+     "text": "Als je naar voren stapt en je meldt,",
+     "short": "Meld je bij je naam",
+     "to": 37
+    },
+    {
+     "text": "Als je niets zegt,",
+     "short": "Zeg niets",
+     "to": 42
+    },
+    {
+     "text": "Als je naar Mirela wijst en zegt dat zij je kaartje heeft,",
+     "short": "Wijs naar Mirela",
+     "to": 23
+    }
+   ],
+   "moment": {
+    "line": "De klerk kijkt op van het register en wacht op antwoord.",
+    "seconds": 10,
+    "default": 42,
+    "head": "Kies voordat je naam nog eens klinkt",
+    "sub": "Wacht je te lang, dan kiest de grens voor je.",
+    "defaultLabel": "DE KEUZE VAN DE GRENS",
+    "timeout": "De grens kiest voor je…"
+   },
+   "nr": 37
+  },
+  "40": {
+   "chapter": "Halte 6 · Station Negen",
+   "scene": "station",
+   "tag": "Douanehal. Hier krijgt u uw naam terug.",
+   "text": [
+    "Hendrika Aldewin heeft een register, een koperen weegschaal en de uitstraling van een vrouw die zich nog nooit heeft laten opjagen. Achter haar staat artikel zeven op een bord in gouden letters. Ze leest een naam van haar lijst voor, helder en zonder belangstelling. Het is de jouwe.",
+    "“Hier,” zegt Voss, voor je je mond open kunt doen. Hij legt het strookje van Ashby op haar lessenaar, halvemaantje boven, en voegt er met oprechte spijt aan toe: “Mevrouw, de persoon achter mij reist zonder naam, met een blanco kaartje. De klassieke methode. Het staat allemaal in mijn rapport.” De klerk kijkt je aan over haar bril. De hele rij ook."
+   ],
+   "choices": [
+    {
+     "text": "Als je roept dat het jouw naam is,",
+     "short": "Roep: hij is van mij",
+     "to": 37
+    },
+    {
+     "text": "Als je je kaartje met het halvemaantje naast zijn kniptang houdt,",
+     "short": "Vergelijk de halvemaantjes",
+     "to": 46
+    },
+    {
+     "text": "Als je door de stadspoort vertrekt,",
+     "short": "Loop naar buiten",
+     "to": 41
+    },
+    {
+     "text": "Als je de klerk om Pells lijst vraagt en de hoofden telt,",
+     "short": "Laat Pells lijst halen",
+     "to": 49,
+     "hidden": true,
+     "needs": {
+      "seen": [
+       15
+      ]
+     }
+    }
+   ],
+   "nr": 3
+  },
+  "41": {
+   "chapter": "Halte 6 · Station Negen",
+   "scene": "city",
+   "tag": "Negen. Inwoners: teruggekeerd.",
+   "text": [
+    "De stad Negen ruikt naar vers brood en natte kinderkopjes. Overal begroeten mensen elkaar bij hun echte naam, voorzichtig, als jassen waarvan ze vergeten waren dat ze die hadden. “Mevrouw Hallam!” “Meneer Eke, wel heb je ooit!” Een meisje zegt haar eigen naam tegen een etalageruit, twee keer, om te horen hoe hij klinkt.",
+    "Niemand begroet jou. Er is niets om je bij te begroeten. De zon is achter de pas gezakt, en boven de douanehal brandt nog één raam: de registerkamer, waar de lijn haar boeken bijhoudt. Ernaast loopt een regenpijp omhoog. Aan de overkant van de straat hangt een kaartje achter het raam van een pension: KAMERS. GEEN VRAGEN."
+   ],
+   "choices": [
+    {
+     "text": "Als je een kamer neemt en opnieuw begint als niemand,",
+     "short": "Neem een kamer",
+     "to": 43
+    },
+    {
+     "text": "Als je naar de registerkamer klimt,",
+     "short": "Klim naar de registerkamer",
+     "to": 44
+    }
+   ],
+   "nr": 17
+  },
+  "42": {
+   "chapter": "Halte 6 · Station Negen",
+   "scene": "station",
+   "tag": "Dhr. N. Ashby. Coupé 4.",
+   "text": [
+    "Je naam blijft een tel te lang in de hal hangen. Dan, vooraan in de rij: “Hier.” Voss legt een strookje op de lessenaar, dhr. N. Ashby, geknipt met een klein zilveren halvemaantje. De klerk schrijft, dept de inkt en schuift je naam naar hem toe als wisselgeld. Hij stopt hem in zijn jas zonder ernaar te kijken.",
+    "“Nog iets aan te geven, inspecteur?” “Eén koffer. Schrijfwaren.” Twee kruiers leunen erop, nog steeds buiten adem. Aldewin knikt en heft de stempel. Mirela, naast je, is opgehouden met kauwen. Boven gaat een deur open en weer dicht: de registerkamer."
+   ],
+   "choices": [
+    {
+     "text": "Als je de klerk vraagt zijn koffer te wegen,",
+     "short": "Vraag om een weging",
+     "to": 48,
+     "hidden": true,
+     "needs": {
+      "seen": [
+       11
+      ]
+     }
+    },
+    {
+     "text": "Als je hem volgt, de stad in,",
+     "short": "Volg hem naar buiten",
+     "to": 41
+    },
+    {
+     "text": "Als je ongezien naar boven glipt, naar de registerkamer,",
+     "short": "Glip naar boven",
+     "to": 44
+    }
+   ],
+   "nr": 5
+  },
+  "43": {
+   "chapter": "Een einde",
+   "scene": "city",
+   "tag": "Kamers. Geen vragen.",
+   "text": [
+    "Je neemt de kamer. De hospita vraagt niets, zoals beloofd, en ’s ochtends brengt ze je thee zonder te vragen hoe je die drinkt, want er is niemand aan wie ze het kan vragen. Je vindt werk: post sorteren die niemand komt ophalen. Je bent er erg goed in. Niemand bedankt je, want niemand weet precies wie hij moet bedanken.",
+    "Het is rustgevend, in Negen wonen zonder naam. Niemand kan je geld schuldig zijn, of geld van je tegoed hebben. Niemand schrijft. Winkeliers vergeten je halverwege een zin, vriendelijk. ’s Winters is het wat koud, dus je koopt een dikke jas, en helemaal niemand kan je vertellen dat hij je niet staat."
+   ],
+   "ending": {
+    "no": "XIII",
+    "title": "Niemand in het bijzonder",
+    "kind": "silver",
+    "epilogue": "Geen naam, geen schulden, geen brieven.",
+    "hint": "Weglopen is ook een manier van oversteken."
+   },
+   "nr": 27
+  },
+  "44": {
+   "chapter": "Halte 6 · Station Negen",
+   "scene": "tower",
+   "tag": "Register der Namen. Niet leunen.",
+   "text": [
+    "De registerkamer is klein, warm en ordelijk: een kachel, een kruk en een register zo groot als een deur, opengeslagen op een schuine lessenaar. Elke overtocht sinds het verdrag staat erin. Naam ingeleverd, strookje uitgegeven, afgehaald. De meeste regels zijn afgevinkt. Tussen de paar die dat niet zijn, in kleine bruine letters: [[ledger|E.M., overgestoken als iemand anders]], jaren geleden.",
+    "Het boek valt open op eenendertig jaar terug, de bladzijde zacht van het omslaan. GRELL, CASIMIR. Ingeleverd in Hollin. Strookje uitgegeven: A. VOSS. Afgehaald: niets. Uit de hal beneden klinkt de stempel, één keer, heel zuiver. De pen in de inktpot is nog nat."
+   ],
+   "choices": [
+    {
+     "text": "Als je je eigen naam in de kolom Afgehaald schrijft,",
+     "short": "Schrijf jezelf erin",
+     "to": 45
+    },
+    {
+     "text": "Als je het register naar beneden draagt, naar de klerk,",
+     "short": "Breng het register naar beneden",
+     "to": 47
+    }
+   ],
+   "nr": 12
+  },
+  "45": {
+   "chapter": "Een einde",
+   "scene": "tower",
+   "tag": "Afgehaald. Geparafeerd. Opgeborgen.",
+   "text": [
+    "Je doopt de pen in de inkt en schrijft je naam in de kolom Afgehaald, netjes, zoals je namen langs een kustlijn zet. De inkt pakt meteen. Het register gelooft je. Het gelooft je zo volledig dat je tegen de ochtend een regel erin bent: gelinieerd, afgevinkt en een beetje plat.",
+    "Hendrika Aldewin treft je aan de lessenaar aan en leest je met belangstelling. “Zo,” zegt ze. “Jij staat in elk geval te boek.” Ze neemt je aan als haar leerling. Je bent nauwkeurig, geduldig en goed met kolommen. Mensen komen naar de lessenaar voor hun naam, en jij geeft hem terug, en op sommige avonden zoek je jezelf op en ben je blij dat je er staat."
+   ],
+   "ending": {
+    "no": "XIV",
+    "title": "Te boek gesteld",
+    "kind": "strange",
+    "epilogue": "Je staat te boek. Alleen te boek.",
+    "hint": "Een register legt vast. Het geeft niets terug."
+   },
+   "nr": 35
+  },
+  "46": {
+   "chapter": "Een einde",
+   "scene": "station",
+   "tag": "In afwachting van onderzoek. Even geduld.",
+   "text": [
+    "Je houdt je kaartje omhoog. Het halvemaantje is aan één punt een beetje rafelig. Je vraagt beleefd of je de kniptang van de inspecteur mag zien, en de hele rij bestudeert ineens de eigen schoenen. Aldewin neemt de zilveren tang, knipt een halvemaantje in een papiertje en legt het naast het jouwe. Twee halvemaantjes. Eén tang. Dezelfde rafelige punt.",
+    "“Interessant,” zegt ze, en bij de douane is dat een heel lang woord. Ze houdt de naam voor jullie allebei achter, in afwachting van onderzoek, en verzoekt de inspecteur te wachten in een kamer met een goed slot. Je verlaat de hal als IN BEHANDELING, in violet gestempeld. Het is geen naam. Het is beter dan niemand, en het heeft toekomst."
+   ],
+   "ending": {
+    "no": "XV",
+    "title": "Een halve naam",
+    "kind": "silver",
+    "epilogue": "Teruggegeven: niets. Gehouden: niets. Veelbelovend.",
+    "hint": "Eén aanwijzing wijst een tang aan, geen dief."
+   },
+   "nr": 49
+  },
+  "47": {
+   "chapter": "Een einde",
+   "scene": "tower",
+   "tag": "Retour afzender. Voorzichtig behandelen.",
+   "text": [
+    "Het register weegt zoveel als een klein schaap en spreekt je de hele trap af tegen. Je legt het op de lessenaar van de klerk, open bij GRELL, CASIMIR. Aldewin leest de regel twee keer, laat dan twee agenten halen en, na even nadenken, een pot thee. De inspecteur wordt vastgehouden voor de brand in Harrow, heel beleefd, door mannen die hun excuses aanbieden.",
+    "Alleen zit je naam al in zijn jas, en zijn jas is met de rest van hem naar de rechter. Er zijn formulieren. Zes weken later komt hij per post terug, in een bruine envelop met RETOUR EIGENAAR erop, met een ezelsoor. Je strijkt hem op een lage stand. Hij past, grotendeels."
+   ],
+   "ending": {
+    "no": "XVI",
+    "title": "Per kerende post",
+    "kind": "silver",
+    "epilogue": "Hij kwam aan. Hij moest nog even gestreken.",
+    "hint": "Bewijs op de trap is trager dan bewijs aan de lessenaar."
+   },
+   "nr": 24
+  },
+  "48": {
+   "chapter": "Een einde",
+   "scene": "station",
+   "tag": "A. Voss. Schrijfwaren. 9 pond.",
+   "text": [
+    "“Artikel zeven,” zeg je. “Ik verzoek u de koffer van de inspecteur te wegen.” Niemand beweegt. Dan tillen twee kruiers hem op de koperen weegschaal, en Hendrika Aldewin schuift het gewicht langs de balk, en nog verder. Op het label staat negen pond. De balk komt tot rust bij negentig. Voss gaat op een bank zitten en biedt, voor één keer, niemand een pepermuntje aan.",
+    "Eenendertig jaar aan andere mensen weegt niet niks, en de strookjes van een naamdief zijn ongeldig. De klerk kent het verdrag. Ze geeft je naam terug over de lessenaar. “Hij past,” zegt ze. Dan maakt ze de koffer open en leest de andere voor aan de hal, de avond in. Mirela tornt haar voering los. Jij geeft haar het blanco kaartje, voor iemand die het nodig heeft."
+   ],
+   "ending": {
+    "no": "XVII",
+    "title": "Negentig pond schrijfwaren",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Aangegeven: één naam. Teruggegeven: tweeëndertig.",
+    "hint": "Sommige keuzes lijken alleen verkeerd tot ze gewogen zijn."
+   },
+   "nr": 29
+  },
+  "49": {
+   "chapter": "Een einde",
+   "scene": "tower",
+   "tag": "Negen namen. Acht hoofden. Eén coupé.",
+   "text": [
+    "De klerk stuurt een jongen om conducteur Pell, die binnenkomt met een lucht van kolen en wrok, de lijst in de hand. Negen namen. Hij telt hoofden. Acht. “Coupé 4,” leest hij. “Dhr. A. Voss, inspecteur. Dhr. N. Ashby.” Hij kijkt naar de ene heer die daar staat. “Ik vroeg het me al af.” Aldewin neemt iedereen mee naar boven, naar het register, en het valt open op eenendertig jaar terug.",
+    "Wie twee strookjes heeft, heeft er één gestolen, en het verdrag zegt duidelijk welk. Het strookje van Ashby is van jou, en de naam erbij ook; het register zegt in heldere inkt wie Voss was. De klerk neemt je blanco kaartje, stempelt het ONGEBRUIKT en legt het in een eigen la. “Het eerste,” zegt ze. “Ooit.”"
+   ],
+   "ending": {
+    "no": "XVIII",
+    "title": "Negen namen, acht hoofden",
+    "kind": "good",
+    "star": true,
+    "epilogue": "De rekensom stond al die tijd aan jouw kant.",
+    "hint": "Tel wat er voor je neus staat."
+   },
+   "nr": 31
+  }
+ }
+}

@@ -455,7 +455,7 @@
    "chapter": "De deur op de zeebodem",
    "scene": "seabed",
    "text": [
-    "Beneden houdt de trap op en welft de zee zich boven je als een koepel van donker glas. Je lantaarn vindt grijs zand, geribbeld als een pannendak, en dan de toren. Hij ligt op zijn zij als een omgevallen kaars, met zijn top de helling op, het donker in. Vlak bij de voet staat een deur op een kier. Hoog boven je luidt een belboei [[bellbuoy|in een toonsoort die niet bestaat]].",
+    "Beneden houdt de trap op en welft de zee zich boven je als een koepel van donker glas. Je lantaarn vindt grijs zand, geribbeld als een pannendak, en dan de toren. Hij staat scheef op de helling als een kaars die bijna omvalt, zijn lamp naar het donker gekanteld. Vlak bij de voet staat een deur op een kier. Hoog boven je luidt een belboei [[bellbuoy|in een toonsoort die niet bestaat]].",
     "Vlak achter het glas drijven kleine visjes voorbij. Het duurt even voor je ziet dat ze de vorm van letters hebben. Ze klonteren samen, spellen een half woord en verliezen hun belangstelling: LICH. WACH. NEL. Dan stuiven ze uiteen en proberen het opnieuw, als iemand die heel erg zijn best doet om op een naam te komen."
    ],
    "choices": [
@@ -692,7 +692,7 @@
    "chapter": "Binnen in de gezonken toren",
    "scene": "sunken",
    "text": [
-    "Binnen heeft de toren nog niet gehoord dat hij is omgevallen. De wenteltrap gaat omhoog, zoals altijd, en jij ook. Het water staat tot je knieën, dan tot je enkels, dan alleen nog in de kieren. Bij elke draai is de witkalk verser. Aan een spijker hangt een getijdentafel van 1826, dag voor dag afgestreept, tot vannacht. Boven je roffelt regen op glas.",
+    "Binnen heeft de toren nog niet gehoord dat hij is gezonken. De wenteltrap gaat omhoog, zoals altijd, en jij ook. Het water staat tot je knieën, dan tot je enkels, dan alleen nog in de kieren. Bij elke draai is de witkalk verser. Aan een spijker hangt een getijdentafel van 1826, dag voor dag afgestreept, tot vannacht. Boven je roffelt regen op glas.",
     "Halverwege zit een man in een wachtersjas te slapen tegen de muur, de pet over zijn ogen, alsof hij maar even is gaan zitten op weg naar iets belangrijks. Zijn laarzen zijn nat. Zijn handen zijn gekromd om niets, zoals je een klein vlammetje uit de wind houdt."
    ],
    "choices": [
@@ -839,7 +839,7 @@
    "ending": {
     "no": "XI",
     "title": "Een klein licht",
-    "kind": "good",
+    "kind": "silver",
     "epilogue": "Elke nacht om twee uur haalt de Marigold het. Bijna iedereen slaapt beter.",
     "hint": "Een geleende vlam is ook een vlam. Maar in wiens hand hoort hij?"
    },
@@ -1016,7 +1016,7 @@
    "ending": {
     "no": "XVI",
     "title": "De nieuwe wachter",
-    "kind": "strange",
+    "kind": "silver",
     "epilogue": "Het is vast werk, met een prachtig uitzicht.",
     "hint": "Het licht moet worden aangestoken door iemand die bij die nacht hoort."
    },

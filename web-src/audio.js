@@ -3,7 +3,7 @@
  *
  *   WaywardAudio.unlock()          call from a tap/click handler (safe to call on every tap)
  *   WaywardAudio.setScene(name)    ~2.5 s crossfade to a music preset (remembered until unlock)
- *   WaywardAudio.sfx(name, opts)   one-shot effect; 'ending' takes opts.kind = good|strange|bad
+ *   WaywardAudio.sfx(name, opts)   one-shot effect; 'ending' takes opts.kind = good|silver|strange|bad
  *   WaywardAudio.setMusic(on) / setSfx(on) / duck(on) / state()
  * Test hooks: _analyser, _ctx, _renderOffline(scene|null, seconds, [[time, sfx, opts], ...]).
  */
@@ -432,8 +432,16 @@
   };
   // whoosh: soft air sweeping across, for revealing a scene
   X.whoosh = function (O, t) { hiss(O, t, .75, .3, { f: 280, f2: 1500, f3: 450, q: 1.1, a: .45, pan: -.5, pan2: .5, wet: .3 }); };
-  // ending: good = warm IV-V-I major cadence; strange = lydian pad + whole-tone glass shimmer; bad = music box winding down in minor
+  // ending: good = warm IV-V-I major cadence; silver = minor iv to a quiet I (so close); strange = lydian pad + whole-tone glass shimmer; bad = music box winding down in minor
   X.ending = function (O, t, o) {
+    if (o.kind === 'silver') { // silver: almost the golden cadence — a minor iv that resolves to a quiet major I, one late chime
+      var soft = { g: .085, a: .14, r: .6, cut: 1800, sweep: 1, wet: .6 };
+      pad(O, t, [53, 56, 60, 65], .7, soft);
+      pad(O, t + .75, [48, 55, 60, 64], 1.5, { g: .09, a: .2, r: 1.6, cut: 2000, sweep: 1, wet: .65 });
+      [79, 76, 72].forEach(function (m, i) { ring(O, t + .8 + i * .22, mtof(m), .035, CEL, 1.8, { wet: .65, pan: (1 - i) * .3 }); });
+      ring(O, t + 1.7, mtof(84), .025, CHIME, 2.8, { wet: .75 });
+      return;
+    }
     if (o.kind === 'strange') {
       pad(O, t, [60, 64, 66, 71], 1.3, { type: 'sine', det: 0, g: .09, a: .5, r: 1.3, vib: [.7, 18], wet: .7 });
       [84, 88, 86, 90, 92, 94, 96].forEach(function (m, i) { ring(O, t + .1 + i * .16, mtof(m), .04, GLASS, 2.2, { wet: .7, pan: O.rr(-.7, .7), vib: [5, 20] }); });

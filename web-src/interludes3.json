@@ -1,0 +1,185 @@
+{
+ "1": {
+  "type": "tap",
+  "lines": {
+   "en": [
+    "Where your name should be, the ink is still wet.",
+    "It glistens in the frost like something just said."
+   ],
+   "nl": [
+    "Waar je naam hoort te staan, is de inkt nog nat.",
+    "Hij glimt in de vorst, als iets wat net is gezegd."
+   ]
+  },
+  "prompt": {
+   "en": "Touch the ink",
+   "nl": "Raak de inkt aan"
+  },
+  "done": {
+   "en": "It comes off on your thumb. Nothing else does.",
+   "nl": "Hij geeft af op je duim. Meer niet."
+  },
+  "x": 31,
+  "y": 38
+ },
+ "10": {
+  "type": "wipe",
+  "lines": {
+   "en": [
+    "Coal soot has settled on the compartment window.",
+    "Somewhere beyond it, Larchmere is going past."
+   ],
+   "nl": [
+    "Er ligt kolenroet op het coupéraam.",
+    "Ergens daarachter trekt Larixmeer voorbij."
+   ]
+  },
+  "prompt": {
+   "en": "Wipe the window",
+   "nl": "Veeg het raam schoon"
+  },
+  "done": {
+   "en": "Larch woods, frost, and your own face.",
+   "nl": "Lariksbossen, rijp, en je eigen gezicht."
+  }
+ },
+ "11": {
+  "type": "turn",
+  "lines": {
+   "en": [
+    "The trunk settles on the plate. The beam swings up.",
+    "Mirela nods at the brass weight. “Go on, then.”"
+   ],
+   "nl": [
+    "De koffer zakt op de schaal. De balk zwaait omhoog.",
+    "Mirela knikt naar het koperen gewicht. “Toe dan.”"
+   ]
+  },
+  "prompt": {
+   "en": "Turn the weight",
+   "nl": "Schuif het gewicht op"
+  },
+  "done": {
+   "en": "The beam steadies. Ninety.",
+   "nl": "De balk komt tot rust. Negentig."
+  },
+  "x": 57,
+  "y": 34
+ },
+ "15": {
+  "type": "trace",
+  "lines": {
+   "en": [
+    "Pell’s list is written in pencil, pressed hard.",
+    "Every name has a compartment beside it."
+   ],
+   "nl": [
+    "Pells lijst is met potlood geschreven, hard aangedrukt.",
+    "Achter elke naam staat een coupé."
+   ]
+  },
+  "prompt": {
+   "en": "Run down the list",
+   "nl": "Loop de lijst langs"
+  },
+  "done": {
+   "en": "Compartment 4. Two names, one berth.",
+   "nl": "Coupé 4. Twee namen, één bed."
+  },
+  "path": [
+   [
+    50,
+    28
+   ],
+   [
+    50,
+    36
+   ],
+   [
+    50,
+    44
+   ],
+   [
+    50,
+    52
+   ],
+   [
+    50,
+    60
+   ]
+  ]
+ },
+ "25": {
+  "type": "hold",
+  "lines": {
+   "en": [
+    "Gummed at one corner. Hardly sealed at all.",
+    "Behind the post office, the snow glare is fierce."
+   ],
+   "nl": [
+    "Aan één hoek dichtgeplakt. Nauwelijks verzegeld.",
+    "Achter het postkantoor verblindt de sneeuw je bijna."
+   ]
+  },
+  "prompt": {
+   "en": "Hold it to light",
+   "nl": "Houd hem tegen het licht"
+  },
+  "done": {
+   "en": "Dated yesterday, in a very steady hand.",
+   "nl": "Gedateerd op gisteren, in een heel vaste hand."
+  },
+  "x": 52,
+  "y": 40
+ },
+ "32": {
+  "type": "rope",
+  "lines": {
+   "en": [
+    "Her crates go down the bank on ropes.",
+    "The guard chalks each one. Then up they come."
+   ],
+   "nl": [
+    "Haar kisten gaan aan touwen de berm af.",
+    "De wachter zet op elke kist een krijtstreep. Dan moeten ze weer omhoog."
+   ]
+  },
+  "prompt": {
+   "en": "Haul the crate up",
+   "nl": "Hijs de kist op"
+  },
+  "done": {
+   "en": "A chalk tick. Unopened. Mirela nods, once.",
+   "nl": "Een krijtvinkje. Ongeopend. Mirela knikt, één keer."
+  },
+  "x": 66,
+  "y": 60,
+  "bell": [
+   66,
+   50
+  ]
+ },
+ "36": {
+  "type": "lantern",
+  "lines": {
+   "en": [
+    "Someone in the corridor tries the handle. Twice.",
+    "The door has one small, dark window."
+   ],
+   "nl": [
+    "Iemand in de gang probeert de klink. Twee keer.",
+    "De deur heeft één klein, donker raampje."
+   ]
+  },
+  "prompt": {
+   "en": "Raise the lantern",
+   "nl": "Hef de lantaarn"
+  },
+  "done": {
+   "en": "Only your own face. Rather pale.",
+   "nl": "Alleen je eigen gezicht. Nogal bleek."
+  },
+  "x": 80,
+  "y": 32
+ }
+}

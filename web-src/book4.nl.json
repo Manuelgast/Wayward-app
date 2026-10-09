@@ -1,0 +1,1217 @@
+{
+ "id": "ash-orchid",
+ "title": "As & Orchidee",
+ "series": "De Veyra-cyclus · Boek IV",
+ "imprint": "Een Wayward-uitgave",
+ "tagline": "Een eiland van veertig dagen oud. Een bloem die een huis waard is. Wie de kaart tekent, krijgt de rest.",
+ "warning": "Lees dit boek niet van voor naar achter. Aan het eind van elke bladzijde beslis jij wat er gebeurt. Sommige keuzes zetten iets op de kaart. Andere halen het eraf.",
+ "start": 1,
+ "scenes": {
+  "beach": {
+   "title": "Het zwarte strand bij aankomst",
+   "focus": "50% 55%"
+  },
+  "camp": {
+   "title": "De drie kampen",
+   "focus": "50% 55%"
+  },
+  "glass": {
+   "title": "Het glasstrand",
+   "focus": "50% 55%"
+  },
+  "field": {
+   "title": "Het orchideeënveld op warme as",
+   "focus": "50% 55%"
+  },
+  "vent": {
+   "title": "De stoomgaten",
+   "focus": "50% 55%"
+  },
+  "cliff": {
+   "title": "De zeeklif en de Jan-van-Gentrots",
+   "focus": "50% 55%"
+  },
+  "lagoon": {
+   "title": "De turquoise lagune",
+   "focus": "50% 55%"
+  },
+  "boat": {
+   "title": "De boten van Klein Sont",
+   "focus": "50% 55%"
+  },
+  "ship": {
+   "title": "Aan boord van de Geduld",
+   "focus": "50% 55%"
+  },
+  "tent": {
+   "title": "De tent van het Genootschap",
+   "focus": "50% 55%"
+  },
+  "crater": {
+   "title": "De kraterrand",
+   "focus": "50% 55%"
+  },
+  "tunnel": {
+   "title": "De lavatunnel",
+   "focus": "50% 55%"
+  },
+  "ashfall": {
+   "title": "Beving en asregen in de schemering",
+   "focus": "50% 55%"
+  },
+  "lastmorning": {
+   "title": "Het eiland op de laatste ochtend",
+   "focus": "50% 55%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Dag 1 · Aan land",
+   "scene": "beach",
+   "tag": "Dag 1. Wind zuidoost. As nog warm.",
+   "text": [
+    "Je bent een kist naar het zuiden gevolgd, en daar is hij: vier dragers van het Genootschap sjouwen hem een strand van zwart zand op, om beurten vloekend. De as is nog warm. De hitte trekt door je zolen omhoog, als van een fornuis dat iemand vergeten is. Veertig dagen geleden kookte hier de zee. Nu ligt er zeven mijl dampend eiland, en daarop groeit de asorchidee, bleek goud, één bloem een huis waard.",
+    "Niets heeft hier nog een naam. Langs de kust staan drie kampen, en alle drie willen ze een kaartenmaker, want wie de kaart in handen heeft, kan het eiland opeisen. Je veegt de zoutkorst van je wenkbrauwen en denkt na over je tarief."
+   ],
+   "choices": [
+    {
+     "text": "Als je de opdracht van het Genootschap aanneemt, vooruitbetaald,",
+     "short": "Neem de opdracht aan",
+     "to": 40
+    },
+    {
+     "text": "Als je naar de Geduld roeit en Carrows man om werk vraagt,",
+     "short": "Roei naar de Geduld",
+     "to": 18
+    },
+    {
+     "text": "Als je naar de boten van de vissers loopt, al nemen die niemand aan,",
+     "short": "Loop naar de boten",
+     "to": 37
+    }
+   ],
+   "nr": 1
+  },
+  "2": {
+   "chapter": "Een einde",
+   "scene": "boat",
+   "tag": "Eromheen gevist. Nooit erop.",
+   "text": [
+    "Marits boten nemen je mee op het avondtij, en je zet nooit meer een voet op het eiland. Klein Sont gaat niet aan land; het vist eromheen. Je leert makreel schoonmaken, een deining lezen, nat slapen en gezouten wakker worden. Niemand vraagt je om een kaart, en dat is heerlijk rustig.",
+    "Maar je bent kaartenmaker, en gewoontes zijn taai. Elke zomer teken je het eiland vanaf het dek opnieuw, met een potloodstompje: de zwarte kliffen, de gouden velden, de witte rots. Elke zomer past het een beetje makkelijker op de bladzijde. Je bewaart de tekeningen in een koektrommel en houdt jezelf voor dat het aan de afstand ligt."
+   ],
+   "ending": {
+    "no": "I",
+    "title": "Eromheen, niet erop",
+    "kind": "strange",
+    "epilogue": "Op je beste kaart staat geen land.",
+    "hint": "Wie het eiland met rust laat, laat het aan de anderen over."
+   },
+   "nr": 31
+  },
+  "3": {
+   "chapter": "Dag 3 · Rook aan de lunch",
+   "scene": "cliff",
+   "tag": "Rooks lunch: brood, ui, minachting.",
+   "text": [
+    "Je vindt Bastian Rook op het klifpad, gezeten op een hete steen, terwijl hij een ui eet als een appel. Hij biedt je niets aan, dan de korst van het brood, dan een blik die zegt dat je te veel hebt genomen. Beneden repareren zijn mannen boten. Dat doen ze al twee dagen. Hun manden staan opgestapeld naast de rompen, droog en leeg.",
+    "“Onkruid,” zegt Rook over de orchideeën, hardop, voor wie het horen wil. Je vraagt waarom zijn mannen niet plukken. Hij kauwt, bekijkt de zee en beantwoordt een andere vraag. “Zijne Heerlijkheid heeft in zijn hele leven nog nergens voet aan wal gezet.” Dan veegt hij zijn mes af aan zijn broek en staat op."
+   ],
+   "choices": [
+    {
+     "text": "Als je met hem teruggaat naar de Geduld,",
+     "short": "Ga met hem aan boord",
+     "to": 33
+    },
+    {
+     "text": "Als je ’s avonds naar de drie kampen afdaalt,",
+     "short": "Daal af naar de kampen",
+     "to": 8
+    },
+    {
+     "text": "Als je in je eentje naar de glinsterende kust afdaalt,",
+     "short": "Ga naar de glinsterende kust",
+     "to": 42
+    }
+   ],
+   "nr": 8
+  },
+  "4": {
+   "chapter": "Een einde",
+   "scene": "glass",
+   "tag": "Dik glas. Dun geluk.",
+   "text": [
+    "Je stapt op de dikste plaat, waar het glas zo donker is als een fornuisdeksel, en hurkt om beter te kijken. Het houdt. Het houdt nog even. Dan barst het langs de bruine wortels eronder, keurig, als een bord dat er al weken over nadenkt.",
+    "Je zakt tot je middel in warm, zwart ondiep water. Je tas gaat mee kopje-onder. Als je eruit waadt, zijn drie dagen tekenwerk blanco gespoeld, en Rook, die vanuit zijn boot toekijkt, ontslaat je nog voor je je hoed hebt uitgewrongen. Hij laat je wel meevaren naar het schip. Druipend, op het uiterste puntje van de doft."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "Glazen vloer",
+    "kind": "bad",
+    "epilogue": "Nat, ontslagen, levend.",
+    "hint": "Glas is maar zo sterk als wat eronder ligt."
+   },
+   "nr": 46
+  },
+  "5": {
+   "chapter": "Een einde",
+   "scene": "tent",
+   "tag": "Plaat 40. Met de hand ingekleurd. Alom bewonderd.",
+   "text": [
+    "Quill kust het ontwerp, en dan jou op beide wangen, in die volgorde. Tegen de winter is je kaart Plaat 40 in de Verhandelingen, naast haar orchidee, op ware grootte, met bladgoud op elk kroonblad. Het is het mooiste waar je ooit aan hebt meegewerkt. Dat vinden de recensenten ook.",
+    "Het voorjaar daarop gooien honderd schepen met een vergunning het anker uit voor het zwarte strand. In één seizoen plukken ze het eiland leeg, veld voor veld, volgens jouw kaart. Een voorjaar later vinden ze alleen nog een turquoise plek zee met wat goudspikkels eronder. In de catalogus van het Genootschap wordt de vermelding in een keurig handschrift aangevuld: vindplaats inmiddels onder water."
+   ],
+   "ending": {
+    "no": "III",
+    "title": "Sp. nov.",
+    "kind": "bad",
+    "epilogue": "Prachtig getekend. Nauwkeurig gezonken.",
+    "hint": "De vriendelijkste opdracht is niet altijd het vriendelijkste wat je kunt doen."
+   },
+   "nr": 33
+  },
+  "6": {
+   "chapter": "Een einde",
+   "scene": "lagoon",
+   "tag": "Eén bloem. Eén etiket. Eén lege regel.",
+   "text": [
+    "Quill slaat haar catalogus dicht over de geperste bloem en drukt hem tegen haar borst. “Voor de wetenschap,” zegt ze, heel zacht, en Jory roeit jullie terug terwijl de berg uitgesproken raakt. Ze publiceert nooit. Plaat 40 blijft een leeg vierkant. Het ene exemplaar bewaart ze in een glazen vitrine in haar studeerkamer, uit de zon, waar het niet kan verbleken.",
+    "Veertig jaar later blijft een jonge botanicus, die Quills nalatenschap catalogiseert, bij de vitrine staan. De bloem is nog altijd een beetje goud. Op het etiket staat in Quills ronde handschrift Orchis cinerea, met daaronder een lege regel. De jonge botanicus pakt een notitieboekje en vraagt aan iedereen in de zaal: waar?"
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "Eén exemplaar",
+    "kind": "strange",
+    "epilogue": "Eén bloem achter glas, die wacht tot iemand het vraagt.",
+    "hint": "Een exemplaar is een deur die iemand kan openen."
+   },
+   "nr": 7
+  },
+  "7": {
+   "chapter": "Dag 2 · De lagune",
+   "scene": "lagoon",
+   "tag": "Water zo helder dat het lijkt te liegen.",
+   "text": [
+    "Jory roeit en telt binnensmonds de slagen. De lagune is zo helder dat het lijkt te liegen: de schaduw van de boot glijdt gelijk op over de bodem mee. En onder het turquoise ligt een ouder eiland. Grijs, in terrassen als een boerderij op een helling, overal stoppelig van korte, afgesneden stengels. Op de top staan [[cairn|een steenhoop en een vlaggenstok zonder vlag]].",
+    "De zon bakt in je nek. Jory haalt zijn riemen binnen en kijkt met je mee naar beneden. “De grootmoeder van mijn grootmoeder viste op dat strand,” zegt hij, alsof hij het over het weer heeft. “Toen ging het onder. Dat doen ze altijd, daarna.” Hij pulkt het zout van zijn knokkels en begint weer te tellen."
+   ],
+   "choices": [
+    {
+     "text": "Als je aan land gaat op het glasstrand,",
+     "short": "Land op het glasstrand",
+     "to": 42
+    },
+    {
+     "text": "Als je Jory vraagt wie daar viste,",
+     "short": "Vraag wie daar viste",
+     "to": 41
+    },
+    {
+     "text": "Als je naar de vlaggenstok duikt,",
+     "short": "Duik naar de vlaggenstok",
+     "to": 34
+    }
+   ],
+   "nr": 43
+  },
+  "8": {
+   "chapter": "Dag 4 · Drie vuren",
+   "scene": "camp",
+   "tag": "Dag 4. Drie vuren. Niemand deelt.",
+   "text": [
+    "Avond, en drie vuren langs de kust, elk een tikje van de andere afgewend. Bij het Genootschap komen Quills verzamelaars verbrand en zingend binnen met twaalf bloemen, die ze als broden op een laken uitstallen. Bij Carrow verstellen mannen netten die niemand nodig heeft. Bij de boten ruikt Marits pan naar vis en peper.",
+    "Je loopt naar de aanlegplaats om water te halen en blijft staan. De platte steen waar je de eerste dag op stapte, ligt bij laagwater onder zee. Ernaast heeft Jory [[notch|een stok bij de aanlegplaats, één kerf per dag]] diep in de as gedreven. De kerf van vandaag is nat."
+   ],
+   "choices": [
+    {
+     "text": "Als je bij Quills lamp gaat zitten,",
+     "short": "Ga bij Quills lamp zitten",
+     "to": 13
+    },
+    {
+     "text": "Als je naar Marits boten roeit,",
+     "short": "Roei naar Marit",
+     "to": 41
+    },
+    {
+     "text": "Als je aan boord gaat van de Geduld,",
+     "short": "Ga aan boord",
+     "to": 33
+    }
+   ],
+   "nr": 32
+  },
+  "9": {
+   "chapter": "Dag 6 · Voorwaarden",
+   "scene": "ship",
+   "tag": "Rook in een schoon overhemd. Onheilspellend.",
+   "text": [
+    "Rook heeft een schoon overhemd aangetrokken, en dat verontrust je meer dan de vulkaan. Ongevraagd laat hij je het ruim zien: leeg, geveegd, het ruikt naar teer en verder niets. “Leeg,” zegt hij, luid, alsof hij je uitdaagt er iets van te zeggen. Dat doe je niet.",
+    "In zijn hut ligt zijn verslag aan Zijne Heerlijkheid, in zijn hoekige handschrift, af op één regel na: “Kaart: ______.” Hij legt de pen ernaast, schuift hem recht met één dikke vinger en schenkt je iets bruins in. Hij betaalt voor de kaart, zegt hij, hoe dan ook. De zon valt door de patrijspoort heet op je handrug."
+   ],
+   "choices": [
+    {
+     "text": "Als je hem de nauwkeurige kaart geeft; hij heeft ervoor betaald,",
+     "short": "Geef hem de kaart",
+     "to": 27
+    },
+    {
+     "text": "Als je de kaart in het stoomgat verbrandt, waar zijn mannen bij staan,",
+     "short": "Verbrand de kaart",
+     "to": 21
+    },
+    {
+     "text": "Als je met hem naar huis zeilt en de kaart aan niemand geeft,",
+     "short": "Zeil mee met Rook",
+     "to": 23
+    }
+   ],
+   "nr": 48
+  },
+  "10": {
+   "chapter": "Een einde",
+   "scene": "tunnel",
+   "tag": "Laag plafond. Steeds lager.",
+   "text": [
+    "Je zaagt door de eerste wortel, dan door de tweede, en de tunnel slaakt een lange zucht, als een man die een hutkoffer neerzet. As stroomt in een zacht grijs gordijn uit het dak. Dan komt het dak je zelf tegemoet, beetje bij beetje, beleefd, en het houdt niet meer op.",
+    "Het laatste stuk naar zee kruip je op je buik, lantaarn kwijt, ellebogen kapot, en grijs hoestend kom je de branding in. Je kaart is pap. Rook hoort het verhaal aan, kijkt naar de ingezakte grond boven de tunnel en laat je gaan zonder een woord, wat bij Rook zo ongeveer een toespraak is."
+   ],
+   "ending": {
+    "no": "V",
+    "title": "Laag plafond",
+    "kind": "bad",
+    "epilogue": "Jij kwam eruit. De tunnel niet.",
+    "hint": "Sommige wortels zijn dakbalken."
+   },
+   "nr": 35
+  },
+  "11": {
+   "chapter": "Een einde",
+   "scene": "lagoon",
+   "tag": "Vindplaats: onbekend. Kerf: droog.",
+   "text": [
+    "Quill vraagt Jory haar aan land te zetten. Op de warme zwarte helling boven het strand knielt ze, opent haar pers en geeft haar ene exemplaar met eigen handen terug aan de as; ze drukt het erin als een zaadje. Ze huilt een beetje en geeft de zwavel de schuld. Dan slaat ze haar catalogus open bij nr. 212 en schrijft achter “vindplaats”: onbekend.",
+    "Samen tekenen jullie voor het Genootschap een eerlijk ogende kaart van een rif waar niemand ooit aan land zou gaan. Ze stuurt de vergunningsbrief terug, met spijt, en met een koekje voor de klerk. Rook zeilt leeg naar huis, fluitend, als een man die vrijgesproken is. En bij de aanlegplaats is Jory’s volgende kerf droog."
+   ],
+   "ending": {
+    "no": "XVIII",
+    "title": "Vindplaats onbekend",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Gecatalogiseerd. Ongevonden.",
+    "hint": "Het beste bewijs is soms het bewijs dat je teruggeeft."
+   },
+   "nr": 2
+  },
+  "12": {
+   "chapter": "Dag 3 · De lavatunnel",
+   "scene": "tunnel",
+   "tag": "Eindelijk koel. Donker. Druppend.",
+   "text": [
+    "Tien stappen naar binnen laat de hitte je los als een hand. De lavatunnel is koel en druipnat, glad als de binnenkant van een fluit, en voor het eerst in drie dagen plakt je hemd niet meer. Je lantaarn vindt het plafond en blijft daar hangen: [[hanging|wortels die als tuigage van het dak hangen]], wit en strak, elke streng gespannen tegen de volgende. Ze houden het omhoog.",
+    "Verderop, onder het veld waar Carrows mannen hebben gesneden, hangen de wortels slap en bruin. Er sijpelt as doorheen in dunne straaltjes, tikkend op je hoed. Ergens voor je hoor je de zee. Ergens boven je: stemmen."
+   ],
+   "choices": [
+    {
+     "text": "Als je de tunnel volgt, omlaag naar zee,",
+     "short": "Volg de tunnel omlaag",
+     "to": 42
+    },
+    {
+     "text": "Als je door de hangende wortels snijdt om sneller op te schieten,",
+     "short": "Snijd door de wortels",
+     "to": 10
+    },
+    {
+     "text": "Als je door een gat in het dak naar de stemmen klimt,",
+     "short": "Klim naar de stemmen",
+     "to": 3
+    }
+   ],
+   "nr": 3
+  },
+  "13": {
+   "chapter": "Dag 4 · Plaat Veertig",
+   "scene": "tent",
+   "tag": "Quill heeft koekjes. Gevaarlijke vrouw.",
+   "text": [
+    "De tent van het Genootschap houdt de hitte vast zoals een brood de oven. Dr. Quill veegt koekkruimels op de vloer van as en rolt de drukproef van Plaat 40 voor de Verhandelingen uit: haar orchidee op ware grootte, elke gouden nerf gegraveerd, de bleke wortel netjes afgeknipt bij de marge. Het is het mooiste op het eiland dat niet groeit.",
+    "Ernaast staat een leeg vierkant, met potlood afgelijnd: “Een kaart van de vindplaats.” Ze tikt erop met een bemelde vinger. “Je ontwerp vanavond, ruw is prima, dan kan de graveur beginnen. Hij is verschrikkelijk snel. Hij heeft de kevers gedaan.” Ze schuift de koektrommel naar je toe. Buiten komen haar verzamelaars met volle manden het pad af, een tikje vals zingend."
+   ],
+   "choices": [
+    {
+     "text": "Als je doorwerkt en haar nog niets geeft,",
+     "short": "Werk door",
+     "to": 31
+    },
+    {
+     "text": "Als je haar vanavond het ontwerp geeft, zoals beloofd,",
+     "short": "Geef haar het ontwerp",
+     "to": 5
+    },
+    {
+     "text": "Als je naar de boten loopt om na te denken,",
+     "short": "Loop naar de boten",
+     "to": 41
+    }
+   ],
+   "nr": 36
+  },
+  "14": {
+   "chapter": "Dag 1 · Rooks getijdenboek",
+   "scene": "ship",
+   "tag": "Niet mijn boek. Ik lees het toch.",
+   "text": [
+    "Rooks laarzen gaan de kajuitstrap op, en de hut is van jou: koper, uien, een vlieg die over de kaart wandelt. Het getijdenboek is goedkoop karton, opgezwollen van het zout, in een hoekige hand die door drie bladzijden heen drukt. Twee kolommen. Links de bloemen die elke dag geplukt zijn; hij telt vanaf het dek de manden van het Genootschap. Rechts het water bij de Jan-van-Gentrots, in vingers.",
+    "Je slaat een bladzijde om, en nog een. [[tidebook|De twee kolommen stijgen samen]], tree voor tree, als twee mannen op één ladder. Elke bloem, een vingerbreed zee. Op de laatste bladzijde staan geen kolommen meer, alleen één woord, twee keer onderstreept: “Eenennegentig.” Boven je blijven zijn laarzen staan. Dan lopen ze weer verder."
+   ],
+   "choices": [
+    {
+     "text": "Als je het boek terugzet en bij hem tekent, zonder iets te zeggen,",
+     "short": "Teken en zwijg",
+     "to": 36
+    },
+    {
+     "text": "Als je Rook vraagt wat de getallen betekenen,",
+     "short": "Vraag het Rook",
+     "to": 3
+    },
+    {
+     "text": "Als je de getallen overschrijft en ermee naar de vissers roeit,",
+     "short": "Breng de getallen over",
+     "to": 41
+    }
+   ],
+   "nr": 18
+  },
+  "15": {
+   "chapter": "Een einde",
+   "scene": "boat",
+   "tag": "Kaart geleverd. Betaald in stoofpot.",
+   "text": [
+    "Je tekent hem opnieuw op Marits dek, met een potloodstompje en een natte duim: geen velden, geen paden, geen aanlegplaats. Alleen een lange ondiepte vol brekend water, met dieptecijfers eromheen en een notitie in de marge: Rif. Onreine grond. Wegblijven. Marit bekijkt hem een volle minuut, rolt hem dan op en stopt hem in het blik bij haar netlijsten. Dat is de hele plechtigheid.",
+    "Klein Sont houdt zijn water. Schepen die komen zoeken, vinden een rif op elke eerlijke kaart in de haven en keren om. Maar aan land, in een hete tent, perst dr. Quill één bloem plat, en ze heeft een heel goed geheugen voor kustlijnen."
+   ],
+   "ending": {
+    "no": "VI",
+    "title": "Een viskaart",
+    "kind": "silver",
+    "epilogue": "De ene kaart heeft het gered. Er komt er nog een.",
+    "hint": "Het eiland voor de zee verbergen is de helft van het werk."
+   },
+   "nr": 9
+  },
+  "16": {
+   "chapter": "Dag 7 · De berg spreekt",
+   "scene": "lastmorning",
+   "tag": "Dag 7. De berg schraapt zijn keel.",
+   "text": [
+    "Eerste licht, en het zwarte zand is bijna koel. Dan spreekt de berg: een dreun die je met je tanden hoort, een vuist van grijs die de roze lucht in stoot. Nieuwe as daalt schoon en fijn neer over de velden, het goud, je laarzen. In de baai licht de Geduld het anker, de ketting rammelend als een slecht geweten. Onder je voeten verzamelt de berg zich opnieuw.",
+    "Rook staat aan de waterlijn in zijn schone overhemd, grijs tot aan de schouders. Hij houdt je zijn verslag aan Zijne Heerlijkheid voor, en een pen. Het is af, ondertekend en drooggedept, op één regel na: “Kaart: ______.” “Nou,” zegt hij, zonder naar de berg te kijken. “Ik heb niet de hele dag. En zo te zien niemand.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je “verloren bij de uitbarsting; eiland zonder waarde” schrijft en tekent,",
+     "short": "Teken “zonder waarde”",
+     "to": 24
+    },
+    {
+     "text": "Als je Zijne Heerlijkheid een eerlijk verslag schrijft,",
+     "short": "Schrijf het eerlijk op",
+     "to": 27
+    },
+    {
+     "text": "Als je op het strand blijft om naar de berg te kijken,",
+     "short": "Kijk naar de berg",
+     "to": 39
+    }
+   ],
+   "moment": {
+    "line": "De berg haalt adem.",
+    "seconds": 10,
+    "default": 39,
+    "head": "Kies voordat de berg spreekt",
+    "sub": "Wacht je te lang, dan kiest het eiland voor je.",
+    "defaultLabel": "DE KEUZE VAN HET EILAND",
+    "timeout": "Het eiland kiest voor je…"
+   },
+   "nr": 27
+  },
+  "17": {
+   "chapter": "Een einde",
+   "scene": "beach",
+   "tag": "Kaap Jij. Tenminste goed gespeld.",
+   "text": [
+    "Dr. Quill is verrukt van de vraag. Natuurlijk worden er dingen naar kaartenmakers vernoemd, zegt ze; hoe moet iemand ze anders onthouden? Aan het eind van de week draagt de zuidkaap jouw naam in haar ronde handschrift, en tegen het voorjaar staat die gegraveerd in de Verhandelingen, goed gespeld, wat meer is dan de meeste mensen krijgen.",
+    "Het voorjaar daarop komen honderd schepen naar het zuiden met Plaat 40 opgevouwen in hun jas, en ze sturen allemaal op jou. Ze ronden je bij dageraad, ankeren in jouw luwte en roeien met manden aan land. Een kapitein schrijft je om je te bedanken voor de beschutting. Hij sluit een geperste orchidee bij, als souvenir."
+   ],
+   "ending": {
+    "no": "VII",
+    "title": "Kaap Jij",
+    "kind": "strange",
+    "epilogue": "Je bent nu een kaap. Schepen varen om je heen.",
+    "hint": "Op de kaart staan is iets anders dan de kaart tekenen."
+   },
+   "nr": 11
+  },
+  "18": {
+   "chapter": "Dag 1 · De Geduld",
+   "scene": "ship",
+   "tag": "Carrows schip. Overal koper. Zelfs het touw.",
+   "text": [
+    "De Geduld ruikt naar teer, koperpoets en uien. Bastian Rook is al onbeleefd voor je je eerste zin af hebt, en tijdens de tweede nog eens. Hij wil de velden en de kortste weg erheen, eenvoudig getekend, “geen zeemeerminnen”. Hij eet een ui terwijl hij praat en noemt drie keer de prijs van een bloem, elke keer hoger.",
+    "Zijn kaartentafel ligt bezaaid met papieren, verzwaard met een marlpriem en een theekopje. Daaronder ligt [[emptysea|een oude kaart waarop de zee hier leeg is getekend]], geparafeerd E.M., met potlood in de marge: “en dat was ze ook.” Ernaast een gehavend getijdenboek, dichtgebonden met touw. Aan dek klinkt een bel, en Rook gaat vloekend naar boven."
+   ],
+   "choices": [
+    {
+     "text": "Als je voor Carrow tekent en met Rook het zeeklif op klimt,",
+     "short": "Teken en klim met Rook",
+     "to": 36
+    },
+    {
+     "text": "Als je zijn getijdenboek leest terwijl hij aan dek is,",
+     "short": "Lees het getijdenboek",
+     "to": 14
+    },
+    {
+     "text": "Als je aanbiedt het Genootschap voor te zijn bij het grootste veld,",
+     "short": "Wees het Genootschap voor",
+     "to": 19
+    }
+   ],
+   "nr": 14
+  },
+  "19": {
+   "chapter": "Dag 2 · Carrows sikkels",
+   "scene": "field",
+   "tag": "Dag 2. Heet. Elf mannen, elf sikkels.",
+   "text": [
+    "Carrows mannen gaan op een drafje de helling op, manden op hun rug en [[sickle|sikkels gewikkeld in servetten van Carrow]], met familiewapen en al, zodat de bladen niet rammelen. Vanaf de boten brult Rook er drie terug om naden te breeuwen. Ze gaan, met het gezicht van bedrogen mannen. De as is heet door je zolen heen en je zweet smaakt naar zwavel.",
+    "Waar de andere acht beginnen te snijden, zucht de as en zakt onder hen in, een zacht geluid, alsof iemand gaat zitten. Aan de rand van het veld rolt een rotsblok zo groot als een kar een meter naar beneden en blijft dan liggen, alsof het zich heeft bedacht. De voorman kijkt naar jou om. Jij bent degene met de kaart."
+   ],
+   "choices": [
+    {
+     "text": "Als je ze naar het grootste veld brengt, zoals afgesproken,",
+     "short": "Breng ze naar het veld",
+     "to": 26
+    },
+    {
+     "text": "Als je ongezien het zeeklif op glipt,",
+     "short": "Glip weg naar het klif",
+     "to": 36
+    },
+    {
+     "text": "Als je de glijdende as volgt, omlaag naar de kust,",
+     "short": "Volg de glijdende as",
+     "to": 42
+    }
+   ],
+   "nr": 22
+  },
+  "20": {
+   "chapter": "Dag 2 · Het orchideeënveld",
+   "scene": "field",
+   "tag": "Warme as. Overal goud. Ruikt naar regen.",
+   "text": [
+    "De hitte komt door je zolen omhoog, en het goud loopt door tot aan de horizon. Dr. Quill knielt, het puntje van haar tong tussen haar tanden, en snijdt één bloem af op [[press|een vloeiblad dat ruikt naar regen op een heet fornuis]]. Ze laat het deksel van de pers zakken zoals je een wieg dichtdoet. “Hou dat dicht. Leun erop. Laat het niet ademen.”",
+    "Onder je voeten zucht de as en zakt in. De afgescheurde wortel kwam een hand diep mee omhoog, wit en draderig, en daaronder is de as zo los als meel: hij loopt door je vingers en blijft lopen. Quill merkt het niet. Ze is roze van geluk, schrijft al aan het etiket en zet er al haar eigen naam op."
+   ],
+   "choices": [
+    {
+     "text": "Als je stiekem een bloem voor jezelf afsnijdt,",
+     "short": "Snijd er een voor jezelf",
+     "to": 35
+    },
+    {
+     "text": "Als je zorgvuldig elk veld opmeet voor haar kaart,",
+     "short": "Meet elk veld op",
+     "to": 44
+    },
+    {
+     "text": "Als je met haar thermometer naar de stoomgaten gaat,",
+     "short": "Neem haar thermometer mee",
+     "to": 30
+    }
+   ],
+   "nr": 34
+  },
+  "21": {
+   "chapter": "Dag 6 · Het stoomgat",
+   "scene": "vent",
+   "tag": "Papier brandt snel in zwavel.",
+   "text": [
+    "Het grote stoomgat boven de aanlegplaats ademt geel, en elk kamp op het eiland kan je erboven zien staan. Je houdt zes dagen werk op armlengte. Het krult op aan één hoek, wordt bruin, krijgt blaren en gaat in één adem op: velden, paden, bronnen, de kaap, de zorgvuldige kleine schaalstok. De as ervan zeilt weg naar zee.",
+    "Beneden op het strand brult Rook, zodat zijn mannen het goed horen: loon, ondergang, idioten, zijn armen draaiend als een windmolen. Dan komt dr. Quill het pad op rennen, ziet de zwarte vlokken en gaat hard op de as zitten. Een tijdlang zegt ze helemaal niets. “Maar je weet het nog,” zegt ze. “Toch?”"
+   ],
+   "choices": [
+    {
+     "text": "Als je bij het eerste licht met Rook uitvaart,",
+     "short": "Vaar met Rook mee",
+     "to": 16
+    },
+    {
+     "text": "Als je je door dr. Quill laat inhuren om hem opnieuw te tekenen, uit je hoofd,",
+     "short": "Teken opnieuw voor Quill",
+     "to": 38
+    }
+   ],
+   "nr": 10
+  },
+  "22": {
+   "chapter": "Dag 1 · De kist",
+   "scene": "tent",
+   "tag": "De kist. Eindelijk. Onbeschoft van me.",
+   "text": [
+    "Quills voetstappen sterven weg in de richting van de inkt. De kist die je naar het zuiden bent gevolgd, staat bij de tentpaal en ruikt nog naar as en bloemen. Het deksel gaat open met een piep die je in je vullingen voelt. Onder het stro: gedrukte etiketten bij duizenden, honderd lege verzendkokers en een envelop, verzegeld met de groene was van het Genootschap, zacht geworden in de hitte.",
+    "Het is een brief van de Raad. Zodra dr. Quills kaart verschijnt, staat er, verkoopt het Genootschap [[licence|één verzamelvergunning per schip]]; vierennegentig zijn al gereserveerd, aanbetaling voldaan. De brief bedankt haar hartelijk, drie keer. Hij is dankbaar, charmant, prachtig geschreven, en gaat helemaal over geld."
+   ],
+   "choices": [
+    {
+     "text": "Als je het deksel terugdoet en toch tekent,",
+     "short": "Teken toch",
+     "to": 20
+    },
+    {
+     "text": "Als je de brief naar de Geduld brengt,",
+     "short": "Breng hem naar de Geduld",
+     "to": 18
+    },
+    {
+     "text": "Als je de brief liever naar de vissers brengt,",
+     "short": "Breng hem naar de vissers",
+     "to": 45
+    }
+   ],
+   "nr": 45
+  },
+  "23": {
+   "chapter": "Een einde",
+   "scene": "ship",
+   "tag": "Naar huis. Ruim leeg. Diner op zijn kosten.",
+   "text": [
+    "Je zeilt naar huis op de Geduld, met niets in het ruim dan ballast en Rooks uien. Een week lang is hij vreselijk gezelschap. Dan, in de eerste haven, trakteert hij je zonder een woord van uitleg op een diner: karbonades, bier en een pudding die volgens hem voor jou is. Hij zegt geen dank je. Hij bestelt een tweede pudding voor je.",
+    "In het voorjaar komen de Verhandelingen. Dr. Quill heeft gepubliceerd op basis van haar eigen schetsen: mooi, een beetje mis in de baaien, maar goed genoeg voor een schip. Plaat 40 is werkelijk prachtig. Je kijkt er lang naar, en dan leg je hem omgekeerd op tafel."
+   ],
+   "ending": {
+    "no": "VIII",
+    "title": "Met lege handen",
+    "kind": "silver",
+    "epilogue": "Jij liet het met rust. Een ander niet.",
+    "hint": "Weggaan is eerlijk. Het is niet genoeg."
+   },
+   "nr": 39
+  },
+  "24": {
+   "chapter": "Een einde",
+   "scene": "lastmorning",
+   "tag": "Getekend. Drooggedept. Volkomen onwaar.",
+   "text": [
+    "Je schrijft het in je mooiste handschrift: verloren bij de uitbarsting; eiland zonder waarde. Rook leest het, en heel even doet zijn gezicht iets ingewikkelds. Dan brult hij, voor elke man op de boten, dat je een ramp en een bedrieger bent en nooit meer werk zult vinden. Hij zeilt leeg naar huis, geeft luidkeels jou de schuld en lijdt geen greintje gezichtsverlies.",
+    "Zijne Heerlijkheid houdt je loon in en is het eiland tegen dinsdag vergeten. De uitbarsting vouwt de kust in nieuwe vormen. In de herfst schrijft dr. Quill met de vraag of je hem opnieuw wilt tekenen. Je antwoordt: “Welk eiland?” Tegen die tijd komen er gouden puntjes op door de nieuwe as, en vissen Marits boten eromheen."
+   ],
+   "ending": {
+    "no": "XIX",
+    "title": "Niets van waarde",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Tot de laatste cent betaald: niets.",
+    "hint": "Soms is de nauwkeurigste kaart de kaart die je niet aflevert."
+   },
+   "nr": 24
+  },
+  "25": {
+   "chapter": "Dag 5 · De persen",
+   "scene": "ashfall",
+   "tag": "Persen wegen meer dan botanici.",
+   "text": [
+    "Je sleept de persen een voor een uit de inzakkende tent, de lucht in, die de kleur van potloodgrafiet heeft. Ze zijn van eiken en ijzer en wegen meer dan Quill zelf, iets wat zij vanaf het andere eind van elke pers bestrijdt. Achter je vouwt het doek zich met een lange grijze zucht dubbel. Als de laatste pers vrij is, omhelst Quill jou, en daarna elke pers, op volgorde van leeftijd.",
+    "Haar enige exemplaar ligt veilig tussen de vloeibladen. Haar catalogus ook; die drukt ze tegen haar borst als een baby die uit een brand is gedragen. Hogerop, waar de mannen van Carrow sneden, is het veld verdwenen: een grijze kuil waar goud was, die nog steeds glijdt, zachtjes, alsof hij zich geneert."
+   ],
+   "choices": [
+    {
+     "text": "Als je bij het eerste licht naar de kraterrand klimt,",
+     "short": "Klim naar de rand",
+     "to": 32
+    },
+    {
+     "text": "Als je bij Quill blijft in wat er van haar tent over is,",
+     "short": "Blijf bij Quill",
+     "to": 43
+    }
+   ],
+   "nr": 29
+  },
+  "26": {
+   "chapter": "Een einde",
+   "scene": "field",
+   "tag": "Volle manden. Gezang. Grond schraapt zijn keel.",
+   "text": [
+    "Je brengt ze naar het grootste veld, want daarvoor ben je ingehuurd, en het is een prachtig veld: goud tot aan de horizon, zoemend van de hitte. Elf sikkels gaan erin, op wandeltempo. Bij zonsondergang is de helling kale grijze as, liggen de manden hoog opgetast en zingen de mannen van Carrow op een manier die doet vermoeden dat de rum met de manden mee naar boven is gekomen.",
+    "’s Nachts geeft de grond een lang, beleefd kuchje. ’s Ochtends is de landingsplaats in zee gegleden, met twee boten van Carrow erbij, touw en al. Iedereen zwemt. Rook staat op wat er van het strand over is, kijkt naar de volle manden en zegt helemaal niets, en dat is erger."
+   ],
+   "ending": {
+    "no": "IX",
+    "title": "Vol ruim",
+    "kind": "bad",
+    "epilogue": "Het ruim was vol. Even later de landingsplaats ook.",
+    "hint": "Vraag je af wat het grootste veld overeind houdt."
+   },
+   "nr": 49
+  },
+  "27": {
+   "chapter": "Een einde",
+   "scene": "ship",
+   "tag": "Tot op de cent betaald. Niet bedankt.",
+   "text": [
+    "Hij verdwijnt in de documententas van Rook: elk veld, elk pad, elke bron, tot op de meter nauwkeurig. Rook betaalt je tot op de cent en bedankt je niet. De hele weg naar huis staat hij op de achtersteven en kijkt hoe het eiland kleiner wordt, zoals een man een hond nakijkt die hij heeft verkocht.",
+    "Heer Carrow, die nog nooit ergens aan land is gegaan, leest jouw eerlijkheid zoals hij alles leest: als startsein. In het voorjaar stuurt hij twintig schepen, met in elke kaartenkamer een kopie van jouw kaart. Binnen een jaar is er nergens meer plek om aan land te gaan. Het origineel hangt prachtig ingelijst in de lange galerij van Zijne Heerlijkheid, en is nu de enige plek waar het eiland nog te vinden is."
+   ],
+   "ending": {
+    "no": "X",
+    "title": "De kaart van Zijne Heerlijkheid",
+    "kind": "bad",
+    "epilogue": "Zijne Heerlijkheid ging nooit aan land. Dat hoefde ook niet.",
+    "hint": "Een eerlijke kaart in de verkeerde handen is een bevel."
+   },
+   "nr": 15
+  },
+  "28": {
+   "chapter": "Dag 7 · Het verdronken eiland",
+   "scene": "lagoon",
+   "tag": "Dag 7. Quill stil. Water helder.",
+   "text": [
+    "Jory roeit jou en dr. Quill bij het eerste licht de lagune op en telt binnensmonds zijn slagen. Achter je spreekt de berg: een dreun die je in je kiezen voelt, dan een zacht gesis van as over het water. Quill draait zich niet om. Ze kijkt naar beneden.",
+    "Het oudere eiland ligt onder de boot, zo dichtbij dat je het met een riem kunt aanraken: grijze terrassen, de steenman, de kale paal, en de stengels, duizenden, elk glad afgesneden. Op haar schoot liggen die ene geperste bloem, nog vaag geurend naar regen op een hete kachel, en de catalogus, open bij nr. 212. Haar potlood hangt boven “vindplaats”. Sinds de kust heeft ze geen woord gezegd."
+   ],
+   "choices": [
+    {
+     "text": "Als je haar vraagt haar enige exemplaar terug te geven aan de as,",
+     "short": "Vraag het terug te geven",
+     "to": 11
+    },
+    {
+     "text": "Als je haar dat ene exemplaar laat houden, voor de wetenschap,",
+     "short": "Laat haar het houden",
+     "to": 6
+    }
+   ],
+   "moment": {
+    "line": "Het tij keert onder de boot.",
+    "seconds": 10,
+    "default": 6,
+    "head": "Kies voordat het tij keert",
+    "sub": "Wacht je te lang, dan kiest het eiland voor je.",
+    "defaultLabel": "DE KEUZE VAN HET EILAND",
+    "timeout": "Het eiland kiest voor je…"
+   },
+   "nr": 41
+  },
+  "29": {
+   "chapter": "Een einde",
+   "scene": "ashfall",
+   "tag": "Goed zeildoek. Verkeerd weer.",
+   "text": [
+    "Het doek van het Genootschap is goed doek, gewast en gestikt door de eigen zeilmaker van het Genootschap en gegarandeerd tegen weer en wind. Tegen bergen heeft niemand het gegarandeerd. Je zit eronder met Quills verzamelaars en een trommel koekjes terwijl de as op het dak sist, eerst zacht, dan zwaarder, dan met het geduldige gewicht van een besluit dat wordt genomen.",
+    "Het doek houdt het, tot het het niet meer houdt. Het komt langzaam omlaag, bijna vriendelijk, en de wereld wordt warm en grijs en stil. Bij dageraad vindt Jory de tent terug aan de nokpaal en graven Marits mannen je uit: hoestend, levend en zeer geïnteresseerd in ontbijt. Je kaart ligt ergens onder een meter warme as. Daar ligt hij nog steeds."
+   ],
+   "ending": {
+    "no": "XI",
+    "title": "Onder zeildoek",
+    "kind": "bad",
+    "epilogue": "Jij wachtte. De as niet.",
+    "hint": "Beweegt het eiland, beweeg dan ook."
+   },
+   "nr": 19
+  },
+  "30": {
+   "chapter": "Dag 3 · De stoomgaten",
+   "scene": "vent",
+   "tag": "Heet genoeg voor thee. Geprobeerd.",
+   "text": [
+    "Stoom en gele korst, en een geur als van een afgestreken lucifer die is blijven mokken. De hitte komt door je zolen omhoog, dan door je sokken, dan persoonlijk. Je zet je ketel op een spleet; na vier minuten kookt hij, en de thee smaakt naar eieren. Je thermometer gaat tot tweehonderd en heeft dan geen cijfers meer.",
+    "De stoomgaten die overeind blijven, dragen elk [[ring|een ring van orchideeën rond de rand]], gouden kopjes die knikken in de stoom. Eén heeft geen ring. Dat is in zichzelf ingezakt, een put vol sissend grijs, met randen die nog afbrokkelen terwijl je kijkt. Een eindje verderop opent zich een lavatunnel in de helling, die koele lucht uitademt als een kelderdeur."
+   ],
+   "choices": [
+    {
+     "text": "Als je de lavatunnel in gaat,",
+     "short": "Ga de lavatunnel in",
+     "to": 12
+    },
+    {
+     "text": "Als je de stoom volgt, omlaag naar de glinsterende kust,",
+     "short": "Volg de stoom omlaag",
+     "to": 42
+    },
+    {
+     "text": "Als je je metingen mee terugneemt naar het kamp,",
+     "short": "Neem de metingen mee",
+     "to": 8
+    }
+   ],
+   "nr": 44
+  },
+  "31": {
+   "chapter": "Dag 5 · Asregen",
+   "scene": "ashfall",
+   "tag": "Dag 5. Grond beweegt. Hemel valt, langzaam.",
+   "text": [
+    "Waar je de avond ook wilde doorbrengen, het eiland heeft andere plannen. In de schemering huivert het als een paard dat vliegen van zich afschudt. Dan begint de hemel naar beneden te komen: warme as, zacht als meel, dan dicht als sneeuw, op je schouders, je wenkbrauwen, de binnenkant van je kraag. Elke lamp in de drie kampen wordt een kleine bruine maan.",
+    "De tent van Quill zakt door boven haar persen, de nokpaal buigt, en binnen roept iemand om hulp op een toon die daar te beleefd voor is. Het grote doek van het Genootschap, verder naar beneden, ziet er stevig en droog uit. Hogerop tekent het pad naar de kraterrand zich nog af als een donkerder streep door het grijs. Net."
+   ],
+   "choices": [
+    {
+     "text": "Als je naar de kraterrand klimt zolang je het pad nog kunt zien,",
+     "short": "Klim naar de rand",
+     "to": 32
+    },
+    {
+     "text": "Als je de tent weer in gaat voor de persen van Quill,",
+     "short": "Red de persen",
+     "to": 25
+    },
+    {
+     "text": "Als je onder het doek van het Genootschap schuilt tot het voorbij is,",
+     "short": "Schuil onder het doek",
+     "to": 29
+    }
+   ],
+   "moment": {
+    "line": "De as staat tot over je laarzen.",
+    "seconds": 10,
+    "default": 29,
+    "head": "Kies voordat het pad verdwenen is",
+    "sub": "Wacht je te lang, dan kiest het eiland voor je.",
+    "defaultLabel": "DE KEUZE VAN HET EILAND",
+    "timeout": "Het eiland kiest voor je…"
+   },
+   "nr": 12
+  },
+  "32": {
+   "chapter": "Dag 6 · De kraterrand",
+   "scene": "crater",
+   "tag": "Dag 6. Heel het eiland beneden. Kleiner.",
+   "text": [
+    "De rand is een messcherpe kam van knerpende sintels, en de hitte komt door je laarzen omhoog als van een kachelplaat. Beneden ligt het hele eiland, grijs gewassen door de as van gisteravond, met goud dat doorbreekt waar de orchideeën de as van zich af hebben geschud. Je rolt je schets van dag 2 uit en houdt hem tegen het uitzicht.",
+    "Het is niet dezelfde kust. De zuidkaap is korter. De lagune is breder. De platte steen waar je aan land ging is weg, en het pad ernaartoe ook. Ver beneden zwaaien twee figuren naar je, elk aan een kant van het strand: Rook met zijn hoed, Quill met haar hele arm. Ze willen allebei vandaag de kaart."
+   ],
+   "choices": [
+    {
+     "text": "Als je de kaart naar Rook brengt,",
+     "short": "Breng hem naar Rook",
+     "to": 9
+    },
+    {
+     "text": "Als je de kaart naar Quill brengt,",
+     "short": "Breng hem naar Quill",
+     "to": 43
+    },
+    {
+     "text": "Als je hierboven blijft om te zien wat de berg doet,",
+     "short": "Blijf en kijk",
+     "to": 39
+    }
+   ],
+   "nr": 23
+  },
+  "33": {
+   "chapter": "Dag 4 · Zijne Heerlijkheid schrijft",
+   "scene": "ship",
+   "tag": "Postkotter. Eén brief. Zwaar papier.",
+   "text": [
+    "Om twaalf uur komt de postkotter langszij, reikt één brief aan op papier zo zwaar dat hij neerkomt als een bord, en vaart weg zonder op antwoord te wachten. Heer Carrow heeft een groot handschrift dat voorover helt. Breng bloemen, staat er, of kom niet terug; [[letter|en breng hoe dan ook de kaart mee]].",
+    "Rook leest hem twee keer. Dan vouwt hij hem, met scherpe vouwen, tot een bootje en laat het van de achtersteven varen, waar het een tijdje met grote waardigheid op de deining danst voor het zinkt. Hij kijkt het helemaal na. Dan draait hij zich naar je om, veegt zijn handen af aan zijn broek en vraagt wat je rekent voor de route naar het grootste veld."
+   ],
+   "choices": [
+    {
+     "text": "Als je aan boord blijft en de avond afwacht,",
+     "short": "Wacht de avond af",
+     "to": 31
+    },
+    {
+     "text": "Als je de route naar het grootste veld voor hem tekent,",
+     "short": "Teken hem de route",
+     "to": 26
+    },
+    {
+     "text": "Als je naar de vissers roeit,",
+     "short": "Roei naar de vissers",
+     "to": 41
+    }
+   ],
+   "nr": 21
+  },
+  "34": {
+   "chapter": "Een einde",
+   "scene": "lagoon",
+   "tag": "Paal dieper dan hij lijkt. Genoteerd.",
+   "text": [
+    "Je gaat overboord op een ademteug waar je trots op bent. Het water is warm, dan koel, dan koud, en de vlaggenmast, die een armlengte diep leek, schuift beleefd steeds verder weg. Grijze terrassen glijden voorbij, elke trede vol stoppels van glad afgesneden stengels. Je oren protesteren. Je notitieboek glipt uit je hemd en draait langzaam omlaag naar de steenman, de bladzijden waaierend.",
+    "Jory sleurt je aan je kraag omhoog en telt hardop hoe vaak je hoest: elf keer. Vanuit de boot zie je het notitieboek nog liggen, opengeslagen op de oude top naast de paal, drie dagen werk dat stilletjes blanco wordt. Niemand stelt een tweede poging voor."
+   ],
+   "ending": {
+    "no": "XII",
+    "title": "Diep water",
+    "kind": "bad",
+    "epilogue": "Het verdronken eiland houdt dingen bij zich.",
+    "hint": "Bekijk het oude eiland. Bezoek het niet."
+   },
+   "nr": 5
+  },
+  "35": {
+   "chapter": "Dag 2 · Eén voor jou",
+   "scene": "field",
+   "tag": "Van mij. Naar verluidt.",
+   "text": [
+    "Je orchidee reist mee in je blikken trommeltje, warm als vers brood, geurend naar regen op een hete kachel. Niemand heeft het gezien. Je weet bijna zeker dat niemand het heeft gezien. Als je erop ademt, trekt de afgescheurde wortel samen, een dunne witte draad die rondtast naar iets wat er niet meer is.",
+    "Waar je hem hebt afgesneden, zit een kuiltje in de as zo groot als een theekopje. ’s Middags zag je het al. Tegen de avond is het dieper, en breder, en is er een vage lijn uit gekropen, heuvelaf naar zee, langs de weg die de wortel ooit liep. Je legt een steentje op de rand, voor de zekerheid. Het steentje rolt erin."
+   ],
+   "choices": [
+    {
+     "text": "Als je hem in leven houdt in een blik zoet water,",
+     "short": "Houd hem in leven",
+     "to": 48
+    },
+    {
+     "text": "Als je de lijn van de afgescheurde wortel volgt naar de kust,",
+     "short": "Volg de lijn omlaag",
+     "to": 42
+    },
+    {
+     "text": "Als je hem laat zien aan de man van Carrow,",
+     "short": "Laat hem Carrows man zien",
+     "to": 3
+    }
+   ],
+   "nr": 20
+  },
+  "36": {
+   "chapter": "Dag 2 · De Jan-van-Gentrots",
+   "scene": "cliff",
+   "tag": "Vogels. Veel meningen. Allemaal luid.",
+   "text": [
+    "Het klifpad eindigt in wind, guano en duizend jan-van-genten met duizend meningen. Van bovenaf zie je het eiland in zijn geheel: zwart, met goud bespikkeld, dampend uit de naden, de lagune een turquoise blauwe plek op zijn flank. Het is het uitzicht waarvoor elke kaartenmaker klimt. Rook staat er met zijn rug naartoe en eet een ui.",
+    "Hij wil één ding getekend hebben: de witte rots beneden, waar de deining breekt, en de [[gannet|krijtstrepen op de Jan-van-Gentrots]] die erlangs omhoogklimmen, één per dag, elke een vinger hoger dan de vorige. “Teken de rots,” zegt hij. “Bloemen kunnen wachten.” Zijn mannen hebben manden mee naar boven genomen. Niet één van hen heeft iets geplukt."
+   ],
+   "choices": [
+    {
+     "text": "Als je naar de dampende stoomgaten gaat om ze op te meten,",
+     "short": "Meet de stoomgaten",
+     "to": 30
+    },
+    {
+     "text": "Als je hem vraagt waarom een rots,",
+     "short": "Vraag waarom een rots",
+     "to": 3
+    },
+    {
+     "text": "Als je afdaalt naar de glinsterende kust in het zuiden,",
+     "short": "Daal af naar het zuiden",
+     "to": 42
+    }
+   ],
+   "nr": 30
+  },
+  "37": {
+   "chapter": "Dag 1 · De boten van Klein Sont",
+   "scene": "boat",
+   "tag": "Vissoep. Geen vragen. Mooi zo.",
+   "text": [
+    "De boten van Klein Sont liggen een kabellengte uit het zwarte strand voor anker, geteerd, gelapt en diep in het water van de netten. Marit Oyelaran geeft je een kom vissoep voordat je hebt gezegd wat je wilt, en wat blijkt: dat is de soep. Ze betaalt je niet. Niemand hier zoekt personeel; dat zegt ze met haar kin.",
+    "Haar boten visten hier al toen het nog gewoon water was. Nu ankeren ze voor het eiland en gaan ze nooit aan land, zelfs niet om de benen te strekken. Haar kleinzoon Jory, twaalf, verbrand door de zon en nauwkeurig, likt zijn lepel af en vertelt dat de andere kampen eenennegentig bloemen hebben geplukt sinds het eiland bovenkwam. Hij heeft ze geteld. Hij telt alles, ook je tweede portie."
+   ],
+   "choices": [
+    {
+     "text": "Als je helpt het avondnet binnen te halen,",
+     "short": "Haal het avondnet binnen",
+     "to": 45
+    },
+    {
+     "text": "Als je Jory vraagt je over de lagune te roeien,",
+     "short": "Roei over de lagune",
+     "to": 7
+    },
+    {
+     "text": "Als je Marit bedankt en toch de betaalde klus bij de tent van het Genootschap aanneemt,",
+     "short": "Neem de betaalde klus",
+     "to": 40
+    }
+   ],
+   "nr": 47
+  },
+  "38": {
+   "chapter": "Een einde",
+   "scene": "tent",
+   "tag": "Uit het hoofd. Beter, gek genoeg.",
+   "text": [
+    "Quill ruimt haar tafel leeg, verzwaart de hoeken van een vers vel met koektrommels en stopt je een pen in de hand alsof het thee is. Je was van plan het te vergeten. Je hand niet. De baaien komen terug, dan de paden, dan elk goudveld en elke bron, allemaal waar je ze had achtergelaten, allemaal op schaal.",
+    "Hij is beter dan de kaart die verbrandde. Ze betaalt je dubbel en drukt een kus op je kruin. De drukproef gaat met de postkotter naar de graveur, Plaat 40 en de vindplaats samen, en in het voorjaar komen de schepen met hun vergunningen. Het stoomgat nam je papier in één adem. Op de rest van jou had het nooit een kans."
+   ],
+   "ending": {
+    "no": "XIII",
+    "title": "Uit het hoofd",
+    "kind": "bad",
+    "epilogue": "Je verbrandde de kaart en hield de kaartenmaker.",
+    "hint": "De kaart zit ook in je hoofd."
+   },
+   "nr": 13
+  },
+  "39": {
+   "chapter": "Een einde",
+   "scene": "crater",
+   "tag": "Dag 7. Ik blijf. Inwoners: één.",
+   "text": [
+    "De berg spreekt, en jij blijft om de rest van de zin te horen. Die duurt een tijdje. Tegen de tijd dat er geen as meer valt, is de Geduld een vlekje, zijn de zeilen van Marit drie witte snippers op het blauw, en is het eiland stil zoals een huis stil is als de gasten weg zijn.",
+    "Je blijft. Er zijn krabben, regenwater in de spleten van afgekoeld gesteente, en goud dat door het nieuwe grijs omhoogkomt. Elke ochtend loop je de kust af en teken je hem opnieuw, want hij is alweer verschoven: hier een landtong, daar een inham. Niemand koopt de kaarten. Je bewaart ze in een blik, op volgorde, als brieven van een correspondent die zichzelf nooit herhaalt."
+   ],
+   "ending": {
+    "no": "XIV",
+    "title": "De zevende dag",
+    "kind": "strange",
+    "epilogue": "Het eiland blijft groeien. De kaart ook.",
+    "hint": "Kijken is niet kiezen."
+   },
+   "nr": 42
+  },
+  "40": {
+   "chapter": "Dag 1 · De tent van het Genootschap",
+   "scene": "tent",
+   "tag": "Thee in een echt kopje. Verdacht.",
+   "text": [
+    "De tent van het Genootschap is van groen zeildoek, heet als een broodoven en vol persen, etiketten en dr. Hesper Quill: vriendelijk, sproeterig, verrukt over iedereen die kan tekenen. Je krijgt thee in een echt kopje en een koekje voordat ze je naam weet. Ze wil maar één exemplaar, “voor de wetenschap”, en een nauwkeurige kaart van elk veld, honorarium vooraf, uitgeteld in je hand.",
+    "Haar etiketten zijn al gedrukt: Orchis cinerea Quill. Haar catalogus ligt open op een kampkrukje, zacht gesleten op de hoeken, en je blik blijft haken aan een oude inschrijving: [[catalogue|nr. 41, een orchidee, een eiland ten zuiden van de Zoutkust, vindplaats inmiddels onder water]]. Buiten de tent staat de kist die je naar het zuiden volgde, nog dichtgespijkerd."
+   ],
+   "choices": [
+    {
+     "text": "Als je tekent en bij het eerste licht in de velden begint,",
+     "short": "Teken en begin morgen",
+     "to": 20
+    },
+    {
+     "text": "Als je de kist die je naar het zuiden volgde openmaakt terwijl zij de inkt haalt,",
+     "short": "Maak de kist open",
+     "to": 22
+    },
+    {
+     "text": "Als je vraagt of er weleens iets naar kaartenmakers wordt vernoemd,",
+     "short": "Vraag naar namen",
+     "to": 17
+    }
+   ],
+   "nr": 6
+  },
+  "41": {
+   "chapter": "Dag 4 · Marit praat",
+   "scene": "boat",
+   "tag": "Marit zei elf woorden. Een record.",
+   "text": [
+    "Marit boet netten zonder op te kijken, een houten naald die in en uit schiet als een klein vogeltje. De boot ruikt naar teer en de vis van gisteren, en de zon kaatst zo hard van het water dat je je ogen moet dichtknijpen. Jory telt de drijvers nog eens, komt op hetzelfde getal uit en lijkt er teleurgesteld in.",
+    "“Berg spreekt op de zevende dag,” zegt Marit. “De oude deden het ook.” Zoveel heeft ze nog niet gezegd sinds je haar kent. Haar boten halen iedereen eraf voor het zover is: de mannen van Carrow, het Genootschap, jou; er is plek als mensen dicht op elkaar zitten. Klein Sont vist rond het eiland, nooit erop. Ze bijt het garen af en steekt haar hand uit naar de volgende knoop."
+   ],
+   "choices": [
+    {
+     "text": "Als je aan land blijft om de kaart af te maken,",
+     "short": "Maak de kaart af",
+     "to": 31
+    },
+    {
+     "text": "Als je Marit je schets geeft, omgetekend tot viskaart,",
+     "short": "Teken hem om tot viskaart",
+     "to": 15
+    },
+    {
+     "text": "Als je vanavond met haar boten vertrekt,",
+     "short": "Vertrek vanavond",
+     "to": 2
+    }
+   ],
+   "nr": 26
+  },
+  "42": {
+   "chapter": "Dag 3 · Het glasstrand",
+   "scene": "glass",
+   "tag": "Glasstrand. Heet. Niet knielen.",
+   "text": [
+    "Waar de stoom naar zee liep, heeft de hitte de kust in zwart glas veranderd, gerimpeld als gegoten toffee. Het tikt in de zon. Door je zolen heen heeft het de temperatuur van een bakplaat, dus je hurkt, wikkelt je hand in je mouw en veegt de as van één ruit. Die wordt helder als een raam.",
+    "Eronder liggen [[roots|witte wortels, door de as heen gestopt]], elke draad aan de volgende gebreid, fijn als een gestopte sokhiel, landinwaarts de ene kant op en onder de waterlijn de andere. Hogerop heeft iemand een bloem afgesneden. Onder die plek zijn de wortels bruin en slap, en het glas erboven is stervormig gebarsten."
+   ],
+   "choices": [
+    {
+     "text": "Als je naar de kampen loopt om aantekeningen te vergelijken,",
+     "short": "Vergelijk je aantekeningen",
+     "to": 8
+    },
+    {
+     "text": "Als je de boot van Marit wenkt,",
+     "short": "Wenk Marits boot",
+     "to": 41
+    },
+    {
+     "text": "Als je op het dikste glas gaat staan om beter te kijken,",
+     "short": "Ga op het glas staan",
+     "to": 4
+    }
+   ],
+   "nr": 16
+  },
+  "43": {
+   "chapter": "Dag 6 · De catalogus",
+   "scene": "tent",
+   "tag": "Quills catalogus, open bij nr. 212.",
+   "text": [
+    "De tent van Quill is half bedolven; ze heeft eerst de tafel uitgegraven, dan de waterketel, dan zichzelf. Haar catalogus ligt open bij een nieuwe inschrijving in haar ronde handschrift: nr. 212, Orchis cinerea, en na “vindplaats” een lege regel, wachtend. Onder haar handpalm lopen de oudere inschrijvingen terug, tweehonderdelf stuks, veel in andere handen dan de hare, in inkt die bruin is geworden.",
+    "“Plaat 40,” zegt ze, “en dan kan ik slapen.” Ze heeft koekjes klaarliggen, het adres van de graveur, een envelop met de postzegel er al op. Glimlachend steekt ze haar hand uit naar je kaart, as in haar sproeten. Het is goed werk. Dat weten jullie allebei."
+   ],
+   "choices": [
+    {
+     "text": "Als je haar de kaart geeft; het is goed werk,",
+     "short": "Geef haar de kaart",
+     "to": 5
+    },
+    {
+     "text": "Als je zegt dat hij in de as verloren is gegaan, en gaat zorgen dat het waar is,",
+     "short": "Verlies hem in de as",
+     "to": 21
+    },
+    {
+     "text": "Als je het koperen label uit het net naast haar catalogus legt,",
+     "short": "Toon haar het label",
+     "to": 49,
+     "hidden": true,
+     "needs": {
+      "seen": [
+       45
+      ]
+     }
+    }
+   ],
+   "nr": 38
+  },
+  "44": {
+   "chapter": "Dag 3 · Een goede kaart",
+   "scene": "field",
+   "tag": "Dag 3. Elk veld. Elke bloem.",
+   "text": [
+    "Je doet wat een goede kaartenmaker doet. Meetketting en kompas, elk veld, elk pad, elke bron, op schaal, met zweet in je ogen en as die als suiker knerpt onder je laarzen. Je slaapt vier uur en tekent er zes. Je kust is scherp, je hoogtelijnen eerlijk, je goudvelden bloem voor bloem gestippeld. Het is het beste werk van je leven.",
+    "Quill komt ’s middags naar boven met water en lof, in gelijke porties. Elke avond gaan haar verzamelaars naar de velden die je die ochtend hebt afgerond, je potloodlijnen achterna, en komen ze zingend met volle manden de helling af. Op de derde avond hoeven ze jou de weg niet meer te vragen."
+   ],
+   "choices": [
+    {
+     "text": "Als je dr. Quill je netversie brengt,",
+     "short": "Breng haar de netversie",
+     "to": 13
+    },
+    {
+     "text": "Als je eerst langs de drie kampen loopt voor je hem inkt,",
+     "short": "Loop eerst de kampen langs",
+     "to": 8
+    },
+    {
+     "text": "Als je elk punt naar jezelf vernoemt,",
+     "short": "Vernoem alles naar jezelf",
+     "to": 47
+    }
+   ],
+   "nr": 25
+  },
+  "45": {
+   "chapter": "Dag 2 · Het net",
+   "scene": "boat",
+   "tag": "Netten zijn zwaarder dan ze lijken.",
+   "text": [
+    "Marit zet je zonder overleg aan het achterste touw. Het net komt hand over hand omhoog, koud en stromend, zwaarder dan welke vis ook. Het zit vol zwarte rots, en in de rots grijze orchideeënstengels, al een mensenleven dood, elk glad en recht aan de voet afgesneden, met een mes.",
+    "Jory zoekt ze tellend door. Verward in de stengels, draaiend aan een lusje draad, hangt [[tag|een koperen label, groen van ouderdom: R.B.S. nr. 41]]. Hij wrijft erover met zijn duim en geeft het aan jou, want jij bent hier degene die leest. Marit kiepert de rots weer over boord, op het label na. “Oude eilanden,” zegt ze. “Daar beneden.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je vraagt te zien waar het vandaan komt,",
+     "short": "Bekijk waar het vandaan komt",
+     "to": 7
+    },
+    {
+     "text": "Als je het label aan land brengt om het dr. Quill te laten zien,",
+     "short": "Toon dr. Quill het label",
+     "to": 13
+    },
+    {
+     "text": "Als je aan boord blijft en leert een net te boeten,",
+     "short": "Leer netten boeten",
+     "to": 2
+    }
+   ],
+   "nr": 40
+  },
+  "46": {
+   "chapter": "Een einde",
+   "scene": "tent",
+   "tag": "Voetnoot twaalf. Heel kleine letters.",
+   "text": [
+    "Jullie schrijven het samen bij lamplicht, zorgvuldig als chirurgen: het label, de oude inschrijvingen, nrs. 38 tot en met 52, allemaal in één handschrift. Quill formuleert het zo dat de Raad geen bezwaar kan maken, en de Raad maakt geen bezwaar. Het komt erin als voetnoot twaalf, gezet in letters zo klein dat de graveur moet turen.",
+    "In het voorjaar verschijnen de Verhandelingen. Plaat 40 is betoverend: de orchidee op ware grootte, bladgoud op de kroonbladen, jouw kaart ernaast, elk veld op schaal. De schepen komen met hun vergunningen, vierennegentig stuks, en hun kapiteins bestuderen de plaat met grote aandacht. Niemand, zo blijkt, vaart op de voetnoten."
+   ],
+   "ending": {
+    "no": "XV",
+    "title": "De voetnoot",
+    "kind": "strange",
+    "epilogue": "Het stond er allemaal, in de kleine lettertjes.",
+    "hint": "Een waarschuwing in kleine letters blijft een kaart."
+   },
+   "nr": 17
+  },
+  "47": {
+   "chapter": "Een einde",
+   "scene": "field",
+   "tag": "Kaap Ik. Baai Ik. Berg Ik.",
+   "text": [
+    "Jouw naam op de zuidkaap. Jouw naam op de baai, de bron, de lavatunnel en het grote stoomgat. Jouw initialen op een heuvel die vooral een kwestie van mening is. Het kost een middag en heel veel inkt, en het Genootschap drukt het met plezier af: namen zijn namen, en de jouwe passen mooi in de belettering.",
+    "Het volgende voorjaar komen de schepen en gaan ze voor jou voor anker. De verzamelaars werken je veld voor veld af. Elk jaar word je opnieuw ingehuurd om het eiland te hertekenen, en elk jaar is er minder kust om je naam op te zetten. Uiteindelijk past hij alleen nog langs het laatste rif, als je hem heel klein schrijft."
+   ],
+   "ending": {
+    "no": "XVI",
+    "title": "Terra Mij",
+    "kind": "strange",
+    "epilogue": "Elk jaar is er een beetje minder van jou.",
+    "hint": "Een naam is een claim, en claims worden verzilverd."
+   },
+   "nr": 28
+  },
+  "48": {
+   "chapter": "Een einde",
+   "scene": "field",
+   "tag": "Bloembak. Op het zuiden. Voorgoed.",
+   "text": [
+    "Je orchidee leeft. Hij reist mee naar huis in zijn blik zoet water, bleek goud en geurend naar regen op een hete kachel, en je plant hem in goede donkere aarde in de bloembak van je huurkamer. Een week lang mokt hij. Dan slaat hij aan.",
+    "De wortels vinden de baksteen, dan de voegen, dan de kelder, witte draden die zich door alles heen breien. De scheuren in de voorgevel sluiten zich. De hospita begint niet meer over vocht. Als de straat in een natte winter verzakt, blijft jouw huis precies staan waar het stond, een tikje trotser dan de buren. Verhuizers komen, kijken en gaan weer. Je merkt dat je het niet erg vindt."
+   ],
+   "ending": {
+    "no": "XVII",
+    "title": "Bloembak",
+    "kind": "strange",
+    "epilogue": "Je huis overleeft de straat, en jij ook, erin.",
+    "hint": "Een geredde bloem moet iets overeind houden."
+   },
+   "nr": 37
+  },
+  "49": {
+   "chapter": "Dag 6 · Nummer eenenveertig",
+   "scene": "tent",
+   "tag": "Koperen label. Oude catalogus. Zelfde hand.",
+   "text": [
+    "Je legt het koperen label op de catalogus, naast inschrijving nr. 41. De letters in het koper gekrast en de bruine inkt op de bladzijde hellen dezelfde kant op, maken dezelfde lussen, zetten hun vieren op dezelfde manier: R.B.S. nr. 41, het eigen label van het Genootschap, uit de zwarte rots onder de lagune.",
+    "Quill bladert terug. Nrs. 38 tot en met 52: een orchidee, een eiland ten zuiden van de Zoutkust, vijftien inschrijvingen in één hand, allemaal “vindplaats inmiddels onder water”. Ze zegt lange tijd niets. Ze zet haar bril af, poetst hem op met haar mouw en zet hem weer op, alsof er dan iets anders staat. Dat is niet zo. Buiten tikt de as op het doek."
+   ],
+   "choices": [
+    {
+     "text": "Als je haar vraagt bij het eerste licht mee te gaan naar de lagune,",
+     "short": "Laat haar de lagune zien",
+     "to": 28
+    },
+    {
+     "text": "Als je haar helpt een zorgvuldige waarschuwing in het artikel te schrijven,",
+     "short": "Help een waarschuwing schrijven",
+     "to": 46
+    }
+   ],
+   "nr": 4
+  }
+ }
+}

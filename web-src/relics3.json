@@ -1,0 +1,340 @@
+{
+ "tiers": [
+  {
+   "count": 4,
+   "id": "firstclass",
+   "name": {
+    "en": "First Class",
+    "nl": "Eerste klas"
+   },
+   "desc": {
+    "en": "Your cover now wears a first-class stripe, with a small crescent punched through it.",
+    "nl": "Je omslag draagt nu een eersteklasstreep, met een klein halvemaantje erdoor geknipt."
+   }
+  },
+  {
+   "count": 8,
+   "id": "passengerlist",
+   "name": {
+    "en": "The Passenger List",
+    "nl": "De passagierslijst"
+   },
+   "desc": {
+    "en": "The path map now shows every page you have not found yet as a stub with no name on it.",
+    "nl": "De padkaart toont elke bladzijde die je nog niet hebt gevonden als een strookje zonder naam."
+   }
+  },
+  {
+   "count": 12,
+   "id": "luggagevan",
+   "name": {
+    "en": "Page 0 · The Luggage Van",
+    "nl": "Bladzijde 0 · De bagagewagen"
+   },
+   "desc": {
+    "en": "One crate left on the platform at Nine, and nobody’s name on it.",
+    "nl": "Eén kist achtergelaten op het perron in Negen, en niemands naam erop."
+   }
+  }
+ ],
+ "relics": [
+  {
+   "id": "crescent",
+   "page": 1,
+   "where": "text",
+   "icon": "moon",
+   "name": {
+    "en": "The First Punch",
+    "nl": "De eerste knip"
+   },
+   "riddle": {
+    "en": "Before you ever boarded, something small and silver took a bite out of your ticket.",
+    "nl": "Nog voor je instapte, nam iets kleins van zilver een hapje uit je kaartje."
+   },
+   "lore": {
+    "en": "Every ticket punch on the Eastern Line is cut by one smith in Hollin, a woman who works only in winter because, she says, steel listens better cold. No two are alike: stars, keys, acorns, one very small fish. Her moons are her favourites, and each faces a different way. She keeps a book of them, drawn to size, and in forty years nobody has once asked to see it.",
+    "nl": "Elke kniptang op de Oostlijn wordt gesneden door één smid in Hollin, een vrouw die alleen ’s winters werkt, omdat staal volgens haar beter luistert als het koud is. Geen twee zijn gelijk: sterren, sleutels, eikels, één heel klein visje. Haar maantjes zijn haar lievelingen, en elk kijkt een andere kant op. Ze houdt er een boek van bij, op ware grootte getekend, en in veertig jaar heeft niemand ooit gevraagd het te mogen zien."
+   }
+  },
+  {
+   "id": "heavy",
+   "page": 3,
+   "where": "text",
+   "icon": "compass",
+   "name": {
+    "en": "A Porter’s Rule",
+    "nl": "De regel van de kruier"
+   },
+   "riddle": {
+    "en": "Ask what makes a bag heavy, and the rudest woman on the line will tell you for nothing.",
+    "nl": "Vraag wat een tas zwaar maakt, en de botste vrouw van de lijn vertelt het je voor niets."
+   },
+   "lore": {
+    "en": "Porters at Hollin Junction do not charge by the pound. They charge by the name, and they know the rate by lifting. A trunk with one honest name in it costs a penny. Two names cost tuppence, and a look. Old porters retire with one shoulder lower than the other and will tell you, over a drink, exactly which traveller did it, though never under which name.",
+    "nl": "Kruiers op Knooppunt Hollin rekenen niet per pond. Ze rekenen per naam, en het tarief voelen ze bij het tillen. Een koffer met één eerlijke naam erin kost een stuiver. Twee namen kosten een dubbeltje, en een blik. Oude kruiers gaan met pensioen met de ene schouder lager dan de andere, en vertellen je bij een borrel precies welke reiziger dat op zijn geweten heeft. Alleen nooit onder welke naam."
+   }
+  },
+  {
+   "id": "twentytosix",
+   "page": 4,
+   "where": "text",
+   "icon": "quill",
+   "name": {
+    "en": "Window 1",
+    "nl": "Loket 1"
+   },
+   "riddle": {
+    "en": "The clerk at Window 1 knows to the minute when your name arrived without you.",
+    "nl": "De klerk van Loket 1 weet op de minuut wanneer je naam zonder jou aankwam."
+   },
+   "lore": {
+    "en": "Window 1 at Hollin opens at twenty to six, by a clock the same family has wound since the treaty. In all that time nobody has been first in the queue twice. Regulars have tried. A coal merchant once slept on the step all night and woke to find a nun ahead of him, knitting. The clerks keep a list of every first. It is very long, and no line repeats.",
+    "nl": "Loket 1 in Hollin gaat open om twintig voor zes, volgens een klok die sinds het verdrag door dezelfde familie wordt opgewonden. In al die tijd is niemand twee keer de eerste in de rij geweest. Vaste klanten hebben het geprobeerd. Een kolenhandelaar sliep ooit de hele nacht op de stoep en werd wakker met een non voor zich, breiend. De klerken houden een lijst bij van iedere eerste. Die is heel lang, en geen regel komt twee keer voor."
+   }
+  },
+  {
+   "id": "cage",
+   "page": 6,
+   "where": "text",
+   "icon": "window",
+   "name": {
+    "en": "Spare Names",
+    "nl": "Reservenamen"
+   },
+   "riddle": {
+    "en": "On Hollin platform, somebody keeps his stock behind bars and lets it out for a penny.",
+    "nl": "Op het perron van Hollin houdt iemand zijn voorraad achter tralies, en laat hij hem vrij voor een stuiver."
+   },
+   "lore": {
+    "en": "Spare names are sold at Hollin from cages, trays and once, memorably, a hat. They are only words and cannot own anything, which is rather the point: a spare name gets you over the pass and leaves you exactly who you were. Mostly. A wool merchant once crossed as Tuesday and was punctual ever after. His wife calls it the best penny he ever spent.",
+    "nl": "Reservenamen worden in Hollin verkocht uit kooien, bakjes en één keer, onvergetelijk, uit een hoed. Het zijn maar woorden en ze kunnen niets bezitten, en daar gaat het nou juist om: met een reservenaam kom je over de pas en blijf je precies wie je was. Meestal. Een wolhandelaar ging ooit over als Dinsdag en was daarna altijd stipt op tijd. Volgens zijn vrouw is het de beste stuiver die hij ooit heeft uitgegeven."
+   }
+  },
+  {
+   "id": "fenn",
+   "page": 8,
+   "where": "text",
+   "icon": "brush",
+   "name": {
+    "en": "Miss Fenn",
+    "nl": "Juffrouw Fenn"
+   },
+   "riddle": {
+    "en": "A smuggler has given you a new trade and a new town, printed small on a stub.",
+    "nl": "Een smokkelaarster heeft je een nieuw vak en een nieuwe woonplaats gegeven, klein gedrukt op een strookje."
+   },
+   "lore": {
+    "en": "There is a real Miss O. Fenn, milliner, of Coldwater. She makes excellent hats and has never been further than the end of her street. According to the ledger at Nine, she has crossed the Iron Pass four times. She knows. Every winter she sends Mirela Dusk a hat, wrapped in tissue, with a card that says only: Do try to look the part.",
+    "nl": "Er bestaat echt een mej. O. Fenn, hoedenmaakster, uit Koudwater. Ze maakt uitstekende hoeden en is nooit verder geweest dan het eind van haar straat. Volgens het register in Negen is ze vier keer over de IJzeren Pas gegaan. Ze weet het. Elke winter stuurt ze Mirela Dusk een hoed, in vloeipapier, met een kaartje waarop alleen staat: Zorg dat je er ook naar uitziet."
+   }
+  },
+  {
+   "id": "island",
+   "page": 11,
+   "where": "text",
+   "icon": "boat",
+   "name": {
+    "en": "An Unlikely Address",
+    "nl": "Een onwaarschijnlijk adres"
+   },
+   "riddle": {
+    "en": "In the luggage van, one crate is bound for somewhere even a cartographer cannot find.",
+    "nl": "In de bagagewagen staat een kist die ergens heen moet waar zelfs een cartograaf niet kan komen."
+   },
+   "lore": {
+    "en": "Hollin porters take pride in addresses. When a crate came in stencilled for an island none of them knew, they looked it up in the station atlas, then the postmaster’s, then the one in the stationmaster’s parlour that nobody is allowed to touch. It is in none of them. They loaded it anyway. Freight is freight, says the head porter, and the sea is not his department.",
+    "nl": "Kruiers in Hollin zijn trots op hun adressen. Toen er een kist binnenkwam voor een eiland dat geen van hen kende, zochten ze het op in de atlas van het station, daarna in die van de postmeester, en daarna in die in de salon van de stationschef, waar niemand aan mag komen. Het staat in geen van alle. Ze hebben de kist toch ingeladen. Vracht is vracht, zegt de hoofdkruier, en de zee is niet zijn afdeling."
+   }
+  },
+  {
+   "id": "scale",
+   "page": 11,
+   "where": "text",
+   "icon": "star",
+   "name": {
+    "en": "The Beam Scale",
+    "nl": "De balansweegschaal"
+   },
+   "riddle": {
+    "en": "In the luggage van, a brass beam gives an answer the label does not.",
+    "nl": "In de bagagewagen geeft een koperen balk een ander antwoord dan het label."
+   },
+   "lore": {
+    "en": "The beam scale in the luggage van was made by a Hollin firm that otherwise makes scales for bakers, and it has never once been wrong, which the railway finds inconvenient. It once weighed a hatbox at eleven pounds that held nothing but tissue paper. The owner, a quiet gentleman, said it had been his grandmother’s. Then, after a while, he said it had not.",
+    "nl": "De balansweegschaal in de bagagewagen komt van een firma uit Hollin die verder weegschalen voor bakkers maakt, en hij heeft zich nog nooit vergist, wat de spoorwegen lastig vinden. Hij woog ooit een hoedendoos met niets dan vloeipapier erin op elf pond. De eigenaar, een stille heer, zei dat die van zijn grootmoeder was geweest. Na een tijdje zei hij dat dat niet zo was."
+   }
+  },
+  {
+   "id": "scarf",
+   "page": 12,
+   "where": "text",
+   "icon": "quill",
+   "name": {
+    "en": "Eleven Stripes",
+    "nl": "Elf strepen"
+   },
+   "riddle": {
+    "en": "An old lady in the dining car wears her whole travelling history round her neck.",
+    "nl": "Een oude dame in de restauratiewagen draagt haar hele reisgeschiedenis om haar hals."
+   },
+   "lore": {
+    "en": "Mrs Moll knits one stripe for every name she has crossed under, in the colour she thinks that woman would have worn: primrose for the baker, dove grey for the widow, a sharp green for the one who was unkind to her sister. She never met any of them. She says they are all excellent company on long evenings, and that the green one is coming along nicely.",
+    "nl": "Mevrouw Moll breit een streep voor elke naam waaronder ze is overgestoken, in de kleur die die vrouw volgens haar gedragen zou hebben: primulageel voor de bakkerin, duifgrijs voor de weduwe, een fel groen voor degene die onaardig was tegen haar zus. Ze heeft geen van hen ooit ontmoet. Ze zegt dat ze op lange avonden uitstekend gezelschap zijn, en dat het met de groene al aardig de goede kant op gaat."
+   }
+  },
+  {
+   "id": "list",
+   "page": 15,
+   "where": "text",
+   "icon": "eye",
+   "name": {
+    "en": "The Passenger List",
+    "nl": "De passagierslijst"
+   },
+   "riddle": {
+    "en": "Nine names and eight heads live on a sheet behind a conductor’s ear.",
+    "nl": "Negen namen en acht hoofden wonen op een vel papier, bij een potlood achter het oor van een conducteur."
+   },
+   "lore": {
+    "en": "Octavian Pell has kept the list on the Eastern Express for twenty-two years and has miscounted once, in a snowstorm above Larchmere, when a passenger who had spent all day in the lavatory turned out to be a goat. The goat had a ticket, in order. Pell still counted it wrong, and still minds. He now counts every head twice, and looks under the seats.",
+    "nl": "Octavian Pell houdt al tweeëntwintig jaar de lijst bij in de Oostexpres en heeft zich één keer verteld, in een sneeuwstorm boven Larixmeer, toen een passagier die de hele dag op het toilet had gezeten een geit bleek te zijn. De geit had een kaartje, in orde. Pell telde hem toch verkeerd, en zit er nog steeds mee. Tegenwoordig telt hij elk hoofd twee keer, en kijkt hij onder de banken."
+   }
+  },
+  {
+   "id": "namebox",
+   "page": 18,
+   "where": "text",
+   "icon": "map",
+   "name": {
+    "en": "The Hollin Box",
+    "nl": "De kist van Hollin"
+   },
+   "riddle": {
+    "en": "I ride with the mailbags, have no keyhole, and put on weight every year.",
+    "nl": "Ik reis mee met de postzakken, heb geen sleutelgat en word elk jaar zwaarder."
+   },
+   "lore": {
+    "en": "The Hollin name-box was forged without a keyhole, on purpose, so that nobody on the line would be tempted. At Nine the Customs Clerk opens it by treaty: she reads clause three aloud, taps the lid once with a brass rule, and it opens. Locksmiths have tried the same words and the same rule. It does not open for locksmiths. It does not care for them.",
+    "nl": "De namenkist van Hollin is met opzet zonder sleutelgat gesmeed, zodat niemand op de lijn in de verleiding zou komen. In Negen maakt de douaneklerk hem open volgens het verdrag: ze leest artikel drie hardop voor, tikt één keer met een koperen liniaal op het deksel, en hij gaat open. Slotenmakers hebben dezelfde woorden en dezelfde liniaal geprobeerd. Voor slotenmakers gaat hij niet open. Hij moet niets van ze hebben."
+   }
+  },
+  {
+   "id": "coins",
+   "page": 19,
+   "where": "text",
+   "icon": "star",
+   "name": {
+    "en": "Exact Change",
+    "nl": "Gepast geld"
+   },
+   "riddle": {
+    "en": "Laid on a sill at twenty to six, I was counted more often than I needed to be.",
+    "nl": "Om twintig voor zes op een richel gelegd, en vaker geteld dan nodig was."
+   },
+   "lore": {
+    "en": "Window 1 at Hollin has taken names for coppers since the treaty, and the clerks can read a traveller by the change. The frightened overpay and forget to wait. The poor count once. The dishonest never seem to have the right money. Exact coins, counted twice, turn up about once a year, and the clerks have a word for them among themselves: rehearsed.",
+    "nl": "Loket 1 in Hollin neemt sinds het verdrag namen aan voor een paar koperstukken, en de klerken lezen een reiziger aan zijn kleingeld. Wie bang is, betaalt te veel en vergeet te wachten. Wie arm is, telt één keer. Oneerlijke mensen hebben nooit het juiste bedrag bij zich, lijkt het. Gepast geld, twee keer geteld, komt ongeveer één keer per jaar voor, en de klerken hebben er onder elkaar een woord voor: ingestudeerd."
+   }
+  },
+  {
+   "id": "plaque",
+   "page": 22,
+   "where": "text",
+   "icon": "chisel",
+   "name": {
+    "en": "Harrow Name Office",
+    "nl": "Namenkantoor Harrow"
+   },
+   "riddle": {
+    "en": "Polished soft by thumbs, I hang beside a door in Harrow that smells of glue.",
+    "nl": "Glad gepoetst door duimen hang ik naast een deur in Harrow die naar lijm ruikt."
+   },
+   "lore": {
+    "en": "When the Harrow Name Office burned, three hundred people who had handed in their names that week never got them back. Most chose new ones, in time. Some would not. There are still old men and women in Harrow who sign every lease, letter and birthday card with a careful X, and the post office delivers to them anyway, because everyone knows whose X is whose.",
+    "nl": "Toen het namenkantoor van Harrow afbrandde, kregen driehonderd mensen die die week hun naam hadden ingeleverd hem nooit meer terug. De meesten kozen na verloop van tijd een nieuwe. Sommigen weigerden. In Harrow wonen nog altijd oude mannen en vrouwen die elk huurcontract, elke brief en elke verjaardagskaart ondertekenen met een zorgvuldig kruisje, en de post bezorgt toch, omdat iedereen weet welk kruisje van wie is."
+   }
+  },
+  {
+   "id": "letter",
+   "page": 25,
+   "where": "text",
+   "icon": "quill",
+   "name": {
+    "en": "Advance Notice",
+    "nl": "Vooraankondiging"
+   },
+   "riddle": {
+    "en": "A letter that knew the news before the news did: hold it up and read the date.",
+    "nl": "Een brief die het nieuws al kende voordat het nieuws er was: houd hem omhoog en lees de datum."
+   },
+   "lore": {
+    "en": "Every Clerk of Customs at Nine inherits a drawer marked PREMATURE. Into it go letters describing a crossing before it happens: a theft reported on the Monday, committed on the Tuesday, the thief’s coat described down to the lining. The drawer has never once been empty. A few of the letters have turned out to be prophecy. The Clerks have never agreed what the rest are. The drawer sticks in wet weather, and nobody has oiled it.",
+    "nl": "Elke douaneklerk van Negen erft een la met het opschrift VOORBARIG. Daarin gaan brieven die een overtocht beschrijven voordat die heeft plaatsgevonden: een diefstal die op maandag wordt gemeld en op dinsdag gepleegd, de jas van de dief beschreven tot en met de voering. De la is nog nooit leeg geweest. Een paar brieven bleken profetie. Over de rest zijn de klerken het nooit eens geworden. Bij nat weer klemt de la, en niemand heeft hem ooit gesmeerd."
+   }
+  },
+  {
+   "id": "tin",
+   "page": 29,
+   "where": "text",
+   "icon": "eye",
+   "name": {
+    "en": "The Peppermint Tin",
+    "nl": "Het pepermuntblikje"
+   },
+   "riddle": {
+    "en": "Something sweet in a grey glove, with two letters on the lid.",
+    "nl": "Iets zoets in een grijze handschoen, met twee letters op het deksel."
+   },
+   "lore": {
+    "en": "The tin is Harrow work: pressed steel, a hinge that sighs, initials cut by an engraver who charged by the letter, which is why so many Harrow tins say only two. The Inspector refills it at every stop from a paper bag and offers it to anyone who looks unwell, which on the Iron Pass is everyone. Asked about C.G., he says “my father’s”, with the ease of a man who has said it often.",
+    "nl": "Het blikje is werk uit Harrow: geperst staal, een scharnier dat zucht, initialen gesneden door een graveur die per letter rekende, en daarom staan er op zoveel blikjes uit Harrow maar twee. De inspecteur vult het bij elke halte bij uit een papieren zakje en biedt het aan iedereen aan die er slecht uitziet, en op de IJzeren Pas is dat iedereen. Vraag je naar C.G., dan zegt hij “van mijn vader”, met het gemak van iemand die het vaak heeft gezegd."
+   }
+  },
+  {
+   "id": "ledger",
+   "page": 44,
+   "where": "text",
+   "icon": "map",
+   "name": {
+    "en": "E.M., Otherwise",
+    "nl": "E.M., anders genaamd"
+   },
+   "riddle": {
+    "en": "Upstairs at Nine, two small brown letters never came back for what they left behind.",
+    "nl": "Boven in Negen zijn twee kleine bruine letters nooit teruggekomen voor wat ze achterlieten."
+   },
+   "lore": {
+    "en": "In the ledger at Nine, among thirty thousand ticks, one brown line has none. E.M., it says, crossed as someone else, and the Collected column stands empty. Clerks have queried it for years. One wrote to Hollin, and Hollin wrote back that the lady had been asked, and had said, quite pleasantly, that not collecting it was the point. The query was filed. The brown ink has not faded, which nobody has explained.",
+    "nl": "In het register van Negen, tussen dertigduizend vinkjes, staat één bruine regel zonder. E.M., staat er, overgestoken als iemand anders, en de kolom Afgehaald is leeg. Klerken vragen er al jaren naar. Eén schreef naar Hollin, en Hollin schreef terug dat men het de dame had gevraagd en dat zij heel vriendelijk had gezegd dat het juist de bedoeling was hem niet af te halen. De vraag werd opgeborgen. De bruine inkt is niet verbleekt, en niemand heeft dat kunnen verklaren."
+   }
+  }
+ ],
+ "secret": {
+  "title": {
+   "en": "The Luggage Van",
+   "nl": "De bagagewagen"
+  },
+  "label": {
+   "en": "Page 0",
+   "nl": "Bladzijde 0"
+  },
+  "text": {
+   "en": [
+    "Nine, after dark. The Express has been emptied, and the porters go home in pairs, arguing about supper. On the platform they leave one crate, unclaimed. The stencil on its side reads: TO THE HARBOURMASTER, NEW ISLAND, SOUTH OF THE SALT COAST.",
+    "You unfold your own chart of the south and hold it to the station light. The sea there is empty. You are quite sure of it: you drew that emptiness yourself, last month, with a fine pen, and were rather pleased with the waves.",
+    "The crate is warm to the touch. It smells of ash, and of flowers. Conductor Pell, locking the booking hall, sees you looking. “Came in on the down line,” he says. “Nobody’s name on it.” He pockets his keys. “Makes a change.”",
+    "Pressed in the book, between this page and the cover, where no page should be, is a single pale-gold petal. It is still warm."
+   ],
+   "nl": [
+    "Negen, na donker. De Oostexpres is leeggehaald en de kruiers gaan twee aan twee naar huis, kibbelend over het avondeten. Op het perron laten ze één kist achter, door niemand afgehaald. Op de zijkant staat gesjabloneerd: AAN DE HAVENMEESTER, NIEUW EILAND, TEN ZUIDEN VAN DE ZOUTKUST.",
+    "Je vouwt je eigen kaart van het zuiden open en houdt hem in het licht van het station. De zee is daar leeg. Daar ben je heel zeker van: je hebt die leegte vorige maand zelf getekend, met een fijne pen, en je was nogal tevreden over de golven.",
+    "De kist voelt warm aan. Hij ruikt naar as, en naar bloemen. Conducteur Pell, die de lokettenhal afsluit, ziet je kijken. “Met de terugtrein binnengekomen,” zegt hij. “Niemands naam erop.” Hij steekt zijn sleutels in zijn zak. “Dat is nog eens wat anders.”",
+    "In het boek geperst, tussen deze bladzijde en het omslag, waar geen bladzijde hoort te zitten, ligt één bleekgouden bloemblad. Het is nog warm."
+   ]
+  },
+  "sign": {
+   "en": "The Veyra Cycle continues in Book IV.",
+   "nl": "De Veyra-cyclus gaat verder in Boek IV."
+  }
+ }
+}

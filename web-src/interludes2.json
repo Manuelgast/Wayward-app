@@ -96,11 +96,11 @@
   "lines": {
    "en": [
     "The stair ends. The dark does not.",
-    "Something very large is lying on the seabed."
+    "Something very large stands on the seabed, crooked."
    ],
    "nl": [
     "De trap houdt op. Het donker niet.",
-    "Op de zeebodem ligt iets heel groots."
+    "Op de zeebodem staat iets heel groots, scheef."
    ]
   },
   "prompt": {
@@ -108,8 +108,8 @@
    "nl": "Houd je lantaarn omhoog"
   },
   "done": {
-   "en": "A tower, lying down. A door, ajar.",
-   "nl": "Een toren die ligt. Een deur op een kier."
+   "en": "A tower, leaning. A door, ajar.",
+   "nl": "Een scheve toren. Een deur op een kier."
   },
   "x": null,
   "y": null

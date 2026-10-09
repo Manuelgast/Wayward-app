@@ -455,7 +455,7 @@
    "chapter": "The Seabed Door",
    "scene": "seabed",
    "text": [
-    "At the bottom the stair stops, and the sea arches over you like a dome of dark glass. Your lantern finds grey sand ribbed like a roof, and then the tower. It lies on its side like a fallen candle, its top end climbing away up the slope into the dark. Near its foot a door stands a little open. Far above, a bell buoy rings [[bellbuoy|in a key that doesn’t exist]].",
+    "At the bottom the stair stops, and the sea arches over you like a dome of dark glass. Your lantern finds grey sand ribbed like a roof, and then the tower. It stands crooked on the slope like a candle about to fall, its lamp tipped towards the dark. Near its foot a door stands a little open. Far above, a bell buoy rings [[bellbuoy|in a key that doesn’t exist]].",
     "Small fish drift past just outside the glass. It takes you a moment to see that they are shaped like letters. They gather, spell half a word, lose interest: LIG. KEE. NEL. Then they scatter and try again, like someone trying very hard to remember a name."
    ],
    "choices": [
@@ -692,7 +692,7 @@
    "chapter": "Inside the Sunken Tower",
    "scene": "sunken",
    "text": [
-    "Inside, the tower has not heard that it fell. The spiral stair goes up, the way it always did, and so do you. The water is at your knees, then your ankles, then only in the cracks. With every turn the whitewash is fresher. A tide table on a nail says 1826, crossed off day by day, up to tonight. Above, rain drums on glass.",
+    "Inside, the tower has not heard that it sank. The spiral stair goes up, the way it always did, and so do you. The water is at your knees, then your ankles, then only in the cracks. With every turn the whitewash is fresher. A tide table on a nail says 1826, crossed off day by day, up to tonight. Above, rain drums on glass.",
     "Halfway up, a man in a keeper’s coat sits asleep against the wall, cap tipped over his eyes, as if he only sat down for a moment on his way to something important. His boots are wet. His hands are cupped around nothing, the way you keep a small flame out of the wind."
    ],
    "choices": [
@@ -839,7 +839,7 @@
    "ending": {
     "no": "XI",
     "title": "A Small Light",
-    "kind": "good",
+    "kind": "silver",
     "epilogue": "Every night at two, the Marigold makes it. Almost everyone sleeps better.",
     "hint": "A borrowed flame is still a flame. But whose hand should hold it?"
    },
@@ -1016,7 +1016,7 @@
    "ending": {
     "no": "XVI",
     "title": "The New Keeper",
-    "kind": "strange",
+    "kind": "silver",
     "epilogue": "It’s steady work, and the view is excellent.",
     "hint": "The light must be lit by someone who belongs to that night."
    },

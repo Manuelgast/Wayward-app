@@ -59,7 +59,7 @@
     $('#mapSvg').setAttribute('aria-label', t('mapAria'));
   }
   function normBook(b) {
-    Object.keys(b.sections).forEach(function (k) { var s = b.sections[k]; s.choices = (s.choices || []).map(function (c) { c.to = +c.to; return c; }); if (s.moment) s.moment.default = +s.moment.default; });
+    Object.keys(b.sections).forEach(function (k) { var s = b.sections[k]; s.choices = (s.choices || []).map(function (c) { c.to = +c.to; if (c.needs) { ['seen', 'ending'].forEach(function (f) { if (c.needs[f] != null) c.needs[f] = [].concat(c.needs[f]).map(Number); }); if (c.needs.relic != null) c.needs.relic = [].concat(c.needs.relic); } return c; }); if (s.moment) s.moment.default = +s.moment.default; });
     return b;
   }
   function getBook(l) {
@@ -91,7 +91,11 @@
     st = fresh(); loadState(); R.p = null; BG.cur = null;
     return loadBookData().then(function () { applyI18n(); return true; });
   }
-  function PN(k) { var s = S[k]; return s && s.nr ? s.nr : k; } // the page number a reader sees (1..N, no gaps); ids stay internal
+  function PN(k) { var s = S[k]; return s && s.nr ? s.nr : k; }
+  // T13: conditional choices. needs {seen:[ids], relic:[ids], ending:[ids]} (all must hold, over every reading of this book);
+  // hidden:true = the choice only appears once its needs are met, otherwise it shows locked.
+  function met(c) { var n = c.needs; if (!n) return true; var has = function (v, arr) { return !v || v.every(function (x) { return arr.indexOf(x) > -1; }); }; return has(n.seen, st.visited) && has(n.relic, st.relics) && has(n.ending, st.found); }
+  function avail(s) { return (s.choices || []).filter(function (c) { return !c.hidden || met(c); }); } // the page number a reader sees (1..N, no gaps); ids stay internal
   function useBook(b) {
     BOOK = b; S = {};
     Object.keys(b.sections).forEach(function (k) { S[+k] = b.sections[k]; });
@@ -213,7 +217,7 @@
     R.introShort = short;
     var low = /[?&]fxlow=1/.test(location.search), sm = window.WaywardSmoke && window.WaywardSmoke.create(app, { dissipation: 0.9, velDissipation: 0.35, curl: 30, pointerTarget: app, wipe: true, sim: low ? 48 : 0, dye: low ? 160 : 0, iter: low ? 4 : 0 });
     AU.sfx('fogin', short ? { gain: 0.6 } : {});
-    var DYE = VEIL === 'sea' ? [0.74, 0.98, 1.02] : [0.9, 0.8, 1.3]; // lilac mist (Book I), sea spray (Book II)
+    var DYE = VEIL === 'sea' ? [0.74, 0.98, 1.02] : VEIL === 'frost' ? [0.86, 0.9, 0.96] : VEIL === 'ash' ? [0.9, 0.86, 0.82] : [0.9, 0.8, 1.3]; // lilac mist (Book I), sea spray (Book II), coal smoke and rime (Book III), steam and ash (Book IV)
     if (VEIL === 'sea') saltCrystals(short ? 14 : 28);
     if (!sm) { FX.veil(app, { preset: VEIL, onCovered: function (rel) { onCovered(function () { AU.sfx('open'); rel(); }); }, onBurst: onBurst, onDone: onDone }); return; }
     SMK = sm; sm.awake(20000);
@@ -284,7 +288,8 @@
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------------- library ---------------- */
-  function pipsHTML() { return ENDS.map(function (k) { var f = st.found.indexOf(k) > -1; return '<b class="' + (f ? (S[k].ending.star ? 'star' : 'on') : '') + '"></b>'; }).join(''); }
+  function silverCount() { return ENDS.filter(function (k) { return S[k].ending.kind === 'silver'; }).length; }
+  function pipsHTML() { return ENDS.map(function (k) { var f = st.found.indexOf(k) > -1; return '<b class="' + (f ? (S[k].ending.star ? 'star' : S[k].ending.kind === 'silver' ? 'silver' : 'on') : '') + '"></b>'; }).join(''); }
   function libTitle() { // the question follows the clock, like the greeting: tonight / today (NL: vanavond, vannacht, vandaag)
     var hr = new Date().getHours();
     return t(hr < 5 ? 'libTitleNight' : hr < 18 ? 'libTitleDay' : 'libTitleEve');
@@ -293,6 +298,7 @@
     var open = SHELF.filter(function (b) { return !b.soon; }).length;
     if ($('#shelfOpen')) $('#shelfOpen').textContent = t('shelfOpen', { n: open });
     $$('[data-bookid]').forEach(function (el) { el.classList.toggle('cur', el.getAttribute('data-bookid') === BK.id); el.setAttribute('aria-label', el.textContent.trim()); });
+    shelfShow();
     if ($('#heroBookNo')) $('#heroBookNo').textContent = t('bookNo', { n: ROMAN[(BK.no || 1) - 1] });
     var hi = $('#heroStage img.layer'); if (hi && BK.coverScene) { var src = 'img/' + BK.coverScene + '.webp'; if (hi.getAttribute('src') !== src) hi.setAttribute('src', src); }
     renderGrain();
@@ -331,6 +337,7 @@
     $('#coverWarn').textContent = BOOK.warning;
     $('#chipEnd').textContent = t('chipEndings', { n: TOTAL_END });
     $('#chipPages').textContent = t('chipPages', { n: KEYS.length });
+    var nS = silverCount(); $('#chipSilverWrap').hidden = !nS; $('#chipSilver').textContent = t(nS === 1 ? 'chipSilver1' : 'chipSilver', { n: nS });
     var started = !!st.page;
     $('#coverGoLabel').textContent = started ? t('continueFrom', { p: PN(st.page) }) : t('openBook');
     $('#coverRestart').hidden = !started;
@@ -365,23 +372,24 @@
   }
   function blocksFor(p) {
     var s = S[p], blocks = [], idx = 0;
-    blocks.push({ type: 'fixed', html: '<div class="phead"><div class="pcoin" aria-hidden="true">' + PN(p) + '</div><div class="ptitles"><span class="caps">' + esc(t('pageOf', { p: PN(p), title: BOOK.title })) + '</span><h2>' + esc(s.chapter) + '</h2></div></div>' + FLOURISH });
+    blocks.push({ type: 'fixed', html: '<div class="phead"><div class="pcoin" aria-hidden="true">' + PN(p) + '</div><div class="ptitles"><span class="caps">' + esc(t('pageOf', { p: PN(p), title: BOOK.title })) + '</span><h2>' + esc(s.chapter) + '</h2>' + (s.tag ? '<span class="ptag">' + esc(s.tag) + '</span>' : '') + '</div></div>' + FLOURISH }); // tag: the cursive field note under the title (Book III, IV)
     s.text.forEach(function (para, i) { var tk = tokenize(para, idx); idx = tk.next; blocks.push({ type: 'para', toks: tk.toks, first: i === 0 }); });
     var extra = '';
     if (s.moment) extra += '<button class="minor" data-act="moment">' + esc(t('playMoment')) + '</button>';
     if (IL[p]) extra += '<button class="minor" data-act="scene">' + esc(t('replayScene')) + '</button>';
     extra = extra ? '<div class="minor-row">' + extra + '</div>' : '';
     if (s.ending) blocks.push({ type: 'fixed', html: '<div class="after endblock">' + FLOURISH + '<div class="theend">' + esc(t('theEnd')) + '</div><button class="btn-gold lg" data-act="ending">' + esc(t('seeEnding')) + '<span class="shine"></span></button>' + extra + '</div>' });
-    else blocks.push({ type: 'fixed', html: '<div class="after"><div class="whatdo"><span class="caps">' + esc(t('whatDo')) + '</span><i></i></div><div class="choices">' + s.choices.map(function (c) {
+    else blocks.push({ type: 'fixed', html: '<div class="after"><div class="whatdo"><span class="caps">' + esc(t('whatDo')) + '</span><i></i></div><div class="choices">' + avail(s).map(function (c) {
       var seen = st.visited.indexOf(c.to) > -1 ? '<span class="seen">' + esc(t('readTag')) + '</span>' : '';
-      return '<button class="choice" data-to="' + c.to + '"><span class="ct">' + esc(c.text) + ' <em>' + esc(t('turnTo', { p: PN(c.to) })) + '</em>' + seen + '</span><span class="coin" aria-hidden="true">' + PN(c.to) + '</span></button>';
+      if (!met(c)) seen = '<span class="seen locked">' + esc(t('lockedTag')) + '</span>';
+      return '<button class="choice' + (met(c) ? (c.hidden ? ' secret' : '') : ' locked') + '"' + (met(c) ? '' : ' disabled aria-disabled="true"') + ' data-to="' + c.to + '"><span class="ct">' + esc(c.text) + ' <em>' + esc(t('turnTo', { p: PN(c.to) })) + '</em>' + seen + '</span><span class="coin" aria-hidden="true">' + PN(c.to) + '</span></button>';
     }).join('') + '</div>' + extra + '</div>' });
     return blocks;
   }
   var PCACHE = {};
   function pageKey(p) {
     var s = S[p], m = measurer();
-    return [BK.id, p, lang, m.clientWidth, m.clientHeight, (s.choices || []).map(function (c) { return st.visited.indexOf(c.to) > -1 ? 1 : 0; }).join(''), st.relics.length].join('|');
+    return [BK.id, p, lang, m.clientWidth, m.clientHeight, avail(s).map(function (c) { return (st.visited.indexOf(c.to) > -1 ? 1 : 0) + (met(c) ? 'm' : 'l'); }).join(''), st.relics.length].join('|');
   }
   function pagesFor(p) {
     var k = pageKey(p); if (PCACHE[k]) return PCACHE[k];
@@ -576,6 +584,8 @@
   function paid(to, run) { if (shopOn() && window.WaywardShop.page) window.WaywardShop.page(to, run); else run(); } // T11: a new page or ending may use today's allowance
   function chooseTo(to) {
     if (R.turning || R.mode !== 'read') return;
+    var cc = (S[R.p] && S[R.p].choices || []).filter(function (c) { return c.to === to; });
+    if (cc.length && !cc.some(met)) return; // locked choice
     paid(to, function () { chooseToNow(to); });
   }
   function chooseToNow(to) {
@@ -822,7 +832,7 @@
       $('#mSub').textContent = m.line;
       $('#mTimerHead').textContent = m.head || t('momentHead'); $('#mTimerSub').textContent = m.sub || t('momentSub');
       $('#mSkip').hidden = true; $('#mDecide').hidden = false;
-      $('#mChoices').innerHTML = s.choices.map(function (c, i) {
+      $('#mChoices').innerHTML = avail(s).filter(met).map(function (c, i) {
         var def = c.to === m.default;
         return '<button class="mchoice' + (def ? ' default' : '') + '" data-to="' + c.to + '" style="animation-delay:' + (i * 0.12) + 's"><span class="coin" aria-hidden="true">' + PN(c.to) + '</span><span class="mt"><b>' + esc(c.short || c.text) + '</b><span>' + esc(t('turnToShort', { p: PN(c.to) })) + '</span>' + (def ? '<span class="fogtag">' + esc((m.defaultLabel || '') + t('ifYouWait')) + '</span>' : '') + '</span></button>';
       }).join('');
@@ -850,7 +860,9 @@
   var MEDAL_STYLES = {
     good: { rim: ['#FFF4CC', '#F2C86A', '#B8812E', '#6E4412'], face: ['#FFF0BC', '#E8B85A', '#9A6A22'], rib: ['#3A1470', '#8E4FD0'], ink: '#7A4E17' },
     strange: { rim: ['#FFF4CC', '#F2C86A', '#B8812E', '#6E4412'], face: ['#FFE6C8', '#E8A070', '#8A4A2A'], rib: ['#0E4A52', '#2FB4B0'], ink: '#6A3418' },
-    bad: { rim: ['#F4F2FF', '#C8C4E0', '#7E78A8', '#3E3860'], face: ['#EEEAFF', '#A8A2CC', '#5E5888'], rib: ['#5A0E1E', '#B3262E'], ink: '#3E3860' }
+    bad: { rim: ['#F4F2FF', '#C8C4E0', '#7E78A8', '#3E3860'], face: ['#EEEAFF', '#A8A2CC', '#5E5888'], rib: ['#5A0E1E', '#B3262E'], ink: '#3E3860' },
+    // silver (Manuel 08-10): an ending that felt like the golden one and was just not; moonlit silver, dusk-blue ribbon
+    silver: { rim: ['#FFFFFF', '#E4E9F2', '#A4AEC2', '#566078'], face: ['#F6F8FC', '#C8D0DE', '#7A869C'], rib: ['#1C2A58', '#5E7FC8'], ink: '#46506A' }
   };
   var medalId = 0;
   function medalSVG(no, kind, w, h) {
@@ -875,7 +887,7 @@
     later(function () { AU.sfx('ending', { kind: e.star ? 'good' : e.kind }); }, 250);
     if (st.lastNew === p) later(function () { AU.sfx('coin'); }, 1400);
     $('#eMedal').innerHTML = medalSVG(e.no, e.star ? 'good' : e.kind, 150, 170);
-    $('#eNew').hidden = st.lastNew !== p; $('#eStar').hidden = !e.star;
+    $('#eNew').hidden = st.lastNew !== p; $('#eStar').hidden = !e.star; $('#eSilver').hidden = e.kind !== 'silver';
     $('#eNo').textContent = t('endingNo', { no: e.no, max: ROMAN[TOTAL_END - 1] });
     $('#eTitle').textContent = e.title; $('#eEpi').textContent = e.epilogue;
     var tr = st.trail.slice(), h = '';
@@ -896,7 +908,7 @@
     chamber: ['#F6CC70', '#8A6A3A', '#6A4A22'], lanternhall: ['#FFCA7A', '#8A4A3A', '#6A3428'], stairs: ['#F6A8C0', '#8A4A7A', '#6A3460'],
     bell: ['#86E0C0', '#3A5A6E', '#2A4058'], library: ['#DCB0F4', '#6A4A8E', '#4A3070'], heart: ['#FFDC98', '#6A3E8E', '#4A2A6E'], dawn: ['#FFD8A4', '#B8707A', '#8A4A60']
   };
-  var LAYOUT = null;
+  var LAYOUT = null, ZOOM = 1; // map zoom (Manuel 08-10: zoom out on the paths to see everything)
   function layout() {
     var depth = {}, kids = {}, q = [BOOK.start]; depth[BOOK.start] = 0;
     while (q.length) { var n = q.shift(); kids[n] = []; (S[n].choices || []).forEach(function (c) { if (depth[c.to] === undefined) { depth[c.to] = depth[n] + 1; kids[n].push(c.to); q.push(c.to); } }); }
@@ -915,22 +927,23 @@
     var o = faint ? 0.45 : 1;
     return '<g transform="translate(' + cx + ' ' + cy + ')" opacity="' + o + '"><path d="M-24 0 L0 12 L0 25 L-24 13Z" fill="#C8BEFF" fill-opacity=".05"/><path d="M24 0 L0 12 L0 25 L24 13Z" fill="#C8BEFF" fill-opacity=".03"/><path d="M0 -12 L24 0 L0 12 L-24 0Z" fill="#C8BEFF" fill-opacity=".1" stroke="#DCD2FF" stroke-opacity=".45" stroke-dasharray="3 3"/><text x="0" y="4" text-anchor="middle" font-family="Manrope, sans-serif" font-size="12" font-weight="800" fill="#DCD2FF" fill-opacity=".65">?</text></g>';
   }
-  function gem(cx, cy, star) {
-    var c = star ? ['#E6FFFB', '#6FF2E2', '#1FA5A5', '#0E6A74'] : ['#FFF3C8', '#F2C766', '#C9933C', '#8E5E1E'];
+  function gem(cx, cy, star, silver) {
+    var c = star ? ['#E6FFFB', '#6FF2E2', '#1FA5A5', '#0E6A74'] : silver ? ['#FFFFFF', '#DDE3EE', '#9AA6BC', '#5C6880'] : ['#FFF3C8', '#F2C766', '#C9933C', '#8E5E1E'];
     return '<g class="gem"><g transform="translate(' + cx + ' ' + cy + ')"><circle r="16" fill="' + c[1] + '" opacity=".22"/><path d="M0 -11 L-7.5 0 L0 0Z" fill="' + c[0] + '"/><path d="M0 -11 L7.5 0 L0 0Z" fill="' + c[1] + '"/><path d="M-7.5 0 L0 11 L0 0Z" fill="' + c[2] + '"/><path d="M7.5 0 L0 11 L0 0Z" fill="' + c[3] + '"/></g></g>';
   }
   function curve(a, b) { var my = (a.y + 12 + b.y - 12) / 2; return 'M' + a.x + ' ' + (a.y + 12) + ' C' + a.x + ' ' + my + ' ' + b.x + ' ' + my + ' ' + b.x + ' ' + (b.y - 12); }
   function renderMap() {
-    if (!LAYOUT) LAYOUT = layout();
+    if (!LAYOUT) { LAYOUT = layout(); ZOOM = 1; }
     var Lm = LAYOUT, P = Lm.P, vis = {}, frontier = {}, honest = hasRole('map');
     st.visited.forEach(function (v) { vis[v] = 1; });
-    st.visited.forEach(function (v) { (S[v].choices || []).forEach(function (c) { if (!vis[c.to]) frontier[c.to] = 1; }); });
+    st.visited.forEach(function (v) { avail(S[v]).filter(met).forEach(function (c) { if (!vis[c.to]) frontier[c.to] = 1; }); });
     if (!st.visited.length) frontier[BOOK.start] = 1;
     var trailEdge = {}; for (var i = 1; i < st.trail.length; i++) trailEdge[st.trail[i - 1] + '>' + st.trail[i]] = 1;
     var edges = '', gold = '', nodes = '', gems = '', fogs = '';
     KEYS.forEach(function (v) {
       if (!vis[v] && !honest) return;
       (S[v].choices || []).forEach(function (c) {
+        if (c.hidden && !met(c) && !vis[c.to]) return; // a secret path stays off the map until you know it
         var a = P[v], b = P[c.to]; if (!a || !b) return;
         var d = curve(a, b);
         if (!vis[v]) { edges += '<path d="' + d + '" stroke="#DCD2FF" stroke-opacity=".14" stroke-width="1.2" stroke-dasharray="2 5" fill="none"/>'; return; }
@@ -945,19 +958,22 @@
         nodes += '<g class="node" tabindex="0" role="button" data-node="' + k + '" aria-label="' + esc(t('page', { p: PN(k) }) + ', ' + s.chapter) + '">';
         if (st.page === k) nodes += '<circle class="beacon" cx="' + q.x + '" cy="' + q.y + '" r="30" fill="none" stroke="#F6D27C" stroke-width="2"/>';
         nodes += tile(q.x, q.y, PAL[s.scene] || PAL.mountain) + '<text x="' + q.x + '" y="' + (q.y + 4) + '" text-anchor="middle" font-family="Manrope, sans-serif" font-size="11" font-weight="800" fill="#1A1030" fill-opacity=".85">' + PN(k) + '</text></g>';
-        if (s.ending) gems += gem(q.x, q.y - 34, !!s.ending.star);
+        if (s.ending) gems += gem(q.x, q.y - 34, !!s.ending.star, s.ending.kind === 'silver');
       } else if (frontier[k]) fogs += fogTile(q.x, q.y);
       else if (honest) fogs += fogTile(q.x, q.y, true);
     });
     var clouds = ''; for (var y = 0; y < Lm.h; y += 70) for (var x = (y / 70) % 2 ? 40 : 0; x < Lm.w; x += 150) clouds += '<ellipse cx="' + x + '" cy="' + y + '" rx="90" ry="22" fill="#BDB3FF" opacity=".05"/>';
     var svg = $('#mapSvg');
-    svg.setAttribute('width', Lm.w); svg.setAttribute('height', Lm.h); svg.setAttribute('viewBox', '0 0 ' + Lm.w + ' ' + Lm.h);
+    svg.setAttribute('viewBox', '0 0 ' + Lm.w + ' ' + Lm.h); sizeMap();
     svg.innerHTML = '<defs><pattern id="iso" width="52" height="26" patternUnits="userSpaceOnUse"><path d="M0 13 L26 0 L52 13 L26 26Z" fill="none" stroke="#fff" stroke-opacity=".045"/></pattern></defs><rect width="100%" height="100%" fill="url(#iso)"/>' + clouds + edges + gold + fogs + nodes + gems;
     var stars = ENDS.filter(function (k) { return S[k].ending.star; }), foundStars = stars.filter(function (k) { return st.found.indexOf(k) > -1; }).length;
+    var sil = ENDS.filter(function (k) { return S[k].ending.kind === 'silver'; }), foundSil = sil.filter(function (k) { return st.found.indexOf(k) > -1; }).length;
     $('#mapStats').innerHTML =
       stat('<svg width="22" height="26" viewBox="0 0 24 28" aria-hidden="true"><path d="M12 1 L2 14 L12 14Z" fill="#FFF0C0"/><path d="M12 1 L22 14 L12 14Z" fill="#F2C766"/><path d="M2 14 L12 27 L12 14Z" fill="#C9933C"/><path d="M22 14 L12 27 L12 14Z" fill="#8E5E1E"/></svg>', st.found.length, TOTAL_END, t('stEndings')) +
       stat('<svg width="22" height="26" viewBox="0 0 24 28" aria-hidden="true"><path d="M4 5 L16 3 L16 23 L4 25Z" fill="#7C5CFF"/><path d="M16 3 L20 5 L20 25 L16 23Z" fill="#F4EAD2"/><path d="M4 25 L16 23 L20 25 L8 27Z" fill="#CDB994"/></svg>', st.visited.length, KEYS.length, t('stPages')) +
-      stat('<svg width="22" height="26" viewBox="0 0 24 28" aria-hidden="true"><path d="M12 1 L2 14 L12 14Z" fill="#E6FFFB"/><path d="M12 1 L22 14 L12 14Z" fill="#6FF2E2"/><path d="M2 14 L12 27 L12 14Z" fill="#1FA5A5"/><path d="M22 14 L12 27 L12 14Z" fill="#0E6A74"/></svg>', foundStars, stars.length, t('stTrue'));
+      stat('<svg width="22" height="26" viewBox="0 0 24 28" aria-hidden="true"><path d="M12 1 L2 14 L12 14Z" fill="#E6FFFB"/><path d="M12 1 L22 14 L12 14Z" fill="#6FF2E2"/><path d="M2 14 L12 27 L12 14Z" fill="#1FA5A5"/><path d="M22 14 L12 27 L12 14Z" fill="#0E6A74"/></svg>', foundStars, stars.length, t('stTrue')) +
+      (sil.length ? stat('<svg width="22" height="26" viewBox="0 0 24 28" aria-hidden="true"><path d="M12 1 L2 14 L12 14Z" fill="#FFFFFF"/><path d="M12 1 L22 14 L12 14Z" fill="#DDE3EE"/><path d="M2 14 L12 27 L12 14Z" fill="#9AA6BC"/><path d="M22 14 L12 27 L12 14Z" fill="#5C6880"/></svg>', foundSil, sil.length, t('stSilver')) : '');
+    $('#mapStats').classList.toggle('four', sil.length > 0); // silver endings shown at the top of Paths too (Manuel 08-10)
     $$('#mapSvg .node').forEach(function (n) {
       var open = function () { openSheet(+n.getAttribute('data-node')); };
       n.addEventListener('click', open); n.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
@@ -965,13 +981,54 @@
     requestAnimationFrame(centerMap);
   }
   function stat(icon, a, b, label) { return '<div class="stat">' + icon + '<div><b>' + a + '<small>/' + b + '</small></b><span>' + esc(label) + '</span></div></div>'; }
-  function centerMap() { var sc = $('#mapScroll'), P = LAYOUT && LAYOUT.P, k = st.page || BOOK.start; if (!P || !P[k]) return; sc.scrollLeft = Math.max(0, P[k].x - sc.clientWidth / 2); sc.scrollTop = Math.max(0, P[k].y - sc.clientHeight / 2); }
+  function centerMap() { var sc = $('#mapScroll'), P = LAYOUT && LAYOUT.P, k = st.page || BOOK.start; if (!P || !P[k]) return; sc.scrollLeft = Math.max(0, P[k].x * ZOOM - sc.clientWidth / 2); sc.scrollTop = Math.max(0, P[k].y * ZOOM - sc.clientHeight / 2); }
+  // zoom: the buttons on the map (out, in, everything), pinch with two fingers, ctrl + wheel or a trackpad pinch on a laptop
+  function fitZoom() { var sc = $('#mapScroll'); if (!LAYOUT || !sc.clientWidth) return 1; return Math.min(1, (sc.clientWidth - 16) / LAYOUT.w, (sc.clientHeight - 16) / LAYOUT.h); }
+  function sizeMap() { var svg = $('#mapSvg'); if (!LAYOUT) return; svg.setAttribute('width', Math.round(LAYOUT.w * ZOOM)); svg.setAttribute('height', Math.round(LAYOUT.h * ZOOM));
+    var f = fitZoom(), zo = $('#mapZoomOut'), zi = $('#mapZoomIn'), za = $('#mapZoomAll');
+    if (zo) zo.disabled = ZOOM <= f + 0.001; if (zi) zi.disabled = ZOOM >= 1.6 - 0.001; if (za) za.setAttribute('aria-pressed', ZOOM <= f + 0.001 ? 'true' : 'false'); }
+  function zoomTo(z, fx, fy) { // fx, fy: the point in the box that stays put
+    var sc = $('#mapScroll'); if (!LAYOUT) return; var f = fitZoom(); z = Math.max(f, Math.min(1.6, z)); if (Math.abs(z - ZOOM) < 0.0005) return;
+    if (fx == null) { fx = sc.clientWidth / 2; fy = sc.clientHeight / 2; }
+    var cx = (sc.scrollLeft + fx) / ZOOM, cy = (sc.scrollTop + fy) / ZOOM; ZOOM = z; sizeMap();
+    sc.scrollLeft = cx * z - fx; sc.scrollTop = cy * z - fy; }
+  (function () {
+    var sc = $('#mapScroll'); if (!sc) return;
+    sc.addEventListener('wheel', function (e) { if (!e.ctrlKey && !e.metaKey) return; e.preventDefault(); var r = sc.getBoundingClientRect(); zoomTo(ZOOM * Math.exp(-e.deltaY * 0.004), e.clientX - r.left, e.clientY - r.top); }, { passive: false });
+    var pin = null;
+    function dist(t) { return Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY); }
+    sc.addEventListener('touchstart', function (e) { if (e.touches.length === 2) { var r = sc.getBoundingClientRect(); pin = { d: dist(e.touches), z: ZOOM, x: (e.touches[0].clientX + e.touches[1].clientX) / 2 - r.left, y: (e.touches[0].clientY + e.touches[1].clientY) / 2 - r.top }; } }, { passive: true });
+    sc.addEventListener('touchmove', function (e) { if (!pin || e.touches.length !== 2) return; e.preventDefault(); zoomTo(pin.z * dist(e.touches) / pin.d, pin.x, pin.y); }, { passive: false });
+    sc.addEventListener('touchend', function (e) { if (e.touches.length < 2) pin = null; });
+    $('#mapZoomOut').addEventListener('click', function () { AU.sfx('tap'); zoomTo(ZOOM / 1.5); });
+    $('#mapZoomIn').addEventListener('click', function () { AU.sfx('tap'); zoomTo(ZOOM * 1.5); });
+    $('#mapZoomAll').addEventListener('click', function () { AU.sfx('tap'); var f = fitZoom(); if (ZOOM > f + 0.001) zoomTo(f); else { zoomTo(1); centerMap(); } });
+    window.addEventListener('resize', function () { if (LAYOUT && ZOOM < fitZoom()) { ZOOM = fitZoom(); } sizeMap(); });
+  })();
   (function () {
     var sc, down = false, sx, sy, sl, stp, moved = false;
     document.addEventListener('pointerdown', function (e) { sc = e.target.closest && e.target.closest('#mapScroll'); if (!sc || e.pointerType !== 'mouse') return; down = true; moved = false; sx = e.clientX; sy = e.clientY; sl = sc.scrollLeft; stp = sc.scrollTop; });
     document.addEventListener('pointermove', function (e) { if (!down) return; var dx = e.clientX - sx, dy = e.clientY - sy; if (Math.abs(dx) + Math.abs(dy) > 4) moved = true; sc.scrollLeft = sl - dx; sc.scrollTop = stp - dy; });
     document.addEventListener('pointerup', function () { down = false; });
     document.addEventListener('click', function (e) { if (moved && e.target.closest && e.target.closest('#mapScroll')) { e.stopPropagation(); e.preventDefault(); moved = false; } }, true);
+  })();
+  // the shelf scrolls sideways when the books do not fit (4 books on a phone or a small laptop window, 07-10):
+  // swipe on a phone, trackpad or mouse wheel or drag with the mouse on a laptop; soft fades show there is more
+  function shelfFade() { var sh = $('.shelf'); if (!sh) return; var max = sh.scrollWidth - sh.clientWidth; sh.classList.toggle('more', sh.scrollLeft < max - 4); sh.classList.toggle('less', sh.scrollLeft > 4); }
+  function shelfShow() { var sh = $('.shelf'), cur = sh && sh.querySelector('.book.cur'); if (!cur) { shelfFade(); return; }
+    var l = cur.offsetLeft - sh.offsetLeft, r = l + cur.offsetWidth + 20;
+    if (r > sh.scrollLeft + sh.clientWidth) sh.scrollLeft = r - sh.clientWidth; else if (l < sh.scrollLeft) sh.scrollLeft = Math.max(0, l - 6);
+    shelfFade(); }
+  (function () {
+    var sh = $('.shelf'); if (!sh) return;
+    var down = false, sx, sl, moved = false;
+    sh.addEventListener('scroll', shelfFade, { passive: true }); window.addEventListener('resize', shelfFade);
+    sh.addEventListener('wheel', function (e) { var max = sh.scrollWidth - sh.clientWidth; if (max <= 0 || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+      if ((e.deltaY > 0 && sh.scrollLeft < max - 1) || (e.deltaY < 0 && sh.scrollLeft > 0)) { sh.scrollLeft += e.deltaY; e.preventDefault(); } }, { passive: false });
+    sh.addEventListener('pointerdown', function (e) { if (e.pointerType !== 'mouse') return; down = true; moved = false; sx = e.clientX; sl = sh.scrollLeft; });
+    document.addEventListener('pointermove', function (e) { if (!down) return; var dx = e.clientX - sx; if (Math.abs(dx) > 5) moved = true; if (moved) { sh.style.scrollSnapType = 'none'; sh.scrollLeft = sl - dx; } });
+    document.addEventListener('pointerup', function () { if (!down) return; down = false; sh.style.scrollSnapType = ''; });
+    sh.addEventListener('click', function (e) { if (moved) { e.stopPropagation(); e.preventDefault(); moved = false; } }, true);
   })();
   var sheetTarget = null;
   function openSheet(k) {
@@ -987,11 +1044,11 @@
   /* ---------------- endings ---------------- */
   var resetArmed = false;
   function renderEndings() {
-    $('#endCount').textContent = t('endCount', { n: st.found.length, t: TOTAL_END });
+    var nSil = silverCount(); $('#endCount').textContent = t('endCount', { n: st.found.length, t: TOTAL_END }) + (nSil ? ' ' + t('endCountSilver', { s: nSil }) : '');
     var sorted = ENDS.slice().sort(function (a, b) { return ROMAN.indexOf(S[a].ending.no) - ROMAN.indexOf(S[b].ending.no); });
     $('#medalGrid').innerHTML = sorted.map(function (k) {
       var e = S[k].ending, f = st.found.indexOf(k) > -1;
-      if (f) return '<div class="mslot found">' + medalSVG(e.no, e.star ? 'good' : e.kind, 62, 70) + '<span class="mn">' + esc(t('endingCaps', { no: e.no }) + (e.star ? t('trueCaps') : '')) + '</span><span class="mtitle">' + esc(e.title) + '</span></div>';
+      if (f) return '<div class="mslot found">' + medalSVG(e.no, e.star ? 'good' : e.kind, 62, 70) + '<span class="mn">' + esc(t('endingCaps', { no: e.no }) + (e.star ? t('trueCaps') : e.kind === 'silver' ? t('silverCaps') : '')) + '</span><span class="mtitle">' + esc(e.title) + '</span></div>';
       return '<div class="mslot"><svg viewBox="-5 -3 150 170" aria-hidden="true"><circle cx="70" cy="70" r="53" fill="#1E1840" stroke="#DCD2FF" stroke-opacity=".35" stroke-width="2" stroke-dasharray="5 5"/><text x="70" y="86" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="48" font-weight="700" fill="#DCD2FF" fill-opacity=".5">?</text></svg><span class="mn">' + esc(t('endingCaps', { no: e.no })) + '</span><span class="mhint" hidden data-hint="' + k + '">' + esc(e.hint) + '</span><button class="hintbtn" data-hintbtn="' + k + '">' + esc(t('showHint')) + '</button></div>';
     }).join('');
     resetArmed = false; if ($('#resetAll')) $('#resetAll').textContent = t('erase'); // the erase option was removed (Manuel 28-09)
@@ -1019,7 +1076,8 @@
   function gated(kind, run) { if (shopOn() && window.WaywardShop.gate) window.WaywardShop.gate(kind, run); else run(); }
   function withShelf(map) { SHELF.forEach(function (b) { if (b.music) Object.keys(b.music).forEach(function (k) { if (!map[k]) map[k] = b.music[k]; }); }); return map; } // every book's music by place
   function hasRole(role) { return !!(BK.roles && BK.roles[role]) && hasTier(BK.roles[role]); } // edge (gilt/salted), map, secret
-  function edgeClass(el) { var on = hasRole('edge'), kind = BK.roles && BK.roles.edge; el.classList.toggle('gilt', on && kind === 'gilt'); el.classList.toggle('salted', on && kind === 'salted'); }
+  var EDGES = ['gilt', 'salted', 'firstclass', 'salt'];
+  function edgeClass(el) { var on = hasRole('edge'), kind = BK.roles && BK.roles.edge; EDGES.forEach(function (k) { el.classList.toggle(k, on && kind === k); }); } // gilt (I), salted (II), first-class stripe (III), salt crust with a gold orchid (IV)
   function hasTier(id) { if (!REL) return false; var tr = REL.tiers.filter(function (x) { return x.id === id; })[0]; return !!tr && st.relics.length >= tr.count; }
   function whereText(r) { return r.where === 'text' ? t('foundOnPage', { p: PN(r.page) }) : r.where === 'scene' ? t('foundScene') : t('foundUi'); }
   function foundRelic(id, pt) {
@@ -1069,7 +1127,7 @@
     if (!REL || !hasRole('secret')) { show('relics'); return; }
     var s = REL.secret;
     $('#secLabel').textContent = L(s.label); $('#secTitle').textContent = L(s.label) + ' · ' + L(s.title);
-    $('#secText').innerHTML = (s.text[lang] || s.text.en).map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('');
+    var tx = s.text[lang] || s.text.en; $('#secText').innerHTML = (Array.isArray(tx) ? tx : [tx]).map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('');
     $('#secSign').textContent = L(s.sign);
   }
 

@@ -1,0 +1,1203 @@
+{
+ "id": "station-nine",
+ "title": "Station Nine",
+ "series": "The Veyra Cycle · Book III",
+ "imprint": "A Wayward Original",
+ "tagline": "Nobody crosses the Iron Pass under their own name. Someone has already crossed under yours.",
+ "warning": "Don’t read this book from start to finish. At the end of each page, you decide what happens next. Some choices look safe. Weigh them.",
+ "start": 1,
+ "scenes": {
+  "platform": {
+   "title": "Hollin Junction at dawn",
+   "focus": "50% 50%"
+  },
+  "corridor": {
+   "title": "The corridor of the Eastern Express",
+   "focus": "50% 50%"
+  },
+  "luggage": {
+   "title": "The luggage van",
+   "focus": "50% 50%"
+  },
+  "dining": {
+   "title": "The dining car",
+   "focus": "50% 50%"
+  },
+  "sleeper": {
+   "title": "Compartment 4",
+   "focus": "50% 50%"
+  },
+  "post": {
+   "title": "The post car",
+   "focus": "50% 50%"
+  },
+  "roof": {
+   "title": "On the roof, above the snowfields",
+   "focus": "50% 50%"
+  },
+  "observation": {
+   "title": "The observation car",
+   "focus": "50% 50%"
+  },
+  "engine": {
+   "title": "The engine",
+   "focus": "50% 50%"
+  },
+  "brakevan": {
+   "title": "The brake van",
+   "focus": "50% 50%"
+  },
+  "pass": {
+   "title": "The border post in the Iron Pass",
+   "focus": "50% 50%"
+  },
+  "station": {
+   "title": "Station Nine, the customs hall",
+   "focus": "50% 50%"
+  },
+  "city": {
+   "title": "The border town of Nine",
+   "focus": "50% 50%"
+  },
+  "tower": {
+   "title": "The ledger room",
+   "focus": "50% 50%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Stop 1 · Hollin Junction",
+   "scene": "platform",
+   "tag": "Hollin Junction. Names in, stubs out.",
+   "text": [
+    "Dawn at Hollin Junction: frost on the rails, coal smoke, a porter blowing on his fingers. The Eastern Express stands steaming, green and patient. Your ticket is the one you came with: one way, third class, 9, [[crescent|punched once, a small crescent]]. Where a name should be there is wet ink, and no name.",
+    "A board over the ticket window says NO PERSON SHALL CROSS UNDER THEIR OWN NAME. A queue shuffles beneath it. A gentleman in grey is carrying an old lady’s knitting for her, as if it were the crown jewels. In the brake-van door, a woman in a leather coat smokes a pipe and looks, quite openly, at your ticket."
+   ],
+   "choices": [
+    {
+     "text": "If you join the queue at the ticket window,",
+     "short": "Join the queue",
+     "to": 4
+    },
+    {
+     "text": "If you ask the gentleman in grey for help,",
+     "short": "Ask the gentleman in grey",
+     "to": 5
+    },
+    {
+     "text": "If you walk down to the brake van,",
+     "short": "Walk to the brake van",
+     "to": 3
+    }
+   ],
+   "nr": 1
+  },
+  "2": {
+   "chapter": "An ending",
+   "scene": "platform",
+   "tag": "Mr Parsley. Third class.",
+   "text": [
+    "You write “Parsley” in your best hand, and Tobiah blows on it for you. Nobody on the Express questions it. At the pass the guard reads it aloud without blinking; he has read out worse.",
+    "At Nine the Clerk hands you back exactly what you wrote: a word. No house, no debts, no letters, no one waiting at the barrier. It is surprisingly restful. You are asked to a great many dinners, where you sit near the fish, and people say, not unkindly, that you go well with it."
+   ],
+   "ending": {
+    "no": "I",
+    "title": "Garnish",
+    "kind": "strange",
+    "epilogue": "You are what you wrote down.",
+    "hint": "A spare name is only a word."
+   },
+   "nr": 16
+  },
+  "3": {
+   "chapter": "Stop 1 · Hollin Junction",
+   "scene": "brakevan",
+   "tag": "Brake van. Miss M. Dusk, freight.",
+   "text": [
+    "Mirela Dusk takes the pipe out of her mouth only to be ruder. “That’s a blank. You’re holding it like a sandwich.” She moves names, she says, for people who need to stop being who they were. “Illegal. Also the only honest trade on this line.”",
+    "The rest she tells you flatly, like a timetable. [[heavy|Names have weight]]: a porter can feel a stolen one in a bag. And a name said aloud at the wrong moment sticks, like a burr to wool. She holds out a hand. It is not clean. “Give it here. I’ll carry it to Nine.”"
+   ],
+   "choices": [
+    {
+     "text": "If you give her your ticket,",
+     "short": "Give her the ticket",
+     "to": 8
+    },
+    {
+     "text": "If you report her to the Inspector of Tickets,",
+     "short": "Report her",
+     "to": 5
+    },
+    {
+     "text": "If you write your own name on the ticket now, so nobody else can,",
+     "short": "Sign your own name",
+     "to": 7
+    }
+   ],
+   "nr": 6
+  },
+  "4": {
+   "chapter": "Stop 1 · Hollin Junction",
+   "scene": "platform",
+   "tag": "Window 1. Names received with thanks.",
+   "text": [
+    "At the window a clerk in sleeve-garters asks for your name, then for the spelling, then for a moment. He turns back a page of his book. Then another. Down the platform a boy is selling something out of a birdcage.",
+    "“Handed in already,” the clerk says, “[[twentytosix|at twenty to six this morning]]. A gentleman, very civil. Exact coins.” His finger finds the line. “Stub issued: Mr N. Ashby.” A name cannot be handed in twice, he adds, with real sympathy; it is on the board. You look at your blank ticket. At present it is all you are. The whistle goes."
+   ],
+   "choices": [
+    {
+     "text": "If you report the theft to the Inspector of Tickets,",
+     "short": "Report the theft",
+     "to": 5
+    },
+    {
+     "text": "If you buy a spare name from the boy with the cage,",
+     "short": "Buy a spare name",
+     "to": 6
+    },
+    {
+     "text": "If you run for the train as the whistle goes,",
+     "short": "Run for the train",
+     "to": 3
+    }
+   ],
+   "nr": 39
+  },
+  "5": {
+   "chapter": "Stop 1 · Hollin Junction",
+   "scene": "corridor",
+   "tag": "Mr A. Voss, Inspector. Peppermints on request.",
+   "text": [
+    "The gentleman in grey is Aurel Voss, Inspector of Tickets, and he introduces himself as if apologising for it. Grey coat, a peppermint offered before you ask, manners you could set a clock by. His silver punch cuts a small crescent. He admires your blank the way one admires a loaded pistol: warmly, from a little distance.",
+    "“There are name-thieves on this line,” he says. “A blank is what they want most.” He would be glad to keep it in his case until Nine. There is also, as it happens, a spare seat in Compartment 4. “Tea at Larchmere. I do insist.”"
+   ],
+   "choices": [
+    {
+     "text": "If you give him the ticket for safekeeping,",
+     "short": "Let him keep it",
+     "to": 9
+    },
+    {
+     "text": "If you take the seat in Compartment 4,",
+     "short": "Take the seat",
+     "to": 10
+    },
+    {
+     "text": "If you thank him and go and find breakfast,",
+     "short": "Go and find breakfast",
+     "to": 12
+    }
+   ],
+   "nr": 23
+  },
+  "6": {
+   "chapter": "Stop 1 · Hollin Junction",
+   "scene": "platform",
+   "tag": "Spare names. A penny each. No refunds.",
+   "text": [
+    "Tobiah sells [[cage|spare names from a birdcage]], rolled up small and pushed between the bars: Parsley, Tuesday, Admiral. “They’re only words,” he says. “So’s everyone’s.” He has the patter of a boy who has said it a thousand times and the cough of one who has said it in frost.",
+    "Then he sees your ticket and stops smiling. A blank, he says, low, is worth more than the train. Whoever writes a name on it crosses as that name, and at Nine gets whatever that name owns. “House, debts, dog. The lot.” He holds out Parsley anyway. “Penny.”"
+   ],
+   "choices": [
+    {
+     "text": "If you write “Parsley” on your ticket,",
+     "short": "Write “Parsley”",
+     "to": 2
+    },
+    {
+     "text": "If you sign your own name on it, to be safe,",
+     "short": "Sign your own name",
+     "to": 7
+    },
+    {
+     "text": "If you ask the gentleman in grey what a blank is worth,",
+     "short": "Ask the gentleman in grey",
+     "to": 5
+    }
+   ],
+   "nr": 20
+  },
+  "7": {
+   "chapter": "An ending",
+   "scene": "pass",
+   "tag": "Contraband: one name, own.",
+   "text": [
+    "You sign in your best hand and feel better at once, as people often do just before a mistake. At the Iron Pass the guard reads your ticket, reads it again, and sends for a form.",
+    "Your own name, on a ticket over the pass, is contraband. It is confiscated with great care and a receipt in triplicate. You walk back down to Hollin holding the receipt, and for some years, officially, that is who you are: one item, received, pending. The clerks at Window 1 are very kind about it."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "Declared",
+    "kind": "bad",
+    "epilogue": "Declared, and duly confiscated.",
+    "hint": "Nobody crosses under their own name. Not even you."
+   },
+   "nr": 45
+  },
+  "8": {
+   "chapter": "Stop 1 · Hollin Junction",
+   "scene": "brakevan",
+   "tag": "Miss O. Fenn, milliner. Coldwater.",
+   "text": [
+    "Mirela unpicks a seam in her coat, slides your blank inside and sews it shut in six stitches, pipe in her teeth. In exchange she hands you [[fenn|a stub: Miss O. Fenn, milliner]], of Coldwater. “You make hats now. Stand like it.” The whistle goes. Hollin slides away backwards, porters, frost and all.",
+    "“Advice,” she says. “Free, which is rare. When a blank goes missing, somebody always comes looking.” She relights the pipe. “Notice who.” Then she turns back to her crates, which are many, and heavy, and not your business, as she mentions twice."
+   ],
+   "choices": [
+    {
+     "text": "If you help her shift crates in the luggage van,",
+     "short": "Help shift the crates",
+     "to": 11
+    },
+    {
+     "text": "If you go forward and find a seat as Miss Fenn,",
+     "short": "Find a seat as Miss Fenn",
+     "to": 17
+    },
+    {
+     "text": "If you take the ticket back and go and find the Inspector after all,",
+     "short": "Take it to the Inspector",
+     "to": 5
+    }
+   ],
+   "nr": 34
+  },
+  "9": {
+   "chapter": "An ending",
+   "scene": "station",
+   "tag": "Unclaimed. Return to Hollin.",
+   "text": [
+    "Mr Voss keeps your ticket beautifully. He keeps it all the way to Nine, where the Customs Clerk reads out your name, and a civil gentleman in grey says “Here,” and shows a stub, and is thanked.",
+    "You have no ticket and no stub. Nobody in particular has lost you. The porters, who are kind, chalk a number on your coat, give you a bun, and send you back down the line in the luggage van as unclaimed property, facing the right way up."
+   ],
+   "ending": {
+    "no": "III",
+    "title": "Kept Safe",
+    "kind": "bad",
+    "epilogue": "Safekeeping depends on who keeps it.",
+    "hint": "Kindness and being kind are not the same thing."
+   },
+   "nr": 4
+  },
+  "10": {
+   "chapter": "Stop 2 · Larchmere",
+   "scene": "sleeper",
+   "tag": "Compartment 4: Mr A. Voss, Inspector.",
+   "text": [
+    "Compartment 4 has lace headrests, tea, and a case marked STATIONERY that Voss shifts with both hands and a small grunt he pretends he did not make. Thirty-one years on this line, he says, pouring. He knows every stop by its kippers.",
+    "“The woman in the brake van is a smuggler,” he adds. “She’ll have your blank off you by Harrow.” He sugars his tea, consults his watch, and rises: tickets to punch. His coat stays on the hook by the door. The key to the case went into its pocket; you watched it go."
+   ],
+   "choices": [
+    {
+     "text": "If you open his case,",
+     "short": "Open the case",
+     "to": 14
+    },
+    {
+     "text": "If you follow him down the train,",
+     "short": "Follow him",
+     "to": 12
+    },
+    {
+     "text": "If you go and see the woman in the brake van for yourself,",
+     "short": "See the smuggler yourself",
+     "to": 3
+    }
+   ],
+   "nr": 36
+  },
+  "11": {
+   "chapter": "Stop 2 · Larchmere",
+   "scene": "luggage",
+   "tag": "Luggage van. Weigh before you lift.",
+   "text": [
+    "Mirela weighs everything on the beam scale before she lifts it; her back, she says, is worth more than the freight. A trunk labelled A. VOSS · STATIONERY · 9 LB goes on the plate, and [[scale|the beam says ninety]]. Mirela takes her pipe out. “Somebody’s travelling heavy.” She puts it back.",
+    "Behind the trunk sits a crate stencilled with [[island|an address on an island]] you have never heard of, and you have drawn most of the islands there are. The roof ladder rattles with the rails. Up front, the conductor is calling “Larchmere!” as if it had personally let him down."
+   ],
+   "choices": [
+    {
+     "text": "If you prise open the heavy trunk,",
+     "short": "Prise open the trunk",
+     "to": 13
+    },
+    {
+     "text": "If you climb the ladder onto the roof,",
+     "short": "Climb onto the roof",
+     "to": 20
+    },
+    {
+     "text": "If you go forward to find the conductor,",
+     "short": "Find the conductor",
+     "to": 15
+    }
+   ],
+   "nr": 48
+  },
+  "12": {
+   "chapter": "Stop 2 · Larchmere",
+   "scene": "dining",
+   "tag": "Mrs A. Moll. Eleventh crossing.",
+   "text": [
+    "Kippers, white cloths, larch woods going past. Mrs Agathe Moll is knitting a scarf of [[scarf|eleven stripes, one for each name she has crossed under]]. “Primrose was a baker. The grey was a widow. The green was unkind to her sister.” Voss comes down the car and punches her ticket: a neat crescent. “Thank you, Inspector.”",
+    "“Eleven names,” she says when he has gone, “and he has punched every one.” At Nine, she tells you, the Clerk reads out the real names, one by one; whoever holds the matching stub answers, and gets that name. “Mostly the right person.” She counts a row. “Mostly.”"
+   ],
+   "choices": [
+    {
+     "text": "If you tell Mrs Moll about your blank ticket,",
+     "short": "Tell Mrs Moll",
+     "to": 16
+    },
+    {
+     "text": "If you get off at Harrow Bridge to post a card,",
+     "short": "Post a card at Harrow",
+     "to": 22
+    },
+    {
+     "text": "If you go back to Compartment 4,",
+     "short": "Return to Compartment 4",
+     "to": 10
+    }
+   ],
+   "nr": 43
+  },
+  "13": {
+   "chapter": "An ending",
+   "scene": "luggage",
+   "tag": "Mr B. Oake, tobacconist. Retired.",
+   "text": [
+    "You only mean to look. But the stubs are warm from being kept, and one of them comes away in your fingers as if it has been waiting for a hand. Mr B. Oake, tobacconist. You try to put it back. It will not go back. It is heavier than paper has any right to be, and now it is in your pocket. So are you.",
+    "At Nine the Clerk reads out “Bertram Oake,” and your mouth says “Here” before you can stop it. A small woman in a violet hat comes through the barrier at a run. “Bertie! You’ve lost weight. You’ve lost your moustache.” You are taken home, fed soup, and forgiven for a wedding you never attended."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "Lost Property",
+    "kind": "strange",
+    "epilogue": "Somebody missed you. Not you.",
+    "hint": "Other people’s names are heavier than they look."
+   },
+   "nr": 9
+  },
+  "14": {
+   "chapter": "Stop 2 · Larchmere",
+   "scene": "sleeper",
+   "tag": "Stationery. Handle with care.",
+   "text": [
+    "The key turns as if it has been oiled for the purpose. Inside the case there is no paper at all. There are stubs: dozens of bundles, tied with post-office string, each a different borrowed name. Miss P. Hale. Mr T. Grieve. The Rev. Lark. Every one is punched with a small crescent. You lift a bundle. It is very heavy, for paper.",
+    "“Ah.” Voss is in the doorway, a peppermint halfway to his mouth. He does not seem cross. He seems pleased you take an interest. “Lost property. People drop their stubs like gloves. Every stub on this line finds its way to me eventually.” He holds out his hand for the bundle, palm up, patient as a waiter."
+   ],
+   "choices": [
+    {
+     "text": "If you slip one stub into your pocket while he talks,",
+     "short": "Pocket a stub",
+     "to": 13
+    },
+    {
+     "text": "If you apologise and accept his explanation,",
+     "short": "Apologise to him",
+     "to": 22
+    },
+    {
+     "text": "If you ask him, straight out, whose names these are,",
+     "short": "Ask whose names these are",
+     "to": 28
+    }
+   ],
+   "nr": 30
+  },
+  "15": {
+   "chapter": "Stop 2 · Larchmere",
+   "scene": "corridor",
+   "tag": "Conductor O. Pell. Knows the treaty.",
+   "text": [
+    "Octavian Pell has a moustache like a yard broom and a pencil behind each ear. He looks at your stub and snorts. “Fenn? Fenn is fifty if she’s a day.” He unfolds his list. “[[list|Nine names, eight heads]]. Not counting you, and I don’t.” Compartment 4: Mr A. Voss, Inspector. Mr N. Ashby. One berth made up.",
+    "“Clause seven,” he recites, unasked, the way other men hum. “The Clerk at Nine shall return each name to whoever holds its stub, and shall weigh any baggage a passenger asks to have weighed.” He folds the list. “Nobody asks. Holds up the queue.” He licks the pencil. “So. Are you a hatter or a problem?”"
+   ],
+   "choices": [
+    {
+     "text": "If you find a seat in the dining car,",
+     "short": "Find a seat",
+     "to": 17
+    },
+    {
+     "text": "If you go back to the brake van before Harrow,",
+     "short": "Return to the brake van",
+     "to": 24
+    },
+    {
+     "text": "If you ask Pell to bring the Inspector into it,",
+     "short": "Call in the Inspector",
+     "to": 23
+    }
+   ],
+   "nr": 32
+  },
+  "16": {
+   "chapter": "An ending",
+   "scene": "dining",
+   "tag": "Mrs A. Moll. Twelve stripes.",
+   "text": [
+    "Mrs Moll hears all of it without dropping a stitch. “A blank,” she says. “Oh, you poor lamb. Nobody on this train will leave that alone.” She casts on a new colour, the grey-blue of a winter morning, and asks you to say your name, quietly, just to her, just the once.",
+    "You do. She knits it in. By Harrow it is a twelfth stripe, soft and even, and nobody can take it from you, because nobody can find it. Nor can you. To get it out she would have to unravel eleven women first, and she is very fond of them. At Nine she lends you the scarf on cold days."
+   ],
+   "ending": {
+    "no": "V",
+    "title": "The Twelfth Stripe",
+    "kind": "strange",
+    "epilogue": "Your name is warm, and not quite yours.",
+    "hint": "Hiding a name is not keeping it."
+   },
+   "nr": 14
+  },
+  "17": {
+   "chapter": "Stop 2 · Larchmere",
+   "scene": "dining",
+   "tag": "Miss O. Fenn, milliner. Table six.",
+   "text": [
+    "Mrs Agathe Moll pushes the toast rack towards you and asks what sort of hats you make. “Small ones,” you say. She nods, as if that settles a great deal. Her needles tick. Outside, the larches go by like a queue that never gets shorter.",
+    "Voss works his way along the car, ticket by ticket, apologising to every table. “Routine, madam. There’s a blank ticket loose on the train.” At yours he punches the Fenn stub: a clean crescent. Then he looks at it a moment longer than at anyone else’s, and hands it back with a small bow. “Miss Fenn. Such a busy trade, hats.”"
+   ],
+   "choices": [
+    {
+     "text": "If you go back to the brake van,",
+     "short": "Return to the brake van",
+     "to": 19
+    },
+    {
+     "text": "If you tell the Inspector the smuggler has the blank,",
+     "short": "Tell the Inspector",
+     "to": 23
+    },
+    {
+     "text": "If you stay put until Harrow Bridge,",
+     "short": "Stay put till Harrow",
+     "to": 24
+    }
+   ],
+   "nr": 44
+  },
+  "18": {
+   "chapter": "Stop 2 · Larchmere",
+   "scene": "post",
+   "tag": "Post car. Mind the names.",
+   "text": [
+    "You drop through the hatch into a drift of mailbags. The postman does not get up. He has the air of a man people have fallen on before. “Roof’s not a platform,” he says, and goes back to guarding [[namebox|the Hollin name-box]]: an iron chest banded like a barrel, with no keyhole anywhere.",
+    "Every name handed in at Hollin rides in it to Nine, he tells you, and it has never once been opened on the line. It takes two men to lift. “Heavier every year,” he says, patting it as one pats a horse. “People keep more of themselves than they used to.” Under your feet, the brakes begin to sing for Harrow."
+   ],
+   "choices": [
+    {
+     "text": "If you go back and find Mirela as the train stops at Harrow,",
+     "short": "Find Mirela",
+     "to": 24
+    },
+    {
+     "text": "If you go forward to the conductor,",
+     "short": "Find the conductor",
+     "to": 15
+    }
+   ],
+   "nr": 19
+  },
+  "19": {
+   "chapter": "Stop 2 · Larchmere",
+   "scene": "brakevan",
+   "tag": "Brake van. Staff and freight only.",
+   "text": [
+    "Mirela sits on a crate with a lap desk, forging. She does not look up. “A wife leaving a husband,” she says, blotting a stub. “A boy leaving a debt.” Blot. “A man leaving a choir. Don’t ask.” Each is lettered in a different hand, and each is perfect.",
+    "You tell her about the Inspector and your stub. She shrugs. “He punches everyone.” Then, lighting her pipe: “Twenty to six, I was loading at Hollin. Saw a man hand in a name at Window 1. Didn’t see his face. Saw his coins. [[coins|Exact, counted twice]], on the sill.” She shakes out the match. “Grey gloves. Very clean.”"
+   ],
+   "choices": [
+    {
+     "text": "If you wait with her until Harrow Bridge,",
+     "short": "Wait with Mirela",
+     "to": 24
+    },
+    {
+     "text": "If you go and look at the luggage,",
+     "short": "Look at the luggage",
+     "to": 11
+    }
+   ],
+   "nr": 7
+  },
+  "20": {
+   "chapter": "Stop 3 · Harrow Bridge",
+   "scene": "roof",
+   "tag": "On the roof. Not advised.",
+   "text": [
+    "The wind takes your breath and keeps it. Snowfields shine ahead, so bright they ache; below, the Harrow gorge opens like a book dropped spine-up. You lie flat on the roof of the sleeping car. Through the skylight of Compartment 4, directly beneath you, Voss sits with his case open on his knees, counting stubs, licking his thumb at every tenth.",
+    "He has a great many. He does not hurry. Ahead, the girders of Harrow Bridge climb out of the gorge, criss-crossed like darning. There is a hatch at your elbow into the corridor, and another, one car back, over the post car."
+   ],
+   "choices": [
+    {
+     "text": "If you drop through the hatch into the corridor,",
+     "short": "Drop into the corridor",
+     "to": 15
+    },
+    {
+     "text": "If you drop through the hatch of the post car,",
+     "short": "Drop into the post car",
+     "to": 18
+    },
+    {
+     "text": "If you crawl forward to see what he is counting,",
+     "short": "Crawl forward and look",
+     "to": 21
+    }
+   ],
+   "moment": {
+    "line": "The girders of Harrow Bridge are rushing towards you.",
+    "seconds": 10,
+    "default": 21,
+    "head": "Choose before the bridge",
+    "sub": "Wait too long, and the train chooses for you.",
+    "defaultLabel": "THE TRAIN’S CHOICE",
+    "timeout": "The train chooses for you…"
+   },
+   "nr": 15
+  },
+  "21": {
+   "chapter": "An ending",
+   "scene": "roof",
+   "tag": "Harrow Infirmary. Name: pending.",
+   "text": [
+    "You crawl forward. You see, quite clearly, that he is counting names, and that the stub on top says Ashby. You are still working out why that should matter when Harrow Bridge arrives. It was built for trains, not for people lying on them, and it makes its point firmly and once.",
+    "You wake in Harrow’s infirmary with a bandage and a view of the gorge. The nurse asks your name for the chart. You have none on you. She draws a small dash, very neatly, and brings you broth. You spend the summer there, getting better at everything except being someone. The train, you are told, was on time."
+   ],
+   "ending": {
+    "no": "VI",
+    "title": "Low Girders",
+    "kind": "bad",
+    "epilogue": "Admitted: one. Name: pending.",
+    "hint": "Look down less. Look ahead more."
+   },
+   "nr": 40
+  },
+  "22": {
+   "chapter": "Stop 3 · Harrow Bridge",
+   "scene": "post",
+   "tag": "Harrow Bridge. Ten minutes. Post office.",
+   "text": [
+    "Harrow is one street, a bridge and a post office that smells of glue. Beside its door hangs a brass plaque: HARROW NAME OFFICE. [[plaque|Burned with its register thirty-one years ago]]. Clerk in charge, C. Grell. Never found. Someone has polished the letters until they are soft at the edges.",
+    "Voss has followed you down, rubbing one knee. “Would you be so kind?” He holds out a cream envelope, addressed in copperplate: To the Clerk of Customs, Station Nine. By hand. “My knees and those steps have never agreed. The whistle goes in eight minutes.” He smiles. It is a very good smile. It has been looked after."
+   ],
+   "choices": [
+    {
+     "text": "If you post it without reading it,",
+     "short": "Post the letter",
+     "to": 28
+    },
+    {
+     "text": "If you open it behind the post office,",
+     "short": "Open it out of sight",
+     "to": 25
+    },
+    {
+     "text": "If you stay in Harrow, well out of all this, and let the train go,",
+     "short": "Stay in Harrow",
+     "to": 26
+    }
+   ],
+   "nr": 26
+  },
+  "23": {
+   "chapter": "An ending",
+   "scene": "brakevan",
+   "tag": "Confiscated. Receipt issued, with apologies.",
+   "text": [
+    "The Inspector is grateful. He is gentle. He asks Miss Dusk to remove her coat, as a courtesy, finds your blank in the lining exactly where it was sewn, and holds it up to the light like a good wine. “Thank you,” he says, to you, and punches it. A small crescent.",
+    "Mirela is led away between two guards, pipe still in her mouth. She does not look at you, which is worse than if she had. The blank goes into his case with a receipt, beautifully filled in. At Nine the Clerk reads out names, and none of them is yours. Officially, you are nobody. Unofficially, too."
+   ],
+   "ending": {
+    "no": "VII",
+    "title": "Routine Inspection",
+    "kind": "bad",
+    "epilogue": "Everything was done properly. That was the problem.",
+    "hint": "Report a theft to the right person."
+   },
+   "nr": 11
+  },
+  "24": {
+   "chapter": "Stop 3 · Harrow Bridge",
+   "scene": "platform",
+   "tag": "Harrow Bridge. Ten minutes.",
+   "text": [
+    "The train sighs to a halt at Harrow Bridge. Mirela buttons her coat over the lining where your blank is sewn, steps down onto the platform, and walks off along it without looking back. Not a word. Not a nod. Her pipe smoke follows her round the corner of the post office.",
+    "The platform is short and very empty. The guard checks his watch, then the sky, then his watch again, and lifts his flag. The engine gathers itself. The stub in your pocket says Miss O. Fenn, milliner, and just now it feels like the thinnest thing you own."
+   ],
+   "choices": [
+    {
+     "text": "If you jump down and chase her,",
+     "short": "Chase her",
+     "to": 27
+    },
+    {
+     "text": "If you tell the Inspector she has run off with a blank,",
+     "short": "Tell the Inspector",
+     "to": 23
+    },
+    {
+     "text": "If you stay aboard and say nothing,",
+     "short": "Stay aboard, say nothing",
+     "to": 32
+    }
+   ],
+   "nr": 41
+  },
+  "25": {
+   "chapter": "Stop 3 · Harrow Bridge",
+   "scene": "post",
+   "tag": "To the Clerk of Customs. By hand.",
+   "text": [
+    "Behind the post office there is a coal bunker, a cat, and nobody. The envelope is gummed at one corner only, which is either trust or the appearance of it. You hold it up to the snow glare. One sheet, in copperplate so even it looks ironed, and [[letter|dated yesterday]].",
+    "“Advance notice. A passenger without a name, carrying a blank ticket, will attempt to cross today. Detain them. Brown travelling coat, ink on the left cuff, third button missing. A. Voss, Inspector.” You look down. Ink on the left cuff. The third button is still missing; you had been meaning to see to it. Out front, the guard calls two minutes."
+   ],
+   "choices": [
+    {
+     "text": "If you tear it up and get back on the train,",
+     "short": "Tear it up and board",
+     "to": 28
+    },
+    {
+     "text": "If you post it anyway and board with a calm face,",
+     "short": "Post it and look calm",
+     "to": 33
+    },
+    {
+     "text": "If you keep it and stay in Harrow, out of his reach,",
+     "short": "Stay in Harrow",
+     "to": 26
+    }
+   ],
+   "nr": 10
+  },
+  "26": {
+   "chapter": "An ending",
+   "scene": "post",
+   "tag": "Harrow Name Office. Clerk wanted.",
+   "text": [
+    "The whistle goes, the Express draws its long grey sentence across the bridge, and you stay exactly where you are, which feels sensible for nearly an hour. Up the line, your name travels on to Nine without you. Nobody in Harrow asks after it. They are out of the habit.",
+    "The new name office is two rooms above the bakery and a card in the window: CLERK WANTED. You are very good at it. You write neatly, you never lose a form, and you stamp other people’s names on their way through with real tenderness. Every spring you think about crossing. Every spring the ink needs ordering."
+   ],
+   "ending": {
+    "no": "VIII",
+    "title": "Harrow, Population One More",
+    "kind": "strange",
+    "epilogue": "You got off early. Your name did not.",
+    "hint": "The safest stop is not the end of the line."
+   },
+   "nr": 42
+  },
+  "27": {
+   "chapter": "An ending",
+   "scene": "platform",
+   "tag": "Harrow Bakery. Buns a penny.",
+   "text": [
+    "You jump down, skid on the frozen platform and chase her through the station arch, past the post office, into a bakery that smells of cinnamon and hot iron. She is at the counter. She is buying buns. “Six,” she tells the baker. “No, seven. Our milliner looks peaky.” Then she turns, sees you, and says something short and very Hollin.",
+    "The whistle goes. Mirela runs, bag held high, and makes the brake van by the length of a hand. She waves a bun at you from the moving train. Your name, you learn later, reached Nine a day ahead of you, in someone else’s pocket. You buy an eighth bun. It is extremely good."
+   ],
+   "ending": {
+    "no": "IX",
+    "title": "Harrow Buns",
+    "kind": "strange",
+    "epilogue": "She came back. You didn’t.",
+    "hint": "Not everyone who walks away is leaving."
+   },
+   "nr": 2
+  },
+  "28": {
+   "chapter": "Stop 4 · The Iron Pass",
+   "scene": "observation",
+   "tag": "Observation car. Standing room only.",
+   "text": [
+    "The observation car is all glass and elbows. Ahead, the Iron Pass climbs out of the larches, white on white, the rails a pencil line somebody meant to rub out. Voss finds you without appearing to look. “Peppermint?” A paper bag, then a folded copy of the treaty, one clause lightly pencilled: a traveller with no name is presumed to be carrying someone else’s.",
+    "“A formality,” he says, “but formalities have teeth at the pass.” He uncaps a fountain pen. “Let me write a name on your blank. Any name you like. The guards know my hand. Then you’re safe.” He waits, pen raised, the way a waiter waits for you to taste the wine."
+   ],
+   "choices": [
+    {
+     "text": "If you let him write a name on it for you,",
+     "short": "Let him write a name",
+     "to": 31
+    },
+    {
+     "text": "If you go forward to watch the pass from the engine,",
+     "short": "Go forward to the engine",
+     "to": 30
+    },
+    {
+     "text": "If you step out onto the rear platform,",
+     "short": "Step out onto the platform",
+     "to": 29
+    }
+   ],
+   "nr": 47
+  },
+  "29": {
+   "chapter": "Stop 4 · The Iron Pass",
+   "scene": "roof",
+   "tag": "Rear platform. Hold the rail.",
+   "text": [
+    "Outside, the cold is so clean it rings. The snowfields throw the sun back twice as hard, and the rail bites through your gloves. The door opens behind you. Voss, hat in hand, as if the platform were a chapel. “I was a clerk at Harrow once,” he says. “Very young. Very junior. You wouldn’t have liked me.”",
+    "“Terrible business, the fire. Nobody got their names back.” He takes out [[tin|a small tin engraved C.G.]] and shakes a peppermint into his grey glove. “My father’s,” he adds, before you can ask. The train is slowing. Ahead, a painted post stands alone in the snow, and beyond it a hut with a thread of smoke."
+   ],
+   "choices": [
+    {
+     "text": "If you go back inside as the train slows for the border,",
+     "short": "Go back inside",
+     "to": 33
+    },
+    {
+     "text": "If you step down at the border marker,",
+     "short": "Step down at the marker",
+     "to": 34
+    }
+   ],
+   "nr": 25
+  },
+  "30": {
+   "chapter": "Stop 4 · The Iron Pass",
+   "scene": "engine",
+   "tag": "Footplate. Driver only.",
+   "text": [
+    "The footplate is a furnace with manners. The driver does not look round. “Six hundred crossings,” he says, when you ask. “Every one as Driver. Saves paperwork. My wife calls me it now. Says it suits.” He hands you a shovel as though you had requested one, and watches you use it with open disappointment.",
+    "Ahead, a painted post stands alone in the snow, red on one side, white on the other. The train sighs to a stop beside it. Down the carriages a guard begins reading every stub aloud, borrowed name after borrowed name. “Nobody steps off at the marker,” says Driver, filling his pipe. “You’d be neither side.”"
+   ],
+   "choices": [
+    {
+     "text": "If you step down at the marker,",
+     "short": "Step down at the marker",
+     "to": 34
+    },
+    {
+     "text": "If you ride the footplate through the border post,",
+     "short": "Ride through on the footplate",
+     "to": 33
+    }
+   ],
+   "nr": 13
+  },
+  "31": {
+   "chapter": "An ending",
+   "scene": "station",
+   "tag": "Written in copperplate. Very legible.",
+   "text": [
+    "He writes with care, as if addressing a wedding invitation. A, U, R, E, L. The ink sits wet on the ticket a moment, as yours once did, and then it takes. VOSS. “There,” he says, and blows on it. “Nobody will question that.” Nobody does. The guard at the pass salutes you.",
+    "At Nine the Clerk reads out AUREL VOSS, and your mouth answers before you can stop it. You are handed a very heavy trunk, a warrant thirty-one years old, and the close attention of two gentlemen with notebooks. Across the hall, a man you no longer quite recognise answers to your name, collects it, and walks out into the sunset wearing it beautifully."
+   ],
+   "ending": {
+    "no": "X",
+    "title": "Mistaken Identity",
+    "kind": "bad",
+    "epilogue": "You were very well written.",
+    "hint": "Be careful whose handwriting you become."
+   },
+   "nr": 38
+  },
+  "32": {
+   "chapter": "Stop 4 · The Iron Pass",
+   "scene": "pass",
+   "tag": "Border post. Miss O. Fenn, milliner.",
+   "text": [
+    "You say nothing, the train leaves Harrow without her, and you sit on her crates across the whole gorge feeling like the stupidest milliner alive. Then the back door bangs. Mirela, snow on her shoulders, a bag of Harrow buns under one arm. She hands you one. “You thought I’d gone. It’s all over your face. Fix your face.”",
+    "At the border post the guard reads the stubs aloud. “Miss O. Fenn.” “Here,” you say. He looks at the stub, at you, at your hat, which is not a milliner’s idea of a hat, and lets it go. Mirela’s crates are lowered down the bank on ropes for inspection."
+   ],
+   "choices": [
+    {
+     "text": "If you ride into the tunnel in the brake van with her,",
+     "short": "Stay in the brake van",
+     "to": 36
+    },
+    {
+     "text": "If you step down at the border marker to stretch your legs,",
+     "short": "Stretch your legs outside",
+     "to": 34
+    }
+   ],
+   "nr": 21
+  },
+  "33": {
+   "chapter": "Stop 4 · The Iron Pass",
+   "scene": "pass",
+   "tag": "Border post. Stubs read aloud.",
+   "text": [
+    "The border post is a hut, a flag and a sergeant with a voice built for reading aloud. He works down the train stub by stub. “Mrs A. Moll. Driver. Miss O. Fenn.” He reaches you, takes your ticket, turns it over, and turns it back, as though the name might be on the other side. It is not. The carriage finds the snow suddenly fascinating.",
+    "“No name,” he says. “You know what the treaty presumes.” Then a smell of peppermint, and a grey sleeve at your shoulder. “With me, sergeant,” says Voss, pleasantly. “An unfortunate case. I’ll answer for them at Nine.” The sergeant straightens. Somewhere behind you, Mrs Moll stops knitting."
+   ],
+   "choices": [
+    {
+     "text": "If you let Voss vouch for you,",
+     "short": "Let Voss vouch for you",
+     "to": 35
+    },
+    {
+     "text": "If you say your real name aloud to the guard,",
+     "short": "Say your real name",
+     "to": 37
+    }
+   ],
+   "nr": 28
+  },
+  "34": {
+   "chapter": "An ending",
+   "scene": "pass",
+   "tag": "Border marker. Do not alight.",
+   "text": [
+    "You step down into snow up to your shins. The painted post is right there, red on one side, white on the other, and you are standing precisely on the line of the paint. Behind you the train gives one polite hoot and leaves. Each country regards you across its half of the snow. Neither moves first.",
+    "The guard hut takes you in, since nobody else will. You learn to make tea two ways, strong for the east and milky for the west, and to pass each through the correct window. Both sergeants grow fond of you. Neither can find a form you fit. Every train that goes by, both sides wave."
+   ],
+   "ending": {
+    "no": "XI",
+    "title": "Neither Side",
+    "kind": "strange",
+    "epilogue": "Both sides wave. Neither writes.",
+    "hint": "A border is a bad place to stand still."
+   },
+   "nr": 33
+  },
+  "35": {
+   "chapter": "Stop 5 · The Customs Tunnel",
+   "scene": "corridor",
+   "tag": "Customs Tunnel. Twenty minutes, no lights.",
+   "text": [
+    "The tunnel swallows the train whole. The lights go out carriage by carriage, as regulations require, and the dark that follows smells of coal and wet stone. Somebody’s child laughs; somebody’s mother hushes it. You feel the corridor wall at your back, and warm peppermint breath at your ear.",
+    "“Let me do the talking at Nine,” says Voss, very softly. “Clerks are literal people. And give me the blank now, there’s a good traveller. In the dark nobody sees, and nobody need ever know it was you who had it.” His gloved hand finds your wrist, lightly, the way one steadies a glass. Far ahead, a carriage lights up again."
+   ],
+   "choices": [
+    {
+     "text": "If you give it to him,",
+     "short": "Give him the ticket",
+     "to": 9
+    },
+    {
+     "text": "If you keep it and say you will manage,",
+     "short": "Keep it and manage",
+     "to": 38
+    }
+   ],
+   "moment": {
+    "line": "The lights are coming back on, one carriage at a time.",
+    "seconds": 10,
+    "default": 38,
+    "head": "Choose before the lights come on",
+    "sub": "Wait too long, and the train chooses for you.",
+    "defaultLabel": "THE TRAIN’S CHOICE",
+    "timeout": "The train chooses for you…"
+   },
+   "nr": 18
+  },
+  "36": {
+   "chapter": "Stop 5 · The Customs Tunnel",
+   "scene": "brakevan",
+   "tag": "Customs Tunnel. Brake van.",
+   "text": [
+    "The tunnel takes the daylight. The brake van goes black as the inside of a pocket until Mirela strikes a match, and her lantern makes a snug parlour of the crates, the buns and her unimpressed face. “Twenty minutes,” she says. “Eat something. Customs is worse on an empty stomach.”",
+    "The handle of the corridor door turns. Stops. Turns again, slower, as if whoever is outside is being polite about it. Mirela takes the pipe out of her mouth and does nothing else at all. You lift the lantern to the little window in the door and see only yourself, looking back, rather pale, under a milliner’s hat."
+   ],
+   "choices": [
+    {
+     "text": "If you open the door,",
+     "short": "Open the door",
+     "to": 23
+    },
+    {
+     "text": "If you hold the door shut and keep quiet,",
+     "short": "Hold it shut, keep quiet",
+     "to": 39
+    }
+   ],
+   "nr": 8
+  },
+  "37": {
+   "chapter": "An ending",
+   "scene": "station",
+   "tag": "Name spoken. Name kept.",
+   "text": [
+    "You say your name. You say it clearly and all of it, the way you would sign for a parcel, and for a moment it hangs in the cold air, pleased to be out. Then it looks for somewhere to settle, and settles, like a moth on a sleeve, on the nearest stub. The nearest stub is in a grey glove.",
+    "“Thank you,” says Voss, and tucks it away, warm. “That settles it.” Everybody agrees that it does. The paperwork is beautiful. You go on as a blank with a crescent in it, and whenever anyone asks who you are, you open your mouth and find the word has already been used."
+   ],
+   "ending": {
+    "no": "XII",
+    "title": "Spoken For",
+    "kind": "bad",
+    "epilogue": "You said it. He kept it.",
+    "hint": "On this line, words stick."
+   },
+   "nr": 22
+  },
+  "38": {
+   "chapter": "Stop 6 · Station Nine",
+   "scene": "station",
+   "tag": "Station Nine. Arrival 18:52.",
+   "text": [
+    "Station Nine is a disappointment to anyone expecting drama. The sun is going down behind the goods shed, pigeons patrol the platform like junior officials, and a customs queue shuffles towards a door marked NAMES RETURNED. Somebody is selling hot chestnuts. Somebody else has brought a dog to meet a name.",
+    "Two porters carry Voss’s trunk between them and set it down with a grunt. He tips each of them exactly. “Stand behind me,” he says, straightening your collar as if you were a nephew. “Say nothing. I have done this a great many times.” Beyond the barrier the town gate stands open, and nobody is watching it."
+   ],
+   "choices": [
+    {
+     "text": "If you stand behind him in the queue,",
+     "short": "Queue behind him",
+     "to": 40
+    },
+    {
+     "text": "If you slip out through the town gate,",
+     "short": "Slip out the gate",
+     "to": 41
+    }
+   ],
+   "nr": 46
+  },
+  "39": {
+   "chapter": "Stop 6 · Station Nine",
+   "scene": "station",
+   "tag": "Customs Hall. Names returned here.",
+   "text": [
+    "The customs hall is warm and varnished and very quiet, like a bank that has just been told a secret. Hendrika Aldewin sits at a high desk with the ledger open beside her and brass scales at her elbow. On the wall, in gilt: CLAUSE SEVEN, with a great deal of small print underneath.",
+    "She reads names in a clear, pleasant voice, and people step forward to take them back. A widow. A baker. A man who bursts into tears and apologises for it. Mirela, beside you, smells of pipe smoke and Harrow buns. Then the Clerk reads your name, the real one. Across the hall, a gentleman in grey clears his throat."
+   ],
+   "choices": [
+    {
+     "text": "If you step forward and answer to it,",
+     "short": "Answer to your name",
+     "to": 37
+    },
+    {
+     "text": "If you say nothing,",
+     "short": "Say nothing",
+     "to": 42
+    },
+    {
+     "text": "If you point at Mirela and say she has your ticket,",
+     "short": "Point at Mirela",
+     "to": 23
+    }
+   ],
+   "moment": {
+    "line": "The Clerk looks up from the ledger and waits for an answer.",
+    "seconds": 10,
+    "default": 42,
+    "head": "Choose before your name is called again",
+    "sub": "Wait too long, and the border chooses for you.",
+    "defaultLabel": "THE BORDER’S CHOICE",
+    "timeout": "The border chooses for you…"
+   },
+   "nr": 37
+  },
+  "40": {
+   "chapter": "Stop 6 · Station Nine",
+   "scene": "station",
+   "tag": "Customs Hall. Names returned here.",
+   "text": [
+    "Hendrika Aldewin has a ledger, a set of brass scales and the air of a woman who has never once been hurried. Behind her, clause seven is set out on a sign in gilt letters. She reads a name from her list, clearly and without interest. It is yours.",
+    "“Here,” says Voss, before you can open your mouth. He lays the Ashby stub on her desk, crescent uppermost, and adds, with real regret: “Madam, the person behind me travels nameless, with a blank ticket. The classic method. It is all in my report.” The Clerk looks at you over her spectacles. So does the whole queue."
+   ],
+   "choices": [
+    {
+     "text": "If you shout that it is your name,",
+     "short": "Shout that it’s yours",
+     "to": 37
+    },
+    {
+     "text": "If you hold your ticket’s crescent up to his punch,",
+     "short": "Match the crescents",
+     "to": 46
+    },
+    {
+     "text": "If you walk out through the town gate,",
+     "short": "Walk out",
+     "to": 41
+    },
+    {
+     "text": "If you ask the Clerk to send for Pell’s list and count the heads,",
+     "short": "Send for Pell’s list",
+     "to": 49,
+     "hidden": true,
+     "needs": {
+      "seen": [
+       15
+      ]
+     }
+    }
+   ],
+   "nr": 3
+  },
+  "41": {
+   "chapter": "Stop 6 · Station Nine",
+   "scene": "city",
+   "tag": "Nine. Population: returned.",
+   "text": [
+    "The town of Nine smells of new bread and wet cobbles. Everywhere, people are greeting each other by their real names, carefully, like coats they had forgotten they owned. “Mrs Hallam!” “Mr Eke, as I live!” A girl says her own name to a shop window, twice, to hear how it sounds.",
+    "Nobody greets you. There is nothing to greet you by. The sun has gone down behind the pass, and above the customs hall one window is still lit: the ledger room, where the line keeps its accounts. A drainpipe runs up beside it. Across the street, a card in a boarding-house window: ROOMS. NO QUESTIONS."
+   ],
+   "choices": [
+    {
+     "text": "If you find a room and start again as nobody,",
+     "short": "Take a room",
+     "to": 43
+    },
+    {
+     "text": "If you climb to the ledger room,",
+     "short": "Climb to the ledger room",
+     "to": 44
+    }
+   ],
+   "nr": 17
+  },
+  "42": {
+   "chapter": "Stop 6 · Station Nine",
+   "scene": "station",
+   "tag": "Mr N. Ashby. Compartment 4.",
+   "text": [
+    "Your name hangs in the hall a moment too long. Then, from the front of the queue: “Here.” Voss lays a stub on the desk, Mr N. Ashby, punched with a small silver crescent. The Clerk writes, blots, and slides your name across to him like change from a shilling. He tucks it inside his coat without looking at it.",
+    "“Anything to declare, Inspector?” “One trunk. Stationery.” Two porters are leaning on it, breathing hard. Aldewin nods and lifts the stamp. Mirela, beside you, has stopped chewing. Upstairs, a door opens and shuts: the ledger room."
+   ],
+   "choices": [
+    {
+     "text": "If you ask the Clerk to weigh his trunk,",
+     "short": "Ask for a weighing",
+     "to": 48,
+     "hidden": true,
+     "needs": {
+      "seen": [
+       11
+      ]
+     }
+    },
+    {
+     "text": "If you follow him out into the town,",
+     "short": "Follow him out",
+     "to": 41
+    },
+    {
+     "text": "If you slip upstairs to the ledger room,",
+     "short": "Slip upstairs",
+     "to": 44
+    }
+   ],
+   "nr": 5
+  },
+  "43": {
+   "chapter": "An ending",
+   "scene": "city",
+   "tag": "Rooms. No questions.",
+   "text": [
+    "You take the room. The landlady asks nothing, as advertised, and in the morning brings your tea without asking how you take it, since there is nobody to ask. You find work sorting the post that nobody collects. You are very good at it. Nobody thanks you, because nobody is quite sure whom to thank.",
+    "It is restful, living in Nine without a name. Nobody can owe you money, or be owed it. Nobody writes. Tradesmen forget you halfway through a sentence, kindly. In winter it is a little cold, so you buy a thick coat, and nobody at all can tell you it doesn’t suit you."
+   ],
+   "ending": {
+    "no": "XIII",
+    "title": "Nobody in Particular",
+    "kind": "silver",
+    "epilogue": "No name, no debts, no letters.",
+    "hint": "Walking away is also a crossing."
+   },
+   "nr": 27
+  },
+  "44": {
+   "chapter": "Stop 6 · Station Nine",
+   "scene": "tower",
+   "tag": "Ledger of Names. Do not lean.",
+   "text": [
+    "The ledger room is small, hot and orderly: a stove, a stool, and a ledger the size of a door lying open on a slanted desk. Every crossing since the treaty is in it. Name handed in, stub issued, collected. Most lines are ticked. Among the few that are not, in small brown letters: [[ledger|E.M., crossed as someone else]], years ago.",
+    "The book falls open thirty-one years back, the page soft from handling. GRELL, CASIMIR. Handed in at Hollin. Stub issued: A. VOSS. Collected: nothing. From the hall below comes the sound of the stamp, once, very clean. The pen in the inkwell is still wet."
+   ],
+   "choices": [
+    {
+     "text": "If you write your own name in the Collected column,",
+     "short": "Write yourself in",
+     "to": 45
+    },
+    {
+     "text": "If you carry the ledger down to the Clerk,",
+     "short": "Carry the ledger down",
+     "to": 47
+    }
+   ],
+   "nr": 12
+  },
+  "45": {
+   "chapter": "An ending",
+   "scene": "tower",
+   "tag": "Collected. Initialled. Filed.",
+   "text": [
+    "You dip the pen and write your name in the Collected column, neatly, the way you would letter a coastline. The ink takes at once. The ledger believes you. It believes you so completely that by morning you are a line in it: ruled, ticked, and a little flat.",
+    "Hendrika Aldewin finds you at the desk and reads you with interest. “Well,” she says. “You are certainly on record.” She takes you on as her apprentice. You are exact, patient and good with columns. People come to the desk for their names, and you hand them back, and some evenings you look yourself up, and are glad to find you there."
+   ],
+   "ending": {
+    "no": "XIV",
+    "title": "On Record",
+    "kind": "strange",
+    "epilogue": "You are on record. Only on record.",
+    "hint": "A ledger records. It does not return."
+   },
+   "nr": 35
+  },
+  "46": {
+   "chapter": "An ending",
+   "scene": "station",
+   "tag": "Pending inquiry. Please wait.",
+   "text": [
+    "You hold up your ticket. Its crescent is a little ragged at one horn. You ask, politely, to see the Inspector’s punch, and the whole queue discovers an interest in its boots. Aldewin takes the silver punch, cuts a crescent into a slip of paper and lays it beside yours. Two crescents. One punch. The same ragged horn.",
+    "“Interesting,” she says, which in customs is a very long word. She withholds your name from you both, pending inquiry, and asks the Inspector to wait in a room with a good lock. You leave the hall as PENDING, stamped in violet. It isn’t a name. It is better than nobody, and it has prospects."
+   ],
+   "ending": {
+    "no": "XV",
+    "title": "Half a Name",
+    "kind": "silver",
+    "epilogue": "Returned: nothing. Kept: nothing. Promising.",
+    "hint": "One clue proves a punch, not a thief."
+   },
+   "nr": 49
+  },
+  "47": {
+   "chapter": "An ending",
+   "scene": "tower",
+   "tag": "Returned to sender. Handle with care.",
+   "text": [
+    "The ledger weighs as much as a small sheep and argues with you all the way down the stairs. You set it on the Clerk’s desk, open at GRELL, CASIMIR. Aldewin reads the line twice, then sends for two constables and, after a moment’s thought, a pot of tea. The Inspector is held for the Harrow fire, very politely, by men who apologise.",
+    "Your name, though, is already in his coat, and his coat has gone to the magistrate with the rest of him. There are forms. Six weeks later it comes back by post in a brown envelope marked RETURNED TO OWNER, creased at one corner. You iron it on a low heat. It fits, mostly."
+   ],
+   "ending": {
+    "no": "XVI",
+    "title": "By Return of Post",
+    "kind": "silver",
+    "epilogue": "It arrived. It needed ironing.",
+    "hint": "Proof on the stairs is slower than proof at the desk."
+   },
+   "nr": 24
+  },
+  "48": {
+   "chapter": "An ending",
+   "scene": "station",
+   "tag": "A. Voss. Stationery. 9 lb.",
+   "text": [
+    "“Clause seven,” you say. “I should like the Inspector’s trunk weighed.” Nobody moves. Then two porters heave it onto the brass scales, and Hendrika Aldewin slides the weight along the beam, and further. The label says nine pounds. The beam settles at ninety. Voss sits down on a bench and, for once, offers nobody a peppermint.",
+    "Thirty-one years of other people do not weigh nothing, and a name-thief’s stubs are void. The Clerk knows the treaty. She hands your name back across the desk. “It fits,” she says. Then she opens the trunk and reads the others out to the hall, into the evening. Mirela unpicks her lining. You give her the blank, for someone who needs it."
+   ],
+   "ending": {
+    "no": "XVII",
+    "title": "Ninety Pounds of Stationery",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Declared: one name. Returned: thirty-two.",
+    "hint": "Some choices only look wrong until they are weighed."
+   },
+   "nr": 29
+  },
+  "49": {
+   "chapter": "An ending",
+   "scene": "tower",
+   "tag": "Nine names. Eight heads. One compartment.",
+   "text": [
+    "The Clerk sends a boy for Conductor Pell, who arrives smelling of coal and grievance, list in hand. Nine names. He counts heads. Eight. “Compartment 4,” he reads. “Mr A. Voss, Inspector. Mr N. Ashby.” He looks at the one gentleman standing there. “I did wonder.” Aldewin takes everybody upstairs to the ledger, and it falls open thirty-one years back.",
+    "A man with two stubs has stolen one, and the treaty is clear about which. The Ashby stub is yours, and so is the name it holds; the ledger says, in plain ink, who Voss was. The Clerk takes your blank ticket, stamps it UNUSED and files it in a drawer of its own. “The first,” she says. “Ever.”"
+   ],
+   "ending": {
+    "no": "XVIII",
+    "title": "Nine Names, Eight Heads",
+    "kind": "good",
+    "star": true,
+    "epilogue": "The arithmetic was on your side all along.",
+    "hint": "Count what is in front of you."
+   },
+   "nr": 31
+  }
+ }
+}
