@@ -231,7 +231,11 @@
       '.shop-mcard{width:100%;max-width:330px;padding:20px;border-radius:20px;background:#1B1440;border:1px solid rgba(255,255,255,.18);text-align:center;display:flex;flex-direction:column;gap:10px}' +
       '.shop-mcard h3{margin:0;font-family:var(--serif);font-size:20px;color:var(--gold2)}.shop-mcard p{margin:0;font-size:13px;line-height:1.5;color:var(--muted)}' +
       '.shop-adbox{height:150px;border-radius:14px;display:grid;place-items:center;background:repeating-linear-gradient(45deg,#2A2250 0 12px,#231C46 12px 24px);font-size:13px;font-weight:800;color:var(--text)}' +
-      '.shop-mbtns{display:flex;gap:10px}.shop-mbtns button{flex:1}';
+      '.shop-mbtns{display:flex;gap:10px}.shop-mbtns button{flex:1}' +
+      /* T28: with the shop button the library header must still fit a 360 px phone (buttons stay 44 px) */
+      '.lib-head .brand{letter-spacing:.2em;gap:8px}.lib-head .lib-tools{gap:6px}.lib-head .lang-pill{padding:2px}.lib-head .lang-pill button{min-width:30px}' +
+      '@media (max-width:400px){.lib-head .brand{font-size:20px;letter-spacing:.18em}}' +
+      '@media (max-width:380px){.lib-head .brand{font-size:18px;letter-spacing:.14em;gap:6px}.lib-head .lib-tools{gap:4px}}';
   }
   function build() {
     if (built) return; built = true;
@@ -268,7 +272,7 @@
       if (!s.owned && !s.done && !passActive() && s.tier.suffix) sub += ' · ' + tt('yourPrice', { n: s.found });
       h += '<div class="shop-row"><span class="shop-cover" style="background-image:url(' + (b.cover || '') + ')"></span><span class="shop-info"><b>' + E(bookTitle(b)) + '</b><span>' + E(sub) + '</span></span>' + right + '</div>';
     });
-    h += '<p class="shop-small" style="margin:8px 2px 0">' + E(tt('priceNote', { p0: money(TIERS[0].price), p1: money(TIERS[1].price), p2: money(TIERS[2].price) })) + '</p>';
+    h += '<p class="shop-small" style="margin:8px 2px 0">' + E(tt('priceNote', { p0: pBook('book_mountain'), p1: pBook('book_mountain_b'), p2: pBook('book_mountain_c') })) /* T28: the store's prices, so note and buttons agree (and the currency is right outside the euro) */ + '</p>';
     h += '</div></div>';
     var pa = passActive();
     h += '<div class="shop-sec" id="shopPassSec"><h4>' + E(tt('passHead')) + '</h4><div class="shop-card shop-pass"><p class="shop-small" style="margin-top:0">' + E(tt('passDesc')) + '</p>';

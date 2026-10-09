@@ -10,7 +10,7 @@
   if (window.__waywardFeedbackReady) return;
   window.__waywardFeedbackReady = true;
 
-  var MAILTO_TO = 'voormanuel@gmail.com';
+  var MAILTO_TO = 'studio.wayward01@gmail.com';
   var DRAFT_KEY = 'wayward.feedback.draft.v1';
   var PREF_KEY = 'wayward.prefs.v1';
 
