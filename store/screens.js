@@ -32,8 +32,12 @@ const STORE_KEY = { 'hollow-mountain': 'wayward.hollow-mountain.v1', 'drowned-li
     const ctx = await b.newContext({ viewport: { width: 412, height: 732 }, deviceScaleFactor: 2.625, isMobile: true, hasTouch: true, locale: 'en-US' });
     await ctx.route('**/favicon.ico', r => r.fulfill({ status: 204, body: '' }));
     await ctx.addInitScript(([book, seed, keys, day, extra]) => {
+      // the prices Google Play shows for these products (Play Console, 09-10: NL incl. VAT, en-US UI)
+      const price = (id) => id === 'pass_monthly' ? '€4.99' : id === 'pass_lifetime' ? '€19.99' : /_c$/.test(id) ? '€0.99' : /_b$/.test(id) ? '€1.49' : '€1.99';
       window.Capacitor = { isNativePlatform: () => true, getPlatform: () => 'android', Plugins: {}, addListener: () => ({ remove() {} }),
-        nativePromise: (pl, m) => Promise.resolve(m === 'isBillingSupported' ? { isBillingSupported: true } : m === 'getProducts' ? { products: [] } : m === 'getPurchases' ? { purchases: [] } : {}) };
+        nativePromise: (pl, m, o) => Promise.resolve(m === 'isBillingSupported' ? { isBillingSupported: true }
+          : m === 'getProducts' ? { products: ((o && o.productIdentifiers) || []).map(id => ({ identifier: id, priceString: price(id) })) }
+          : m === 'getPurchases' ? { purchases: [] } : {}) };
       if (sessionStorage.getItem('seeded')) return;
       sessionStorage.setItem('seeded', '1');
       localStorage.setItem('wayward.prefs.v1', JSON.stringify({ lang: 'en', music: true, sfx: true, speed: 'fast', introDay: day, turns: 30, book: book }));
