@@ -142,13 +142,16 @@
     }
     var mid = panel('mid', 1), bot = panel('bot', 2), top = panel('top', 0);
     var words = ctx.L(il.text) || ['', ''], sign = il.sign || 'Edda Marlow';
+    // the wax seal: Book I's red "A" by default; other books set il.seal = { mark, color: red | green | black | blue | none }
+    var WAX = { red: ['#C2404E', '#8A2034', '#4A0C1C'], green: ['#4E8A5A', '#2A5A36', '#123A1C'], black: ['#5A5560', '#2A2630', '#0E0C12'], blue: ['#4E6AA8', '#2A3E78', '#121E44'] };
+    var SEAL = { mark: (il.seal && il.seal.mark != null) ? il.seal.mark : 'A', c: WAX[(il.seal && il.seal.color) || 'red'] || WAX.red, none: !!(il.seal && il.seal.color === 'none') };
     top.ink.innerHTML = '<span class="s2-hand s2-l1">' + esc(words[0]) + '</span>';
     mid.ink.innerHTML = '<span class="s2-hand s2-l2">' + esc(words[1]) + '</span>';
     bot.ink.innerHTML = '<span class="s2-sig">' + esc(sign) + '</span><svg class="s2-flour" viewBox="0 0 120 16" aria-hidden="true"><path d="M3 9 C 26 3, 52 14, 76 8 S 108 4, 117 10"/></svg><i class="s2-blot"></i>';
     top.ink.style.top = Math.round(PH * 0.42) + 'px'; mid.ink.style.top = Math.round(PH * 0.16) + 'px'; bot.ink.style.top = Math.round(PH * 0.12) + 'px';
     // the outside of the packet: addressed to you, and her seal, broken three weeks ago
     var addr = el('div', 's2-addr', top.back); addr.textContent = ctx.L(il.addr) || '';
-    el('div', 's2-seal', top.back, '<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3c4 0 6 3 9 3s5 3 6 6-1 5 1 8-1 6-3 8-3 5-6 6-5 2-8 2-5-2-8-3-4-3-6-6-1-5-2-8 1-5 3-7 3-5 6-6 5-3 8-3z" fill="url(#s2wax' + (++uid) + ')"/><circle cx="20" cy="21" r="9.5" fill="none" stroke="rgba(40,4,12,.55)" stroke-width="1.4"/><text x="20" y="26" text-anchor="middle" font-family="IM Fell English, Georgia, serif" font-size="14" fill="rgba(40,4,12,.6)">A</text><path d="M11 6 L17 15 L14 20 L21 26 L19 34" fill="none" stroke="#2a0610" stroke-width="1.6"/><path d="M11.6 6 L17.6 15 L14.6 20 L21.6 26" fill="none" stroke="rgba(255,190,190,.35)" stroke-width=".6"/><defs><radialGradient id="s2wax' + uid + '" cx=".38" cy=".32" r=".75"><stop offset="0" stop-color="#C2404E"/><stop offset=".55" stop-color="#8A2034"/><stop offset="1" stop-color="#4A0C1C"/></radialGradient></defs></svg>');
+    if (!SEAL.none) el('div', 's2-seal', top.back, '<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3c4 0 6 3 9 3s5 3 6 6-1 5 1 8-1 6-3 8-3 5-6 6-5 2-8 2-5-2-8-3-4-3-6-6-1-5-2-8 1-5 3-7 3-5 6-6 5-3 8-3z" fill="url(#s2wax' + (++uid) + ')"/><circle cx="20" cy="21" r="9.5" fill="none" stroke="rgba(40,4,12,.55)" stroke-width="1.4"/><text x="20" y="26" text-anchor="middle" font-family="IM Fell English, Georgia, serif" font-size="14" fill="rgba(40,4,12,.6)">' + esc(SEAL.mark) + '</text><path d="M11 6 L17 15 L14 20 L21 26 L19 34" fill="none" stroke="#2a0610" stroke-width="1.6"/><path d="M11.6 6 L17.6 15 L14.6 20 L21.6 26" fill="none" stroke="rgba(255,190,190,.35)" stroke-width=".6"/><defs><radialGradient id="s2wax' + uid + '" cx=".38" cy=".32" r=".75"><stop offset="0" stop-color="' + SEAL.c[0] + '"/><stop offset=".55" stop-color="' + SEAL.c[1] + '"/><stop offset="1" stop-color="' + SEAL.c[2] + '"/></radialGradient></defs></svg>');
     // size the handwriting once the font is there (one measurement, not per frame)
     fontsReady(['italic 30px "IM Fell English"']).then(function () {
       if (S.dead) return;
@@ -200,7 +203,8 @@
       if (done) return; done = true; S.unghost();
       ctx.setPrompt('');
       var gl = el('div', 's2-glint', Lt); el('i', '', gl);
-      S.later(breathe, SH ? 120 : 260);
+      if (il.breathe) S.later(breathe, SH ? 120 : 260); // Book I only: the mountain breathes in
+      else if (ctx.FX && ctx.FX.glow) S.later(function () { ctx.FX.glow(root, cx, cy, { r: Math.max(A.W, A.H) * 0.32, dur: 1300, peak: 0.7, rest: 0.35 }); }, SH ? 120 : 260);
       S.later(function () { ctx.sfx('sparkle', { gain: 0.45 }); }, 350);
       S.later(function () { fin(true); }, SH ? 900 : 1350);
     }
@@ -297,9 +301,10 @@
     frame.style.cssText = 'left:' + (-20 * fw) + 'px;top:' + (-20 * fw) + 'px;width:' + (140 * fw) + 'px;height:' + (212 * fw) + 'px';
     var inner = el('div', 's2-inner', door), leak = el('div', 's2-leak', door), feet = el('i', 's2-feet', leak);
     [inner, leak].forEach(function (x) { x.style.borderRadius = (DW / 2) + 'px ' + (DW / 2) + 'px 0 0'; });
+    var WOOD = il.wood || ['#180c05', '#3e2413', '#4e301a']; // Book I oak; e.g. a green-painted door: ['#0e1a10', '#24402a', '#2f5236']
     var leaf = el('div', 's2-leaf', door, '<svg viewBox="0 0 100 170" aria-hidden="true"><defs>' +
       '<clipPath id="' + id + 'dc"><path d="M0 170V50A50 50 0 0 1 100 50V170Z"/></clipPath>' +
-      '<linearGradient id="' + id + 'pk" x1="0" x2="1"><stop offset="0" stop-color="#180c05"/><stop offset=".16" stop-color="#3e2413"/><stop offset=".5" stop-color="#4e301a"/><stop offset=".84" stop-color="#3a2114"/><stop offset="1" stop-color="#160b05"/></linearGradient>' +
+      '<linearGradient id="' + id + 'pk" x1="0" x2="1"><stop offset="0" stop-color="' + WOOD[0] + '"/><stop offset=".16" stop-color="' + WOOD[1] + '"/><stop offset=".5" stop-color="' + WOOD[2] + '"/><stop offset=".84" stop-color="' + WOOD[1] + '"/><stop offset="1" stop-color="' + WOOD[0] + '"/></linearGradient>' +
       '<linearGradient id="' + id + 'ir" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a6c5e"/><stop offset=".35" stop-color="#352d27"/><stop offset="1" stop-color="#141110"/></linearGradient>' +
       '<linearGradient id="' + id + 'rim" x1="1" x2="0"><stop offset="0" stop-color="rgba(255,170,90,.32)"/><stop offset=".55" stop-color="rgba(255,170,90,0)"/></linearGradient>' +
       '<linearGradient id="' + id + 'sh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(0,0,0,.55)"/><stop offset=".25" stop-color="rgba(0,0,0,0)"/><stop offset=".8" stop-color="rgba(0,0,0,0)"/><stop offset="1" stop-color="rgba(0,0,0,.45)"/></linearGradient>' +
@@ -630,7 +635,7 @@
         var t = y / nameBox.y0, x = SW * 0.07 + rr() * 14, fs = Math.round(lerp(9, 13, t) + rr() * 3), light = 0.35 + t * 0.5;
         while (x < SW * 0.93) {
           if (t < 0.3) { x += glyphs(g, x, y - fs * 0.45, 2 + Math.floor(rr() * 4), fs * 0.9, light) + 10 + rr() * 12; continue; }
-          var nm = NAMES[ni++ % NAMES.length] + (rr() < 0.22 ? ' ' + YEARS[Math.floor(rr() * YEARS.length)] : ''), w = nm.length * fs * 0.62, font = rr() < 0.5 ? fontA : fontB, rot = (rr() - 0.5) * 0.08;
+          var NM = il.names || NAMES, YR = il.years || YEARS, nm = NM[ni++ % NM.length] + (rr() < 0.22 ? ' ' + YR[Math.floor(rr() * YR.length)] : ''), w = nm.length * fs * 0.62, font = rr() < 0.5 ? fontA : fontB, rot = (rr() - 0.5) * 0.08;
           if (x + w > SW * 0.95) break;
           engrave(g, nm, x + w / 2, y, fs, font, light, rot);
           LIT.push({ t: nm, x: x + w / 2, y: y, fs: fs, font: font, rot: rot });
@@ -922,7 +927,7 @@
     prompt: { en: 'Unfold the letter', nl: 'Vouw de brief open' },
     done: { en: 'Signed: Edda Marlow. You followed her anyway.', nl: 'Getekend: Edda Marlow. Je bent haar toch gevolgd.' },
     text: { en: ['The mountain is hollow.', 'Don’t follow me.'], nl: ['De berg is hol.', 'Volg me niet.'] }, sign: 'Edda Marlow',
-    addr: { en: 'To my apprentice', nl: 'Aan mijn leerling' } };
+    addr: { en: 'To my apprentice', nl: 'Aan mijn leerling' }, breathe: true };
   IL[6] = { type: 'knock', knocks: 3, zoom: [74, 50],
     lines: { en: ['Everyone in Low Veyra smiles at you.', 'The inn has a heavy oak door, with light behind it.'],
              nl: ['Iedereen in Laag-Veyra glimlacht naar je.', 'Achter de zware eikenhouten deur van de herberg brandt licht.'] },

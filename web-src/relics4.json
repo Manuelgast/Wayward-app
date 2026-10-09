@@ -40,16 +40,19 @@
  "relics": [
   {
    "id": "cairn",
-   "page": 7,
-   "where": "text",
+   "page": null,
+   "where": "scene",
+   "scene": "lagoon",
+   "x": 45,
+   "y": 15,
    "icon": "window",
    "name": {
     "en": "The Flagless Pole",
     "nl": "De stok zonder vlag"
    },
    "riddle": {
-    "en": "Look down through the lagoon: somebody once left a claim standing on the old summit.",
-    "nl": "Kijk omlaag door de lagune: op de oude top heeft ooit iemand zijn aanspraak laten staan."
+    "en": "Out on the lagoon, lift the page and look down: somebody once left a claim standing on the old summit.",
+    "nl": "Til op de lagune de bladzijde op en kijk omlaag: op de oude top heeft ooit iemand zijn aanspraak laten staan."
    },
    "lore": {
     "en": "Every claim in these waters was once marked the same way: a cairn of stones, a pole, and a flag sewn by whoever stayed at home. Flags are the first thing the sea takes. It has no use for them and unpicks them thread by thread. The fisherfolk of Lesser Sound say you can date a drowned island by its pole. If the flag is gone, they say, so is everyone who saluted it.",
@@ -184,16 +187,19 @@
   },
   {
    "id": "ring",
-   "page": 30,
-   "where": "text",
+   "page": null,
+   "where": "scene",
+   "scene": "vent",
+   "x": 34,
+   "y": 43,
    "icon": "lantern",
    "name": {
     "en": "The Ring",
     "nl": "De ring"
    },
    "riddle": {
-    "en": "Up where the tea tastes of eggs, the vents that stand are wearing jewellery.",
-    "nl": "Daarboven, waar de thee naar eieren smaakt, dragen de stoomgaten die blijven staan sieraden."
+    "en": "Up where the tea tastes of eggs, lift the page: the vents that stand are wearing jewellery.",
+    "nl": "Til de bladzijde op waar de thee naar eieren smaakt: de stoomgaten die blijven staan, dragen sieraden."
    },
    "lore": {
     "en": "On the Salt Coast a ring of flowers round a well means the water is sweet, and couples marry standing inside one, for luck. Visitors find this charming. Coast people find it practical: a ring that has stood for years marks a well that has not fallen in. The oldest ring on the coast surrounds a well that ran dry a century ago. Nobody has had the heart to fill it.",

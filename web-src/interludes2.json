@@ -136,5 +136,198 @@
   },
   "x": null,
   "y": null
+ },
+ "21": {
+  "type": "knock",
+  "lines": {
+   "en": [
+    "The keeper’s door was painted a hopeful green, once.",
+    "The chimney is cold. You knock anyway."
+   ],
+   "nl": [
+    "De deur van de wachter was ooit hoopvol groen geverfd.",
+    "De schoorsteen is koud. Je klopt toch."
+   ]
+  },
+  "prompt": {
+   "en": "Knock three times",
+   "nl": "Klop drie keer"
+  },
+  "done": {
+   "en": "No one answers. The door swings in.",
+   "nl": "Niemand doet open. De deur zwaait naar binnen."
+  },
+  "knocks": 3,
+  "zoom": [
+   50,
+   42
+  ],
+  "wood": [
+   "#0e1a10",
+   "#24402a",
+   "#2f5236"
+  ]
+ },
+ "29": {
+  "type": "rope",
+  "lines": {
+   "en": [
+    "At two in the morning, nobody asks who you are.",
+    "Everyone is a pair of hands. The hold is full."
+   ],
+   "nl": [
+    "Om twee uur ’s nachts vraagt niemand wie je bent.",
+    "Iedereen is een paar handen. Het ruim zit vol."
+   ]
+  },
+  "prompt": {
+   "en": "Hoist a crate",
+   "nl": "Hijs een kist"
+  },
+  "done": {
+   "en": "Tea that smells of 1826.",
+   "nl": "Thee die naar 1826 ruikt."
+  },
+  "x": 66,
+  "y": 57,
+  "bell": [
+   64,
+   41
+  ]
+ },
+ "57": {
+  "type": "letter",
+  "lines": {
+   "en": [
+    "The mailbag is stiff with salt, stencilled MARIGOLD.",
+    "One letter has no stamp, only lighthouse wax."
+   ],
+   "nl": [
+    "De postzak is stijf van het zout. Er staat MARIGOLD op.",
+    "Eén brief is niet gefrankeerd, alleen verzegeld met vuurtorenwas."
+   ]
+  },
+  "prompt": {
+   "en": "Unfold the letter",
+   "nl": "Vouw de brief open"
+  },
+  "done": {
+   "en": "Dated the night of the storm.",
+   "nl": "Gedateerd op de nacht van de storm."
+  },
+  "text": {
+   "en": [
+    "If the lamp won’t light,",
+    "light it for me."
+   ],
+   "nl": [
+    "Als de lamp niet wil branden,",
+    "steek hem dan voor mij aan."
+   ]
+  },
+  "sign": "Tobias Wren",
+  "addr": {
+   "en": "To my Nell",
+   "nl": "Aan mijn Nell"
+  },
+  "seal": {
+   "mark": "T",
+   "color": "red"
+  }
+ },
+ "75": {
+  "type": "trace",
+  "lines": {
+   "en": [
+    "Inside, the tower has not heard that it sank.",
+    "The spiral stair goes up, the way it always did."
+   ],
+   "nl": [
+    "Binnen heeft de toren nog niet gehoord dat hij is gezonken.",
+    "De wenteltrap gaat omhoog, zoals altijd."
+   ]
+  },
+  "prompt": {
+   "en": "Climb the stair",
+   "nl": "Klim de trap op"
+  },
+  "done": {
+   "en": "Halfway up, a keeper sleeps against the wall.",
+   "nl": "Halverwege slaapt een wachter tegen de muur."
+  },
+  "path": [
+   [
+    68,
+    63
+   ],
+   [
+    69,
+    56
+   ],
+   [
+    70,
+    49
+   ],
+   [
+    71,
+    42
+   ],
+   [
+    73,
+    35
+   ],
+   [
+    76,
+    28
+   ],
+   [
+    80,
+    22
+   ]
+  ]
+ },
+ "83": {
+  "type": "wipe",
+  "lines": {
+   "en": [
+    "Rain hammers the lamp-room glass like applause.",
+    "Out there, somewhere, the Marigold is coming in."
+   ],
+   "nl": [
+    "De regen roffelt op het glas als applaus.",
+    "Daarbuiten, ergens, komt de Marigold binnen."
+   ]
+  },
+  "prompt": {
+   "en": "Wipe the pane",
+   "nl": "Veeg de ruit schoon"
+  },
+  "done": {
+   "en": "The Marigold’s lights, coming in towards the rocks.",
+   "nl": "De Marigold komt recht op de rotsen af."
+  }
+ },
+ "87": {
+  "type": "tap",
+  "lines": {
+   "en": [
+    "At the desk, a keeper sleeps on his logbook.",
+    "He has been asleep for a hundred years."
+   ],
+   "nl": [
+    "Aan de tafel slaapt een wachter op zijn logboek.",
+    "Hij slaapt al honderd jaar."
+   ]
+  },
+  "prompt": {
+   "en": "Touch his shoulder",
+   "nl": "Raak zijn schouder aan"
+  },
+  "done": {
+   "en": "One eye opens, already listening.",
+   "nl": "Eén oog gaat open, meteen een en al oor."
+  },
+  "x": 24,
+  "y": 43
  }
 }

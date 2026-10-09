@@ -66,6 +66,29 @@
   "x": 57,
   "y": 34
  },
+ "14": {
+  "type": "turn",
+  "lines": {
+   "en": [
+    "His coat hangs on the hook. The key was in it.",
+    "The case says STATIONERY. It took both his hands."
+   ],
+   "nl": [
+    "Zijn jas hangt aan de haak. De sleutel zat erin.",
+    "Op de koffer staat SCHRIJFWAREN. Hij verschoof hem met twee handen."
+   ]
+  },
+  "prompt": {
+   "en": "Turn the key",
+   "nl": "Draai de sleutel om"
+  },
+  "done": {
+   "en": "No paper at all. Only stubs.",
+   "nl": "Helemaal geen papier. Alleen strookjes."
+  },
+  "x": 47,
+  "y": 47
+ },
  "15": {
   "type": "trace",
   "lines": {
@@ -109,6 +132,54 @@
    ]
   ]
  },
+ "22": {
+  "type": "dust",
+  "lines": {
+   "en": [
+    "Harrow’s post office smells of glue.",
+    "By its door, frost has furred the old names."
+   ],
+   "nl": [
+    "Het postkantoor van Harrow ruikt naar lijm.",
+    "Naast de deur zitten de oude namen onder de rijp."
+   ]
+  },
+  "prompt": {
+   "en": "Brush off the frost",
+   "nl": "Veeg de rijp weg"
+  },
+  "done": {
+   "en": "Clerk in charge, C. Grell. Never found.",
+   "nl": "Dienstdoend klerk: C. Grell. Nooit gevonden."
+  },
+  "name": "C. GRELL",
+  "names": [
+   "H. ARDEN",
+   "L. MARCH",
+   "E. KRAL",
+   "S. VANE",
+   "R. HALE",
+   "J. BRANT",
+   "M. LOWE",
+   "F. ADLER",
+   "I. NOVA",
+   "P. ORME",
+   "D. KESTREL",
+   "O. TIMMS",
+   "W. FARR",
+   "A. QUINCE",
+   "B. MORROW",
+   "K. LATHAM"
+  ],
+  "years": [
+   "1891",
+   "1903",
+   "1897",
+   "1909",
+   "1912",
+   "1886"
+  ]
+ },
  "25": {
   "type": "hold",
   "lines": {
@@ -131,6 +202,68 @@
   },
   "x": 52,
   "y": 40
+ },
+ "28": {
+  "type": "letter",
+  "lines": {
+   "en": [
+    "Voss offers a peppermint, then a folded paper.",
+    "A copy of the treaty. One clause is pencilled."
+   ],
+   "nl": [
+    "Voss biedt een pepermuntje aan, dan een opgevouwen papier.",
+    "Een afschrift van het verdrag. Eén artikel is aangestreept."
+   ]
+  },
+  "prompt": {
+   "en": "Unfold the treaty",
+   "nl": "Vouw het verdrag open"
+  },
+  "done": {
+   "en": "Formalities, says Voss, have teeth at the pass.",
+   "nl": "Formaliteiten, zegt Voss, hebben tanden op de pas."
+  },
+  "text": {
+   "en": [
+    "A traveller with no name is presumed",
+    "to be carrying someone else’s."
+   ],
+   "nl": [
+    "Een reiziger zonder naam draagt vermoedelijk",
+    "die van een ander bij zich."
+   ]
+  },
+  "sign": "A. Voss",
+  "addr": {
+   "en": "Copy of the treaty",
+   "nl": "Afschrift van het verdrag"
+  },
+  "seal": {
+   "color": "none"
+  }
+ },
+ "30": {
+  "type": "tap",
+  "lines": {
+   "en": [
+    "The footplate is a furnace with manners.",
+    "Driver hands you a shovel, as if you asked."
+   ],
+   "nl": [
+    "De cabine is een oven met goede manieren.",
+    "Machinist geeft je een schep, alsof je erom vroeg."
+   ]
+  },
+  "prompt": {
+   "en": "Feed the fire",
+   "nl": "Stook het vuur op"
+  },
+  "done": {
+   "en": "Driver watches, openly disappointed.",
+   "nl": "Machinist kijkt openlijk teleurgesteld toe."
+  },
+  "x": 69,
+  "y": 50
  },
  "32": {
   "type": "rope",
@@ -181,5 +314,48 @@
   },
   "x": 80,
   "y": 32
+ },
+ "44": {
+  "type": "trace",
+  "lines": {
+   "en": [
+    "Every crossing since the treaty is in this ledger.",
+    "The book falls open thirty-one years back."
+   ],
+   "nl": [
+    "Elke overtocht sinds het verdrag staat in dit register.",
+    "Het boek valt open op eenendertig jaar terug."
+   ]
+  },
+  "prompt": {
+   "en": "Run down the page",
+   "nl": "Ga de bladzijde langs"
+  },
+  "done": {
+   "en": "GRELL, CASIMIR. Collected: nothing.",
+   "nl": "GRELL, CASIMIR. Afgehaald: niets."
+  },
+  "path": [
+   [
+    63,
+    31
+   ],
+   [
+    67,
+    34
+   ],
+   [
+    71,
+    37
+   ],
+   [
+    75,
+    40
+   ],
+   [
+    79,
+    43
+   ]
+  ]
  }
 }

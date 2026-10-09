@@ -1,4 +1,66 @@
 {
+ "8": {
+  "type": "follow",
+  "lines": {
+   "en": [
+    "Evening, and three fires, each turned from the others.",
+    "You go down to the landing for water."
+   ],
+   "nl": [
+    "Avond, en drie vuren, elk een tikje van de andere afgewend.",
+    "Je loopt naar de aanlegplaats om water te halen."
+   ]
+  },
+  "prompt": {
+   "en": "Carry the lamp down",
+   "nl": "Draag de lamp omlaag"
+  },
+  "done": {
+   "en": "The first day’s stone is under the sea.",
+   "nl": "De steen van de eerste dag ligt onder zee."
+  },
+  "seconds": 3.6,
+  "path": [
+   [
+    52,
+    44
+   ],
+   [
+    57,
+    46
+   ],
+   [
+    63,
+    48
+   ],
+   [
+    69,
+    50
+   ],
+   [
+    75,
+    52
+   ],
+   [
+    80,
+    54
+   ],
+   [
+    84,
+    55
+   ]
+  ],
+  "door": [
+   84,
+   54,
+   88,
+   68
+  ],
+  "keep": {
+   "en": "Keep your finger on the lamp",
+   "nl": "Houd je vinger op de lamp"
+  }
+ },
  "12": {
   "type": "lantern",
   "lines": {
@@ -91,6 +153,73 @@
   "x": 48,
   "y": 34
  },
+ "22": {
+  "type": "letter",
+  "lines": {
+   "en": [
+    "The crate you followed south squeals open.",
+    "Under the straw, an envelope in green Society wax."
+   ],
+   "nl": [
+    "De kist die je naar het zuiden volgde, piept open.",
+    "Onder het stro: een envelop met groene was van het Genootschap."
+   ]
+  },
+  "prompt": {
+   "en": "Unfold the letter",
+   "nl": "Vouw de brief open"
+  },
+  "done": {
+   "en": "Thanked three times. Entirely about money.",
+   "nl": "Drie keer bedankt. Helemaal over geld."
+  },
+  "text": {
+   "en": [
+    "One collecting licence per ship.",
+    "Ninety-four reserved already."
+   ],
+   "nl": [
+    "Eén verzamelvergunning per schip.",
+    "Vierennegentig al gereserveerd."
+   ]
+  },
+  "sign": "R.B.S.",
+  "addr": {
+   "en": "To Dr Hesper Quill",
+   "nl": "Aan dr. Hesper Quill"
+  },
+  "seal": {
+   "mark": "S",
+   "color": "green"
+  }
+ },
+ "25": {
+  "type": "rope",
+  "lines": {
+   "en": [
+    "Quill’s tent is sagging over her presses.",
+    "They are oak and iron, and weigh more than she does."
+   ],
+   "nl": [
+    "Quills tent zakt in over haar persen.",
+    "Ze zijn van eiken en ijzer en wegen meer dan zij."
+   ]
+  },
+  "prompt": {
+   "en": "Drag the press out",
+   "nl": "Sleep de pers eruit"
+  },
+  "done": {
+   "en": "Behind you, the canvas folds with a sigh.",
+   "nl": "Achter je vouwt het doek zich dubbel."
+  },
+  "x": 42,
+  "y": 58,
+  "bell": [
+   37,
+   51
+  ]
+ },
  "32": {
   "type": "trace",
   "lines": {
@@ -145,6 +274,29 @@
     30
    ]
   ]
+ },
+ "35": {
+  "type": "tap",
+  "lines": {
+   "en": [
+    "Where you cut it, the ash has a dimple.",
+    "By evening it is deeper, and wider."
+   ],
+   "nl": [
+    "Waar je hem afsneed, zit een kuiltje in de as.",
+    "Tegen de avond is het dieper, en breder."
+   ]
+  },
+  "prompt": {
+   "en": "Set a pebble down",
+   "nl": "Leg een steentje neer"
+  },
+  "done": {
+   "en": "The pebble rolls in.",
+   "nl": "Het steentje rolt erin."
+  },
+  "x": 41,
+  "y": 55
  },
  "36": {
   "type": "tap",

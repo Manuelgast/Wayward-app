@@ -94,16 +94,19 @@
   },
   {
    "id": "cage",
-   "page": 6,
-   "where": "text",
+   "page": null,
+   "where": "scene",
+   "scene": "platform",
+   "x": 15,
+   "y": 56,
    "icon": "window",
    "name": {
     "en": "Spare Names",
     "nl": "Reservenamen"
    },
    "riddle": {
-    "en": "On Hollin platform, somebody keeps his stock behind bars and lets it out for a penny.",
-    "nl": "Op het perron van Hollin houdt iemand zijn voorraad achter tralies, en laat hij hem vrij voor een stuiver."
+    "en": "On Hollin platform, lift the page: somebody keeps his stock behind bars and lets it out for a penny.",
+    "nl": "Til op het perron van Hollin de bladzijde op: iemand houdt zijn voorraad achter tralies, en laat hem vrij voor een stuiver."
    },
    "lore": {
     "en": "Spare names are sold at Hollin from cages, trays and once, memorably, a hat. They are only words and cannot own anything, which is rather the point: a spare name gets you over the pass and leaves you exactly who you were. Mostly. A wool merchant once crossed as Tuesday and was punctual ever after. His wife calls it the best penny he ever spent.",
@@ -166,16 +169,19 @@
   },
   {
    "id": "scarf",
-   "page": 12,
-   "where": "text",
+   "page": null,
+   "where": "scene",
+   "scene": "dining",
+   "x": 42,
+   "y": 48,
    "icon": "quill",
    "name": {
     "en": "Eleven Stripes",
     "nl": "Elf strepen"
    },
    "riddle": {
-    "en": "An old lady in the dining car wears her whole travelling history round her neck.",
-    "nl": "Een oude dame in de restauratiewagen draagt haar hele reisgeschiedenis om haar hals."
+    "en": "In the dining car, lift the page: an old lady wears her whole travelling history round her neck.",
+    "nl": "Til in de restauratiewagen de bladzijde op: een oude dame draagt haar hele reisgeschiedenis om haar hals."
    },
    "lore": {
     "en": "Mrs Moll knits one stripe for every name she has crossed under, in the colour she thinks that woman would have worn: primrose for the baker, dove grey for the widow, a sharp green for the one who was unkind to her sister. She never met any of them. She says they are all excellent company on long evenings, and that the green one is coming along nicely.",

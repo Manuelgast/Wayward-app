@@ -824,7 +824,7 @@
         var sub = $('#mSub'); sub.textContent = lines[idx]; sub.style.animation = 'none'; void sub.offsetWidth; sub.style.animation = '';
         prog.style.width = ((idx + 1) / total * 100) + '%';
         var words = lines[idx].split(' ').length, mine = idx; idx++;
-        later(function () { if (current === 'moment' && idx === mine + 1) step(); }, Math.max(3000, words * (SPEED[prefs.speed] || SPEED.read) * 1.3));
+        later(function () { if (current === 'moment' && idx === mine + 1) step(); }, Math.max(3750, words * (SPEED[prefs.speed] || SPEED.read) * 1.3 * 1.25)); // 25 % slower than before (Manuel 09-10: read it properly before the timed choice)
       } else decide();
     }
     function decide() {
