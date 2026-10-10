@@ -1,5 +1,14 @@
-# Wayward iOS build in the cloud (Codemagic, Mac mini M2, free tier: 500 minutes a month).
-# Builds the same web book as the Android app, signs it for the App Store and uploads it to App Store Connect.
+# Wayward builds in the cloud (Codemagic, Mac mini M2, free tier: 500 minutes a month). No secrets live in this file.
+#
+# android-play: every push to the branch play-internal builds the signed Android App Bundle and puts it on the
+# Google Play INTERNAL TESTING track. Promoting a version to production stays Manuel's own click in Play Console.
+# Needs two things Manuel adds once in Codemagic himself:
+#   - the upload keystore (wayward-upload.jks) under Team settings > codemagic.yaml settings > Code signing identities >
+#     Android keystores, reference name "wayward_upload";
+#   - the Google Play service account key (JSON) as secure variable GCLOUD_SERVICE_ACCOUNT_CREDENTIALS, group "google_play".
+# The version comes from app/android/app/build.gradle (versionCode must go up for every upload).
+#
+# ios-appstore: builds the same web book, signs it for the App Store and uploads it to App Store Connect.
 # Sending it to Apple for review is not done here: that stays a manual step after Manuel's yes.
 #
 # Signing and upload go through the App Store Connect API key stored in Codemagic
@@ -7,6 +16,59 @@
 # profile for com.waywardbooks.app are fetched or created during the build; that needs one secret variable,
 # CERTIFICATE_PRIVATE_KEY (group "code-signing", the text of ios-distribution-certificate-key.pem). No secrets live in this file.
 workflows:
+  android-play:
+    name: Wayward Android to Google Play (internal testing)
+    instance_type: mac_mini_m2
+    max_build_duration: 40
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: play-internal
+          include: true
+          source: true
+      cancel_previous_builds: true
+    environment:
+      android_signing:
+        - wayward_upload
+      groups:
+        - google_play
+      node: 22
+      java: 21
+    scripts:
+      - name: Check the two secrets
+        script: |
+          if [ -z "${CM_KEYSTORE_PATH:-}" ]; then echo "Upload keystore 'wayward_upload' is missing in Code signing identities."; exit 1; fi
+          if [ -z "${GCLOUD_SERVICE_ACCOUNT_CREDENTIALS:-}" ]; then echo "GCLOUD_SERVICE_ACCOUNT_CREDENTIALS is missing (group google_play)."; exit 1; fi
+      - name: Install packages
+        script: cd app && npm ci
+      - name: Build the book and copy it into the Android project
+        script: cd app && python3 scripts/build_www.py ../web-src && npx cap sync android
+      - name: Android SDK and signing for Gradle
+        script: |
+          echo "sdk.dir=$ANDROID_SDK_ROOT" > app/android/local.properties
+          {
+            echo "storeFile=$CM_KEYSTORE_PATH"
+            echo "storePassword=$CM_KEYSTORE_PASSWORD"
+            echo "keyAlias=$CM_KEY_ALIAS"
+            echo "keyPassword=$CM_KEY_PASSWORD"
+          } > app/keystore.properties
+      - name: Build the signed App Bundle
+        script: |
+          cd app/android && ./gradlew --no-daemon bundleRelease
+          VN=$(grep -oE 'versionName "[^"]+"' app/build.gradle | cut -d'"' -f2)
+          VC=$(grep -oE 'versionCode [0-9]+' app/build.gradle | awk '{print $2}')
+          echo "Built Wayward $VN ($VC)"
+      - name: Remove the signing file
+        script: rm -f app/keystore.properties
+    artifacts:
+      - app/android/app/build/outputs/bundle/release/*.aab
+    publishing:
+      google_play:
+        credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
+        track: internal
+        submit_as_draft: false
+
   ios-appstore:
     name: Wayward iOS to App Store Connect
     instance_type: mac_mini_m2
