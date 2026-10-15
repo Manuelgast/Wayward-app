@@ -142,7 +142,7 @@
    "tag": "Thick glass. Thin luck.",
    "text": [
     "You step out onto the thickest sheet, where the glass is dark as a stove lid, and crouch for a better look. It holds. It holds a moment longer. Then it cracks along the brown roots beneath, neatly, like a plate that has been thinking about it for weeks.",
-    "You drop into warm black shallows up to the waist. Your satchel goes under with you. When you wade out, three days of drawings have washed blank, and Rook, watching from his boat, fires you before you have wrung out your hat. He does let you ride back to the ship. Dripping, on the far end of the thwart."
+    "You drop into warm black shallows up to the waist. Your satchel goes under with you. When you wade out, three days of drawings have washed blank, and Rook of the Patience, watching from his boat, fires you on principle before you have wrung out your hat. He does let you ride back with him. Dripping, on the far end of the thwart."
    ],
    "ending": {
     "no": "II",
@@ -159,7 +159,8 @@
    "tag": "Plate 40. Hand-coloured. Much admired.",
    "text": [
     "Quill kisses the draft, then both your cheeks, in that order. By winter your map is Plate 40 in the Transactions, beside her orchid, life size, gold leaf on every petal. It is the most beautiful thing you have ever been part of. The reviews say so too.",
-    "Next spring a hundred licensed ships drop anchor off the black beach. They pick the island in a single season, field by field, by your map. The spring after, they find only a turquoise patch of sea with a few gold flecks beneath it. In the Society’s catalogue, the entry is amended in a neat hand: locality since submerged."
+    "Next spring a hundred licensed ships drop anchor off the black beach. They pick the island in a single season, field by field, by your map. The spring after, they find only a turquoise patch of sea with a few gold flecks beneath it.",
+    "~ In the Society’s catalogue, the entry is amended in a neat hand: locality since submerged."
    ],
    "ending": {
     "no": "III",
@@ -176,7 +177,8 @@
    "tag": "One flower. One label. One blank.",
    "text": [
     "Quill closes her catalogue over the pressed flower and holds it to her chest. “For science,” she says, quite gently, and Jory rows you both back while the mountain finishes speaking. She never publishes. Plate 40 stays a blank square. She keeps the one specimen in a glass case in her study, out of the sun, where it cannot fade.",
-    "Forty years later a young botanist, cataloguing Quill’s bequest, stops at the case. The flower is still faintly gold. The label, in Quill’s round hand, says Orchis cinerea, and below it a line left empty. The young botanist takes out a notebook and asks the room where."
+    "Forty years later a young botanist, cataloguing Quill’s bequest, stops at the case. The flower is still faintly gold. The label, in Quill’s round hand, says Orchis cinerea, and below it a line left empty.",
+    "~ The young botanist takes out a notebook and asks the room where."
    ],
    "ending": {
     "no": "IV",
@@ -192,7 +194,8 @@
    "scene": "lagoon",
    "tag": "Water so clear it looks like lying.",
    "text": [
-    "Jory rows and counts the strokes under his breath. The lagoon is so clear it looks like lying: the boat’s shadow slides along the bottom, keeping pace. And beneath the turquoise lies an older island. Grey, terraced like a hillside farm, stubbled all over with short cut stems. On its summit stand a cairn and a flagpole with no flag.",
+    "Jory rows and counts the strokes under his breath. The lagoon is so clear it looks like lying: the boat’s shadow slides along the bottom, keeping pace.",
+    "~ And beneath the turquoise lies an older island. Grey, terraced like a hillside farm, stubbled all over with short cut stems. On its summit stand a cairn and a flagpole with no flag.",
     "The sun bakes the back of your neck. Jory ships his oars and looks down with you. “My grandmother’s grandmother fished its beach,” he says, as if mentioning the weather. “Then it went down. They always do, after.” He picks the salt off his knuckles and starts counting again."
    ],
    "choices": [
@@ -220,7 +223,8 @@
    "tag": "Day 4. Three fires. Nobody shares.",
    "text": [
     "Evening, and three fires along the shore, each turned slightly away from the others. At the Society’s, Quill’s collectors come in sunburnt and singing with twelve blooms, laid out on a sheet like loaves. At Carrow’s, men mend nets nobody needs. At the boats, Marit’s pot smells of fish and pepper.",
-    "You go down to the landing for water and stop. The flat stone you stepped onto on the first day is under the sea at low tide. Beside it Jory keeps [[notch|a stick at the landing, one notch a day]], driven deep into the ash. Today’s notch is wet."
+    "You go down to the landing for water and stop. The flat stone you stepped onto on the first day is under the sea at low tide. Beside it Jory keeps [[notch|a stick at the landing, one notch a day]], driven deep into the ash.",
+    "~ Today’s notch is wet."
    ],
    "choices": [
     {
@@ -274,7 +278,7 @@
    "tag": "Low ceiling. Getting lower.",
    "text": [
     "You saw through the first root, then the second, and the tube lets out a long sigh, like a man setting down a trunk. Ash pours from the roof in a soft grey sheet. Then the roof itself comes down to meet you, a little at a time, politely, and does not stop.",
-    "You crawl the last stretch to the sea on your belly, lantern lost, elbows raw, and come out into the surf coughing grey. Your map is paste. Rook hears the story, looks at the slumped ground above the tube, and lets you go without a word, which from Rook is practically a speech."
+    "You crawl the last stretch to the sea on your belly, lantern lost, elbows raw, and come out into the surf coughing grey. Your map is paste. Rook, whose men were cutting the field above, hears the story, looks at the slumped ground over the tube, and lets you go without a word, which from Rook is practically a speech."
    ],
    "ending": {
     "no": "V",
@@ -291,7 +295,8 @@
    "tag": "Locality: unknown. Notch: dry.",
    "text": [
     "Quill asks Jory to put her ashore. On the warm black slope above the beach she kneels, opens her press, and gives her one specimen back to the ash with her own hands, pressing it in like a seed. She is crying a little and blames the sulphur. Then she opens her catalogue at No. 212 and writes, after “locality”: unknown.",
-    "Together you draw the Society an honest-looking chart of a reef nobody would land on. She returns the licence letter with regrets, and a biscuit for the clerk. Rook sails home empty, whistling, like a man let off. And at the landing, Jory’s next notch is dry."
+    "Together you draw the Society an honest-looking chart of a reef nobody would land on. No locality, no collecting licences: she returns the Council’s letter with regrets, and a biscuit for the clerk. Rook sails the Patience home empty, whistling, like a man let off.",
+    "~ And at the landing, the next notch on Jory’s tide stick is dry."
    ],
    "ending": {
     "no": "XVIII",
@@ -335,7 +340,7 @@
    "scene": "tent",
    "tag": "Quill has biscuits. Dangerous woman.",
    "text": [
-    "The Society’s tent holds the heat like a loaf holds the oven. Dr Quill sweeps biscuit crumbs onto the ash floor and unrolls the proof of Plate 40 for the Transactions: her orchid, life size, every gold vein engraved, the pale root trimmed neatly at the margin. It is the most beautiful thing on the island that is not growing.",
+    "The Society’s tent holds the heat like a loaf holds the oven. Before you can say why you came, Dr Quill sweeps biscuit crumbs onto the ash floor and unrolls the proof of Plate 40 for the Transactions: her orchid, life size, every gold vein engraved, the pale root trimmed neatly at the margin. It is the most beautiful thing on the island that is not growing.",
     "Beside it sits a blank square, ruled in pencil: “A map of the locality.” She taps it with a floury finger. “Your draft tonight, rough is fine, so the engraver can start. He’s terribly quick. He did the beetles.” She pushes the biscuit tin across. Outside, her collectors come down the path with full baskets, singing slightly flat."
    ],
    "choices": [
@@ -345,7 +350,7 @@
      "to": 31
     },
     {
-     "text": "If you give her the draft tonight, as promised,",
+     "text": "If you give her your draft tonight,",
      "short": "Give her the draft",
      "to": 5
     },
@@ -363,7 +368,8 @@
    "tag": "Not my book. Reading it anyway.",
    "text": [
     "Rook’s boots go up the companionway, and the cabin is yours: brass, onions, a fly walking across the chart. The tide book is cheap card, swollen with salt, in a square hand that presses through three pages. Two columns. On the left, blooms picked each day; he has been counting the Society’s baskets from the deck. On the right, water at Gannet Rock, in fingers.",
-    "You turn a page, then another. [[tidebook|The two columns rise together]], step for step, like two men on one ladder. Every bloom, a finger’s width of sea. The last page has no columns at all, only one word, underlined twice: “Ninety-one.” Overhead, his boots stop. Then they start again."
+    "You turn a page, then another. [[tidebook|The two columns rise together]], step for step, like two men on one ladder. Every bloom, a finger’s width of sea. The last page has no columns at all, only one word, underlined twice: “Ninety-one.”",
+    "~ Overhead, his boots stop. Then they start again."
    ],
    "choices": [
     {
@@ -390,7 +396,8 @@
    "tag": "Chart delivered. Paid in stew.",
    "text": [
     "You redraw it on Marit’s deck with a stub of pencil and a wet thumb: no fields, no paths, no landing. Only a long shoal of broken water, soundings all round it, and a note in the margin: Reef. Foul ground. Keep off. Marit studies it for a long minute, then rolls it up and puts it in the tin with her net tallies. That is the whole ceremony.",
-    "Lesser Sound keeps its water. Ships that come looking find a reef on every honest chart in the harbour, and turn round. But ashore, in a hot tent, Dr Quill is pressing one flower flat, and she has a very good memory for a coastline."
+    "Lesser Sound keeps its water. Ships that come looking find a reef on every honest chart in the harbour, and turn round.",
+    "~ But ashore, in a hot tent, the Society’s Dr Quill is pressing one flower flat, and she has a very good memory for a coastline."
    ],
    "ending": {
     "no": "VI",
@@ -443,7 +450,7 @@
    "tag": "Cape You. Spelled correctly, at least.",
    "text": [
     "Dr Quill is enchanted by the question. Of course mapmakers get things named after them, she says; how else would anyone remember them? By the end of the week the southern cape carries your name in her round hand, and by spring it is engraved in the Transactions, spelled right, which is more than most people get.",
-    "Next spring a hundred ships come south with Plate 40 folded in their coats, and every one of them steers by you. They round you at dawn, drop anchor in your lee, and row ashore with baskets. A captain writes to thank you for the shelter. He encloses a pressed orchid, as a souvenir."
+    "Next spring a hundred ships come south with your map, Plate 40, folded in their coats, and every one of them steers by you. They round you at dawn, drop anchor in your lee, and row ashore with baskets. A captain writes to thank you for the shelter. He encloses a pressed orchid, as a souvenir."
    ],
    "ending": {
     "no": "VII",
@@ -541,7 +548,7 @@
    "tag": "Paper burns fast in sulphur.",
    "text": [
     "The big vent above the landing breathes yellow, and every camp on the island can see you standing over it. You hold six days of work out at arm’s length. It curls at one corner, browns, blisters, and goes up in a single breath: fields, paths, springs, the cape, the careful little scale bar. The ash of it sails off towards the sea.",
-    "Down on the beach Rook roars for his men’s benefit, wages, ruin, idiots, arms going like a windmill. Then Dr Quill comes up the path at a run, sees the black flakes, and sits down hard on the ash. For a while she says nothing at all. “But you remember it,” she says. “Don’t you.”"
+    "Down on the beach Rook of the Patience roars for his men’s benefit, wages, ruin, idiots, arms going like a windmill. Then Dr Quill comes up the path at a run, sees the black flakes, and sits down hard on the ash. For a while she says nothing at all. “But you remember it,” she says. “Don’t you.”"
    ],
    "choices": [
     {
@@ -607,7 +614,8 @@
    "tag": "Signed. Blotted. Entirely untrue.",
    "text": [
     "You write it in your best hand: lost in the eruption; island of no value. Rook reads it, and for one moment his face does something complicated. Then he bellows, for every man on the boats, that you are a ruin and a fraud and will never work again. He sails home empty, blaming you loudly, face intact.",
-    "His Lordship docks your wages and forgets the island by Tuesday. The eruption folds the coast into new shapes. In autumn Dr Quill writes, asking you to redraw it. You reply: “Which island?” By then gold points are coming up through the new ash, and Marit’s boats fish round."
+    "His Lordship declines to pay for nothing, and forgets the island by Tuesday. The eruption folds the coast into new shapes. In autumn Dr Quill writes, asking you to redraw it. You reply: “Which island?”",
+    "~ By then gold points are coming up through the new ash, and the fisherfolk fish round it, never on it."
    ],
    "ending": {
     "no": "XIX",
@@ -663,7 +671,7 @@
    "scene": "ship",
    "tag": "Paid to the penny. Not thanked.",
    "text": [
-    "It goes into Rook’s dispatch case: every field, every path, every spring, accurate to the yard. He pays you to the penny and does not thank you. All the way home he stands at the stern, watching the island get smaller, the way a man watches a dog he has sold.",
+    "It all goes into Rook’s dispatch case: every field, every path, every spring, accurate to the yard; you know it by heart. He pays you to the penny and does not thank you. All the way home he stands at the stern, watching the island get smaller, the way a man watches a dog he has sold.",
     "Lord Carrow, who has never landed anywhere, reads your honesty the way he reads everything: as a deadline. In spring he sends twenty ships, with a copy of your map pinned in every chart room. Within the year there is nowhere left to land. The original hangs in His Lordship’s long gallery, beautifully framed, and is now the only place the island can be found."
    ],
    "ending": {
@@ -680,7 +688,7 @@
    "scene": "lagoon",
    "tag": "Day 7. Quill quiet. Water clear.",
    "text": [
-    "Jory rows you and Dr Quill out over the lagoon in the first light, counting strokes under his breath. Behind you the mountain speaks: a boom you feel in your back teeth, then a soft hiss of ash across the water. Quill does not turn round. She is looking down.",
+    "Jory, the fisher boy, rows you and Dr Quill out over the lagoon in the first light, counting strokes under his breath. Behind you the mountain speaks: a boom you feel in your back teeth, then a soft hiss of ash across the water. Quill does not turn round. She is looking down.",
     "The older island lies under the boat, close enough to touch with an oar: grey terraces, the cairn, the bare pole, and the stems, thousands of them, each cut clean. In her lap sit the one pressed flower, still smelling faintly of rain on a hot stove, and the catalogue, open at No. 212. Her pencil hovers over “locality”. She has not said a word since the shore."
    ],
    "choices": [
@@ -712,7 +720,7 @@
    "tag": "Good canvas. Wrong weather.",
    "text": [
     "The Society’s canvas is good canvas, waxed and stitched by the Society’s own sailmaker and guaranteed against weather. Nobody guaranteed it against mountains. You sit under it with Quill’s collectors and a tin of biscuits while ash hisses on the roof, soft at first, then heavier, then with the patient weight of a decision being made.",
-    "The canvas holds until it doesn’t. It comes down slowly, almost kindly, and the world goes warm and grey and quiet. At dawn Jory finds the tent by its ridge-pole, and Marit’s crews dig you out, coughing, alive, and very interested in breakfast. Your map is somewhere under a yard of warm ash. It is still there."
+    "The canvas holds until it doesn’t. It comes down slowly, almost kindly, and the world goes warm and grey and quiet. At dawn the fisherfolk find the tent by its ridge-pole, Jory first, and dig you out, coughing, alive, and very interested in breakfast. Your map is somewhere under a yard of warm ash. It is still there."
    ],
    "ending": {
     "no": "XI",
@@ -756,7 +764,7 @@
    "tag": "Day 5. Ground moving. Sky falling, slowly.",
    "text": [
     "Wherever you meant to spend the evening, the island has other plans. At dusk it shivers like a horse shaking off flies. Then the sky begins to come down: warm ash, soft as flour, then thick as snow, settling on your shoulders, your eyebrows, the inside of your collar. Every lamp in the three camps turns into a small brown moon.",
-    "Quill’s tent is sagging over her presses, the ridge-pole bowing, someone inside calling for help in a voice too polite for it. The Society’s big canvas, further down, looks sound and dry. Up the slope, the path to the rim still shows as a darker line through the grey. Just."
+    "Dr Quill’s tent is sagging over her presses, the ridge-pole bowing, someone inside calling for help in a voice too polite for it. The Society’s big canvas, further down, looks sound and dry. Up the slope, the path to the rim still shows as a darker line through the grey. Just."
    ],
    "choices": [
     {
@@ -792,7 +800,7 @@
    "tag": "Day 6. Whole island below. Smaller.",
    "text": [
     "The rim is a knife-edge of crunching cinder, and the heat comes up through your boots like a stove lid. Below lies the whole island, washed grey by last night’s ash, with gold breaking through wherever the orchids have shrugged it off. You unroll your Day 2 draft and hold it up against the view.",
-    "It is not the same coast. The southern cape is shorter. The lagoon is wider. The flat stone where you landed is gone, and the path down to it with it. Far below, two figures wave at you from opposite ends of the beach: Rook, with his hat, and Quill, with her whole arm. Both want the map today."
+    "It is not the same coast. The southern cape is shorter. The lagoon is wider. The flat stone where you landed is gone, and the path down to it with it. Far below, two figures wave at you from opposite ends of the beach: Rook of the Patience, with his hat, and Quill of the Society, with her whole arm. Both want the map today."
    ],
    "choices": [
     {
@@ -818,7 +826,7 @@
    "scene": "ship",
    "tag": "Mail cutter. One letter. Heavy paper.",
    "text": [
-    "The mail cutter comes alongside at noon, hands up a single letter on paper so heavy it lands like a plate, and leaves without waiting for a reply. Lord Carrow’s hand is large and leans forward. Bring blooms, it says, or do not come back; [[letter|and bring the map either way]].",
+    "The mail cutter comes alongside, hands up a single letter on paper so heavy it lands like a plate, and leaves without waiting for a reply. Lord Carrow’s hand is large and leans forward. Bring blooms, it says, or do not come back; [[letter|and bring the map either way]].",
     "Rook reads it twice. Then he folds it, crisply, into a little boat and sails it off the stern, where it rides the swell for a while with great dignity before going under. He watches it all the way. Then he turns to you, wipes his hands on his trousers, and asks your price for the route to the biggest field."
    ],
    "choices": [
@@ -846,7 +854,7 @@
    "tag": "Pole deeper than it looks. Noted.",
    "text": [
     "You go over the side on a breath you are proud of. The water is warm, then cool, then cold, and the flagpole, which looked an arm’s length down, keeps politely moving further away. Grey terraces slide past, every step stubbled with stems cut clean. Your ears complain. Your notebook slips out of your shirt and turns slowly down towards the cairn, pages fanning.",
-    "Jory hauls you up by the collar and counts your coughs aloud: eleven. From the boat you can still see the notebook, lying open on the old summit beside the pole, three days of work going quietly blank. Nobody suggests a second try."
+    "Jory hauls you up by the collar and counts your coughs aloud: eleven. From the boat you can still see the notebook, lying open on the old summit beside the pole, two days of work going quietly blank. Nobody suggests a second try."
    ],
    "ending": {
     "no": "XII",
@@ -960,7 +968,7 @@
    "scene": "crater",
    "tag": "Day 7. Staying. Population: one.",
    "text": [
-    "The mountain speaks, and you stay to hear the rest of the sentence. It goes on for some while. By the time the ash stops falling, the Patience is a smudge, Marit’s sails are three white chips on the blue, and the island is quiet in the way of a house after the guests have gone.",
+    "The mountain speaks, and you stay to hear the rest of the sentence. It goes on for some while. By the time the ash stops falling, the Patience is a smudge, the fisherfolk’s sails are three white chips on the blue, and the island is quiet in the way of a house after the guests have gone.",
     "You stay. There are crabs, rainwater in the cracks of cooled rock, and gold coming up through the new grey. Every morning you walk the coast and draw it again, because it has moved again: a spit here, a cove there. Nobody buys the maps. You keep them in a tin, in order, like letters from a correspondent who never repeats herself."
    ],
    "ending": {
@@ -1005,7 +1013,7 @@
    "tag": "Marit said eleven words. A record.",
    "text": [
     "Marit mends net without looking up, a wooden needle darting in and out like a small bird. The boat smells of tar and yesterday’s fish, and the sun comes off the water hard enough to squint at. Jory counts the floats again, gets the same number, and seems disappointed in it.",
-    "“Mountain speaks on the seventh day,” Marit says. “The old ones did too.” It is the most she has said since you met her. Her boats will take anyone off before then: Carrow’s men, the Society, you; there is room if people sit close. Lesser Sound fishes round the island, never on it. She bites off the twine and holds out her hand for the next tangle."
+    "~ “Mountain speaks on the seventh day,” Marit says. “The old ones did too.” It is the most she has said since you met her. Her boats will take anyone off before then: Carrow’s men, the Society, you; there is room if people sit close. Lesser Sound fishes round the island, never on it. She bites off the twine and holds out her hand for the next tangle."
    ],
    "choices": [
     {
@@ -1041,7 +1049,7 @@
      "to": 8
     },
     {
-     "text": "If you wave down Marit’s boat,",
+     "text": "If you wave down Marit’s fishing boat,",
      "short": "Wave down Marit’s boat",
      "to": 41
     },
@@ -1118,8 +1126,8 @@
    "scene": "boat",
    "tag": "Nets are heavier than they look.",
    "text": [
-    "Marit puts you on the stern rope without discussion. The net comes up hand over hand, cold and streaming, heavier than any fish. It is full of black rock, and in the rock grey orchid stems, dead a lifetime, each one cut clean and straight at the base, with a knife.",
-    "Jory picks through them, counting. Tangled in the stems, turning on a loop of wire, hangs [[tag|a brass tag, green with age: R.B.S. No. 41]]. He rubs it with his thumb and hands it to you, since you are the one who reads. Marit tips the rock back over the side, all but the tag. “Old islands,” she says. “Down there.”"
+    "Marit, who runs the boats, puts you on the stern rope without discussion. The net comes up hand over hand, cold and streaming, heavier than any fish. It is full of black rock, and in the rock grey orchid stems, dead a lifetime, each one cut clean and straight at the base, with a knife.",
+    "Her grandson Jory picks through them, counting. Tangled in the stems, turning on a loop of wire, hangs [[tag|a brass tag, green with age: R.B.S. No. 41]]. He rubs it with his thumb and hands it to you, since you are the one who reads. Marit tips the rock back over the side, all but the tag. “Old islands,” she says. “Down there.”"
    ],
    "choices": [
     {
@@ -1128,7 +1136,7 @@
      "to": 7
     },
     {
-     "text": "If you take the tag ashore to show Dr Quill,",
+     "text": "If you take the tag ashore to show Dr Quill at the Society’s tent,",
      "short": "Show Dr Quill the tag",
      "to": 13
     },
@@ -1146,7 +1154,8 @@
    "tag": "Footnote twelve. Very small type.",
    "text": [
     "You write it together by lamplight, careful as surgeons: the tag, the old entries, Nos. 38 to 52, all in one hand. Quill words it so the Council cannot object, and the Council does not. It goes in as footnote twelve, set in type so small the engraver squints.",
-    "The Transactions come out in spring. Plate 40 is ravishing: the orchid life size, gold leaf on the petals, your map beside it, every field to scale. The ships arrive with their licences, ninety-four of them, and their captains study the plate with great attention. Nobody, it turns out, sails by the footnotes."
+    "The Transactions come out in spring. Plate 40 is ravishing: the orchid life size, gold leaf on the petals, your map beside it, every field to scale. The ships arrive with their licences, ninety-four of them, and their captains study the plate with great attention.",
+    "~ Nobody, it turns out, sails by the footnotes."
    ],
    "ending": {
     "no": "XV",
@@ -1197,7 +1206,8 @@
    "tag": "Brass tag. Old catalogue. Same hand.",
    "text": [
     "You set the brass tag on the catalogue, beside entry No. 41. The letters scratched in the brass and the brown ink on the page lean the same way, loop the same way, cross their fours the same way: R.B.S. No. 41, the Society’s own label, out of the black rock under the lagoon.",
-    "Quill turns the pages back. Nos. 38 to 52: an orchid, an island south of the Salt Coast, fifteen entries in one hand, every one “locality since submerged”. She says nothing for a long time. She takes off her spectacles, polishes them on her sleeve and puts them back on, as if the page might read differently. It does not. Outside, ash ticks on the canvas."
+    "Quill turns the pages back. Nos. 38 to 52: an orchid, an island south of the Salt Coast, fifteen entries in one hand, every one “locality since submerged”. She says nothing for a long time. She takes off her spectacles, polishes them on her sleeve and puts them back on, as if the page might read differently.",
+    "~ It does not. Outside, ash ticks on the canvas."
    ],
    "choices": [
     {

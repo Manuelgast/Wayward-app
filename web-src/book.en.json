@@ -112,7 +112,7 @@
    "scene": "procession",
    "text": [
     "Marta brings you soup and a candle and does not ask why you have come, which is the first thing in Low Veyra that feels honest. Your room looks out over the square. You mean to stay awake and watch, and for a while you do.",
-    "At midnight a bell rings somewhere high on the mountain. Once. Then, one by one, every door in Low Veyra opens.",
+    "~ At midnight a bell rings somewhere high on the mountain. Once. Then, one by one, every door in Low Veyra opens.",
     "From your window you watch the villagers step out in their nightclothes, eyes closed, lanterns lit. Marta is among them. They walk in a silent line up the valley towards the mountain, and not one of them trips on the cobbles."
    ],
    "choices": [
@@ -289,7 +289,7 @@
    "scene": "ridge",
    "text": [
     "The ledge is exactly as solid as it looks for eleven steps. On the twelfth it turns out to have been painted: a very good painting of a ledge, on a sheet of canvas stretched over the drop.",
-    "You fall for a long time. Long enough to notice that the artist [[signature|signed it]], in the corner, in small brown letters you know very well."
+    "~ You fall for a long time. Long enough to notice that the artist [[signature|signed it]], in the corner, in small brown letters you know very well."
    ],
    "ending": {
     "no": "III",
@@ -305,7 +305,8 @@
    "scene": "lanternhall",
    "text": [
     "Behind the door is a hall with no end in sight. Its walls are honeycombed with niches, and in nearly every niche burns a lantern. The villagers place theirs in empty niches, turn around with their eyes still closed, and walk home.",
-    "Each lantern has a small brass tag. MARTA OSK. PIM OSK. A whole village, burning quietly in a row. Further in, the tags grow older, then foreign, then unreadable. And in the niche nearest your hand, already lit, is a lantern with your name on it."
+    "Each lantern has a small brass tag. MARTA OSK. PIM OSK. A whole village, burning quietly in a row. Further in, the tags grow older, then foreign, then unreadable.",
+    "~ And in the niche nearest your hand, already lit, is a lantern with your name on it."
    ],
    "choices": [
     {
@@ -645,7 +646,8 @@
    "scene": "dawn",
    "text": [
     "You take the lantern down the cliff path, over roots and loose stone, until the path gives out at a ledge above the valley. Dawn is coming. Below you, the village of Low Veyra is waking up.",
-    "On its only road, someone who looks exactly like you is walking towards the mountain, a letter in their coat. You open your mouth to shout a warning. What comes out, in your own voice, carried perfectly by the morning air, is: “Don’t follow me.”"
+    "On its only road, someone who looks exactly like you is walking towards the mountain, a letter in their coat. You open your mouth to shout a warning.",
+    "~ What comes out, in your own voice, carried perfectly by the morning air, is: “Don’t follow me.”"
    ],
    "ending": {
     "no": "XI",
@@ -661,7 +663,7 @@
    "scene": "village",
    "text": [
     "Together you draw Low Veyra sunshine, gentle rain, a bumper harvest and a fine new bridge. You draw the bakery never catching fire. You draw the innkeeper’s bad knee better. It is the most satisfying work of your life.",
-    "Years pass. The village thrives. It also stops planting until you draw the rain, and stops building until you draw the bridge, and one spring, when you are ill for a week, nobody in Low Veyra gets out of bed at all. They were only waiting for the lines."
+    "~ Years pass. The village thrives. It also stops planting until you draw the rain, and stops building until you draw the bridge, and one spring, when you are ill for a week, nobody in Low Veyra gets out of bed at all. They were only waiting for the lines."
    ],
    "ending": {
     "no": "XII",
@@ -692,7 +694,8 @@
    "scene": "library",
    "text": [
     "“If you are reading this,” the letter says, “you followed me. Good. I needed you to. I am sorry about the other letter. You would never have come if I had asked.",
-    "“Tonight the bell must be rung by someone who has never rung it before. Then the mountain will open its eye, and I will be waiting in the Heart, at the very bottom of the mountain, with the pen that draws the valley. Don’t be afraid. This is what cartographers are for. — I.” [[ink|The ink is dry]], which is strange for a letter written tomorrow."
+    "“Tonight the bell must be rung by someone who has never rung it before. Then the mountain will open its eye, and I will be waiting in the Heart, at the very bottom of the mountain, with the pen that draws the valley. Don’t be afraid. This is what cartographers are for. — E.”",
+    "~ [[ink|The ink is dry]], which is strange for a letter written tomorrow."
    ],
    "choices": [
     {
@@ -710,7 +713,8 @@
    "chapter": "An ending",
    "scene": "dawn",
    "text": [
-    "You take the pen from Edda’s hand and draw a door in the side of the mountain, the plainest door you can manage: a line, a line, a line, a handle. It opens onto morning.",
+    "You take the pen from Edda’s hand and draw a door in the side of the mountain, the plainest door you can manage: a line, a line, a line, a handle.",
+    "~ It opens onto morning.",
     "You walk out together into the sunlight. Behind you the mountain is a little smaller than before, and a little less sure of itself. You never touch the great pen again. You don’t need to: from that day on, every map in the world shows a mountain above Low Veyra, labelled in your handwriting."
    ],
    "ending": {
@@ -877,7 +881,7 @@
    "scene": "dawn",
    "text": [
     "You let it burn. The monks do not stop you. They stand in the courtyard and watch the smoke go up, and one of them starts to cry, very quietly, as if at a funeral he has been expecting for years.",
-    "At dawn you look down into the valley. There is no village. There are no fields, no roofs, no river. There is a clean, green, empty valley, the kind a map would leave white. It is beautiful. It is free. There is no one in it to enjoy that."
+    "~ At dawn you look down into the valley. There is no village. There are no fields, no roofs, no river. There is a clean, green, empty valley, the kind a map would leave white. It is beautiful. It is free. There is no one in it to enjoy that."
    ],
    "ending": {
     "no": "XV",
@@ -944,7 +948,8 @@
    "scene": "dawn",
    "text": [
     "You step back from the pen. So does Edda, eventually. The eye opens all the way, and for the first time in its life the mountain looks at the world without dreaming it.",
-    "It gets up. Slowly, like a very old man, Mount Veyra stands, shakes the snow off its shoulders and walks away towards the sea. Behind it Low Veyra remains, every roof and field and astonished villager in a nightgown, real at last and on its own. You and Edda sit in the new sunlight on a plain no map has ever shown. She takes out a pencil. You take out a pencil. Neither of you draws a thing."
+    "It gets up. Slowly, like a very old man, Mount Veyra stands, shakes the snow off its shoulders and walks away towards the sea. Behind it Low Veyra remains, every roof and field and astonished villager in a nightgown, real at last and on its own.",
+    "~ You and Edda sit in the new sunlight on a plain no map has ever shown. She takes out a pencil. You take out a pencil. Neither of you draws a thing."
    ],
    "ending": {
     "no": "XIX",
@@ -961,7 +966,8 @@
    "scene": "mountain",
    "text": [
     "You take her hand. She lets you hold it for a moment, then gently takes it back. “Go,” says Edda. “Someone should.” She turns back to the eye.",
-    "You climb out alone and walk down into the world, and in time you become a famous cartographer, the kind apprentices write to. One autumn a letter arrives from one of your own apprentices, three weeks old: “I think I know where she went. Don’t worry about me.” You pack your lantern. On the back of their letter you write, carefully: “The mountain is hollow. Don’t follow me.”"
+    "You climb out alone and walk down into the world, and in time you become a famous cartographer, the kind apprentices write to. One autumn a letter arrives from one of your own apprentices, three weeks old: “I think I know where she went. Don’t worry about me.” You pack your lantern.",
+    "~ On the back of their letter you write, carefully: “The mountain is hollow. Don’t follow me.”"
    ],
    "ending": {
     "no": "XVII",

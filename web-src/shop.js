@@ -35,13 +35,17 @@
   var TIERS = [{ min: 0, suffix: '', price: 2 }, { min: 6, suffix: '_b', price: 1.49 }, { min: 12, suffix: '_c', price: 0.99 }]; // endings found -> product (W30 A)
   var DAY = { endings: 2, pages: 6 }, AD = { endings: 2, pages: 6, max: 5 };
   var MONTH_MS = 30 * 24 * 3600 * 1000;
+  // 1.2 (Manuel 15-10): books other than the first must be unlocked before daily endings or ads work for them:
+  // with 3 ads, a book key (daily chest, or a chance at a first golden ending), or by buying it. A locked book can be
+  // sampled for a few pages. Books a reader had already started before this stay open.
+  var UNLOCK = { ads: 3, sample: 3, goldKey: 0.1 }, FREE_BOOK = 'hollow-mountain';
   var AD_SECONDS = /[?&]fxlow=1/.test(location.search) ? 1 : 5;
 
   var STR = {
     en: {
       shopBtn: 'Shop', shopTitle: 'Wayward Shop', close: 'Close',
-      todayHead: 'Free today', todayLine: '{e} endings · {p} pages left today', todayAd: '+{e} endings · +{p} pages from ads',
-      todayNote: 'Every day, for the books you don’t own: 2 new endings or 6 new pages, whichever comes first. Rereading is always free.',
+      streakBonus: 'Includes +{e} from your reading streak.', todayHead: 'Free today', todayLine: '{e} endings · {p} pages left today', todayAd: '+{e} endings · +{p} pages from ads',
+      todayNote: 'Every day, for the books you have unlocked but don’t own: 2 new endings or 6 new pages, whichever comes first. Rereading is always free.',
       adBtn: 'Watch an ad: +2 endings, +6 pages', adCount: '{n} of 5 ads today', adDone: 'No more ads today. Come back tomorrow.',
       booksHead: 'Books', bookFree: '{n} of {t} free endings left', bookFreeNone: 'Free endings used up: read on with ads, or buy it',
       bookOwned: 'Yours', bookDone: 'All endings found: free for ever', bookPassed: 'In your Pass', buy: 'Buy',
@@ -51,7 +55,10 @@
       manage: 'Manage subscription', restore: 'Restore purchases', restoreDone: 'Purchases restored', restoreNone: 'Nothing to restore',
       privacy: 'Privacy policy', terms: 'Terms of use', freeFacts: 'Found every ending of a book? Then it is yours for free. Hints and riddles are always free.',
       testLabel: 'Test switch', testOff: 'Shop off',
-      gateTitle: 'Your free pages for today are used up', gateEndTitle: 'This ending needs a key',
+      gateTitle: 'Your free pages for today are used up', gateEndTitle: 'Your free endings for today are used up',
+      unlockTitle: 'Unlock {title}', unlockBody: 'You have read the first pages. Unlock the book to read on with your daily free endings and ads.',
+      unlockAd: 'Watch an ad ({n} of {t})', unlockKey: 'Use a book key (you have {n})', unlockKeyNote: 'Book keys come from your daily chest, and now and then from a golden ending.',
+      unlocked: '{title} is unlocked', unlockBtn: 'Unlock', bookLocked: 'Locked · {n} of 3 ads, a book key, or buy it', unlockLater: 'Later', keysLine: 'Book keys: {n}', goldKey: 'A book key fell out of the ending',
       gateBookTitle: 'The free endings of this book are used up',
       gateBody: 'Your progress stays. Tomorrow you get 2 endings and 6 pages again.',
       gateBookBody: 'Your progress stays. Watch an ad to read on, or make the book yours.',
@@ -64,8 +71,8 @@
     },
     nl: {
       shopBtn: 'Winkel', shopTitle: 'Wayward-winkel', close: 'Sluiten',
-      todayHead: 'Vandaag gratis', todayLine: 'Nog {e} eindes · {p} bladzijden vandaag', todayAd: '+{e} eindes · +{p} bladzijden van advertenties',
-      todayNote: 'Elke dag, voor de boeken die je niet hebt: 2 nieuwe eindes of 6 nieuwe bladzijden, wat het eerst op is. Teruglezen is altijd gratis.',
+      streakBonus: 'Inclusief +{e} dankzij je leesreeks.', todayHead: 'Vandaag gratis', todayLine: 'Nog {e} eindes · {p} bladzijden vandaag', todayAd: '+{e} eindes · +{p} bladzijden van advertenties',
+      todayNote: 'Elke dag, voor de boeken die je hebt ontgrendeld maar niet bezit: 2 nieuwe eindes of 6 nieuwe bladzijden, wat het eerst op is. Teruglezen is altijd gratis.',
       adBtn: 'Bekijk een advertentie: +2 eindes, +6 bladzijden', adCount: '{n} van 5 advertenties vandaag', adDone: 'Geen advertenties meer vandaag. Kom morgen terug.',
       booksHead: 'Boeken', bookFree: 'Nog {n} van {t} gratis eindes', bookFreeNone: 'Gratis eindes op: lees verder met advertenties, of koop het boek',
       bookOwned: 'Van jou', bookDone: 'Alle eindes gevonden: voor altijd gratis', bookPassed: 'In je Pass', buy: 'Kopen',
@@ -75,7 +82,10 @@
       manage: 'Abonnement beheren', restore: 'Aankopen herstellen', restoreDone: 'Aankopen hersteld', restoreNone: 'Niets om te herstellen',
       privacy: 'Privacybeleid', terms: 'Gebruiksvoorwaarden', freeFacts: 'Alle eindes van een boek gevonden? Dan is het voor altijd gratis. Hints en raadsels zijn altijd gratis.',
       testLabel: 'Testschakelaar', testOff: 'Winkel uit',
-      gateTitle: 'Je gratis bladzijden voor vandaag zijn op', gateEndTitle: 'Dit einde vraagt een sleutel',
+      gateTitle: 'Je gratis bladzijden voor vandaag zijn op', gateEndTitle: 'Je gratis eindes voor vandaag zijn op',
+      unlockTitle: 'Ontgrendel {title}', unlockBody: 'Je hebt de eerste bladzijden gelezen. Ontgrendel het boek om verder te lezen met je dagelijkse gratis eindes en advertenties.',
+      unlockAd: 'Bekijk een advertentie ({n} van {t})', unlockKey: 'Gebruik een boeksleutel (je hebt er {n})', unlockKeyNote: 'Boeksleutels vind je in je dagkist, en af en toe bij een gouden einde.',
+      unlocked: '{title} is ontgrendeld', unlockBtn: 'Ontgrendel', bookLocked: 'Vergrendeld · {n} van 3 advertenties, een boeksleutel of kopen', unlockLater: 'Later', keysLine: 'Boeksleutels: {n}', goldKey: 'Er viel een boeksleutel uit het einde',
       gateBookTitle: 'De gratis eindes van dit boek zijn op',
       gateBody: 'Je voortgang blijft. Morgen krijg je weer 2 eindes en 6 bladzijden.',
       gateBookBody: 'Je voortgang blijft. Kijk een advertentie om verder te lezen, of maak het boek van jou.',
@@ -103,10 +113,16 @@
   function E(s) { return App.esc(s); }
 
   /* ---------------- entitlements ---------------- */
-  function fresh() { return { v: 2, owned: {}, passUntil: 0, lifetime: false, day: '', free: { endings: DAY.endings, pages: DAY.pages }, ad: { endings: 0, pages: 0 }, adsToday: 0, used: {} }; }
+  function fresh() { return { v: 2, owned: {}, passUntil: 0, lifetime: false, day: '', free: { endings: DAY.endings, pages: DAY.pages }, ad: { endings: 0, pages: 0 }, adsToday: 0, used: {}, unlocked: {}, keys: 0, adUnlock: {}, sample: {}, legacyDone: false }; }
   function load() { try { var raw = localStorage.getItem(ENT_KEY); if (raw) { var o = JSON.parse(raw); if (o && o.v === 2) return Object.assign(fresh(), o); } } catch (e) {} return fresh(); }
   function persist() { try { localStorage.setItem(ENT_KEY, JSON.stringify(ent)); } catch (e) {} }
-  function ensureDay() { var d = today(); if (ent.day !== d) { ent.day = d; ent.free = { endings: DAY.endings, pages: DAY.pages }; ent.ad = { endings: 0, pages: 0 }; ent.adsToday = 0; persist(); } }
+  // 1.2 (Manuel 15-10): a reading streak adds free endings a day (and the pages that lead to them: 3 per ending, as in DAY)
+  function streakBonus() { try { return (window.WaywardProfile && window.WaywardProfile.bonus()) || 0; } catch (e) { return 0; } }
+  function ensureDay() {
+    var d = today(), b = streakBonus();
+    if (ent.day !== d) { ent.day = d; ent.free = { endings: DAY.endings + b, pages: DAY.pages + 3 * b }; ent.bonus = b; ent.ad = { endings: 0, pages: 0 }; ent.adsToday = 0; persist(); return; }
+    if (b > (ent.bonus || 0)) { var x = b - (ent.bonus || 0); ent.free.endings += x; ent.free.pages += 3 * x; ent.bonus = b; persist(); } // the bonus grew today
+  }
   function passActive() { return ent.lifetime || ent.passUntil > Date.now(); }
   function bookState(bk) { // which of the reader's books is free for good, and how many of its free endings are left
     var st = bk.id === App.bookDef().id ? App.st() : readState(bk), book = bk.id === App.bookDef().id ? App.book() : null;
@@ -117,6 +133,13 @@
   }
   function readState(bk) { try { var o = JSON.parse(localStorage.getItem(bk.store) || '{}'); return o && typeof o === 'object' ? o : {}; } catch (e) { return {}; } }
   function unlimited(bk) { var s = bookState(bk); return passActive() || s.owned || s.done; }
+  function isUnlocked(bk) { return !!bk && (bk.seal || bk.id === FREE_BOOK || !!ent.unlocked[bk.id] || unlimited(bk)); }
+  function legacyUnlocks() { // readers who had already started a book before unlocking existed keep it open
+    if (ent.legacyDone) return;
+    shelf().forEach(function (b) { var s = readState(b); if ((s.visited || []).length > 1 || (s.found || []).length) ent.unlocked[b.id] = ent.unlocked[b.id] || 'legacy'; });
+    ent.legacyDone = true; persist();
+  }
+  function unlock(bk, how) { ent.unlocked[bk.id] = how; persist(); App.sfx('relic'); App.toast(tt('unlocked', { title: bookTitle(bk) }), 2200); refresh(); if (App.refreshLocks) App.refreshLocks(); }
   function grant(id) {
     if (id === 'pass_lifetime') ent.lifetime = true;
     else if (id === 'pass_monthly') ent.passUntil = Math.max(ent.passUntil, Date.now()) + MONTH_MS;
@@ -139,7 +162,13 @@
   }
   function page(to, run) { // app.js calls this before it opens a page
     if (!enabled()) { run(); return; }
+    var bk = App.bookDef(); if (bk.seal) { run(); return; } // sealed stories are never gated
     var k = cost(to);
+    if (k && !isUnlocked(bk)) { // a locked book: a few sample pages, then it has to be unlocked first
+      var used = ent.sample[bk.id] || 0;
+      if (k === 'pages' && used < UNLOCK.sample) { ent.sample[bk.id] = used + 1; persist(); run(); return; }
+      openUnlock(bk, function () { page(to, run); }); return;
+    }
     if (!k || spend(k)) { run(); refresh(); return; }
     openGate(k, to, run);
   }
@@ -224,6 +253,8 @@
       '.shop-foot{margin-top:18px;display:flex;flex-direction:column;gap:10px}' +
       '.shop-glass{height:40px;border-radius:999px;font-size:13px;font-weight:700;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);color:var(--text)}' +
       '.shop-dev{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:11px;color:var(--dim)}.shop-dev button{font-size:11px;font-weight:700;color:var(--muted);text-decoration:underline;background:none}' +
+      '.shop-unlock{text-align:center}.shop-lock{display:block;width:40px;height:40px;margin:0 auto 4px;color:var(--gold2)}.shop-lock svg{width:100%;height:100%}' +
+      '.shop-adpips{display:flex;justify-content:center;gap:6px;margin:6px 0 4px}.shop-adpips i{width:10px;height:10px;border-radius:50%;border:1.5px solid rgba(246,210,124,.6)}.shop-adpips i.on{background:var(--gold);border-color:var(--gold)}' +
       '.shop-gate{position:absolute;left:14px;right:14px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:73;padding:18px;border-radius:22px;background:linear-gradient(180deg,rgba(40,28,80,.97),rgba(14,10,34,.98));border:1px solid rgba(246,210,124,.35);box-shadow:0 20px 50px rgba(0,0,0,.6);display:flex;flex-direction:column;gap:9px;animation:fadein .25s ease}' +
       '.shop-gate h3{margin:0;font-family:var(--serif);font-size:21px;line-height:1.15;color:var(--gold2)}.shop-gate p{margin:0 0 4px;font-family:var(--read);font-size:13.5px;line-height:1.5;color:var(--muted)}' +
       '.shop-gate .btn-gold,.shop-gate .btn-glass{width:100%}.shop-gate small{text-align:center;font-size:11px;font-weight:700;color:var(--dim)}' +
@@ -240,11 +271,15 @@
   function build() {
     if (built) return; built = true;
     var st = document.createElement('style'); st.id = 'shopCss'; st.textContent = css(); document.head.appendChild(st);
-    var tools = App.$('.lib-tools'), set = tools && tools.querySelector('[data-settings]');
-    var btn = document.createElement('button'); btn.className = 'icon-btn solidbtn'; btn.id = 'shopLibBtn';
-    btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1.5 1.5 0 0 1-1.5 1.3H7.7a1.5 1.5 0 0 1-1.5-1.3z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>';
-    if (tools) { if (set) tools.insertBefore(btn, set); else tools.appendChild(btn); }
-    btn.addEventListener('click', function () { App.sfx('tap'); openShop(); });
+    // 1.2 (player feedback 15-10): the shop is its own tab in the bottom bar instead of a small button at the top
+    var bar = App.$('#tabbar');
+    if (bar && !App.$('#shopTab')) {
+      var tb = document.createElement('button'); tb.className = 'tab'; tb.id = 'shopTab';
+      tb.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1.5 1.5 0 0 1-1.5 1.3H7.7a1.5 1.5 0 0 1-1.5-1.3z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span id="shopTabLabel"></span><span class="dot"></span>';
+      bar.appendChild(tb); bar.classList.add('six');
+      tb.addEventListener('click', function () { App.sfx('tap'); if (App.$('#shopSheet')) closeShop(); else openShop(); });
+      bar.addEventListener('click', function (e) { var o = e.target.closest('.tab'); if (o && o !== tb) closeShop(); }, true); // another tab closes the shop
+    }
     // Settings: the ad privacy choices (EU), only when the store build provides them
     var done = App.$('#setDone');
     if (done && window.WaywardAds && typeof window.WaywardAds.privacyOptions === 'function') {
@@ -258,18 +293,22 @@
     ensureDay();
     var h = '<div class="shop-sec"><h4>' + E(tt('todayHead')) + '</h4><div class="shop-card shop-today"><b>' + E(tt('todayLine', { e: ent.free.endings, p: ent.free.pages })) + '</b>' +
       (ent.ad.endings || ent.ad.pages ? '<i>' + E(tt('todayAd', { e: ent.ad.endings, p: ent.ad.pages })) + '</i>' : '') +
+      (ent.bonus ? '<p class="shop-small" style="color:var(--gold2);font-weight:800">' + E(tt('streakBonus', { e: ent.bonus })) + '</p>' : '') +
+      (ent.keys ? '<p class="shop-small" style="font-weight:800">' + E(tt('keysLine', { n: ent.keys })) + '</p>' : '') +
       '<p class="shop-small">' + E(tt('todayNote')) + '</p>' +
       (ent.adsToday < AD.max ? '<button class="shop-adbtn" data-shop="ad">' + E(tt('adBtn')) + '</button><p class="shop-small" style="text-align:center">' + E(tt('adCount', { n: ent.adsToday })) + '</p>' : '<p class="shop-small">' + E(tt('adDone')) + '</p>') +
       '</div></div>';
     h += '<div class="shop-sec"><h4>' + E(tt('booksHead')) + '</h4><div class="shop-card">';
     shelf().forEach(function (b) {
       var s = bookState(b), right;
+      var locked = !isUnlocked(b);
       if (s.owned) right = '<span class="shop-tag">' + E(tt('bookOwned')) + '</span>';
+      else if (locked) right = '<button class="shop-buy" data-shop="unlock" data-id="' + b.id + '">' + E(tt('unlockBtn')) + '</button>';
       else if (s.done) right = '<span class="shop-tag">' + E(tt('bookDone').split(':')[0]) + '</span>';
       else if (passActive()) right = '<span class="shop-tag">' + E(tt('bookPassed')) + '</span>';
       else right = '<button class="shop-buy' + (s.tier.suffix ? ' deal' : '') + '" data-shop="buy" data-id="' + s.sku + '">' + E(pBook(s.sku)) + '</button>';
-      var sub = s.owned ? tt('bookOwned') : s.done ? tt('bookDone') : s.left > 0 ? tt('bookFree', { n: s.left, t: b.freeEndings || 4 }) : tt('bookFreeNone');
-      if (!s.owned && !s.done && !passActive() && s.tier.suffix) sub += ' · ' + tt('yourPrice', { n: s.found });
+      var sub = s.owned ? tt('bookOwned') : s.done ? tt('bookDone') : locked ? tt('bookLocked', { n: ent.adUnlock[b.id] || 0 }) : s.left > 0 ? tt('bookFree', { n: s.left, t: b.freeEndings || 4 }) : tt('bookFreeNone');
+      if (!s.owned && !s.done && !passActive() && !locked && s.tier.suffix) sub += ' · ' + tt('yourPrice', { n: s.found });
       h += '<div class="shop-row"><span class="shop-cover" style="background-image:url(' + (b.cover || '') + ')"></span><span class="shop-info"><b>' + E(bookTitle(b)) + '</b><span>' + E(sub) + '</span></span>' + right + '</div>';
     });
     h += '<p class="shop-small" style="margin:8px 2px 0">' + E(tt('priceNote', { p0: pBook('book_mountain'), p1: pBook('book_mountain_b'), p2: pBook('book_mountain_c') })) /* T28: the store's prices, so note and buttons agree (and the currency is right outside the euro) */ + '</p>';
@@ -294,24 +333,34 @@
     var ov = document.createElement('div'); ov.className = 'shop-ov'; ov.id = 'shopOv';
     var sh = document.createElement('div'); sh.className = 'shop-sheet'; sh.id = 'shopSheet'; sh.setAttribute('role', 'dialog'); sh.setAttribute('aria-modal', 'true');
     sh.innerHTML = '<div class="shop-head"><h3>' + E(tt('shopTitle')) + '</h3><button class="shop-x" data-shop="close" aria-label="' + E(tt('close')) + '">✕</button></div><div class="shop-body" id="shopBody">' + shopHTML() + '</div>';
+    // with the tab bar on screen, the shop opens above it and its tab shows as selected
+    var bar = App.$('#tabbar'), tb = App.$('#shopTab'), bh = bar && !bar.hidden ? bar.offsetHeight : 0;
+    if (bh) { ov.style.bottom = bh + 'px'; sh.style.bottom = bh + 'px'; }
+    if (tb && bh) { prevTab = App.$('#tabbar .tab[aria-current="page"]'); if (prevTab) prevTab.removeAttribute('aria-current'); tb.setAttribute('aria-current', 'page'); }
     App.app.appendChild(ov); App.app.appendChild(sh);
     ov.addEventListener('click', closeShop);
     sh.addEventListener('click', onShopClick);
     if (focus === 'pass') { var p = App.$('#shopPassSec'); if (p) p.scrollIntoView(); }
   }
-  function closeShop() { ['#shopOv', '#shopSheet'].forEach(function (s) { var e = App.$(s); if (e) e.remove(); }); }
+  var prevTab = null;
+  function closeShop() {
+    ['#shopOv', '#shopSheet'].forEach(function (s) { var e = App.$(s); if (e) e.remove(); });
+    var tb = App && App.$('#shopTab'); if (tb && tb.getAttribute('aria-current')) { tb.removeAttribute('aria-current'); if (prevTab && prevTab.isConnected) prevTab.setAttribute('aria-current', 'page'); }
+    prevTab = null;
+  }
   function onShopClick(e) {
     var b = e.target.closest('[data-shop]'); if (!b) return;
     var a = b.getAttribute('data-shop');
     if (a === 'close') closeShop();
     else if (a === 'buy') { App.sfx('tap'); buy(b.getAttribute('data-id')); }
+    else if (a === 'unlock') { App.sfx('tap'); var ub = shelf().filter(function (x) { return x.id === b.getAttribute('data-id'); })[0]; if (ub) openUnlock(ub); }
     else if (a === 'ad') watchAd();
     else if (a === 'restore') restore();
     else if (a === 'manage') { try { window.WaywardBilling.manage(); } catch (x) {} }
     else if (a === 'off') { try { localStorage.setItem(DEV_KEY, '0'); } catch (x) {} location.href = location.href.replace(/([?&])shop=1(&|$)/, '$1').replace(/[?&]$/, ''); }
   }
   function refresh() {
-    var lb = App && App.$('#shopLibBtn'); if (lb) lb.setAttribute('aria-label', tt('shopBtn'));
+    var lb = App && App.$('#shopTabLabel'); if (lb) lb.textContent = tt('shopBtn');
     var pb = App && App.$('#shopAdsPrivacy'); if (pb) pb.textContent = tt('adsPrivacy');
     var body = App && App.$('#shopBody'); if (body) { var y = body.scrollTop; body.innerHTML = shopHTML(); body.scrollTop = y; }
   }
@@ -336,6 +385,38 @@
     });
   }
   function closeGate() { var g = App && App.$('#shopGate'); if (g) g.remove(); }
+  var LOCK_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/><circle cx="12" cy="15.5" r="1.4" fill="currentColor"/></svg>';
+  function openUnlock(bk, after) { // unlock a book: ads (progress kept), a book key, buying it, or the Pass
+    closeGate(); closeShop(); ensureDay();
+    if (isUnlocked(bk)) { if (after) after(); return; }
+    var n = ent.adUnlock[bk.id] || 0, s = bookState(bk), pips = '';
+    for (var i = 0; i < UNLOCK.ads; i++) pips += '<i class="' + (i < n ? 'on' : '') + '"></i>';
+    var g = document.createElement('div'); g.className = 'shop-gate shop-unlock'; g.id = 'shopGate'; g.setAttribute('role', 'dialog');
+    g.innerHTML = '<span class="shop-lock">' + LOCK_SVG + '</span><h3>' + E(tt('unlockTitle', { title: bookTitle(bk) })) + '</h3><p>' + E(tt('unlockBody')) + '</p>' +
+      '<button class="btn-gold sm" data-g="uad">' + E(tt('unlockAd', { n: n, t: UNLOCK.ads })) + '</button><span class="shop-adpips" aria-hidden="true">' + pips + '</span>' +
+      (ent.keys > 0 ? '<button class="btn-gold sm" data-g="key">' + E(tt('unlockKey', { n: ent.keys })) + '</button>' : '') +
+      '<button class="btn-glass" data-g="buy">' + E(tt('gateBuy', { title: bookTitle(bk), p: pBook(s.sku) })) + '</button>' +
+      '<button class="btn-glass" data-g="pass">' + E(tt('gatePass')) + '</button>' +
+      '<small>' + E(tt('unlockKeyNote')) + '</small>' +
+      '<button class="btn-ghost" data-g="later">' + E(tt('unlockLater')) + '</button>';
+    App.app.appendChild(g);
+    var done = function () { closeGate(); if (after) after(); };
+    g.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-g]'); if (!b) return; var a = b.getAttribute('data-g');
+      if (a === 'later') { closeGate(); return; }
+      if (a === 'pass') { closeGate(); openShop('pass'); return; }
+      if (a === 'buy') { buy(s.sku, done); return; }
+      if (a === 'key') { if (ent.keys > 0) { ent.keys--; unlock(bk, 'key'); done(); } return; }
+      if (a === 'uad') ads().show().then(function () {
+        ent.adUnlock[bk.id] = (ent.adUnlock[bk.id] || 0) + 1; persist();
+        if (ent.adUnlock[bk.id] >= UNLOCK.ads) { unlock(bk, 'ads'); done(); } else openUnlock(bk, after);
+      }).catch(function () { App.toast(tt('adFail')); });
+    });
+    var f = g.querySelector('[data-g="uad"]'); if (f) f.focus();
+  }
+  function goldKey() { if (!enabled() || Math.random() >= UNLOCK.goldKey) return false; ent.keys++; persist(); refresh(); return true; } // a first golden ending: a small chance of a book key
+  function addFree(e) { ensureDay(); ent.free.endings += e; ent.free.pages += 3 * e; persist(); refresh(); } // from the daily chest
+  function addKey() { ent.keys++; persist(); refresh(); }
 
   /* the mock store: a confirm card and a test ad */
   function modal(html) { var m = document.createElement('div'); m.className = 'shop-modal'; m.innerHTML = '<div class="shop-mcard">' + html + '</div>'; App.app.appendChild(m); return m; }
@@ -356,6 +437,7 @@
   function init(app) {
     App = app; ent = load(); ensureDay();
     if (!enabled()) return;
+    legacyUnlocks();
     build();
     if (window.WaywardBilling && window.WaywardBilling.products) { try { Promise.resolve(window.WaywardBilling.products()).then(function (l) { storePrices(l); refresh(); }).catch(function () {}); } catch (e) {} }
     if (window.WaywardBilling && window.WaywardBilling.active) { // what the store says is active now (the Pass per month may have lapsed)
@@ -363,5 +445,9 @@
     }
   }
   window.WaywardShop = { enabled: enabled, init: init, gate: gate, page: page, open: function (f) { if (enabled()) openShop(f); },
+    isUnlocked: function (id) { var b = shelf().filter(function (x) { return x.id === id; })[0]; return !enabled() || !b || isUnlocked(b); },
+    unlock: function (id, after) { var b = shelf().filter(function (x) { return x.id === id; })[0]; if (b) openUnlock(b, after); },
+    sampleLeft: function (id) { return Math.max(0, UNLOCK.sample - (ent.sample[id] || 0)); },
+    goldKey: goldKey, addFree: addFree, addKey: addKey, keys: function () { return ent.keys; },
     _ent: function () { return ent; }, _reset: function () { ent = fresh(); persist(); refresh(); } };
 })();

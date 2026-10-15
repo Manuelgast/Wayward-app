@@ -112,7 +112,7 @@
    "scene": "procession",
    "text": [
     "Marta brengt je soep en een kaars en vraagt niet waarom je gekomen bent. Het is het eerste in Laag-Veyra dat eerlijk aanvoelt. Je kamer kijkt uit op het plein. Je wilt wakker blijven en op de uitkijk staan, en een tijdje lukt dat ook.",
-    "Om middernacht luidt ergens hoog op de berg een klok. Eén keer. Dan gaat in Laag-Veyra de ene deur na de andere open.",
+    "~ Om middernacht luidt ergens hoog op de berg een klok. Eén keer. Dan gaat in Laag-Veyra de ene deur na de andere open.",
     "Vanuit je raam zie je de dorpelingen naar buiten komen in hun nachthemd, met hun ogen dicht en hun lantaarn aan. Marta is er ook bij. In een zwijgende rij lopen ze door het dal omhoog, naar de berg, en niemand struikelt over de keien."
    ],
    "choices": [
@@ -289,7 +289,7 @@
    "scene": "ridge",
    "text": [
     "Elf stappen lang is de richel precies zo stevig als hij eruitziet. Bij de twaalfde blijkt hij geschilderd te zijn: een heel goed schilderij van een richel, op een doek dat over de afgrond is gespannen.",
-    "Je valt heel lang. Lang genoeg om te zien dat de kunstenaar het doek [[signature|heeft gesigneerd]], in de hoek, in kleine bruine letters die je maar al te goed kent."
+    "~ Je valt heel lang. Lang genoeg om te zien dat de kunstenaar het doek [[signature|heeft gesigneerd]], in de hoek, in kleine bruine letters die je maar al te goed kent."
    ],
    "ending": {
     "no": "III",
@@ -305,7 +305,8 @@
    "scene": "lanternhall",
    "text": [
     "Achter de deur ligt een zaal waar geen eind aan lijkt te komen. De muren zitten vol nissen, als een honingraat, en in bijna elke nis brandt een lantaarn. De dorpelingen zetten de hunne in lege nissen, draaien zich om met hun ogen nog altijd dicht en lopen naar huis.",
-    "Aan elke lantaarn hangt een koperen naamplaatje. MARTA OSK. PIM OSK. Een heel dorp, zachtjes brandend op een rij. Verderop worden de plaatjes ouder, dan uitheems, dan onleesbaar. En in de nis het dichtst bij je hand staat, al aangestoken, een lantaarn met jouw naam erop."
+    "Aan elke lantaarn hangt een koperen naamplaatje. MARTA OSK. PIM OSK. Een heel dorp, zachtjes brandend op een rij. Verderop worden de plaatjes ouder, dan uitheems, dan onleesbaar.",
+    "~ En in de nis het dichtst bij je hand staat, al aangestoken, een lantaarn met jouw naam erop."
    ],
    "choices": [
     {
@@ -645,7 +646,8 @@
    "scene": "dawn",
    "text": [
     "Je neemt de lantaarn mee het rotspad af, over wortels en los gesteente, tot het pad ophoudt bij een richel boven het dal. Het wordt licht. Onder je wordt het dorp Laag-Veyra wakker.",
-    "Over de enige weg loopt iemand naar de berg: iemand die precies op jou lijkt, met een brief in de jas. Je doet je mond open om een waarschuwing te roepen. Wat eruit komt, met je eigen stem, volmaakt gedragen door de ochtendlucht, is: “Volg me niet.”"
+    "Over de enige weg loopt iemand naar de berg: iemand die precies op jou lijkt, met een brief in de jas. Je doet je mond open om een waarschuwing te roepen.",
+    "~ Wat eruit komt, met je eigen stem, volmaakt gedragen door de ochtendlucht, is: “Volg me niet.”"
    ],
    "ending": {
     "no": "XI",
@@ -661,7 +663,7 @@
    "scene": "village",
    "text": [
     "Samen tekenen jullie voor Laag-Veyra zonneschijn, zachte regen, een recordoogst en een mooie nieuwe brug. Je tekent dat de bakkerij nooit in brand vliegt. Je tekent de slechte knie van de waardin weer beter. Het is het bevredigendste werk van je leven.",
-    "De jaren verstrijken. Het dorp bloeit. Het zaait ook niets meer tot jij de regen tekent, en bouwt niets meer tot jij de brug tekent, en in het voorjaar dat jij een week ziek bent, komt er in Laag-Veyra helemaal niemand meer uit bed. Ze wachtten alleen maar op de lijnen."
+    "~ De jaren verstrijken. Het dorp bloeit. Het zaait ook niets meer tot jij de regen tekent, en bouwt niets meer tot jij de brug tekent, en in het voorjaar dat jij een week ziek bent, komt er in Laag-Veyra helemaal niemand meer uit bed. Ze wachtten alleen maar op de lijnen."
    ],
    "ending": {
     "no": "XII",
@@ -692,7 +694,8 @@
    "scene": "library",
    "text": [
     "“Als je dit leest,” staat er in de brief, “dan ben je me gevolgd. Goed zo. Dat was precies de bedoeling. Het spijt me van die andere brief. Als ik het je had gevraagd, was je nooit gekomen.",
-    "“Vannacht moet de klok worden geluid door iemand die hem nog nooit heeft geluid. Dan opent de berg zijn oog, en wacht ik in het Hart, helemaal onder in de berg, met de pen die het dal tekent. Wees niet bang. Hier zijn cartografen voor. — I.” [[ink|De inkt is droog]], wat vreemd is voor een brief die morgen geschreven wordt."
+    "“Vannacht moet de klok worden geluid door iemand die hem nog nooit heeft geluid. Dan opent de berg zijn oog, en wacht ik in het Hart, helemaal onder in de berg, met de pen die het dal tekent. Wees niet bang. Hier zijn cartografen voor. — E.”",
+    "~ [[ink|De inkt is droog]], wat vreemd is voor een brief die morgen geschreven wordt."
    ],
    "choices": [
     {
@@ -710,7 +713,8 @@
    "chapter": "Een einde",
    "scene": "dawn",
    "text": [
-    "Je neemt de pen uit de hand van Edda en tekent een deur in de flank van de berg, de eenvoudigste deur die je kunt maken: een lijn, een lijn, een lijn, een klink. Hij gaat open, en daarachter is het ochtend.",
+    "Je neemt de pen uit de hand van Edda en tekent een deur in de flank van de berg, de eenvoudigste deur die je kunt maken: een lijn, een lijn, een lijn, een klink.",
+    "~ Hij gaat open, en daarachter is het ochtend.",
     "Samen stappen jullie naar buiten, het zonlicht in. Achter jullie is de berg een beetje kleiner dan eerst, en een beetje minder zeker van zichzelf. Je raakt de grote pen nooit meer aan. Dat hoeft ook niet: vanaf die dag staat op elke kaart ter wereld een berg boven Laag-Veyra, met de naam erbij in jouw handschrift."
    ],
    "ending": {
@@ -877,7 +881,7 @@
    "scene": "dawn",
    "text": [
     "Je laat het branden. De monniken houden je niet tegen. Ze staan op de binnenplaats en kijken hoe de rook opstijgt, en een van hen begint te huilen, heel zachtjes, als op een begrafenis die hij al jaren zag aankomen.",
-    "Bij zonsopgang kijk je neer in het dal. Er is geen dorp. Er zijn geen velden, geen daken, geen rivier. Er is een schoon, groen, leeg dal, het soort dat een kaart wit zou laten. Het is prachtig. Het is vrij. Er is niemand die daarvan kan genieten."
+    "~ Bij zonsopgang kijk je neer in het dal. Er is geen dorp. Er zijn geen velden, geen daken, geen rivier. Er is een schoon, groen, leeg dal, het soort dat een kaart wit zou laten. Het is prachtig. Het is vrij. Er is niemand die daarvan kan genieten."
    ],
    "ending": {
     "no": "XV",
@@ -902,7 +906,7 @@
    },
    "text": [
     "Van dichtbij is het oog niet van steen. Het is huid, of iets wat erop lijkt, grijs en traag en warm, en het begint open te gaan. Langs de naad stroomt gouden licht naar buiten. De hele berg houdt zijn adem in.",
-    "Edda kijkt je aan alsof je precies op tijd bent. “De berg wordt wakker,” zegt ze, en ze houdt je de grote pen voor. “Als het oog opengaat, droomt wie dit vasthoudt het dal. Dat kun jij zijn. Dat kan ik zijn. Of we laten hem wakker worden met niets in handen, en kijken wat hij doet.” Het ooglid gaat nog een duimbreed omhoog."
+    "Edda kijkt je aan alsof je precies op tijd bent. “De berg wordt wakker,” zegt ze, en ze houdt je de grote pen voor. “Wie dit vasthoudt als het oog opengaat, droomt het dal. Dat kun jij zijn. Dat kan ik zijn. Of we laten hem wakker worden met niets in handen, en kijken wat hij doet.” Het ooglid gaat nog een duimbreed omhoog."
    ],
    "choices": [
     {
@@ -944,7 +948,8 @@
    "scene": "dawn",
    "text": [
     "Je doet een stap achteruit, weg van de pen. Edda ook, uiteindelijk. Het oog gaat helemaal open, en voor het eerst in zijn leven kijkt de berg naar de wereld zonder haar te dromen.",
-    "Hij staat op. Langzaam, als een heel oude man, komt de Veyra overeind, schudt de sneeuw van zijn schouders en loopt weg, naar de zee. Achter hem blijft Laag-Veyra liggen, elk dak en elk veld en elke verbouwereerde dorpeling in nachthemd, eindelijk echt en op eigen benen. Jij en Edda zitten in het nieuwe zonlicht op een vlakte die nog nooit op een kaart heeft gestaan. Zij pakt een potlood. Jij pakt een potlood. Geen van beiden tekent iets."
+    "Hij staat op. Langzaam, als een heel oude man, komt de Veyra overeind, schudt de sneeuw van zijn schouders en loopt weg, naar de zee. Achter hem blijft Laag-Veyra liggen, elk dak en elk veld en elke verbouwereerde dorpeling in nachthemd, eindelijk echt en op eigen benen.",
+    "~ Jij en Edda zitten in het nieuwe zonlicht op een vlakte die nog nooit op een kaart heeft gestaan. Zij pakt een potlood. Jij pakt een potlood. Geen van beiden tekent iets."
    ],
    "ending": {
     "no": "XIX",
@@ -961,7 +966,8 @@
    "scene": "mountain",
    "text": [
     "Je pakt haar hand. Ze laat je hem even vasthouden en trekt hem dan zachtjes terug. “Ga,” zegt Edda. “Iemand moet gaan.” Ze draait zich weer naar het oog.",
-    "Je klimt in je eentje naar buiten en loopt de wereld in, en na verloop van tijd word je een beroemd cartograaf, het soort waar leerlingen brieven aan schrijven. Op een herfstdag komt er een brief van een van je eigen leerlingen, drie weken oud: “Ik denk dat ik weet waar ze heen is gegaan. Maak je om mij geen zorgen.” Je pakt je lantaarn in. Op de achterkant van de brief schrijf je, zorgvuldig: “De berg is hol. Volg me niet.”"
+    "Je klimt in je eentje naar buiten en loopt de wereld in, en na verloop van tijd word je een beroemd cartograaf, het soort waar leerlingen brieven aan schrijven. Op een herfstdag komt er een brief van een van je eigen leerlingen, drie weken oud: “Ik denk dat ik weet waar ze heen is gegaan. Maak je om mij geen zorgen.” Je pakt je lantaarn in.",
+    "~ Op de achterkant van de brief schrijf je, zorgvuldig: “De berg is hol. Volg me niet.”"
    ],
    "ending": {
     "no": "XVII",
