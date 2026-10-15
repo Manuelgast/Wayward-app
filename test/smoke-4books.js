@@ -55,7 +55,7 @@ async function step(p, wantChoice) {
     p.on('response', r => { if (r.status() >= 400) errs.push('http ' + r.status() + ' ' + r.url()); });
     await p.goto(`http://127.0.0.1:${PORT}/index.html`);
     await p.waitForTimeout(2500);
-    const lib = await p.evaluate(() => ({ screen: window.__wayward.current(), shop: !!(window.WaywardShop && window.WaywardShop.enabled()), lang: document.documentElement.lang, books: [...document.querySelectorAll('.shelf .book[data-bookid]')].length }));
+    const lib = await p.evaluate(() => ({ screen: window.__wayward.current(), shop: !!(window.WaywardShop && window.WaywardShop.enabled()), lang: document.documentElement.lang, books: [...document.querySelectorAll('.shelf .book[data-bookid]')].filter(e => e.offsetParent).length }));
     ok(`[${lang}] library with 4 books, store mode`, lib.screen === 'library' && lib.books === 4 && lib.shop && lib.lang === lang, JSON.stringify(lib));
     for (const [shelfId, bookId] of BOOKS) {
       const tag = `[${lang}] ${bookId}`;

@@ -1,0 +1,577 @@
+{
+ "hollow-mountain": {
+  "relic": "signature",
+  "type": "dial",
+  "page": 14,
+  "scene": "river",
+  "x": 54,
+  "y": 69,
+  "object": {
+   "en": "the locker in the bow of Edda’s boat",
+   "nl": "het kistje in de boeg van Edda’s bootje"
+  },
+  "title": {
+   "en": "Edda’s Bow Locker",
+   "nl": "Edda’s boegkistje"
+  },
+  "prompt": {
+   "en": "Set the years you were her apprentice, and the weeks her letter has been in your coat.",
+   "nl": "Zet hoeveel jaar je haar leerling was, en hoeveel weken haar brief al in je jas zit."
+  },
+  "dial": {
+   "wheels": [
+    [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9"
+    ],
+    [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9"
+    ]
+   ],
+   "answer": [
+    3,
+    2
+   ],
+   "labels": [
+    {
+     "en": "Years",
+     "nl": "Jaren"
+    },
+    {
+     "en": "Weeks",
+     "nl": "Weken"
+    }
+   ]
+  },
+  "success": {
+   "en": "The wheels click home, the bow locker springs open, and inside, dry as a map drawer, lies a card signed in small brown letters.",
+   "nl": "De wieltjes klikken vast, het kistje in de boeg springt open, en daarin ligt, droog als een kaartenla, een kaart met een handtekening in kleine bruine letters."
+  },
+  "hint": {
+   "en": "Where the black river keeps a signed boat, the bow asks for the two spans of time on your very first page.",
+   "nl": "Waar de zwarte rivier een gesigneerd bootje bewaart, vraagt de boeg naar de twee tijdsduren van je allereerste bladzijde."
+  },
+  "clue_pages": [
+   1
+  ],
+  "why": "Answer YEARS 4, WEEKS 3. Page 1, which every reader has read (every route to p2#14 also passes p33#16): “The letter in your coat is three weeks old” and “You were her apprentice for four years” (NL: “drie weken oud”, “Vier jaar lang was je haar leerling”); the opening letter interlude repeats “three weeks old”, and p23#12 has “four years copying it”. The prompt names the two wheels, so a careful reader only has to recall two details; a skimmer remembers the letter, not its age, and may swap the two numbers. Edda’s boat is signed E.M. on the bow (“Edda never could leave a thing unsigned”), which suits the Painter’s Signature. Two wheels of 1–9: blind odds 1 in 81. Mark: on the bow tip of the boat, left of the lantern.",
+  "plant": null
+ },
+ "drowned-lighthouse": {
+  "relic": "lastcan",
+  "type": "dial",
+  "page": 42,
+  "scene": "dawnsea",
+  "x": 84,
+  "y": 48,
+  "object": {
+   "en": "the locker under Nell’s thwart",
+   "nl": "het kistje onder Nells roeibank"
+  },
+  "title": {
+   "en": "Nell’s Locker",
+   "nl": "Nells kistje"
+  },
+  "prompt": {
+   "en": "Set the stories Nell has heard enough of, then her age.",
+   "nl": "Zet de verhalen die Nell al heeft gehad, en dan haar leeftijd."
+  },
+  "dial": {
+   "wheels": [
+    [
+     {
+      "en": "pirates",
+      "nl": "piraten"
+     },
+     {
+      "en": "dragons",
+      "nl": "draken"
+     },
+     {
+      "en": "ghosts",
+      "nl": "spoken"
+     },
+     {
+      "en": "mermaids",
+      "nl": "zeemeerminnen"
+     },
+     {
+      "en": "giants",
+      "nl": "reuzen"
+     },
+     {
+      "en": "kings",
+      "nl": "koningen"
+     },
+     {
+      "en": "whales",
+      "nl": "walvissen"
+     },
+     {
+      "en": "sailors",
+      "nl": "zeelui"
+     }
+    ],
+    [
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13"
+    ]
+   ],
+   "answer": [
+    3,
+    4
+   ],
+   "labels": [
+    {
+     "en": "Had enough of",
+     "nl": "Genoeg van"
+    },
+    {
+     "en": "Age",
+     "nl": "Leeftijd"
+    }
+   ]
+  },
+  "success": {
+   "en": "The lid lifts, and wrapped in oilcloth inside is something Nell did not know she was keeping.",
+   "nl": "Het deksel gaat open, en in oliedoek gewikkeld ligt daar iets waarvan Nell niet wist dat ze het bewaarde."
+  },
+  "hint": {
+   "en": "In the salt girl’s boat at the lowest tide, the locker wants the stories she has had enough of, and how old she is.",
+   "nl": "In het bootje van het zoutmeisje, bij het laagste tij, wil het kistje weten waar ze genoeg van heeft, en hoe oud ze is."
+  },
+  "clue_pages": [
+   18,
+   57
+  ],
+  "why": "Answer: mermaids, 10. p49#18 (The Salt Pans), which every route to p30#42 passes: “A girl is raking them barefoot, about ten” and “One story. A good one. I’ve had all the mermaids.” (NL: “een jaar of tien”, “Zeemeerminnen heb ik al gehad.”). p4#57 confirms the age: “Wrong Nell… She’s ten.” The card is the can her father hid for her, so it comes out of her own boat. Two wheels of 8: blind odds 1 in 64; “mermaids” is said once, as a throwaway joke, so a skimmer has no reason to keep it. Mark: on Nell’s rowing boat, on the hull just behind her.",
+  "plant": null
+ },
+ "station-nine": {
+  "relic": "ledger",
+  "type": "dial",
+  "page": 5,
+  "scene": "corridor",
+  "x": 52,
+  "y": 33,
+  "object": {
+   "en": "the Inspector’s silver pocket watch",
+   "nl": "het zilveren zakhorloge van de inspecteur"
+  },
+  "title": {
+   "en": "The Stopped Watch",
+   "nl": "Het stille horloge"
+  },
+  "prompt": {
+   "en": "Set the hands to the minute your name was handed in.",
+   "nl": "Zet de wijzers op de minuut waarop je naam werd ingeleverd."
+  },
+  "dial": {
+   "wheels": [
+    [
+     "III",
+     "IV",
+     "V",
+     "VI",
+     "VII",
+     "VIII",
+     "IX",
+     "X"
+    ],
+    [
+     "00",
+     "10",
+     "15",
+     "20",
+     "30",
+     "40",
+     "45",
+     "50"
+    ]
+   ],
+   "answer": [
+    2,
+    5
+   ],
+   "labels": [
+    {
+     "en": "Hour",
+     "nl": "Uur"
+    },
+    {
+     "en": "Minute",
+     "nl": "Minuut"
+    }
+   ]
+  },
+  "success": {
+   "en": "The lid springs open, and folded behind the glass is a stub nobody ever came to collect.",
+   "nl": "Het deksel springt open, en achter het glas zit een opgevouwen strookje dat nooit iemand is komen ophalen."
+  },
+  "hint": {
+   "en": "Ask the clerk at the window when your name went in, then wind the grey gentleman’s watch to it.",
+   "nl": "Vraag de klerk achter het loket wanneer je naam werd ingeleverd, en zet het horloge van de grijze heer daarop."
+  },
+  "clue_pages": [
+   4,
+   19
+  ],
+  "why": "Answer V : 40. p39#4 (the ticket window, choice 1 of p1 and on the common route p1 > p39 > p23): “Handed in already, at twenty to six this morning. A gentleman, very civil. Exact coins.” (NL: “vanochtend om twintig voor zes”). Mirela repeats it on p7#19: “Twenty to six, I was loading at Hollin.” The phrase is also a common card that glints. The reader must turn “twenty to six” into 5:40; VI : 20 is the skimmer’s trap. Putting the lock on Voss’s watch is a quiet nudge (“manners you could set a clock by”) without saying he did it. Wheels 8 × 8: blind odds 1 in 64. Mark: on the watch chain across Voss’s waistcoat.",
+  "plant": null
+ },
+ "ash-orchid": {
+  "relic": "hanging",
+  "type": "dial",
+  "page": 41,
+  "scene": "boat",
+  "x": 65,
+  "y": 48,
+  "object": {
+   "en": "Jory’s tally tin among the floats",
+   "nl": "Jory’s telblik tussen de drijvers"
+  },
+  "title": {
+   "en": "Jory’s Tally Tin",
+   "nl": "Jory’s telblik"
+  },
+  "prompt": {
+   "en": "Set the number of blooms picked since the island came up, as Jory counted them.",
+   "nl": "Zet het aantal geplukte bloemen sinds het eiland bovenkwam, zoals Jory ze telde."
+  },
+  "dial": {
+   "wheels": [
+    [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9"
+    ],
+    [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9"
+    ]
+   ],
+   "answer": [
+    9,
+    1
+   ]
+  },
+  "success": {
+   "en": "The tin opens on Jory’s tallies, and under the last one lies a card that smells of cool air, like the lava tube.",
+   "nl": "Het blik gaat open op Jory’s turflijstjes, en onder het laatste ligt een kaart die koel ruikt, zoals de lavatunnel."
+  },
+  "hint": {
+   "en": "In Marit’s boat, Jory’s tin opens on the count he gave you over fish stew, the one Rook underlined twice.",
+   "nl": "In Marits boot gaat Jory’s blik open op het getal dat hij je bij de vissoep gaf, het getal dat Rook twee keer onderstreepte."
+  },
+  "clue_pages": [
+   37,
+   14
+  ],
+  "why": "Answer 9 1. p47#37: Jory “tells you the other camps have picked ninety-one blooms since the island came up. He has counted.” (NL: “eenennegentig bloemen”). p18#14, Rook’s tide book, ends on the same number: “only one word, underlined twice: “Ninety-one.”” Either page lies before p26#41 on common routes (about half the readers there have one of them). On the anchor page Jory “counts the floats again”, a count the book never gives, which is the trap. Two digit wheels: blind odds 1 in 100. Mark: on the cork floats by Jory’s hands.",
+  "plant": null
+ },
+ "mirage-road": {
+  "relic": "telegram",
+  "type": "order",
+  "page": 44,
+  "scene": "ninthwell",
+  "x": null,
+  "y": null,
+  "object": {
+   "en": "the ring of old carved posts",
+   "nl": "de kring van oude gesneden palen"
+  },
+  "title": {
+   "en": "The Ring of Posts",
+   "nl": "De kring van palen"
+  },
+  "prompt": {
+   "en": "Touch the first four wells of the road, in order, from Kesh.",
+   "nl": "Raak de eerste vier putten van de weg aan, op volgorde, vanaf Kesh."
+  },
+  "order": {
+   "tiles": [
+    {
+     "en": "Old Thirst",
+     "nl": "Oude Dorst"
+    },
+    {
+     "en": "Tal Amira",
+     "nl": "Tal Amira"
+    },
+    {
+     "en": "Kesh Gate",
+     "nl": "Kesh-Poort"
+    },
+    {
+     "en": "Old Cow",
+     "nl": "Oude Koe"
+    },
+    {
+     "en": "Broken Post",
+     "nl": "Gebroken Paal"
+    },
+    {
+     "en": "Two Palms",
+     "nl": "Twee Palmen"
+    }
+   ],
+   "answer": [
+    2,
+    5,
+    0,
+    4
+   ]
+  },
+  "success": {
+   "en": "The fourth post turns in its socket, and from the sand beneath it you pull a Company telegram nobody ever delivered.",
+   "nl": "De vierde paal draait in zijn voet, en uit het zand eronder trek je een telegram van de Compagnie dat nooit is bezorgd."
+  },
+  "hint": {
+   "en": "At the well that is on no map, the old posts want the road told in order, from the gate.",
+   "nl": "Bij de put die op geen kaart staat, willen de oude palen de weg op volgorde horen, vanaf de poort."
+  },
+  "clue_pages": [
+   1,
+   8,
+   14,
+   19
+  ],
+  "why": "Answer: Kesh Gate, Two Palms, Old Thirst, Broken Post. The wells are numbered in the chapter lines (“Well 1 · Kesh Gate”, “Well 2 · Two Palms”, “Well 3 · Old Thirst”, “Well 4 · The Broken Post”; NL “Put 1 · Kesh-Poort” … “Put 4 · De Gebroken Paal”), and p6#8 says “The next well, Old Thirst”. Readers at p17#44 have mostly walked Sefa’s road: p30#19 77 %, p10#14 57 %, p6#8 55 %. Decoys: Tal Amira (Well 8, the destination) and the Old Cow (the humming dune on p27#4, not a well). Text: “a hollow … ringed with old carved posts”. Six tiles, four taps: blind odds 1 in 360. The card is Lisle’s wire: the riders also gather what the dunes take from the telegraph line. Mark (no picture yet): on one of the old carved posts at the edge of the hollow, not on the plinth.",
+  "plant": null
+ },
+ "paper-sky": {
+  "relic": "steps",
+  "type": "dial",
+  "page": 9,
+  "scene": "basket",
+  "x": null,
+  "y": null,
+  "object": {
+   "en": "Juno’s darning box in the basket",
+   "nl": "Juno’s naaidoos in de mand"
+  },
+  "title": {
+   "en": "Juno’s Darning Box",
+   "nl": "Juno’s naaidoos"
+  },
+  "prompt": {
+   "en": "Set the wheels to the number of patches on the Lark.",
+   "nl": "Zet de wieltjes op het aantal lappen van de Leeuwerik."
+  },
+  "dial": {
+   "wheels": [
+    [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9"
+    ],
+    [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9"
+    ]
+   ],
+   "answer": [
+    3,
+    1
+   ]
+  },
+  "success": {
+   "en": "The box opens, and between the scraps of silk lies a card worn smooth as an old step.",
+   "nl": "De doos gaat open, en tussen de lapjes zijde ligt een kaart, glad gesleten als een oude traptree."
+  },
+  "hint": {
+   "en": "Before anyone takes off, Juno’s darning box asks for the Lark’s own number, read out in the hay meadow.",
+   "nl": "Voordat er iemand opstijgt, vraagt Juno’s naaidoos het eigen getal van de Leeuwerik, voorgelezen op de hooiweide."
+  },
+  "clue_pages": [
+   1
+  ],
+  "why": "Answer 3 1. Page 1, every reader: “the Lark, thirty-one patches of red-and-cream silk” (NL: “eenendertig lappen rood-en-crème zijde”); it is the only place the number appears. On p13#9 Juno is darning the Lark by lamplight and one patch is bleached white, so the patches are in front of the reader, but uncounted. Two digit wheels: blind odds 1 in 100. Mark (no picture yet): on a small tin darning box on the rim of the Lark’s basket, beside the pegged IOUs.",
+  "plant": null
+ },
+ "kings-atlas": {
+  "relic": "ledger",
+  "type": "order",
+  "page": 23,
+  "scene": "chapel",
+  "x": null,
+  "y": null,
+  "object": {
+   "en": "the drawer of the lectern on the dais",
+   "nl": "het laatje van de lessenaar op het podium"
+  },
+  "title": {
+   "en": "The Lectern Drawer",
+   "nl": "Laatje van de lessenaar"
+  },
+  "prompt": {
+   "en": "After the vows: press the rest of the service in the steward’s order.",
+   "nl": "Na de geloften: druk de rest van de dienst in de volgorde van de ceremoniemeester."
+  },
+  "order": {
+   "tiles": [
+    {
+     "en": "Rings",
+     "nl": "Ringen"
+    },
+    {
+     "en": "Signatures",
+     "nl": "Handtekeningen"
+    },
+    {
+     "en": "Cake",
+     "nl": "Taart"
+    },
+    {
+     "en": "Inking",
+     "nl": "Intekenen"
+    },
+    {
+     "en": "Speech",
+     "nl": "Toespraak"
+    },
+    {
+     "en": "Flowers",
+     "nl": "Bloemen"
+    }
+   ],
+   "answer": [
+    3,
+    1,
+    5,
+    2
+   ]
+  },
+  "success": {
+   "en": "The drawer slides out, and in it, folded like a bookmark, lies a letter in Chancery violet.",
+   "nl": "Het laatje schuift open, en daarin ligt, gevouwen als een bladwijzer, een brief in kanselarijviolet."
+  },
+  "hint": {
+   "en": "Two days before the wedding, the lectern opens for whoever listened to the steward.",
+   "nl": "Twee dagen voor de bruiloft gaat de lessenaar open voor wie naar de ceremoniemeester heeft geluisterd."
+  },
+  "clue_pages": [
+   23
+  ],
+  "why": "Answer: Inking, Signatures, Flowers, Cake. p6#23 itself: “The steward reads out the order of service: “Vows. The inking. The signatures. The matchmaker’s flowers. Cake.”” (NL: “De geloften. Het intekenen. De handtekeningen. De bloemen voor de koppelaar. Taart.”). Decoys: Rings, which every guesser puts straight after the vows, and the prince’s Speech (p46#17: he must speak “while the line is inked”). The flowers are the matchmaker’s bouquet, where the violet letter belongs in the best ending, so the card foreshadows it (p42#27, hidden choice, leads to the gold ending p26#31). Six tiles, four taps: blind odds 1 in 360. Mark (no picture yet): on the front of the atlas lectern on the dais.",
+  "plant": null
+ },
+ "town-on-rollers": {
+  "relic": "cartwheel",
+  "type": "order",
+  "page": 12,
+  "scene": "agathe",
+  "x": null,
+  "y": null,
+  "object": {
+   "en": "the youngest crack, in the lane outside No. 14",
+   "nl": "de jongste scheur, in het laantje voor nummer 14"
+  },
+  "title": {
+   "en": "Tilda’s Register",
+   "nl": "Tilda’s presentielijst"
+  },
+  "prompt": {
+   "en": "Press the cracks the way Tilda reads them out.",
+   "nl": "Druk de scheuren in zoals Tilda ze voorleest."
+  },
+  "order": {
+   "tiles": [
+    {
+     "en": "Fenn’s wall",
+     "nl": "Fenns muur"
+    },
+    {
+     "en": "Square",
+     "nl": "Plein"
+    },
+    {
+     "en": "Lower Row",
+     "nl": "Benedenrij"
+    },
+    {
+     "en": "No. 14",
+     "nl": "Nr. 14"
+    },
+    {
+     "en": "Church",
+     "nl": "Kerk"
+    },
+    {
+     "en": "Forge step",
+     "nl": "Smidsstoep"
+    }
+   ],
+   "answer": [
+    4,
+    1,
+    3
+   ]
+  },
+  "success": {
+   "en": "The crack gives a polite gurgle and opens a hand’s width, and at the bottom, quite dry, lies a card.",
+   "nl": "De scheur gorgelt beleefd en gaat een hand breed open, en op de bodem ligt, kurkdroog, een kaart."
+  },
+  "hint": {
+   "en": "At the house without a number, the newest crack waits for someone to read Tilda’s register.",
+   "nl": "Bij het huis zonder nummer wacht de jongste scheur tot iemand Tilda’s presentielijst voorleest."
+  },
+  "clue_pages": [
+   10
+  ],
+  "why": "Answer: Church, Square, No. 14. p19#10: “She reads them out oldest first, like a register: the church’s first, then the square’s. The youngest, born this summer, is in the lane outside No. 14” (NL: “de oudste eerst, als een presentielijst: eerst die van de kerk, dan die van het plein … in het laantje voor nummer 14”). p19#10 is before p41#12 for 40 % of readers (p19 offers p41 directly). Decoys are real cracks with no stated age (the Grin in the forge step, Mr Fenn’s Eyebrow in his wall) and Lower Row, which has none at all (p30#17). The order traces the hidden water line from the church to the fields, where the card’s hole opens. Six tiles, three taps: blind odds 1 in 120. Mark (no picture yet): on the hairline crack in the lane in front of Agathe’s gate.",
+  "plant": null
+ }
+}

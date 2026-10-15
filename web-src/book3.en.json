@@ -239,7 +239,7 @@
    "scene": "brakevan",
    "tag": "Miss O. Fenn, milliner. Coldwater.",
    "text": [
-    "Mirela unpicks a seam in her coat, slides your blank inside and sews it shut in six stitches, pipe in her teeth. In exchange she hands you [[fenn|a stub: Miss O. Fenn, milliner]], of Coldwater. “You make hats now. Stand like it.” The whistle goes. Hollin slides away backwards, porters, frost and all.",
+    "Mirela unpicks a seam in her coat, slides your blank inside and sews it shut in six stitches, pipe in her teeth. In exchange she hands you [[fenn|a stub: Miss O. Fenn, milliner]], of Coldwater. “You make hats now. Stand like it.” The whistle goes. The platform slides away backwards, porters, frost and all.",
     "“Advice,” she says. “Free, which is rare. When a blank goes missing, somebody always comes looking.” She relights the pipe. “Notice who.” Then she turns back to her crates, which are many, and heavy, and not your business, as she mentions twice."
    ],
    "choices": [
@@ -266,7 +266,7 @@
    "scene": "station",
    "tag": "Unclaimed. Return to Hollin.",
    "text": [
-    "Mr Voss keeps your ticket beautifully. He keeps it all the way to Nine, where the Customs Clerk reads out your name, and a civil gentleman in grey says “Here,” and shows a stub, and is thanked.",
+    "Mr Voss keeps your ticket beautifully. He keeps it all the way to Nine, where the Customs Clerk reads out your name, and the same civil gentleman in grey says “Here,” and shows a stub, and is thanked.",
     "You have no ticket and no stub. Nobody in particular has lost you. The porters, who are kind, chalk a number on your coat, give you a bun, and send you back down the line in the luggage van as unclaimed property, facing the right way up."
    ],
    "ending": {
@@ -296,11 +296,6 @@
      "text": "If you follow him down the train,",
      "short": "Follow him",
      "to": 12
-    },
-    {
-     "text": "If you go and see the woman in the brake van for yourself,",
-     "short": "See the smuggler yourself",
-     "to": 3
     }
    ],
    "nr": 36
@@ -352,8 +347,8 @@
      "to": 22
     },
     {
-     "text": "If you go back to Compartment 4,",
-     "short": "Return to Compartment 4",
+     "text": "If you go to Compartment 4,",
+     "short": "Go to Compartment 4",
      "to": 10
     }
    ],
@@ -364,7 +359,7 @@
    "scene": "luggage",
    "tag": "Mr B. Oake, tobacconist. Retired.",
    "text": [
-    "You only mean to look. But the stubs are warm from being kept, and one of them comes away in your fingers as if it has been waiting for a hand. Mr B. Oake, tobacconist. You try to put it back. It will not go back. It is heavier than paper has any right to be, and now it is in your pocket. So are you.",
+    "You mean no harm by it. But the stubs are warm from being kept, and one of them comes away in your fingers as if it has been waiting for a hand. Mr B. Oake, tobacconist. You try to put it back. It will not go back. It is heavier than paper has any right to be, and now it is in your pocket. So are you.",
     "At Nine the Clerk reads out “Bertram Oake,” and your mouth says “Here” before you can stop it. A small woman in a violet hat comes through the barrier at a run. “Bertie! You’ve lost weight. You’ve lost your moustache.” You are taken home, fed soup, and forgiven for a wedding you never attended."
    ],
    "ending": {
@@ -560,7 +555,8 @@
    "tag": "Harrow Infirmary. Name: pending.",
    "text": [
     "You crawl forward. You see, quite clearly, that he is counting names, and that the stub on top says Ashby. You are still working out why that should matter when Harrow Bridge arrives. It was built for trains, not for people lying on them, and it makes its point firmly and once.",
-    "You wake in Harrow’s infirmary with a bandage and a view of the gorge. The nurse asks your name for the chart. You have none on you. She draws a small dash, very neatly, and brings you broth. You spend the summer there, getting better at everything except being someone. The train, you are told, was on time."
+    "You wake in Harrow’s infirmary with a bandage and a view of the gorge. The nurse asks your name for the chart. You have none on you. She draws a small dash, very neatly, and brings you broth. You spend the summer there, getting better at everything except being someone.",
+    "~ The train, you are told, was on time."
    ],
    "ending": {
     "no": "VI",
@@ -604,7 +600,7 @@
    "tag": "Confiscated. Receipt issued, with apologies.",
    "text": [
     "The Inspector is grateful. He is gentle. He asks Miss Dusk to remove her coat, as a courtesy, finds your blank in the lining exactly where it was sewn, and holds it up to the light like a good wine. “Thank you,” he says, to you, and punches it. A small crescent.",
-    "Mirela is led away between two guards, pipe still in her mouth. She does not look at you, which is worse than if she had. The blank goes into his case with a receipt, beautifully filled in. At Nine the Clerk reads out names, and none of them is yours. Officially, you are nobody. Unofficially, too."
+    "Mirela is led away between two guards, pipe still in her mouth. She does not look at you, which is worse than if she had. The blank goes into his case with a receipt, beautifully filled in. At Nine the Clerk hands back names all evening, and none of them to you. Officially, you are nobody. Unofficially, too."
    ],
    "ending": {
     "no": "VII",
@@ -648,7 +644,8 @@
    "tag": "To the Clerk of Customs. By hand.",
    "text": [
     "Behind the post office there is a coal bunker, a cat, and nobody. The envelope is gummed at one corner only, which is either trust or the appearance of it. You hold it up to the snow glare. One sheet, in copperplate so even it looks ironed, and [[letter|dated yesterday]].",
-    "“Advance notice. A passenger without a name, carrying a blank ticket, will attempt to cross today. Detain them. Brown travelling coat, ink on the left cuff, third button missing. A. Voss, Inspector.” You look down. Ink on the left cuff. The third button is still missing; you had been meaning to see to it. Out front, the guard calls two minutes."
+    "“Advance notice. A passenger without a name, carrying a blank ticket, will attempt to cross today. Detain them. Brown travelling coat, ink on the left cuff, third button missing. A. Voss, Inspector.”",
+    "~ You look down. Ink on the left cuff. The third button is still missing; you had been meaning to see to it. Out front, the guard calls two minutes."
    ],
    "choices": [
     {
@@ -708,7 +705,7 @@
    "scene": "observation",
    "tag": "Observation car. Standing room only.",
    "text": [
-    "The observation car is all glass and elbows. Ahead, the Iron Pass climbs out of the larches, white on white, the rails a pencil line somebody meant to rub out. Voss finds you without appearing to look. “Peppermint?” A paper bag, then a folded copy of the treaty, one clause lightly pencilled: a traveller with no name is presumed to be carrying someone else’s.",
+    "The observation car is all glass and elbows. Ahead, the Iron Pass climbs out of the larches, white on white, the rails a pencil line somebody meant to rub out. Voss finds you without appearing to look, pleasant as ever. “Peppermint?” A paper bag, then a folded copy of the treaty, one clause lightly pencilled: a traveller with no name is presumed to be carrying someone else’s.",
     "“A formality,” he says, “but formalities have teeth at the pass.” He uncaps a fountain pen. “Let me write a name on your blank. Any name you like. The guards know my hand. Then you’re safe.” He waits, pen raised, the way a waiter waits for you to taste the wine."
    ],
    "choices": [
@@ -779,8 +776,9 @@
    "scene": "station",
    "tag": "Written in copperplate. Very legible.",
    "text": [
-    "He writes with care, as if addressing a wedding invitation. A, U, R, E, L. The ink sits wet on the ticket a moment, as yours once did, and then it takes. VOSS. “There,” he says, and blows on it. “Nobody will question that.” Nobody does. The guard at the pass salutes you.",
-    "At Nine the Clerk reads out AUREL VOSS, and your mouth answers before you can stop it. You are handed a very heavy trunk, a warrant thirty-one years old, and the close attention of two gentlemen with notebooks. Across the hall, a man you no longer quite recognise answers to your name, collects it, and walks out into the sunset wearing it beautifully."
+    "He writes with care, as if addressing a wedding invitation. A, U, R, E, L. The ink sits wet on the ticket a moment, as yours once did, and then it takes. VOSS. “There,” he says, and blows on it. “Nobody will question that.”",
+    "~ Nobody does. The guard at the pass salutes you.",
+    "At Nine the Clerk reads out AUREL VOSS, and your mouth answers before you can stop it. You are handed a very heavy trunk, a warrant thirty-one years old, and the close attention of two gentlemen with notebooks. Across the hall, a gentleman in grey you no longer quite recognise answers to your name, collects it, and walks out into the sunset wearing it beautifully."
    ],
    "ending": {
     "no": "X",
@@ -818,7 +816,7 @@
    "scene": "pass",
    "tag": "Border post. Stubs read aloud.",
    "text": [
-    "The border post is a hut, a flag and a sergeant with a voice built for reading aloud. He works down the train stub by stub. “Mrs A. Moll. Driver. Miss O. Fenn.” He reaches you, takes your ticket, turns it over, and turns it back, as though the name might be on the other side. It is not. The carriage finds the snow suddenly fascinating.",
+    "The border post is a hut, a flag and a sergeant with a voice built for reading aloud. He works down the train stub by stub. “Mrs A. Moll. Driver. Miss O. Fenn.” He reaches you, takes your ticket, turns it over, and turns it back, as though the name might be on the other side. It is not. Everyone in earshot finds the snow suddenly fascinating.",
     "“No name,” he says. “You know what the treaty presumes.” Then a smell of peppermint, and a grey sleeve at your shoulder. “With me, sergeant,” says Voss, pleasantly. “An unfortunate case. I’ll answer for them at Nine.” The sergeant straightens. Somewhere behind you, Mrs Moll stops knitting."
    ],
    "choices": [
@@ -910,7 +908,8 @@
    "scene": "station",
    "tag": "Name spoken. Name kept.",
    "text": [
-    "You say your name. You say it clearly and all of it, the way you would sign for a parcel, and for a moment it hangs in the cold air, pleased to be out. Then it looks for somewhere to settle, and settles, like a moth on a sleeve, on the nearest stub. The nearest stub is in a grey glove.",
+    "You say your name. You say it clearly and all of it, the way you would sign for a parcel, and for a moment it hangs in the cold air, pleased to be out. Then it looks for somewhere to settle, and settles, like a moth on a sleeve, on the nearest stub.",
+    "~ The nearest stub is in a grey glove.",
     "“Thank you,” says Voss, and tucks it away, warm. “That settles it.” Everybody agrees that it does. The paperwork is beautiful. You go on as a blank with a crescent in it, and whenever anyone asks who you are, you open your mouth and find the word has already been used."
    ],
    "ending": {
@@ -950,7 +949,8 @@
    "tag": "Customs Hall. Names returned here.",
    "text": [
     "The customs hall is warm and varnished and very quiet, like a bank that has just been told a secret. Hendrika Aldewin sits at a high desk with the ledger open beside her and brass scales at her elbow. On the wall, in gilt: CLAUSE SEVEN, with a great deal of small print underneath.",
-    "She reads names in a clear, pleasant voice, and people step forward to take them back. A widow. A baker. A man who bursts into tears and apologises for it. Mirela, beside you, smells of pipe smoke and Harrow buns. Then the Clerk reads your name, the real one. Across the hall, a gentleman in grey clears his throat."
+    "She reads names in a clear, pleasant voice, and people step forward to take them back. A widow. A baker. A man who bursts into tears and apologises for it. Mirela, beside you, smells of pipe smoke and Harrow buns.",
+    "~ Then the Clerk reads your name, the real one. Across the hall, a gentleman in grey clears his throat."
    ],
    "choices": [
     {
@@ -986,7 +986,7 @@
    "tag": "Customs Hall. Names returned here.",
    "text": [
     "Hendrika Aldewin has a ledger, a set of brass scales and the air of a woman who has never once been hurried. Behind her, clause seven is set out on a sign in gilt letters. She reads a name from her list, clearly and without interest. It is yours.",
-    "“Here,” says Voss, before you can open your mouth. He lays the Ashby stub on her desk, crescent uppermost, and adds, with real regret: “Madam, the person behind me travels nameless, with a blank ticket. The classic method. It is all in my report.” The Clerk looks at you over her spectacles. So does the whole queue."
+    "“Here,” says Voss, before you can open your mouth. He lays a stub on her desk, Mr N. Ashby, crescent uppermost, and adds, with real regret: “Madam, the person behind me travels nameless, with a blank ticket. The classic method. It is all in my report.” The Clerk looks at you over her spectacles. So does the whole queue."
    ],
    "choices": [
     {
@@ -1024,7 +1024,7 @@
    "tag": "Nine. Population: returned.",
    "text": [
     "The town of Nine smells of new bread and wet cobbles. Everywhere, people are greeting each other by their real names, carefully, like coats they had forgotten they owned. “Mrs Hallam!” “Mr Eke, as I live!” A girl says her own name to a shop window, twice, to hear how it sounds.",
-    "Nobody greets you. There is nothing to greet you by. The sun has gone down behind the pass, and above the customs hall one window is still lit: the ledger room, where the line keeps its accounts. A drainpipe runs up beside it. Across the street, a card in a boarding-house window: ROOMS. NO QUESTIONS."
+    "Nobody greets you. There is nothing to greet you by, and no grey coat anywhere in the crowd. The sun has gone down behind the pass, and above the customs hall one window is still lit: the ledger room, where the line keeps its accounts. A drainpipe runs up beside it. Across the street, a card in a boarding-house window: ROOMS. NO QUESTIONS."
    ],
    "choices": [
     {
@@ -1096,7 +1096,7 @@
    "tag": "Ledger of Names. Do not lean.",
    "text": [
     "The ledger room is small, hot and orderly: a stove, a stool, and a ledger the size of a door lying open on a slanted desk. Every crossing since the treaty is in it. Name handed in, stub issued, collected. Most lines are ticked. Among the few that are not, in small brown letters: [[ledger|E.M., crossed as someone else]], years ago.",
-    "The book falls open thirty-one years back, the page soft from handling. GRELL, CASIMIR. Handed in at Hollin. Stub issued: A. VOSS. Collected: nothing. From the hall below comes the sound of the stamp, once, very clean. The pen in the inkwell is still wet."
+    "~ The book falls open thirty-one years back, the page soft from handling. GRELL, CASIMIR. Handed in at Hollin. Stub issued: A. VOSS. Collected: nothing. From the hall below comes the sound of the stamp, once, very clean. The pen in the inkwell is still wet."
    ],
    "choices": [
     {
@@ -1118,7 +1118,7 @@
    "tag": "Collected. Initialled. Filed.",
    "text": [
     "You dip the pen and write your name in the Collected column, neatly, the way you would letter a coastline. The ink takes at once. The ledger believes you. It believes you so completely that by morning you are a line in it: ruled, ticked, and a little flat.",
-    "Hendrika Aldewin finds you at the desk and reads you with interest. “Well,” she says. “You are certainly on record.” She takes you on as her apprentice. You are exact, patient and good with columns. People come to the desk for their names, and you hand them back, and some evenings you look yourself up, and are glad to find you there."
+    "Hendrika Aldewin, the Customs Clerk, finds you at the desk and reads you with interest. “Well,” she says. “You are certainly on record.” She takes you on as her apprentice. You are exact, patient and good with columns. People come to the desk for their names, and you hand them back, and some evenings you look yourself up, and are glad to find you there."
    ],
    "ending": {
     "no": "XIV",
@@ -1134,7 +1134,8 @@
    "scene": "station",
    "tag": "Pending inquiry. Please wait.",
    "text": [
-    "You hold up your ticket. Its crescent is a little ragged at one horn. You ask, politely, to see the Inspector’s punch, and the whole queue discovers an interest in its boots. Aldewin takes the silver punch, cuts a crescent into a slip of paper and lays it beside yours. Two crescents. One punch. The same ragged horn.",
+    "You hold up your ticket. Its crescent is a little ragged at one horn. You ask, politely, to see the Inspector’s punch, and the whole queue discovers an interest in its boots. Aldewin takes the silver punch, cuts a crescent into a slip of paper and lays it beside yours.",
+    "~ Two crescents. One punch. The same ragged horn. Your ticket had that crescent before you ever boarded.",
     "“Interesting,” she says, which in customs is a very long word. She withholds your name from you both, pending inquiry, and asks the Inspector to wait in a room with a good lock. You leave the hall as PENDING, stamped in violet. It isn’t a name. It is better than nobody, and it has prospects."
    ],
    "ending": {
@@ -1151,8 +1152,9 @@
    "scene": "tower",
    "tag": "Returned to sender. Handle with care.",
    "text": [
-    "The ledger weighs as much as a small sheep and argues with you all the way down the stairs. You set it on the Clerk’s desk, open at GRELL, CASIMIR. Aldewin reads the line twice, then sends for two constables and, after a moment’s thought, a pot of tea. The Inspector is held for the Harrow fire, very politely, by men who apologise.",
-    "Your name, though, is already in his coat, and his coat has gone to the magistrate with the rest of him. There are forms. Six weeks later it comes back by post in a brown envelope marked RETURNED TO OWNER, creased at one corner. You iron it on a low heat. It fits, mostly."
+    "The ledger weighs as much as a small sheep and argues with you all the way down the stairs. You set it on the Clerk’s desk, open at GRELL, CASIMIR. She reads the line twice, then sends for two constables and, after a moment’s thought, a pot of tea. Grell is still wanted for the Harrow fire, and the Inspector is held for it, very politely, by men who apologise.",
+    "Your name, though, is already in his coat, and his coat has gone to the magistrate with the rest of him. There are forms.",
+    "~ Six weeks later it comes back by post in a brown envelope marked RETURNED TO OWNER, creased at one corner. You iron it on a low heat. It fits, mostly."
    ],
    "ending": {
     "no": "XVI",
@@ -1168,8 +1170,9 @@
    "scene": "station",
    "tag": "A. Voss. Stationery. 9 lb.",
    "text": [
-    "“Clause seven,” you say. “I should like the Inspector’s trunk weighed.” Nobody moves. Then two porters heave it onto the brass scales, and Hendrika Aldewin slides the weight along the beam, and further. The label says nine pounds. The beam settles at ninety. Voss sits down on a bench and, for once, offers nobody a peppermint.",
-    "Thirty-one years of other people do not weigh nothing, and a name-thief’s stubs are void. The Clerk knows the treaty. She hands your name back across the desk. “It fits,” she says. Then she opens the trunk and reads the others out to the hall, into the evening. Mirela unpicks her lining. You give her the blank, for someone who needs it."
+    "“Clause seven,” you say. “I should like the Inspector’s trunk weighed.” Nobody moves. Then two porters heave it onto the brass scales, and Hendrika Aldewin slides the weight along the beam, and further.",
+    "~ The label says nine pounds. The beam settles at ninety. Voss sits down on a bench and, for once, offers nobody a peppermint.",
+    "Thirty-one years of other people do not weigh nothing, and a name-thief’s stubs are void, the Ashby stub among them. The Clerk knows the treaty. She hands your name back across the desk. “It fits,” she says. Then she opens the trunk and reads the others out to the hall, into the evening. Mirela unpicks her lining. You give her the blank, for someone who needs it."
    ],
    "ending": {
     "no": "XVII",
@@ -1186,8 +1189,9 @@
    "scene": "tower",
    "tag": "Nine names. Eight heads. One compartment.",
    "text": [
-    "The Clerk sends a boy for Conductor Pell, who arrives smelling of coal and grievance, list in hand. Nine names. He counts heads. Eight. “Compartment 4,” he reads. “Mr A. Voss, Inspector. Mr N. Ashby.” He looks at the one gentleman standing there. “I did wonder.” Aldewin takes everybody upstairs to the ledger, and it falls open thirty-one years back.",
-    "A man with two stubs has stolen one, and the treaty is clear about which. The Ashby stub is yours, and so is the name it holds; the ledger says, in plain ink, who Voss was. The Clerk takes your blank ticket, stamps it UNUSED and files it in a drawer of its own. “The first,” she says. “Ever.”"
+    "The Clerk sends a boy for Conductor Pell, who arrives smelling of coal and grievance, list in hand. Nine names. He counts heads. Eight. “Compartment 4,” he reads. “Mr A. Voss, Inspector. Mr N. Ashby.” He looks at Voss: one gentleman, two names. “I did wonder.” Aldewin takes everybody upstairs to the ledger, and it falls open thirty-one years back: GRELL, CASIMIR. Stub issued: A. VOSS.",
+    "A man with two stubs has stolen one, and the treaty is clear about which. The Ashby stub is yours, and so is the name it holds; the ledger says, in plain ink, who Voss was. The Clerk takes your blank ticket, stamps it UNUSED and files it in a drawer of its own.",
+    "~ “The first,” she says. “Ever.”"
    ],
    "ending": {
     "no": "XVIII",

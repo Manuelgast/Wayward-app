@@ -24,7 +24,7 @@ const BUILD = process.argv[2] || 'Android 1.1.1 (6)';
     const mail = await p.evaluate(() => window.__mail[0] || '');
     const q = new URLSearchParams(mail.split('?')[1] || '');
     const endBtn = await p.evaluate(() => !!document.querySelector('#ending #fbOpenEnding'));
-    const pass = !!btn && open && mail.startsWith('mailto:voormanuel@gmail.com') && (q.get('body') || '').includes(BUILD) && endBtn && !errs.length;
+    const pass = !!btn && open && mail.startsWith('mailto:studio.wayward01@gmail.com') && (q.get('body') || '').includes(BUILD) && endBtn && !errs.length;
     ok = ok && pass;
     res.push({ lang, btn, open, endBtn, subject: q.get('subject'), appLine: (q.get('body') || '').split('\n').find(l => l.startsWith('App')), errs });
   }

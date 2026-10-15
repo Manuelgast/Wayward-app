@@ -8,6 +8,10 @@
     sea:      { cols: [[214, 248, 246], [176, 228, 238], [240, 252, 255]], base: [196, 234, 240], spark: [230, 255, 255] },
     frost:    { cols: [[228, 234, 242], [204, 212, 224], [246, 249, 252]], base: [216, 224, 234], spark: [255, 255, 255] }, // coal smoke and rime (Book III)
     ash:      { cols: [[206, 198, 194], [168, 158, 156], [232, 226, 220]], base: [188, 180, 176], spark: [255, 160, 80] }, // hot steam and grey ash (Book IV)
+    sand:     { cols: [[214, 150, 96], [190, 112, 66], [236, 188, 132]], base: [204, 136, 84], spark: [255, 226, 170] },   // red sand (Book V)
+    cloud:    { cols: [[236, 242, 250], [208, 222, 240], [250, 252, 255]], base: [226, 234, 246], spark: [255, 255, 255] }, // cloud with ice needles (Book VI)
+    confetti: { cols: [[246, 196, 204], [232, 150, 164], [252, 228, 196]], base: [242, 200, 196], spark: [255, 222, 140] }, // rose petals and gold leaf (Book VII)
+    leaves:   { cols: [[196, 112, 58], [160, 78, 40], [222, 160, 92]], base: [184, 106, 60], spark: [255, 210, 140] },     // autumn leaves (Book VIII)
     stardust: { cols: [[104, 78, 196], [156, 116, 236], [64, 44, 146]], base: [72, 52, 152], spark: [255, 246, 214] }
   };
   function P(name) { return PRESETS[name] || PRESETS.fog; }
