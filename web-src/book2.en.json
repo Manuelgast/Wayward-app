@@ -180,7 +180,8 @@
    "chapter": "The 1826 Ledger",
    "scene": "office",
    "text": [
-    "Hester takes the 1826 ledger down herself, then leaves you alone with it, because the evening boats are coming in and they will not count themselves. The entries are neat and dull right up to the night of the Great Storm: Marigold, Capt. Lorne, twenty aboard, expected. The next morning’s entry is two words long. Not arrived.",
+    "Hester takes the 1826 ledger down herself, then leaves you alone with it, because the evening boats are coming in and they will not count themselves. The entries are neat and dull right up to the night of the Great Storm: Marigold, Capt. Lorne, twenty aboard, expected. The next morning’s entry is two words long.",
+    "~ Not arrived.",
     "A few lines higher, dated the day before, is the account for the Seren Light. Lamp oil, the winter’s supply: sold on, [[goodprice|at a good price]]. S.V. In the margin beside it, in small brown letters you would know anywhere, someone has added a note a century late: “The sea keeps what it can’t finish. — E.M.”"
    ],
    "choices": [
@@ -227,7 +228,8 @@
    "chapter": "The Keeper’s Cottage",
    "scene": "cottage",
    "text": [
-    "The door isn’t locked. Inside, everything is tidy, the way a house is when it expects someone back: a kettle on the cold stove, two mugs on their hooks, one of them small. There are two beds: the keeper’s, narrow and hard, and a child’s, made, its blanket turned down at one corner. And [[clocks|every clock has stopped at two]].",
+    "The door isn’t locked. Inside, everything is tidy, the way a house is when it expects someone back: a kettle on the cold stove, two mugs on their hooks, one of them small. There are two beds: the keeper’s, narrow and hard, and a child’s, made, its blanket turned down at one corner.",
+    "~ And [[clocks|every clock has stopped at two]].",
     "The logbook lies open on the desk, the last entry in a square, careful hand: “No oil from the harbour. Will keep watch with what I have. Nell asleep.” A pair of spectacles rests on the page, as if their owner has only stepped out. Through the window, the cliff stair goes quietly on into the sea."
    ],
    "choices": [
@@ -305,7 +307,7 @@
    "scene": "wreck",
    "text": [
     "You take one end of a crate and the baker takes the other. At two in the morning nobody asks who you are; everyone is a pair of hands. The hold gives up tea that smells of 1826, bolts of lace, clocks ticking out of step, and a mailbag swollen with damp, set carefully aside.",
-    "Hester arrives in a good coat over her nightgown, ledger under her arm, ticking off crates. She is not embarrassed. The capital, she explains, pays well for antiques, and best of all for antiques that don’t exist. “Every town needs an industry.” She has a proposal for you, if you’ll step up to the office. Behind her, the townsfolk begin arguing about prices."
+    "Hester Vane, the harbourmistress, arrives in a good coat over her nightgown, ledger under her arm, ticking off crates. She is not embarrassed. The capital, she explains, pays well for antiques, and best of all for antiques that don’t exist. “Every town needs an industry.” She has a proposal for you, if you’ll step up to the office. Behind her, the townsfolk begin arguing about prices."
    ],
    "choices": [
     {
@@ -361,7 +363,8 @@
    "scene": "harbour",
    "text": [
     "Nobody stops you, which in Grey Harbour should count as a warning. On the office stairs the ledger weighs what a ledger weighs. On the quay it weighs more, and more with every step, as if the names inside were settling in for the journey: twenty from the Marigold, one keeper, a century of ships counted once too often.",
-    "By the end of the quay you are carrying it in both arms, like something asleep. You only mean to set it down on the edge for a moment. The ledger, being the heavier of you, has other ideas. The water is cold, then quiet, then very patient. The sea keeps what it can’t finish."
+    "By the end of the quay you are carrying it in both arms, like something asleep. You only mean to set it down on the edge for a moment. The ledger, being the heavier of you, has other ideas. The water is cold, then quiet, then very patient.",
+    "~ The sea keeps what it can’t finish."
    ],
    "ending": {
     "no": "II",
@@ -419,7 +422,8 @@
    "scene": "cottage",
    "text": [
     "The spectacles are too small for you and smell faintly of lamp smoke. Through the right lens the logbook is an old logbook: dry ink, foxed paper, a last entry a hundred years cold. Through [[spectacles|the cracked left lens]], the ink is wet. Below the last line, in the same square hand, a new one is being written, tonight, with no pen at all.",
-    "“Glass falling. Rain on the lamp-room windows.” The ink pauses. Then: “Someone at the door.” It hasn’t dried when the knock comes. Three knocks, polite and unhurried, from someone who has clearly been standing out there for a while, getting up the courage."
+    "“Glass falling. Rain on the lamp-room windows.” The ink pauses. Then: “Someone at the door.”",
+    "~ It hasn’t dried when the knock comes. Three knocks, polite and unhurried, from someone who has clearly been standing out there for a while, getting up the courage."
    ],
    "choices": [
     {
@@ -576,7 +580,7 @@
    "chapter": "An ending",
    "scene": "harbour",
    "text": [
-    "You land on the quay on your knees among the tea crates, and the first hand that helps you up is holding a ledger. People who jump at the last moment, Hester says, have a sense of timing. Would you consider a shop in the capital? She has the stock. She needs a face that looks honest.",
+    "You land on the quay on your knees among the tea crates, and the first hand that helps you up is holding a ledger. People who jump at the last moment, says Hester Vane, the harbourmistress, have a sense of timing. Would you consider a shop in the capital? She has the stock. She needs a face that looks honest.",
     "In the capital you sell tea to people who have never tasted 1826, lace no one ever wore, letters no one ever opened, and it all sells beautifully, because every piece is exactly what it says it is. Once a month a crate arrives from Grey Harbour, smelling of the sea. You never ask how the ship is doing."
    ],
    "ending": {
@@ -593,7 +597,7 @@
    "scene": "harbour",
    "text": [
     "Marsh & Sons, Chandlers, is the oldest shop in Grey Harbour and the only one that doesn’t sell antiques. Everything on its shelves is dated in chalk, rope, wicks, ship’s biscuit, and everything is [[shillings|priced in shillings that no longer exist]]. Abel Marsh is the oldest thing in it, and the only thing without a price.",
-    "When you ask about lamp oil, he doesn’t pretend. From under the counter he lifts a sealed can, the date painted on its side: 1826. “Silas Vane sold it to my great-grandfather. Lighthouse oil. Never felt right to use it.” He sets it down between you like evidence. “Been waiting for someone to ask.”"
+    "When you ask about lamp oil, he doesn’t pretend. From under the counter he lifts a sealed can, the date painted on its side: 1826. “Silas Vane sold it to my great-grandfather. Lighthouse oil, the week the Marigold went down. Never felt right to use it.” He sets it down between you like evidence. “Been waiting for someone to ask.”"
    ],
    "choices": [
     {
@@ -602,7 +606,7 @@
      "to": 91
     },
     {
-     "text": "If you buy it and offer it to Hester instead,",
+     "text": "If you buy it and offer it to Hester Vane instead,",
      "short": "Offer it to Hester",
      "to": 98
     }
@@ -677,7 +681,8 @@
    "scene": "cottage",
    "text": [
     "You wriggle under the child’s bed, which was not built for someone your size, and find it already taken. A small girl is lying there in the dust, barefoot, knees drawn up, wide awake. She looks at you without surprise, the way you look at someone who is late, and puts a finger to her lips. The knock comes again. Neither of you moves.",
-    "Nobody comes in. After a long time the knocking stops, and after a longer time you fall asleep with your cheek on the boards. In the morning she is gone. Where she lay there is a fine white dust. You touch it to your tongue. Salt."
+    "Nobody comes in. After a long time the knocking stops, and after a longer time you fall asleep with your cheek on the boards. In the morning she is gone. Where she lay there is a fine white dust. You touch it to your tongue.",
+    "~ Salt."
    ],
    "ending": {
     "no": "VII",
@@ -834,7 +839,8 @@
    "scene": "storm",
    "text": [
     "You open the ship’s lantern and hold its flame to the great wick. For a long moment nothing happens. Then the wick takes, small and blue and doubtful, and the lens throws that little light out over the storm, far bigger than it has any right to be. Below, the Marigold’s lights hesitate, then turn.",
-    "The keeper watches until the ship is safe in the bay. Then he shakes your hand, wet and formal, thanks you on behalf of the Seren Light, and is asleep at his desk before his cap is off. The sea goes on dreaming, but a kinder dream. On the shore, a small girl turns over in her sleep and does not wake."
+    "The keeper watches until the ship is safe in the bay. Then he shakes your hand, wet and formal, thanks you on behalf of the Seren Light, and is asleep at his desk before his cap is off. The sea goes on dreaming, but a kinder dream.",
+    "~ In the keeper’s cottage, a small girl turns over in her sleep and does not wake."
    ],
    "ending": {
     "no": "XI",
@@ -870,7 +876,7 @@
    "chapter": "An ending",
    "scene": "lanternroom",
    "text": [
-    "So you keep watch. The keeper is glad of the company and too polite to say so more than once a night. He teaches you to trim a wick, to read weather in the ache of a knee, to polish brass until you can see the storm in it. At two the rain begins, the Marigold’s lights come in, and you stand together at the dark glass and watch.",
+    "So you keep watch. The keeper is glad of the company and too polite to say so more than once a night. He teaches you to trim a wick, to read weather in the ache of a knee, to polish brass until you can see the storm in it. At two the rain begins, the Marigold’s lights come in towards the rocks, and you stand together at the dark glass and watch.",
     "Afterwards he puts the kettle on. The tea is from 1826 and tastes like it. In the logbook, under WATCH KEPT BY, he writes your name beneath his own. A hundred years deep is less lonely than it sounds, like being the last two guests awake at a party."
    ],
    "ending": {
@@ -939,8 +945,9 @@
    "chapter": "The Lamp Room at Two",
    "scene": "lanternroom",
    "text": [
-    "You wait all day under the sea, in a glass room with a can of oil and a great lens that gives you back your face in pieces. At two the water outside turns silver. Then it isn’t water. It is rain, hammering the panes, and the lamp room stands whole on its cape in the Great Storm of 1826.",
-    "The keeper, a man in a drenched coat, is bent over the dry lamp, striking match after match. Out in the dark, the Marigold’s lights are coming in towards the rocks. He hasn’t seen you yet. You are holding the oil."
+    "You wait all day under the sea, in a glass room with a can of oil and a great lens that gives you back your face in pieces. At two the water outside turns silver.",
+    "~ Then it isn’t water. It is rain, hammering the panes, and the lamp room stands whole on its cape in the Great Storm of 1826.",
+    "The keeper, a man in a drenched coat, is bent over the dry lamp, striking match after match. Each time one goes out, he says a name under his breath: “Nell.” Out in the dark, the Marigold’s lights are coming in towards the rocks. He hasn’t seen you yet. You are holding the oil."
    ],
    "choices": [
     {
@@ -961,7 +968,7 @@
    "scene": "dawnsea",
    "text": [
     "You hold out the can. The keeper doesn’t ask where it has been. He fills the lamp with hands that know how, and the wick takes as if it had only been waiting to be asked. The beam goes out over the storm; the Marigold turns. It crosses a small boat coming back for you, and the keeper goes still, like a man who hears his name.",
-    "In the morning the bay is just a bay. Nell’s boat lies on the beach, oars shipped neatly, and on the thwart stands a small salt cottage with its door open, as if someone has gone home. Grey Harbour wakes up ordinary and furious. By lunch, somebody has remembered what boats are for."
+    "~ In the morning the bay is just a bay. Nell’s boat lies on the beach, oars shipped neatly, and on the thwart stands a small salt cottage with its door open, as if someone has gone home. Grey Harbour wakes up ordinary and furious. By lunch, somebody has remembered what boats are for."
    ],
    "ending": {
     "no": "XVIII",
@@ -994,7 +1001,7 @@
    "scene": "dawnsea",
    "text": [
     "At two the bay becomes the storm. Nell climbs the stairs of her own night with the small can in both arms, and at the top her father turns from the dark lamp and knows her at once. “There you are,” he says, as if she were only a little late for supper. They light it together, his hands around hers. The Marigold turns.",
-    "Then the sea finishes its dream, and wakes. In the morning the tower is gone, the Marigold is gone, and Nell is still there on the beach, ten years old, salt in her hair, the only thing the sea gave back. Grey Harbour wakes up ordinary, one ship short, and furious. Nobody writes Nell down."
+    "~ Then the sea finishes its dream, and wakes. In the morning the tower is gone, the Marigold is gone, and Nell is still there on the beach, ten years old, salt in her hair, the only thing the sea gave back. Grey Harbour wakes up ordinary, one ship short, and furious. Nobody writes Nell down."
    ],
    "ending": {
     "no": "XIX",
@@ -1011,7 +1018,7 @@
    "scene": "lanternroom",
    "text": [
     "You step past the keeper, fill the lamp yourself and strike one of his matches. It catches. The oil is old enough, and your hands, it turns out, will do. The beam swings out and the Marigold goes safely by. The keeper smiles at you like a man handing over his keys, and fades, relieved, into the rain.",
-    "The sea is grateful. It shows it the way the sea does: it keeps you. Every night at two the tower rises and you climb it, and the Marigold comes home. Sometimes, at low tide, a girl rows out and hums to the glass, a tune neither of you can place."
+    "~ The sea is grateful. It shows it the way the sea does: it keeps you. Every night at two the tower rises and you climb it, and the Marigold comes home. Sometimes, at low tide, a girl rows out and hums to the glass, a tune neither of you can place."
    ],
    "ending": {
     "no": "XVI",
@@ -1043,7 +1050,7 @@
    "scene": "cottage",
    "text": [
     "The cottage is exactly as tidy as she left it, and Nell notices that first. She kneels by the small bed and lifts the third board without looking, as if she did it yesterday. Perhaps, for her, she did.",
-    "Underneath, wrapped in oilcloth, is a small can with [[lastcan|her name scratched into the lid in her father’s hand]], the letters leaning the way his logbook leans. She holds it against her chest like something warm. Every clock in the cottage says two. For once, they are nearly right."
+    "Underneath, wrapped in oilcloth, is a small can with [[lastcan|her name scratched into the lid in her father’s hand]], the letters leaning the way his letter leans. She holds it against her chest like something warm. Every clock in the cottage says two. For once, they are nearly right."
    ],
    "choices": [
     {

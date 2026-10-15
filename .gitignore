@@ -27,3 +27,4 @@ graphics/*.png
 shots/
 shot*.js
 web-src-*/
+test/out-*/

@@ -131,9 +131,12 @@
   /* ---------------- 1. Edda's letter: unfold it, fold by fold (p1) ---------------- */
   SC.letter = function (ctx) {
     var S = stage(ctx, 's2-sc-letter'), A = S.A, root = S.root, il = ctx.il, fin = finisher(ctx, S), SH = !!ctx.short;
-    var LW = Math.round(Math.min(A.W - 60, 312)), PH = Math.round(Math.min(LW * 0.43, (A.h - 36) / 3)), LH = PH * 3;
+    // a long letter (il.panels: three lists of paragraphs, "_" = underlined) gets a taller sheet; il.paper 'salt' is
+    // black paper whose white salt words rise one by one once it is open (seal-01)
+    var PAN = il.panels ? ctx.L(il.panels) : null, SALT = il.paper === 'salt';
+    var LW = Math.round(Math.min(A.W - (PAN ? 40 : 60), PAN ? 340 : 312)), PH = Math.round(Math.min(LW * (PAN ? 0.6 : 0.43), (A.h - 36) / 3)), LH = PH * 3;
     var cx = A.W / 2, cy = A.top + A.h * 0.5;
-    var Lt = el('div', 's2-letter', root);
+    var Lt = el('div', 's2-letter' + (PAN ? ' s2-long' : '') + (SALT ? ' s2-salt' : ''), root);
     Lt.style.cssText = 'left:' + Math.round(cx - LW / 2) + 'px;top:' + Math.round(cy - LH / 2) + 'px;width:' + LW + 'px;height:' + LH + 'px';
     var shadow = el('div', 's2-lsh', Lt);
     function panel(cls, k) {
@@ -145,16 +148,33 @@
     // the wax seal: Book I's red "A" by default; other books set il.seal = { mark, color: red | green | black | blue | none }
     var WAX = { red: ['#C2404E', '#8A2034', '#4A0C1C'], green: ['#4E8A5A', '#2A5A36', '#123A1C'], black: ['#5A5560', '#2A2630', '#0E0C12'], blue: ['#4E6AA8', '#2A3E78', '#121E44'] };
     var SEAL = { mark: (il.seal && il.seal.mark != null) ? il.seal.mark : 'A', c: WAX[(il.seal && il.seal.color) || 'red'] || WAX.red, none: !!(il.seal && il.seal.color === 'none') };
-    top.ink.innerHTML = '<span class="s2-hand s2-l1">' + esc(words[0]) + '</span>';
-    mid.ink.innerHTML = '<span class="s2-hand s2-l2">' + esc(words[1]) + '</span>';
-    bot.ink.innerHTML = '<span class="s2-sig">' + esc(sign) + '</span><svg class="s2-flour" viewBox="0 0 120 16" aria-hidden="true"><path d="M3 9 C 26 3, 52 14, 76 8 S 108 4, 117 10"/></svg><i class="s2-blot"></i>';
-    top.ink.style.top = Math.round(PH * 0.42) + 'px'; mid.ink.style.top = Math.round(PH * 0.16) + 'px'; bot.ink.style.top = Math.round(PH * 0.12) + 'px';
+    var FLOUR = '<svg class="s2-flour" viewBox="0 0 120 16" aria-hidden="true"><path d="M3 9 C 26 3, 52 14, 76 8 S 108 4, 117 10"/></svg>';
+    if (PAN) {
+      var para = function (t) {
+        var u = t.charAt(0) === '_', ws = (u ? t.slice(1) : t).split(/\s+/);
+        return '<p class="s2-pp' + (u ? ' s2-u' : '') + '">' + ws.map(function (w, i) { return '<span class="s2-w">' + esc(w) + (i < ws.length - 1 ? ' ' : '') + '</span>'; }).join('') + '</p>';
+      };
+      top.ink.innerHTML = (PAN[0] || []).map(para).join(''); mid.ink.innerHTML = (PAN[1] || []).map(para).join('');
+      bot.ink.innerHTML = (PAN[2] || []).map(para).join('') + '<span class="s2-sig">' + esc(sign) + '</span>' + FLOUR;
+      [top, mid, bot].forEach(function (pn) { pn.ink.style.top = Math.round(PH * 0.08) + 'px'; pn.ink.style.height = Math.round(PH * 0.86) + 'px'; });
+    } else {
+      top.ink.innerHTML = '<span class="s2-hand s2-l1">' + esc(words[0]) + '</span>';
+      mid.ink.innerHTML = '<span class="s2-hand s2-l2">' + esc(words[1]) + '</span>';
+      bot.ink.innerHTML = '<span class="s2-sig">' + esc(sign) + '</span>' + FLOUR + '<i class="s2-blot"></i>';
+      top.ink.style.top = Math.round(PH * 0.42) + 'px'; mid.ink.style.top = Math.round(PH * 0.16) + 'px'; bot.ink.style.top = Math.round(PH * 0.12) + 'px';
+    }
     // the outside of the packet: addressed to you, and her seal, broken three weeks ago
-    var addr = el('div', 's2-addr', top.back); addr.textContent = ctx.L(il.addr) || '';
+    var addr = el('div', 's2-addr', top.back), exn = ''; try { exn = String(((window.WaywardApp.prefs() || {}).exlibris || {}).name || '').trim(); } catch (e) {}
+    addr.textContent = (exn && il.addrNamed ? ctx.L(il.addrNamed).replace('{n}', exn) : ctx.L(il.addr)) || ''; // ex libris: letters to you carry your name
     if (!SEAL.none) el('div', 's2-seal', top.back, '<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3c4 0 6 3 9 3s5 3 6 6-1 5 1 8-1 6-3 8-3 5-6 6-5 2-8 2-5-2-8-3-4-3-6-6-1-5-2-8 1-5 3-7 3-5 6-6 5-3 8-3z" fill="url(#s2wax' + (++uid) + ')"/><circle cx="20" cy="21" r="9.5" fill="none" stroke="rgba(40,4,12,.55)" stroke-width="1.4"/><text x="20" y="26" text-anchor="middle" font-family="IM Fell English, Georgia, serif" font-size="14" fill="rgba(40,4,12,.6)">' + esc(SEAL.mark) + '</text><path d="M11 6 L17 15 L14 20 L21 26 L19 34" fill="none" stroke="#2a0610" stroke-width="1.6"/><path d="M11.6 6 L17.6 15 L14.6 20 L21.6 26" fill="none" stroke="rgba(255,190,190,.35)" stroke-width=".6"/><defs><radialGradient id="s2wax' + uid + '" cx=".38" cy=".32" r=".75"><stop offset="0" stop-color="' + SEAL.c[0] + '"/><stop offset=".55" stop-color="' + SEAL.c[1] + '"/><stop offset="1" stop-color="' + SEAL.c[2] + '"/></radialGradient></defs></svg>');
     // size the handwriting once the font is there (one measurement, not per frame)
-    fontsReady(['italic 30px "IM Fell English"']).then(function () {
+    fontsReady(['italic 30px "IM Fell English"', '30px "IM Fell English"']).then(function () {
       if (S.dead) return;
+      if (PAN) { // the largest size at which every panel fits
+        var f2 = Math.min(PH * 0.14, 19), fits = function () { return [top, mid, bot].every(function (pn) { return pn.ink.scrollHeight <= pn.ink.clientHeight + 1; }); };
+        do { [top, mid, bot].forEach(function (pn) { pn.ink.style.fontSize = f2.toFixed(1) + 'px'; }); f2 -= 0.5; } while (f2 > 9 && !fits());
+        return;
+      }
       var fs = Math.min(PH * 0.3, 34);
       [top.ink, mid.ink].forEach(function (ink) { ink.style.fontSize = fs + 'px'; });
       var w = Math.max(top.ink.firstChild.offsetWidth, mid.ink.firstChild.offsetWidth / 0.86), room = LW - 46;
@@ -206,8 +226,22 @@
       if (il.breathe) S.later(breathe, SH ? 120 : 260); // Book I only: the mountain breathes in
       else if (ctx.FX && ctx.FX.glow) S.later(function () { ctx.FX.glow(root, cx, cy, { r: Math.max(A.W, A.H) * 0.32, dur: 1300, peak: 0.7, rest: 0.35 }); }, SH ? 120 : 260);
       S.later(function () { ctx.sfx('sparkle', { gain: 0.45 }); }, 350);
+      if (PAN) { readIt(); return; }
       S.later(function () { fin(true); }, SH ? 900 : 1350);
     }
+    // a long letter: the words come up (salt: one by one, like a coast out of fog), then it stays until you have read it
+    var waitRead = false;
+    function readIt() {
+      var ws = Lt.querySelectorAll('.s2-w'), step = SH || reduce ? 0 : SALT ? 70 : 0, t0 = SH ? 100 : 420;
+      Array.prototype.forEach.call(ws, function (w, i) { S.later(function () { w.classList.add('on'); if (SALT && i % 6 === 0) ctx.sfx('sparkle', { gain: 0.12 }); }, t0 + i * step); });
+      var total = t0 + ws.length * step + 300;
+      S.later(function () {
+        Lt.classList.add('s2-rev');
+        if (SH) { S.later(function () { fin(true); }, 1600); return; }
+        waitRead = true; ctx.setPrompt(ctx.L(il.after) || (ctx.lang() === 'nl' ? 'Tik als je hem gelezen hebt' : 'Tap when you have read it'));
+      }, total);
+    }
+    root.addEventListener('pointerup', function () { if (waitRead) { waitRead = false; ctx.setPrompt(''); fin(true); } });
     function breathe() { // the mountain breathes in: the cave flares up, your lantern flame leans towards it, embers are drawn in
       var cave = ctx.mapPt(57, 55), lamp = ctx.mapPt(51.5, 70.5), dx = cave.x - lamp.x, dy = cave.y - lamp.y, dist = Math.hypot(dx, dy), ang = Math.atan2(dy, dx);
       var lean = clamp((ang + Math.PI / 2) * 180 / Math.PI, -40, 40), dur = SH ? 900 : 1500, i;
@@ -927,7 +961,7 @@
     prompt: { en: 'Unfold the letter', nl: 'Vouw de brief open' },
     done: { en: 'Signed: Edda Marlow. You followed her anyway.', nl: 'Getekend: Edda Marlow. Je bent haar toch gevolgd.' },
     text: { en: ['The mountain is hollow.', 'Don’t follow me.'], nl: ['De berg is hol.', 'Volg me niet.'] }, sign: 'Edda Marlow',
-    addr: { en: 'To my apprentice', nl: 'Aan mijn leerling' }, breathe: true };
+    addr: { en: 'To my apprentice', nl: 'Aan mijn leerling' }, addrNamed: { en: 'To {n}, my apprentice', nl: 'Aan {n}, mijn leerling' }, breathe: true };
   IL[6] = { type: 'knock', knocks: 3, zoom: [74, 50],
     lines: { en: ['Everyone in Low Veyra smiles at you.', 'The inn has a heavy oak door, with light behind it.'],
              nl: ['Iedereen in Laag-Veyra glimlacht naar je.', 'Achter de zware eikenhouten deur van de herberg brandt licht.'] },
@@ -1031,6 +1065,17 @@
     '.s2-flour{display:block;width:48%;height:14px;margin:0 3% 0 auto;fill:none;stroke:rgba(52,28,10,.75);stroke-width:1.4;stroke-linecap:round}',
     '.s2-blot{position:absolute;left:18%;top:26px;width:9px;height:7px;border-radius:50% 60% 45% 55%;background:rgba(52,28,10,.55);box-shadow:5px 3px 0 -2px rgba(52,28,10,.45)}',
     '.s2-seal{position:absolute;left:50%;top:-14px;width:40px;height:40px;margin-left:-20px;transform:rotate(12deg)}.s2-seal svg{width:100%;height:100%;display:block}',
+    '.s2-long .s2-ink{white-space:normal;padding:0 18px;font-style:normal;font-size:15px;line-height:1.28;overflow:hidden}',
+    '.s2-pp{margin:0 0 .35em;transform:rotate(-.5deg)}.s2-u .s2-w{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}',
+    '.s2-long .s2-ink .s2-sig{font-size:1.15em;margin-top:.2em;padding-right:4%}.s2-long .s2-flour{height:10px;width:38%}',
+    '.s2-long:not(.s2-salt) .s2-w{opacity:1}',
+    '.s2-salt .s2-pn{background:radial-gradient(ellipse 120% 90% at 30% 20%,#2a2d34,#15161b 70%,#0e0f13);box-shadow:0 1px 0 rgba(255,255,255,.08) inset,0 8px 22px rgba(0,0,0,.5)}',
+    '.s2-salt .s2-back,.s2-salt .s2-bot .s2-back{background:radial-gradient(ellipse 120% 90% at 60% 30%,#24262d,#121318)}',
+    '.s2-salt .s2-mid::before,.s2-salt .s2-mid::after{background:linear-gradient(rgba(0,0,0,.5),rgba(255,255,255,.08),rgba(0,0,0,0))}',
+    '.s2-salt .s2-ink{color:rgba(246,246,240,.96);text-shadow:0 0 1px rgba(255,255,255,.7),0 0 7px rgba(255,255,255,.22);letter-spacing:.01em}',
+    '.s2-salt .s2-w{opacity:.07;filter:blur(1.6px);transition:opacity .9s ease,filter .9s ease}.s2-salt .s2-w.on{opacity:1;filter:none}',
+    '.s2-salt .s2-sig,.s2-salt .s2-flour{opacity:.06;transition:opacity 1.2s ease}.s2-salt.s2-rev .s2-sig,.s2-salt.s2-rev .s2-flour{opacity:1}',
+    '.s2-salt .s2-ink .s2-sig{color:rgba(246,246,240,.94)}.s2-salt .s2-flour{stroke:rgba(246,246,240,.85)}.s2-salt .s2-addr{color:rgba(236,236,228,.7)}',
     '.s2-addr{position:absolute;left:0;right:0;top:34%;text-align:center;font-family:"IM Fell English",Georgia,serif;font-style:italic;font-size:19px;color:rgba(60,34,14,.72);transform:scaleY(-1) rotate(-2deg)}',
     '.s2-glint{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:5}',
     '.s2-ember{position:absolute;left:0;top:0;width:4px;height:4px;margin:-2px 0 0 -2px;border-radius:50%;background:#FFE3A0;box-shadow:0 0 6px 2px rgba(255,170,70,.8);opacity:0;pointer-events:none}',
