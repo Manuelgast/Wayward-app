@@ -46,7 +46,7 @@ let fails = 0; const ok = (n, c, x) => { console.log((c ? 'PASS ' : 'FAIL ') + n
   await p.waitForTimeout(800);
   const shop = await p.evaluate(() => { const s = document.querySelector('#shopBody'); return s ? s.innerText : ''; });
   ok('shop sheet opens', shop.length > 50, shop.slice(0, 120).replace(/\n/g, ' | '));
-  ok('restore button', /Restore purchases/.test(shop));
+  ok(platform === 'ios' ? 'restore button (iPhone: required by Apple)' : 'no restore button on Android (purchases are checked at every start)', platform === 'ios' ? /Restore purchases/.test(shop) : !/Restore purchases/.test(shop));
   ok('no test-switch in store build', !/test/i.test(await p.evaluate(() => (document.querySelector('.shop-dev') || {}).innerText || '')));
   const buy = await p.$('#shopBody [data-shop="buy"][data-id^="book_"]');
   if (buy) { await buy.click(); await p.waitForTimeout(1500); }

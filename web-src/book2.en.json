@@ -159,7 +159,7 @@
    "chapter": "The Quay at Two",
    "scene": "baynight",
    "text": [
-    "The quay empties at dusk and fills with fog. At two o’clock, without any fuss, a light comes on under the bay. It is gold and very deep, and it turns the way a lighthouse turns, sweeping the underside of the water. Its hum comes up through the stones into your boots. Then, out of the fog, a bow.",
+    "You stand on the quay in thick fog. Under the bay, without any fuss, a light is burning. It is gold and very deep, and it turns the way a lighthouse turns, sweeping the underside of the water. Its hum comes up through the stones into your boots. Then, out of the fog, a bow.",
     "The ship comes in on no wind at all and ties up as if it does this every night. On the bow: [[marigold|MARIGOLD, 1826, the paint still wet]]. Doors open along the harbour. The townsfolk come down in nightclothes, pushing carts and barrows, nodding to one another, like people arriving at a market they have never once missed."
    ],
    "choices": [
@@ -538,7 +538,7 @@
    "chapter": "The Undelivered Letters",
    "scene": "wreck",
    "text": [
-    "The mailbag is stiff with salt and stencilled MARIGOLD. Inside are the letters that never arrived: a bill, an apology, a proposal of marriage, a plum-cake recipe with the last line washed away. Paper fetches nothing in the capital, so nobody wants them.",
+    "The mailbag lies on the quay, stiff with salt and stencilled MARIGOLD. Inside are the letters that never arrived: a bill, an apology, a proposal of marriage, a plum-cake recipe with the last line washed away. Paper fetches nothing in the capital, so nobody wants them.",
     "One letter has no stamp, only a seal of lighthouse wax. It has no business in a ship’s mailbag; the sea, it seems, files by date. Tobias Wren, keeper, to “my Nell,” the night of the storm: “If the lamp won’t light, light it for me. You know where the last of the oil is kept.” The only Nell in Grey Harbour, a carter tells you, is the salt girl. “Wrong Nell,” he adds. “She’s ten.”"
    ],
    "choices": [
@@ -596,7 +596,7 @@
    "chapter": "The Chandler",
    "scene": "harbour",
    "text": [
-    "Marsh & Sons, Chandlers, is the oldest shop in Grey Harbour and the only one that doesn’t sell antiques. Everything on its shelves is dated in chalk, rope, wicks, ship’s biscuit, and everything is [[shillings|priced in shillings that no longer exist]]. Abel Marsh is the oldest thing in it, and the only thing without a price.",
+    "By daylight you are back in town, at Marsh & Sons, Chandlers: the oldest shop in Grey Harbour and the only one that doesn’t sell antiques. Everything on its shelves is dated in chalk, rope, wicks, ship’s biscuit, and everything is [[shillings|priced in shillings that no longer exist]]. Abel Marsh is the oldest thing in it, and the only thing without a price.",
     "When you ask about lamp oil, he doesn’t pretend. From under the counter he lifts a sealed can, the date painted on its side: 1826. “Silas Vane sold it to my great-grandfather. Lighthouse oil, the week the Marigold went down. Never felt right to use it.” He sets it down between you like evidence. “Been waiting for someone to ask.”"
    ],
    "choices": [
@@ -707,7 +707,7 @@
      "to": 83
     },
     {
-     "text": "If you sit down beside the sleeping keeper,",
+     "text": "If you sit down beside the sleeping keeper and keep watch,",
      "short": "Sit with the keeper",
      "to": 88
     }
@@ -750,7 +750,7 @@
    "chapter": "Nell and the Letter",
    "scene": "saltpans",
    "text": [
-    "Nell reads the letter once, quickly, the way you read something addressed to someone else. Then again, slowly. The third time she doesn’t read it at all. She just holds it, and her rake falls over behind her, and neither of you picks it up.",
+    "In the morning, out on the salt pans, Nell reads the letter once, quickly, the way you read something addressed to someone else. Then again, slowly. The third time she doesn’t read it at all. She just holds it, and her rake falls over behind her, and neither of you picks it up.",
     "“He always said my feet would freeze,” she says. Her voice is ten years old and a hundred and ten. She looks out at Cape Seren, where there is nothing, and sees a cottage, a lamp, a man in a wet coat. “He hid the last can under my bed.” A pause, very small. “For me.”"
    ],
    "choices": [
@@ -1049,7 +1049,7 @@
    "chapter": "Under the Cottage Floor",
    "scene": "cottage",
    "text": [
-    "The cottage is exactly as tidy as she left it, and Nell notices that first. She kneels by the small bed and lifts the third board without looking, as if she did it yesterday. Perhaps, for her, she did.",
+    "The keeper’s cottage on Cape Seren is exactly as tidy as Nell left it, and she notices that first. She kneels by the small bed and lifts the third board without looking, as if she did it yesterday. Perhaps, for her, she did.",
     "Underneath, wrapped in oilcloth, is a small can with [[lastcan|her name scratched into the lid in her father’s hand]], the letters leaning the way his letter leans. She holds it against her chest like something warm. Every clock in the cottage says two. For once, they are nearly right."
    ],
    "choices": [

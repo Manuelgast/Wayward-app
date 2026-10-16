@@ -114,7 +114,7 @@
    "scene": "brakevan",
    "tag": "Brake van. Miss M. Dusk, freight.",
    "text": [
-    "Mirela Dusk takes the pipe out of her mouth only to be ruder. “That’s a blank. You’re holding it like a sandwich.” She moves names, she says, for people who need to stop being who they were. “Illegal. Also the only honest trade on this line.”",
+    "In the brake van, Mirela Dusk takes the pipe out of her mouth only to be ruder. “That’s a blank. You’re holding it like a sandwich.” She moves names, she says, for people who need to stop being who they were. “Illegal. Also the only honest trade on this line.”",
     "The rest she tells you flatly, like a timetable. [[heavy|Names have weight]]: a porter can feel a stolen one in a bag. And a name said aloud at the wrong moment sticks, like a burr to wool. She holds out a hand. It is not clean. “Give it here. I’ll carry it to Nine.”"
    ],
    "choices": [
@@ -359,7 +359,7 @@
    "scene": "luggage",
    "tag": "Mr B. Oake, tobacconist. Retired.",
    "text": [
-    "You mean no harm by it. But the stubs are warm from being kept, and one of them comes away in your fingers as if it has been waiting for a hand. Mr B. Oake, tobacconist. You try to put it back. It will not go back. It is heavier than paper has any right to be, and now it is in your pocket. So are you.",
+    "You mean no harm by it. But Voss’s luggage is full of stubs, warm from being kept, and one comes away in your fingers as if it has been waiting for a hand. Mr B. Oake, tobacconist. You try to put it back. It will not go back. It is heavier than paper has any right to be, and now it is in your pocket. So are you.",
     "At Nine the Clerk reads out “Bertram Oake,” and your mouth says “Here” before you can stop it. A small woman in a violet hat comes through the barrier at a run. “Bertie! You’ve lost weight. You’ve lost your moustache.” You are taken home, fed soup, and forgiven for a wedding you never attended."
    ],
    "ending": {
@@ -386,7 +386,7 @@
      "to": 13
     },
     {
-     "text": "If you apologise and accept his explanation,",
+     "text": "If you apologise, accept his explanation and get some air at Harrow,",
      "short": "Apologise to him",
      "to": 22
     },
@@ -403,7 +403,7 @@
    "scene": "corridor",
    "tag": "Conductor O. Pell. Knows the treaty.",
    "text": [
-    "Octavian Pell has a moustache like a yard broom and a pencil behind each ear. He looks at your stub and snorts. “Fenn? Fenn is fifty if she’s a day.” He unfolds his list. “[[list|Nine names, eight heads]]. Not counting you, and I don’t.” Compartment 4: Mr A. Voss, Inspector. Mr N. Ashby. One berth made up.",
+    "In the corridor you find the conductor, Octavian Pell: a moustache like a yard broom and a pencil behind each ear. He looks at your stub and snorts. “Fenn? Fenn is fifty if she’s a day.” He unfolds his list. “[[list|Nine names, eight heads]]. Not counting you, and I don’t.” Compartment 4: Mr A. Voss, Inspector. Mr N. Ashby. One berth made up.",
     "“Clause seven,” he recites, unasked, the way other men hum. “The Clerk at Nine shall return each name to whoever holds its stub, and shall weigh any baggage a passenger asks to have weighed.” He folds the list. “Nobody asks. Holds up the queue.” He licks the pencil. “So. Are you a hatter or a problem?”"
    ],
    "choices": [
@@ -599,7 +599,7 @@
    "scene": "brakevan",
    "tag": "Confiscated. Receipt issued, with apologies.",
    "text": [
-    "The Inspector is grateful. He is gentle. He asks Miss Dusk to remove her coat, as a courtesy, finds your blank in the lining exactly where it was sewn, and holds it up to the light like a good wine. “Thank you,” he says, to you, and punches it. A small crescent.",
+    "The Inspector is grateful. He is gentle. He finds Miss Dusk, asks her to remove her coat, as a courtesy, turns up your blank in the lining exactly where it was sewn, and holds it up to the light like a good wine. “Thank you,” he says, to you, and punches it. A small crescent.",
     "Mirela is led away between two guards, pipe still in her mouth. She does not look at you, which is worse than if she had. The blank goes into his case with a receipt, beautifully filled in. At Nine the Clerk hands back names all evening, and none of them to you. Officially, you are nobody. Unofficially, too."
    ],
    "ending": {
@@ -705,7 +705,7 @@
    "scene": "observation",
    "tag": "Observation car. Standing room only.",
    "text": [
-    "The observation car is all glass and elbows. Ahead, the Iron Pass climbs out of the larches, white on white, the rails a pencil line somebody meant to rub out. Voss finds you without appearing to look, pleasant as ever. “Peppermint?” A paper bag, then a folded copy of the treaty, one clause lightly pencilled: a traveller with no name is presumed to be carrying someone else’s.",
+    "The observation car is all glass and elbows. Ahead, the Iron Pass climbs out of the larches, white on white, the rails a pencil line somebody meant to rub out. Voss finds you without appearing to look, pleasant as an innocent man. “Peppermint?” A paper bag, then a folded copy of the treaty, one clause lightly pencilled: a traveller with no name is presumed to be carrying someone else’s.",
     "“A formality,” he says, “but formalities have teeth at the pass.” He uncaps a fountain pen. “Let me write a name on your blank. Any name you like. The guards know my hand. Then you’re safe.” He waits, pen raised, the way a waiter waits for you to taste the wine."
    ],
    "choices": [
@@ -855,7 +855,7 @@
    "scene": "corridor",
    "tag": "Customs Tunnel. Twenty minutes, no lights.",
    "text": [
-    "The tunnel swallows the train whole. The lights go out carriage by carriage, as regulations require, and the dark that follows smells of coal and wet stone. Somebody’s child laughs; somebody’s mother hushes it. You feel the corridor wall at your back, and warm peppermint breath at your ear.",
+    "Voss’s word is good enough for the sergeant. The tunnel swallows the train whole. The lights go out carriage by carriage, as regulations require, and the dark that follows smells of coal and wet stone. Somebody’s child laughs; somebody’s mother hushes it. You feel the corridor wall at your back, and warm peppermint breath at your ear.",
     "“Let me do the talking at Nine,” says Voss, very softly. “Clerks are literal people. And give me the blank now, there’s a good traveller. In the dark nobody sees, and nobody need ever know it was you who had it.” His gloved hand finds your wrist, lightly, the way one steadies a glass. Far ahead, a carriage lights up again."
    ],
    "choices": [
@@ -926,7 +926,7 @@
    "scene": "station",
    "tag": "Station Nine. Arrival 18:52.",
    "text": [
-    "Station Nine is a disappointment to anyone expecting drama. The sun is going down behind the goods shed, pigeons patrol the platform like junior officials, and a customs queue shuffles towards a door marked NAMES RETURNED. Somebody is selling hot chestnuts. Somebody else has brought a dog to meet a name.",
+    "When the lights come back, the blank is still in your fist. Station Nine is a disappointment to anyone expecting drama. The sun is going down behind the goods shed, pigeons patrol the platform like junior officials, and a customs queue shuffles towards a door marked NAMES RETURNED. Somebody is selling hot chestnuts. Somebody else has brought a dog to meet a name.",
     "Two porters carry Voss’s trunk between them and set it down with a grunt. He tips each of them exactly. “Stand behind me,” he says, straightening your collar as if you were a nephew. “Say nothing. I have done this a great many times.” Beyond the barrier the town gate stands open, and nobody is watching it."
    ],
    "choices": [
@@ -948,7 +948,7 @@
    "scene": "station",
    "tag": "Customs Hall. Names returned here.",
    "text": [
-    "The customs hall is warm and varnished and very quiet, like a bank that has just been told a secret. Hendrika Aldewin sits at a high desk with the ledger open beside her and brass scales at her elbow. On the wall, in gilt: CLAUSE SEVEN, with a great deal of small print underneath.",
+    "The handle gives up before you do. The customs hall at Nine is warm and varnished and very quiet, like a bank that has just been told a secret. Hendrika Aldewin sits at a high desk with the ledger open beside her and brass scales at her elbow. On the wall, in gilt: CLAUSE SEVEN, with a great deal of small print underneath.",
     "She reads names in a clear, pleasant voice, and people step forward to take them back. A widow. A baker. A man who bursts into tears and apologises for it. Mirela, beside you, smells of pipe smoke and Harrow buns.",
     "~ Then the Clerk reads your name, the real one. Across the hall, a gentleman in grey clears his throat."
    ],
@@ -985,7 +985,7 @@
    "scene": "station",
    "tag": "Customs Hall. Names returned here.",
    "text": [
-    "Hendrika Aldewin has a ledger, a set of brass scales and the air of a woman who has never once been hurried. Behind her, clause seven is set out on a sign in gilt letters. She reads a name from her list, clearly and without interest. It is yours.",
+    "You shuffle up behind Voss to the desk, where Hendrika Aldewin, the Customs Clerk, has a ledger, a set of brass scales and the air of a woman who has never once been hurried. Behind her, clause seven is set out on a sign in gilt letters. She reads a name from her list, clearly and without interest. It is yours.",
     "“Here,” says Voss, before you can open your mouth. He lays a stub on her desk, Mr N. Ashby, crescent uppermost, and adds, with real regret: “Madam, the person behind me travels nameless, with a blank ticket. The classic method. It is all in my report.” The Clerk looks at you over her spectacles. So does the whole queue."
    ],
    "choices": [

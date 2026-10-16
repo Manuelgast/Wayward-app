@@ -80,11 +80,29 @@ const shelf = (p) => p.evaluate(() => [...document.querySelectorAll('.shelf .boo
     ok(`${tag} daily goal reached: chest ready`, await p.evaluate(() => { const r = document.querySelector('.chest-row'); return !!r && r.classList.contains('ready'); }));
     const sh2 = await shelf(p);
     ok(`${tag} Book II shows open on the shelf after unlocking`, sh2.indexOf('drowned-lighthouse:open') > -1, sh2);
-    await p.evaluate(() => document.querySelector('.chest-row.ready').click()); await p.waitForTimeout(1600);
+    // 1.2.1: tap the chest itself to open it (force the card reward: a real card that lands in the album)
+    await p.evaluate(() => document.querySelector('.chest-row.ready').click()); await p.waitForTimeout(700);
+    await p.evaluate(() => { window.__rnd = Math.random; Math.random = () => 0.65; }); await p.click('#chestBtn'); await p.waitForTimeout(2800);
+    await p.evaluate(() => { Math.random = window.__rnd; });
+    const gift = await p.evaluate(() => { const c = document.querySelector('.ch-cardwrap .tcard'); if (!c) return null; const id = c.dataset.card;
+      const inAlbum = ['hollow-mountain', 'drowned-lighthouse', 'station-nine', 'ash-orchid'].some(b => (b === window.__wayward.book().id ? window.__wayward.st().relics : (JSON.parse(localStorage.getItem('wayward.' + b + '.v1') || '{}').relics || [])).indexOf(id) > -1);
+      return { id, flipped: c.classList.contains('flipped'), inAlbum }; });
+    ok(`${tag} chest card reward: a real card, shown and in the album`, !!gift && !gift.flipped && gift.inAlbum, gift);
     ok(`${tag} chest opens with a reward and its odds`, await p.evaluate(() => !!document.querySelector('.chest-stage h3') && document.querySelectorAll('.ch-odds li').length === 5), await p.evaluate(() => (document.querySelector('.chest-stage h3') || {}).textContent));
     await p.screenshot({ path: `${OUT}/chest-${lang}-${w}.png` });
     await p.evaluate(() => document.getElementById('celOk').click()); await p.waitForTimeout(500);
     ok(`${tag} chest done for today`, await p.evaluate(() => !!document.querySelector('.chest-row.done')));
+    // a book's relics -> back -> the overview of all books (Android back button too) -> back -> library
+    await p.evaluate(() => window.__wayward.show('library')); await p.waitForTimeout(400);
+    await p.click('.tab[data-tab="relics"]'); await p.waitForTimeout(900);
+    await p.evaluate(() => window.__waywardBack && window.__waywardBack()); await p.waitForTimeout(1500);
+    const ov = await p.evaluate(() => ({ cur: window.__wayward.current(), books: document.querySelectorAll('#allrelicsBody .ovbook').length, art: [...document.querySelectorAll('#allrelicsBody .ovc:not(.back)')].map(e => e.style.backgroundImage) }));
+    ok(`${tag} back from relics: overview of all books (4 books)`, ov.cur === 'allrelics' && ov.books === 4, { cur: ov.cur, books: ov.books });
+    ok(`${tag} found cards show their pictures (small scene picture present in the app)`, ov.art.length > 0 && ov.art.every(a => /-sm\.webp/.test(a)), ov.art.slice(0, 2));
+    await p.waitForTimeout(800);
+    await p.screenshot({ path: `${OUT}/allrelics-${lang}-${w}.png` });
+    await p.evaluate(() => window.__waywardBack && window.__waywardBack()); await p.waitForTimeout(600);
+    ok(`${tag} back again: library`, (await p.evaluate(() => window.__wayward.current())) === 'library');
     // profile and collection
     await p.evaluate(() => window.__wayward.show('profile')); await p.waitForTimeout(900);
     ok(`${tag} profile renders with a streak`, await p.evaluate(() => document.getElementById('profBody').textContent.length > 40), await p.evaluate(() => document.getElementById('profBody').textContent.slice(0, 80)));

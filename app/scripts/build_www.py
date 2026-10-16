@@ -108,6 +108,18 @@ def referenced_images(out_dir):
             names |= set(re.findall(r'img/([A-Za-z0-9_-]+)\.webp', s))
             names |= set(re.findall(r'"(?:scene|img|bg|cover|coverScene|image|pic)"\s*:\s*"([A-Za-z0-9_-]+)"', s))
             names |= set(re.findall(r"\b(?:scene|img|bg|cover|coverScene|image|pic)\s*:\s*'([A-Za-z0-9_-]+)'", s))
+    # 1.2: a relic card (album, card reveal, daily chest, overview) shows its scene small: 'img/' + scene + '-sm.webp',
+    # built in app.js. Keep the small picture of every scene a relic card can show.
+    for rf in glob.glob(os.path.join(out_dir, 'relics*.json')):
+        n = re.sub(r'\D', '', os.path.basename(rf))
+        bf = os.path.join(out_dir, 'book%s.en.json' % n)
+        if not os.path.isfile(bf):
+            continue
+        secs = json.load(open(bf, encoding='utf-8')).get('sections', {})
+        for r in json.load(open(rf, encoding='utf-8')).get('relics', []):
+            sc = r.get('scene') if r.get('where') == 'scene' else (secs.get(str(r.get('page')), {}).get('scene') if r.get('where') == 'text' else None)
+            if sc:
+                names.add(sc + '-sm')
     return names
 
 
@@ -146,7 +158,7 @@ def main():
     nj = os.path.join(OUT, 'native.js')
     glue = open(nj, encoding='utf-8').read()
     # same version on both platforms; the platform name is filled in on the phone
-    open(nj, 'w', encoding='utf-8').write("window.WAYWARD_BUILD = ((window.Capacitor && window.Capacitor.getPlatform && window.Capacitor.getPlatform() === 'ios') ? 'iOS ' : 'Android ') + '%s';\nwindow.WAYWARD_VERSION = window.WAYWARD_BUILD;\n" % build + glue)
+    open(nj, 'w', encoding='utf-8').write("window.WAYWARD_APP = true;\nwindow.WAYWARD_BUILD = ((window.Capacitor && window.Capacitor.getPlatform && window.Capacitor.getPlatform() === 'ios') ? 'iOS ' : 'Android ') + '%s';\nwindow.WAYWARD_VERSION = window.WAYWARD_BUILD;\n" % build + glue)
     fb = os.path.join(OUT, 'feedback.js')
     if os.path.isfile(fb):
         src = open(fb, encoding='utf-8').read()

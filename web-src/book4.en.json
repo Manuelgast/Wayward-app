@@ -114,7 +114,7 @@
    "scene": "cliff",
    "tag": "Rook’s lunch: bread, onion, contempt.",
    "text": [
-    "You find Bastian Rook on the cliff path, sitting on a hot rock, eating an onion like an apple. He offers you nothing, then the heel of the bread, then a look suggesting you took too much. Below, his men are mending boats. They have mended boats for two days. Their baskets stand stacked by the hulls, dry and empty.",
+    "You come up onto the cliff path at noon and find Bastian Rook, Carrow’s man, sitting on a hot rock, eating an onion like an apple. He offers you nothing, then the heel of the bread, then a look suggesting you took too much. Below, his own men are mending boats. They have mended boats for two days, while the foreman’s crew does the cutting. Their baskets stand stacked by the hulls, dry and empty.",
     "“Weeds,” Rook says of the orchids, loudly, for anyone listening. You ask why his men aren’t picking. He chews, considers the sea, and answers a different question. “His Lordship has never landed anywhere in his life.” Then he wipes his knife on his trousers and stands up."
    ],
    "choices": [
@@ -158,7 +158,7 @@
    "scene": "tent",
    "tag": "Plate 40. Hand-coloured. Much admired.",
    "text": [
-    "Quill kisses the draft, then both your cheeks, in that order. By winter your map is Plate 40 in the Transactions, beside her orchid, life size, gold leaf on every petal. It is the most beautiful thing you have ever been part of. The reviews say so too.",
+    "Quill kisses the paper, then both your cheeks, in that order. By winter your map is Plate 40 in the Transactions, beside her orchid, life size, gold leaf on every petal. It is the most beautiful thing you have ever been part of. The reviews say so too.",
     "Next spring a hundred licensed ships drop anchor off the black beach. They pick the island in a single season, field by field, by your map. The spring after, they find only a turquoise patch of sea with a few gold flecks beneath it.",
     "~ In the Society’s catalogue, the entry is amended in a neat hand: locality since submerged."
    ],
@@ -205,7 +205,7 @@
      "to": 42
     },
     {
-     "text": "If you ask Jory who fished there,",
+     "text": "If you go and ask Marit who fished there,",
      "short": "Ask who fished there",
      "to": 41
     },
@@ -278,7 +278,7 @@
    "tag": "Low ceiling. Getting lower.",
    "text": [
     "You saw through the first root, then the second, and the tube lets out a long sigh, like a man setting down a trunk. Ash pours from the roof in a soft grey sheet. Then the roof itself comes down to meet you, a little at a time, politely, and does not stop.",
-    "You crawl the last stretch to the sea on your belly, lantern lost, elbows raw, and come out into the surf coughing grey. Your map is paste. Rook, whose men were cutting the field above, hears the story, looks at the slumped ground over the tube, and lets you go without a word, which from Rook is practically a speech."
+    "You crawl the last stretch to the sea on your belly, lantern lost, elbows raw, and come out into the surf coughing grey. Your map is paste. Rook hears the story, looks at the slumped ground where Carrow’s sickles have been, and lets you go without a word, which from Rook is practically a speech."
    ],
    "ending": {
     "no": "V",
@@ -294,7 +294,7 @@
    "scene": "lagoon",
    "tag": "Locality: unknown. Notch: dry.",
    "text": [
-    "Quill asks Jory to put her ashore. On the warm black slope above the beach she kneels, opens her press, and gives her one specimen back to the ash with her own hands, pressing it in like a seed. She is crying a little and blames the sulphur. Then she opens her catalogue at No. 212 and writes, after “locality”: unknown.",
+    "Quill hears you out, then asks Jory to put her ashore. On the warm black slope above the beach she kneels, opens her press, and gives her one specimen back to the ash with her own hands, pressing it in like a seed. She is crying a little and blames the sulphur. Then she opens her catalogue at No. 212 and writes, after “locality”: unknown.",
     "Together you draw the Society an honest-looking chart of a reef nobody would land on. No locality, no collecting licences: she returns the Council’s letter with regrets, and a biscuit for the clerk. Rook sails the Patience home empty, whistling, like a man let off.",
     "~ And at the landing, the next notch on Jory’s tide stick is dry."
    ],
@@ -378,7 +378,7 @@
      "to": 36
     },
     {
-     "text": "If you ask Rook what the numbers mean,",
+     "text": "If you wait for a chance to ask Rook what the numbers mean,",
      "short": "Ask Rook",
      "to": 3
     },
@@ -579,12 +579,12 @@
      "to": 20
     },
     {
-     "text": "If you take the letter out to the Patience,",
+     "text": "If you pocket the letter and row out to the Patience,",
      "short": "Take it to the Patience",
      "to": 18
     },
     {
-     "text": "If you take the letter to the fisherfolk instead,",
+     "text": "If you pocket the letter and go to the fisherfolk instead,",
      "short": "Take it to the fisherfolk",
      "to": 45
     }
@@ -654,7 +654,7 @@
    "scene": "field",
    "tag": "Full baskets. Singing. Ground clearing its throat.",
    "text": [
-    "You lead them to the biggest field, because that is what you were hired for, and it is a fine field: gold to the skyline, humming with heat. Eleven sickles go in at a walk. By sundown the slope is bare grey ash, the baskets are heaped, and Carrow’s men are singing in a way that suggests the rum came up with the baskets.",
+    "You lead Carrow’s men to the biggest field, map in hand, because that is what you were hired for, and it is a fine field: gold to the skyline, humming with heat. Eleven sickles go in at a walk. By sundown the slope is bare grey ash, the baskets are heaped, and the men are singing in a way that suggests the rum came up with the baskets.",
     "In the night the ground gives a long, polite cough. By morning the landing has slid into the sea, and two of Carrow’s boats with it, rope and all. Everyone swims. Rook stands on what is left of the beach, looks at the full baskets, and says nothing whatsoever, which is worse."
    ],
    "ending": {
@@ -763,7 +763,7 @@
    "scene": "ashfall",
    "tag": "Day 5. Ground moving. Sky falling, slowly.",
    "text": [
-    "Wherever you meant to spend the evening, the island has other plans. At dusk it shivers like a horse shaking off flies. Then the sky begins to come down: warm ash, soft as flour, then thick as snow, settling on your shoulders, your eyebrows, the inside of your collar. Every lamp in the three camps turns into a small brown moon.",
+    "The next evening finds you ashore, and the island has plans of its own. At dusk it shivers like a horse shaking off flies. Then the sky begins to come down: warm ash, soft as flour, then thick as snow, settling on your shoulders, your eyebrows, the inside of your collar. Every lamp in the three camps turns into a small brown moon.",
     "Dr Quill’s tent is sagging over her presses, the ridge-pole bowing, someone inside calling for help in a voice too polite for it. The Society’s big canvas, further down, looks sound and dry. Up the slope, the path to the rim still shows as a darker line through the grey. Just."
    ],
    "choices": [
@@ -773,7 +773,7 @@
      "to": 32
     },
     {
-     "text": "If you go back into the tent for Quill’s presses,",
+     "text": "If you go into the sagging tent for Quill’s presses,",
      "short": "Save the presses",
      "to": 25
     },
@@ -826,7 +826,7 @@
    "scene": "ship",
    "tag": "Mail cutter. One letter. Heavy paper.",
    "text": [
-    "The mail cutter comes alongside, hands up a single letter on paper so heavy it lands like a plate, and leaves without waiting for a reply. Lord Carrow’s hand is large and leans forward. Bring blooms, it says, or do not come back; [[letter|and bring the map either way]].",
+    "You are aboard the Patience when the mail cutter comes alongside, hands up a single letter on paper so heavy it lands like a plate, and leaves without waiting for a reply. Lord Carrow’s hand is large and leans forward. Bring blooms, it says, or do not come back; [[letter|and bring the map either way]].",
     "Rook reads it twice. Then he folds it, crisply, into a little boat and sails it off the stern, where it rides the swell for a while with great dignity before going under. He watches it all the way. Then he turns to you, wipes his hands on his trousers, and asks your price for the route to the biggest field."
    ],
    "choices": [
@@ -907,7 +907,7 @@
      "to": 30
     },
     {
-     "text": "If you ask him why a rock,",
+     "text": "If you ask him why a rock and not the flowers,",
      "short": "Ask him why a rock",
      "to": 3
     },
@@ -1012,7 +1012,7 @@
    "scene": "boat",
    "tag": "Marit said eleven words. A record.",
    "text": [
-    "Marit mends net without looking up, a wooden needle darting in and out like a small bird. The boat smells of tar and yesterday’s fish, and the sun comes off the water hard enough to squint at. Jory counts the floats again, gets the same number, and seems disappointed in it.",
+    "While you talk, Marit mends net without looking up, a wooden needle darting in and out like a small bird. The boat smells of tar and yesterday’s fish, and the sun comes off the water hard enough to squint at. Jory counts the floats again, gets the same number, and seems disappointed in it.",
     "~ “Mountain speaks on the seventh day,” Marit says. “The old ones did too.” It is the most she has said since you met her. Her boats will take anyone off before then: Carrow’s men, the Society, you; there is room if people sit close. Lesser Sound fishes round the island, never on it. She bites off the twine and holds out her hand for the next tangle."
    ],
    "choices": [

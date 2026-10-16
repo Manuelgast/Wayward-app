@@ -77,7 +77,9 @@ async function advance(p, to, maxSteps = 160) {
       ok(`[${lang}] tab ${tab} opens`, await p.isVisible('#' + tab));
     }
     await p.evaluate(() => window.__waywardBack()); await p.waitForTimeout(700);
-    ok(`[${lang}] back from relics -> library`, await p.isVisible('#library'));
+    ok(`[${lang}] back from relics -> overview of all books`, await p.isVisible('#allrelics'));
+    await p.evaluate(() => window.__waywardBack()); await p.waitForTimeout(700);
+    ok(`[${lang}] back again -> library`, await p.isVisible('#library'));
     // settings sheet + back closes it
     await p.evaluate(() => document.querySelector('#library [data-settings]').click()); await p.waitForTimeout(500);
     const openS = await p.isVisible('#settings');

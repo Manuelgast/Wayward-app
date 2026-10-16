@@ -7,7 +7,9 @@
   var I18N = window.WAYWARD_I18N, IL = window.WAYWARD_INTERLUDES || {}, FX = window.WaywardFX;
   var AU = window.WaywardAudio || { unlock: function () {}, setScene: function () {}, sfx: function () {}, setMusic: function () {}, setSfx: function () {}, setVolume: function () {}, tracks: function () {}, duck: function () {}, state: function () { return {}; } };
   // preview books (Books V–VIII, text test, Manuel 09-10) never reach the app build: store.js sets WAYWARD_SHOP there
-  if (window.WAYWARD_SHOP === true && window.WAYWARD_BOOKS) window.WAYWARD_BOOKS = window.WAYWARD_BOOKS.filter(function (b) { return !b.preview; });
+  // the app build (WAYWARD_APP, set by the app's native.js) never lists them, even before the store bridge is up
+  var APP_BUILD = window.WAYWARD_SHOP === true || window.WAYWARD_APP === true;
+  if (APP_BUILD && window.WAYWARD_BOOKS) window.WAYWARD_BOOKS = window.WAYWARD_BOOKS.filter(function (b) { return !b.preview; });
   var SHELF = (window.WAYWARD_BOOKS || [{ id: 'hollow-mountain', no: 1, file: 'book', relics: 'relics.json', store: 'wayward.hollow-mountain.v1', coverScene: 'mountain', veil: 'fog', ui: 'compass', creep: { 22: 'fog' }, roles: { edge: 'gilt', map: 'honestmap', secret: 'margin' } }]);
   var BK = SHELF[0]; // the book that is open on the shelf (T10: every book keeps its own progress, endings and relics)
   // 1.2: the sealed stories (seals.js) read like small books; pictures, music, omens and veil come from the parent book
@@ -174,7 +176,7 @@
   }
 
   /* ---------------- screens ---------------- */
-  var SCREEN_BG = { library: 'off', collection: 'off', profile: 'off', cover: 'top', reader: 'full', moment: 'full', ending: 'top', map: 'off', endings: 'off', relics: 'off', secret: 'off' };
+  var SCREEN_BG = { library: 'off', collection: 'off', profile: 'off', cover: 'top', reader: 'full', moment: 'full', ending: 'top', map: 'off', endings: 'off', relics: 'off', secret: 'off', allrelics: 'off', allendings: 'off', allpaths: 'off' };
   var MCREEP = null; // the fog of a timed moment: its drawing loop must stop when the moment is over
   function show(id) {
     clearTimers(); stopReader();
@@ -183,9 +185,10 @@
     if (id !== current) prevScreen = current;
     current = id;
     $$('.screen').forEach(function (s) { s.hidden = s.id !== id; });
-    var tabbed = id === 'library' || id === 'collection' || id === 'profile' || id === 'map' || id === 'endings' || id === 'relics';
+    var tabbed = id === 'library' || id === 'collection' || id === 'profile' || id === 'map' || id === 'endings' || id === 'relics' || !!OV_TAB[id];
     $('#tabbar').hidden = !tabbed;
-    $$('.tab').forEach(function (tb) { if (tb.getAttribute('data-tab') === id) tb.setAttribute('aria-current', 'page'); else tb.removeAttribute('aria-current'); });
+    var tabId = OV_TAB[id] || id;
+    $$('.tab').forEach(function (tb) { if (tb.getAttribute('data-tab') === tabId) tb.setAttribute('aria-current', 'page'); else tb.removeAttribute('aria-current'); });
     closeSheet(); closeSettings();
     bgMode(SCREEN_BG[id] || 'off');
     if (id === 'library' || id === 'cover') AU.setScene('menu');
@@ -214,15 +217,17 @@
   function isoDay(d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
   function addDays(iso, n) { var d = new Date(iso + 'T12:00:00'); d.setDate(d.getDate() + n); return isoDay(d); }
   // whoever opens a book in its first two weeks keeps the stamp for good; readers who already had a launch book before
-  // the stamp existed get it the first time this check runs for that book
+  // the stamp existed get it the first time this check runs for that book. A locked book (shop on) earns nothing yet:
+  // the stamp comes when it is unlocked within the two weeks (Manuel 16-10).
   function checkFirstPrint() {
-    if (st.firstPrint || !BK.released) return false;
+    if (st.firstPrint || !BK.released || (!BK.seal && bookLocked(BK.id))) return false;
     var day = isoDay(new Date()), first = !st.fpChecked;
     var ok = day <= addDays(BK.released, FP_DAYS) || (first && BK.released <= LAUNCH_DAY && (st.visited || []).length > 0);
     st.fpChecked = true;
     if (ok) st.firstPrint = day;
     save(); return ok;
   }
+  function renderFirstPrint() { var fp = $('#coverStamp'); if (fp) { fp.hidden = !st.firstPrint; if (st.firstPrint) { fp.innerHTML = stampHTML(); fp.setAttribute('aria-label', t('fpStamp') + ' ' + fpDate(st.firstPrint)); } } }
   function fpDate(iso) { var p = String(iso || '').split('-'); return p.length === 3 ? p[2] + '·' + p[1] + '·' + p[0] : ''; }
   function stampHTML() {
     return '<svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="fpArc" d="M60 60 m-41 0 a41 41 0 1 1 82 0 a41 41 0 1 1 -82 0"/></defs>' +
@@ -394,7 +399,7 @@
     var started = !!st.page;
     $('#coverGoLabel').textContent = started ? t('continueFrom', { p: PN(st.page) }) : t('openBook');
     $('#coverRestart').hidden = !started;
-    var fp = $('#coverStamp'); if (fp) { fp.hidden = !st.firstPrint; if (st.firstPrint) { fp.innerHTML = stampHTML(); fp.setAttribute('aria-label', t('fpStamp') + ' ' + fpDate(st.firstPrint)); } }
+    renderFirstPrint();
     renderExlib();
   }
 
@@ -1168,6 +1173,8 @@
   function puzzlesAll() { if (!PZALL) PZALL = getJSON('puzzles.json').catch(function () { return {}; }); return PZALL; }
   function cardDay() { var d = isoDay(new Date()), o = null; try { o = JSON.parse(localStorage.getItem(CARD_KEY) || 'null'); } catch (e) {} if (!o || o.d !== d) o = { d: d, n: 0 }; return o; }
   function cardsLeft() { var o = cardDay(); return Math.max(0, CARD_DAY + (o.x || 0) - o.n); } // o.x: extra cards from the daily chest
+  function cardsUsed() { return cardDay().n; }
+  function cardsCap() { var o = cardDay(); return CARD_DAY + (o.x || 0); }
   function countCard() { var o = cardDay(); o.n++; try { localStorage.setItem(CARD_KEY, JSON.stringify(o)); } catch (e) {} }
   function isPuzzleCard(r) { return !!(PZ && r && r.id === PZ.relic); }
   function relicLive(id) { // can this card be found (or seen as found) in the text or the scenery right now?
@@ -1239,7 +1246,7 @@
   }
   function renderSeals() {
     var row = $('#sealRow'), head = $('#sealHead'); if (!row) return;
-    var on = SEALS.length > 0 && window.WAYWARD_SHOP !== true; // the app build gets them with the envelopes in the shop (1.2)
+    var on = SEALS.length > 0 && !APP_BUILD; // the app build gets them with the envelopes in the shop (1.2)
     row.hidden = head.hidden = !on; if (!on) return;
     var o = sealState().opened || {}, n = SEALS.filter(function (x) { return o[x.id]; }).length;
     $('#sealCount').textContent = t('sealsCount', { n: n, t: SEALS.length });
@@ -1314,7 +1321,7 @@
   }
   function showRelicCard(r, isNew, unlocked, head) {
     var host = $('#cardHost'), k = rarOf(r);
-    var day = isNew && !head ? '<span class="tc-day">' + esc(t('cardsToday', { n: CARD_DAY - cardsLeft(), t: CARD_DAY })) + '</span>' : '';
+    var day = isNew && !head ? '<span class="tc-day">' + esc(t('cardsToday', { n: cardsUsed(), t: cardsCap() })) + '</span>' : '';
     var unl = (unlocked || []).map(function (x) { return '<div class="unlock">✦ ' + esc(t('rewardUnlocked')) + ': ' + esc(L(x.name)) + '<br><span style="font-weight:600;color:var(--muted)">' + esc(L(x.desc)) + '</span></div>'; }).join('');
     var secretBtn = (unlocked || []).some(function (x) { return x.id === (BK.roles && BK.roles.secret); }) ? '<button class="btn-glass" id="cardSecret" style="width:100%">' + esc(t('openSecret')) + '</button>' : '';
     host.innerHTML = '<div class="card-bg" id="cardBg"><div class="tc-stage r-' + k + '" role="dialog" aria-modal="true" aria-labelledby="rcTitle">' + (k === 'gold' || k === 'silver' ? '<div class="rays"></div>' : '') +
@@ -1339,9 +1346,9 @@
     $('#relCount').textContent = t('relicsFound', { n: n, t: total });
     $('#relBar').innerHTML = '<i style="width:' + (n / total * 100).toFixed(1) + '%"></i>' + REL.tiers.map(function (x) { return '<b class="' + (n >= x.count ? 'on' : '') + '" style="left:' + (x.count / total * 100) + '%">' + x.count + '</b>'; }).join('');
     var has = function (r) { return st.relics.indexOf(r.id) > -1; };
-    var left = cardsLeft(), used = CARD_DAY - left, pips = '';
-    for (var q = 0; q < CARD_DAY; q++) pips += '<i class="' + (q < used ? 'on' : '') + '"></i>';
-    var rd = $('#relDay'); if (rd) rd.innerHTML = '<span>' + esc(t(left ? 'cardsTodayLeft' : 'cardsTodayFull', { n: used, t: CARD_DAY })) + '</span><span class="rpips" aria-hidden="true">' + pips + '</span>';
+    var left = cardsLeft(), used = Math.min(cardsUsed(), cardsCap()), pips = '';
+    for (var q = 0; q < cardsCap(); q++) pips += '<i class="' + (q < used ? 'on' : '') + '"></i>';
+    var rd = $('#relDay'); if (rd) rd.innerHTML = '<span>' + esc(t(left ? 'cardsTodayLeft' : 'cardsTodayFull', { n: used, t: cardsCap() })) + '</span><span class="rpips" aria-hidden="true">' + pips + '</span>';
     var rh = $('#relHow'); if (rh) rh.innerHTML = RAR.map(function (k) {
       return '<li class="r-' + k + '"><i></i><span><b>' + esc(rarName(k)) + ':</b> ' + esc(t('how' + k.charAt(0).toUpperCase() + k.slice(1))) + '</span></li>';
     }).join('');
@@ -1375,7 +1382,7 @@
   function shortDate(iso) { try { return new Date(iso + 'T12:00:00').toLocaleDateString(lang === 'nl' ? 'nl-NL' : 'en-GB', { day: 'numeric', month: 'short' }).replace('.', ''); } catch (e) { return iso; } }
   function serProgress(sr) {
     var P = { ends: 0, endsT: 0, gold: 0, goldT: 0, silver: 0, silverT: 0, cardsN: 0, cardsT: 0, seals: 0, sealsT: 0, fp: 0, books: [], rar: {} };
-    var so = sealState().opened || {}, sealsOn = window.WAYWARD_SHOP !== true;
+    var so = sealState().opened || {}, sealsOn = !APP_BUILD;
     RAR.forEach(function (k) { P.rar[k] = [0, 0]; });
     var ids = sr.books.concat(sealsOn ? sr.seals : []);
     ids.forEach(function (id) {
@@ -1393,10 +1400,10 @@
     return P;
   }
   function renderCollection() {
-    var today = isoDay(new Date()), sealsOn = window.WAYWARD_SHOP !== true;
+    var today = isoDay(new Date()), sealsOn = !APP_BUILD;
     $('#colList').innerHTML = SERIES.map(function (sr) {
       var P = serProgress(sr), so = sealState().opened || {};
-      var stat = function (n, tot, key, cls) { return '<div class="sg' + (cls ? ' ' + cls : '') + '"><b>' + n + '<small>/' + tot + '</small></b><span>' + esc(t(key)) + '</span></div>'; };
+      var stat = function (n, tot, key, cls, go) { return '<' + (go ? 'button data-go="' + go + '"' : 'div') + ' class="sg' + (cls ? ' ' + cls : '') + (go ? ' link' : '') + '"><b>' + n + '<small>/' + tot + '</small></b><span>' + esc(t(key)) + '</span></' + (go ? 'button' : 'div') + '>'; };
       var books = P.books.map(function (x) {
         var b = x.b || {}, soon = b.released && b.released > today, pc = Math.round(100 * x.ends / Math.max(1, x.endsT));
         return '<button class="sb' + (x.started ? '' : ' fresh') + (soon ? ' soon' : '') + '" data-bookid="' + x.id + '" aria-label="' + esc(bookName(b) + ' · ' + t('endingsFound', { n: x.ends, t: x.endsT })) + '">' +
@@ -1412,9 +1419,94 @@
         '<div class="ser-top"><div class="ser-id"><span class="caps gold">' + esc(t('serNo', { n: ROMAN[(sr.no || 1) - 1] })) + '</span><h2 class="gold-foil">' + esc(L(sr.name)) + '</h2><p class="ser-tag">' + esc(L(sr.tagline)) + '</p></div>' +
         '<div class="ser-ring" style="--p:' + P.pct + '" role="img" aria-label="' + esc(t('serPct', { p: P.pct })) + '"><b>' + P.pct + '%</b><span>' + esc(t('serDone')) + '</span></div></div>' +
         '<div class="ser-label">' + esc(t('serBooks')) + '<span>' + P.books.filter(function (x) { return x.started; }).length + '/' + P.books.length + ' ' + esc(t('serStarted')) + '</span></div><div class="ser-books">' + books + '</div>' +
-        '<div class="ser-grid">' + stat(P.ends, P.endsT, 'serEnds') + stat(P.gold, P.goldT, 'serGold', 'g') + stat(P.silver, P.silverT, 'serSilver', 's') + stat(P.cardsN, P.cardsT, 'serCards') + (sealsOn ? stat(P.seals, P.sealsT, 'serSeals') : '') + stat(P.fp, P.books.length, 'serFirst') + '</div>' +
-        '<div class="ser-label">' + esc(t('serCards')) + '<span>' + esc(t('cardsTodayLeft', { n: CARD_DAY - cardsLeft(), t: CARD_DAY })) + '</span></div><div class="rchips">' + chips + '</div>' + seals + '</section>';
+        '<div class="ser-grid">' + stat(P.ends, P.endsT, 'serEnds', '', 'allendings') + stat(P.gold, P.goldT, 'serGold', 'g', 'allendings') + stat(P.silver, P.silverT, 'serSilver', 's', 'allendings') + stat(P.cardsN, P.cardsT, 'serCards', '', 'allrelics') + (sealsOn ? stat(P.seals, P.sealsT, 'serSeals') : '') + stat(P.fp, P.books.length, 'serFirst', '', 'allpaths') + '</div>' +
+        '<button class="ser-label ser-link" data-go="allrelics">' + esc(t('serCards')) + '<span>' + esc(t('cardsTodayLeft', { n: Math.min(cardsUsed(), cardsCap()), t: cardsCap() })) + '</span></button><button class="rchips ser-link" data-go="allrelics" aria-label="' + esc(t('ovSeeAll')) + '">' + chips + '</button>' + seals + '</section>';
     }).join('') + '<div class="ser next"><span class="caps">' + esc(t('serNo', { n: ROMAN[SERIES.length] })) + '</span><b>' + esc(t('serNext')) + '</b><span class="dim">' + esc(t('serNextSub')) + '</span></div>';
+  }
+
+  /* ---------------- overviews of all books (1.2, Manuel 16-10): relics, endings and paths, book by book ----------------
+     The tabs open the book you are in; their back button leads to the overview of every book, and back again to the
+     library. Tapping a book in an overview opens that book's own page. The Collection links here too. */
+  var OVC = {}, OV_TAB = { allrelics: 'relics', allendings: 'endings', allpaths: 'map' }, OV_OF = { relics: 'allrelics', endings: 'allendings', map: 'allpaths' };
+  function ovJSON(u) { if (!OVC[u]) OVC[u] = getJSON(u).catch(function () { delete OVC[u]; return null; }); return OVC[u]; }
+  function ovBooks() { return SHELF.slice().sort(function (a, b) { return (a.no || 0) - (b.no || 0); }); }
+  function ovData() {
+    return Promise.all(ovBooks().map(function (b) {
+      var bk = b.id === BK.id && BOOK ? Promise.resolve(BOOK) : ovJSON(b.file + '.' + lang + '.json');
+      var rl = b.id === BK.id && REL ? Promise.resolve(REL) : (b.relics ? ovJSON(b.relics) : Promise.resolve(null));
+      return Promise.all([bk, rl]).then(function (r) { return { b: b, book: r[0], rel: r[1], st: stOf(b.id) || {} }; });
+    }));
+  }
+  function ovScene(d, scene) { var b = d.b; return (b.imgs && b.imgs.indexOf(scene) < 0 && b.fallback) ? b.fallback : scene; }
+  function ovHead(d, kind, line) {
+    var b = d.b, lk = bookLocked(b.id);
+    return '<button class="ovb" data-ov="' + kind + '" data-ovbook="' + b.id + '" aria-label="' + esc(bookName(b) + ' · ' + line) + '">' +
+      '<span class="ovb-cv" style="background-image:url(' + (b.cover || '') + ')">' + (lk ? '<span class="ovb-lock" aria-hidden="true">' + LOCK_MINI + '</span>' : '') + '</span>' +
+      '<span class="ovb-t"><small>' + esc(t('bookNo', { n: ROMAN[(b.no || 1) - 1] })) + '</small><b>' + esc(bookName(b)) + '</b><span>' + esc(line) + '</span></span>' +
+      '<svg class="ovb-go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>';
+  }
+  var LOCK_MINI = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg>';
+  function ovSum(cells) { return '<div class="glass ov-sum">' + cells.map(function (c) { return '<div class="sg' + (c[3] ? ' ' + c[3] : '') + '"><b>' + c[0] + '<small>/' + c[1] + '</small></b><span>' + esc(t(c[2])) + '</span></div>'; }).join('') + '</div>'; }
+  function ovRender(id, fn) {
+    var host = $('#' + id + 'Body'); if (!host) return;
+    if (!host.innerHTML) host.innerHTML = '<p class="ov-wait">' + esc(t('ovLoading')) + '</p>';
+    ovData().then(function (all) { if (current !== id) return; host.innerHTML = fn(all.filter(function (d) { return d.book; })); });
+  }
+  function renderAllRelics() {
+    ovRender('allrelics', function (all) {
+      var got = 0, tot = 0, gold = [0, 0], silver = [0, 0];
+      var html = all.map(function (d) {
+        var rel = (d.rel && d.rel.relics) || [], have = d.st.relics || [], S2 = d.book.sections || {}, sc = d.book.scenes || {};
+        var n = rel.filter(function (r) { return have.indexOf(r.id) > -1; }).length; got += n; tot += rel.length;
+        rel.forEach(function (r) { var k = rarOf(r), h = have.indexOf(r.id) > -1; if (k === 'gold') { gold[1]++; if (h) gold[0]++; } if (k === 'silver') { silver[1]++; if (h) silver[0]++; } });
+        var cards = rel.map(function (r, i) {
+          var k = rarOf(r);
+          if (have.indexOf(r.id) === -1) return '<span class="ovc back r-' + k + '" aria-hidden="true"><b>?</b></span>';
+          var scene = r.where === 'scene' ? r.scene : (r.where === 'text' && S2[r.page] ? S2[r.page].scene : null); if (!scene || !sc[scene]) scene = d.b.coverScene;
+          return '<span class="ovc r-' + k + '" style="background-image:url(img/' + ovScene(d, scene) + '-sm.webp)" title="' + esc(L(r.name)) + '"><span class="relic-coin">' + iconSVG(r.icon) + '</span></span>';
+        }).join('');
+        return '<section class="ovbook">' + ovHead(d, 'relics', t('ovCards', { n: n, t: rel.length })) + '<div class="ovgrid">' + cards + '</div></section>';
+      }).join('');
+      return ovSum([[got, tot, 'serCards'], [gold[0], gold[1], 'rarGold', 'g'], [silver[0], silver[1], 'rarSilver', 's']]) + html;
+    });
+  }
+  function renderAllEndings() {
+    ovRender('allendings', function (all) {
+      var got = 0, tot = 0, gold = [0, 0], silver = [0, 0];
+      var html = all.map(function (d) {
+        var S2 = d.book.sections || {}, found = d.st.found || [];
+        var ends = Object.keys(S2).filter(function (k) { return S2[k].ending; }).sort(function (a, b) { return ROMAN.indexOf(S2[a].ending.no) - ROMAN.indexOf(S2[b].ending.no); });
+        var n = ends.filter(function (k) { return found.indexOf(+k) > -1; }).length; got += n; tot += ends.length;
+        var medals = ends.map(function (k) {
+          var e = S2[k].ending, f = found.indexOf(+k) > -1, kind = e.star ? 'good' : e.kind;
+          if (e.star) { gold[1]++; if (f) gold[0]++; } else if (e.kind === 'silver') { silver[1]++; if (f) silver[0]++; }
+          if (!f) return '<span class="ovm" aria-hidden="true"><i>?</i></span>';
+          return '<span class="ovm on" title="' + esc(e.title) + '">' + medalSVG(e.no, kind, 40, 46) + '</span>';
+        }).join('');
+        var named = ends.filter(function (k) { return found.indexOf(+k) > -1; }).map(function (k) { return S2[k].ending.title; });
+        return '<section class="ovbook">' + ovHead(d, 'endings', t('ovEnds', { n: n, t: ends.length })) + '<div class="ovmedals">' + medals + '</div>' +
+          (named.length ? '<p class="ov-names">' + esc(named.join(' · ')) + '</p>' : '') + '</section>';
+      }).join('');
+      return ovSum([[got, tot, 'serEnds'], [gold[0], gold[1], 'serGold', 'g'], [silver[0], silver[1], 'serSilver', 's']]) + html;
+    });
+  }
+  function renderAllPaths() {
+    ovRender('allpaths', function (all) {
+      var pg = 0, ptot = 0;
+      var html = all.map(function (d) {
+        var S2 = d.book.sections || {}, keys = Object.keys(S2), seen = (d.st.visited || []).filter(function (k) { return S2[k]; }).length;
+        var ends = keys.filter(function (k) { return S2[k].ending; }).length, found = (d.st.found || []).length, at = d.st.page && S2[d.st.page] ? (S2[d.st.page].nr || d.st.page) : null;
+        pg += seen; ptot += keys.length;
+        var pc = Math.round(100 * seen / Math.max(1, keys.length));
+        return '<section class="ovbook">' + ovHead(d, 'map', t('ovPages', { n: seen, t: keys.length })) +
+          '<div class="ovpath"><span class="sb-bar"><i style="width:' + pc + '%"></i></span><span>' + esc(at ? t('ovAt', { p: at }) : t('ovNotStarted')) + ' · ' + esc(t('ovEnds', { n: found, t: ends })) + '</span></div></section>';
+      }).join('');
+      return ovSum([[pg, ptot, 'ovPagesAll']]) + html;
+    });
+  }
+  function ovOpen(kind, id) { // open one book's relics, endings or paths from an overview or the Collection
+    AU.sfx('tap');
+    switchBook(id).then(function (ok) { if (ok) show(kind); });
   }
 
   /* ---------------- reader profile (1.2, Manuel 15-10): levels, a daily reading streak and streak bonuses ----------------
@@ -1519,7 +1611,7 @@
         '<div class="pf-bm"><span class="pf-bmi">' + BMARK + '<b>' + o.freezes + '</b></span><span>' + esc(t('bookmarksSub')) + '</span></div></section>' +
       chestHTML() +
       '<section class="glass pf-bonus"><span class="caps gold">' + esc(t('bonusHead')) + '</span><ul>' + ladder + '</ul><p class="dim">' + esc(nb ? t('bonusNext', { n: nb[0] - n, e: nb[1] }) + ' ' : '') + esc(t('bonusNote')) + '</p></section>' +
-      '<div class="ser-label">' + esc(t('statsHead')) + '</div><div class="ser-grid">' + stat(S0.pages, 'stPages') + stat(S0.ends, 'stEnds') + stat(S0.gold, 'stGold') + stat(S0.cards, 'stCards') + stat(S0.gcards, 'stPuzzles') + (window.WAYWARD_SHOP !== true ? stat(S0.seals, 'stSeals') : '') + stat(S0.goals, 'stGoals') + stat(o.streak.best || 0, 'stBest') + '</div>' +
+      '<div class="ser-label">' + esc(t('statsHead')) + '</div><div class="ser-grid">' + stat(S0.pages, 'stPages') + stat(S0.ends, 'stEnds') + stat(S0.gold, 'stGold') + stat(S0.cards, 'stCards') + stat(S0.gcards, 'stPuzzles') + (!APP_BUILD ? stat(S0.seals, 'stSeals') : '') + stat(S0.goals, 'stGoals') + stat(o.streak.best || 0, 'stBest') + '</div>' +
       '<div class="ser-label">' + esc(t('xpHead')) + '</div><ul class="rhow pf-rules">' + ['xpPage', 'xpEnding', 'xpCard', 'xpSeal', 'xpGoal'].map(function (k) { return '<li><i></i><span>' + esc(t(k)) + '</span></li>'; }).join('') + '</ul>';
     $('#pfSeal').addEventListener('click', function () { openSettings(); setTimeout(function () { var nm = $('#exName'); if (nm) nm.focus(); }, 60); });
     var o2 = prof(); if (o2.seenLevel == null || o2.seenLevel < lv.n) { o2.seenLevel = lv.n; profSave(o2); } // seen here, no separate celebration needed
@@ -1553,7 +1645,6 @@
      app build), because endings and keys only matter there; unlocking itself lives in shop.js. */
   var CHEST_KEY = 'wayward.chest.v1';
   var CHEST = [['end1', 40], ['end2', 20], ['card', 16], ['bmark', 16], ['key', 8]];
-  var CHEST_SVG = '<svg viewBox="0 0 64 56" aria-hidden="true"><path class="ch-box" d="M6 24h52v24a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z"/><path class="ch-band" d="M6 31h52M28 24v28M36 24v28"/><g class="ch-lid"><path d="M6 24c0-9 6-16 14-16h24c8 0 14 7 14 16z"/><path class="ch-band" d="M28 8v16M36 8v16"/></g><rect class="ch-lock" x="28" y="21" width="8" height="10" rx="2"/></svg>';
   var KEY_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="12" r="4"/><path d="M11.5 12H21M17.5 12v3.5M20.5 12v2.5"/></svg>';
   function chestGet() { var o = null; try { o = JSON.parse(localStorage.getItem(CHEST_KEY) || 'null'); } catch (e) {} return o && typeof o === 'object' ? o : {}; }
   function chestState() { // off | locked (goal not met) | ready | done
@@ -1572,29 +1663,127 @@
       (s === 'ready' ? '<span class="btn-gold sm ch-go">' + esc(t('chestOpen')) + '<span class="shine"></span></span>' : '') + '</button>';
   }
   function renderChest() { var h = $('#chestHost'); if (h) h.innerHTML = chestHTML(); }
+  // the chest itself (Manuel 16-10: a real moment, tap it and it opens like a present). Drawn in the app's own gold and
+  // dark wood; the lid is its own group so it can fly open. Painted art can replace it later (CHEST_ART).
+  var CHEST_ART = null; // e.g. { closed: 'img/chest-closed.webp', open: 'img/chest-open.webp' } once the pictures exist
+  var chestN = 0;
+  function chestSVG(big) {
+    var i = 'cx' + (chestN++), g = 'url(#' + i + 'g)', gd = 'url(#' + i + 'd)';
+    var rivets = function (xs, ys) { var o = ''; xs.forEach(function (x) { ys.forEach(function (y) { o += '<circle cx="' + x + '" cy="' + y + '" r="2.1" fill="#FDE7A8" stroke="#8A5A1C" stroke-width=".6"/>'; }); }); return o; };
+    return '<svg viewBox="0 0 200 180" aria-hidden="true" class="chest-svg"><defs>' +
+      '<linearGradient id="' + i + 'w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7C4B22"/><stop offset="1" stop-color="#43250F"/></linearGradient>' +
+      '<linearGradient id="' + i + 'l" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9A6230"/><stop offset=".55" stop-color="#6E4019"/><stop offset="1" stop-color="#4E2C12"/></linearGradient>' +
+      '<linearGradient id="' + i + 'g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FDE7A8"/><stop offset=".45" stop-color="#E8B85A"/><stop offset="1" stop-color="#9A6524"/></linearGradient>' +
+      '<linearGradient id="' + i + 'd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E8B85A"/><stop offset="1" stop-color="#6E4516"/></linearGradient>' +
+      '<radialGradient id="' + i + 'm" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFF6D8"/><stop offset=".45" stop-color="#F6D27C" stop-opacity=".9"/><stop offset="1" stop-color="#F6D27C" stop-opacity="0"/></radialGradient></defs>' +
+      (big ? '<ellipse cx="100" cy="170" rx="80" ry="8" fill="rgba(0,0,0,.45)"/>' : '') +
+      '<g class="ch-base"><path d="M24 88h152v64a10 10 0 0 1-10 10H34a10 10 0 0 1-10-10z" fill="url(#' + i + 'w)" stroke="#2A170A" stroke-width="2"/>' +
+      '<path d="M26 110h148M26 133h148" stroke="rgba(0,0,0,.28)" stroke-width="1.4"/><path d="M26 112h148M26 135h148" stroke="rgba(255,220,170,.08)" stroke-width="1"/>' +
+      '<rect x="46" y="88" width="15" height="74" fill="' + g + '" stroke="#6E4516" stroke-width=".8"/><rect x="139" y="88" width="15" height="74" fill="' + g + '" stroke="#6E4516" stroke-width=".8"/>' +
+      '<rect x="21" y="153" width="158" height="9" rx="3" fill="' + gd + '"/>' + rivets([53.5, 146.5], [100, 122, 144]) +
+      '<ellipse class="ch-mouth" cx="100" cy="89" rx="72" ry="11" fill="url(#' + i + 'm)"/>' +
+      '<path d="M86 90h28v17c0 11-6 16-14 20-8-4-14-9-14-20z" fill="' + g + '" stroke="#6E4516" stroke-width="1.2"/><circle cx="100" cy="103" r="4.3" fill="#2A170A"/><path d="M98.4 104h3.2l1 9h-5.2z" fill="#2A170A"/></g>' +
+      '<g class="ch-lid"><path d="M22 90V64c0-20 14-32 34-34h88c20 2 34 14 34 34v26z" fill="url(#' + i + 'l)" stroke="#2A170A" stroke-width="2"/>' +
+      '<path d="M30 70c4-18 16-28 34-30M170 70c-4-18-16-28-34-30" stroke="rgba(0,0,0,.22)" stroke-width="1.3" fill="none"/>' +
+      '<path d="M40 36c6-3 13-5 20-5h80c7 0 14 2 20 5" stroke="rgba(255,236,190,.35)" stroke-width="2" fill="none" stroke-linecap="round"/>' +
+      '<path d="M46 34h15v52H46zM139 34h15v52h-15z" fill="' + g + '" stroke="#6E4516" stroke-width=".8"/>' +
+      '<rect x="19" y="82" width="162" height="9" rx="3" fill="' + g + '" stroke="#6E4516" stroke-width=".8"/>' + rivets([53.5, 146.5], [46, 66]) +
+      '<path class="ch-seam" d="M26 91h148" stroke="#FFF3C8" stroke-width="3" stroke-linecap="round"/></g></svg>';
+  }
+  var CHEST_SVG = chestSVG(false);
+  function chestCardHTML(d, r) { // a relic card of any book, drawn from that book's own data (the chest is opened from the library)
+    var k = rarOf(r), rel = d.rel.relics, i = rel.indexOf(r) + 1, S2 = d.book.sections || {}, sc = d.book.scenes || {};
+    var scene = r.where === 'scene' ? r.scene : (r.where === 'text' && S2[r.page] ? S2[r.page].scene : null); if (!scene || !sc[scene]) scene = d.b.coverScene;
+    var sp = d.b.relicSpots && d.b.relicSpots[r.id], x = r.x != null ? r.x : sp && sp[0], y = r.y != null ? r.y : sp && sp[1], pin = r.where === 'scene' && x != null;
+    var art = 'background-image:url(img/' + ovScene(d, scene) + '-sm.webp);background-size:' + (pin ? '190%' : 'cover') + ';background-position:' + (pin ? x + '% ' + y + '%' : ((sc[scene] && sc[scene].focus) || '50% 50%'));
+    return '<div class="tcard r-' + k + ' flipped" data-card="' + r.id + '"><div class="tc-tilt"><div class="tc-in">' +
+      '<div class="tc-face tc-front"><div class="tc-art" style="' + art + '"><span class="tc-rar">' + esc(rarName(k)) + '</span><span class="relic-coin">' + iconSVG(r.icon) + '</span></div>' +
+      '<div class="tc-body"><span class="tc-no">' + esc(t('cardNo', { i: i, t: rel.length, b: t('bookNo', { n: ROMAN[(d.b.no || 1) - 1] }) })) + '</span><h3 id="rcTitle">' + esc(L(r.name)) + '</h3>' +
+      '<div class="tc-lore">' + esc(L(r.lore)) + '</div><span class="tc-where">' + esc(t('chestFrom')) + '</span></div><i class="tc-foil"></i><i class="tc-glare"></i></div>' +
+      '<div class="tc-face tc-back">' + cardBack(k) + '</div></div></div></div>';
+  }
+  function chestPickCard() { // a card you do not have yet, from an unlocked book: common 70, rare 25, silver 5; gold only by its puzzle
+    return ovData().then(function (all) {
+      var pool = [], sum = 0;
+      all.forEach(function (d) {
+        if (!d.book || !d.rel || d.b.preview || bookLocked(d.b.id)) return; var have = d.st.relics || [];
+        (d.rel.relics || []).forEach(function (r) { var k = rarOf(r); if (k === 'gold' || have.indexOf(r.id) > -1) return; var w = k === 'common' ? 70 : k === 'rare' ? 25 : 5; pool.push({ d: d, r: r, w: w }); sum += w; });
+      });
+      if (!pool.length) return null;
+      var x = Math.random() * sum; for (var j = 0; j < pool.length; j++) { x -= pool[j].w; if (x < 0) return pool[j]; }
+      return pool[pool.length - 1];
+    }).catch(function () { return null; });
+  }
+  function chestGiveCard(d, r) { // a gift: it does not count against the three cards a day
+    if (d.b.id === BK.id) { if (st.relics.indexOf(r.id) < 0) { st.relics.push(r.id); save(); edgeClass($('#tome')); renderTabBadge(); } return; }
+    var o = stOf(d.b.id) || {}; o.relics = o.relics || []; if (o.relics.indexOf(r.id) < 0) o.relics.push(r.id);
+    try { localStorage.setItem(d.b.store, JSON.stringify(o)); } catch (e) {}
+  }
   function openChest() {
     if (chestState() !== 'ready') return;
-    var roll = Math.random() * 100, k = 'end1', acc = 0;
-    for (var i = 0; i < CHEST.length; i++) { acc += CHEST[i][1]; if (roll < acc) { k = CHEST[i][0]; break; } }
-    var o = prof(); if (k === 'bmark' && o.freezes >= MAX_FREEZE) k = 'end1'; // bookmarks already full: an ending instead
-    // the reward counts the moment the chest is opened, even if the screen is closed halfway through
-    if (k === 'end1') window.WaywardShop.addFree(1); else if (k === 'end2') window.WaywardShop.addFree(2);
-    else if (k === 'card') { var cd = cardDay(); cd.x = (cd.x || 0) + 1; try { localStorage.setItem(CARD_KEY, JSON.stringify(cd)); } catch (e) {} }
-    else if (k === 'bmark') { o.freezes++; profSave(o); }
-    else if (k === 'key') window.WaywardShop.addKey();
-    var td = isoDay(new Date()); try { localStorage.setItem(CHEST_KEY, JSON.stringify({ d: td, r: k })); } catch (e) {}
-    var odds = CHEST.map(function (r) { return '<li><span>' + esc(chestReward(r[0])) + '</span><b>' + r[1] + '%</b></li>'; }).join('');
     var host = $('#cardHost');
-    host.innerHTML = '<div class="card-bg pz-bg" id="cardBg"><div class="cel-stage chest-stage" role="dialog" aria-modal="true" aria-labelledby="chTitle">' +
-      '<span class="caps gold">' + esc(t('chestHead')) + '</span><div class="chest-big" id="chestBig">' + CHEST_SVG + '<span class="ch-prize">' + (k === 'key' ? KEY_SVG : k === 'bmark' ? BMARK : k === 'card' ? SEAL_SVG : FLAME) + '</span></div>' +
-      '<h3 id="chTitle">' + esc(chestReward(k)) + '</h3>' + (k === 'key' ? '<p class="cel-note">' + esc(t('chestKeyNote')) + '</p>' : '') +
+    var odds = CHEST.map(function (r) { return '<li><span>' + esc(chestReward(r[0])) + '</span><b>' + r[1] + '%</b></li>'; }).join('');
+    var art = CHEST_ART ? '<img class="ch-img ch-closed" src="' + CHEST_ART.closed + '" alt=""><img class="ch-img ch-open" src="' + CHEST_ART.open + '" alt="">' : chestSVG(true);
+    host.innerHTML = '<div class="card-bg chest-bg" id="cardBg"><div class="chest-stage" role="dialog" aria-modal="true" aria-labelledby="chTitle">' +
+      '<span class="caps gold">' + esc(t('chestHead')) + '</span>' +
+      '<div class="chest-scene" id="chestScene"><div class="ch-rays"></div><div class="ch-glow"></div><div class="ch-flash"></div>' +
+      '<button class="chest-xl' + (CHEST_ART ? ' art' : '') + '" id="chestBtn" aria-label="' + esc(t('chestTap')) + '">' + art + '</button><div class="ch-prize-xl" id="chPrize"></div></div>' +
+      '<p class="ch-tap" id="chTap">' + esc(t('chestTap')) + '</p>' +
+      '<div class="ch-after" id="chAfter" hidden><h3 id="chTitle"></h3><p class="cel-note" id="chNote" hidden></p>' +
       '<details class="ch-odds"><summary>' + esc(t('chestOdds')) + '</summary><ul>' + odds + '</ul></details>' +
-      '<button class="btn-gold lg" id="celOk">' + esc(t('chestNice')) + '<span class="shine"></span></button></div></div>';
-    AU.duck(true); AU.sfx('grab');
-    var big = $('#chestBig'); big.classList.add('shake');
-    setTimeout(function () { big.classList.remove('shake'); big.classList.add('open'); AU.sfx('relic'); var b = big.getBoundingClientRect(), a = app.getBoundingClientRect(); FX.sparkle(app, b.left - a.left + b.width / 2, b.top - a.top + b.height * 0.4, { n: k === 'key' ? 40 : 24 }); }, reduceMotion ? 50 : 700);
-    var close = function () { host.innerHTML = ''; AU.duck(false); renderChest(); if (current === 'profile') renderProfile(); };
-    $('#celOk').addEventListener('click', close); $('#cardBg').addEventListener('click', function (e) { if (e.target.id === 'cardBg') close(); }); $('#celOk').focus();
+      '<button class="btn-gold lg" id="celOk">' + esc(t('chestNice')) + '<span class="shine"></span></button></div></div></div>';
+    AU.duck(true);
+    var scene = $('#chestScene'), btn = $('#chestBtn'), opened = false, untilt = null;
+    var close = function () { if (!opened) return; if (untilt) untilt(); host.innerHTML = ''; AU.duck(false); renderChest(); if (current === 'profile') renderProfile(); if (current === 'collection') renderCollection(); };
+    var reveal = function (k, pick) {
+      var prize = $('#chPrize'), a = app.getBoundingClientRect();
+      if (k === 'card' && pick) {
+        prize.innerHTML = '<span class="ch-miniback">' + cardBack(rarOf(pick.r)) + '</span>'; // the back of a card rises out; the card itself follows
+      } else {
+        prize.innerHTML = '<span class="ch-coin">' + (k === 'key' ? KEY_SVG : k === 'bmark' ? BMARK : FLAME) + (k === 'end2' ? '<b>+2</b>' : k === 'end1' ? '<b>+1</b>' : '') + '</span>';
+      }
+      scene.classList.remove('charge'); scene.classList.add('open'); AU.sfx('creak'); setTimeout(function () { AU.sfx('relic'); }, 160);
+      var b = btn.getBoundingClientRect(); FX.sparkle(app, b.left - a.left + b.width / 2, b.top - a.top + b.height * 0.45, { n: k === 'key' || (pick && rarOf(pick.r) !== 'common') ? 44 : 30 });
+      $('#chTitle').textContent = k === 'card' && pick ? t('chestGotCard', { r: rarName(rarOf(pick.r)) }) : chestReward(k);
+      if (k === 'key') { $('#chNote').textContent = t('chestKeyNote'); $('#chNote').hidden = false; }
+      if (k === 'card' && pick) { $('#chNote').textContent = t('chestCardNote', { b: bookName(pick.d.b) }); $('#chNote').hidden = false; }
+      setTimeout(function () {
+        $('#chAfter').hidden = false; opened = true;
+        if (k === 'card' && pick) {
+          scene.classList.add('carded');
+          var wrap = document.createElement('div'); wrap.className = 'ch-cardwrap r-' + rarOf(pick.r);
+          wrap.innerHTML = '<div class="rays"></div>' + chestCardHTML(pick.d, pick.r); $('#chAfter').parentNode.insertBefore(wrap, $('#chAfter'));
+          var card = wrap.querySelector('.tcard'); untilt = tiltCard(card);
+          setTimeout(function () { card.classList.remove('flipped'); AU.sfx('page'); var cb = card.getBoundingClientRect(); FX.sparkle(app, cb.left - a.left + cb.width / 2, cb.top - a.top + cb.height * 0.3, { n: 20 }); }, reduceMotion ? 50 : 350);
+        }
+        $('#celOk').focus();
+      }, reduceMotion ? 80 : 900);
+    };
+    var tap = function () {
+      if (scene.classList.contains('charge') || scene.classList.contains('open')) return;
+      $('#chTap').classList.add('gone'); AU.sfx('grab');
+      // roll now; a card is chosen from what you do not have yet (no card left: an ending instead)
+      var roll = Math.random() * 100, k = 'end1', acc = 0;
+      for (var i = 0; i < CHEST.length; i++) { acc += CHEST[i][1]; if (roll < acc) { k = CHEST[i][0]; break; } }
+      var o = prof(); if (k === 'bmark' && o.freezes >= MAX_FREEZE) k = 'end1'; // bookmarks already full: an ending instead
+      var picked = k === 'card' ? chestPickCard() : Promise.resolve(null);
+      scene.classList.add('charge');
+      var t0 = Date.now();
+      picked.then(function (pick) {
+        if (k === 'card' && !pick) k = 'end1';
+        // the reward counts the moment the chest is opened, even if the screen is closed halfway through
+        if (k === 'end1') window.WaywardShop.addFree(1); else if (k === 'end2') window.WaywardShop.addFree(2);
+        else if (k === 'card') chestGiveCard(pick.d, pick.r);
+        else if (k === 'bmark') { o.freezes++; profSave(o); }
+        else if (k === 'key') window.WaywardShop.addKey();
+        try { localStorage.setItem(CHEST_KEY, JSON.stringify({ d: isoDay(new Date()), r: k, card: pick ? pick.r.id : undefined })); } catch (e) {}
+        setTimeout(function () { reveal(k, pick); }, Math.max(0, (reduceMotion ? 0 : 900) - (Date.now() - t0)));
+      });
+    };
+    btn.addEventListener('click', tap);
+    $('#celOk').addEventListener('click', close);
+    $('#cardBg').addEventListener('click', function (e) { if (e.target.id === 'cardBg' && opened) close(); });
+    btn.focus();
   }
   function goldKeyCheck(p, e) { // a first golden ending: a small chance that a book key falls out (shop on only)
     if (!e.star || st.lastNew !== p || !shopOn() || !window.WaywardShop.goldKey) return;
@@ -1611,11 +1800,27 @@
     }, reduceMotion ? 600 : 2600);
   }
   function bookLocked(id) { return shopOn() && window.WaywardShop.isUnlocked && !window.WaywardShop.isUnlocked(id); }
+  var WAS_LOCKED = {};
   function refreshLocks() {
+    clearLockedStamps();
     $$('[data-bookid]').forEach(function (el) { el.classList.toggle('locked', bookLocked(el.getAttribute('data-bookid'))); });
+    // just unlocked (locked a moment ago, open now) within its first two weeks: the first-printing stamp follows now
+    var lkBK = !BK.seal && bookLocked(BK.id);
+    if (WAS_LOCKED[BK.id] && !lkBK && checkFirstPrint()) setTimeout(function () { toast(t('fpToast'), 4200); }, reduceMotion ? 300 : 1200);
+    WAS_LOCKED[BK.id] = lkBK;
+    renderFirstPrint();
     var cl = $('#coverLock'); if (!cl) return;
     var lk = !BK.seal && bookLocked(BK.id); cl.hidden = !lk;
     if (lk) $('#coverLockText').textContent = t('coverLocked', { n: window.WaywardShop.sampleLeft(BK.id) });
+  }
+  // 1.2.0 gave the stamp to anyone who opened a locked book; such a stamp is taken back until the book is unlocked
+  function clearLockedStamps() {
+    SHELF.forEach(function (b) {
+      if (!bookLocked(b.id)) return;
+      var o = b.id === BK.id ? st : stOf(b.id); if (!o || !o.firstPrint) return;
+      delete o.firstPrint; delete o.fpChecked;
+      if (b.id === BK.id) save(); else try { localStorage.setItem(b.store, JSON.stringify(o)); } catch (e) {}
+    });
   }
 
   /* ---------------- settings ---------------- */
@@ -1669,16 +1874,17 @@
   }); })();
   $('#crDone').addEventListener('click', function () { $('#credits').hidden = true; if ($('#sheet').hidden && $('#settings').hidden) $('#sheetBg').hidden = true; });
 
-  var RENDER = { library: renderLibrary, collection: renderCollection, profile: renderProfile, cover: renderCover, reader: renderReader, moment: renderMoment, ending: renderEnding, map: renderMap, endings: renderEndings, relics: renderRelics, secret: renderSecret };
+  var RENDER = { library: renderLibrary, collection: renderCollection, profile: renderProfile, cover: renderCover, reader: renderReader, moment: renderMoment, ending: renderEnding, map: renderMap, endings: renderEndings, relics: renderRelics, secret: renderSecret, allrelics: renderAllRelics, allendings: renderAllEndings, allpaths: renderAllPaths };
 
   /* ---------------- events ---------------- */
   app.addEventListener('pointerdown', function () { AU.unlock(); playActive(); }, true);
   app.addEventListener('click', function (e) {
-    var tg = e.target.closest('[data-chest],[data-unlock],[data-env],[data-bookid],[data-go],[data-tab],.choice,.mchoice,[data-hintbtn],[data-riddlebtn],[data-relic],[data-act],[data-settings],[data-lang],[data-soon],.egg.on,.hotspot');
+    var tg = e.target.closest('[data-ov],[data-chest],[data-unlock],[data-env],[data-bookid],[data-go],[data-tab],.choice,.mchoice,[data-hintbtn],[data-riddlebtn],[data-relic],[data-act],[data-settings],[data-lang],[data-soon],.egg.on,.hotspot');
     if (!tg) return;
     if (tg.closest('#settings')) return;
     if (tg.classList.contains('egg')) { var r = tg.getBoundingClientRect(), a = app.getBoundingClientRect(); foundRelic(tg.getAttribute('data-egg'), { x: r.left - a.left + r.width / 2, y: r.top - a.top + r.height / 2 }); return; }
     if (tg.hasAttribute('data-puz')) { AU.sfx('tap'); openPuzzle(); return; }
+    if (tg.hasAttribute('data-ov')) { ovOpen(tg.getAttribute('data-ov'), tg.getAttribute('data-ovbook')); return; }
     if (tg.hasAttribute('data-chest')) { if (chestState() === 'ready') { AU.sfx('tap'); openChest(); } return; }
     if (tg.hasAttribute('data-unlock')) { AU.sfx('tap'); window.WaywardShop.unlock(BK.id, function () { refreshLocks(); }); return; }
     if (tg.classList.contains('hotspot')) { var hr = tg.getBoundingClientRect(), ar = app.getBoundingClientRect(); foundRelic(tg.getAttribute('data-hot'), { x: hr.left - ar.left + hr.width / 2, y: hr.top - ar.top + hr.height / 2 }); return; }
@@ -1719,7 +1925,7 @@
   $('#eRewind').addEventListener('click', function () { if (st.trail.length > 1) st.trail.pop(); goTo(st.trail[st.trail.length - 1] || BOOK.start, { push: false, asText: true }); });
   $('#eFinger').addEventListener('click', function () { var f = st.finger, i = st.trail.lastIndexOf(f); if (i > -1) st.trail = st.trail.slice(0, i + 1); else st.trail.push(f); goTo(f, { push: false, asText: true }); });
   $('#eRestart').addEventListener('click', function () { openBook(startBook); });
-  $('#mapBack').addEventListener('click', function () { show(prevScreen === 'reader' || prevScreen === 'ending' ? prevScreen : 'library'); });
+  $('#mapBack').addEventListener('click', function () { show(prevScreen === 'reader' || prevScreen === 'ending' ? prevScreen : 'allpaths'); });
   $('#mapLocate').addEventListener('click', centerMap);
   $('#sheetClose').addEventListener('click', closeSheet);
   $('#sheetBg').addEventListener('click', function () { $('#credits').hidden = true; closeSheet(); closeSettings(); if ($('#sheet').hidden && $('#settings').hidden) $('#sheetBg').hidden = true; });
@@ -1729,7 +1935,7 @@
     st = fresh(); save(); show('library'); toast(t('erased'), 1400);
   });
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') { $('#credits').hidden = true; closeSheet(); closeSettings(); if ($('#cardOk')) $('#cardOk').click(); }
+    if (e.key === 'Escape') { $('#credits').hidden = true; closeSheet(); closeSettings(); if ($('#cardOk')) $('#cardOk').click(); else if ($('#celOk') && $('#celOk').offsetParent) $('#celOk').click(); else if ($('#chestBtn')) { $('#cardHost').innerHTML = ''; AU.duck(false); } }
     if (current === 'reader' && R.mode === 'read') { if (e.key === 'ArrowRight') turnSheet(1); if (e.key === 'ArrowLeft') turnSheet(-1); }
   });
   var lastSize = [app.clientWidth, app.clientHeight];

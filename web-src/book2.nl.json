@@ -159,7 +159,7 @@
    "chapter": "De kade om twee uur",
    "scene": "baynight",
    "text": [
-    "Bij het vallen van de avond loopt de kade leeg, en dan vol mist. Om twee uur gaat er zonder enig vertoon onder de baai een licht aan. Het is goud en heel diep, en het draait zoals een vuurtoren draait, langs de onderkant van het water. Het gezoem trekt door de stenen omhoog, je laarzen in. Dan, uit de mist: een boeg.",
+    "Je staat in dichte mist op de kade. Onder de baai brandt, zonder enig vertoon, een licht. Het is goud en heel diep, en het draait zoals een vuurtoren draait, langs de onderkant van het water. Het gezoem trekt door de stenen omhoog, je laarzen in. Dan, uit de mist: een boeg.",
     "Het schip komt binnen zonder een zuchtje wind en meert aan alsof het dat elke nacht doet. Op de boeg: [[marigold|MARIGOLD, 1826, de verf nog nat]]. Langs de haven gaan deuren open. De bewoners komen in hun nachtgoed naar beneden, met karren en kruiwagens, en knikken elkaar toe, als mensen op weg naar een markt die ze nog nooit hebben gemist."
    ],
    "choices": [
@@ -538,7 +538,7 @@
    "chapter": "De nooit bezorgde brieven",
    "scene": "wreck",
    "text": [
-    "Op de postzak, stijf van het zout, staat in sjabloonletters MARIGOLD. Erin zitten brieven die nooit zijn aangekomen: een rekening, een verontschuldiging, een huwelijksaanzoek, een krentenbroodrecept waarvan de laatste regel is weggespoeld. Papier brengt in de hoofdstad niets op, dus niemand wil ze.",
+    "De postzak ligt op de kade, stijf van het zout, met in sjabloonletters MARIGOLD erop. Erin zitten brieven die nooit zijn aangekomen: een rekening, een verontschuldiging, een huwelijksaanzoek, een krentenbroodrecept waarvan de laatste regel is weggespoeld. Papier brengt in de hoofdstad niets op, dus niemand wil ze.",
     "Eén brief is niet gefrankeerd, alleen verzegeld met vuurtorenwas. Hij hoort niet in een postzak thuis; de zee sorteert kennelijk op datum. Tobias Wren, vuurtorenwachter, aan “mijn Nell”, de nacht van de storm: “Als de lamp niet wil branden, steek hem dan voor mij aan. Je weet waar de laatste olie bewaard wordt.” De enige Nell in Grijshaven, zegt een voerman, is het zoutmeisje. “Verkeerde Nell,” voegt hij eraan toe. “Die is tien.”"
    ],
    "choices": [
@@ -596,7 +596,7 @@
    "chapter": "De scheepsleverancier",
    "scene": "harbour",
    "text": [
-    "Marsh & Zonen, Scheepsleveranciers, is de oudste winkel van Grijshaven en de enige die geen antiek verkoopt. Alles op de planken, touw, lampenpitten, scheepsbeschuit, heeft een datum in krijt, en alles is [[shillings|geprijsd in shillings die niet meer bestaan]]. Abel Marsh zelf is het oudste stuk in de zaak, en het enige zonder prijs.",
+    "Overdag sta je weer in het stadje, bij Marsh & Zonen, Scheepsleveranciers: de oudste winkel van Grijshaven en de enige die geen antiek verkoopt. Alles op de planken, touw, lampenpitten, scheepsbeschuit, heeft een datum in krijt, en alles is [[shillings|geprijsd in shillings die niet meer bestaan]]. Abel Marsh zelf is het oudste stuk in de zaak, en het enige zonder prijs.",
     "Als je naar lampolie vraagt, houdt hij zich niet van den domme. Van onder de toonbank tilt hij een verzegeld blik, met de datum op de zijkant geschilderd: 1826. “Silas Vane heeft het aan mijn overgrootvader verkocht. Vuurtorenolie, uit de week dat de Marigold verging. Het leek ons nooit fatsoenlijk om het op te maken.” Hij zet het tussen jullie in neer als een bewijsstuk. “Zat al te wachten tot iemand ernaar vroeg.”"
    ],
    "choices": [
@@ -707,7 +707,7 @@
      "to": 83
     },
     {
-     "text": "Als je naast de slapende wachter gaat zitten,",
+     "text": "Als je naast de slapende wachter gaat zitten en de wacht houdt,",
      "short": "Ga bij de wachter zitten",
      "to": 88
     }
@@ -750,7 +750,7 @@
    "chapter": "Nell en de brief",
    "scene": "saltpans",
    "text": [
-    "Nell leest de brief één keer, snel, zoals je iets leest dat voor iemand anders bedoeld is. Dan nog eens, langzaam. De derde keer leest ze hem helemaal niet. Ze houdt hem alleen vast, en achter haar valt haar hark om, en geen van jullie raapt hem op.",
+    "’s Ochtends, op de zoutpannen, leest Nell de brief één keer, snel, zoals je iets leest dat voor iemand anders bedoeld is. Dan nog eens, langzaam. De derde keer leest ze hem helemaal niet. Ze houdt hem alleen vast, en achter haar valt haar hark om, en geen van jullie raapt hem op.",
     "“Hij zei altijd dat mijn tenen er nog eens af zouden vriezen,” zegt ze. Haar stem is tien jaar oud, en honderdtien. Ze kijkt naar Kaap Seren, waar niets staat, en ziet een huisje, een lamp, een man in een natte jas. “Hij heeft het laatste blik onder mijn bed verstopt.” Een stilte, heel klein. “Voor mij.”"
    ],
    "choices": [
@@ -1049,7 +1049,7 @@
    "chapter": "Onder de vloer",
    "scene": "cottage",
    "text": [
-    "Het huisje is precies zo netjes als ze het heeft achtergelaten, en dat ziet Nell als eerste. Ze knielt bij het kleine bed en tilt zonder te kijken de derde plank op, alsof ze dat gisteren nog deed. Voor haar was dat misschien ook zo.",
+    "Het huisje van de wachter op Kaap Seren is precies zo netjes als Nell het heeft achtergelaten, en dat ziet ze als eerste. Ze knielt bij het kleine bed en tilt zonder te kijken de derde plank op, alsof ze dat gisteren nog deed. Voor haar was dat misschien ook zo.",
     "Eronder ligt, in wasdoek gewikkeld, een klein blik met [[lastcan|haar naam in het deksel gekrast, in het handschrift van haar vader]], de letters schuin, net als in zijn brief. Ze drukt het tegen haar borst als iets warms. Alle klokken in het huisje staan op twee uur. Voor één keer lopen ze bijna gelijk."
    ],
    "choices": [

@@ -66,7 +66,8 @@
       if (screen.id === 'secret') return click(screen.querySelector('[data-go="relics"]'));
       if (screen.id === 'map') return click(document.getElementById('mapBack'));
       if (screen.id === 'moment') return true; // a timed moment: back does nothing, the fog decides
-      var back = screen.querySelector('[data-go="library"]');
+      // the page's own back button (1.2: a book's relics/endings lead back to the overview of all books first)
+      var back = screen.querySelector('.plain-head [data-go]') || screen.querySelector('[data-go="library"]');
       if (back) return click(back);
       var home = document.querySelector('.tab[data-tab="library"]');
       return click(home);
