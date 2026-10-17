@@ -58,6 +58,26 @@
   "dawn": {
    "title": "Morning above the clouds",
    "focus": "50% 55%"
+  },
+  "heartedda": {
+   "title": "The Heart of the Mountain at the moment the eye opens",
+   "focus": "50% 55%"
+  },
+  "morningplain": {
+   "title": "The morning after",
+   "focus": "50% 55%"
+  },
+  "drawndoor": {
+   "title": "A plain door drawn in the side of Mount Veyra opens onto morning",
+   "focus": "50% 55%"
+  },
+  "scriptoriumfire": {
+   "title": "Fire in the scriptorium of the mountain monastery at night",
+   "focus": "50% 55%"
+  },
+  "compassdoor": {
+   "title": "High on the mountain in thick night fog",
+   "focus": "50% 55%"
   }
  },
  "sections": {
@@ -585,7 +605,7 @@
   },
   "52": {
    "chapter": "The Figure in the Fog",
-   "scene": "stairs",
+   "scene": "compassdoor",
    "text": [
     "You follow the lantern off the stairs and along a path that clings to the monastery wall, always twenty steps behind. When you hurry, the figure hurries. When you stop, it waits.",
     "At a low door marked with a compass rose the figure finally stops, hangs Edda’s lantern on a hook beside it, and walks straight through the wall without opening anything. The door is ajar. The lantern swings gently, as if inviting someone to take it and go the other way: down the cliff path, back towards the valley."
@@ -711,7 +731,7 @@
   },
   "61": {
    "chapter": "An ending",
-   "scene": "dawn",
+   "scene": "drawndoor",
    "text": [
     "You take the pen from Edda’s hand and draw a door in the side of the mountain, the plainest door you can manage: a line, a line, a line, a handle.",
     "~ It opens onto morning.",
@@ -729,7 +749,7 @@
   },
   "62": {
    "chapter": "Fire in the Scriptorium",
-   "scene": "library",
+   "scene": "scriptoriumfire",
    "text": [
     "The first map catches as if it has been waiting its whole life to. The second catches from the first. By the time the monks wake, coughing, the shelves are a wall of orange light.",
     "The abbess stares at the flames, then at you, then, oddly, out of the window towards the valley. “Those maps were keeping that village exactly where it is,” she says quietly. “Every field. Every roof. Every person. What did you think they were for?”"
@@ -894,7 +914,7 @@
   },
   "80": {
    "chapter": "The Heart",
-   "scene": "heart",
+   "scene": "heartedda",
    "moment": {
     "line": "The eye is opening. Edda holds out the great pen. The whole mountain holds its breath.",
     "seconds": 12,
@@ -929,7 +949,7 @@
   },
   "84": {
    "chapter": "An ending",
-   "scene": "heart",
+   "scene": "heartedda",
    "text": [
     "You take the pen. The eye opens, looks at you, really looks, and closes again, content. Something settles over your shoulders like a coat that fits.",
     "You dream the valley. You dream it well: kind weather, good harvests, and at midnight a line of lanterns climbing the valley to keep you company. Every night, far above, a bell rings to keep you sleeping, and every night you are grateful for it, and never once do you wonder who is ringing it, or why."
@@ -945,7 +965,7 @@
   },
   "88": {
    "chapter": "An ending",
-   "scene": "dawn",
+   "scene": "morningplain",
    "text": [
     "You step back from the pen. So does Edda, eventually. The eye opens all the way, and for the first time in its life the mountain looks at the world without dreaming it.",
     "It gets up. Slowly, like a very old man, Mount Veyra stands, shakes the snow off its shoulders and walks away towards the sea. Behind it Low Veyra remains, every roof and field and astonished villager in a nightgown, real at last and on its own.",

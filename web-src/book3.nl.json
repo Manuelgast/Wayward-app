@@ -62,6 +62,22 @@
   "tower": {
    "title": "De registerkamer",
    "focus": "50% 50%"
+  },
+  "harrow": {
+   "title": "Harrow Bridge in clear winter daylight",
+   "focus": "50% 55%"
+  },
+  "brakevanday": {
+   "title": "Inside the brake van of the Eastern Express by winter daylight",
+   "focus": "50% 55%"
+  },
+  "ninthplatform": {
+   "title": "The platform of Station Nine at sunset",
+   "focus": "50% 55%"
+  },
+  "compartment": {
+   "title": "Compartment 4 of the Eastern Express in clear winter daylight",
+   "focus": "50% 55%"
   }
  },
  "sections": {
@@ -111,7 +127,7 @@
   },
   "3": {
    "chapter": "Halte 1 · Knooppunt Hollin",
-   "scene": "brakevan",
+   "scene": "brakevanday",
    "tag": "Remwagen. Mej. M. Dusk, vracht.",
    "text": [
     "In de remwagen haalt Mirela Dusk haar pijp alleen uit haar mond om nog botter te kunnen zijn. “Dat is een blanco. Je houdt hem vast als een boterham.” Ze verplaatst namen, zegt ze, voor mensen die moeten ophouden te zijn wie ze waren. “Verboden. En het enige eerlijke vak op deze lijn.”",
@@ -236,7 +252,7 @@
   },
   "8": {
    "chapter": "Halte 1 · Knooppunt Hollin",
-   "scene": "brakevan",
+   "scene": "brakevanday",
    "tag": "Mej. O. Fenn, hoedenmaakster. Koudwater.",
    "text": [
     "Mirela tornt een naad in haar jas los, schuift je blanco erin en naait hem in zes steken dicht, de pijp tussen haar tanden. In ruil geeft ze je [[fenn|een strookje: mej. O. Fenn, hoedenmaakster]], uit Koudwater. “Jij maakt nu hoeden. Ga er ook zo bij staan.” De fluit gaat. Het perron glijdt achteruit weg, kruiers, rijp en al.",
@@ -263,7 +279,7 @@
   },
   "9": {
    "chapter": "Een einde",
-   "scene": "station",
+   "scene": "ninthplatform",
    "tag": "Niet afgehaald. Retour Hollin.",
    "text": [
     "Meneer Voss bewaart je kaartje voorbeeldig. Hij bewaart het helemaal tot Negen, waar de douaneklerk je naam voorleest, en dezelfde beleefde heer in het grijs “Hier” zegt, een strookje laat zien en wordt bedankt.",
@@ -280,7 +296,7 @@
   },
   "10": {
    "chapter": "Halte 2 · Larixmeer",
-   "scene": "sleeper",
+   "scene": "compartment",
    "tag": "Coupé 4: dhr. A. Voss, inspecteur.",
    "text": [
     "Coupé 4 heeft kanten hoofdsteunen, thee, en een koffer met het opschrift SCHRIJFWAREN, die Voss met twee handen verschuift, met een kreuntje waarvan hij doet alsof het niet van hem kwam. Eenendertig jaar zit hij op deze lijn, zegt hij onder het inschenken. Hij kent elke halte aan de bokking.",
@@ -493,7 +509,7 @@
   },
   "19": {
    "chapter": "Halte 2 · Larixmeer",
-   "scene": "brakevan",
+   "scene": "brakevanday",
    "tag": "Remwagen. Alleen personeel en vracht.",
    "text": [
     "Mirela zit op een kist met een schrijfplankje op schoot, te vervalsen. Ze kijkt niet op. “Een vrouw die bij haar man weggaat,” zegt ze, en ze dept een strookje. “Een jongen die bij een schuld weggaat.” Deppen. “Een man die bij een koor weggaat. Niet vragen.” Elk strookje heeft een ander handschrift, en elk is volmaakt.",
@@ -569,7 +585,7 @@
   },
   "22": {
    "chapter": "Halte 3 · Harrowbrug",
-   "scene": "post",
+   "scene": "harrow",
    "tag": "Harrowbrug. Tien minuten. Postkantoor.",
    "text": [
     "Harrow is één straat, een brug en een postkantoor dat naar lijm ruikt. Naast de deur hangt een koperen plaquette: NAMENKANTOOR HARROW. [[plaque|Eenendertig jaar geleden afgebrand, met register en al]]. Dienstdoend klerk: C. Grell. Nooit gevonden. Iemand heeft de letters gepoetst tot de randen zacht zijn.",
@@ -613,7 +629,7 @@
   },
   "24": {
    "chapter": "Halte 3 · Harrowbrug",
-   "scene": "platform",
+   "scene": "harrow",
    "tag": "Harrowbrug. Tien minuten.",
    "text": [
     "Met een zucht komt de trein tot stilstand in Harrowbrug. Mirela knoopt haar jas dicht over de voering waar je blanco in zit, stapt het perron op en loopt weg zonder om te kijken. Geen woord. Geen knik. Haar pijprook volgt haar de hoek van het postkantoor om.",
@@ -668,7 +684,7 @@
   },
   "26": {
    "chapter": "Een einde",
-   "scene": "post",
+   "scene": "harrow",
    "tag": "Naamkantoor Harrow. Klerk gevraagd.",
    "text": [
     "De fluit gaat, de Oostexpres trekt zijn lange grijze zin over de brug, en jij blijft precies waar je bent, wat bijna een uur lang verstandig voelt. Verderop langs de lijn reist je naam zonder jou door naar Negen. Niemand in Harrow vraagt ernaar. Dat zijn ze hier ontwend.",
@@ -685,7 +701,7 @@
   },
   "27": {
    "chapter": "Een einde",
-   "scene": "platform",
+   "scene": "harrow",
    "tag": "Bakkerij Harrow. Broodjes een stuiver.",
    "text": [
     "Je springt eruit, glijdt uit op het bevroren perron en rent haar achterna, onder de stationsboog door, langs het postkantoor, een bakkerij in die naar kaneel en heet ijzer ruikt. Ze staat aan de toonbank. Ze koopt broodjes. “Zes,” zegt ze tegen de bakker. “Nee, zeven. Onze hoedenmaakster ziet wat pips.” Dan draait ze zich om, ziet jou en zegt iets korts en onvervalst Hollins.",
@@ -923,7 +939,7 @@
   },
   "38": {
    "chapter": "Halte 6 · Station Negen",
-   "scene": "station",
+   "scene": "ninthplatform",
    "tag": "Station Negen. Aankomst 18.52 uur.",
    "text": [
     "Als het licht weer aangaat, zit de blanco nog in je vuist. Station Negen valt tegen voor wie drama verwacht. De zon zakt achter de goederenloods, duiven patrouilleren over het perron als jonge ambtenaren, en een rij voor de douane schuifelt naar een deur met het opschrift NAMEN RETOUR. Iemand verkoopt warme kastanjes. Iemand anders heeft een hond meegenomen om een naam van de trein te halen.",

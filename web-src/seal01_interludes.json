@@ -1,0 +1,121 @@
+{
+ "4": {
+  "type": "turn",
+  "lines": {
+   "en": [
+    "The black ledger lies open under the lamp.",
+    "Salt on every page, tide after tide of dues."
+   ],
+   "nl": [
+    "Het zwarte grootboek ligt open onder de lamp.",
+    "Zout op elke bladzijde, getij na getij aan havengeld."
+   ]
+  },
+  "prompt": {
+   "en": "Turn back forty years",
+   "nl": "Blader veertig jaar terug"
+  },
+  "done": {
+   "en": "Forty years back, among the dues: two initials.",
+   "nl": "Veertig jaar terug, tussen het havengeld: twee initialen."
+  },
+  "x": 27,
+  "y": 59
+ },
+ "5": {
+  "type": "hold",
+  "lines": {
+   "en": [
+    "The knife-grinder tests each edge on his thumbnail.",
+    "A brass lantern hangs from his barrow."
+   ],
+   "nl": [
+    "De scharensliep toetst elke snede op zijn duimnagel.",
+    "Aan zijn kar hangt een koperen lantaarn."
+   ]
+  },
+  "prompt": {
+   "en": "Touch the dent",
+   "nl": "Voel aan de deuk"
+  },
+  "done": {
+   "en": "Small and neat, exactly where the hand goes.",
+   "nl": "Klein en keurig, precies waar je hand komt."
+  },
+  "x": 41,
+  "y": 53
+ },
+ "6": {
+  "type": "letter",
+  "lines": {
+   "en": [
+    "The wind is off the land, warm and dry.",
+    "The sun is low behind your shoulder."
+   ],
+   "nl": [
+    "De wind komt van land, warm en droog.",
+    "De zon staat laag achter je schouder."
+   ]
+  },
+  "prompt": {
+   "en": "Unfold the letter",
+   "nl": "Vouw de brief open"
+  },
+  "done": {
+   "en": "White salt, square hand. A short letter.",
+   "nl": "Wit zout, vierkant handschrift. Een korte brief."
+  },
+  "text": {
+   "en": [
+    "The tide is out and the pans are white.",
+    "Come down when you can, dear."
+   ],
+   "nl": [
+    "Het is eb en de pannen zijn wit.",
+    "Kom naar beneden als je kunt, lief."
+   ]
+  },
+  "paper": "salt",
+  "panels": {
+   "en": [
+    [
+     "Hannah —",
+     "The tide is out and the pans are white."
+    ],
+    [
+     "I have balanced every book in this harbour but the one you are in. That one will not come out even, and I have stopped trying."
+    ],
+    [
+     "Your hands, raking the pans at dusk, are the only sum I never check.",
+     "_Come down when you can, dear. I have kept you the warm end of the bench."
+    ]
+   ],
+   "nl": [
+    [
+     "Hannah,",
+     "Het is eb en de pannen zijn wit."
+    ],
+    [
+     "Ik heb elk boek in deze haven sluitend gekregen, behalve het boek waar jij in staat. Dat wil maar niet sluiten, en ik heb het opgegeven."
+    ],
+    [
+     "Je handen, als je ’s avonds de pannen harkt, zijn de enige som die ik nooit natel.",
+     "_Kom naar beneden als je kunt, lief. Ik heb het warme eind van de bank voor je vrijgehouden."
+    ]
+   ]
+  },
+  "after": {
+   "en": "Tap when you have read it",
+   "nl": "Tik als je hem gelezen hebt"
+  },
+  "sign": "Orrin",
+  "addr": {
+   "en": "For Hannah, when the tide is out",
+   "nl": "Voor Hannah, als het eb is"
+  },
+  "seal": {
+   "mark": "O",
+   "color": "none"
+  }
+ }
+}

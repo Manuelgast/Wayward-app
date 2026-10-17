@@ -1,0 +1,394 @@
+{
+ "13": {
+  "type": "trace",
+  "lines": {
+   "en": [
+    "From up here, all of yesterday lies behind you.",
+    "Penhallow calls it straight. He is very sure."
+   ],
+   "nl": [
+    "Van hierboven ligt heel gisteren achter je.",
+    "Penhallow noemt het recht. Hij is er heel zeker van."
+   ]
+  },
+  "prompt": {
+   "en": "Trace the tracks",
+   "nl": "Trek het spoor na"
+  },
+  "done": {
+   "en": "It bends. Gently, steadily, left.",
+   "nl": "Het buigt. Zacht, gestaag, naar links."
+  },
+  "x": 19,
+  "y": 63,
+  "path": [
+   [
+    19,
+    63
+   ],
+   [
+    18,
+    57
+   ],
+   [
+    24,
+    52
+   ],
+   [
+    34,
+    49
+   ],
+   [
+    46,
+    47
+   ],
+   [
+    56,
+    44
+   ],
+   [
+    61,
+    40
+   ],
+   [
+    60,
+    36
+   ],
+   [
+    52,
+    34
+   ],
+   [
+    42,
+    32
+   ],
+   [
+    32,
+    30
+   ],
+   [
+    26,
+    27
+   ]
+  ]
+ },
+ "14": {
+  "type": "rope",
+  "lines": {
+   "en": [
+    "The well is famous for being dry.",
+    "The rope is new, and something below is heavy."
+   ],
+   "nl": [
+    "Deze put is beroemd omdat hij droog staat.",
+    "Het touw is nieuw, en beneden hangt iets zwaars."
+   ]
+  },
+  "prompt": {
+   "en": "Haul it up",
+   "nl": "Haal het op"
+  },
+  "done": {
+   "en": "Two skins. Full. Cold. Knotted shut.",
+   "nl": "Twee zakken. Vol. Koud. Dichtgeknoopt."
+  },
+  "x": 57,
+  "y": 46,
+  "bell": [
+   56,
+   21
+  ]
+ },
+ "16": {
+  "type": "hold",
+  "lines": {
+   "en": [
+    "Penhallow snores. The crate keeps very still.",
+    "Your compass trembles in your open hand."
+   ],
+   "nl": [
+    "Penhallow snurkt. De kist houdt zich heel stil.",
+    "Je kompas trilt in je open hand."
+   ]
+  },
+  "prompt": {
+   "en": "Hold it steady",
+   "nl": "Hou het stil"
+  },
+  "done": {
+   "en": "The needle leans. Not north. At the crate.",
+   "nl": "De naald helt. Niet noord. Naar de kist."
+  },
+  "x": 45,
+  "y": 55
+ },
+ "17": {
+  "type": "turn",
+  "lines": {
+   "en": [
+    "Red rules, black ink, not a single blot.",
+    "Each morning, a bearing. Beside it, a correction."
+   ],
+   "nl": [
+    "Rode lijnen, zwarte inkt, geen enkele vlek.",
+    "Elke ochtend een koers. Daarnaast een correctie."
+   ]
+  },
+  "prompt": {
+   "en": "Turn the pages",
+   "nl": "Sla de bladzijden om"
+  },
+  "done": {
+   "en": "One. Two. Three. Five. Eight.",
+   "nl": "Eén. Twee. Drie. Vijf. Acht."
+  },
+  "x": 51,
+  "y": 45
+ },
+ "19": {
+  "type": "wipe",
+  "lines": {
+   "en": [
+    "Under the broken post stands an older one, brass-capped.",
+    "Sand has filled in every letter."
+   ],
+   "nl": [
+    "Onder de gebroken paal staat een oudere, met een koperen kap.",
+    "Het zand heeft elke letter gevuld."
+   ]
+  },
+  "prompt": {
+   "en": "Brush the sand away",
+   "nl": "Veeg het zand weg"
+  },
+  "done": {
+   "en": "Initials you know. A warning you don’t.",
+   "nl": "Bekende initialen. Een onbekende waarschuwing."
+  },
+  "x": null,
+  "y": null
+ },
+ "20": {
+  "type": "letter",
+  "lines": {
+   "en": [
+    "At dusk Sefa walked straight into a tent rope.",
+    "At dawn Penhallow brings you a page. His hand shakes."
+   ],
+   "nl": [
+    "In de schemering liep Sefa recht tegen een scheerlijn op.",
+    "Bij dageraad brengt Penhallow je een blad. Zijn hand trilt."
+   ]
+  },
+  "prompt": {
+   "en": "Unfold the page",
+   "nl": "Vouw het blad open"
+  },
+  "done": {
+   "en": "Below his name, a line for a witness.",
+   "nl": "Onder zijn naam een regel voor een getuige."
+  },
+  "text": {
+   "en": [
+    "Guide unfit by reason",
+    "of eyesight."
+   ],
+   "nl": [
+    "Gids ongeschikt wegens",
+    "gezichtsvermogen."
+   ]
+  },
+  "sign": "A. Penhallow",
+  "addr": {
+   "en": "For signature",
+   "nl": "Ter ondertekening"
+  },
+  "seal": {
+   "mark": "B",
+   "color": "red"
+  }
+ },
+ "23": {
+  "type": "follow",
+  "lines": {
+   "en": [
+    "The sky has gone the colour of brick.",
+    "The riders go in a line, one lamp at the back."
+   ],
+   "nl": [
+    "De lucht heeft de kleur van baksteen gekregen.",
+    "De ruiters rijden in een rij, achteraan één lamp."
+   ]
+  },
+  "prompt": {
+   "en": "Follow the riders",
+   "nl": "Volg de ruiters"
+  },
+  "done": {
+   "en": "Inside the arch, the storm is only noise.",
+   "nl": "Binnen in de boog is de storm alleen geluid."
+  },
+  "seconds": 5,
+  "path": [
+   [
+    54,
+    57
+   ],
+   [
+    47,
+    52
+   ],
+   [
+    39,
+    48
+   ],
+   [
+    31,
+    46
+   ],
+   [
+    23,
+    44
+   ],
+   [
+    16,
+    42
+   ],
+   [
+    14,
+    36
+   ],
+   [
+    15,
+    30
+   ]
+  ],
+  "door": [
+   7,
+   20,
+   25,
+   40
+  ],
+  "keep": {
+   "en": "Keep your finger on the lamp",
+   "nl": "Houd je vinger op de lamp"
+  },
+  "x": 54,
+  "y": 57
+ },
+ "25": {
+  "type": "tap",
+  "lines": {
+   "en": [
+    "Skins hang from the saddles like sleeping animals.",
+    "Full ones thud. Empty ones answer back."
+   ],
+   "nl": [
+    "Zakken hangen aan de zadels als slapende dieren.",
+    "Volle bonzen dof. Lege geven antwoord."
+   ]
+  },
+  "prompt": {
+   "en": "Tap each skin",
+   "nl": "Klop op elke zak"
+  },
+  "done": {
+   "en": "Nineteen thud. The rest answer.",
+   "nl": "Negentien bonzen. De rest antwoordt."
+  },
+  "x": 56,
+  "y": 62
+ },
+ "28": {
+  "type": "lantern",
+  "lines": {
+   "en": [
+    "Inside, the dark smells of smoke and old camels.",
+    "Something is carved over the inner door."
+   ],
+   "nl": [
+    "Binnen ruikt het donker naar rook en oude kamelen.",
+    "Boven de binnendeur is iets uitgehakt."
+   ]
+  },
+  "prompt": {
+   "en": "Raise your lantern",
+   "nl": "Hef je lantaarn"
+  },
+  "done": {
+   "en": "Riders. A black stone. A star above.",
+   "nl": "Ruiters. Een zwarte steen. Een ster erboven."
+  },
+  "x": 53,
+  "y": 40
+ },
+ "34": {
+  "type": "tap",
+  "lines": {
+   "en": [
+    "The lead seal wears the Company’s lion.",
+    "The knife is already in your hand."
+   ],
+   "nl": [
+    "Het loden zegel draagt de leeuw van de Compagnie.",
+    "Het mes ligt al in je hand."
+   ]
+  },
+  "prompt": {
+   "en": "Cut the seal",
+   "nl": "Snijd het zegel door"
+  },
+  "done": {
+   "en": "Under the straw: black stone, cold as a well.",
+   "nl": "Onder het stro: zwarte steen, koud als een put."
+  },
+  "x": 57,
+  "y": 57
+ },
+ "37": {
+  "type": "rope",
+  "lines": {
+   "en": [
+    "Four ropes, twelve hands, one stone like a sleeping sheep.",
+    "The plinth is worn to exactly its shape."
+   ],
+   "nl": [
+    "Vier touwen, twaalf handen, één steen als een slapend schaap.",
+    "De sokkel is precies naar zijn vorm gesleten."
+   ]
+  },
+  "prompt": {
+   "en": "Lower it down",
+   "nl": "Laat hem zakken"
+  },
+  "done": {
+   "en": "It settles. The needle swings, and stays.",
+   "nl": "Hij zit. De naald zwaait, en blijft staan."
+  },
+  "x": 50,
+  "y": 40
+ },
+ "40": {
+  "type": "turn",
+  "lines": {
+   "en": [
+    "Penhallow sleeps on the seal. Nobody touches the lid.",
+    "You lie under the wagon with a screwdriver."
+   ],
+   "nl": [
+    "Penhallow slaapt op het zegel. Niemand raakt het deksel aan.",
+    "Je ligt onder de wagen met een schroevendraaier."
+   ]
+  },
+  "prompt": {
+   "en": "Back out the screws",
+   "nl": "Draai de schroeven los"
+  },
+  "done": {
+   "en": "Twenty-four. Ilyas counts them, in a whisper.",
+   "nl": "Vierentwintig. Ilyas telt ze, fluisterend."
+  },
+  "x": 40,
+  "y": 49
+ }
+}

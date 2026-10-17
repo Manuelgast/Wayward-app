@@ -13,6 +13,9 @@
     { "id": "book_sea_c", "type": "book", "kind": "inapp" },
     { "id": "book_ash_c", "type": "book", "kind": "inapp" },
     { "id": "book_stardust_c", "type": "book", "kind": "inapp" },
+    { "id": "book_mirage", "type": "book", "kind": "inapp" },
+    { "id": "book_mirage_b", "type": "book", "kind": "inapp" },
+    { "id": "book_mirage_c", "type": "book", "kind": "inapp" },
     { "id": "pass_monthly", "type": "pass", "kind": "subs", "plan": "monthly", "period": "month" },
     { "id": "pass_lifetime", "type": "pass", "kind": "inapp", "period": "lifetime" }
   ],

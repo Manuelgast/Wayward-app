@@ -62,6 +62,18 @@
   "lastmorning": {
    "title": "The island on the last morning",
    "focus": "50% 55%"
+  },
+  "tentburied": {
+   "title": "The Society's green canvas tent on the sixth day, half buried in warm grey ash a",
+   "focus": "50% 55%"
+  },
+  "returnspecimen": {
+   "title": "Morning on the warm black slope above the landing",
+   "focus": "50% 55%"
+  },
+  "patiencedeck": {
+   "title": "The stern of the merchant schooner Patience at anchor at noon",
+   "focus": "50% 55%"
   }
  },
  "sections": {
@@ -291,7 +303,7 @@
   },
   "11": {
    "chapter": "An ending",
-   "scene": "lagoon",
+   "scene": "returnspecimen",
    "tag": "Locality: unknown. Notch: dry.",
    "text": [
     "Quill hears you out, then asks Jory to put her ashore. On the warm black slope above the beach she kneels, opens her press, and gives her one specimen back to the ash with her own hands, pressing it in like a seed. She is crying a little and blames the sulphur. Then she opens her catalogue at No. 212 and writes, after “locality”: unknown.",
@@ -823,7 +835,7 @@
   },
   "33": {
    "chapter": "Day 4 · His Lordship Writes",
-   "scene": "ship",
+   "scene": "patiencedeck",
    "tag": "Mail cutter. One letter. Heavy paper.",
    "text": [
     "You are aboard the Patience when the mail cutter comes alongside, hands up a single letter on paper so heavy it lands like a plate, and leaves without waiting for a reply. Lord Carrow’s hand is large and leans forward. Bring blooms, it says, or do not come back; [[letter|and bring the map either way]].",
@@ -1063,7 +1075,7 @@
   },
   "43": {
    "chapter": "Day 6 · The Catalogue",
-   "scene": "tent",
+   "scene": "tentburied",
    "tag": "Quill’s catalogue, open at No. 212.",
    "text": [
     "Quill’s tent is half buried; she has dug out the table first, then the kettle, then herself. Her catalogue lies open at a fresh entry in her round hand: No. 212, Orchis cinerea, and after “locality” a blank line, waiting. The older entries run backwards under her palm, two hundred and eleven of them, many in hands not hers, in inks gone brown.",
@@ -1202,7 +1214,7 @@
   },
   "49": {
    "chapter": "Day 6 · Number Forty-One",
-   "scene": "tent",
+   "scene": "tentburied",
    "tag": "Brass tag. Old catalogue. Same hand.",
    "text": [
     "You set the brass tag on the catalogue, beside entry No. 41. The letters scratched in the brass and the brown ink on the page lean the same way, loop the same way, cross their fours the same way: R.B.S. No. 41, the Society’s own label, out of the black rock under the lagoon.",

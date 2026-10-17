@@ -62,6 +62,18 @@
   "lastmorning": {
    "title": "Het eiland op de laatste ochtend",
    "focus": "50% 55%"
+  },
+  "tentburied": {
+   "title": "The Society's green canvas tent on the sixth day, half buried in warm grey ash a",
+   "focus": "50% 55%"
+  },
+  "returnspecimen": {
+   "title": "Morning on the warm black slope above the landing",
+   "focus": "50% 55%"
+  },
+  "patiencedeck": {
+   "title": "The stern of the merchant schooner Patience at anchor at noon",
+   "focus": "50% 55%"
   }
  },
  "sections": {
@@ -291,7 +303,7 @@
   },
   "11": {
    "chapter": "Een einde",
-   "scene": "lagoon",
+   "scene": "returnspecimen",
    "tag": "Vindplaats: onbekend. Kerf: droog.",
    "text": [
     "Quill hoort je aan en vraagt Jory dan haar aan land te zetten. Op de warme zwarte helling boven het strand knielt ze, opent haar pers en geeft haar ene exemplaar met eigen handen terug aan de as; ze drukt het erin als een zaadje. Ze huilt een beetje en geeft de zwavel de schuld. Dan slaat ze haar catalogus open bij nr. 212 en schrijft achter “vindplaats”: onbekend.",
@@ -823,7 +835,7 @@
   },
   "33": {
    "chapter": "Dag 4 · Zijne Heerlijkheid schrijft",
-   "scene": "ship",
+   "scene": "patiencedeck",
    "tag": "Postkotter. Eén brief. Zwaar papier.",
    "text": [
     "Je bent aan boord van de Geduld als de postkotter langszij komt, één brief aanreikt op papier zo zwaar dat hij neerkomt als een bord, en wegvaart zonder op antwoord te wachten. Heer Carrow heeft een groot handschrift dat voorover helt. Breng bloemen, staat er, of kom niet terug; [[letter|en breng hoe dan ook de kaart mee]].",
@@ -1063,7 +1075,7 @@
   },
   "43": {
    "chapter": "Dag 6 · De catalogus",
-   "scene": "tent",
+   "scene": "tentburied",
    "tag": "Quills catalogus, open bij nr. 212.",
    "text": [
     "De tent van Quill is half bedolven; ze heeft eerst de tafel uitgegraven, dan de waterketel, dan zichzelf. Haar catalogus ligt open bij een nieuwe inschrijving in haar ronde handschrift: nr. 212, Orchis cinerea, en na “vindplaats” een lege regel, wachtend. Onder haar handpalm lopen de oudere inschrijvingen terug, tweehonderdelf stuks, veel in andere handen dan de hare, in inkt die bruin is geworden.",
@@ -1202,7 +1214,7 @@
   },
   "49": {
    "chapter": "Dag 6 · Nummer eenenveertig",
-   "scene": "tent",
+   "scene": "tentburied",
    "tag": "Koperen label. Oude catalogus. Zelfde hand.",
    "text": [
     "Je legt het koperen label op de catalogus, naast inschrijving nr. 41. De letters in het koper gekrast en de bruine inkt op de bladzijde hellen dezelfde kant op, maken dezelfde lussen, zetten hun vieren op dezelfde manier: R.B.S. nr. 41, het eigen label van het Genootschap, uit de zwarte rots onder de lagune.",

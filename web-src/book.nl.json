@@ -58,6 +58,26 @@
   "dawn": {
    "title": "Ochtend boven de wolken",
    "focus": "50% 55%"
+  },
+  "heartedda": {
+   "title": "The Heart of the Mountain at the moment the eye opens",
+   "focus": "50% 55%"
+  },
+  "morningplain": {
+   "title": "The morning after",
+   "focus": "50% 55%"
+  },
+  "drawndoor": {
+   "title": "A plain door drawn in the side of Mount Veyra opens onto morning",
+   "focus": "50% 55%"
+  },
+  "scriptoriumfire": {
+   "title": "Fire in the scriptorium of the mountain monastery at night",
+   "focus": "50% 55%"
+  },
+  "compassdoor": {
+   "title": "High on the mountain in thick night fog",
+   "focus": "50% 55%"
   }
  },
  "sections": {
@@ -585,7 +605,7 @@
   },
   "52": {
    "chapter": "De gestalte in de mist",
-   "scene": "stairs",
+   "scene": "compassdoor",
    "text": [
     "Je volgt de lantaarn van de trap af, over een pad dat zich tegen de kloostermuur vastklampt, steeds twintig passen erachter. Ga jij sneller lopen, dan doet de gestalte dat ook. Blijf je staan, dan wacht ze.",
     "Bij een lage deur met een windroos erop blijft de gestalte eindelijk staan, hangt de lantaarn van Edda aan een haak ernaast en loopt dwars door de muur, zonder iets open te doen. De deur staat op een kier. De lantaarn schommelt zachtjes, alsof hij iemand uitnodigt hem mee te nemen en de andere kant op te gaan: het rotspad af, terug naar het dal."
@@ -711,7 +731,7 @@
   },
   "61": {
    "chapter": "Een einde",
-   "scene": "dawn",
+   "scene": "drawndoor",
    "text": [
     "Je neemt de pen uit de hand van Edda en tekent een deur in de flank van de berg, de eenvoudigste deur die je kunt maken: een lijn, een lijn, een lijn, een klink.",
     "~ Hij gaat open, en daarachter is het ochtend.",
@@ -729,7 +749,7 @@
   },
   "62": {
    "chapter": "Brand in het scriptorium",
-   "scene": "library",
+   "scene": "scriptoriumfire",
    "text": [
     "De eerste kaart vat vlam alsof hij daar zijn hele leven op heeft gewacht. De tweede vat vlam aan de eerste. Tegen de tijd dat de monniken hoestend wakker worden, zijn de kasten een muur van oranje licht.",
     "De abdis staart naar de vlammen, dan naar jou, en dan, vreemd genoeg, uit het raam naar het dal. “Die kaarten hielden dat dorp precies waar het is,” zegt ze zacht. “Elk veld. Elk dak. Elk mens. Waar dacht je dat ze voor waren?”"
@@ -894,7 +914,7 @@
   },
   "80": {
    "chapter": "Het Hart",
-   "scene": "heart",
+   "scene": "heartedda",
    "moment": {
     "line": "Het oog gaat open. Edda houdt je de grote pen voor. De hele berg houdt zijn adem in.",
     "seconds": 12,
@@ -929,7 +949,7 @@
   },
   "84": {
    "chapter": "Een einde",
-   "scene": "heart",
+   "scene": "heartedda",
    "text": [
     "Je neemt de pen aan. Het oog gaat open, kijkt je aan, kijkt echt, en sluit zich weer, tevreden. Er zakt iets over je schouders, als een jas die past.",
     "Je droomt het dal. Je droomt het goed: mild weer, goede oogsten, en om middernacht een rij lantaarns die door het dal omhoogklimt om je gezelschap te houden. Elke nacht luidt ver boven je een klok om je in slaap te houden, en elke nacht ben je er dankbaar voor, en nooit vraag je je af wie hem luidt, of waarom."
@@ -945,7 +965,7 @@
   },
   "88": {
    "chapter": "Een einde",
-   "scene": "dawn",
+   "scene": "morningplain",
    "text": [
     "Je doet een stap achteruit, weg van de pen. Edda ook, uiteindelijk. Het oog gaat helemaal open, en voor het eerst in zijn leven kijkt de berg naar de wereld zonder haar te dromen.",
     "Hij staat op. Langzaam, als een heel oude man, komt de Veyra overeind, schudt de sneeuw van zijn schouders en loopt weg, naar de zee. Achter hem blijft Laag-Veyra liggen, elk dak en elk veld en elke verbouwereerde dorpeling in nachthemd, eindelijk echt en op eigen benen.",

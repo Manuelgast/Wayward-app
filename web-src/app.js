@@ -15,7 +15,7 @@
   // 1.2: the sealed stories (seals.js) read like small books; pictures, music, omens and veil come from the parent book
   var SEALS = (window.WAYWARD_SEALS || []).map(function (s0) {
     var p = SHELF.filter(function (b) { return b.id === s0.parent; })[0] || {};
-    var e = Object.assign({ veil: p.veil, ui: 'none', noVideo: p.noVideo, omens: p.omens, music: p.music, light: p.light, spots: {}, imgs: p.imgs, fallback: p.fallback, spine: p.spine }, s0);
+    var e = Object.assign({ veil: p.veil, ui: 'none', noVideo: p.noVideo, vids: p.vids, omens: p.omens, music: p.music, light: p.light, spots: {}, imgs: p.imgs, fallback: p.fallback, spine: p.spine }, s0);
     if (p.imgs && p.imgs.indexOf(e.coverScene) < 0) e.coverScene = p.fallback;
     e.cover = 'img/' + e.coverScene + '-sm.webp';
     return e;
@@ -151,7 +151,7 @@
       setTimeout(function () { if (!prev.classList.contains('on')) prev.pause(); }, 950);
     }
     next.onloadeddata = reveal; next.onplaying = reveal;
-    if (BK.noVideo) { BG.a.classList.remove('on'); BG.b.classList.remove('on'); BG.a.pause(); BG.b.pause(); return; } // (temporary pictures, no loops yet)
+    if (!hasVid(scene)) { BG.a.classList.remove('on'); BG.b.classList.remove('on'); BG.a.pause(); BG.b.pause(); return; } // (temporary pictures, no loops yet)
     vidURL(scene).then(function (u) {
       if (BG.cur !== scene) return;
       next.src = u; next.defaultPlaybackRate = 0.85; next.playbackRate = 0.85;
@@ -159,6 +159,7 @@
     });
     setTimeout(function () { if (!shown && BG.cur === scene) prev.classList.remove('on'); }, 2500); // still picture stays as fallback
   }
+  function hasVid(scene) { return !BK.noVideo && (!BK.vids || BK.vids.indexOf(scene) >= 0); } // 17-10: new pictures have no loop yet; they show still
   var VID = {}; // scene -> object URL; small loops are fetched whole so playback never depends on server range requests
   function vidURL(scene) {
     if (VID[scene]) return VID[scene];
@@ -577,7 +578,7 @@
     else go();
   }
   function prefetchChoices(s) {
-    if (!BK.noVideo) (s.choices || []).forEach(function (c) { var sc = S[c.to] && S[c.to].scene; if (sc && sc !== s.scene) vidURL(sc); });
+    (s.choices || []).forEach(function (c) { var sc = S[c.to] && S[c.to].scene; if (sc && sc !== s.scene && hasVid(sc)) vidURL(sc); });
     preparePages((s.choices || []).map(function (c) { return c.to; }));
   }
   function startReveal() {
@@ -759,7 +760,8 @@
         if (short) help(250, function () { if (ctl) ctl.auto(); });
       } else if (il.type === 'turn') { // turn the great lens: draw an arc with your finger (Book II p67)
         var c0 = mapPt(il.x, il.y, host), rad = Math.min(host.clientWidth * 0.3, 130), arc = [];
-        for (var ai = 0; ai <= 6; ai++) { var an = Math.PI * (1.08 + ai * 0.14); arc.push([c0.x + Math.cos(an) * rad, c0.y + Math.sin(an) * rad * 0.8]); }
+        var acx = Math.max(rad + 18, Math.min(host.clientWidth - rad - 18, c0.x)); // 17-10: an object near the edge (x<30 or x>70) keeps the whole arc on screen
+        for (var ai = 0; ai <= 6; ai++) { var an = Math.PI * (1.08 + ai * 0.14); arc.push([acx + Math.cos(an) * rad, c0.y + Math.sin(an) * rad * 0.8]); }
         ctl = FX.trace(host, { pts: arc, inkSecs: 2.4, onStart: function () { AU.sfx('creak', { gain: 0.6 }); }, onDone: function () { AU.sfx('sparkle'); FX.glow(host, c0.x, c0.y, { r: Math.max(host.clientWidth, host.clientHeight) * 0.45, dur: 1600, rest: 0.55 }); finish(true); } });
         if (short) help(250, function () { if (ctl) ctl.auto(true); });
       } else if (il.type === 'rope') {
@@ -976,7 +978,8 @@
     mountain: ['#B8A0F0', '#5A3E8E', '#3E2A6E'], village: ['#F6C27A', '#8A5A3A', '#6A4028'], procession: ['#FFDB8A', '#7A5A8E', '#56406E'],
     ridge: ['#ECE8FF', '#7A78B8', '#5A5898'], river: ['#6FE8DE', '#2A6A7A', '#1A4A5A'], lake: ['#8FF6EC', '#2A7A88', '#1A5A68'],
     chamber: ['#F6CC70', '#8A6A3A', '#6A4A22'], lanternhall: ['#FFCA7A', '#8A4A3A', '#6A3428'], stairs: ['#F6A8C0', '#8A4A7A', '#6A3460'],
-    bell: ['#86E0C0', '#3A5A6E', '#2A4058'], library: ['#DCB0F4', '#6A4A8E', '#4A3070'], heart: ['#FFDC98', '#6A3E8E', '#4A2A6E'], dawn: ['#FFD8A4', '#B8707A', '#8A4A60']
+    bell: ['#86E0C0', '#3A5A6E', '#2A4058'], library: ['#DCB0F4', '#6A4A8E', '#4A3070'], heart: ['#FFDC98', '#6A3E8E', '#4A2A6E'], dawn: ['#FFD8A4', '#B8707A', '#8A4A60'],
+    heartedda: ['#FFDC98', '#6A3E8E', '#4A2A6E'], morningplain: ['#FFD8A4', '#B8707A', '#8A4A60'], drawndoor: ['#FFD8A4', '#B8707A', '#8A4A60'], scriptoriumfire: ['#DCB0F4', '#6A4A8E', '#4A3070'], compassdoor: ['#F6A8C0', '#8A4A7A', '#6A3460'] // 17-10
   };
   var LAYOUT = null, ZOOM = 1; // map zoom (Manuel 08-10: zoom out on the paths to see everything)
   function layout() {
@@ -1246,7 +1249,7 @@
   }
   function renderSeals() {
     var row = $('#sealRow'), head = $('#sealHead'); if (!row) return;
-    var on = SEALS.length > 0 && !APP_BUILD; // the app build gets them with the envelopes in the shop (1.2)
+    var on = SEALS.length > 0; // 17-10 (Manuel: every week a new letter): the app carries the letters released so far (tools/app_release.json)
     row.hidden = head.hidden = !on; if (!on) return;
     var o = sealState().opened || {}, n = SEALS.filter(function (x) { return o[x.id]; }).length;
     $('#sealCount').textContent = t('sealsCount', { n: n, t: SEALS.length });
@@ -1382,7 +1385,7 @@
   function shortDate(iso) { try { return new Date(iso + 'T12:00:00').toLocaleDateString(lang === 'nl' ? 'nl-NL' : 'en-GB', { day: 'numeric', month: 'short' }).replace('.', ''); } catch (e) { return iso; } }
   function serProgress(sr) {
     var P = { ends: 0, endsT: 0, gold: 0, goldT: 0, silver: 0, silverT: 0, cardsN: 0, cardsT: 0, seals: 0, sealsT: 0, fp: 0, books: [], rar: {} };
-    var so = sealState().opened || {}, sealsOn = !APP_BUILD;
+    var so = sealState().opened || {}, sealsOn = SEALS.length > 0;
     RAR.forEach(function (k) { P.rar[k] = [0, 0]; });
     var ids = sr.books.concat(sealsOn ? sr.seals : []);
     ids.forEach(function (id) {
@@ -1400,7 +1403,7 @@
     return P;
   }
   function renderCollection() {
-    var today = isoDay(new Date()), sealsOn = !APP_BUILD;
+    var today = isoDay(new Date()), sealsOn = SEALS.length > 0;
     $('#colList').innerHTML = SERIES.map(function (sr) {
       var P = serProgress(sr), so = sealState().opened || {};
       var stat = function (n, tot, key, cls, go) { return '<' + (go ? 'button data-go="' + go + '"' : 'div') + ' class="sg' + (cls ? ' ' + cls : '') + (go ? ' link' : '') + '"><b>' + n + '<small>/' + tot + '</small></b><span>' + esc(t(key)) + '</span></' + (go ? 'button' : 'div') + '>'; };
@@ -1611,7 +1614,7 @@
         '<div class="pf-bm"><span class="pf-bmi">' + BMARK + '<b>' + o.freezes + '</b></span><span>' + esc(t('bookmarksSub')) + '</span></div></section>' +
       chestHTML() +
       '<section class="glass pf-bonus"><span class="caps gold">' + esc(t('bonusHead')) + '</span><ul>' + ladder + '</ul><p class="dim">' + esc(nb ? t('bonusNext', { n: nb[0] - n, e: nb[1] }) + ' ' : '') + esc(t('bonusNote')) + '</p></section>' +
-      '<div class="ser-label">' + esc(t('statsHead')) + '</div><div class="ser-grid">' + stat(S0.pages, 'stPages') + stat(S0.ends, 'stEnds') + stat(S0.gold, 'stGold') + stat(S0.cards, 'stCards') + stat(S0.gcards, 'stPuzzles') + (!APP_BUILD ? stat(S0.seals, 'stSeals') : '') + stat(S0.goals, 'stGoals') + stat(o.streak.best || 0, 'stBest') + '</div>' +
+      '<div class="ser-label">' + esc(t('statsHead')) + '</div><div class="ser-grid">' + stat(S0.pages, 'stPages') + stat(S0.ends, 'stEnds') + stat(S0.gold, 'stGold') + stat(S0.cards, 'stCards') + stat(S0.gcards, 'stPuzzles') + (SEALS.length ? stat(S0.seals, 'stSeals') : '') + stat(S0.goals, 'stGoals') + stat(o.streak.best || 0, 'stBest') + '</div>' +
       '<div class="ser-label">' + esc(t('xpHead')) + '</div><ul class="rhow pf-rules">' + ['xpPage', 'xpEnding', 'xpCard', 'xpSeal', 'xpGoal'].map(function (k) { return '<li><i></i><span>' + esc(t(k)) + '</span></li>'; }).join('') + '</ul>';
     $('#pfSeal').addEventListener('click', function () { openSettings(); setTimeout(function () { var nm = $('#exName'); if (nm) nm.focus(); }, 60); });
     var o2 = prof(); if (o2.seenLevel == null || o2.seenLevel < lv.n) { o2.seenLevel = lv.n; profSave(o2); } // seen here, no separate celebration needed

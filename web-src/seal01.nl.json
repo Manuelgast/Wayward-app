@@ -1,0 +1,268 @@
+{
+ "id": "seal-01",
+ "title": "De zoutbrief",
+ "series": "De Veyra-cyclus · Verzegeld verhaal",
+ "imprint": "A Wayward Original",
+ "tagline": "Een brief in zeewater geschreven, veertig jaar bewaard door mensen die te snel huilen.",
+ "start": 1,
+ "scenes": {
+  "office": {
+   "title": "Het havenkantoor",
+   "focus": "50% 55%"
+  },
+  "harbour": {
+   "title": "Grijshaven bij valavond",
+   "focus": "50% 55%"
+  },
+  "cape": {
+   "title": "Kaap Seren",
+   "focus": "50% 55%"
+  },
+  "s01cover": {
+   "title": "This is also the envelope art of a collectible sealed story, shown small",
+   "focus": "50% 55%"
+  },
+  "s01quay": {
+   "title": "The quay of Grey Harbour in late afternoon, the sun low over the water and spray",
+   "focus": "50% 55%"
+  },
+  "s01cape": {
+   "title": "Cape Seren at sunset with the wind off the land, warm and dry",
+   "focus": "50% 55%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Het havenkantoor",
+   "scene": "s01cover",
+   "tag": "Eén kaart overtekenen. Koets om zeven.",
+   "text": [
+    "Het Bestuur heeft je naar Grijshaven gestuurd om een kaart over te tekenen die te oud is om te reizen. Het havenkantoor bestaat uit een raam op de kade en een eeuw aan grootboeken. Bij het raam wacht een oude vrouw. Ze houdt een zwarte envelop plat tussen haar handpalmen, alsof hij anders overloopt.",
+    "“Agnes Breen,” zegt ze. “U hebt zo’n droog gezicht. Dat bedoel ik aardig.” Haar vader was hier klerk en hield zijn boeken bij in zout. Dit is het laatste wat hij schreef: een brief aan haar moeder, nooit gelezen. Zoutbrieven blijven jaren goed, tenzij iemand erop huilt. “Ik huil om bruiloften. En uien. En weer.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je hem hier en nu openmaakt, bij de lamp,",
+     "short": "Open hem bij de lamp",
+     "to": 2
+    },
+    {
+     "text": "Als je eerst je kaart afmaakt; daar betaalt het Bestuur voor,",
+     "short": "Eerst de kaart",
+     "to": 3
+    },
+    {
+     "text": "Als je haar vraagt hoe je een zoutbrief leest,",
+     "short": "Vraag hoe je hem leest",
+     "to": 4
+    }
+   ],
+   "nr": 1
+  },
+  "2": {
+   "chapter": "Bij de lamp",
+   "scene": "s01cover",
+   "tag": "Lamplicht. Zwart papier. Eén woord, bijna.",
+   "text": [
+    "Je snijdt de envelop open met je zakmes. Erin zit één vel zwart papier, in drieën gevouwen, en bij de lamp is het bijna niets: een doffe glans, wat grijs gespikkel, als rijp op een leien dak. Je kantelt het. Eén woord komt wit boven en verdwijnt weer. Het kan “eb” zijn. Het kan “lief” zijn.",
+    "Agnes is dichterbij gekomen om te kijken, en haar kin begint te doen wat kinnen doen voordat het weer omslaat. Op de plank achter haar staan de grootboeken in hun jaren, en een ervan, zie je, heeft een zwarte rug, de kleur van het papier in je handen."
+   ],
+   "choices": [
+    {
+     "text": "Als je ermee naar buiten gaat, de lage zon in, naar de kade,",
+     "short": "De lage zon in",
+     "to": 5
+    },
+    {
+     "text": "Als je er zachtjes op ademt om het zout op te halen; vocht haalt zout op, dat weet elke kok,",
+     "short": "Adem erop",
+     "to": 8
+    }
+   ],
+   "nr": 8
+  },
+  "3": {
+   "chapter": "De kaart",
+   "scene": "s01cover",
+   "tag": "Kaart half over. Licht wordt goud.",
+   "text": [
+    "De kaart van Grijshaven is het saaiste document waar je ooit van hebt gehouden: dieptecijfers, meerringen, een vuurtoren die nog op de kaap staat aangegeven waar alleen wind is. Je tekent hem lijn voor lijn over. De middag schuift langs het raam als een traag schip, en het licht wordt van wit goud.",
+    "Als je opkijkt, zit Agnes er nog, de envelop op schoot, wachtend zoals mensen in havenstadjes wachten: zonder dat het erop lijkt. Ze heeft twee uur lang geen woord gezegd. Het is, vermoed je, de langste keer van haar leven."
+   ],
+   "choices": [
+    {
+     "text": "Als je het laatste stuk kust afmaakt; de koets gaat om zeven,",
+     "short": "Maak de kust af",
+     "to": 9,
+     "looks": "safe"
+    },
+    {
+     "text": "Als je je pen neerlegt en bij haar gaat zitten,",
+     "short": "Ga bij haar zitten",
+     "to": 7
+    }
+   ],
+   "nr": 4
+  },
+  "4": {
+   "chapter": "Het zoutgrootboek",
+   "scene": "s01cover",
+   "tag": "Zoutgrootboek. Gecontroleerd door het getij.",
+   "text": [
+    "Agnes pakt het enige grootboek met een zwarte rug van de plank. Haar vader hield de havenrekeningen bij op de droogpannen, zegt ze, omdat het getij ze twee keer per dag controleerde; dit is zijn nette versie, zout op zwart. Binnen in de kaft, in wit: Lezen met lage zon en de wind van land.",
+    "Je bladert veertig jaar terug, tot voor je geboorte. Tussen de havengelden en ligkosten: Les in zout, drie dagen, aan een jonge landmeter, E.M. Betaald met één kaart van de baai. Lantaarn verbogen aan het hengsel; wilde hem niet laten maken. Donderdag met de nachttrein naar het oosten. De maand is november."
+   ],
+   "choices": [
+    {
+     "text": "Als je met haar naar de kade gaat zolang de zon nog laag staat,",
+     "short": "Naar de kade",
+     "to": 5
+    },
+    {
+     "text": "Als je haar aanraadt op een drogere dag te wachten; de wind is nat,",
+     "short": "Wacht op een droge dag",
+     "to": 9,
+     "looks": "safe"
+    }
+   ],
+   "nr": 11
+  },
+  "5": {
+   "chapter": "De kade",
+   "scene": "s01quay",
+   "tag": "Kade. Zon laag. Wind van zee.",
+   "text": [
+    "De kade ruikt naar touw, vis en, zonder dat iemand kan zeggen waarom, thee. Een oude scharensliep slijpt bij de nettenloods de fileermessen; op zijn kar staat in verbleekte verf ISIDORE QUAYLE. Hij toetst elk mes op zijn duimnagel en zegt: “Die wil wel.” Aan de kar hangt een koperen lantaarn, met een kleine, keurige deuk in het hengsel.",
+    "~ Die deuk ken je; je raakt hem aan om het zeker te weten. Je ziet hem elke ochtend, aan de haak bij het bureau van je leermeester. De zon staat laag boven het water, en het zout zou zichtbaar worden, als je het waagde. Maar de wind komt van zee, en hij neemt opspattend water mee."
+   ],
+   "choices": [
+    {
+     "text": "Als je met haar naar de kaap loopt, waar de wind van land komt,",
+     "short": "Naar de kaap",
+     "to": 6
+    },
+    {
+     "text": "Als je hem hier leest, snel, in de luwte van de nettenloods,",
+     "short": "Lees hem hier",
+     "to": 10
+    }
+   ],
+   "nr": 2
+  },
+  "6": {
+   "chapter": "Kaap Seren",
+   "scene": "s01cape",
+   "tag": "Kaap Seren. Wind van land.",
+   "text": [
+    "Op Kaap Seren komt de wind van land, warm en droog. Waar de vuurtoren stond, ligt alleen een ring van zwarte steen. Je zet Agnes erop, knielt in het gras en vouwt het vel open met de zon over je schouder. Het zout komt wit boven, woord voor woord, als een kust uit de mist.",
+    "Het is een korte brief in het vierkante handschrift van een klerk. Agnes heeft hem nog niet gezien. Ze kijkt strak naar zee, zoals je naar het ene kijkt om het andere niet te zien, en haar ogen glanzen. Je hebt een minuut voor de zon weg is, en minder voor ze zich omdraait."
+   ],
+   "choices": [
+    {
+     "text": "Als je hem eerst in je notitieboek overschrijft, zoals je een kust overtekent,",
+     "short": "Schrijf hem eerst over",
+     "to": 11
+    },
+    {
+     "text": "Als je hem nu aan haar voorleest, zolang het licht nog duurt,",
+     "short": "Lees hem nu voor",
+     "to": 10,
+     "looks": "safe"
+    }
+   ],
+   "nr": 6
+  },
+  "7": {
+   "chapter": "Agnes",
+   "scene": "s01cover",
+   "tag": "Agnes praat. Het licht gaat maar.",
+   "text": [
+    "Je gaat naast haar zitten. Haar vader, zegt ze, schreef alles in zout: rekeningen, briefjes, de namen van boten. Haar moeder huilde al bij de eerste regel van deze brief, legde hem veertig jaar weg en stierf, en nu is het Agnes’ beurt om hem niet te lezen. “Het zit in de familie,” zegt ze. “Net als oren.”",
+    "Buiten op het water wordt het licht laag en goud, en het vensterglas begint het terug de kamer in te werpen. Agnes draait de envelop om op haar schoot, zoals je een steen omdraait waar misschien iets onder zit, en misschien niet."
+   ],
+   "choices": [
+    {
+     "text": "Als je met haar naar de kade gaat nu de zon laag staat,",
+     "short": "Ga met haar mee",
+     "to": 5
+    },
+    {
+     "text": "Als je haar voorzichtig zegt dat sommige brieven beter ongelezen blijven,",
+     "short": "Laat hem rusten",
+     "to": 9,
+     "looks": "safe"
+    }
+   ],
+   "nr": 10
+  },
+  "8": {
+   "chapter": "Een einde",
+   "scene": "s01cover",
+   "tag": "Erop geademd. Zout: weg.",
+   "text": [
+    "Je ademt op het vel, zachtjes, zoals een kok het zout uit een ham lokt. Even werkt het. Alle woorden komen tegelijk boven, wit en scherp, een hele brief vol, en je hebt nog net tijd om te zien dat hij kort is en dat de laatste regel onderstreept is.",
+    "~ Dan wordt het wit zacht aan de randen, en loopt het uit, en is het vel zwart en klam en leeg in je handen. Agnes kijkt er lang naar. Dan klopt ze je op je arm, alsof jij degene bent die het nodig heeft. “Nou,” zegt ze. “Nu kan er tenminste niemand meer op huilen.”"
+   ],
+   "ending": {
+    "no": "I",
+    "title": "Opgehaald",
+    "kind": "bad",
+    "epilogue": "Vocht haalt zout op. Het neemt het ook mee.",
+    "hint": "Zout wil zon, geen adem."
+   },
+   "nr": 5
+  },
+  "9": {
+   "chapter": "Een einde",
+   "scene": "s01cover",
+   "tag": "Brief bewaard. Ongelezen. Derde generatie.",
+   "text": [
+    "Agnes neemt de brief ongelezen mee naar huis, net als haar moeder deed, en legt hem in de la waar de zwarte enveloppen wonen. Jij haalt de koets van zeven uur, met een mooie kopie van een kaart die niemand zal gebruiken, en het gevoel dat je in andermans huis een deur op een kier hebt laten staan.",
+    "~ Jaren later bereikt je een pakje uit Grijshaven: een zwarte envelop en een briefje in een beverig handschrift. “Voor u,” staat er. “U hebt er het gezicht voor. Niet op huilen.” Hij staat sindsdien ongeopend op je bureau. Op de een of andere manier is het nu aan jou om hem niet te lezen."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "Ongelezen",
+    "kind": "strange",
+    "epilogue": "Sommige brieven erf je, net als oren.",
+    "hint": "Een zoutbrief leest zichzelf niet in een la."
+   },
+   "nr": 7
+  },
+  "10": {
+   "chapter": "Een einde",
+   "scene": "s01quay",
+   "tag": "Eén keer voorgelezen. Zout weg. Gehoord.",
+   "text": [
+    "Je leest hem hardop voor zolang het licht duurt. Het is een korte brief: het getij, de pannen, het warme eind van de bank, en één regel over de handen van haar moeder die je nooit zult herhalen. Agnes luistert met haar hele gezicht. Bij de laatste regel huilt ze, en jij, merk je, ook.",
+    "Het zout gaat zoals al het zout gaat. Tegen de tijd dat je haar over de kade naar huis brengt, is het vel zwart en zacht en leeg. Ze draagt het toch, klein opgevouwen. “Ik heb hem gehoord,” zegt ze bij haar deur. “Eén keer is veel. Moeder heeft nooit één keer gehad.”"
+   ],
+   "ending": {
+    "no": "III",
+    "title": "Eén keer, hardop",
+    "kind": "silver",
+    "epilogue": "Eén keer gehoord, voorgoed bewaard, van het papier verdwenen.",
+    "hint": "Een cartograaf schrijft over voor ze voorleest."
+   },
+   "nr": 9
+  },
+  "11": {
+   "chapter": "Een einde",
+   "scene": "s01cape",
+   "tag": "Overgeschreven. Voorgelezen. Beweend. Bewaard.",
+   "text": [
+    "Je schrijft hem eerst over, zoals je een kust overtekent, onderstreping en al. Dan lees je hem voor. Het is eb, staat er, en de pannen zijn wit; hij heeft elk boek in de haven sluitend gekregen, behalve het boek waar haar moeder in staat; dat wil maar niet sluiten, en hij heeft het opgegeven.",
+    "~ Agnes huilt, natuurlijk, en het zout loopt uit. Maar de woorden staan in je notitieboek, in inkt. Je scheurt de bladzijde eruit en geeft hem haar, en ze houdt hem tegen de ondergaande zon als een grootboek dat eindelijk sluit. Je haalt de koets van zeven uur met zout op allebei je manchetten."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "In het net",
+    "kind": "good",
+    "epilogue": "Het zout ging. De woorden bleven. Daar zijn kopieën voor.",
+    "hint": "Vraag hoe je zout leest, en luister naar het antwoord.",
+    "star": true
+   },
+   "nr": 3
+  }
+ }
+}

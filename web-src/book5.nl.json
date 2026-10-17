@@ -1,0 +1,1247 @@
+{
+ "id": "mirage-road",
+ "title": "De Luchtspiegelweg",
+ "series": "De Veyra-cyclus · Boek V",
+ "imprint": "Een Wayward-uitgave",
+ "tagline": "Veertig kamelen, één verzegelde kist en een kompas dat tegen iedereen liegt.",
+ "warning": "Lees dit boek niet van voor naar achter. Aan het eind van elke bladzijde beslis jij wat er gebeurt. Sommige keuzes leiden naar water. Andere lijken er alleen op.",
+ "start": 1,
+ "scenes": {
+  "kesh": {
+   "title": "De karavaanhof en de stadspoort van Kesh",
+   "focus": "50% 55%"
+  },
+  "dunes": {
+   "title": "Een duinkam op het middaguur",
+   "focus": "50% 55%"
+  },
+  "wellpost": {
+   "title": "Een stenen put met een gesneden paal",
+   "focus": "50% 55%"
+  },
+  "mirage": {
+   "title": "Een stad die ondersteboven in de lucht hangt",
+   "focus": "50% 55%"
+  },
+  "wagon": {
+   "title": "De kist op de wagen",
+   "focus": "50% 55%"
+  },
+  "starcamp": {
+   "title": "Nachtkamp onder de sterren",
+   "focus": "50% 55%"
+  },
+  "riders": {
+   "title": "Gesluierde ruiters op een kam",
+   "focus": "50% 55%"
+  },
+  "redwind": {
+   "title": "De Rode Wind",
+   "focus": "50% 55%"
+  },
+  "flats": {
+   "title": "De witte kleivlakte",
+   "focus": "50% 55%"
+  },
+  "caravanserai": {
+   "title": "De half bedolven karavanserai",
+   "focus": "50% 55%"
+  },
+  "arches": {
+   "title": "De door de wind uitgesleten bogen",
+   "focus": "50% 55%"
+  },
+  "ninthwell": {
+   "title": "Het putheiligdom van de ruiters",
+   "focus": "50% 55%"
+  },
+  "oasis": {
+   "title": "De palmen en muren van Tal Amira",
+   "focus": "50% 55%"
+  },
+  "sunrise": {
+   "title": "De laatste ochtend op de duinen",
+   "focus": "50% 55%"
+  },
+  "brokenpost": {
+   "title": "Well 4, the Broken Post, in hard midday light",
+   "focus": "50% 55%"
+  },
+  "starreturned": {
+   "title": "The Ninth Well at golden late afternoon",
+   "focus": "50% 55%"
+  },
+  "skyiron": {
+   "title": "Midday in the Ochre Waste beside the halted crate wagon",
+   "focus": "50% 55%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Put 1 · Kesh-Poort",
+   "scene": "kesh",
+   "tag": "Put 1. Zakken: 48. Kamelen: 40. Wind: geen.",
+   "text": [
+    "Veertig kamelen. Negen drijvers. Twee wagens. Eén kist, met ijzer beslagen, met lood verzegeld, aan alle vier de kanten gestencild met MACHINEONDERDELEN, voor het geval de woestijn niet kan lezen. De Brannock Handelscompagnie stuurt hem door de Okerwoestenij naar Tal Amira, en jou erbij, om de weg in kaart te brengen: de kortste, de rechtste, een weg voor een lijndienst.",
+    "Het probleem is dat de Woestenij loopt. Haar duinen schuiven een mijl per jaar op; in het voorjaar klopt geen kaart meer. Alleen de acht stenen putten blijven waar ze zijn. Bij de poort telt meneer Penhallow, de kwartiermeester, de kamelen twee keer. Sefa Oduya, de gids, telt niets. Ze kijkt naar de lucht alsof die haar geld schuldig is."
+   ],
+   "choices": [
+    {
+     "text": "Als je met meneer Penhallow op de kistwagen meerijdt en de peilingen doet, zoals in je contract staat,",
+     "short": "Rijd mee met Penhallow",
+     "to": 2
+    },
+    {
+     "text": "Als je vooraan loopt met Sefa, die in veertig jaar geen kompas heeft gebruikt,",
+     "short": "Loop met Sefa",
+     "to": 4
+    },
+    {
+     "text": "Als je eerst de poorttoren beklimt om de weg te zien,",
+     "short": "Beklim de poorttoren",
+     "to": 5
+    }
+   ],
+   "nr": 1
+  },
+  "2": {
+   "chapter": "Tussen de putten · De wagen",
+   "scene": "wagon",
+   "tag": "Dag 1. Koers: 112. Penhallow: zeker.",
+   "text": [
+    "Meneer Penhallow rijdt op de kist, en ’s nachts, vertelt hij, slaapt hij erop, als een kip op één reusachtig ei. Voor hem op de bok staat, cardanisch opgehangen in een koperen kastje, [[compass|het kompas van de Compagnie, zo gepoetst dat het beledigd kijkt]]. Elk uur leest hij het af en schrijft hij het getal in zijn grootboek. Een-een-twee. Een-een-twee. Een-een-twee.",
+    "“Een weg,” zegt hij, “is een rechte lijn met ambities.” Voor jullie uit is Sefa met de voorste kameel van de koers afgedwaald; ze buigt af naar het oosten, om redenen die alleen zij kent. De drijvers volgen haar, niet hem. Penhallow schrijft ook dat op."
+   ],
+   "choices": [
+    {
+     "text": "Als je de karavaan op zijn koers houdt; daarvoor ben je aangenomen,",
+     "short": "Hou de koers aan",
+     "to": 7
+    },
+    {
+     "text": "Als je van de wagen springt en Sefa’s bocht volgt,",
+     "short": "Volg Sefa",
+     "to": 8
+    },
+    {
+     "text": "Als je teruggaat naar Kesh en ontslag neemt; zand dat loopt, krijg je niet in kaart,",
+     "short": "Neem ontslag",
+     "to": 3
+    }
+   ],
+   "nr": 37
+  },
+  "3": {
+   "chapter": "Een einde",
+   "scene": "kesh",
+   "tag": "Kesh. Voorjaar. De duinen zijn weer verschoven.",
+   "text": [
+    "Je loopt terug naar Kesh, met je hoed in je hand. De stad is verrukt: nog nooit heeft iemand op de eerste ochtend ontslag genomen bij de Compagnie. Je krijgt een kamer boven de ververij en een eigen opdracht: breng de duinen van Kesh in kaart, die als oude dronkaards tegen de stadsmuur hangen en elke nacht een stukje opschuiven.",
+    "Je tekent ze elk voorjaar. Tegen de zomer klopt geen enkele kaart meer. De stad lijst ze toch in en hangt ze in de karavaanhof, één per jaar, als portretten van een lastig familielid. Ergens daarbuiten kwam een karavaan ergens aan, of niet. Je vraagt er nooit naar. Het staat niet op jouw kaart."
+   ],
+   "ending": {
+    "no": "I",
+    "title": "Elk voorjaar",
+    "kind": "strange",
+    "epilogue": "Je kaarten kloppen nooit. Ze zijn zeer geliefd.",
+    "hint": "De weg leert alleen wie hem loopt."
+   },
+   "nr": 26
+  },
+  "4": {
+   "chapter": "Tussen de putten · Sefa’s weg",
+   "scene": "dunes",
+   "tag": "Dag 1. Sefa’s koers: “Die kant op.”",
+   "text": [
+    "Je loopt naast Sefa de poort uit. In veertig jaar als gids op deze weg heeft ze nog nooit een peiling genomen. Ze peilt liever de lucht: de kleur van de duinhellingen, de nevel langs de kammen, hoe de hitte opstijgt. Haar voorste kameel heet Hertogin en gedraagt zich ernaar. Als de wind langs een grote duin in het zuiden glijdt, bromt die laag, als een koe in een verre stal.",
+    "“[[dunesong|De Oude Koe]],” zegt Sefa, zonder haar hoofd om te draaien. “Toen ik een meisje was, lag ze een mijl dichter bij Kesh. Wij allebei.” Dan buigt ze de karavaan af naar het oosten, weg van Penhallows koers, naar niets wat jij kunt zien."
+   ],
+   "choices": [
+    {
+     "text": "Als je haar bocht naar het oosten volgt, weg van de koers,",
+     "short": "Volg haar naar het oosten",
+     "to": 8
+    },
+    {
+     "text": "Als je teruggaat naar de wagen; je bent aangenomen voor peilingen, niet voor gebrom,",
+     "short": "Ga terug naar de wagen",
+     "to": 7
+    }
+   ],
+   "nr": 27
+  },
+  "5": {
+   "chapter": "Put 1 · De poorttoren",
+   "scene": "mirage",
+   "tag": "Dageraad. Kesh. Er hangt iets in de lucht.",
+   "text": [
+    "Vanaf de poorttoren is de Woestenij bij dageraad rood tot aan de rand van de wereld, en boven die rand hangt een stad. Torens, koepels, een rij palmen, alles ondersteboven, wortels in de lucht, trillend als [[mirage|een spiegelbeeld in een lepel]]. “Ochtendstad,” zegt de schildwacht geeuwend. “Komt op als het heet is. Water ligt, plaatsen hangen, zei mijn oma altijd.”",
+    "Beneden op het erf heeft Penhallow er een kompaspeiling op genomen, en die schrijft hij op. Sefa staat naast haar kameel met haar gezicht omhoog en haar ogen half dicht, alsof ze ernaar luistert."
+   ],
+   "choices": [
+    {
+     "text": "Als je naar beneden klimt en meerijdt met Penhallow, die nu een peiling op een luchtspiegeling heeft,",
+     "short": "Rijd mee met Penhallow",
+     "to": 2
+    },
+    {
+     "text": "Als je naar beneden klimt en met Sefa meeloopt,",
+     "short": "Loop met Sefa",
+     "to": 4
+    },
+    {
+     "text": "Als je er in je eentje tussenuit glipt, nu de stad nog in de lucht hangt,",
+     "short": "Ga de stad achterna",
+     "to": 50
+    }
+   ],
+   "nr": 14
+  },
+  "6": {
+   "chapter": "Een einde",
+   "scene": "mirage",
+   "tag": "Dag 9. Alleen. De stad: nog altijd vooruit.",
+   "text": [
+    "Je loopt door. De stad blijft precies waar ze is: voor je. Nog twee keer vinden de ruiters je, geven je zonder een woord water en wijzen je de weg terug. Je bedankt ze en loopt verder. Op de negende dag daalt de stad uit de lucht en draait ze zich om.",
+    "~ Het is niet Tal Amira. Het is een wit stadje aan de overkant van de Woestenij, dat nooit van de Brannock Handelscompagnie heeft gehoord en ook niet nieuwsgierig is. Je tekent het, met de goede kant boven. Niemand daar gelooft dat het ooit in iemands lucht heeft gehangen. Je blijft, voor het geval het nog eens gebeurt."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "De Ochtendstad",
+    "kind": "strange",
+    "epilogue": "Je volgde de lucht. Die wees ergens anders heen.",
+    "hint": "De lucht toont echte plaatsen, maar zegt niet welke."
+   },
+   "nr": 20
+  },
+  "7": {
+   "chapter": "Tussen de putten · De rechte lijn",
+   "scene": "dunes",
+   "tag": "Dag 2. Koers: 112. Kamelen: tegen.",
+   "text": [
+    "De koers gaat niet om duinen heen. Hij gaat eroverheen. Veertig kamelen beklimmen een heuvel van rood zand, glijden aan de andere kant omlaag en beklimmen de volgende, klagend in een toonhoogte die meestal voor de opera is. Penhallow zit op de wagen als een man op een vlot, kompas in de ene hand, grootboek in de andere. Een-een-twee.",
+    "Om twaalf uur verschijnen er ruiters op de kam in het noorden: een stuk of twaalf, gesluierd tot de ogen, doodstil. De drijvers pakken hun geweren. Penhallow schrijft “Ruiters: 12” en onderstreept het twee keer. Sefa stuurt een jongen met vier lege zakken naar het oosten, naar een put waarvan jij het bestaan niet kende."
+   ],
+   "choices": [
+    {
+     "text": "Als je de wagens voor de nacht in een kring zet en een wacht uitzet,",
+     "short": "Zet een wacht uit",
+     "to": 10
+    },
+    {
+     "text": "Als je bij het eerste licht de grote duin op klimt om te zien waar de koers heen loopt,",
+     "short": "Beklim de grote duin",
+     "to": 13
+    },
+    {
+     "text": "Als je in de schemering ongewapend naar de kam loopt,",
+     "short": "Loop naar de kam",
+     "to": 11
+    }
+   ],
+   "nr": 45
+  },
+  "8": {
+   "chapter": "Put 2 · Twee Palmen",
+   "scene": "wellpost",
+   "tag": "Put 2. Palmen: strikt genomen geen. Zakken: 44.",
+   "text": [
+    "De volgende ochtend bereik je Twee Palmen: twee palmstronken en een stenen put met een gesneden paal, waar de karavaan halt houdt om te drinken. Sefa legt je hand op de paal. “Lees jij hem maar,” zegt ze. “Mijn ogen zijn lui voor de middag.” Hij zit vol [[notches|kleine kerven, één voor elke oversteek]]. De laatste veertig zijn van dezelfde hand, diep en vierkant.",
+    "Op de kam zitten een stuk of twaalf ruiters op hun kamelen, gesluierd tot de ogen. De drijvers friemelen aan hun geweren. “Hoeveel?” vraagt Sefa, en ze knikt bij je antwoord alsof ze ze zelf heeft geteld. De volgende put, Oude Dorst, staat volgens Penhallows grootboek droog tot het voorjaar. Ze wil er toch heen. Vannacht."
+   ],
+   "choices": [
+    {
+     "text": "Als je in de schemering met lege handen naar de ruiters toe loopt,",
+     "short": "Ga naar de ruiters",
+     "to": 11
+    },
+    {
+     "text": "Als je de drijvers helpt de wagens in een kring te zetten,",
+     "short": "Sluit de kring",
+     "to": 10
+    },
+    {
+     "text": "Als je met Sefa de nachtweg naar Oude Dorst neemt,",
+     "short": "Neem de nachtweg",
+     "to": 14
+    }
+   ],
+   "nr": 6
+  },
+  "9": {
+   "chapter": "Een einde",
+   "scene": "dunes",
+   "tag": "Jaar één. Geen kaart. Veel sterren.",
+   "text": [
+    "Bij dageraad vertrek je met Sefa, haar kameel en twee zakken water, en niemand houdt je tegen. Jij wordt haar ogen; zij wordt jouw lucht. Een jaar lang trekken jullie kriskras door de Woestenij: welke duin bromt, welke nevel wind betekent, welke ster boven welke put staat. De Compagnie schrijft beleefd, daarna onbeleefd. Beide brieven branden goed.",
+    "Als je eindelijk naar huis gaat, heeft de hoofdstad geen horizon. Hoge huizen snijden de lucht in repen. Je kunt je eigen straat niet vinden. Je staat op hoeken met je gezicht omhoog, luisterend naar een duin, en krijgt twee keer een muntje toegestopt. Uiteindelijk vind je de weg op de geur van bakkerijen."
+   ],
+   "ending": {
+    "no": "III",
+    "title": "Zonder horizon",
+    "kind": "strange",
+    "epilogue": "Je vindt een put in driehonderd mijl zand. Je eigen voordeur niet.",
+    "hint": "Haar trots redden is niet hetzelfde als de weg redden."
+   },
+   "nr": 48
+  },
+  "10": {
+   "chapter": "Tussen de putten · Nachtwacht",
+   "scene": "starcamp",
+   "tag": "Nacht 2. Geweren: 9. Benno: vermist.",
+   "text": [
+    "De wagens staan in een kring, de kamelen knielen erbinnen en kreunen als oude meubels. Negen geweren wijzen naar het donker. Benno, de jongste drijver, ging in de schemering een weggelopen kameel achterna en is niet teruggekomen. Penhallow zit op de kist met een pistool, dat hij vasthoudt als een theekopje.",
+    "Om middernacht komt er een gestalte van de duin af, naar het kamp toe: lang, traag, met twee hoofden. Een kameel, en iemand die hem leidt. De geweren gaan tegelijk omhoog, met het geluid van een la die dichtschuift."
+   ],
+   "choices": [
+    {
+     "text": "Als je ze een waarschuwingsschot over de gestalte heen laat lossen,",
+     "short": "Los een waarschuwingsschot",
+     "to": 12
+    },
+    {
+     "text": "Als je erop af loopt, met een lantaarn en verder niets,",
+     "short": "Loop erop af",
+     "to": 11
+    },
+    {
+     "text": "Als je naast Penhallow op de kist klimt,",
+     "short": "Ga bij Penhallow zitten",
+     "to": 16
+    }
+   ],
+   "moment": {
+    "line": "De gestalte is halverwege de duin.",
+    "seconds": 10,
+    "default": 12,
+    "head": "Kies voordat het de wagens bereikt",
+    "sub": "Wacht je te lang, dan kiezen de geweren voor je.",
+    "defaultLabel": "DE KEUZE VAN DE GEWEREN",
+    "timeout": "De geweren kiezen voor je…"
+   },
+   "nr": 49
+  },
+  "11": {
+   "chapter": "Tussen de putten · Het vuur van de ruiters",
+   "scene": "riders",
+   "tag": "Nacht 2. Handen: leeg. Hart: luid.",
+   "text": [
+    "Je loopt de kam op met je handen waar het donker ze kan zien. Niemand komt je tegemoet. Boven zijn geen ruiters, alleen hun vuur, en op een platte steen ernaast ligt een volle waterzak, koud en beslagen. Beneden in het kamp wordt geroepen: een drijver die in de schemering verdwaalde, is teruggekomen met zijn kameel en kan niet zeggen wie hem de weg wees.",
+    "Bij het vuur zit een meisje van een jaar of twaalf dadels te eten. “Ik ben Ilyas,” zegt ze. “Ik handel.” Ze heeft [[buttons|een blikje knopen, geen twee hetzelfde]], en ze kijkt naar de jouwe. “Waarom slaapt de man met het boek op de kist?”"
+   ],
+   "choices": [
+    {
+     "text": "Als je haar een knoop geeft voor een dadel en teruggaat naar het kamp,",
+     "short": "Ruil een knoop",
+     "to": 14
+    },
+    {
+     "text": "Als je haar vraagt je mee te nemen naar haar mensen,",
+     "short": "Ga met haar mee",
+     "to": 15
+    },
+    {
+     "text": "Als je de volle waterzak naar Penhallows wagen brengt,",
+     "short": "Breng de zak terug",
+     "to": 16
+    }
+   ],
+   "nr": 16
+  },
+  "12": {
+   "chapter": "Een einde",
+   "scene": "starcamp",
+   "tag": "Nacht 2. Eén schot. Daarna nooit meer iets.",
+   "text": [
+    "Eén geweer knalt. Het schot gaat hoog, zoals beloofd. Op de duin valt de gestalte uiteen: de ene helft laat een teugel los en is gewoon weg, de andere helft is Benno, die bij dageraad binnenkomt met zijn kameel, wit als meel, en niet wil zeggen wie hem heeft teruggebracht.",
+    "Daarna brengt niemand nog iemand terug. De putten zijn weer gewoon putten: Oude Dorst droog, de Gebroken Paal bitter, de kammen leeg. Bij Put 4 sluit Penhallow zijn grootboek af en keert hij de karavaan naar Kesh. Het voorjaar daarop stuurt de Compagnie een grotere karavaan, met meer geweren. Jij zit er niet bij."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "Waarschuwingsschot",
+    "kind": "bad",
+    "epilogue": "Je hield ze op afstand. Dat was nou juist het probleem.",
+    "hint": "Niet alles wat uit het donker komt, komt voor jou."
+   },
+   "nr": 40
+  },
+  "13": {
+   "chapter": "Tussen de putten · De hoge duin",
+   "scene": "dunes",
+   "tag": "Dag 3. Hoogste duin tot nu. Knieën: protest.",
+   "text": [
+    "De grote duin kost je een uur en allebei je knieën. Vanaf de top ligt de Woestenij naar alle kanten rood, geribbeld als een dak. Achter je ligt heel gisteren, in het zand geschreven: [[tracks|veertig kamelen en twee wagens, in één lange lijn]]. Beneden zwaait Penhallow met zijn grootboek. Een-een-twee, de hele dag. Recht als een liniaal.",
+    "Hij is niet recht. Hij buigt, zacht en gestaag, naar links, als een rib. Aan het verre eind waait de wind hem al dicht, korrel voor korrel, zoals de Woestenij uiteindelijk iedereen corrigeert."
+   ],
+   "choices": [
+    {
+     "text": "Als je Penhallow zijn bocht laat zien,",
+     "short": "Laat het Penhallow zien",
+     "to": 17
+    },
+    {
+     "text": "Als je Sefa vertelt wat je zag,",
+     "short": "Vertel het Sefa",
+     "to": 14
+    },
+    {
+     "text": "Als je de lijn intekent als de Compagnieweg,",
+     "short": "Teken de weg in",
+     "to": 43
+    }
+   ],
+   "nr": 19
+  },
+  "14": {
+   "chapter": "Put 3 · Oude Dorst",
+   "scene": "wellpost",
+   "tag": "Put 3. Droog, zegt het grootboek. Zakken: 40.",
+   "text": [
+    "’s Nachts brengt Sefa de karavaan naar Oude Dorst, al staat die droog van de herfst tot het voorjaar. Het grootboek zegt het. Sefa zegt het. De put zegt het zelf ook, met een diepe stenen stem, als je er een kiezel in laat vallen. Maar het touw op de windas is nieuw, en zwaar, en als je het ophaalt, hangen er [[skins|twee volle waterzakken aan, dichtgebonden met een knoop die je niet kent]].",
+    "Het water is zo koud dat je tanden er pijn van doen. “Uitstekend,” zegt Penhallow, en hij noteert de put in zijn grootboek als bruikbaar. Sefa drinkt en zegt helemaal niets, wat bij Sefa een toespraak is."
+   ],
+   "choices": [
+    {
+     "text": "Als je alle zakken vult en doorgaat naar de Gebroken Paal,",
+     "short": "Ga door naar Put 4",
+     "to": 19
+    },
+    {
+     "text": "Als je vannacht bij de kistwagen waakt, voor het geval wie dit achterliet terugkomt,",
+     "short": "Waak bij de kist",
+     "to": 16
+    },
+    {
+     "text": "Als je het niet drinkt; niemand weet wie het heeft gevuld,",
+     "short": "Laat het water staan",
+     "to": 17
+    }
+   ],
+   "nr": 10
+  },
+  "15": {
+   "chapter": "Een einde",
+   "scene": "riders",
+   "tag": "Jaar één. Gesluierd. Putten gevuld: veel.",
+   "text": [
+    "Niemand zegt ja. Iemand geeft je een sluier, iemand anders een kameel met meningen, en daarmee is het geregeld. De ruiters leggen niets uit, en na een tijd hou je op met vragen. Je leert hun knopen. Je leert heel stil te zitten op een kam. ’s Nachts vul je droge putten voor vreemden en breng je verdwaalde drijvers thuis.",
+    "Eén keer zie je vanaf een kam een karavaan van de Compagnie beneden voorbijtrekken, met een kompas dat schittert op de wagen. Je gaat niet naar beneden. Je kaart van de Woestenij zit nu in je hoofd, waar kaarten volgens de ruiters thuishoren. Ze zijn goed voor je. Ze missen iets. Ze zeggen nooit wat."
+   ],
+   "ending": {
+    "no": "V",
+    "title": "De sluier",
+    "kind": "strange",
+    "epilogue": "Je werd een van de mensen die de kaart weglaat.",
+    "hint": "Met ze meerijden is iets anders dan voor ze rijden."
+   },
+   "nr": 7
+  },
+  "16": {
+   "chapter": "Tussen de putten · De naald",
+   "scene": "wagon",
+   "tag": "Nacht. Penhallow: slaapt. Kompas: wakker.",
+   "text": [
+    "Het kamp komt eindelijk tot rust. Penhallow is op de kist in slaap gevallen, zijn grootboek onder zijn wang. Ergens buiten het kamp brengt iemand een weggelopen kameel terug, heel zachtjes. Je pakt je eigen zakkompas om het met het zijne te vergelijken, en houdt op. Naast de wagen [[needle|helt je naald weg van het noorden]].",
+    "Je loopt om de wagen heen. De naald volgt de kist, zoals een hond een jaszak volgt waar iets in zit. Tien passen verder: weer noord. Dichtbij: de kist. Penhallow wordt wakker, ziet je en knippert. “IJzeren banden,” zegt hij. “Uiteraard.” Hij slaapt weer verder."
+   ],
+   "choices": [
+    {
+     "text": "Als je vraagt of je zijn peilingen sinds Kesh mag zien,",
+     "short": "Vraag om zijn grootboek",
+     "to": 17
+    },
+    {
+     "text": "Als je je kompas wegstopt en gaat slapen; ijzeren banden, uiteraard,",
+     "short": "Ga slapen",
+     "to": 19
+    },
+    {
+     "text": "Als je zijn kompas honderd pas verderop neemt en daar de koers afleest,",
+     "short": "Neem een zuivere peiling",
+     "to": 30
+    }
+   ],
+   "nr": 4
+  },
+  "17": {
+   "chapter": "Tussen de putten · Het grootboek",
+   "scene": "wagon",
+   "tag": "Dag 4. Zakken: 31. Correcties: groeiend.",
+   "text": [
+    "Penhallow antwoordt met zijn grootboek. Het is een prachtig ding: rood gelinieerd, zwart geïnkt, geen enkele vlek. Elke ochtend een koers naar Tal Amira, en daarnaast een kleine correctie “voor afdrijven”: [[ledger|één graad, twee, drie, vijf, acht]]. Elke correctie gaat dezelfde kant op. Elke correctie is met zorg genoteerd.",
+    "De kolom met water is net zo netjes, en korter. “Vanaf vandaag een halve zak per man,” zegt Penhallow. “Volgens het grootboek.” De drijvers kijken naar Sefa. Sefa kijkt naar de lucht, of naar waar de lucht zou moeten zijn, met haar hoofd schuin."
+   ],
+   "choices": [
+    {
+     "text": "Als je het water rantsoeneert volgens zijn grootboek, een halve zak per man,",
+     "short": "Rantsoeneer het water",
+     "to": 18
+    },
+    {
+     "text": "Als je zijn getallen naar Sefa brengt, en haar laat voorgaan,",
+     "short": "Breng ze naar Sefa",
+     "to": 19
+    },
+    {
+     "text": "Als je op de correcties vertrouwt; ze zijn heel netjes,",
+     "short": "Vertrouw de correcties",
+     "to": 43
+    }
+   ],
+   "nr": 24
+  },
+  "18": {
+   "chapter": "Een einde",
+   "scene": "starcamp",
+   "tag": "Put 4. Zakken: 24. Drijvers: 4.",
+   "text": [
+    "Een halve zak per man, afgemeten in Penhallows koperen beker. De drijvers drinken hem op en zeggen niets, wat erger is dan schreeuwen. Bij de Gebroken Paal is het water bitter. Die nacht lopen drie drijvers en veertien kamelen onder de sterren het kamp uit, terug zoals ze gekomen zijn, heel beleefd.",
+    "De volgende nacht gaan er nog twee. Penhallow noteert elk vertrek in het grootboek, correct. Op de zesde dag keert wat er over is van de karavaan naar Kesh, met meer water dan nodig en niemand om het op te drinken.",
+    "~ Het grootboek klopt tot op de laatste druppel."
+   ],
+   "ending": {
+    "no": "VI",
+    "title": "Volgens het grootboek",
+    "kind": "bad",
+    "epilogue": "Het water hield het uit. De drijvers niet.",
+    "hint": "Een grootboek telt de zakken, niet wie ze vult."
+   },
+   "nr": 15
+  },
+  "19": {
+   "chapter": "Put 4 · De Gebroken Paal",
+   "scene": "brokenpost",
+   "tag": "Put 4. Paal: gebroken. Water: bitter.",
+   "text": [
+    "Tegen de avond bereik je Put 4. De gesneden paal is er op kniehoogte afgeknapt, en niemand weet wanneer. Aan de voet ervan, half verdronken in het zand, staat een oudere paal: ijzer, met een koperen kap, het merkteken van een landmeter. Je veegt hem schoon. Initialen, en een regel die er met een mes in is gekrast: [[eddapost|E.M. Vertrouw hier geen peilingen.]]",
+    "Geen datum. Geen reden. Alleen de waarschuwing, en de initialen van de vrouw bij wie je in de leer bent geweest: ze leerde je bijna alles, en dit dus blijkbaar niet. Het water is bitter. De ruiters op de kam zijn dichterbij dan gisteren. Sefa zit te lang bij de put, met één hand op de gebroken paal."
+   ],
+   "choices": [
+    {
+     "text": "Als je vannacht bij de put je kamp opslaat, zoals Sefa wil,",
+     "short": "Sla je kamp op",
+     "to": 20
+    },
+    {
+     "text": "Als je in de koelte van de avond doorgaat, op de koers,",
+     "short": "Ga door op de koers",
+     "to": 22
+    },
+    {
+     "text": "Als je met een lege zak omhoog naar de ruiters klimt,",
+     "short": "Klim naar de ruiters",
+     "to": 44
+    }
+   ],
+   "nr": 30
+  },
+  "20": {
+   "chapter": "Put 4 · De scheerlijn",
+   "scene": "starcamp",
+   "tag": "Nacht 4. Scheerlijnen: 30. Sefa: één.",
+   "text": [
+    "In de schemering loopt Sefa recht tegen een scheerlijn op. Veertig jaar kampen, en ze loopt ertegenaan als een vreemde. Ze lacht en noemt het touw een dwaas. Later zie je hoe ze haar eigen kameel vindt door zijn gezicht te betasten. Penhallow ziet het ook. Hij zegt niets en schrijft lang.",
+    "Bij dageraad brengt hij je het blad: “Gids ongeschikt wegens gezichtsvermogen. Kwartiermeester neemt de richting over op kompas.” Daaronder een regel voor een getuige. Zijn hand trilt een beetje. “Het is waar,” zegt hij. “Toch?”"
+   ],
+   "choices": [
+    {
+     "text": "Als je tekent als getuige; het is waar, en hij is bang,",
+     "short": "Teken het verslag",
+     "to": 21
+    },
+    {
+     "text": "Als je hem zegt dat ze ogen heeft als een havik, en niets tekent,",
+     "short": "Lieg voor haar",
+     "to": 22
+    },
+    {
+     "text": "Als je Sefa vertelt wat hij heeft geschreven, en met haar vertrekt,",
+     "short": "Vertrek met Sefa",
+     "to": 9
+    }
+   ],
+   "nr": 25
+  },
+  "21": {
+   "chapter": "Een einde",
+   "scene": "dunes",
+   "tag": "Kompas voorop. Sefa achteraan.",
+   "text": [
+    "Je tekent. Penhallow neemt met zijn kompas de kop, en Sefa loopt achteraan tussen de reservekamelen, zonder een woord. Niemand vraagt haar iets. Op de derde dag worden de duinen grijs en houden ze op met brommen. De putten liggen waar ze liggen, en dat is niet hier.",
+    "Op de vijfde dag vinden de ruiters jullie en brengen ze de karavaan terug naar Kesh, kameel voor kameel, zonder dat iemand erom vraagt. Penhallows verslag wordt aanvaard. Sefa gidst nooit meer. Eén keer zie je haar op de markt haar gezicht naar de lucht draaien, en je loopt de andere kant op."
+   ],
+   "ending": {
+    "no": "VII",
+    "title": "Ongeschikt",
+    "kind": "bad",
+    "epilogue": "Je tekende voor de waarheid. Het was niet de hele.",
+    "hint": "Sommige waarheden vragen om een tweede paar ogen, niet om een handtekening."
+   },
+   "nr": 34
+  },
+  "22": {
+   "chapter": "Tussen de putten · De Rode Wind",
+   "scene": "redwind",
+   "tag": "Dag 5. Wind: rood. Lucht: afgelast.",
+   "text": [
+    "Put 4 is al uit het zicht, en Sefa loopt nog altijd voorop. Dan komt het, om twaalf uur, uit het zuiden: een muur in de kleur van baksteen, hoger dan alles, en hij loopt. De kamelen weten het het eerst. Ze knielen en keren hem hun rug toe zonder dat iemand het vraagt. De drijvers wikkelen hun gezicht in. Penhallow roept dat iedereen moet schuilen in de luwte van de kistwagen, het zwaarste ding op honderd mijl.",
+    "Sefa kijkt niet naar de muur. Ze heeft haar hoofd naar een grote duin in het westen gedraaid, en luistert. Over de kam rijden de ruiters snel, in een rij, allemaal dezelfde kant op."
+   ],
+   "choices": [
+    {
+     "text": "Als je schuilt in de luwte van de kistwagen, zoals Penhallow beveelt,",
+     "short": "Schuil bij de wagen",
+     "to": 24
+    },
+    {
+     "text": "Als je Sefa volgt, die naar de duin loopt die bromt,",
+     "short": "Volg Sefa",
+     "to": 25
+    },
+    {
+     "text": "Als je de ruiters volgt, over de kam,",
+     "short": "Volg de ruiters",
+     "to": 23
+    }
+   ],
+   "moment": {
+    "line": "De wind is nu een muur, en hij loopt.",
+    "seconds": 10,
+    "default": 24,
+    "head": "Kies voordat de wind er is",
+    "sub": "Wacht je te lang, dan kiest de wind voor je.",
+    "defaultLabel": "DE KEUZE VAN DE WIND",
+    "timeout": "De wind kiest voor je…"
+   },
+   "nr": 2
+  },
+  "23": {
+   "chapter": "Tussen de putten · De luwte van de ruiters",
+   "scene": "arches",
+   "tag": "Dag 5. In een boog. Buiten: rood.",
+   "text": [
+    "De ruiters rijden een rug van rode rots in en erdoorheen, een boog in die de wind zo glad heeft gesleten als een keel. Binnen is de storm alleen nog geluid. Hun kamelen knielen, en jij knielt mee. Iemand geeft je water. De hele middag bromt de boog één lage toon, terwijl de wind erop speelt.",
+    "Ilyas, een ruitermeisje van een jaar of twaalf, komt naast je zitten en telt zonder te vragen je knopen. “Waarom sjouw je een kist mee die je nooit openmaakt?” zegt ze. Niemand zegt dat ze stil moet zijn. Als de wind gaat liggen, kijken de ruiters je aan, en wachten."
+   ],
+   "choices": [
+    {
+     "text": "Als je teruggaat naar de karavaan zodra de wind gaat liggen,",
+     "short": "Terug naar de karavaan",
+     "to": 25
+    },
+    {
+     "text": "Als je vraagt of je bij de ruiters mag blijven,",
+     "short": "Blijf bij ze",
+     "to": 15
+    },
+    {
+     "text": "Als je Ilyas vraagt je de put van haar mensen te laten zien,",
+     "short": "Vraag naar hun put",
+     "to": 44
+    }
+   ],
+   "nr": 28
+  },
+  "24": {
+   "chapter": "Een einde",
+   "scene": "redwind",
+   "tag": "Dag 5. Beschutting: uitstekend. Even.",
+   "text": [
+    "De luwte van de wagen is twintig minuten lang volmaakt. Dan vindt het zand haar. In de luwte zet de wind neer wat hij meedraagt, en hij draagt heel veel mee. Je graaft. De wagen wordt een duin waar een wiel uit steekt, en jij wordt een deel van de duin.",
+    "In de schemering graven de ruiters jullie uit, allemaal, rood hoestend en levend. De kist komt niet boven. Die ligt ergens onder de nieuwe duin, die nu een mijl per jaar zal lopen, met machineonderdelen erin. Penhallow gaat erbovenop zitten en weigert te vertrekken. Je kaart zit er ook in."
+   ],
+   "ending": {
+    "no": "VIII",
+    "title": "De luwte",
+    "kind": "bad",
+    "epilogue": "Jij bleef uit de wind. De wind bleef niet uit jou.",
+    "hint": "In een rode wind loopt de luwte van iets zwaars het eerst vol."
+   },
+   "nr": 9
+  },
+  "25": {
+   "chapter": "Put 5 · Niet gevonden",
+   "scene": "dunes",
+   "tag": "Put 5. Niet gevonden. Zakken: 19.",
+   "text": [
+    "In de schemering gaat de wind liggen. Sefa heeft de karavaan door de storm geloodst, op het gebrom van de duin. De weg is weg. Put 5 ook: die hoort hier te zijn, en ligt ergens onder een duin die er eerst niet was. De karavaan staat tot de knieën in vers zand, hoestend. Je loopt langs de rij kamelen en klopt op de zakken: een doffe bons voor vol, een hol antwoord voor leeg. Negentien bonzen.",
+    "Penhallow houdt zijn kompas omhoog. “Het enige wat de wind niet kon verplaatsen.” Sefa draait haar gezicht naar het noorden, naar een witte vlakte die je nog net kunt zien, en zegt dat de lucht die kant op klopt. Op de kam trekt een rij ruiters langzaam naar het oosten, alsof ze graag gevolgd willen worden."
+   ],
+   "choices": [
+    {
+     "text": "Als je het kompas volgt; de wind kon het niet verplaatsen,",
+     "short": "Volg het kompas",
+     "to": 43
+    },
+    {
+     "text": "Als je Sefa volgt naar de witte vlakte,",
+     "short": "Volg Sefa",
+     "to": 26
+    },
+    {
+     "text": "Als je de rij ruiters volgt naar het oosten,",
+     "short": "Volg de ruiters",
+     "to": 44
+    }
+   ],
+   "nr": 13
+  },
+  "26": {
+   "chapter": "Tussen de putten · De witte vlakte",
+   "scene": "flats",
+   "tag": "Dag 6. Klei: wit. Hitte: persoonlijk.",
+   "text": [
+    "De kleivlakte is wit en hard als borden, en de hitte slaat er in golven vanaf. Vooruit, laag op de grond, ligt een meer: blauw, glanzend, precies waar de koers heen wijst. De drijvers heffen hun hoofd. En hoog in de noordelijke lucht hangt ondersteboven een gesneden putpaal met een palm ernaast, wortels in de lucht.",
+    "“Wat hangt er in de lucht?” vraagt Sefa. Je vertelt het haar. Ze glimlacht en zegt niets. Penhallow heeft zijn kompas al in de hand; de koers loopt dwars over de vlakte, recht op het water af."
+   ],
+   "choices": [
+    {
+     "text": "Als je op het meer afgaat; de drijvers draaien al bij,",
+     "short": "Ga op het meer af",
+     "to": 27
+    },
+    {
+     "text": "Als je de omgekeerde paal in de lucht volgt,",
+     "short": "Volg de paal",
+     "to": 28
+    },
+    {
+     "text": "Als je de koers rechtdoor aanhoudt,",
+     "short": "Hou de koers aan",
+     "to": 43
+    }
+   ],
+   "moment": {
+    "line": "De paal in de lucht begint te smelten.",
+    "seconds": 10,
+    "default": 43,
+    "head": "Kies voordat de luchtspiegeling smelt",
+    "sub": "Wacht je te lang, dan kiest de naald voor je.",
+    "defaultLabel": "DE KEUZE VAN DE NAALD",
+    "timeout": "De naald kiest voor je…"
+   },
+   "nr": 33
+  },
+  "27": {
+   "chapter": "Een einde",
+   "scene": "flats",
+   "tag": "Dag 7. Meer: vooruit. Nog steeds vooruit.",
+   "text": [
+    "Het meer blijft de hele middag vooruit liggen, blauw en geduldig: een mijl verderop, dan een mijl verderop, dan een mijl verderop. De kamelen geloven er eerder niet meer in dan de drijvers. Tegen de avond is het weg, en is er alleen nog witte klei, met de lange schaduwen van veertig kamelen die je graag even zouden spreken.",
+    "’s Nachts vinden de ruiters de karavaan en brengen ze haar terug naar de rand van de vlakte, naar een put die daar al die tijd lag. Penhallow schrijft: “Meer: niet gevonden.” De Compagnie besluit dat de Woestenij geen weg verdraagt. Je merkt dat je het eens bent met de Compagnie, en dat is een primeur."
+   ],
+   "ending": {
+    "no": "IX",
+    "title": "Water ligt",
+    "kind": "bad",
+    "epilogue": "Het leek de hele weg op water.",
+    "hint": "In de hitte liggen sommige dingen plat en staan andere op hun kop."
+   },
+   "nr": 44
+  },
+  "28": {
+   "chapter": "Put 6 · De karavanserai",
+   "scene": "caravanserai",
+   "tag": "Put 6. Dak: half. Muren: grotendeels.",
+   "text": [
+    "De karavaan slaat haar kamp op bij Put 6. De karavanserai daar is half bedolven: er zit een duin op de binnenplaats als een gast die niet weg wil. Zijn gesneden paal is de hoogste van de Woestenij; op hete ochtenden, zeggen de drijvers, hangt hij in de lucht boven de vlakte. Ernaast staat een nieuwe zwarte telegraafpaal, de eerste van een lijn die helemaal tot Tal Amira loopt.",
+    "Binnen ruikt het naar oude rook en nog oudere kamelen. Je heft een lantaarn naar de binnendeur. Daarboven, versleten maar duidelijk: [[carving|ruiters die knielen rond een zwarte steen op een sokkel, met een ster erboven gehakt]]. Penhallow vraagt al naar het telegraafhuisje."
+   ],
+   "choices": [
+    {
+     "text": "Als je meneer Lisle in Tal Amira om instructies telegrafeert,",
+     "short": "Telegrafeer meneer Lisle",
+     "to": 29
+    },
+    {
+     "text": "Als je vannacht met je mes naar de kistwagen gaat,",
+     "short": "Pak je mes",
+     "to": 31
+    },
+    {
+     "text": "Als je de telegraafpalen naar Tal Amira volgt, om er maar vanaf te zijn,",
+     "short": "Volg de palen",
+     "to": 38
+    }
+   ],
+   "nr": 47
+  },
+  "29": {
+   "chapter": "Put 6 · De draad",
+   "scene": "caravanserai",
+   "tag": "Put 6. Eén telegram. Betaald door Lisle.",
+   "text": [
+    "De telegrafist heeft koorts, een deken en een telegram dat al op je ligt te wachten, van meneer Corvin Lisle, de agent van de Compagnie in Tal Amira: [[telegram|VERZEGELD AFLEVEREN KOPER WACHT GEEN VERTRAGING LISLE]]. Meneer Lisle telegrafeert in hoofdletters en betaalt nooit voor een woord dat hij kan missen.",
+    "Penhallow leest over je schouder mee en gaat iets rechter staan. “Ziezo,” zegt hij. “Zie je wel.” Dat zie je niet helemaal. Buiten zoemt de draad in de wind, één lange toon. De telegrafist legt een vinger op zijn seinsleutel, wacht op je antwoord en hoest."
+   ],
+   "choices": [
+    {
+     "text": "Als je terugseint “Alles goed, vervolgen op koers” en naar bed gaat,",
+     "short": "Sein “alles goed” terug",
+     "to": 33
+    },
+    {
+     "text": "Als je vannacht toch naar de kistwagen gaat,",
+     "short": "Ga naar de kist",
+     "to": 31
+    }
+   ],
+   "nr": 43
+  },
+  "30": {
+   "chapter": "Een einde",
+   "scene": "oasis",
+   "tag": "Koers: zuiver. Weg: recht. Kammen: leeg.",
+   "text": [
+    "Honderd pas van de wagen vertelt het kompas de waarheid, en je schrijft die op. De karavaan legt de rest van de weg af in een lijn zo recht dat hij getrokken lijkt, en is een dag te vroeg in Tal Amira. Je kaart is volmaakt. Meneer Lisle, de agent van de Compagnie, laat hem inlijsten. De kist gaat per trein door naar de hoofdstad.",
+    "Het jaar daarop legt de Compagnie haar Weg aan: elke mijl een paal, een telegraaf, een vaste lijn. Het is de veiligste oversteek ter wereld. De ruiters staan niet meer op de kammen, en niemand laat nog water achter bij droge putten, want niemand heeft het meer nodig. De Weg is heel goed. Oude Dorst staat droog."
+   ],
+   "ending": {
+    "no": "X",
+    "title": "De Compagnieweg",
+    "kind": "bad",
+    "epilogue": "Een volmaakte weg. Niemand laat er water achter.",
+    "hint": "Wie de naald repareert, repareert alleen de naald."
+   },
+   "nr": 46
+  },
+  "31": {
+   "chapter": "Put 6 · Het zegel",
+   "scene": "caravanserai",
+   "tag": "Nacht 7. Zegel: lood. Mes: het jouwe.",
+   "text": [
+    "De kistwagen staat op het erf van de karavanserai. Het zegel is een dikke schijf lood met de leeuw van de Compagnie erin, met ijzerdraad door beide sluithaken. Penhallow zit in het telegraafhuisje een zorgvuldig telegram op te stellen; hij is een zorgvuldig schrijver. Je hebt misschien tien minuten. Je mes ligt in je hand. Je weet niet meer wanneer je het hebt gepakt.",
+    "Op het stencil staat MACHINEONDERDELEN. De nacht zegt niets. Boven op de muur zit een ruiter tegen de sterren, die zich niet verstopt en het erf in de gaten houdt."
+   ],
+   "choices": [
+    {
+     "text": "Als je Penhallow haalt en het zegel voor zijn ogen doorsnijdt,",
+     "short": "Snijd het voor zijn ogen",
+     "to": 32
+    },
+    {
+     "text": "Als je het zegel nu doorsnijdt, nu Penhallow bezig is,",
+     "short": "Snijd het nu door",
+     "to": 34
+    },
+    {
+     "text": "Als je het mes wegstopt; een zegel is een belofte,",
+     "short": "Stop het mes weg",
+     "to": 38
+    }
+   ],
+   "nr": 22
+  },
+  "32": {
+   "chapter": "Tussen de putten · Machineonderdelen",
+   "scene": "skyiron",
+   "tag": "Zegel: doorgesneden. Inhoud: niet zoals gestencild.",
+   "text": [
+    "Het deksel is eraf. Onder het stro zitten geen machineonderdelen. Er ligt [[star|een steen zo groot als een slapend schaap, zwart en vol putjes als een verbrand brood]], koud om aan te raken. Penhallow staat naast je, zijn grootboek tegen zijn borst geklemd. Op de bok is zijn koperen kompas omgedraaid. Het wijst naar de steen.",
+    "Hij tilt het kompas eruit en loopt ermee weg: tien passen, twintig. De naald zwaait terug naar het noorden. Hij loopt terug. Ze zwaait naar de steen. Dat doet hij vier keer, heel zorgvuldig.",
+    "~ Dan gaat hij in het zand zitten en slaat het grootboek open bij Kesh."
+   ],
+   "choices": [
+    {
+     "text": "Als je de wagen bij het eerste licht naar de ruiters brengt,",
+     "short": "Breng hem naar de ruiters",
+     "to": 35
+    },
+    {
+     "text": "Als je het deksel dichtspijkert en Sefa jullie verder laat brengen op de lucht,",
+     "short": "Spijker hem dicht",
+     "to": 36
+    },
+    {
+     "text": "Als je voortaan je peilingen op honderd pas afstand neemt; nu weet je het tenminste,",
+     "short": "Corrigeer de peilingen",
+     "to": 30
+    }
+   ],
+   "nr": 41
+  },
+  "33": {
+   "chapter": "Een einde",
+   "scene": "oasis",
+   "tag": "De hoofdstad. Zaal 9. Kompassen: in de war.",
+   "text": [
+    "De kist blijft dicht, helemaal tot Tal Amira. Daar wordt ervoor getekend, zes mannen en een kraan tillen hem op een trein, en jij wordt betaald. Een jaar later kom je hem in de hoofdstad weer tegen: een zwarte steen zo groot als een schaap, in een vitrine in Zaal 9, met een bordje: “Hemelijzer, Okerwoestenij. Verworven.”",
+    "Elk kompas in het museum wijst ernaar. Bezoekers lopen in trage kringetjes door de zaal, en de suppoosten hebben met krijt pijlen naar de uitgang op de vloer gezet. Eens per jaar staat er een gesluierde vreemdeling een hele middag voor de vitrine, en vertrekt zonder een woord. Niemand kan iets vinden in Zaal 9."
+   ],
+   "ending": {
+    "no": "XI",
+    "title": "Vitrine",
+    "kind": "strange",
+    "epilogue": "Hij wijst nog steeds de weg. De weg is Zaal 9.",
+    "hint": "Iets waar iedereen op koerst, hoort zelden in een vitrine."
+   },
+   "nr": 29
+  },
+  "34": {
+   "chapter": "Put 6 · Tien minuten",
+   "scene": "caravanserai",
+   "tag": "Nacht 7. Tien minuten. Nu negen.",
+   "text": [
+    "Het lood gaat open als kaas. Onder het deksel, onder het stro, ligt een zwarte steen zo groot als een slapend schaap, vol putjes als een verbrand brood, koud als de bodem van een put. Het kompas in je borstzak draait zich naar hem toe, om te kijken.",
+    "~ Op de muur is de ruiter opgestaan.",
+    "Dan staan er meer in de poort, stiller dan het zand: vier ruiters, touwen, een slee. Ilyas, het ruitermeisje, is erbij. Ze kijkt naar de steen, dan naar jou, en vraagt voor één keer helemaal niets. In het telegraafhuisje zit Penhallow nog te schrijven."
+   ],
+   "choices": [
+    {
+     "text": "Als je ze hem nu laat meenemen en het deksel weer dichtspijkert,",
+     "short": "Laat ze hem meenemen",
+     "to": 39
+    },
+    {
+     "text": "Als je ze terugwenkt en het Penhallow laat zien als hij komt,",
+     "short": "Wacht op Penhallow",
+     "to": 32
+    },
+    {
+     "text": "Als je ze terugwenkt, het deksel dichtspijkert en het niemand vertelt,",
+     "short": "Vertel het niemand",
+     "to": 33
+    }
+   ],
+   "nr": 32
+  },
+  "35": {
+   "chapter": "Tussen de putten · De bogen",
+   "scene": "arches",
+   "tag": "Dag 8. Ruiters: 40. Bogen: zingend.",
+   "text": [
+    "Bij het eerste licht leid je de kistwagen naar de kam, en de ruiters komen naar beneden om hem tegemoet te gaan: veertig, gesluierd, zonder haast. Ze raken de kist niet aan. Ze geven de drijvers water en buigen af naar het zuiden, een land in van rode stenen bogen die brommen als de wind erdoorheen gaat.",
+    "Sefa loopt voorop, op het gehoor. “Die daar is een hoge toon. Links ervan.” Ze vergist zich niet. Achter haar loopt Penhallow naast de wagen, lijkbleek, met zijn kompas in de hand, dat steeds naar de kist blijft kijken. “Ze zullen me ontslaan,” zegt hij mild, “in Tal Amira.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je doorgaat naar de put van de ruiters, Penhallow en al,",
+     "short": "Ga samen verder",
+     "to": 37
+    },
+    {
+     "text": "Als je de ruiters de steen alleen verder laat brengen, en Penhallow de rest bespaart,",
+     "short": "Spaar Penhallow",
+     "to": 39
+    }
+   ],
+   "nr": 12
+  },
+  "36": {
+   "chapter": "Een einde",
+   "scene": "wellpost",
+   "tag": "Put 8. Tal Amira. Sefa: blijft.",
+   "text": [
+    "Sefa heeft jullie binnengebracht op de lucht, de laatste drie dagen alleen op het geluid, en pas bij de poort begrijp je hoe alleen. Bij Put 8, buiten Tal Amira, gaat ze op de rand van de put zitten en legt ze haar hand op de paal. “Hier stop ik,” zegt ze. “Lees jij hem maar.” Je leest haar de kerven voor, één voor elke oversteek. Veertig zijn van haar.",
+    "Er wordt voor de kist getekend; zes mannen en een kraan sturen hem naar de hoofdstad. Je wordt betaald. Je kaart is goed. In de schemering ga je terug naar de put. Ze zit er nog, met haar gezicht naar de Woestenij, luisterend naar een lucht die ze niet meer kan zien.",
+    "~ Je blijft bij haar tot het alleen nog sterren is."
+   ],
+   "ending": {
+    "no": "XII",
+    "title": "De laatste put",
+    "kind": "silver",
+    "epilogue": "Ze bracht je helemaal binnen. Toen stopte ze.",
+    "hint": "Aankomen is niet hetzelfde als iets thuisbrengen."
+   },
+   "nr": 38
+  },
+  "37": {
+   "chapter": "Put 9 · De sokkel",
+   "scene": "starreturned",
+   "tag": "Put 9. Op geen kaart. Touwen: 4.",
+   "text": [
+    "De Negende Put, die van de ruiters, ligt in een kom tussen de bogen, omringd door oude gesneden palen. In het midden staat een sokkel, glad gesleten in de vorm van iets wat ontbreekt. De ruiters doen hun sluiers af. Het zijn gewoon mensen: moe, verbrand, voorzichtig. Er gaan vier touwen om de steen. Jij pakt er een, en na een ogenblik Penhallow ook.",
+    "De steen zakt langzaam op de sokkel en past zoals een voet in een oude schoen. Penhallows kompas zwaait ernaartoe en blijft staan. Hij kijkt ernaar en steekt het dan in zijn zak. Ilyas, het ruitermeisje, huilt en doet alsof ze er boos om is. De ruiters vullen elke zak die je hebt."
+   ],
+   "choices": [
+    {
+     "text": "Als je de ruiters jullie allemaal naar Tal Amira laat brengen,",
+     "short": "Rijd naar Tal Amira",
+     "to": 41
+    },
+    {
+     "text": "Als je stiekem een splinter van de steen bikt, voor geluk,",
+     "short": "Neem een splinter",
+     "to": 45
+    }
+   ],
+   "nr": 39
+  },
+  "38": {
+   "chapter": "Tussen de putten · Het laatste kamp",
+   "scene": "starcamp",
+   "tag": "Nacht 9. Tal Amira: lichtjes. Zakken: 12.",
+   "text": [
+    "Twee nachten later is het zegel nog heel. Het laatste kamp voor Tal Amira. De lichtjes van de stad staan aan de horizon, of een afbeelding ervan; je kunt het niet meer zeggen. De telegraafpalen staan langs de weg als mannen die op hun loon wachten. Penhallow slaapt op de kist, één hand plat op het zegel, als iemand die een boek openhoudt. Sefa zit apart, met haar gezicht naar het donker.",
+    "Ilyas, het ruitermeisje, komt uit het niets binnenlopen om te handelen, alsof het marktdag is. Ze geeft je drie dadels voor een knoop en gaat dan bij de kistwagen zitten, er heel dichtbij, en kijkt ernaar, en naar jou, en wacht."
+   ],
+   "choices": [
+    {
+     "text": "Als je bij Sefa gaat zitten, die luistert naar iets wat jij niet hoort,",
+     "short": "Ga bij Sefa zitten",
+     "to": 36
+    },
+    {
+     "text": "Als je het meisje naar huis stuurt voordat Penhallow wakker wordt en haar ziet,",
+     "short": "Stuur haar naar huis",
+     "to": 33
+    },
+    {
+     "text": "Als je Ilyas laat zien wat je zakkompas doet naast de kist,",
+     "short": "Laat haar de naald zien",
+     "to": 40,
+     "hidden": true,
+     "needs": {
+      "seen": [
+       14,
+       16
+      ]
+     }
+    }
+   ],
+   "nr": 35
+  },
+  "39": {
+   "chapter": "Een einde",
+   "scene": "oasis",
+   "tag": "Tal Amira. Eén kist. Stro.",
+   "text": [
+    "De steen gaat zonder jou naar huis; de put van de ruiters zie je nooit. In Tal Amira staat Penhallow voor meneer Lisle, de agent van de Compagnie, met zijn grootboek en een kist vol stro, en zegt dat het zijn schuld is. Het zegel was aan hem toevertrouwd, en hij sliep, of was elders, of vroeg niets. Hij kijkt je niet één keer aan.",
+    "Met het avondtelegram wordt hij ontslagen. Een maand later vindt een pakje je: zijn koperen kompas, gewikkeld in een blad uit het grootboek.",
+    "~ Op het blad, in zijn prachtige handschrift: “Wijst nu naar het noorden. Dacht dat je dat graag zou weten. A.P.”"
+   ],
+   "ending": {
+    "no": "XIII",
+    "title": "In jouw plaats",
+    "kind": "silver",
+    "epilogue": "De steen ging naar huis. Meneer Penhallow niet.",
+    "hint": "Neem iedereen mee, de hele weg."
+   },
+   "nr": 5
+  },
+  "40": {
+   "chapter": "Tussen de putten · Bodemplanken",
+   "scene": "starcamp",
+   "tag": "Nacht 9. Schroeven: 24. Penhallow: snurkt.",
+   "text": [
+    "Je houdt je kompas naast de kist. De naald helt, en helt. Ilyas kijkt ernaar zoals een jager naar een staande hond kijkt. Dan fluit ze, één keer, laag. Tegen de tijd dat de maan ondergaat, staan er ruiters bij de wagen met een slee en een zak stenen, en slaapt Penhallow nog altijd op het zegel.",
+    "Niemand raakt het deksel aan. Je ligt onder de wagen en draait de schroeven eruit, eerst die van de wagenbodem, dan die van de kist, vierentwintig, een voor een. De steen zakt in acht paar handen, zwart, zo groot als een slapend schaap. De stenen gaan omhoog. De planken gaan terug. Ilyas houdt de schroeven vast en telt ze, fluisterend."
+   ],
+   "choices": [
+    {
+     "text": "Als je de laatste schroef vastdraait en naast de wagen gaat slapen,",
+     "short": "Ga slapen",
+     "to": 49
+    },
+    {
+     "text": "Als je voor de laatste plank nog een briefje met uitleg voor meneer Lisle naar binnen schuift,",
+     "short": "Laat een briefje achter",
+     "to": 46
+    }
+   ],
+   "nr": 21
+  },
+  "41": {
+   "chapter": "Put 8 · Tal Amira",
+   "scene": "oasis",
+   "tag": "Put 8. Kamelen: 40. Drijvers: 9. Verloren: 0.",
+   "text": [
+    "Om twaalf uur brengen de ruiters de karavaan binnen tussen de palmen, en de hele stad klimt op de muren om te kijken: veertig kamelen, negen drijvers, twee wagens, niemand verloren. Penhallow heeft onderweg zijn verslag geschreven, in zijn mooiste hand. Meneer Lisle, de agent van de Compagnie, leest het op zijn kantoor, twee keer, langzaam, zonder te gaan zitten.",
+    "Dan steekt hij zijn hand uit. “De kaart,” zegt hij. “De kaart is in elk geval eigendom van de Compagnie.” Hij wil er drie keer je honorarium voor betalen, vandaag nog, in goud. Buiten geven de drijvers de kamelen water, en Sefa staat bij de poortput met haar hand op de paal."
+   ],
+   "choices": [
+    {
+     "text": "Als je meneer Lisle de kaart geeft; de Compagnie heeft ervoor betaald,",
+     "short": "Geef hem de kaart",
+     "to": 47
+    },
+    {
+     "text": "Als je de kaart aan Sefa’s drijvers geeft, en de Compagnie laat procederen,",
+     "short": "Geef hem aan de drijvers",
+     "to": 48
+    }
+   ],
+   "nr": 8
+  },
+  "42": {
+   "chapter": "Een einde",
+   "scene": "dunes",
+   "tag": "Geen put. Sporen gevonden. Van ons.",
+   "text": [
+    "Je houdt de koers aan, nog twee dagen. Een-een-twee. Op de tweede dag kruis je om twaalf uur verse sporen, veertig kamelen en twee wagens, en de drijvers juichen een volle minuut voordat de jongste van hen opmerkt van wie ze zijn.",
+    "~ Daarna juicht niemand meer.",
+    "In de schemering vinden de ruiters jullie en brengen ze jullie zonder een woord terug naar Kesh, de lange weg, langs de putten. De Compagnie blaast de weg af. Penhallow houdt het grootboek. Jij houdt je kaart, die prachtig nauwkeurig is en bijna helemaal rond."
+   ],
+   "ending": {
+    "no": "XIV",
+    "title": "Je eigen sporen",
+    "kind": "bad",
+    "epilogue": "Je bracht de Compagnieweg in kaart. Het is een cirkel.",
+    "hint": "Als de weg je tegemoetkomt, vertrouw dan niet langer wat je stuurde."
+   },
+   "nr": 23
+  },
+  "43": {
+   "chapter": "Geen put · De dode duinen",
+   "scene": "dunes",
+   "tag": "Geen put. Zakken: 6. Koers: 112.",
+   "text": [
+    "Dagenlang volg je het kompas. De duinen zijn hier grijs, niet rood, en ze brommen niet. Er groeit niets. Er heeft hier lang niets gelopen, zelfs de wind niet, zo lijkt het. De zakken hangen bijna plat. Penhallows kompas zegt nog steeds een-een-twee, en volgens zijn grootboek ligt Tal Amira twee dagen vooruit, en dat zegt het al twee dagen.",
+    "Op de kam zitten de ruiters in een lange rij op hun kamelen en kijken naar de karavaan zoals je kijkt naar een kind dat op een vijver afloopt. De kistwagen kreunt in het mulle zand. De kamelen zijn het zat om machineonderdelen te trekken."
+   ],
+   "choices": [
+    {
+     "text": "Als je de koers aanhoudt; Tal Amira kan niet ver meer zijn,",
+     "short": "Hou de koers aan",
+     "to": 42
+    },
+    {
+     "text": "Als je met een lege zak omhoog naar de ruiters loopt,",
+     "short": "Loop naar de ruiters",
+     "to": 44
+    },
+    {
+     "text": "Als je de kist hier en nu openbreekt, om de wagen lichter te maken,",
+     "short": "Breek de kist open",
+     "to": 32
+    }
+   ],
+   "nr": 3
+  },
+  "44": {
+   "chapter": "Put 9 · De lege sokkel",
+   "scene": "ninthwell",
+   "tag": "Put 9. Op geen kaart. Water: ja.",
+   "text": [
+    "Zonder een woord nemen de ruiters je mee de rotsen in, omlaag naar een kom die je nooit zelf had gevonden, omringd door oude gesneden palen. Een put: een negende, op geen enkele kaart. Ze laten jou eerst drinken.",
+    "~ Midden in de kom staat [[plinth|een stenen sokkel, glad gesleten in de vorm van iets wat er niet is]].",
+    "Wielsporen, half vol zand, lopen de kom uit, richting Kesh. Elke ochtend, zegt een ruitermeisje dat Ilyas heet, veegt iemand de sokkel, al ligt er niets op om te vegen. Bij zonsondergang zadelen de ruiters op, en kijken ze je aan, en wachten."
+   ],
+   "choices": [
+    {
+     "text": "Als je je door ze laat terugbrengen naar de karavaan,",
+     "short": "Terug naar de karavaan",
+     "to": 28
+    },
+    {
+     "text": "Als je vraagt of je bij ze mag blijven,",
+     "short": "Vraag om te blijven",
+     "to": 15
+    }
+   ],
+   "nr": 17
+  },
+  "45": {
+   "chapter": "Een einde",
+   "scene": "ninthwell",
+   "tag": "Voortaan. Noord: in je zak.",
+   "text": [
+    "Hij komt los met een zacht klikje: een zwarte splinter, niet langer dan een vingernagel. Niemand houdt je tegen. Ilyas ziet het, kijkt je lang aan en kijkt dan weg, en dat is erger dan alles wat ze had kunnen zeggen. De ruiters brengen de karavaan verder naar Tal Amira. Niemand heeft het er ooit nog over.",
+    "Vanaf die dag wijst elk kompas dat je bezit naar je jaszak. Je kunt nooit meer een peiling nemen. Je wordt behoorlijk beroemd om je kaarten zonder noorden, die de critici gedurfd noemen. Je bewaart de splinter in een luciferdoosje. Je zou hem terug kunnen sturen. Elk jaar doe je het bijna."
+   ],
+   "ending": {
+    "no": "XV",
+    "title": "Noord op zak",
+    "kind": "strange",
+    "epilogue": "Het noorden is waar jij bent. Dat is eenzamer dan het klinkt.",
+    "hint": "Geef alles terug, ook het stukje dat in een zak past."
+   },
+   "nr": 42
+  },
+  "46": {
+   "chapter": "Een einde",
+   "scene": "wagon",
+   "tag": "De hoofdstad. Eén kist. Veertig stenen.",
+   "text": [
+    "In de hoofdstad, voor het bestuur van het museum, maakt meneer Lisle de kist zelf open, met een korte toespraak. Erin liggen veertig stenen goede woestijnballast, en jouw briefje, dat begint met “Geachte meneer Lisle” en dan helaas vier kantjes doorgaat, met uitleg over alles.",
+    "Na een lange stilte stelt het museum de kist toch tentoon, stenen, briefje en al: “Een opmerkelijk staaltje woestijnbedrog.” Het is zeer geliefd. De Compagnie stuurt mannen naar Kesh om vragen te stellen, die daar niemand beantwoordt. Je wordt nooit meer aangenomen. Je briefje is het beroemdste wat je ooit zult schrijven."
+   ],
+   "ending": {
+    "no": "XVI",
+    "title": "Bewijsstuk B",
+    "kind": "strange",
+    "epilogue": "Je bekendste werk is een briefje in een kist stenen.",
+    "hint": "Een goed geheim heeft geen handtekening nodig."
+   },
+   "nr": 18
+  },
+  "47": {
+   "chapter": "Een einde",
+   "scene": "oasis",
+   "tag": "Tal Amira. Honorarium: driedubbel. Kaart: op slot.",
+   "text": [
+    "Meneer Lisle betaalt in goud, telt het twee keer en rolt de kaart uit. Hij bestudeert hem lang: de putten, de namen van de duinen, welke luchtspiegeling waar hangt, de sterren boven elke put. Geen enkele peiling. “Opmerkelijk,” zegt hij, en hij sluit hem op in de onderste la van zijn bureau en hangt de sleutel aan zijn horlogeketting.",
+    "De Compagnie legt haar weg nooit aan. De ruiters houden hun kammen; de steen houdt zijn sokkel. Niemand ziet de kaart ooit nog. Sefa gidst nog twee seizoenen uit haar geheugen, daarna niet meer, en de volgende gids leert de lucht vanaf niets, op de langzame manier.",
+    "~ Het staat allemaal opgeschreven, in een la."
+   ],
+   "ending": {
+    "no": "XVII",
+    "title": "De la",
+    "kind": "silver",
+    "epilogue": "De beste kaart van de Woestenij ligt in een la. De sleutel hangt aan een horlogeketting.",
+    "hint": "Vraag wie de kaart nodig heeft, niet wie ervoor betaalde."
+   },
+   "nr": 50
+  },
+  "48": {
+   "chapter": "Een einde",
+   "scene": "oasis",
+   "tag": "Tal Amira. Peilingen: geen. Kamelen verloren: geen.",
+   "text": [
+    "Je geeft de kaart aan de drijvers. Meneer Lisle dreigt met een proces; de ruiters blijven op hun kamelen voor zijn kantoor staan tot hij ophoudt. Penhallow houdt zijn betrekking: nog nooit heeft iemand veertig kamelen levend door de Woestenij gebracht, en het bestuur wil een handboek. Hij begint er die avond aan. “1. Vertrouw geen peilingen.”",
+    "Op je kaart staan de putten, de namen van de duinen, welke luchtspiegeling waar hangt, en de sterren, met een speld door het papier geprikt. Sefa houdt hem tegen de zon en strijkt er met haar duim overheen, put voor put. Nergens één peiling.",
+    "~ Ze zegt dat het de eerste kaart is die ze ooit heeft kunnen lezen."
+   ],
+   "ending": {
+    "no": "XVIII",
+    "title": "Geen peilingen",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Geen enkele peiling erop. Geen enkele kameel verloren.",
+    "hint": "Het zuiverste instrument van de Woestenij was nooit van koper."
+   },
+   "nr": 36
+  },
+  "49": {
+   "chapter": "Een einde",
+   "scene": "sunrise",
+   "tag": "Laatste ochtend. Zegel: heel. Steen: thuis.",
+   "text": [
+    "Bij zonsopgang wordt Penhallow wakker op de kist, controleert het zegel, vindt het volmaakt en klopt op het deksel als op de hals van een braaf paard. De kammen zijn leeg. De steen is inmiddels een nacht rijden naar het zuiden, op weg naar huis op een slee. Ilyas heeft je laatste knoop. Jij hebt een schroevendraaier in je laars en verder niets aan te geven.",
+    "In Tal Amira tekent meneer Lisle voor één kist, verzegeld, en stuurt hem door naar de hoofdstad, waar een museum hem zal openen in het bijzijn van belangrijke mensen. Penhallow schrijft de laatste regel in zijn grootboek, in zijn mooiste hand: “Verzegeld afgeleverd.”",
+    "~ Elk woord ervan is waar."
+   ],
+   "ending": {
+    "no": "XIX",
+    "title": "Verzegeld afgeleverd",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Verzegeld afgeleverd. Elk woord waar.",
+    "hint": "Een zegel belooft alleen iets over het deksel."
+   },
+   "nr": 11
+  },
+  "50": {
+   "chapter": "Put 1 · De Ochtendstad",
+   "scene": "mirage",
+   "tag": "Dag 1. Alleen. De stad: wijkend.",
+   "text": [
+    "Je glipt de poort uit voordat iemand je kan tellen. De stad hangt voor je, ondersteboven, palmen en al, en je loopt er een uur op af, dan twee. Ze komt niet dichterbij. Om twaalf uur smelt ze, en laat ze je alleen achter in een heleboel rood zand dat er overal hetzelfde uitziet.",
+    "Op de kam boven je zit een ruiter op een kameel, gesluierd, en kijkt. Na een tijdje keert de ruiter de kameel zonder een woord en gaat stapvoets op weg, en kijkt één keer om, alsof je misschien mee wilt. Achter je, zo ver je kunt kijken, is helemaal geen karavaan."
+   ],
+   "choices": [
+    {
+     "text": "Als je de ruiter volgt,",
+     "short": "Volg de ruiter",
+     "to": 8
+    },
+    {
+     "text": "Als je doorloopt; de stad flitste daar net nog even terug,",
+     "short": "Loop door",
+     "to": 6
+    }
+   ],
+   "nr": 31
+  }
+ }
+}
