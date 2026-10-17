@@ -83,6 +83,7 @@ const shelf = (p) => p.evaluate(() => [...document.querySelectorAll('.shelf .boo
     // 1.2.1: tap the chest itself to open it (force the card reward: a real card that lands in the album)
     await p.evaluate(() => document.querySelector('.chest-row.ready').click()); await p.waitForTimeout(700);
     // 1.2.1 (17-10): the painted chest, closed and open, is in the app and loads
+    ok(`${tag} 3D rewards (key, bookmark, ending coin) are in the app`, await p.evaluate(() => !!window.WaywardReward3D && ['key', 'bmark', 'end'].every(k => window.WaywardReward3D.kinds.indexOf(k) > -1)));
     ok(`${tag} painted chest pictures load`, await p.evaluate(() => { const i = [...document.querySelectorAll('#chestBtn .ch-img')]; return i.length === 2 && i.every(x => x.complete && x.naturalWidth > 0); }));
     await p.evaluate(() => { window.__rnd = Math.random; Math.random = () => 0.65; }); await p.click('#chestBtn'); await p.waitForTimeout(2800);
     await p.evaluate(() => { Math.random = window.__rnd; });

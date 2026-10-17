@@ -100,7 +100,10 @@
 
   var App = null, ent = null, built = false;
   function urlFlag() { return /(^|[?&])shop=1(&|$)/.test(location.search); }
-  function devFlag() { try { return localStorage.getItem(DEV_KEY) === '1'; } catch (e) { return false; } }
+  // 17-10 (Manuel did not see the daily chest): the test version previews the app, so the shop is on by default there
+  // (switch it off with the hidden switch: credits title, five taps). The test harness hosts keep the old default (off).
+  var TEST_HOST = location.protocol === 'file:' || /(^|\.)wayward\.test$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
+  function devFlag() { var v = null; try { v = localStorage.getItem(DEV_KEY); } catch (e) {} return v === '1' || (v !== '0' && !TEST_HOST); }
   function enabled() { return window.WAYWARD_SHOP === true || urlFlag() || devFlag(); } // WAYWARD_SHOP: set by the app build (store.js), W27 A
   function lang() { return App ? App.lang() : 'en'; }
   function tt(k, v) { var s = (STR[lang()] && STR[lang()][k] != null) ? STR[lang()][k] : STR.en[k]; if (v) s = s.replace(/\{(\w+)\}/g, function (m, n) { return v[n] != null ? v[n] : m; }); return s; }

@@ -829,7 +829,15 @@ img.layer{width:calc(100% + 48px);height:calc(100% + 48px);object-fit:cover;max-
 .chest-xl.art .ch-img{transition:filter .9s ease}
 .chest-scene.charge .chest-xl.art .ch-img{animation:chcharge .9s linear forwards;filter:brightness(1.18) drop-shadow(0 0 16px rgba(246,210,124,.75))}
 .chest-scene.open .chest-xl.art .ch-img{animation:chland .5s ease-out;filter:drop-shadow(0 0 22px rgba(246,210,124,.55))}
-.chest-scene.art .ch-rays{bottom:118px}.chest-scene.art .ch-flash{bottom:-24px}.chest-scene.art .ch-glow{bottom:30px}
+.ch-3d{position:relative;display:block;width:196px;height:196px;pointer-events:auto;touch-action:none;cursor:grab}
+.ch-3d::before{content:'';position:absolute;inset:8%;border-radius:50%;background:radial-gradient(circle,rgba(255,226,160,.5),rgba(255,226,160,0) 66%);pointer-events:none}
+.ch-3d canvas{position:relative;display:block;width:100%;height:100%}
+.ch-3d b{position:absolute;right:18px;top:26px;min-width:34px;height:34px;padding:0 6px;border-radius:17px;display:grid;place-items:center;font-family:var(--serif);font-size:20px;color:#1B1440;background:#FDE7A8;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.chest-scene.art{height:300px}
+.chest-xl.art{transform-origin:50% 100%;transition:transform .6s cubic-bezier(.2,1.2,.4,1)}
+.chest-scene.art.open .chest-xl.art{transform:translateY(14px) scale(.84)}
+.chest-scene.art .ch-prize-xl{bottom:96px}
+.chest-scene.art .ch-rays{bottom:150px}.chest-scene.art .ch-flash{bottom:-24px}.chest-scene.art .ch-glow{bottom:30px}
 .chest-xl.art:focus-visible .ch-img{filter:drop-shadow(0 0 12px rgba(246,210,124,.85))}
 @media (prefers-reduced-motion:reduce){.chest-xl .chest-svg,.ch-glow,.ch-tap,.ch-coin,.chest-scene.open .ch-rays{animation:none!important}}
 .ch-odds{width:100%;font-size:12.5px;color:var(--muted)}.ch-odds summary{cursor:pointer;font-weight:800}
@@ -1281,6 +1289,7 @@ img.layer{width:calc(100% + 48px);height:calc(100% + 48px);object-fit:cover;max-
 <script src="seals.js"></script>
 <script src="series.js"></script>
 <script src="shop.js"></script>
+<script src="reward3d.js"></script>
 <script src="app.js"></script>
 <script src="feedback.js"></script>
 

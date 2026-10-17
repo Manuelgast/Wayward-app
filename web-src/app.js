@@ -1733,14 +1733,17 @@
       '<details class="ch-odds"><summary>' + esc(t('chestOdds')) + '</summary><ul>' + odds + '</ul></details>' +
       '<button class="btn-gold lg" id="celOk">' + esc(t('chestNice')) + '<span class="shine"></span></button></div></div></div>';
     AU.duck(true);
-    var scene = $('#chestScene'), btn = $('#chestBtn'), opened = false, untilt = null;
-    var close = function () { if (!opened) return; if (untilt) untilt(); host.innerHTML = ''; AU.duck(false); renderChest(); if (current === 'profile') renderProfile(); if (current === 'collection') renderCollection(); };
+    var scene = $('#chestScene'), btn = $('#chestBtn'), opened = false, untilt = null, r3d = null;
+    var close = function () { if (!opened) return; if (untilt) untilt(); if (r3d) { r3d.destroy(); r3d = null; } host.innerHTML = ''; AU.duck(false); renderChest(); if (current === 'profile') renderProfile(); if (current === 'collection') renderCollection(); };
     var reveal = function (k, pick) {
       var prize = $('#chPrize'), a = app.getBoundingClientRect();
       if (k === 'card' && pick) {
         prize.innerHTML = '<span class="ch-miniback">' + cardBack(rarOf(pick.r)) + '</span>'; // the back of a card rises out; the card itself follows
       } else {
-        prize.innerHTML = '<span class="ch-coin">' + (k === 'key' ? KEY_SVG : k === 'bmark' ? BMARK : FLAME) + (k === 'end2' ? '<b>+2</b>' : k === 'end1' ? '<b>+1</b>' : '') + '</span>';
+        // 17-10 (Manuel): the gift is a real 3D object that spins as it rises out of the chest (reward3d.js); the flat coin stays as fallback
+        var badge = k === 'end2' ? '<b>+2</b>' : k === 'end1' ? '<b>+1</b>' : '', R3 = window.WaywardReward3D;
+        if (R3 && R3.ok()) { prize.innerHTML = '<span class="ch-3d k-' + k + '"><canvas></canvas>' + badge + '</span>'; r3d = R3.mount(prize.querySelector('canvas'), k === 'key' ? 'key' : k === 'bmark' ? 'bmark' : 'end', { still: reduceMotion }); }
+        if (!r3d) prize.innerHTML = '<span class="ch-coin">' + (k === 'key' ? KEY_SVG : k === 'bmark' ? BMARK : FLAME) + badge + '</span>';
       }
       scene.classList.remove('charge'); scene.classList.add('open'); AU.sfx('creak'); setTimeout(function () { AU.sfx('relic'); }, 160);
       var b = btn.getBoundingClientRect(); FX.sparkle(app, b.left - a.left + b.width / 2, b.top - a.top + b.height * 0.45, { n: k === 'key' || (pick && rarOf(pick.r) !== 'common') ? 44 : 30 });
@@ -1865,10 +1868,10 @@
     $('#' + id).addEventListener('change', savePrefs);
   });
 
-  // hidden test switch for the (switched-off) shop: tap the credits title five times
+  // hidden test switch for the shop preview (on by default in the test version since 17-10): tap the credits title five times
   (function () { var n = 0, tt = 0; $('#crTitle').addEventListener('click', function () {
     var now = Date.now(); n = now - tt < 700 ? n + 1 : 1; tt = now; if (n < 5) return; n = 0;
-    var on = false; try { on = localStorage.getItem('wayward.shop.dev') === '1'; localStorage.setItem('wayward.shop.dev', on ? '0' : '1'); } catch (e) {}
+    var on = shopOn(); try { localStorage.setItem('wayward.shop.dev', on ? '0' : '1'); } catch (e) {}
     toast(lang === 'nl' ? (on ? 'Winkel-voorproef uit' : 'Winkel-voorproef aan') : (on ? 'Shop preview off' : 'Shop preview on'), 1400);
     setTimeout(function () { location.reload(); }, 1300);
   }); })();
