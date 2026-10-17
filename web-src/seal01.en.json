@@ -1,0 +1,268 @@
+{
+ "id": "seal-01",
+ "title": "The Salt Letter",
+ "series": "The Veyra Cycle · Sealed Story",
+ "imprint": "A Wayward Original",
+ "tagline": "A letter written in seawater, kept for forty years by people who cry too easily.",
+ "start": 1,
+ "scenes": {
+  "office": {
+   "title": "The harbour office",
+   "focus": "50% 55%"
+  },
+  "harbour": {
+   "title": "Grey Harbour at dusk",
+   "focus": "50% 55%"
+  },
+  "cape": {
+   "title": "Cape Seren",
+   "focus": "50% 55%"
+  },
+  "s01cover": {
+   "title": "This is also the envelope art of a collectible sealed story, shown small",
+   "focus": "50% 55%"
+  },
+  "s01quay": {
+   "title": "The quay of Grey Harbour in late afternoon, the sun low over the water and spray",
+   "focus": "50% 55%"
+  },
+  "s01cape": {
+   "title": "Cape Seren at sunset with the wind off the land, warm and dry",
+   "focus": "50% 55%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "The Harbour Office",
+   "scene": "s01cover",
+   "tag": "One chart to copy. Coach at seven.",
+   "text": [
+    "The Board has sent you to Grey Harbour to copy a chart too old to travel. The harbour office is a window onto the quay and a century of ledgers. An old woman waits by the window, holding a black envelope flat between her palms, as if it might spill.",
+    "“Agnes Breen,” she says. “You’ve a dry sort of face. I mean it kindly.” Her father was clerk here and kept his books in salt. This is the last thing he wrote: a letter to her mother, never read. Salt letters keep for years, unless somebody cries on them. “I cry at weddings. And onions. And weather.”"
+   ],
+   "choices": [
+    {
+     "text": "If you open it here and now, by the lamp,",
+     "short": "Open it by the lamp",
+     "to": 2
+    },
+    {
+     "text": "If you finish your chart first; the Board is paying for the chart,",
+     "short": "Chart first",
+     "to": 3
+    },
+    {
+     "text": "If you ask her how a salt letter is read,",
+     "short": "Ask how it is read",
+     "to": 4
+    }
+   ],
+   "nr": 1
+  },
+  "2": {
+   "chapter": "By the Lamp",
+   "scene": "s01cover",
+   "tag": "Lamplight. Black paper. One word, almost.",
+   "text": [
+    "You slit the envelope with your penknife. Inside is a single sheet of black paper, folded in three, and by the lamp it is almost nothing: a dull shine, a scatter of grey, like frost on slate. You tilt it. One word comes up white and goes again. It might be “tide”. It might be “dear”.",
+    "Agnes has come close to look, and her chin has begun to do what chins do before weather. On the shelf behind her the ledgers stand in their years, and one of them, you notice, has a black spine, the colour of the paper in your hands."
+   ],
+   "choices": [
+    {
+     "text": "If you take it out into the low sun on the quay,",
+     "short": "Into the low sun",
+     "to": 5
+    },
+    {
+     "text": "If you breathe on it gently to bring the salt up; damp brings salt up, as every cook knows,",
+     "short": "Breathe on it",
+     "to": 8
+    }
+   ],
+   "nr": 8
+  },
+  "3": {
+   "chapter": "The Chart",
+   "scene": "s01cover",
+   "tag": "Chart half copied. Light going gold.",
+   "text": [
+    "The chart of Grey Harbour is the dullest document you have ever loved: soundings, mooring rings, a lighthouse still marked on the cape where there is only wind. You copy it line by line. The afternoon passes the window like a slow ship, and the light turns from white to gold.",
+    "When you look up, Agnes is still there, the envelope on her knees, waiting the way people wait in harbour towns, without seeming to. She has not said a word for two hours. It is, you suspect, the longest she has ever gone."
+   ],
+   "choices": [
+    {
+     "text": "If you finish the last of the coastline; the coach is at seven,",
+     "short": "Finish the coastline",
+     "to": 9,
+     "looks": "safe"
+    },
+    {
+     "text": "If you put down your pen and go and sit with her,",
+     "short": "Sit with her",
+     "to": 7
+    }
+   ],
+   "nr": 4
+  },
+  "4": {
+   "chapter": "The Salt Ledger",
+   "scene": "s01cover",
+   "tag": "Salt ledger. Audited by the tide.",
+   "text": [
+    "Agnes takes down the one ledger with a black spine. Her father kept the harbour’s accounts on the drying pans, she says, because the tide audited them twice a day; this is his fair copy, salt on black. Inside the cover, in white: Read with the sun low and the wind off the land.",
+    "You turn back forty years, to before you were born. Among the dues and berthing fees: Lessons in salt, three days, to a young surveyor, E.M. Paid in one chart of the bay. Lantern bent at the handle; would not have it mended. Gone east Thursday by the night train. The month is November."
+   ],
+   "choices": [
+    {
+     "text": "If you go down to the quay with her while the sun is still low,",
+     "short": "Down to the quay",
+     "to": 5
+    },
+    {
+     "text": "If you advise her to wait for a drier day; the wind is wet,",
+     "short": "Wait for a dry day",
+     "to": 9,
+     "looks": "safe"
+    }
+   ],
+   "nr": 11
+  },
+  "5": {
+   "chapter": "The Quay",
+   "scene": "s01quay",
+   "tag": "Quay. Sun low. Wind off the sea.",
+   "text": [
+    "The quay smells of rope, fish and, for no reason anyone can give, tea. An old knife-grinder is sharpening the gutting knives by the net shed, ISIDORE QUAYLE painted on his barrow; he tests each one on his thumbnail and says, “Willing.” Hooked on the barrow is a brass lantern, and its handle has a small, neat dent.",
+    "~ You know that dent; you touch it to make sure. You see it every morning, on the hook by your teacher’s desk. The sun is low over the water, and the salt would show, if you dared. But the wind is off the sea, and carrying spray."
+   ],
+   "choices": [
+    {
+     "text": "If you walk her out to the cape, where the wind comes off the land,",
+     "short": "Out to the cape",
+     "to": 6
+    },
+    {
+     "text": "If you read it here, quickly, in the lee of the net shed,",
+     "short": "Read it here",
+     "to": 10
+    }
+   ],
+   "nr": 2
+  },
+  "6": {
+   "chapter": "Cape Seren",
+   "scene": "s01cape",
+   "tag": "Cape Seren. Wind off the land.",
+   "text": [
+    "On Cape Seren the wind comes off the land, warm and dry. Where the lighthouse stood there is only a ring of black stone. You sit Agnes on it and unfold the sheet with the sun at your shoulder. The salt comes up white, word by word, like a coast out of fog.",
+    "It is a short letter in a clerk’s square hand. Agnes has not seen it yet. She is looking hard at the sea, the way you look at one thing to keep from looking at another, and her eyes are bright. You have a minute before the sun goes, and less before she turns round."
+   ],
+   "choices": [
+    {
+     "text": "If you copy it into your notebook first, the way you copy a coast,",
+     "short": "Copy it first",
+     "to": 11
+    },
+    {
+     "text": "If you read it to her now, while the light lasts,",
+     "short": "Read it now",
+     "to": 10,
+     "looks": "safe"
+    }
+   ],
+   "nr": 6
+  },
+  "7": {
+   "chapter": "Agnes",
+   "scene": "s01cover",
+   "tag": "Agnes talks. The light goes on going.",
+   "text": [
+    "You sit beside her. Her father, she says, wrote everything in salt: accounts, notes, the names of boats. Her mother cried at the first line of this letter, put it away for forty years, and died, and now it is Agnes’s turn not to read it. “It’s a family talent,” she says. “Like ears.”",
+    "Out on the water the light is turning gold and low, and the window glass has begun to throw it back into the room. Agnes turns the envelope over in her lap, the way you turn a stone that may or may not have something underneath."
+   ],
+   "choices": [
+    {
+     "text": "If you take her down to the quay while the sun is low,",
+     "short": "Take her down",
+     "to": 5
+    },
+    {
+     "text": "If you tell her gently that some letters are better left unread,",
+     "short": "Leave it be",
+     "to": 9,
+     "looks": "safe"
+    }
+   ],
+   "nr": 10
+  },
+  "8": {
+   "chapter": "An ending",
+   "scene": "s01cover",
+   "tag": "Breathed on. Salt: gone.",
+   "text": [
+    "You breathe on the sheet, gently, the way a cook coaxes salt up out of a ham. For a moment it works. Every word comes up at once, white and sharp, a whole letter of them, and you have time to see that it is short, and that the last line is underlined.",
+    "~ Then the white goes soft at the edges, and runs, and the sheet is black and damp and blank in your hands. Agnes looks at it for a long time. Then she pats your arm, as if you were the one who needed it. “Well,” she says. “Now nobody will cry on it.”"
+   ],
+   "ending": {
+    "no": "I",
+    "title": "Brought Up",
+    "kind": "bad",
+    "epilogue": "Damp brings salt up. It also takes it away.",
+    "hint": "Salt wants sun, not breath."
+   },
+   "nr": 5
+  },
+  "9": {
+   "chapter": "An ending",
+   "scene": "s01cover",
+   "tag": "Letter kept. Unread. Third generation.",
+   "text": [
+    "Agnes takes the letter home unread, as her mother did, and puts it in the drawer where black envelopes live. You catch the seven o’clock coach with a fine copy of a chart nobody will use, and the feeling of having left a door ajar in someone else’s house.",
+    "~ Years later a parcel reaches you from Grey Harbour: a black envelope and a note in a shaky hand. “For you,” it says. “You’ve the face for it. Don’t cry on it.” It has stood on your desk ever since, unopened. It has become, somehow, yours not to read."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "Not Read",
+    "kind": "strange",
+    "epilogue": "Some letters are inherited, like ears.",
+    "hint": "A salt letter will not read itself in a drawer."
+   },
+   "nr": 7
+  },
+  "10": {
+   "chapter": "An ending",
+   "scene": "s01quay",
+   "tag": "Read aloud once. Salt gone. Heard.",
+   "text": [
+    "You read it to her aloud while the light lasts. It is a short letter: the tide, the pans, the warm end of the bench, and one line about her mother’s hands that you will never repeat. Agnes listens with her whole face. By the last line she is crying, and so, it turns out, are you.",
+    "The salt goes the way of all salt. By the time you walk her home along the quay, the sheet is black and soft and blank. She carries it anyway, folded small. “I heard it,” she says at her door. “Once is a lot. Mother never had once.”"
+   ],
+   "ending": {
+    "no": "III",
+    "title": "Once, Aloud",
+    "kind": "silver",
+    "epilogue": "Heard once, kept for good, gone from the paper.",
+    "hint": "A cartographer copies before she reads aloud."
+   },
+   "nr": 9
+  },
+  "11": {
+   "chapter": "An ending",
+   "scene": "s01cape",
+   "tag": "Copied. Read. Cried on. Kept.",
+   "text": [
+    "You copy it first, the way you copy a coast, underlining and all. Then you read it to her. The tide is out, it says, and the pans are white; he has balanced every book in the harbour but the one with her mother in it, which will not come out even, and he has stopped trying.",
+    "~ Agnes cries, of course, and the salt runs. But the words are in your notebook, in ink. You tear out the page and give it to her, and she holds it up to the sunset like a ledger that has finally balanced. You make the seven o’clock coach with salt on both cuffs."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "Fair Copy",
+    "kind": "good",
+    "epilogue": "The salt went. The words stayed. That is what copies are for.",
+    "hint": "Ask how salt is read, and listen to the answer.",
+    "star": true
+   },
+   "nr": 3
+  }
+ }
+}

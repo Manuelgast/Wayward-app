@@ -1,0 +1,340 @@
+{
+ "tiers": [
+  {
+   "count": 4,
+   "id": "sandglass",
+   "name": {
+    "en": "Sandglass",
+    "nl": "Zandloper"
+   },
+   "desc": {
+    "en": "The page edges turn warm ochre, and fine sand glitters along them.",
+    "nl": "De randen van de bladzijden kleuren warm oker, en er glinstert fijn zand langs."
+   }
+  },
+  {
+   "count": 8,
+   "id": "starfield",
+   "name": {
+    "en": "Starfield",
+    "nl": "Sterrenveld"
+   },
+   "desc": {
+    "en": "Your path map shows the pages you have not found yet as stars over dunes.",
+    "nl": "Je padenkaart toont de bladzijden die je nog niet hebt gevonden als sterren boven de duinen."
+   }
+  },
+  {
+   "count": 12,
+   "id": "page0",
+   "name": {
+    "en": "Page 0 · Higher Still",
+    "nl": "Bladzijde 0 · Nog hoger"
+   },
+   "desc": {
+    "en": "A page that no road leads to opens at last.",
+    "nl": "Eindelijk gaat een bladzijde open waar geen weg naartoe leidt."
+   }
+  }
+ ],
+ "relics": [
+  {
+   "id": "compass",
+   "page": 2,
+   "where": "text",
+   "icon": "compass",
+   "name": {
+    "en": "The Company Compass",
+    "nl": "Het Compagniekompas"
+   },
+   "riddle": {
+    "en": "On the crate wagon, something made of brass is very sure of itself.",
+    "nl": "Op de kistwagen is iets van koper erg zeker van zijn zaak."
+   },
+   "lore": {
+    "en": "Every Brannock quartermaster is issued the same compass: brass, gimballed, from one workshop in the capital that engraves the owner’s name on the lid. Aurel Penhallow’s mother paid extra for a second line, inside: “Trust it.” He always has. He polishes it every evening with a cloth kept for nothing else, and has never once dropped it. It is the second proudest fact of his life. The first he has not told anyone.",
+    "nl": "Elke kwartiermeester van Brannock krijgt hetzelfde kompas: koper, cardanisch opgehangen, uit één werkplaats in de hoofdstad die de naam van de eigenaar in het deksel graveert. De moeder van Aurel Penhallow betaalde bij voor een tweede regel, aan de binnenkant: “Vertrouw het.” Dat heeft hij altijd gedaan. Hij poetst het elke avond met een doekje dat nergens anders voor dient, en heeft het nog nooit laten vallen. Het is het op één na trotste feit van zijn leven. Het trotste heeft hij nooit aan iemand verteld."
+   },
+   "rarity": "common",
+   "find": 44.6
+  },
+  {
+   "id": "dunesong",
+   "page": 4,
+   "where": "text",
+   "icon": "brush",
+   "name": {
+    "en": "The Old Cow",
+    "nl": "De Oude Koe"
+   },
+   "riddle": {
+    "en": "South of the road, a dune is lowing for a barn it lost.",
+    "nl": "Ten zuiden van de weg loeit een duin om een stal die ze kwijt is."
+   },
+   "lore": {
+    "en": "Some dunes in the Waste sing when the wind slides down their faces: a low note you feel in your teeth before you hear it. Drivers name them as they would cattle, and the names walk with the dunes. The Old Cow has grazed south of the Kesh road for as long as anyone remembers, a little further east each year. Kesh children are told she is going home, slowly, and will get there.",
+    "nl": "Sommige duinen in de Woestenij zingen als de wind langs hun helling glijdt: een lage toon die je in je tanden voelt voordat je hem hoort. Drijvers geven ze namen zoals je koeien namen geeft, en de namen lopen met de duinen mee. De Oude Koe graast ten zuiden van de weg naar Kesh zolang iemand zich kan herinneren, elk jaar een stukje verder naar het oosten. Kinderen in Kesh horen dat ze naar huis gaat, langzaam, en dat ze er heus komt."
+   },
+   "rarity": "common",
+   "find": 44.4
+  },
+  {
+   "id": "mirage",
+   "page": 5,
+   "where": "text",
+   "icon": "window",
+   "name": {
+    "en": "The Morning City",
+    "nl": "De Ochtendstad"
+   },
+   "riddle": {
+    "en": "From the tower at dawn, a whole town stands on its head to look at you.",
+    "nl": "Vanaf de toren staat bij dageraad een hele stad op haar kop om naar jou te kijken."
+   },
+   "lore": {
+    "en": "On hot mornings the Waste lifts far places into the sky, upside down: towers, palms, once, memorably, a line of washing. Kesh calls it the Morning City and has argued for two hundred years about which city it is. A merchant once bought a house he had seen in it and travelled a month to find it. It was real. It was smaller. He kept it anyway, out of pride.",
+    "nl": "Op hete ochtenden tilt de Woestenij verre plaatsen de lucht in, ondersteboven: torens, palmen, en één keer, onvergetelijk, een waslijn. Kesh noemt het de Ochtendstad en maakt al tweehonderd jaar ruzie over welke stad het is. Een koopman kocht ooit een huis dat hij erin had gezien, en reisde een maand om het te vinden. Het bestond. Het was kleiner. Hij hield het toch, uit trots."
+   },
+   "rarity": "common",
+   "find": 33.2
+  },
+  {
+   "id": "notches",
+   "page": 8,
+   "where": "text",
+   "icon": "chisel",
+   "name": {
+    "en": "Forty Notches",
+    "nl": "Veertig kerven"
+   },
+   "riddle": {
+    "en": "At Two Palms, a post keeps count of everyone who came back.",
+    "nl": "Bij Twee Palmen houdt een paal bij wie er allemaal terugkwam."
+   },
+   "lore": {
+    "en": "Every guide who crosses the Waste cuts one notch in each well-post on the way: small, square, with their own knife. It is not a record, guides say; it is a greeting. The posts nearest Kesh are notched so thickly they look like pine cones. Old guides can tell each other’s hands by touch. They say you can feel when someone was tired. Sefa’s notches are never tired.",
+    "nl": "Elke gids die de Woestenij oversteekt, snijdt onderweg één kerf in elke putpaal: klein, vierkant, met het eigen mes. Het is geen boekhouding, zeggen gidsen; het is een groet. De palen het dichtst bij Kesh zitten zo vol kerven dat ze op dennenappels lijken. Oude gidsen herkennen elkaars hand op de tast. Ze zeggen dat je kunt voelen wanneer iemand moe was. Sefa’s kerven zijn nooit moe."
+   },
+   "rarity": "common",
+   "find": 42.7
+  },
+  {
+   "id": "buttons",
+   "page": 11,
+   "where": "text",
+   "icon": "moon",
+   "name": {
+    "en": "Ilyas’s Tin",
+    "nl": "Ilyas’ blikje"
+   },
+   "riddle": {
+    "en": "By a fire on the ridge, a trader values you by your coat.",
+    "nl": "Bij een vuur op de kam taxeert een handelaar je op je jas."
+   },
+   "lore": {
+    "en": "The riders tie everything and button nothing, so buttons are a marvel to them, and Ilyas owns the finest collection in the Waste: brass, horn, mother-of-pearl, one carved like a very small tortoise, and a black button from a mourning coat that she keeps apart, out of respect. Three dates buy a plain button, five a fancy one. She has never once been cheated, and has cheated only people who deserved it.",
+    "nl": "De ruiters leggen overal knopen in, maar zetten nergens knopen aan, dus voor hen zijn knopen een wonder, en Ilyas bezit de mooiste verzameling van de Woestenij: koper, hoorn, parelmoer, eentje gesneden als een heel klein schildpadje, en een zwarte knoop van een rouwjas die ze apart bewaart, uit respect. Drie dadels voor een gewone knoop, vijf voor een mooie. Ze is nog nooit afgezet, en heeft alleen mensen afgezet die het verdienden."
+   },
+   "rarity": "common",
+   "find": 35.5
+  },
+  {
+   "id": "tracks",
+   "page": 13,
+   "where": "text",
+   "icon": "eye",
+   "name": {
+    "en": "The Bow",
+    "nl": "De boog"
+   },
+   "riddle": {
+    "en": "From the highest dune, yesterday is written down, and not quite straight.",
+    "nl": "Vanaf de hoogste duin staat gisteren opgeschreven, en niet helemaal recht."
+   },
+   "lore": {
+    "en": "Tracks in the Waste last about three days, less in wind. Nobody sees their own except from a height, and there are few heights, so most caravans never learn the shape of the road they walked. Old drivers have a saying for a man who is very sure of himself: “He has never climbed a dune.” It is not meant kindly. It is not meant unkindly either. It is meant as directions.",
+    "nl": "Sporen in de Woestenij blijven een dag of drie staan, minder bij wind. Niemand ziet zijn eigen spoor, behalve van een hoogte, en er zijn weinig hoogten, dus de meeste karavanen komen nooit te weten welke vorm hun weg had. Oude drijvers hebben een gezegde voor wie erg zeker van zijn zaak is: “Die heeft nog nooit een duin beklommen.” Het is niet vriendelijk bedoeld. Onvriendelijk ook niet. Het is bedoeld als routebeschrijving."
+   },
+   "rarity": "rare",
+   "find": 12.2
+  },
+  {
+   "id": "skins",
+   "page": 14,
+   "where": "text",
+   "icon": "boat",
+   "name": {
+    "en": "The Giving Knot",
+    "nl": "De geefknoop"
+   },
+   "riddle": {
+    "en": "Down a dry well, someone has left an answer on a rope.",
+    "nl": "In een droge put heeft iemand een antwoord aan een touw gehangen."
+   },
+   "lore": {
+    "en": "The riders tie their waterskins with a knot that opens with one pull and will not open any other way. Drivers call it the giving knot, because it is only ever found on water nobody paid for. Nobody in Kesh can tie it. Several have tried, at length, with string. A rope-maker once spent a whole winter on it and produced a handsome knot that could not be untied at all.",
+    "nl": "De ruiters binden hun waterzakken dicht met een knoop die met één ruk opengaat en op geen enkele andere manier. Drijvers noemen hem de geefknoop, omdat je hem alleen tegenkomt op water waar niemand voor heeft betaald. Niemand in Kesh kan hem leggen. Velen hebben het geprobeerd, urenlang, met touwtjes. Een touwslager is er eens een hele winter mee bezig geweest en kwam uit op een fraaie knoop die helemaal niet meer los kon."
+   },
+   "rarity": "common",
+   "find": 30.0
+  },
+  {
+   "id": "needle",
+   "page": 16,
+   "where": "text",
+   "icon": "compass",
+   "name": {
+    "en": "Your Needle",
+    "nl": "Jouw naald"
+   },
+   "riddle": {
+    "en": "At night by the wagon, an honest needle loses its way.",
+    "nl": "’s Nachts bij de wagen raakt een eerlijke naald de weg kwijt."
+   },
+   "lore": {
+    "en": "Your pocket compass was second-hand when you bought it from a harbour stall, with a cracked glass you have never replaced. It has pointed north through rain, fog, seasickness and one very bad week in spring. It has never lied to you once. You had come to think of it, privately, as the most reliable person you know. You have never said so out loud, in case it heard.",
+    "nl": "Je zakkompas was al tweedehands toen je het kocht op een kraam in een havenstad, met een gebarsten glaasje dat je nooit hebt laten vervangen. Het heeft het noorden aangewezen door regen, mist, zeeziekte en één heel slechte week in het voorjaar. Het heeft nog nooit tegen je gelogen. Stilletjes was je het gaan beschouwen als de betrouwbaarste persoon die je kent. Je hebt dat nooit hardop gezegd, voor het geval het meeluisterde."
+   },
+   "rarity": "common",
+   "find": 30.9
+  },
+  {
+   "id": "ledger",
+   "page": 17,
+   "where": "text",
+   "icon": "quill",
+   "name": {
+    "en": "Corrections for Drift",
+    "nl": "Correcties voor afdrijven"
+   },
+   "riddle": {
+    "en": "In a ruled book, small numbers grow up a little every morning.",
+    "nl": "In een gelinieerd boek worden kleine getallen elke ochtend een beetje groter."
+   },
+   "lore": {
+    "en": "Penhallow has kept a ledger since he was eight, when he recorded the family’s eggs and discovered that his brother was eating one a day. He has never erased a figure. Mistakes are struck through with a single ruled line and corrected in red, so the error can still be read. “An error,” he likes to say, “is also information.” He believes this. He has never yet had to.",
+    "nl": "Penhallow houdt een grootboek bij sinds zijn achtste, toen hij de eieren van het gezin noteerde en ontdekte dat zijn broer er elke dag een opat. Hij heeft nog nooit een getal uitgegumd. Fouten worden doorgehaald met één getrokken lijn en in het rood verbeterd, zodat je de fout nog kunt lezen. “Een fout,” zegt hij graag, “is ook informatie.” Hij gelooft dat. Hij heeft het alleen nog nooit hoeven doen."
+   },
+   "rarity": "rare",
+   "find": 24.2
+  },
+  {
+   "id": "eddapost",
+   "page": 19,
+   "where": "text",
+   "icon": "map",
+   "name": {
+    "en": "E.M., Brass Cap",
+    "nl": "E.M., koperen kap"
+   },
+   "riddle": {
+    "en": "At the Broken Post, an older post remembers your teacher’s hand.",
+    "nl": "Bij de Gebroken Paal herinnert een oudere paal zich de hand van je leermeester."
+   },
+   "lore": {
+    "en": "Edda Marlow crossed the Ochre Waste forty years ago, on a survey nobody remembers ordering, and left brass-capped posts at the wells. The dunes have walked off with most of them. This one stayed. For forty years Company surveyors have read her warning, admired the lettering, and taken their bearings anyway. She gave no reason. She seldom did. She was usually right, which made it worse.",
+    "nl": "Edda Marlow stak veertig jaar geleden de Okerwoestenij over, voor een opmeting waarvan niemand meer weet wie die bestelde, en liet bij de putten palen met een koperen kap achter. De meeste zijn door de duinen meegenomen. Deze is gebleven. Veertig jaar lang hebben landmeters van de Compagnie haar waarschuwing gelezen, de belettering bewonderd en toch hun peilingen genomen. Ze gaf geen reden. Dat deed ze zelden. Meestal had ze gelijk, en dat maakte het erger."
+   },
+   "rarity": "rare",
+   "find": 28.4
+  },
+  {
+   "id": "carving",
+   "page": 28,
+   "where": "text",
+   "icon": "lantern",
+   "name": {
+    "en": "The Lintel",
+    "nl": "De latei"
+   },
+   "riddle": {
+    "en": "In the half-buried inn, the door wears a story over its head.",
+    "nl": "In de half bedolven herberg draagt de deur een verhaal boven zijn hoofd."
+   },
+   "lore": {
+    "en": "The caravanserai at Well 6 was built two hundred years ago by a merchant who wanted somewhere cool to count his money. His masons found an old carved stone on the site and, being masons, set it over a door rather than waste it. The merchant thought it unlucky. The riders thought it the only sensible thing about the building, and have never once raided the place.",
+    "nl": "De karavanserai bij Put 6 werd tweehonderd jaar geleden gebouwd door een koopman die een koele plek wilde om zijn geld te tellen. Zijn metselaars vonden op de bouwplaats een oude gehakte steen en zetten die, metselaars als ze waren, liever boven een deur dan hem te verspillen. De koopman vond dat ongeluk brengen. De ruiters vonden het het enige verstandige aan het hele gebouw, en hebben het nooit één keer overvallen."
+   },
+   "rarity": "silver",
+   "find": 9.4
+  },
+  {
+   "id": "telegram",
+   "page": 29,
+   "where": "text",
+   "icon": "quill",
+   "name": {
+    "en": "Deliver As Sealed",
+    "nl": "Verzegeld afleveren"
+   },
+   "riddle": {
+    "en": "At the end of the wire, a man in Tal Amira saves on words.",
+    "nl": "Aan het eind van de draad bezuinigt een man in Tal Amira op woorden."
+   },
+   "lore": {
+    "en": "The telegraph reached Well 6 four years ago, one pole at a time, and stops there because the dunes keep walking off with the rest. Mr Corvin Lisle sends more wires along it than anyone alive. He never pays for a word he can do without and has not spent Company money on “please” in eleven years. His wife receives telegrams that say only: HOME SIX.",
+    "nl": "De telegraaf bereikte Put 6 vier jaar geleden, paal voor paal, en houdt daar op omdat de duinen er telkens met de rest vandoor gaan. Meneer Corvin Lisle stuurt er meer telegrammen langs dan wie ook. Hij betaalt nooit voor een woord dat hij kan missen, en heeft in elf jaar geen geld van de Compagnie aan “alstublieft” uitgegeven. Zijn vrouw krijgt telegrammen met alleen: THUIS ZES."
+   },
+   "rarity": "gold",
+   "find": 3.1
+  },
+  {
+   "id": "star",
+   "page": 32,
+   "where": "text",
+   "icon": "star",
+   "name": {
+    "en": "Machine Parts",
+    "nl": "Machineonderdelen"
+   },
+   "riddle": {
+    "en": "Break a promise made of lead, and see what it was keeping.",
+    "nl": "Breek een belofte van lood, en kijk wat ze bewaarde."
+   },
+   "lore": {
+    "en": "Iron that falls from the sky is not like iron from the ground. Smiths in Kesh say it cannot be forged, only argued with. It is cold at noon, it rings when struck, and its rust never goes deeper than a fingernail. Prospectors sell such stones to museums by the pound. The riders have another word for them, which does not translate into money.",
+    "nl": "IJzer dat uit de lucht valt, is anders dan ijzer uit de grond. Smeden in Kesh zeggen dat je het niet kunt smeden, alleen ertegen in discussie gaan. Het is koud op het middaguur, het klinkt als je erop slaat, en de roest gaat er nooit dieper in dan een vingernagel. Gelukzoekers verkopen zulke stenen per pond aan musea. De ruiters hebben er een ander woord voor, dat zich niet in geld laat vertalen."
+   },
+   "rarity": "silver",
+   "find": 7.0
+  },
+  {
+   "id": "plinth",
+   "page": 44,
+   "where": "text",
+   "icon": "window",
+   "name": {
+    "en": "The Swept Plinth",
+    "nl": "De geveegde sokkel"
+   },
+   "riddle": {
+    "en": "At a well on no map, someone keeps an empty place clean.",
+    "nl": "Bij een put op geen enkele kaart houdt iemand een lege plek schoon."
+   },
+   "lore": {
+    "en": "The plinth at the Ninth Well is cut from the rock of the hollow itself, and worn smooth on top by three hundred years of weather and hands. Every morning a rider sweeps it with a palm frond. It has always been a child’s task. Since spring the grown riders have been taking turns at it instead, and nobody has said why, and nobody has needed to.",
+    "nl": "De sokkel bij de Negende Put is uit de rots van de kom zelf gehakt, en van boven glad gesleten door driehonderd jaar weer en handen. Elke ochtend veegt een ruiter hem schoon met een palmblad. Dat is altijd een taak voor kinderen geweest. Sinds het voorjaar doen de volwassen ruiters het om de beurt, en niemand heeft gezegd waarom, en niemand heeft dat hoeven zeggen."
+   },
+   "rarity": "rare",
+   "find": 17.6
+  }
+ ],
+ "secret": {
+  "title": {
+   "en": "Page 0 · Higher Still",
+   "nl": "Bladzijde 0 · Nog hoger"
+  },
+  "label": {
+   "en": "Striped silk, very high",
+   "nl": "Gestreepte zijde, heel hoog"
+  },
+  "text": {
+   "en": "Sunset on the wall of Tal Amira. Below, the palms go black one by one, and the Waste turns the colour of a coal that has decided to keep its heat. Then something catches the last of the light, very high up: a balloon of striped silk, red and cream, no bigger than a thumbnail, drifting east. It is heading for the mountains at the far edge of the Waste, which nobody has ever crossed. It does not look as if it means to stop.",
+   "nl": "Zonsondergang op de muur van Tal Amira. Beneden worden de palmen een voor een zwart, en de Woestenij krijgt de kleur van een kool die heeft besloten zijn warmte te houden. Dan vangt iets heel hoog het laatste licht: een ballon van gestreepte zijde, rood en crème, niet groter dan een duimnagel, die naar het oosten drijft. Hij gaat op de bergen af aan de verre rand van de Woestenij, waar nog nooit iemand overheen is gekomen. Hij ziet er niet uit alsof hij van plan is te stoppen."
+  },
+  "sign": {
+   "en": "The Wayward story continues.",
+   "nl": "Het Wayward-verhaal gaat verder."
+  }
+ }
+}

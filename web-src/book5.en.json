@@ -1,0 +1,1247 @@
+{
+ "id": "mirage-road",
+ "title": "The Mirage Road",
+ "series": "The Veyra Cycle · Book V",
+ "imprint": "A Wayward Original",
+ "tagline": "Forty camels, one sealed crate, and a compass that is lying to everyone.",
+ "warning": "Don’t read this book from start to finish. At the end of each page, you decide what happens next. Some choices lead to water. Others only look like it.",
+ "start": 1,
+ "scenes": {
+  "kesh": {
+   "title": "The Kesh caravan yard and town gate",
+   "focus": "50% 55%"
+  },
+  "dunes": {
+   "title": "A dune crest at noon",
+   "focus": "50% 55%"
+  },
+  "wellpost": {
+   "title": "A stone well with a carved post",
+   "focus": "50% 55%"
+  },
+  "mirage": {
+   "title": "A city hanging upside down",
+   "focus": "50% 55%"
+  },
+  "wagon": {
+   "title": "The crate on its wagon",
+   "focus": "50% 55%"
+  },
+  "starcamp": {
+   "title": "Night camp under the stars",
+   "focus": "50% 55%"
+  },
+  "riders": {
+   "title": "Veiled riders on a ridge",
+   "focus": "50% 55%"
+  },
+  "redwind": {
+   "title": "The Red Wind",
+   "focus": "50% 55%"
+  },
+  "flats": {
+   "title": "The white clay flats",
+   "focus": "50% 55%"
+  },
+  "caravanserai": {
+   "title": "The half-buried caravanserai",
+   "focus": "50% 55%"
+  },
+  "arches": {
+   "title": "The wind-carved arches",
+   "focus": "50% 55%"
+  },
+  "ninthwell": {
+   "title": "The riders’ well-shrine",
+   "focus": "50% 55%"
+  },
+  "oasis": {
+   "title": "The palms and walls of Tal Amira",
+   "focus": "50% 55%"
+  },
+  "sunrise": {
+   "title": "The last morning on the dunes",
+   "focus": "50% 55%"
+  },
+  "brokenpost": {
+   "title": "Well 4, the Broken Post, in hard midday light",
+   "focus": "50% 55%"
+  },
+  "starreturned": {
+   "title": "The Ninth Well at golden late afternoon",
+   "focus": "50% 55%"
+  },
+  "skyiron": {
+   "title": "Midday in the Ochre Waste beside the halted crate wagon",
+   "focus": "50% 55%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Well 1 · Kesh Gate",
+   "scene": "kesh",
+   "tag": "Well 1. Skins: 48. Camels: 40. Wind: none.",
+   "text": [
+    "Forty camels. Nine drivers. Two wagons. One crate, iron-bound, lead-sealed, stencilled MACHINE PARTS on all four sides in case the desert can’t read. The Brannock Trading Company is sending it across the Ochre Waste to Tal Amira, and you with it, to map the road: the shortest, the straightest, one a regular line could follow.",
+    "The trouble is that the Waste walks. Its dunes move a mile a year; every map of it is wrong by spring. Only the eight stone wells stay put. At the gate, Mr Penhallow, the quartermaster, counts the camels twice. Sefa Oduya, the guide, counts nothing. She looks at the sky as if it owes her money."
+   ],
+   "choices": [
+    {
+     "text": "If you ride on the crate wagon with Mr Penhallow and take the bearings, as your contract says,",
+     "short": "Ride with Penhallow",
+     "to": 2
+    },
+    {
+     "text": "If you walk at the front with Sefa, who has not used a compass in forty years,",
+     "short": "Walk with Sefa",
+     "to": 4
+    },
+    {
+     "text": "If you climb the gate tower first, to see the road,",
+     "short": "Climb the gate tower",
+     "to": 5
+    }
+   ],
+   "nr": 1
+  },
+  "2": {
+   "chapter": "Between Wells · The Wagon",
+   "scene": "wagon",
+   "tag": "Day 1. Bearing: 112. Penhallow: certain.",
+   "text": [
+    "Mr Penhallow rides on the crate, and at night, he tells you, he sleeps on it, like a hen on one enormous egg. Before him on the wagon seat, gimballed in a brass box, sits [[compass|the Company’s compass, polished until it looks offended]]. Every hour he reads it and writes the number in his ledger. One-one-two. One-one-two. One-one-two.",
+    "“A road,” he says, “is a straight line with ambitions.” Up ahead, Sefa has wandered off the bearing with the lead camel, bending east by some reasoning of her own. The drivers follow her, not him. Penhallow writes that down as well."
+   ],
+   "choices": [
+    {
+     "text": "If you keep the caravan on his bearing; it is what you were hired for,",
+     "short": "Keep to the bearing",
+     "to": 7
+    },
+    {
+     "text": "If you jump down and follow Sefa’s bend,",
+     "short": "Follow Sefa",
+     "to": 8
+    },
+    {
+     "text": "If you walk back to Kesh and resign; nobody can map sand that walks,",
+     "short": "Resign and walk back",
+     "to": 3
+    }
+   ],
+   "nr": 37
+  },
+  "3": {
+   "chapter": "An ending",
+   "scene": "kesh",
+   "tag": "Kesh. Spring. The dunes have moved again.",
+   "text": [
+    "You walk back to Kesh with your hat in your hand. The town is delighted: nobody has ever resigned from the Company on the first morning. They give you a room above the dyers’ yard and a commission of their own. Map Kesh’s dunes, which lean on its walls like old drunks and shift a little every night.",
+    "You map them every spring. By summer every map is wrong. The town frames them anyway and hangs them in the caravan yard, one a year, like portraits of a difficult relative. Somewhere out there a caravan reached somewhere, or didn’t. You never ask. It isn’t on your map."
+   ],
+   "ending": {
+    "no": "I",
+    "title": "Every Spring",
+    "kind": "strange",
+    "epilogue": "Your maps are never right. They are very popular.",
+    "hint": "The road only teaches the people who walk it."
+   },
+   "nr": 26
+  },
+  "4": {
+   "chapter": "Between Wells · Sefa’s Road",
+   "scene": "dunes",
+   "tag": "Day 1. Sefa’s bearing: “That way.”",
+   "text": [
+    "You walk out of the gate at Sefa’s side. In forty years on this road she has never once taken a bearing. She takes the sky instead: the colour of the dune faces, the haze along their crests, the way the heat lifts. Her lead camel is called Duchess and behaves like it. When the wind slides down a big dune to the south, it gives a low hum, like a cow in a far barn.",
+    "“[[dunesong|The Old Cow]],” says Sefa, without turning her head. “She was a mile nearer Kesh when I was a girl. We both were.” Then she bends the caravan east, off Penhallow’s bearing, towards nothing you can see."
+   ],
+   "choices": [
+    {
+     "text": "If you follow her bend east, away from the bearing,",
+     "short": "Follow her east",
+     "to": 8
+    },
+    {
+     "text": "If you go back to the wagon; you were hired for bearings, not humming,",
+     "short": "Go back to the wagon",
+     "to": 7
+    }
+   ],
+   "nr": 27
+  },
+  "5": {
+   "chapter": "Well 1 · The Gate Tower",
+   "scene": "mirage",
+   "tag": "Dawn. Kesh. Something in the sky.",
+   "text": [
+    "From the gate tower at dawn the Waste is red to the edge of the world, and above the edge of the world hangs a city. Towers, domes, a fringe of palms, all upside down, roots in the air, trembling like [[mirage|a reflection in a spoon]]. “Morning City,” says the sentry, yawning. “Comes up when it’s hot. Water lies down, places hang, my gran used to say.”",
+    "Below in the yard, Penhallow has taken a compass bearing on it and is writing it down. Sefa stands beside her camel with her face turned up and her eyes half shut, as if she were listening to it."
+   ],
+   "choices": [
+    {
+     "text": "If you climb down and ride with Penhallow, who now has a bearing on a mirage,",
+     "short": "Ride with Penhallow",
+     "to": 2
+    },
+    {
+     "text": "If you climb down and walk with Sefa,",
+     "short": "Walk with Sefa",
+     "to": 4
+    },
+    {
+     "text": "If you slip out alone while the city is still in the sky,",
+     "short": "Go after the city",
+     "to": 50
+    }
+   ],
+   "nr": 14
+  },
+  "6": {
+   "chapter": "An ending",
+   "scene": "mirage",
+   "tag": "Day 9. Alone. The city: still ahead.",
+   "text": [
+    "You keep walking. The city stays exactly where it is, which is ahead. Twice more the riders find you, give you water without a word, and point the way back. You thank them and go on. On the ninth day the city comes down out of the sky and turns the right way up.",
+    "~ It is not Tal Amira. It is a white town on the far side of the Waste that has never heard of the Brannock Trading Company and is not curious. You draw it, the right way up. Nobody there believes it ever hung in anyone’s sky. You stay, in case it does it again."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "The Morning City",
+    "kind": "strange",
+    "epilogue": "You followed the sky. It was pointing somewhere else.",
+    "hint": "The sky shows true places, but it doesn’t say which."
+   },
+   "nr": 20
+  },
+  "7": {
+   "chapter": "Between Wells · The Straight Line",
+   "scene": "dunes",
+   "tag": "Day 2. Bearing: 112. Camels: opposed.",
+   "text": [
+    "The bearing does not go round dunes. It goes over them. Forty camels climb a hill of red sand, slide down the far side and climb the next, complaining in a register usually kept for opera. Penhallow rides the wagon like a man on a raft, compass in one hand, ledger in the other. One-one-two.",
+    "At noon, riders appear on the ridge to the north: a dozen, veiled to the eyes, perfectly still. The drivers unsling their rifles. Penhallow writes “Riders: 12” and underlines it twice. Sefa sends a boy east with four empty skins, to a well you didn’t know was there."
+   ],
+   "choices": [
+    {
+     "text": "If you circle the wagons for the night and post a watch,",
+     "short": "Post a watch",
+     "to": 10
+    },
+    {
+     "text": "If you climb the big dune at first light to see where the bearing runs,",
+     "short": "Climb the big dune",
+     "to": 13
+    },
+    {
+     "text": "If you walk towards the ridge at dusk, unarmed,",
+     "short": "Walk to the ridge",
+     "to": 11
+    }
+   ],
+   "nr": 45
+  },
+  "8": {
+   "chapter": "Well 2 · Two Palms",
+   "scene": "wellpost",
+   "tag": "Well 2. Palms: none, technically. Skins: 44.",
+   "text": [
+    "Next morning you reach Two Palms: two palm stumps and a stone well with a carved post, where the caravan stops to water. Sefa puts your hand on the post. “Read it for me,” she says. “My eyes are lazy before noon.” It is cut all over with [[notches|small notches, one for every crossing]]. The last forty are in the same hand, deep and square.",
+    "On the ridge a dozen riders sit their camels, veiled to the eyes. The drivers finger their rifles. “How many?” asks Sefa, and nods at your answer as if she had counted them herself. The next well, Old Thirst, is dry until spring by Penhallow’s ledger. She wants to go there anyway. Tonight."
+   ],
+   "choices": [
+    {
+     "text": "If you walk up to the riders at dusk, with empty hands,",
+     "short": "Go up to the riders",
+     "to": 11
+    },
+    {
+     "text": "If you help the drivers circle the wagons,",
+     "short": "Circle the wagons",
+     "to": 10
+    },
+    {
+     "text": "If you take the night road to Old Thirst with Sefa,",
+     "short": "Take the night road",
+     "to": 14
+    }
+   ],
+   "nr": 6
+  },
+  "9": {
+   "chapter": "An ending",
+   "scene": "dunes",
+   "tag": "Year one. No map. Many stars.",
+   "text": [
+    "You walk out at dawn with Sefa and her camel and two skins, and nobody stops you. You become her eyes; she becomes your sky. For a year you cross and recross the Waste: which dune hums, which haze means wind, which star sits over which well. The Company writes politely, then rudely. Both letters burn well.",
+    "When you go home at last, the capital has no horizon. Tall houses cut the sky into strips. You cannot find your own street. You stand at corners, face turned up, listening for a dune, and are twice given coins. In the end you steer by bakeries."
+   ],
+   "ending": {
+    "no": "III",
+    "title": "Without a Horizon",
+    "kind": "strange",
+    "epilogue": "You can find a well in three hundred miles of sand. Not your own front door.",
+    "hint": "Saving her pride is not the same as saving the road."
+   },
+   "nr": 48
+  },
+  "10": {
+   "chapter": "Between Wells · Night Watch",
+   "scene": "starcamp",
+   "tag": "Night 2. Rifles: 9. Benno: missing.",
+   "text": [
+    "The wagons are drawn into a ring, the camels kneeling inside it, groaning like old furniture. Nine rifles point at the dark. Benno, the youngest driver, went after a strayed camel at dusk and has not come back. Penhallow sits on the crate with a pistol, which he holds like a teacup.",
+    "At midnight a shape comes down the dune towards the camp: tall, slow, with two heads. A camel, and someone leading it. The rifles come up together, with the sound of a drawer closing."
+   ],
+   "choices": [
+    {
+     "text": "If you let them fire a warning shot over its head,",
+     "short": "Fire a warning shot",
+     "to": 12
+    },
+    {
+     "text": "If you walk out to meet it, with a lantern and nothing else,",
+     "short": "Walk out to meet it",
+     "to": 11
+    },
+    {
+     "text": "If you climb up beside Penhallow on the crate,",
+     "short": "Sit with Penhallow",
+     "to": 16
+    }
+   ],
+   "moment": {
+    "line": "The shape is halfway down the dune.",
+    "seconds": 10,
+    "default": 12,
+    "head": "Choose before it reaches the wagons",
+    "sub": "Wait too long, and the rifles choose for you.",
+    "defaultLabel": "THE RIFLES’ CHOICE",
+    "timeout": "The rifles choose for you…"
+   },
+   "nr": 49
+  },
+  "11": {
+   "chapter": "Between Wells · The Riders’ Fire",
+   "scene": "riders",
+   "tag": "Night 2. Hands: empty. Heart: loud.",
+   "text": [
+    "You walk up the ridge with your hands where the dark can see them. Nobody comes to meet you. At the top there are no riders, only their fire, and on a flat stone beside it a full waterskin, sweating cold. Below, the camp is shouting: a driver who strayed at dusk has walked back in, leading his camel, and cannot say who showed him the way.",
+    "A girl of about twelve sits by the fire, eating dates. “I’m Ilyas,” she says. “I trade.” She has [[buttons|a tin of buttons, no two alike]], and she is looking at yours. “Why does the man with the book sleep on the box?”"
+   ],
+   "choices": [
+    {
+     "text": "If you trade her a button for a date and go back down to camp,",
+     "short": "Trade a button",
+     "to": 14
+    },
+    {
+     "text": "If you ask her to take you to her people,",
+     "short": "Go with her",
+     "to": 15
+    },
+    {
+     "text": "If you carry the full waterskin back to Penhallow’s wagon,",
+     "short": "Take the skin back",
+     "to": 16
+    }
+   ],
+   "nr": 16
+  },
+  "12": {
+   "chapter": "An ending",
+   "scene": "starcamp",
+   "tag": "Night 2. One shot. Then nothing, ever.",
+   "text": [
+    "One rifle cracks. The shot goes high, as promised. On the dune the shape comes apart: one half drops a bridle and is simply gone, and the other half is Benno, who walks in at dawn leading his camel, white as flour, and will not say who brought him back.",
+    "After that, nobody brings anyone back. The wells are only wells again: Old Thirst dry, the Broken Post bitter, the ridges empty. At Well 4 Penhallow balances the ledger and turns the caravan for Kesh. Next spring the Company sends a bigger caravan, with more rifles. You are not on it."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "Warning Shot",
+    "kind": "bad",
+    "epilogue": "You kept them away. That was the trouble.",
+    "hint": "Not everything coming out of the dark is coming for you."
+   },
+   "nr": 40
+  },
+  "13": {
+   "chapter": "Between Wells · The High Dune",
+   "scene": "dunes",
+   "tag": "Day 3. Highest dune yet. Knees: objecting.",
+   "text": [
+    "The big dune takes an hour and both your knees. From the top the Waste runs red in every direction, ridged like a roof. Behind you lies all of yesterday, written in the sand: [[tracks|forty camels and two wagons, in one long line]]. Below, Penhallow waves his ledger. One-one-two, all day. Straight as a rule.",
+    "It is not straight. It bends, gently and steadily, to the left, like a rib. At the far end the wind is already filling it in, grain by grain, the way the Waste corrects everyone in the end."
+   ],
+   "choices": [
+    {
+     "text": "If you go down and show Penhallow his curve,",
+     "short": "Show Penhallow",
+     "to": 17
+    },
+    {
+     "text": "If you go down and tell Sefa what you saw,",
+     "short": "Tell Sefa",
+     "to": 14
+    },
+    {
+     "text": "If you ink the line as the Company Road; it is the road you walked,",
+     "short": "Ink the road",
+     "to": 43
+    }
+   ],
+   "nr": 19
+  },
+  "14": {
+   "chapter": "Well 3 · Old Thirst",
+   "scene": "wellpost",
+   "tag": "Well 3. Dry, says the ledger. Skins: 40.",
+   "text": [
+    "Sefa brings the caravan to Old Thirst by night, though it is dry from autumn to spring. The ledger says so. Sefa says so. The well says so too, in a deep stone voice, when you drop a pebble. But the rope on the windlass is new, and heavy, and when you haul it up there are [[skins|two full waterskins on the end, tied with a knot you don’t know]].",
+    "The water is cold enough to hurt your teeth. “Splendid,” says Penhallow, and enters the well in his ledger as serviceable. Sefa drinks, and says nothing at all, which from Sefa is a speech."
+   ],
+   "choices": [
+    {
+     "text": "If you fill every skin and go on to the Broken Post,",
+     "short": "Go on to Well 4",
+     "to": 19
+    },
+    {
+     "text": "If you sit up tonight by the crate wagon, in case whoever left it comes back,",
+     "short": "Watch by the crate",
+     "to": 16
+    },
+    {
+     "text": "If you won’t drink it; nobody knows who filled it,",
+     "short": "Leave the water",
+     "to": 17
+    }
+   ],
+   "nr": 10
+  },
+  "15": {
+   "chapter": "An ending",
+   "scene": "riders",
+   "tag": "Year one. Veiled. Wells filled: many.",
+   "text": [
+    "Nobody says yes. Somebody hands you a veil, and somebody else a camel with opinions, and that is that. The riders don’t explain themselves, and after a while you stop asking. You learn their knots. You learn to sit very still on a ridge. At night you fill dry wells for strangers and walk lost drivers home.",
+    "Once, from a ridge, you watch a Company caravan pass below, a compass flashing on its wagon. You don’t go down. Your map of the Waste is in your head now, where the riders think maps belong. They are kind to you. They are missing something. They never say what."
+   ],
+   "ending": {
+    "no": "V",
+    "title": "The Veil",
+    "kind": "strange",
+    "epilogue": "You became the people the map leaves out.",
+    "hint": "Riding with them is not the same as riding for them."
+   },
+   "nr": 7
+  },
+  "16": {
+   "chapter": "Between Wells · The Needle",
+   "scene": "wagon",
+   "tag": "Night. Penhallow: asleep. Compass: awake.",
+   "text": [
+    "The camp settles at last. Penhallow has fallen asleep on the crate, his ledger under his cheek. Somewhere beyond the camp, someone is walking a strayed camel home, very quietly. You take out your own pocket compass to check it against his, and stop. Beside the wagon, [[needle|your needle leans away from north]].",
+    "You walk round the wagon. The needle follows the crate, the way a dog follows a pocket with something in it. Ten paces off: north again. Close: the crate. Penhallow wakes, sees you, and blinks. “Iron bands,” he says. “Naturally.” He goes back to sleep."
+   ],
+   "choices": [
+    {
+     "text": "If you ask to see his bearings since Kesh,",
+     "short": "Ask for his ledger",
+     "to": 17
+    },
+    {
+     "text": "If you put your compass away and sleep; iron bands, naturally,",
+     "short": "Go to sleep",
+     "to": 19
+    },
+    {
+     "text": "If you take his compass a hundred yards out and read the bearing there,",
+     "short": "Take a true bearing",
+     "to": 30
+    }
+   ],
+   "nr": 4
+  },
+  "17": {
+   "chapter": "Between Wells · The Ledger",
+   "scene": "wagon",
+   "tag": "Day 4. Skins: 31. Corrections: growing.",
+   "text": [
+    "Penhallow answers with his ledger. It is a beautiful thing: ruled in red, inked in black, not one blot. Each morning, a bearing to Tal Amira, and beside it a small correction “for drift”: [[ledger|one degree, two, three, five, eight]]. Every correction runs the same way. Every one is entered with care.",
+    "The water column is just as neat, and shorter. “Half a skin a man from today,” says Penhallow. “By the ledger.” The drivers look at Sefa. Sefa is looking at the sky, or at where the sky would be, with her head on one side."
+   ],
+   "choices": [
+    {
+     "text": "If you ration the water by his ledger, half a skin a man,",
+     "short": "Ration the water",
+     "to": 18
+    },
+    {
+     "text": "If you take his numbers to Sefa, and let her lead,",
+     "short": "Take them to Sefa",
+     "to": 19
+    },
+    {
+     "text": "If you trust the corrections; they are very neat,",
+     "short": "Trust the corrections",
+     "to": 43
+    }
+   ],
+   "nr": 24
+  },
+  "18": {
+   "chapter": "An ending",
+   "scene": "starcamp",
+   "tag": "Well 4. Skins: 24. Drivers: 4.",
+   "text": [
+    "Half a skin a man, measured out in Penhallow’s brass cup. The drivers drink it and say nothing, which is worse than shouting. At the Broken Post the water is bitter. That night three drivers and fourteen camels walk out of camp under the stars, back the way they came, very politely.",
+    "Two more go the next night. Penhallow enters each departure in the ledger, correctly. On the sixth day what is left of the caravan turns for Kesh with more water than it needs and nobody to drink it.",
+    "~ The ledger balances to the last drop."
+   ],
+   "ending": {
+    "no": "VI",
+    "title": "By the Ledger",
+    "kind": "bad",
+    "epilogue": "The water lasted. The drivers didn’t.",
+    "hint": "A ledger counts the skins, not who fills them."
+   },
+   "nr": 15
+  },
+  "19": {
+   "chapter": "Well 4 · The Broken Post",
+   "scene": "brokenpost",
+   "tag": "Well 4. Post: broken. Water: bitter.",
+   "text": [
+    "By evening you reach Well 4. Its carved post has snapped off at knee height, and nobody knows when. At its foot, half drowned in sand, stands an older post: iron, brass-capped, a surveyor’s mark. You brush it clean. Initials, and a line scratched in with a knife: [[eddapost|E.M. Do not trust bearings here.]]",
+    "No date. No reason. Only the warning, and the initials of the woman whose apprentice you were: she taught you nearly everything, and apparently not this. The water is bitter. The riders on the ridge are closer than yesterday. Sefa sits by the well too long, one hand on the broken post."
+   ],
+   "choices": [
+    {
+     "text": "If you camp at the well tonight, as Sefa wants,",
+     "short": "Camp at the well",
+     "to": 20
+    },
+    {
+     "text": "If you push on in the evening cool, by the bearing,",
+     "short": "Push on by the bearing",
+     "to": 22
+    },
+    {
+     "text": "If you climb to the riders with an empty skin held up,",
+     "short": "Climb to the riders",
+     "to": 44
+    }
+   ],
+   "nr": 30
+  },
+  "20": {
+   "chapter": "Well 4 · The Tent Rope",
+   "scene": "starcamp",
+   "tag": "Night 4. Tent ropes: 30. Sefa: one.",
+   "text": [
+    "At dusk Sefa walks straight into a tent rope. Forty years of camps, and she walks into it like a stranger. She laughs and calls the rope a fool. Later you see her find her own camel by touching its face. Penhallow sees it too. He says nothing, and writes for a long time.",
+    "At dawn he brings you the page: “Guide unfit by reason of eyesight. Quartermaster assumes direction by compass.” Below it, a line for a witness. His hand shakes a little. “It is true,” he says. “Isn’t it?”"
+   ],
+   "choices": [
+    {
+     "text": "If you sign as witness; it is true, and he is frightened,",
+     "short": "Sign the report",
+     "to": 21
+    },
+    {
+     "text": "If you tell him she has eyes like a hawk, and sign nothing,",
+     "short": "Lie for her",
+     "to": 22
+    },
+    {
+     "text": "If you tell Sefa what he has written, and walk out with her,",
+     "short": "Walk out with Sefa",
+     "to": 9
+    }
+   ],
+   "nr": 25
+  },
+  "21": {
+   "chapter": "An ending",
+   "scene": "dunes",
+   "tag": "Compass in front. Sefa at the back.",
+   "text": [
+    "You sign. Penhallow takes the front with his compass, and Sefa walks at the back among the spare camels, without a word. Nobody asks her anything. On the third day the dunes turn grey and stop humming. The wells are wherever they are, which is not here.",
+    "The riders find you on the fifth day and walk the caravan back to Kesh, a camel at a time, without being asked. Penhallow’s report is accepted. Sefa never guides again. Once, in the market, you see her turn her face up to the sky, and you go the other way."
+   ],
+   "ending": {
+    "no": "VII",
+    "title": "Unfit",
+    "kind": "bad",
+    "epilogue": "You signed the truth. It wasn’t all of it.",
+    "hint": "Some truths need a second pair of eyes, not a signature."
+   },
+   "nr": 34
+  },
+  "22": {
+   "chapter": "Between Wells · The Red Wind",
+   "scene": "redwind",
+   "tag": "Day 5. Wind: red. Sky: cancelled.",
+   "text": [
+    "Well 4 is out of sight behind you, and Sefa is still at the front. Then it comes, at noon, from the south: a wall the colour of brick, taller than anything, walking. The camels know first. They kneel and turn their backs to it without being asked. The drivers wrap their faces. Penhallow shouts for everyone to shelter in the lee of the crate wagon, the heaviest thing for a hundred miles.",
+    "Sefa does not look at the wall. She has turned her head towards a big dune to the west, and is listening. Over the ridge, the riders are moving fast, in a line, all one way."
+   ],
+   "choices": [
+    {
+     "text": "If you shelter in the lee of the crate wagon, as Penhallow orders,",
+     "short": "Shelter by the wagon",
+     "to": 24
+    },
+    {
+     "text": "If you follow Sefa, who is walking towards the dune that hums,",
+     "short": "Follow Sefa",
+     "to": 25
+    },
+    {
+     "text": "If you follow the riders over the ridge,",
+     "short": "Follow the riders",
+     "to": 23
+    }
+   ],
+   "moment": {
+    "line": "The wind is a wall now, and it is walking.",
+    "seconds": 10,
+    "default": 24,
+    "head": "Choose before the wind arrives",
+    "sub": "Wait too long, and the wind chooses for you.",
+    "defaultLabel": "THE WIND’S CHOICE",
+    "timeout": "The wind chooses for you…"
+   },
+   "nr": 2
+  },
+  "23": {
+   "chapter": "Between Wells · The Riders’ Lee",
+   "scene": "arches",
+   "tag": "Day 5. Inside an arch. Outside: red.",
+   "text": [
+    "The riders go into a spine of red rock and through it, into an arch the wind has worn as smooth as a throat. Inside, the storm is only noise. Their camels kneel, and you kneel with them. Somebody hands you water. All afternoon the arch hums one low note while the wind plays it.",
+    "Ilyas, a rider girl of about twelve, sits beside you and counts your buttons without asking. “Why do you carry a box you don’t open?” she says. Nobody tells her to be quiet. When the wind drops, the riders look at you, and wait."
+   ],
+   "choices": [
+    {
+     "text": "If you go back to the caravan when the wind drops,",
+     "short": "Back to the caravan",
+     "to": 25
+    },
+    {
+     "text": "If you ask to stay with the riders,",
+     "short": "Stay with them",
+     "to": 15
+    },
+    {
+     "text": "If you ask Ilyas to show you her people’s well,",
+     "short": "Ask to see their well",
+     "to": 44
+    }
+   ],
+   "nr": 28
+  },
+  "24": {
+   "chapter": "An ending",
+   "scene": "redwind",
+   "tag": "Day 5. Shelter: excellent. Briefly.",
+   "text": [
+    "The lee of the wagon is perfect for twenty minutes. Then the sand finds it. A lee is where the wind sets down whatever it is carrying, and it is carrying a great deal. You dig. The wagon becomes a dune with a wheel sticking out of it, and you become part of the dune.",
+    "The riders dig you out at dusk, all of you, coughing red and alive. The crate does not come out. It is somewhere under the new dune, which will walk a mile a year now with machine parts inside it. Penhallow sits on top and refuses to leave. Your map is in there too."
+   ],
+   "ending": {
+    "no": "VIII",
+    "title": "The Lee",
+    "kind": "bad",
+    "epilogue": "You kept out of the wind. The wind didn’t keep out of you.",
+    "hint": "In a red wind, the lee of a heavy thing fills first."
+   },
+   "nr": 9
+  },
+  "25": {
+   "chapter": "Well 5 · Not Found",
+   "scene": "dunes",
+   "tag": "Well 5. Not found. Skins: 19.",
+   "text": [
+    "The wind drops at dusk. Sefa has brought the caravan through the storm by listening to the dune. The road is gone. So is Well 5, which should be here, and is somewhere under a dune that wasn’t. The caravan stands knee-deep in new sand, coughing. You go down the line of camels and tap the skins: a thud for full, a hollow answer for empty. Nineteen thud.",
+    "Penhallow holds up his compass. “The one thing the wind couldn’t move.” Sefa turns her face north, towards white flats you can just see, and says the sky is right that way. On the ridge a line of riders moves off east, slowly, as if they would like to be followed."
+   ],
+   "choices": [
+    {
+     "text": "If you follow the compass; the wind couldn’t move it,",
+     "short": "Follow the compass",
+     "to": 43
+    },
+    {
+     "text": "If you follow Sefa towards the white flats,",
+     "short": "Follow Sefa",
+     "to": 26
+    },
+    {
+     "text": "If you follow the line of riders east,",
+     "short": "Follow the riders",
+     "to": 44
+    }
+   ],
+   "nr": 13
+  },
+  "26": {
+   "chapter": "Between Wells · The White Flats",
+   "scene": "flats",
+   "tag": "Day 6. Clay: white. Heat: personal.",
+   "text": [
+    "The clay flats are white and hard as plates, and the heat comes off them in sheets. Ahead, low on the ground, lies a lake: blue, shining, right where the bearing points. The drivers lift their heads. And high in the sky to the north, upside down, hangs a carved well-post with a palm beside it, roots in the air.",
+    "“What’s in the sky?” asks Sefa. You tell her. She smiles, and says nothing. Penhallow has his compass out; the bearing runs straight across the flats, towards the water."
+   ],
+   "choices": [
+    {
+     "text": "If you make for the lake; the drivers are already turning,",
+     "short": "Make for the lake",
+     "to": 27
+    },
+    {
+     "text": "If you follow the upside-down post in the sky,",
+     "short": "Follow the post",
+     "to": 28
+    },
+    {
+     "text": "If you keep the bearing straight across,",
+     "short": "Keep the bearing",
+     "to": 43
+    }
+   ],
+   "moment": {
+    "line": "The post in the sky is beginning to melt.",
+    "seconds": 10,
+    "default": 43,
+    "head": "Choose before the mirage melts",
+    "sub": "Wait too long, and the needle chooses for you.",
+    "defaultLabel": "THE NEEDLE’S CHOICE",
+    "timeout": "The needle chooses for you…"
+   },
+   "nr": 33
+  },
+  "27": {
+   "chapter": "An ending",
+   "scene": "flats",
+   "tag": "Day 7. Lake: ahead. Still ahead.",
+   "text": [
+    "The lake stays ahead all afternoon, blue and patient: a mile off, then a mile off, then a mile off. The camels stop believing in it before the drivers do. By evening it is gone, and there is only white clay and the long shadows of forty camels who would like a word.",
+    "The riders find the caravan in the night and lead it back to the edge of the flats, to a well that was there all along. Penhallow writes: “Lake: not found.” The Company decides the Waste will not take a road. You find yourself agreeing with the Company, which is a first."
+   ],
+   "ending": {
+    "no": "IX",
+    "title": "Water Lies Down",
+    "kind": "bad",
+    "epilogue": "It looked like water the whole way.",
+    "hint": "In the heat, some things lie down and some stand on their heads."
+   },
+   "nr": 44
+  },
+  "28": {
+   "chapter": "Well 6 · The Caravanserai",
+   "scene": "caravanserai",
+   "tag": "Well 6. Roof: half. Walls: most.",
+   "text": [
+    "The caravan makes camp at Well 6. The caravanserai there is half buried: a dune sits in its courtyard like a guest who won’t leave. Its carved post is the tallest in the Waste; on hot mornings, the drivers say, it hangs in the sky over the flats. Beside it stands a new black telegraph pole, the first of a line that runs all the way to Tal Amira.",
+    "Inside it smells of old smoke and older camels. You lift a lantern to the inner door. Over it, worn but clear, [[carving|riders kneel round a black stone on a plinth, with a star cut above it]]. Penhallow is already asking for the telegraph hut."
+   ],
+   "choices": [
+    {
+     "text": "If you wire Mr Lisle in Tal Amira for instructions,",
+     "short": "Wire Mr Lisle",
+     "to": 29
+    },
+    {
+     "text": "If you go out to the crate wagon tonight, with your knife,",
+     "short": "Take your knife",
+     "to": 31
+    },
+    {
+     "text": "If you follow the telegraph poles to Tal Amira and have done with it,",
+     "short": "Follow the poles",
+     "to": 38
+    }
+   ],
+   "nr": 47
+  },
+  "29": {
+   "chapter": "Well 6 · The Wire",
+   "scene": "caravanserai",
+   "tag": "Well 6. One telegram. Lisle paid.",
+   "text": [
+    "The operator has a fever, a blanket, and a telegram already waiting for you, from Mr Corvin Lisle, the Company’s agent in Tal Amira: [[telegram|DELIVER AS SEALED BUYER WAITING NO DELAYS LISLE]]. Mr Lisle wires in capitals and never pays for a word he can do without.",
+    "Penhallow reads it over your shoulder and stands a little straighter. “There,” he says. “You see.” You don’t, entirely. Outside, the wire hums in the wind, one long note. The operator rests a finger on his key, waiting for your reply, and coughs."
+   ],
+   "choices": [
+    {
+     "text": "If you wire back “All well, proceeding by bearing” and go to bed,",
+     "short": "Wire back “all well”",
+     "to": 33
+    },
+    {
+     "text": "If you go out to the crate wagon tonight anyway,",
+     "short": "Go to the crate",
+     "to": 31
+    }
+   ],
+   "nr": 43
+  },
+  "30": {
+   "chapter": "An ending",
+   "scene": "oasis",
+   "tag": "Bearing: true. Road: straight. Ridges: empty.",
+   "text": [
+    "A hundred yards from the wagon the compass tells the truth, and you write it down. The caravan walks the rest of the way in a line so straight it looks ruled, and reaches Tal Amira a day early. Your map is perfect. Mr Lisle, the Company’s agent, frames it. The crate goes on to the capital by train.",
+    "Next year the Company builds its Road: a post every mile, a telegraph, a regular line. It is the safest crossing in the world. The riders are no longer on the ridges, and nobody leaves water at dry wells any more, because nobody needs to. The Road is very good. Old Thirst is dry."
+   ],
+   "ending": {
+    "no": "X",
+    "title": "The Company Road",
+    "kind": "bad",
+    "epilogue": "A perfect road. Nobody leaves water on it.",
+    "hint": "Mending the needle only mends the needle."
+   },
+   "nr": 46
+  },
+  "31": {
+   "chapter": "Well 6 · The Seal",
+   "scene": "caravanserai",
+   "tag": "Night 7. Seal: lead. Knife: yours.",
+   "text": [
+    "The crate wagon stands in the caravanserai yard. The seal is a fat button of lead stamped with the Company’s lion, wired through both hasps. Penhallow is in the telegraph hut, composing a careful wire; he is a careful writer. You have perhaps ten minutes. Your knife is in your hand. You don’t remember taking it out.",
+    "The stencil says MACHINE PARTS. The night says nothing. On top of the wall a rider sits against the stars, not hiding, watching the yard."
+   ],
+   "choices": [
+    {
+     "text": "If you fetch Penhallow and cut the seal in front of him,",
+     "short": "Cut it before his eyes",
+     "to": 32
+    },
+    {
+     "text": "If you cut the seal now, while Penhallow is busy,",
+     "short": "Cut it now",
+     "to": 34
+    },
+    {
+     "text": "If you put the knife away; a seal is a promise,",
+     "short": "Put the knife away",
+     "to": 38
+    }
+   ],
+   "nr": 22
+  },
+  "32": {
+   "chapter": "Between Wells · Machine Parts",
+   "scene": "skyiron",
+   "tag": "Seal: cut. Contents: not as stencilled.",
+   "text": [
+    "The lid is off. Under the straw there are no machine parts. There is [[star|a stone the size of a sleeping sheep, black and pitted like a burnt loaf]], cold to the touch. Penhallow stands beside you, his ledger clutched to his chest. On the wagon seat his brass compass has swung round. It is pointing at the stone.",
+    "He lifts the compass out and walks away with it: ten paces, twenty. The needle swings back to north. He walks back. It swings to the stone. He does this four times, with great care.",
+    "~ Then he sits down in the sand and opens the ledger at Kesh."
+   ],
+   "choices": [
+    {
+     "text": "If you lead the wagon out to the riders at first light,",
+     "short": "Lead it to the riders",
+     "to": 35
+    },
+    {
+     "text": "If you nail the lid down and let Sefa take you on by the sky,",
+     "short": "Nail it down",
+     "to": 36
+    },
+    {
+     "text": "If you take your bearings a hundred yards off from now on; at least you know,",
+     "short": "Correct the bearings",
+     "to": 30
+    }
+   ],
+   "nr": 41
+  },
+  "33": {
+   "chapter": "An ending",
+   "scene": "oasis",
+   "tag": "The capital. Room 9. Compasses: confused.",
+   "text": [
+    "The crate stays shut all the way to Tal Amira. There it is signed for, lifted onto a train by six men and a crane, and you are paid. A year later, in the capital, you meet it again: a black stone the size of a sheep, in a glass case in Room 9, labelled “Sky-iron, Ochre Waste. Acquired.”",
+    "Every compass in the museum points at it. Visitors walk in slow circles round the gallery, and the guards have chalked arrows on the floor to the way out. Once a year a veiled stranger stands before the case all afternoon, and leaves without a word. Nobody can find anything in Room 9."
+   ],
+   "ending": {
+    "no": "XI",
+    "title": "Glass Case",
+    "kind": "strange",
+    "epilogue": "It still points the way. The way is Room 9.",
+    "hint": "A thing everyone steers by rarely belongs in a case."
+   },
+   "nr": 29
+  },
+  "34": {
+   "chapter": "Well 6 · Ten Minutes",
+   "scene": "caravanserai",
+   "tag": "Night 7. Ten minutes. Now nine.",
+   "text": [
+    "The lead parts like cheese. Under the lid, under the straw, lies a black stone the size of a sleeping sheep, pitted like a burnt loaf, cold as the bottom of a well. The compass in your shirt pocket turns round to look at it.",
+    "~ On the wall, the rider has stood up.",
+    "Then there are more of them in the gateway, making less noise than the sand: four riders, ropes, a sledge. Ilyas, the rider girl, is with them. She looks at the stone, then at you, and for once asks nothing at all. In the telegraph hut, Penhallow is still writing."
+   ],
+   "choices": [
+    {
+     "text": "If you let them take it now, and nail the lid back on,",
+     "short": "Let them take it",
+     "to": 39
+    },
+    {
+     "text": "If you wave them back and show Penhallow when he comes,",
+     "short": "Wait for Penhallow",
+     "to": 32
+    },
+    {
+     "text": "If you wave them back, nail the lid down, and tell no one,",
+     "short": "Tell no one",
+     "to": 33
+    }
+   ],
+   "nr": 32
+  },
+  "35": {
+   "chapter": "Between Wells · The Arches",
+   "scene": "arches",
+   "tag": "Day 8. Riders: 40. Arches: singing.",
+   "text": [
+    "At first light you lead the crate wagon out towards the ridge, and the riders come down to meet it: forty of them, veiled, unhurried. They do not touch the crate. They give the drivers water, and turn south into a country of red stone arches that hum as the wind goes through them.",
+    "Sefa walks at the front by ear. “That one’s a high note. Left of it.” She doesn’t miss. Behind her Penhallow walks beside the wagon, quite white, holding his compass, which keeps looking at the crate. “They will dismiss me,” he says mildly, “in Tal Amira.”"
+   ],
+   "choices": [
+    {
+     "text": "If you go on to the riders’ well, Penhallow and all,",
+     "short": "Go on together",
+     "to": 37
+    },
+    {
+     "text": "If you let the riders take the stone on alone, and spare Penhallow the rest,",
+     "short": "Spare Penhallow",
+     "to": 39
+    }
+   ],
+   "nr": 12
+  },
+  "36": {
+   "chapter": "An ending",
+   "scene": "wellpost",
+   "tag": "Well 8. Tal Amira. Sefa: staying.",
+   "text": [
+    "Sefa has brought you in by the sky, the last three days by sound alone, and only at the gate do you understand how alone. At Well 8, outside Tal Amira, she sits on the lip of the well and lays her hand on the post. “I’ll stop here,” she says. “Read it for me.” You read her the notches, one for every crossing. Forty are hers.",
+    "The crate is signed for and sent to the capital by six men and a crane. You are paid. Your map is good. At dusk you go back to the well. She is still there, facing the Waste, listening to a sky she can no longer see.",
+    "~ You sit with her until it is all stars."
+   ],
+   "ending": {
+    "no": "XII",
+    "title": "The Last Well",
+    "kind": "silver",
+    "epilogue": "She brought you all the way in. Then she stopped.",
+    "hint": "Arriving is not the same as bringing something home."
+   },
+   "nr": 38
+  },
+  "37": {
+   "chapter": "Well 9 · The Plinth",
+   "scene": "starreturned",
+   "tag": "Well 9. On no map. Ropes: 4.",
+   "text": [
+    "The Ninth Well, the riders’ own, lies in a hollow among the arches, ringed with old carved posts. In the middle stands a plinth, worn smooth in the shape of something missing. The riders unveil. They are only people: tired, sunburnt, careful. Four ropes go round the stone. You take one, and so, after a moment, does Penhallow.",
+    "The stone goes down onto the plinth slowly, and fits the way a foot fits an old shoe. Penhallow’s compass swings to it and stays. He looks at it, then puts it in his pocket. Ilyas, the rider girl, is crying and pretending to be cross about it. The riders fill every skin you have."
+   ],
+   "choices": [
+    {
+     "text": "If you let the riders lead you all to Tal Amira,",
+     "short": "Ride to Tal Amira",
+     "to": 41
+    },
+    {
+     "text": "If you chip off a splinter of the stone for luck, while nobody is looking,",
+     "short": "Take a splinter",
+     "to": 45
+    }
+   ],
+   "nr": 39
+  },
+  "38": {
+   "chapter": "Between Wells · The Last Camp",
+   "scene": "starcamp",
+   "tag": "Night 9. Tal Amira: lights. Skins: 12.",
+   "text": [
+    "Two nights on, the seal is still whole. The last camp before Tal Amira. Its lights are on the horizon, or a picture of them; you can no longer tell. The telegraph poles stand along the road like men waiting to be paid. Penhallow sleeps on the crate, one hand flat on the seal, like a man keeping a book open. Sefa sits apart, facing the dark.",
+    "Ilyas, the rider girl, walks in out of nowhere to trade, as if it were market day. She gives you three dates for a button, then sits down by the crate wagon, very close to it, and looks at it, and at you, and waits."
+   ],
+   "choices": [
+    {
+     "text": "If you go and sit with Sefa, who is listening to something you can’t hear,",
+     "short": "Sit with Sefa",
+     "to": 36
+    },
+    {
+     "text": "If you send the girl home before Penhallow wakes and sees her,",
+     "short": "Send her home",
+     "to": 33
+    },
+    {
+     "text": "If you show Ilyas what your pocket compass does beside the crate,",
+     "short": "Show her the needle",
+     "to": 40,
+     "hidden": true,
+     "needs": {
+      "seen": [
+       14,
+       16
+      ]
+     }
+    }
+   ],
+   "nr": 35
+  },
+  "39": {
+   "chapter": "An ending",
+   "scene": "oasis",
+   "tag": "Tal Amira. One crate. Straw.",
+   "text": [
+    "The stone goes home without you; you never see the riders’ well. In Tal Amira, Penhallow stands before the Company’s agent, Mr Lisle, with his ledger and a crate full of straw, and says the fault is his. The seal was his to keep, and he slept, or was elsewhere, or did not ask. He does not look at you once.",
+    "He is dismissed by the evening wire. A month later a parcel finds you: his brass compass, wrapped in a page torn from the ledger.",
+    "~ On the page, in his beautiful hand: “Points north now. Thought you would like to know. A.P.”"
+   ],
+   "ending": {
+    "no": "XIII",
+    "title": "In Your Place",
+    "kind": "silver",
+    "epilogue": "The stone went home. Mr Penhallow didn’t.",
+    "hint": "Take everyone the whole way."
+   },
+   "nr": 5
+  },
+  "40": {
+   "chapter": "Between Wells · Bottom Boards",
+   "scene": "starcamp",
+   "tag": "Night 9. Screws: 24. Penhallow: snoring.",
+   "text": [
+    "You hold your compass beside the crate. The needle leans, and leans. Ilyas watches it the way a hunter watches a dog point. Then she whistles, once, low. By moonset there are riders at the wagon with a sledge and a sack of stones, and Penhallow is still asleep on the seal.",
+    "Nobody touches the lid. You lie under the wagon and back out the screws, the wagon bed’s and then the crate’s, twenty-four, one at a time. The stone comes down into eight pairs of hands, black, the size of a sleeping sheep. The stones go up. The boards go back. Ilyas holds the screws and counts them, in a whisper."
+   ],
+   "choices": [
+    {
+     "text": "If you drive the last screw home and lie down beside the wagon to sleep,",
+     "short": "Go to sleep",
+     "to": 49
+    },
+    {
+     "text": "If you slip in a note for Mr Lisle before the last board, explaining,",
+     "short": "Leave a note",
+     "to": 46
+    }
+   ],
+   "nr": 21
+  },
+  "41": {
+   "chapter": "Well 8 · Tal Amira",
+   "scene": "oasis",
+   "tag": "Well 8. Camels: 40. Drivers: 9. Lost: 0.",
+   "text": [
+    "The riders bring the caravan in through the palms at noon, and the whole city climbs onto its walls to watch: forty camels, nine drivers, two wagons, nobody lost. Penhallow wrote his report on the way, in his best hand. Mr Lisle, the Company’s agent, reads it in his office, twice, slowly, without sitting down.",
+    "Then he holds out his hand. “The map,” he says. “The map, at least, is Company property.” He will pay three times your fee for it, today, in gold. Outside, the drivers are watering the camels, and Sefa stands at the gate well with her hand on its post."
+   ],
+   "choices": [
+    {
+     "text": "If you hand Mr Lisle the map; the Company paid for it,",
+     "short": "Hand over the map",
+     "to": 47
+    },
+    {
+     "text": "If you give the map to Sefa’s drivers, and let the Company sue,",
+     "short": "Give it to the drivers",
+     "to": 48
+    }
+   ],
+   "nr": 8
+  },
+  "42": {
+   "chapter": "An ending",
+   "scene": "dunes",
+   "tag": "No well. Tracks found. Ours.",
+   "text": [
+    "You keep the bearing, two days more. One-one-two. At noon on the second day you cross fresh tracks, forty camels and two wagons, and the drivers cheer for a whole minute before the youngest of them points out whose they are.",
+    "~ Nobody cheers after that.",
+    "The riders find you at dusk and walk you all back to Kesh without a word, the long way, by the wells. The Company cancels the road. Penhallow keeps the ledger. You keep your map, which is beautifully accurate and very nearly round."
+   ],
+   "ending": {
+    "no": "XIV",
+    "title": "Your Own Tracks",
+    "kind": "bad",
+    "epilogue": "You mapped the Company Road. It is a circle.",
+    "hint": "When the road comes back to meet you, stop trusting what sent you."
+   },
+   "nr": 23
+  },
+  "43": {
+   "chapter": "No Well · The Dead Dunes",
+   "scene": "dunes",
+   "tag": "No well. Skins: 6. Bearing: 112.",
+   "text": [
+    "You follow the compass for days. The dunes here are grey, not red, and they don’t hum. Nothing grows. Nothing has walked here for a long time, not even the wind, it seems. The skins hang nearly flat. Penhallow’s compass still says one-one-two, and his ledger says Tal Amira is two days ahead, and has said so for two days.",
+    "On the ridge the riders sit their camels in a long line, watching the caravan the way you would watch a child walk towards a pond. The crate wagon groans in the soft sand. The camels are tired of pulling machine parts."
+   ],
+   "choices": [
+    {
+     "text": "If you keep the bearing; Tal Amira can’t be far now,",
+     "short": "Keep the bearing",
+     "to": 42
+    },
+    {
+     "text": "If you walk towards the riders with an empty skin held up,",
+     "short": "Walk to the riders",
+     "to": 44
+    },
+    {
+     "text": "If you break the crate open here and now, to lighten the wagon,",
+     "short": "Break the crate open",
+     "to": 32
+    }
+   ],
+   "nr": 3
+  },
+  "44": {
+   "chapter": "Well 9 · The Empty Plinth",
+   "scene": "ninthwell",
+   "tag": "Well 9. On no map. Water: yes.",
+   "text": [
+    "Without a word the riders take you into the rock and down into a hollow you would never have found, ringed with old carved posts. A well: a ninth one, on no map. They let you drink first.",
+    "~ In the middle of the hollow stands [[plinth|a stone plinth, worn smooth in the shape of something that isn’t there]].",
+    "Wheel ruts, half full of sand, run out of the hollow towards Kesh. Every morning, says a rider girl called Ilyas, somebody sweeps the plinth, though there is nothing on it to sweep. At sunset the riders saddle up, and look at you, and wait."
+   ],
+   "choices": [
+    {
+     "text": "If you let them take you back to the caravan,",
+     "short": "Back to the caravan",
+     "to": 28
+    },
+    {
+     "text": "If you ask to stay with them,",
+     "short": "Ask to stay",
+     "to": 15
+    }
+   ],
+   "nr": 17
+  },
+  "45": {
+   "chapter": "An ending",
+   "scene": "ninthwell",
+   "tag": "Ever after. North: in your pocket.",
+   "text": [
+    "It comes away with a small click: a splinter of black no longer than a fingernail. Nobody stops you. Ilyas sees, and looks at you for a long moment, and then looks away, which is worse than anything she could have said. The riders take the caravan on to Tal Amira. Nobody mentions it again.",
+    "From that day, every compass you own points at your coat pocket. You can never take a bearing again. You become quite famous for maps with no north on them, which the critics call daring. You keep the splinter in a matchbox. You could send it back. Every year, you nearly do."
+   ],
+   "ending": {
+    "no": "XV",
+    "title": "Pocket North",
+    "kind": "strange",
+    "epilogue": "North is wherever you are. It is lonelier than it sounds.",
+    "hint": "Give it all back, even the piece that fits in a pocket."
+   },
+   "nr": 42
+  },
+  "46": {
+   "chapter": "An ending",
+   "scene": "wagon",
+   "tag": "The capital. One crate. Forty rocks.",
+   "text": [
+    "In the capital, before the museum’s board, Mr Lisle opens the crate himself, with a short speech. Inside are forty stones of good desert ballast, and your note, which begins “Dear Mr Lisle” and goes on, unfortunately, for four pages, explaining everything.",
+    "After a long silence the museum puts the crate on show anyway, stones, note and all: “A Notable Desert Hoax.” It is very popular. The Company sends men to Kesh to ask questions, which nobody there answers. You are never hired again. Your note is the most famous thing you will ever write."
+   ],
+   "ending": {
+    "no": "XVI",
+    "title": "Exhibit B",
+    "kind": "strange",
+    "epilogue": "Your best-known work is a note in a box of rocks.",
+    "hint": "A good secret doesn’t need a signature."
+   },
+   "nr": 18
+  },
+  "47": {
+   "chapter": "An ending",
+   "scene": "oasis",
+   "tag": "Tal Amira. Fee: tripled. Map: locked.",
+   "text": [
+    "Mr Lisle pays in gold, counts it twice, and unrolls the map. He studies it a long time: the wells, the names of the dunes, which mirage hangs where, the stars over every well. Not one bearing. “Remarkable,” he says, and locks it in the bottom drawer of his desk, and puts the key on his watch chain.",
+    "The Company never builds its road. The riders keep their ridges; the stone keeps its plinth. Nobody sees the map again. Sefa guides two more seasons from memory, then not at all, and the next guide learns the sky from nothing, the slow way.",
+    "~ All of it is written down, in a drawer."
+   ],
+   "ending": {
+    "no": "XVII",
+    "title": "The Drawer",
+    "kind": "silver",
+    "epilogue": "The best map of the Waste is in a drawer. The key is on a watch chain.",
+    "hint": "Ask who needs the map, not who paid for it."
+   },
+   "nr": 50
+  },
+  "48": {
+   "chapter": "An ending",
+   "scene": "oasis",
+   "tag": "Tal Amira. Bearings: none. Camels lost: none.",
+   "text": [
+    "You give the map to the drivers. Mr Lisle threatens to sue; the riders sit their camels outside his office until he stops. Penhallow keeps his post: nobody has ever brought forty camels through the Waste alive, and the Board wants a manual. He starts it that night. “1. Do not trust bearings.”",
+    "Your map has the wells on it, the dune names, which mirage hangs where, and the stars, pricked through the paper with a pin. Sefa holds it up to the sun and runs her thumb across them, well by well. Not a single bearing anywhere.",
+    "~ She says it is the first map she has ever been able to read."
+   ],
+   "ending": {
+    "no": "XVIII",
+    "title": "No Bearings",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Not one bearing on it. Not one camel lost.",
+    "hint": "The truest instrument in the Waste was never made of brass."
+   },
+   "nr": 36
+  },
+  "49": {
+   "chapter": "An ending",
+   "scene": "sunrise",
+   "tag": "Last morning. Seal: intact. Stone: home.",
+   "text": [
+    "At sunrise Penhallow wakes on the crate, checks the seal, finds it perfect, and pats the lid like a good horse. The ridges are empty. The stone is a night’s ride south by now, going home on a sledge. Ilyas has your last button. You have a screwdriver in your boot and nothing whatever to declare.",
+    "At Tal Amira Mr Lisle signs for one crate, sealed, and sends it on to the capital, where a museum will open it in front of important people. Penhallow writes the last line in his ledger in his best hand: “Delivered as sealed.”",
+    "~ Every word of it is true."
+   ],
+   "ending": {
+    "no": "XIX",
+    "title": "Delivered as Sealed",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Delivered as sealed. Every word true.",
+    "hint": "A seal only ever promises the lid."
+   },
+   "nr": 11
+  },
+  "50": {
+   "chapter": "Well 1 · The Morning City",
+   "scene": "mirage",
+   "tag": "Day 1. Alone. The city: receding.",
+   "text": [
+    "You slip out of the gate before anyone counts you. The city hangs ahead, upside down, palms and all, and you walk towards it for an hour, then two. It does not get nearer. At noon it melts, and leaves you on your own in a great deal of red sand that all looks the same.",
+    "On the ridge above you a rider sits a camel, veiled, watching. After a while the rider turns the camel without a word and starts off at a walk, looking back once, as if you might like to come. Behind you, as far as you can see, there is no caravan at all."
+   ],
+   "choices": [
+    {
+     "text": "If you follow the rider,",
+     "short": "Follow the rider",
+     "to": 8
+    },
+    {
+     "text": "If you keep walking; the city flickered back for a moment, just there,",
+     "short": "Keep walking",
+     "to": 6
+    }
+   ],
+   "nr": 31
+  }
+ }
+}

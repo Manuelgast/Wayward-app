@@ -58,6 +58,26 @@
   "dawnsea": {
    "title": "Ochtend bij laagtij",
    "focus": "50% 55%"
+  },
+  "lamproomstorm": {
+   "title": "Inside the lamp room at the top of the Seren Light during the Great Storm of the",
+   "focus": "50% 55%"
+  },
+  "marigolddeck": {
+   "title": "On the deck of the three-masted sailing ship Marigold, of the 1820s, as the morn",
+   "focus": "50% 55%"
+  },
+  "cottagedoor": {
+   "title": "At the open green door of the keeper's cottage on Cape Seren at two in the morni",
+   "focus": "50% 55%"
+  },
+  "chandlery": {
+   "title": "Inside Marsh & Sons, Chandlers, the oldest shop in Grey Harbour, by lamplight",
+   "focus": "50% 55%"
+  },
+  "capeattwo": {
+   "title": "Cape Seren at two in the morning",
+   "focus": "50% 55%"
   }
  },
  "sections": {
@@ -159,7 +179,7 @@
    "chapter": "De kade om twee uur",
    "scene": "baynight",
    "text": [
-    "Bij het vallen van de avond loopt de kade leeg, en dan vol mist. Om twee uur gaat er zonder enig vertoon onder de baai een licht aan. Het is goud en heel diep, en het draait zoals een vuurtoren draait, langs de onderkant van het water. Het gezoem trekt door de stenen omhoog, je laarzen in. Dan, uit de mist: een boeg.",
+    "Je staat in dichte mist op de kade. Onder de baai brandt, zonder enig vertoon, een licht. Het is goud en heel diep, en het draait zoals een vuurtoren draait, langs de onderkant van het water. Het gezoem trekt door de stenen omhoog, je laarzen in. Dan, uit de mist: een boeg.",
     "Het schip komt binnen zonder een zuchtje wind en meert aan alsof het dat elke nacht doet. Op de boeg: [[marigold|MARIGOLD, 1826, de verf nog nat]]. Langs de haven gaan deuren open. De bewoners komen in hun nachtgoed naar beneden, met karren en kruiwagens, en knikken elkaar toe, als mensen op weg naar een markt die ze nog nooit hebben gemist."
    ],
    "choices": [
@@ -274,7 +294,7 @@
   },
   "26": {
    "chapter": "De klifrand om twee uur",
-   "scene": "cape",
+   "scene": "capeattwo",
    "text": [
     "Je wacht. Om middernacht gaat de wind liggen, alsof iemand hem dat heeft opgedragen. Om één uur worden de ramen van Grijshaven donker, en dan, vreemd genoeg, gaat een flink aantal weer aan. Beneden op de kade verzamelen zich kleine lantaarns, als mensen die een afspraak hebben.",
     "Precies om twee uur licht de baai van onderen op. Het is de bundel van een vuurtoren, groen door het water heen, die langzaam ronddraait op de zeebodem, waar geen vuurtoren staat. Hij strijkt over de havenmond, over de rotsen onder je, en begint aan de klif. Hij mindert vaart, zoals een lantaarn vaart mindert als hij het bijna zeker weet."
@@ -330,7 +350,7 @@
   },
   "33": {
    "chapter": "Aan boord van de Marigold",
-   "scene": "wreck",
+   "scene": "marigolddeck",
    "text": [
     "Niemand houdt je tegen. De bemanning beweegt over het dek als mensen die slaapwandelen: ze rollen touwen op die al opgerold zijn, hun jassen doorweekt van een regen die niet valt. Kapitein Ada Lorne komt van het roer naar beneden, tikt aan haar pet en heet je welkom aan boord alsof je een overtocht had geboekt. “We verwachten het licht,” zegt ze hoffelijk, en ze kijkt langs je heen naar de kaap.",
     "Je wacht met haar bij de reling terwijl de karren af en aan rijden. Ze vraagt je twee keer hoe laat het is, bedankt je elke keer en gelooft je niet. Dan wordt de lucht boven de kaap grijs. De bemanning gaat naar de trossen zonder wakker te worden. Achter je komt de loopplank omhoog."
@@ -494,7 +514,7 @@
   },
   "53": {
    "chapter": "Een einde",
-   "scene": "cape",
+   "scene": "capeattwo",
    "text": [
     "Je blijft staan. De bundel bereikt je laarzen, je jas, je gezicht, en blijft daar. Hij is warm, wat je niet had verwacht, en heel fel, en hij heeft totaal geen haast om verder te gaan. Je steekt een hand op tegen het licht. Het is het laatste wat je besluit.",
     "Er varen nog altijd schepen langs Kaap Seren. Om twee uur zien hun uitkijken een gestalte op de klif, van onderen verlicht, één hand opgeheven, en ze houden ruim afstand van de rotsen en komen veilig thuis. Eén schip ziet je nooit. Dat komt elke nacht uit de mist binnen, op zoek naar een ander licht."
@@ -538,7 +558,7 @@
    "chapter": "De nooit bezorgde brieven",
    "scene": "wreck",
    "text": [
-    "Op de postzak, stijf van het zout, staat in sjabloonletters MARIGOLD. Erin zitten brieven die nooit zijn aangekomen: een rekening, een verontschuldiging, een huwelijksaanzoek, een krentenbroodrecept waarvan de laatste regel is weggespoeld. Papier brengt in de hoofdstad niets op, dus niemand wil ze.",
+    "De postzak ligt op de kade, stijf van het zout, met in sjabloonletters MARIGOLD erop. Erin zitten brieven die nooit zijn aangekomen: een rekening, een verontschuldiging, een huwelijksaanzoek, een krentenbroodrecept waarvan de laatste regel is weggespoeld. Papier brengt in de hoofdstad niets op, dus niemand wil ze.",
     "Eén brief is niet gefrankeerd, alleen verzegeld met vuurtorenwas. Hij hoort niet in een postzak thuis; de zee sorteert kennelijk op datum. Tobias Wren, vuurtorenwachter, aan “mijn Nell”, de nacht van de storm: “Als de lamp niet wil branden, steek hem dan voor mij aan. Je weet waar de laatste olie bewaard wordt.” De enige Nell in Grijshaven, zegt een voerman, is het zoutmeisje. “Verkeerde Nell,” voegt hij eraan toe. “Die is tien.”"
    ],
    "choices": [
@@ -557,7 +577,7 @@
   },
   "60": {
    "chapter": "Met het tij mee",
-   "scene": "storm",
+   "scene": "marigolddeck",
    "text": [
     "Bij het eerste licht gaat de loopplank omhoog en glipt de Marigold met het tij naar buiten. Dan doet de ochtend iets wat ochtenden niet doen: hij gaat terug. De lucht wordt donker, de wind draait, de zee komt overeind in lange grijze ruggen, en tegen de tijd dat je bij de reling bent, is het 1826 en komt de regen van opzij.",
     "Op de kaap staat het Serenlicht, ongeschonden, hoog en volkomen donker. De roerganger stuurt met zijn ogen dicht. Kapitein Lorne komt naar je toe, zo hoffelijk als een gastvrouw tegen een gast die te laat is. “We verwachten het licht,” zegt ze, en ze geeft je [[shiplantern|de scheepslantaarn, die nog brandt]]. Dan laat ze een sloep voor je strijken, alsof je erom had gevraagd."
@@ -594,9 +614,9 @@
   },
   "65": {
    "chapter": "De scheepsleverancier",
-   "scene": "harbour",
+   "scene": "chandlery",
    "text": [
-    "Marsh & Zonen, Scheepsleveranciers, is de oudste winkel van Grijshaven en de enige die geen antiek verkoopt. Alles op de planken, touw, lampenpitten, scheepsbeschuit, heeft een datum in krijt, en alles is [[shillings|geprijsd in shillings die niet meer bestaan]]. Abel Marsh zelf is het oudste stuk in de zaak, en het enige zonder prijs.",
+    "Overdag sta je weer in het stadje, bij Marsh & Zonen, Scheepsleveranciers: de oudste winkel van Grijshaven en de enige die geen antiek verkoopt. Alles op de planken, touw, lampenpitten, scheepsbeschuit, heeft een datum in krijt, en alles is [[shillings|geprijsd in shillings die niet meer bestaan]]. Abel Marsh zelf is het oudste stuk in de zaak, en het enige zonder prijs.",
     "Als je naar lampolie vraagt, houdt hij zich niet van den domme. Van onder de toonbank tilt hij een verzegeld blik, met de datum op de zijkant geschilderd: 1826. “Silas Vane heeft het aan mijn overgrootvader verkocht. Vuurtorenolie, uit de week dat de Marigold verging. Het leek ons nooit fatsoenlijk om het op te maken.” Hij zet het tussen jullie in neer als een bewijsstuk. “Zat al te wachten tot iemand ernaar vroeg.”"
    ],
    "choices": [
@@ -657,7 +677,7 @@
   },
   "71": {
    "chapter": "Er wordt geklopt",
-   "scene": "cottage",
+   "scene": "cottagedoor",
    "text": [
     "Op de stoep staat een man, druipnat, zijn pet in zijn handen. Hij draagt een wachtersjas met koperen knopen, en het water loopt van hem af alsof hij net uit zee is opgekomen, waar je maar liever niet bij stilstaat. Achter je wijzen alle klokken twee uur aan. Voor één keer, vermoed je, hebben ze gelijk.",
     "“Goedenavond. Tobias Wren. Excuses voor het storen.” Hij kijkt naar je lege handen, dan beleefd naar je gezicht. “Heeft de haven de olie gestuurd?” Achter hem steekt de wind op, de zee is wit tot aan de horizon, en op de kaap, waar alleen een stomp stond, staat het Serenlicht, ongeschonden en donker."
@@ -707,7 +727,7 @@
      "to": 83
     },
     {
-     "text": "Als je naast de slapende wachter gaat zitten,",
+     "text": "Als je naast de slapende wachter gaat zitten en de wacht houdt,",
      "short": "Ga bij de wachter zitten",
      "to": 88
     }
@@ -750,7 +770,7 @@
    "chapter": "Nell en de brief",
    "scene": "saltpans",
    "text": [
-    "Nell leest de brief één keer, snel, zoals je iets leest dat voor iemand anders bedoeld is. Dan nog eens, langzaam. De derde keer leest ze hem helemaal niet. Ze houdt hem alleen vast, en achter haar valt haar hark om, en geen van jullie raapt hem op.",
+    "’s Ochtends, op de zoutpannen, leest Nell de brief één keer, snel, zoals je iets leest dat voor iemand anders bedoeld is. Dan nog eens, langzaam. De derde keer leest ze hem helemaal niet. Ze houdt hem alleen vast, en achter haar valt haar hark om, en geen van jullie raapt hem op.",
     "“Hij zei altijd dat mijn tenen er nog eens af zouden vriezen,” zegt ze. Haar stem is tien jaar oud, en honderdtien. Ze kijkt naar Kaap Seren, waar niets staat, en ziet een huisje, een lamp, een man in een natte jas. “Hij heeft het laatste blik onder mijn bed verstopt.” Een stilte, heel klein. “Voor mij.”"
    ],
    "choices": [
@@ -769,7 +789,7 @@
   },
   "83": {
    "chapter": "De toren in de storm",
-   "scene": "storm",
+   "scene": "lamproomstorm",
    "text": [
     "Na de laatste bocht van de trap sta je in de lantaarnkamer, midden in de ergste nacht van 1826. De regen roffelt op het glas als applaus. De wachter staat al bij de lamp, zoals mensen in dromen altijd al ergens zijn, druipend, en knipt een pit bij die niets heeft om te branden. Door de stromende ruiten komen de lichten van de Marigold op de rotsen af.",
     "“Olie,” zegt hij, zonder zich om te draaien. “Heb je olie meegebracht?” Je klopt op je zakken, alsof er achter de blanco kaart een blik lampolie verstopt kan zitten. Nee dus. Hij knikt, alsof hij van de haven niet anders had verwacht. Beneden maakt de zee het geluid dat ze maakt vlak voordat ze een besluit neemt."
@@ -790,7 +810,7 @@
   },
   "84": {
    "chapter": "De scheepslantaarn",
-   "scene": "storm",
+   "scene": "lamproomstorm",
    "text": [
     "Je roeit met de lantaarn tussen je knieën, en de zee, die dit vaker heeft gedaan, zet je af aan de voet van de toren. De trap draait rond en rond, als een gedachte die je niet af kunt maken. Boven, in de lantaarnkamer, staat een vuurtorenwachter in een doorweekte oliejas naast een koude lamp.",
     "Hij draait zich om, ziet wat je bij je hebt, en zijn gezicht doet wat gezichten op een kade doen als er toch nog een schip binnenkomt dat ze al hadden opgegeven. “Kijk eens aan,” zegt hij zacht, meer tegen de lantaarn dan tegen jou. Achter het stromende glas komen de lichten van de Marigold laag en snel naderbij. Er is tijd voor één ding."
@@ -820,7 +840,7 @@
   },
   "85": {
    "chapter": "Een einde",
-   "scene": "storm",
+   "scene": "marigolddeck",
    "text": [
     "De roerganger stapt opzij zonder wakker te worden, en jij neemt het roer over. Je hebt heel wat zeekaarten bestudeerd. Je weet precies waar de rotsen voor Kaap Seren liggen: laag, glad, in rood aangegeven, zoals de zee ze in honderd jaar zal hebben afgesleten.",
     "Je gevoel is honderd jaar te nieuw. De rotsen liggen precies waar ze lagen. De Marigold loopt erop met een lang, beleefd gekreun, als een heel grote deur die dichtgaat, en de zee komt aan boord zonder te kloppen. Kapitein Lorne staat naast je aan het roer en blijft er hoffelijk onder. “We hadden het licht verwacht,” zegt ze, niet onvriendelijk, terwijl het water langs je knieën omhoogkruipt."
@@ -836,7 +856,7 @@
   },
   "86": {
    "chapter": "Een einde",
-   "scene": "storm",
+   "scene": "lamproomstorm",
    "text": [
     "Je opent de scheepslantaarn en houdt de vlam bij de grote pit. Een lang ogenblik gebeurt er niets. Dan vat de pit vlam, klein en blauw en weifelend, en de lens werpt dat kleine licht uit over de storm, veel groter dan het eigenlijk mag. Beneden aarzelen de lichten van de Marigold, en dan zwenken ze af.",
     "De wachter kijkt tot het schip veilig in de baai ligt. Dan schudt hij je de hand, nat en plechtig, bedankt je namens het Serenlicht, en is aan zijn tafel in slaap gevallen nog voor zijn pet af is. De zee droomt verder, maar een mildere droom.",
@@ -906,7 +926,7 @@
   },
   "90": {
    "chapter": "Een einde",
-   "scene": "storm",
+   "scene": "lamproomstorm",
    "text": [
     "Je arm is sneller dan je verstand. Je duwt met je schouder de deur naar de galerij open en zwaait de scheepslantaarn boven je hoofd heen en weer, wijd en dringend, zoals je een postkoets zou aanhouden. Achter je roept de wachter iets. De wind neemt het mee.",
     "Op het water ziet kapitein Lorne eindelijk een licht op Kaap Seren, en het licht zwaait. Ze is een hoffelijke vrouw. Ze wordt al de hele nacht verwacht, en daar staat iemand die haar binnenwuift. De Marigold gaat overstag en komt blij en recht op je af, en op de rotsen tussen jullie in, die nog nooit zo goed verlicht zijn geweest. Naast je neemt de wachter zijn pet af."
@@ -943,7 +963,7 @@
   },
   "93": {
    "chapter": "De lantaarnkamer om twee uur",
-   "scene": "lanternroom",
+   "scene": "lamproomstorm",
    "text": [
     "Je wacht de hele dag onder water, in een glazen kamer, met een blik olie en een grote lens die je je gezicht in stukjes teruggeeft. Om twee uur wordt het water buiten zilver.",
     "~ Dan is het geen water meer. Het is regen die tegen de ruiten beukt, en de lantaarnkamer staat ongeschonden op de kaap, midden in de Grote Storm van 1826.",
@@ -1049,7 +1069,7 @@
    "chapter": "Onder de vloer",
    "scene": "cottage",
    "text": [
-    "Het huisje is precies zo netjes als ze het heeft achtergelaten, en dat ziet Nell als eerste. Ze knielt bij het kleine bed en tilt zonder te kijken de derde plank op, alsof ze dat gisteren nog deed. Voor haar was dat misschien ook zo.",
+    "Het huisje van de wachter op Kaap Seren is precies zo netjes als Nell het heeft achtergelaten, en dat ziet ze als eerste. Ze knielt bij het kleine bed en tilt zonder te kijken de derde plank op, alsof ze dat gisteren nog deed. Voor haar was dat misschien ook zo.",
     "Eronder ligt, in wasdoek gewikkeld, een klein blik met [[lastcan|haar naam in het deksel gekrast, in het handschrift van haar vader]], de letters schuin, net als in zijn brief. Ze drukt het tegen haar borst als iets warms. Alle klokken in het huisje staan op twee uur. Voor één keer lopen ze bijna gelijk."
    ],
    "choices": [

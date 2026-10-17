@@ -100,7 +100,10 @@
 
   var App = null, ent = null, built = false;
   function urlFlag() { return /(^|[?&])shop=1(&|$)/.test(location.search); }
-  function devFlag() { try { return localStorage.getItem(DEV_KEY) === '1'; } catch (e) { return false; } }
+  // 17-10 (Manuel did not see the daily chest): the test version previews the app, so the shop is on by default there
+  // (switch it off with the hidden switch: credits title, five taps). The test harness hosts keep the old default (off).
+  var TEST_HOST = location.protocol === 'file:' || /(^|\.)wayward\.test$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
+  function devFlag() { var v = null; try { v = localStorage.getItem(DEV_KEY); } catch (e) {} return v === '1' || (v !== '0' && !TEST_HOST); }
   function enabled() { return window.WAYWARD_SHOP === true || urlFlag() || devFlag(); } // WAYWARD_SHOP: set by the app build (store.js), W27 A
   function lang() { return App ? App.lang() : 'en'; }
   function tt(k, v) { var s = (STR[lang()] && STR[lang()][k] != null) ? STR[lang()][k] : STR.en[k]; if (v) s = s.replace(/\{(\w+)\}/g, function (m, n) { return v[n] != null ? v[n] : m; }); return s; }
@@ -211,6 +214,7 @@
       refresh(); if (after) after();
     }).catch(function () {});
   }
+  function isIOS() { return !!(window.Capacitor && window.Capacitor.getPlatform && window.Capacitor.getPlatform() === 'ios'); }
   function restore() {
     billing().restore().then(function (ids) {
       if (!ids || !ids.length) { App.toast(tt('restoreNone')); return; }
@@ -323,7 +327,8 @@
     h += '</div></div>';
     var L = window.WAYWARD_LINKS || {};
     h += '<p class="shop-small">' + E(tt('freeFacts')) + '</p>' +
-      '<div class="shop-foot"><button class="shop-glass" data-shop="restore">' + E(tt('restore')) + '</button>' +
+      // restoring purchases: Apple requires the button; on Android the app checks your purchases by itself at every start (Manuel 16-10)
+      '<div class="shop-foot">' + (isIOS() ? '<button class="shop-glass" data-shop="restore">' + E(tt('restore')) + '</button>' : '') +
       '<div class="shop-links">' + (L.privacy ? '<a href="' + E(L.privacy) + '" target="_blank" rel="noopener">' + E(tt('privacy')) + '</a>' : '') + (L.terms ? '<a href="' + E(L.terms) + '" target="_blank" rel="noopener">' + E(tt('terms')) + '</a>' : '') + '</div>' +
       (!window.WaywardBilling ? '<div class="shop-dev"><span>' + E(tt('testLabel')) + '</span><button data-shop="off">' + E(tt('testOff')) + '</button></div>' : '') + '</div>';
     return h;

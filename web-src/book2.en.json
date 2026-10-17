@@ -58,6 +58,26 @@
   "dawnsea": {
    "title": "Morning at low tide",
    "focus": "50% 55%"
+  },
+  "lamproomstorm": {
+   "title": "Inside the lamp room at the top of the Seren Light during the Great Storm of the",
+   "focus": "50% 55%"
+  },
+  "marigolddeck": {
+   "title": "On the deck of the three-masted sailing ship Marigold, of the 1820s, as the morn",
+   "focus": "50% 55%"
+  },
+  "cottagedoor": {
+   "title": "At the open green door of the keeper's cottage on Cape Seren at two in the morni",
+   "focus": "50% 55%"
+  },
+  "chandlery": {
+   "title": "Inside Marsh & Sons, Chandlers, the oldest shop in Grey Harbour, by lamplight",
+   "focus": "50% 55%"
+  },
+  "capeattwo": {
+   "title": "Cape Seren at two in the morning",
+   "focus": "50% 55%"
   }
  },
  "sections": {
@@ -159,7 +179,7 @@
    "chapter": "The Quay at Two",
    "scene": "baynight",
    "text": [
-    "The quay empties at dusk and fills with fog. At two o’clock, without any fuss, a light comes on under the bay. It is gold and very deep, and it turns the way a lighthouse turns, sweeping the underside of the water. Its hum comes up through the stones into your boots. Then, out of the fog, a bow.",
+    "You stand on the quay in thick fog. Under the bay, without any fuss, a light is burning. It is gold and very deep, and it turns the way a lighthouse turns, sweeping the underside of the water. Its hum comes up through the stones into your boots. Then, out of the fog, a bow.",
     "The ship comes in on no wind at all and ties up as if it does this every night. On the bow: [[marigold|MARIGOLD, 1826, the paint still wet]]. Doors open along the harbour. The townsfolk come down in nightclothes, pushing carts and barrows, nodding to one another, like people arriving at a market they have never once missed."
    ],
    "choices": [
@@ -274,7 +294,7 @@
   },
   "26": {
    "chapter": "The Edge at Two",
-   "scene": "cape",
+   "scene": "capeattwo",
    "text": [
     "You wait. The wind drops at midnight, as if someone has told it to. At one o’clock the windows of Grey Harbour go out, and then, oddly, a good many of them light up again. Down on the quay, small lanterns are gathering, like people who have an appointment.",
     "At two o’clock exactly, the bay lights up from underneath. It is a lighthouse beam, green through the water, turning slowly on the seabed where no lighthouse is. It sweeps across the harbour mouth, across the rocks below you, and starts up the cliff. It is slowing down, the way a lantern slows when it is nearly sure."
@@ -330,7 +350,7 @@
   },
   "33": {
    "chapter": "Aboard the Marigold",
-   "scene": "wreck",
+   "scene": "marigolddeck",
    "text": [
     "Nobody stops you. The crew move about the deck like people walking in their sleep, coiling ropes that are already coiled, their coats soaked by a rain that isn’t falling. Captain Ada Lorne comes down from the wheel, touches her cap and welcomes you aboard as if you had booked passage. “We’re expecting the light,” she says courteously, looking past you at the cape.",
     "You wait with her at the rail while the carts come and go. She asks you the time twice, and each time thanks you and does not believe you. Then the sky over the cape turns grey. The crew go to the lines without waking. Behind you, the gangplank begins to lift."
@@ -494,7 +514,7 @@
   },
   "53": {
    "chapter": "An ending",
-   "scene": "cape",
+   "scene": "capeattwo",
    "text": [
     "You stand still. The beam reaches your boots, your coat, your face, and stops. It is warm, which you did not expect, and very bright, and in no hurry at all to move on. You raise a hand against it. It is the last thing you decide.",
     "Ships still pass Cape Seren. At two o’clock their lookouts see a figure on the cliff, lit from below, one hand raised, and they give the rocks a wide berth and come home safe. Only one ship never sees you. It comes in out of the fog every night, looking for a different light."
@@ -538,7 +558,7 @@
    "chapter": "The Undelivered Letters",
    "scene": "wreck",
    "text": [
-    "The mailbag is stiff with salt and stencilled MARIGOLD. Inside are the letters that never arrived: a bill, an apology, a proposal of marriage, a plum-cake recipe with the last line washed away. Paper fetches nothing in the capital, so nobody wants them.",
+    "The mailbag lies on the quay, stiff with salt and stencilled MARIGOLD. Inside are the letters that never arrived: a bill, an apology, a proposal of marriage, a plum-cake recipe with the last line washed away. Paper fetches nothing in the capital, so nobody wants them.",
     "One letter has no stamp, only a seal of lighthouse wax. It has no business in a ship’s mailbag; the sea, it seems, files by date. Tobias Wren, keeper, to “my Nell,” the night of the storm: “If the lamp won’t light, light it for me. You know where the last of the oil is kept.” The only Nell in Grey Harbour, a carter tells you, is the salt girl. “Wrong Nell,” he adds. “She’s ten.”"
    ],
    "choices": [
@@ -557,7 +577,7 @@
   },
   "60": {
    "chapter": "Out With the Tide",
-   "scene": "storm",
+   "scene": "marigolddeck",
    "text": [
     "At first light the gangplank lifts and the Marigold slips out on the tide. Then the morning does something mornings don’t do: it goes back. The sky darkens, the wind swings round, the sea stands up in long grey ridges, and by the time you reach the rail it is 1826 and raining sideways.",
     "On the cape the Seren Light stands whole, tall and completely dark. At the wheel, the helmsman steers with his eyes shut. Captain Lorne finds you, courteous as a hostess whose guest is late. “We’re expecting the light,” she says, and hands you [[shiplantern|the ship’s lantern, still burning]]. Then she has a boat lowered for you, as if you had asked."
@@ -594,9 +614,9 @@
   },
   "65": {
    "chapter": "The Chandler",
-   "scene": "harbour",
+   "scene": "chandlery",
    "text": [
-    "Marsh & Sons, Chandlers, is the oldest shop in Grey Harbour and the only one that doesn’t sell antiques. Everything on its shelves is dated in chalk, rope, wicks, ship’s biscuit, and everything is [[shillings|priced in shillings that no longer exist]]. Abel Marsh is the oldest thing in it, and the only thing without a price.",
+    "By daylight you are back in town, at Marsh & Sons, Chandlers: the oldest shop in Grey Harbour and the only one that doesn’t sell antiques. Everything on its shelves is dated in chalk, rope, wicks, ship’s biscuit, and everything is [[shillings|priced in shillings that no longer exist]]. Abel Marsh is the oldest thing in it, and the only thing without a price.",
     "When you ask about lamp oil, he doesn’t pretend. From under the counter he lifts a sealed can, the date painted on its side: 1826. “Silas Vane sold it to my great-grandfather. Lighthouse oil, the week the Marigold went down. Never felt right to use it.” He sets it down between you like evidence. “Been waiting for someone to ask.”"
    ],
    "choices": [
@@ -657,7 +677,7 @@
   },
   "71": {
    "chapter": "The Knock",
-   "scene": "cottage",
+   "scene": "cottagedoor",
    "text": [
     "A man is standing on the step, dripping, cap in his hands. He wears a keeper’s coat with brass buttons, and the water runs off him as if he has just come up out of the sea, which you decide not to think about. Behind you, all the clocks say two. For once, you suspect, they are right.",
     "“Evening. Tobias Wren. Sorry to trouble you.” He looks at your empty hands, then politely at your face. “Did the harbour send the oil?” Behind him the wind is rising, the sea has gone white to the horizon, and out on the cape, where there was only a stump, the Seren Light stands whole and dark."
@@ -707,7 +727,7 @@
      "to": 83
     },
     {
-     "text": "If you sit down beside the sleeping keeper,",
+     "text": "If you sit down beside the sleeping keeper and keep watch,",
      "short": "Sit with the keeper",
      "to": 88
     }
@@ -750,7 +770,7 @@
    "chapter": "Nell and the Letter",
    "scene": "saltpans",
    "text": [
-    "Nell reads the letter once, quickly, the way you read something addressed to someone else. Then again, slowly. The third time she doesn’t read it at all. She just holds it, and her rake falls over behind her, and neither of you picks it up.",
+    "In the morning, out on the salt pans, Nell reads the letter once, quickly, the way you read something addressed to someone else. Then again, slowly. The third time she doesn’t read it at all. She just holds it, and her rake falls over behind her, and neither of you picks it up.",
     "“He always said my feet would freeze,” she says. Her voice is ten years old and a hundred and ten. She looks out at Cape Seren, where there is nothing, and sees a cottage, a lamp, a man in a wet coat. “He hid the last can under my bed.” A pause, very small. “For me.”"
    ],
    "choices": [
@@ -769,7 +789,7 @@
   },
   "83": {
    "chapter": "The Tower in the Storm",
-   "scene": "storm",
+   "scene": "lamproomstorm",
    "text": [
     "The last turn of the stair lets you out into the lamp room, and into the worst night of 1826. Rain hammers the glass like applause. The keeper is at the lamp before you, the way people in dreams always are, dripping, trimming a wick that has nothing to burn. Through the streaming panes the Marigold’s lights are coming in towards the rocks.",
     "“Oil,” he says, without turning round. “Did you bring oil?” You pat your pockets, as if a can of lamp oil might be hiding behind the blank map. You didn’t. He nods, as though he expected nothing more from the harbour. Below, the sea makes the sound it makes just before it makes up its mind."
@@ -790,7 +810,7 @@
   },
   "84": {
    "chapter": "The Ship’s Lantern",
-   "scene": "storm",
+   "scene": "lamproomstorm",
    "text": [
     "You row with the lantern between your knees, and the sea, which has done this before, sets you down at the foot of the tower. The stair goes round and round like a thought you can’t finish. At the top, in the lamp room, a keeper in a soaked oilskin stands beside a cold lamp.",
     "He turns, sees what you are carrying, and his face does what faces do on a quay when a ship they had given up on comes in. “Well now,” he says softly, to the lantern rather than to you. Through the streaming glass the Marigold’s lights are coming in low and fast. There is time for one thing."
@@ -820,7 +840,7 @@
   },
   "85": {
    "chapter": "An ending",
-   "scene": "storm",
+   "scene": "marigolddeck",
    "text": [
     "The helmsman steps aside without waking, and you take the wheel. You have studied a great many charts. You know exactly where the rocks off Cape Seren are: low, smooth, marked in red, where the sea will have worn them down in a hundred years.",
     "Your instinct is a hundred years too new. The rocks are exactly where they were. The Marigold meets them with a long, polite groan, like a very large door closing, and the sea comes aboard without knocking. Captain Lorne stands beside you at the wheel and is gracious about it. “We were expecting the light,” she says, not unkindly, as the water climbs past your knees."
@@ -836,7 +856,7 @@
   },
   "86": {
    "chapter": "An ending",
-   "scene": "storm",
+   "scene": "lamproomstorm",
    "text": [
     "You open the ship’s lantern and hold its flame to the great wick. For a long moment nothing happens. Then the wick takes, small and blue and doubtful, and the lens throws that little light out over the storm, far bigger than it has any right to be. Below, the Marigold’s lights hesitate, then turn.",
     "The keeper watches until the ship is safe in the bay. Then he shakes your hand, wet and formal, thanks you on behalf of the Seren Light, and is asleep at his desk before his cap is off. The sea goes on dreaming, but a kinder dream.",
@@ -906,7 +926,7 @@
   },
   "90": {
    "chapter": "An ending",
-   "scene": "storm",
+   "scene": "lamproomstorm",
    "text": [
     "Your arm moves before your mind does. You shoulder open the gallery door and swing the ship’s lantern over your head, wide and urgent, the way you would stop a coach. Behind you the keeper shouts something. The wind takes it.",
     "Out on the water, Captain Lorne sees a light on Cape Seren at last, and the light is waving. She is a courteous woman. She has been expected all night, and here is someone waving her in. The Marigold comes about, glad and straight, towards you and towards the rocks between you, which have never been so well lit. Beside you, the keeper takes off his cap."
@@ -943,7 +963,7 @@
   },
   "93": {
    "chapter": "The Lamp Room at Two",
-   "scene": "lanternroom",
+   "scene": "lamproomstorm",
    "text": [
     "You wait all day under the sea, in a glass room with a can of oil and a great lens that gives you back your face in pieces. At two the water outside turns silver.",
     "~ Then it isn’t water. It is rain, hammering the panes, and the lamp room stands whole on its cape in the Great Storm of 1826.",
@@ -1049,7 +1069,7 @@
    "chapter": "Under the Cottage Floor",
    "scene": "cottage",
    "text": [
-    "The cottage is exactly as tidy as she left it, and Nell notices that first. She kneels by the small bed and lifts the third board without looking, as if she did it yesterday. Perhaps, for her, she did.",
+    "The keeper’s cottage on Cape Seren is exactly as tidy as Nell left it, and she notices that first. She kneels by the small bed and lifts the third board without looking, as if she did it yesterday. Perhaps, for her, she did.",
     "Underneath, wrapped in oilcloth, is a small can with [[lastcan|her name scratched into the lid in her father’s hand]], the letters leaning the way his letter leans. She holds it against her chest like something warm. Every clock in the cottage says two. For once, they are nearly right."
    ],
    "choices": [

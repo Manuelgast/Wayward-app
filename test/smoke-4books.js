@@ -7,7 +7,7 @@ const { spawn } = require('child_process');
 const path = require('path');
 const PORT = 8773;
 const srv = spawn('python3', ['-m', 'http.server', String(PORT), '--bind', '127.0.0.1'], { cwd: path.join(__dirname, '..', 'app', 'www'), stdio: 'ignore' });
-const BOOKS = [['shelfBook', 'hollow-mountain'], ['shelfBook2', 'drowned-lighthouse'], ['shelfBook3', 'station-nine'], ['shelfBook4', 'ash-orchid']];
+const BOOKS = [['shelfBook', 'hollow-mountain'], ['shelfBook2', 'drowned-lighthouse'], ['shelfBook3', 'station-nine'], ['shelfBook4', 'ash-orchid'], ['shelfBook5', 'mirage-road']]; // 1.3: Book V is in the app
 let fails = 0; const ok = (n, c, x) => { console.log((c ? 'PASS ' : 'FAIL ') + n + (x ? ' — ' + x : '')); if (!c) fails++; };
 
 // one step through the reader: skip a scene, finish the ink, turn a page, or (when wanted) pick a choice
@@ -56,7 +56,7 @@ async function step(p, wantChoice) {
     await p.goto(`http://127.0.0.1:${PORT}/index.html`);
     await p.waitForTimeout(2500);
     const lib = await p.evaluate(() => ({ screen: window.__wayward.current(), shop: !!(window.WaywardShop && window.WaywardShop.enabled()), lang: document.documentElement.lang, books: [...document.querySelectorAll('.shelf .book[data-bookid]')].filter(e => e.offsetParent).length }));
-    ok(`[${lang}] library with 4 books, store mode`, lib.screen === 'library' && lib.books === 4 && lib.shop && lib.lang === lang, JSON.stringify(lib));
+    ok(`[${lang}] library with ${BOOKS.length} books, store mode`, lib.screen === 'library' && lib.books === BOOKS.length && lib.shop && lib.lang === lang, JSON.stringify(lib));
     for (const [shelfId, bookId] of BOOKS) {
       const tag = `[${lang}] ${bookId}`;
       await p.evaluate(() => window.__wayward.show('library')); await p.waitForTimeout(600);
@@ -107,7 +107,8 @@ async function step(p, wantChoice) {
     await p.goto(`http://127.0.0.1:${PORT}/index.html`); await p.waitForTimeout(2500);
     await p.evaluate(() => window.WaywardShop.open()); await p.waitForTimeout(900);
     const offer = await p.evaluate(() => { const bt = [...document.querySelectorAll('#shopBody [data-shop="buy"]')].map(e => e.getAttribute('data-id') + '=' + e.textContent.trim()); return { bt, queried: window.__queried.length }; });
-    ok('[tiers] store queried for all 14 products', offer.queried === 14, 'queried ' + offer.queried);
+    const NP = require('../app/store-config.json').products.length; // 1.3: Book V adds book_mirage, _b, _c (17)
+    ok('[tiers] store queried for all ' + NP + ' products', offer.queried === NP, 'queried ' + offer.queried);
     ok('[tiers] Book II offered as book_sea_b at the store price', offer.bt.includes('book_sea_b=€1,49') && offer.bt.includes('book_mountain=€2,00'), offer.bt.join(' '));
     await p.click('#shopBody [data-shop="buy"][data-id="book_sea_b"]'); await p.waitForTimeout(1500);
     const after = await p.evaluate(() => ({ buys: window.__buys.slice(), owned: (JSON.parse(localStorage.getItem('wayward.shop.v2') || '{}').owned) || {} }));
