@@ -1659,13 +1659,13 @@
     var td = isoDay(new Date()), n = Math.min(prof().day[td] || 0, GOAL), c = chestGet();
     var rw = chestReward(c.r || 'end1'); rw = rw.charAt(0).toLowerCase() + rw.slice(1); // mid-sentence
     var sub = s === 'ready' ? t('chestReady') : s === 'done' ? t('chestDone', { r: rw }) : t('chestLocked', { n: n, g: GOAL });
-    return '<button class="chest-row ' + s + '" data-chest="1"' + (s === 'ready' ? '' : ' aria-disabled="true"') + '><span class="ch-ic">' + CHEST_SVG + '</span><span class="ch-t"><b>' + esc(t('chestHead')) + '</b><span>' + esc(sub) + '</span></span>' +
+    return '<button class="chest-row ' + s + '" data-chest="1"' + (s === 'ready' ? '' : ' aria-disabled="true"') + '><span class="ch-ic">' + (CHEST_ART ? '<img src="' + (s === 'done' ? CHEST_ART.open : CHEST_ART.closed) + '" alt="">' : CHEST_SVG) + '</span><span class="ch-t"><b>' + esc(t('chestHead')) + '</b><span>' + esc(sub) + '</span></span>' +
       (s === 'ready' ? '<span class="btn-gold sm ch-go">' + esc(t('chestOpen')) + '<span class="shine"></span></span>' : '') + '</button>';
   }
   function renderChest() { var h = $('#chestHost'); if (h) h.innerHTML = chestHTML(); }
   // the chest itself (Manuel 16-10: a real moment, tap it and it opens like a present). Drawn in the app's own gold and
   // dark wood; the lid is its own group so it can fly open. Painted art can replace it later (CHEST_ART).
-  var CHEST_ART = null; // e.g. { closed: 'img/chest-closed.webp', open: 'img/chest-open.webp' } once the pictures exist
+  var CHEST_ART = { closed: 'img/chest-closed.webp', open: 'img/chest-open.webp' }; // painted 17-10 (OpenArt), same frame so the base stays put
   var chestN = 0;
   function chestSVG(big) {
     var i = 'cx' + (chestN++), g = 'url(#' + i + 'g)', gd = 'url(#' + i + 'd)';
@@ -1726,7 +1726,7 @@
     var art = CHEST_ART ? '<img class="ch-img ch-closed" src="' + CHEST_ART.closed + '" alt=""><img class="ch-img ch-open" src="' + CHEST_ART.open + '" alt="">' : chestSVG(true);
     host.innerHTML = '<div class="card-bg chest-bg" id="cardBg"><div class="chest-stage" role="dialog" aria-modal="true" aria-labelledby="chTitle">' +
       '<span class="caps gold">' + esc(t('chestHead')) + '</span>' +
-      '<div class="chest-scene" id="chestScene"><div class="ch-rays"></div><div class="ch-glow"></div><div class="ch-flash"></div>' +
+      '<div class="chest-scene' + (CHEST_ART ? ' art' : '') + '" id="chestScene"><div class="ch-rays"></div><div class="ch-glow"></div><div class="ch-flash"></div>' +
       '<button class="chest-xl' + (CHEST_ART ? ' art' : '') + '" id="chestBtn" aria-label="' + esc(t('chestTap')) + '">' + art + '</button><div class="ch-prize-xl" id="chPrize"></div></div>' +
       '<p class="ch-tap" id="chTap">' + esc(t('chestTap')) + '</p>' +
       '<div class="ch-after" id="chAfter" hidden><h3 id="chTitle"></h3><p class="cel-note" id="chNote" hidden></p>' +

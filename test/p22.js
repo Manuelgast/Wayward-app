@@ -8,6 +8,11 @@ const BASE = 'http://localhost:8768/index.html';
   await p.goto(BASE); await p.waitForTimeout(1500);
   const count = () => p.evaluate(() => document.querySelectorAll('canvas.fx-creep').length);
   const res = {};
+  // the first visit to p22 plays its scene in the reader before the moment (scenes2.js bridge, by design);
+  // visit it once so every exit below starts straight in the moment
+  await p.evaluate(() => { window.__wayward.goTo(22); }); await p.waitForTimeout(800);
+  res['first:screen'] = await p.evaluate(() => window.__wayward.current());
+  await p.evaluate(() => window.__wayward.show('library')); await p.waitForTimeout(400);
   for (const exit of ['choice', 'back', 'timeout']) {
     await p.evaluate(() => { window.__wayward.goTo(22); }); await p.waitForTimeout(1200);
     res[exit + ':screen'] = await p.evaluate(() => window.__wayward.current());

@@ -82,6 +82,8 @@ const shelf = (p) => p.evaluate(() => [...document.querySelectorAll('.shelf .boo
     ok(`${tag} Book II shows open on the shelf after unlocking`, sh2.indexOf('drowned-lighthouse:open') > -1, sh2);
     // 1.2.1: tap the chest itself to open it (force the card reward: a real card that lands in the album)
     await p.evaluate(() => document.querySelector('.chest-row.ready').click()); await p.waitForTimeout(700);
+    // 1.2.1 (17-10): the painted chest, closed and open, is in the app and loads
+    ok(`${tag} painted chest pictures load`, await p.evaluate(() => { const i = [...document.querySelectorAll('#chestBtn .ch-img')]; return i.length === 2 && i.every(x => x.complete && x.naturalWidth > 0); }));
     await p.evaluate(() => { window.__rnd = Math.random; Math.random = () => 0.65; }); await p.click('#chestBtn'); await p.waitForTimeout(2800);
     await p.evaluate(() => { Math.random = window.__rnd; });
     const gift = await p.evaluate(() => { const c = document.querySelector('.ch-cardwrap .tcard'); if (!c) return null; const id = c.dataset.card;
