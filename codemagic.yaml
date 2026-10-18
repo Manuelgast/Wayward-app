@@ -1,10 +1,14 @@
-# Wayward: one update route, like ExamTwin.
+# Wayward: one update route, like ExamTwin (route B, Manuel 18-10).
 #
-#   change on a branch -> pull request -> merge into main -> Codemagic builds BOTH apps by itself:
-#     - Android: signed App Bundle on the Google Play INTERNAL TESTING track
+#   change on a branch -> pull request (the chat opens it) -> Manuel merges into main -> Codemagic builds BOTH apps:
+#     - Android: signed App Bundle on the Google Play INTERNAL TESTING track (a test version, not public)
 #     - iOS:     signed build in App Store Connect (TestFlight, internal testers)
-#   Going public stays Manuel's own click: "Promote release" to Production in Play Console,
-#   and "Submit for Review" in App Store Connect.
+#   Going public stays Manuel's own click:
+#     - Android: Codemagic > Wayward > "Start new build" > workflow "Wayward Android LIVE" > branch main > Start.
+#       That workflow builds main again and puts it on the PRODUCTION track (Google review, then live by itself).
+#     - iOS: "Submit for Review" in App Store Connect.
+#   (15-10 to 18-10 main went straight to production; a merge was then the live button, so the chat could not
+#   open pull requests itself.)
 #
 # Build numbers go up by themselves (latest number in Google Play / TestFlight + 1), so nobody has to edit
 # versionCode for an update. The version NAME (e.g. 1.1.3) stays in app/android/app/build.gradle and is raised
@@ -35,13 +39,7 @@ definitions:
         source: true
     cancel_previous_builds: true
 
-workflows:
-  android-play:
-    name: Wayward Android to Google Play (internal testing)
-    instance_type: mac_mini_m2
-    max_build_duration: 40
-    triggering: *on_main
-    when: *app_changes
+  android_build: &android_build
     environment:
       android_signing:
         - wayward_upload
@@ -87,6 +85,27 @@ workflows:
         script: rm -f app/keystore.properties
     artifacts:
       - app/android/app/build/outputs/bundle/release/*.aab
+
+workflows:
+  android-play:
+    name: Wayward Android to Google Play (internal testing)
+    instance_type: mac_mini_m2
+    max_build_duration: 40
+    triggering: *on_main
+    when: *app_changes
+    <<: *android_build
+    publishing:
+      google_play:
+        credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
+        track: internal
+        submit_as_draft: false
+
+  android-live:
+    # no triggering: only runs when Manuel starts it in Codemagic ("Start new build", branch main)
+    name: Wayward Android LIVE (Google Play production, start by hand)
+    instance_type: mac_mini_m2
+    max_build_duration: 40
+    <<: *android_build
     publishing:
       google_play:
         credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
