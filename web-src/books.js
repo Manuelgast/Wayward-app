@@ -18,7 +18,7 @@
       // positions on the pictures (GPT Image 2.5 flare, 30-09, T22), in % of the 9:16 frame: scenes and the two relics in the scenery
       // 12 the ship coming out of the fog · 18 the rake's track in the crust · 24 the traveller's lantern on the stair
       // 48 the lighthouse lying on the seabed · 67 the middle of the great lens · 93 the wick inside the lamp
-      spots: { 12: [62, 46], 18: [64, 52], 24: [51, 60], 48: [52, 36], 67: [51, 24], 93: [50, 50] }, // 93: wick in the lens hub on lamproomstorm (art 17-10)
+      spots: { 12: [62, 46], 18: [64, 52], 24: [51, 60], 48: [52, 36], 67: [51, 24], 93: [47, 36] }, // 93: wick in the lens hub on lamproomstorm (art 17-10)
       // facelight: the drowned light in the water (under the page) · initials: the brass band at the foot of the lamp
       relicSpots: { facelight: [64, 70], initials: [53, 44] },
       grain: [63, 30], // the grain of salt on the cover (hold it until it melts)
