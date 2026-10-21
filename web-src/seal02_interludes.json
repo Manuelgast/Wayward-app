@@ -1,0 +1,121 @@
+{
+ "3": {
+  "type": "hold",
+  "lines": {
+   "en": [
+    "You climb the Old Cow on hands and knees.",
+    "The red sand is warm, and faintly humming."
+   ],
+   "nl": [
+    "Je klimt op handen en knieën de Oude Koe op.",
+    "Het rode zand is warm en bromt heel zacht."
+   ]
+  },
+  "prompt": {
+   "en": "Lay your palm flat",
+   "nl": "Leg je hand plat"
+  },
+  "done": {
+   "en": "She lows. You feel it in your back teeth.",
+   "nl": "Ze loeit. Je voelt het tot in je achterste kiezen."
+  },
+  "x": 55,
+  "y": 27
+ },
+ "5": {
+  "type": "wipe",
+  "lines": {
+   "en": [
+    "Your spade rings on something under the palm roots.",
+    "Red sand has packed every letter shut."
+   ],
+   "nl": [
+    "Je schop stuit op iets onder de palmwortels.",
+    "Rood zand heeft elke letter dichtgestopt."
+   ]
+  },
+  "prompt": {
+   "en": "Brush the sand away",
+   "nl": "Veeg het zand weg"
+  },
+  "done": {
+   "en": "E.M. · I. Forty years old.",
+   "nl": "E.M. · I. Veertig jaar oud."
+  },
+  "x": null,
+  "y": null
+ },
+ "6": {
+  "type": "trace",
+  "lines": {
+   "en": [
+    "Her old point at the brass cap, and today’s.",
+    "A lamp, your sheet, and the whole night."
+   ],
+   "nl": [
+    "Haar oude punt bij de koperen kap, en dat van vandaag.",
+    "Een lamp, je blad en de hele nacht."
+   ]
+  },
+  "prompt": {
+   "en": "Draw her line",
+   "nl": "Trek haar lijn door"
+  },
+  "done": {
+   "en": "A long curve, a stone’s throw from the kitchen.",
+   "nl": "Een lange boog, op een steenworp van de keuken."
+  },
+  "path": [
+   [
+    66,
+    13
+   ],
+   [
+    66,
+    16
+   ],
+   [
+    64,
+    19
+   ],
+   [
+    61,
+    22
+   ],
+   [
+    57,
+    25
+   ],
+   [
+    52,
+    27
+   ],
+   [
+    46,
+    29
+   ],
+   [
+    40,
+    31
+   ],
+   [
+    34,
+    34
+   ],
+   [
+    28,
+    37
+   ],
+   [
+    23,
+    40
+   ],
+   [
+    19,
+    44
+   ]
+  ],
+  "x": 66,
+  "y": 13
+ }
+}

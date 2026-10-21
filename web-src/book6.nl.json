@@ -1,0 +1,1200 @@
+{
+ "id": "paper-sky",
+ "title": "De Papieren Hemel",
+ "series": "De Veyra-cyclus · Boek VI",
+ "imprint": "Een Wayward-uitgave",
+ "tagline": "Tienduizend kronen voor de eerste bemanning die landt op een berg waar nog nooit iemand heeft gestaan. Niemand, voor zover de krant weet.",
+ "warning": "Lees dit boek niet van voor naar achter. Aan het eind van elke bladzijde beslis jij wat er gebeurt. Sommige keuzes tillen je op. Andere zijn ballast.",
+ "start": 1,
+ "scenes": {
+  "haymeadow": {
+   "title": "De hooiweide onder de Tafel",
+   "focus": "50% 55%"
+  },
+  "basket": {
+   "title": "In de mand van de Leeuwerik",
+   "focus": "50% 55%"
+  },
+  "sovereign": {
+   "title": "Aan boord van de Soeverein",
+   "focus": "50% 55%"
+  },
+  "valley": {
+   "title": "Het Velldal van bovenaf",
+   "focus": "50% 55%"
+  },
+  "tablewalls": {
+   "title": "De wanden van de Tafel",
+   "focus": "50% 55%"
+  },
+  "cloudsea": {
+   "title": "Boven de wolkenzee",
+   "focus": "50% 55%"
+  },
+  "ringwind": {
+   "title": "In de ringwind",
+   "focus": "50% 55%"
+  },
+  "rim": {
+   "title": "De rand van de Tafel",
+   "focus": "50% 55%"
+  },
+  "summit": {
+   "title": "De weide boven: bergmeer en plaggenhutten",
+   "focus": "50% 55%"
+  },
+  "chimney": {
+   "title": "De rotsschoorsteen",
+   "focus": "50% 55%"
+  },
+  "printshop": {
+   "title": "De achterkamer van de Koperen Geit",
+   "focus": "50% 55%"
+  },
+  "kites": {
+   "title": "Het zweefvliegtuig en de lier van de zussen Brisk",
+   "focus": "50% 55%"
+  },
+  "bog": {
+   "title": "De Soeverein in het moeras op de top",
+   "focus": "50% 55%"
+  },
+  "descent": {
+   "title": "Avond: de lange weg omlaag",
+   "focus": "50% 55%"
+  },
+  "northfoot": {
+   "title": "The pasture at the foot of the Table's north wall in late light",
+   "focus": "50% 55%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Grond · De hooiweide",
+   "scene": "haymeadow",
+   "tag": "Hoogte 0. Wind ZW, zwak. Hooi: overal.",
+   "text": [
+    "Boven het Velldal staat de Tafel: een mijl loodrechte rots, met een wolk erop gelegd als een kleed dat nog niemand heeft mogen optillen. Vanaf een hooiwagen leest meneer Horace Vane van De Morgenmeridiaan de voorwaarden voor. Tienduizend kronen voor de eerste bemanning die daar landt, zijn wimpel plant en een kaart meebrengt. “Geen mensenvoet,” zegt hij, “heeft er ooit gestaan.” De menigte juicht de voet toe.",
+    "Drie bemanningen: Sir Lucan Ashby met de zilveren Soeverein aan haar mast; de zussen Brisk met hun doosvlieger; en de Leeuwerik, eenendertig lappen rood-en-crème zijde, wier piloot, Juno Thackeray, je op krediet heeft ingehuurd. Ertussendoor verkoopt een geitenmeisje kaas en lacht om de ballonnen."
+   ],
+   "choices": [
+    {
+     "text": "Als je Juno helpt de Leeuwerik te verstellen voor het donker wordt,",
+     "short": "Help Juno verstellen",
+     "to": 9
+    },
+    {
+     "text": "Als je ingaat op de uitnodiging van meneer Vane om aan boord van de Soeverein te dineren,",
+     "short": "Dineer aan boord",
+     "to": 4
+    },
+    {
+     "text": "Als je een kaas koopt van het meisje dat je uitlacht,",
+     "short": "Koop een kaas",
+     "to": 7
+    }
+   ],
+   "nr": 1
+  },
+  "2": {
+   "chapter": "Een einde",
+   "scene": "chimney",
+   "tag": "Hoogte 410. Klem. Moreel: ook klem.",
+   "text": [
+    "De spleet loopt eerst vriendelijk schuin omhoog, ongeveer een mens lang. Dan wordt hij smaller, en jij heel even ook. Je brengt de nacht klem in het donker door, met één arm boven je hoofd, als iemand met een vraag die niemand wil horen, luisterend naar steentjes die van heel hoog komen aanrollen.",
+    "Bij het eerste licht komt de oom van het geitenmeisje met een lamp en een pot geitenboter. Hij bevrijdt je zonder een woord te zeggen, en dat is erger dan elk woord. Je zit nog boter uit je oren te peuteren als in de verte het startschot klinkt en drie vaartuigen zonder jou het roze in stijgen."
+   ],
+   "ending": {
+    "no": "I",
+    "title": "Klem",
+    "kind": "bad",
+    "epilogue": "Je vond de weg naar binnen. Niet de weg erdoor.",
+    "hint": "Sommige wegen gaan alleen open bij daglicht, en in gezelschap."
+   },
+   "nr": 23
+  },
+  "3": {
+   "chapter": "Grond · Schemerwacht",
+   "scene": "tablewalls",
+   "tag": "Hoogte 0. Rook naar oost. Wolk naar west.",
+   "text": [
+    "Je zit met je notitieboek in het hooi terwijl de zon ondergaat en de wanden van de Tafel de kleur krijgen van een afgestreken lucifer. Beneden in het dal helt de rook van de kaasvuren naar het oosten. Boven op de Tafel schuift de wolk naar het westen. Je kijkt een halfuur, met je potlood in de weer. [[ring|Hij waait niet langs de Tafel. Hij draait eromheen]], traag als een molensteen.",
+    "Aan de noordkant, waar de rots het donkerst is, buigt hij naar binnen en stort omlaag. Een ballon heeft geen roer. Hij gaat waar zijn wind gaat en stuurt alleen door een wind te kiezen, dus door een hoogte te kiezen. Verderop op de wei hoesten de motoren van de Soeverein één keer, alsof ze het er niet mee eens zijn."
+   ],
+   "choices": [
+    {
+     "text": "Als je je schets naar de zussen Brisk brengt, al zijn het concurrenten,",
+     "short": "Toon het de Brisks",
+     "to": 12
+    },
+    {
+     "text": "Als je onder de mand gaat slapen en het voor je houdt,",
+     "short": "Houd het voor je",
+     "to": 14
+    },
+    {
+     "text": "Als je voor het donker nog naar de noordkant loopt,",
+     "short": "Loop naar de noordkant",
+     "to": 6
+    }
+   ],
+   "nr": 36
+  },
+  "4": {
+   "chapter": "Grond · Diner aan boord",
+   "scene": "sovereign",
+   "tag": "Hoogte 0. Rundvlees. Zilver. Een grammofoon.",
+   "text": [
+    "De gondel van de Soeverein is een klein hotel dat toevallig aan een mast vastzit: tapijt, koper, zes bemanningsleden in witte jasjes, een grammofoon die iets dappers speelt. Sir Lucan Ashby is knap, en beleefd tegen iedereen, het rundvlees incluis. Meneer Vane snijdt aan. “De geschiedenis heeft een kaartenmaker nodig,” zegt hij. “Vlieg met ons mee. Honorarium, naamsvermelding, alles.”",
+    "Op het dressoir ligt de wimpel voor de top, in de kleuren van de Meridiaan, van [[pennant|zijde, met de datum van morgen er al in geborduurd]], in gouddraad. “Vertrouwen,” zegt Sir Lucan, en hij schenkt je bij. Door het raam, ver weg op de donkere wei, de ene lamp van de Leeuwerik."
+   ],
+   "choices": [
+    {
+     "text": "Als je ja zegt, een hand geeft en met de Soeverein meevliegt,",
+     "short": "Vlieg met de Soeverein",
+     "to": 18
+    },
+    {
+     "text": "Als je hen bedankt en naar de herberg loopt voor een bed,",
+     "short": "Loop naar de herberg",
+     "to": 10
+    },
+    {
+     "text": "Als je een bord rundvlees meeneemt voor Juno,",
+     "short": "Breng Juno vlees",
+     "to": 9
+    }
+   ],
+   "nr": 32
+  },
+  "5": {
+   "chapter": "Een einde",
+   "scene": "valley",
+   "tag": "Hoogte 300. Rivier onder je. Geweten: lichter.",
+   "text": [
+    "Boven de rivier kiep je de deken over de rand, en het nieuws van morgen valt in de Vell met een plons als van een koe die erin tuimelt. De Leeuwerik springt omhoog. Juno juicht. De rest van de ochtend vlieg je prachtig, en licht, en verlies je de race eerlijk, aan de wolk.",
+    "De Vell is een ondiepe rivier, en de jongens uit het dal zwemmen als otters. Tegen de middag hebben ze elke letter opgedoken en verkopen ze die terug aan meneer Vane, voor een kroon per stuk. Zijn kop verschijnt een dag te laat, met één S op zijn kop. Hij noemt het een verstandige investering."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "Late editie",
+    "kind": "strange",
+    "epilogue": "Te laat, een beetje ondersteboven, en toch nieuws.",
+    "hint": "Niet elk water houdt vast wat je het geeft."
+   },
+   "nr": 31
+  },
+  "6": {
+   "chapter": "Grond · De noordvoet",
+   "scene": "northfoot",
+   "tag": "Hoogte 400. Licht gaat. Geiten al vooruit.",
+   "text": [
+    "Je volgt een geitenpad de wei uit. Het steekt de beek over via een platte steen en klimt naar de voet van de noordwand, waar de schemer al dik is. Hier doet het pad iets vreemds: het blijft een pad. Het loopt [[cleft|een kloof in de rots in, glad gesleten als een trapleuning]], en eindigt bij een spleet van duisternis die omhoogloopt.",
+    "De lucht die uit de spleet komt is koud en ruikt naar geit en, heel vaag, naar kaas. Er komt ook een steentje omlaag, tikkend van wand tot wand, alsof iets hoog daarboven een stap opzij deed. Achter je, lager op de helling, roept het geitenmeisje haar geiten. “Daar kom je nergens!” roept ze, en ze lacht."
+   ],
+   "choices": [
+    {
+     "text": "Als je teruggaat naar de wei voordat het licht weg is,",
+     "short": "Ga terug naar beneden",
+     "to": 14
+    },
+    {
+     "text": "Als je je de spleet in wringt om te zien waar hij heen gaat,",
+     "short": "Wring je naar binnen",
+     "to": 2
+    }
+   ],
+   "nr": 43
+  },
+  "7": {
+   "chapter": "Grond · Kaas",
+   "scene": "haymeadow",
+   "tag": "Hoogte 0. Kaas: één. Waardigheid: ook één.",
+   "text": [
+    "Ze heet Ilka, ze is een jaar of veertien, en ze vindt ballonnen het grappigste wat het dal ooit is overkomen. “Ze gaan omhoog, ze komen omlaag,” zegt ze. “Net geiten. Alleen duurder.” Haar kaas kost meer dan hij zou moeten, en is het waard. In de korst is [[stamp|een merk gedrukt: een lange platte bovenkant, steile zijkanten]].",
+    "Morgen, zegt ze, heeft ze het druk. Kaaszaken. Ze fluit, en haar geiten komen met klepperende bellen uit de schemer en drentelen langs de wei naar de noordvoet van de Tafel, waar niets is dan rots. Ze gaat ze achterna zonder gedag te zeggen, nog altijd lachend om iets."
+   ],
+   "choices": [
+    {
+     "text": "Als je het geitenpad naar de Tafel volgt,",
+     "short": "Volg de geiten",
+     "to": 6
+    },
+    {
+     "text": "Als je de kaas naar de zussen Brisk brengt, die er hongerig uitzien,",
+     "short": "Voer de zussen Brisk",
+     "to": 12
+    },
+    {
+     "text": "Als je naar de herberg gaat voor een bed; het wordt donker,",
+     "short": "Ga naar de herberg",
+     "to": 10
+    }
+   ],
+   "nr": 47
+  },
+  "8": {
+   "chapter": "Een einde",
+   "scene": "summit",
+   "tag": "Hoogte 5280. Eerste. Alleen. Eén minuut.",
+   "text": [
+    "Op het smalste punt zeg je “pardon”, en Ilka drukt zich verbaasd tegen de rots om je te laten passeren. Je klimt het laatste stuk van de schoorsteen met een hart dat bonkt als de motoren van de Soeverein en komt alleen naar buiten, in wind en licht: een weide, een bergmeer, zeven stenen hutten. Eerste. Niemand hier behalve jij en een geit, en de geit telt niet.",
+    "Een minuut later komt Ilka achter je aan, ziet je gezicht en zegt: “Gefeliciteerd.” Ze meent het. Dan trekt ze de pin uit de deur van haar familie. In het dal noemen de kranten je de eerste die de Tafel beklom, en de geitenhoedersfamilies zijn beleefd tegen je, allemaal, de rest van je leven.",
+    "~ Dat is nog het ergste."
+   ],
+   "ending": {
+    "no": "III",
+    "title": "Gefeliciteerd",
+    "kind": "silver",
+    "epilogue": "Eerste met een minuut. Laatste met een heel eind.",
+    "hint": "Sommige wedstrijden hebben maar één deelnemer."
+   },
+   "nr": 12
+  },
+  "9": {
+   "chapter": "Grond · De Leeuwerik",
+   "scene": "basket",
+   "tag": "Hoogte 0. Lappen: 31. Betaald: geen.",
+   "text": [
+    "De Leeuwerik ligt in het hooi als een gevallen onderrok, terwijl Juno haar bij lamplicht verstelt en tegen de brander praat. De brander heet Gideon. “Niet mokken,” zegt ze tegen hem. “Je krijgt je petroleum heus.” Eén lap is bijna wit gebleekt, met nog zand in de naden. “Vorig voorjaar,” zegt Juno, en verder niets.",
+    "Rond de rand van de mand hangen [[ious|schuldbekentenissen aan knijpers, als wasgoed]], elk in het handschrift van een andere schuldeiser. Vanmiddag kwam meneer Gall, de zandhandelaar, met een kar zes zandzakken terughalen. Juno slaapt vannacht in de mand, zodat niet ook de mand nog verdwijnt."
+   ],
+   "choices": [
+    {
+     "text": "Als je opblijft in het hooi en naar de wolk op de Tafel kijkt,",
+     "short": "Kijk naar de wolk",
+     "to": 3
+    },
+    {
+     "text": "Als je naar het vuur van de zussen Brisk loopt om zand te bedelen,",
+     "short": "Bedel zand bij de Brisks",
+     "to": 12
+    },
+    {
+     "text": "Als je naar de herberg gaat voor een echt bed,",
+     "short": "Ga naar de herberg",
+     "to": 10
+    }
+   ],
+   "nr": 13
+  },
+  "10": {
+   "chapter": "Grond · De achterkamer",
+   "scene": "printshop",
+   "tag": "Hoogte 0. Lampolie: laag. Nieuwsgierigheid: hoog.",
+   "text": [
+    "De Koperen Geit zit vol verslaggevers, dus de waardin geeft je een veldbed in de achterkamer, die de reisdrukkerij van meneer Vane blijkt te zijn. Het ruikt er naar inkt en warm metaal. Een zettersjongen slaapt met open mond op een stapel papier. Om twee uur ’s nachts, als je de slaap niet kunt vatten, hef je je lantaarn.",
+    "Op de steen ligt een hele pagina loden letters, vastgezet in een ijzeren raam, klaar voor de pers. Zetsel is spiegelschrift. Jij graveert kaarten; jij leest spiegelschrift voor de kost.",
+    "~ [[forme|SOEVEREIN VEROVERT DE TAFEL]]. De datum van morgen. Daaronder een kolom over “de maagdelijke top”, al helemaal gezet."
+   ],
+   "choices": [
+    {
+     "text": "Als je de lantaarn uitblaast en voor de dageraad teruggaat naar de wei,",
+     "short": "Ga terug naar de wei",
+     "to": 14
+    },
+    {
+     "text": "Als je meneer Vane wakker maakt en vraagt wat dit is,",
+     "short": "Maak meneer Vane wakker",
+     "to": 19
+    },
+    {
+     "text": "Als je het Sir Lucan gaat vertellen; hij lijkt een heer,",
+     "short": "Vertel het Sir Lucan",
+     "to": 18
+    }
+   ],
+   "nr": 9
+  },
+  "11": {
+   "chapter": "Een einde",
+   "scene": "summit",
+   "tag": "Hoogte 5290. Wimpel: gehesen. Hoogste punt: van jou.",
+   "text": [
+    "De grootste hut heeft het hoogste dak, en het hoogste dak is het hoogste punt van de Tafel, dus daar komt de wimpel van de Meridiaan, met je veter aan de daksteen geknoopt. Hij klappert dapper in de wind. De foto wordt in vier landen afgedrukt.",
+    "De zomer daarop komt er iemand naar boven, trekt de pin uit de deur en vindt de vlag van een krant op het dak van grootmoeders huis. Zonder ophef wordt hij weggehaald, keurig in vieren gevouwen en jarenlang gebruikt om kaas in te wikkelen. Het is uitstekende zijde. De vliegen blijven eraf."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "Vlag op het dak",
+    "kind": "bad",
+    "epilogue": "Jouw aanspraak hield de kaas schoon.",
+    "hint": "Het hoogste punt is iets anders dan de eerste zijn."
+   },
+   "nr": 33
+  },
+  "12": {
+   "chapter": "Grond · De lier",
+   "scene": "kites",
+   "tag": "Hoogte 0. Vliegers: zes. Zussen: ruziënd.",
+   "text": [
+    "Nell en Dot Brisk maken plaats voor je bij hun vuur en gaan gewoon door met hun ruzie over een stoomlier, die het luidste ding op de wei was tot zij begonnen. Achter hen staat hun zweefvliegtuig in het gras: een doosvlieger zo groot als een boekenkast, met twee zitplaatsen erin, als een boekenkast die bezoek verwacht. Bij het woord zand schieten ze in de lach. Hun ketel vreet zand, kolen en geduld.",
+    "De hele dag hebben ze vliegers opgelaten, met om de vijfhonderd voet een lint aan het touw, en op elke hoogte wijzen de linten een andere kant op. In de schuur staat [[handpress|een kleine handpers voor hun clubblad, De Stijgwind]]. Het blad heeft elf abonnees. Twee daarvan zijn Nell en Dot."
+   ],
+   "choices": [
+    {
+     "text": "Als je blijft en ze helpt met de lier,",
+     "short": "Help met de lier",
+     "to": 15
+    },
+    {
+     "text": "Als je teruggaat naar Juno en wat gaat slapen,",
+     "short": "Ga terug naar Juno",
+     "to": 14
+    },
+    {
+     "text": "Als je naar de herberg gaat voor een bed,",
+     "short": "Ga naar de herberg",
+     "to": 10
+    }
+   ],
+   "nr": 5
+  },
+  "13": {
+   "chapter": "Een einde",
+   "scene": "kites",
+   "tag": "Hoogte 0. Hele dag. Telescoop: geleend.",
+   "text": [
+    "Je blijft bij de lier. Het zweefvliegtuig schiet langs de kabel omhoog als een weggegooid boek, en Dot laat je de telescoop vasthouden in ruil voor de kolenschop. Vanuit het hooi zie je de hele race: de rechte lijn van de Soeverein, de Leeuwerik die tolt als een gevallen hoed, het zweefvliegtuig dat langs de wand meedraait.",
+    "Jouw kaart van die dag, elk spoor in een andere inkt, is het mooiste wat De Stijgwind ooit heeft gedrukt. Alle elf abonnees schrijven een brief. Zonder de wei te verlaten word je de grootste kenner van het dal op het gebied van andermans vluchten."
+   ],
+   "ending": {
+    "no": "V",
+    "title": "Grondpersoneel",
+    "kind": "strange",
+    "epilogue": "Je bracht elke vlucht in kaart, behalve je eigen.",
+    "hint": "Een race is makkelijker te volgen dan te winnen."
+   },
+   "nr": 6
+  },
+  "14": {
+   "chapter": "Grond · Dageraad",
+   "scene": "haymeadow",
+   "tag": "Hoogte 0. Zandzakken: 6 van 12. Startschot: zonsopgang.",
+   "text": [
+    "De dageraad komt roze op achter de Tafel en vindt je naast Juno. De motoren van de Soeverein warmen op met het geluid van een grote man die neuriet; de lier van de Brisks sist; de Leeuwerik richt zich op uit het hooi, dik van de hete lucht van Gideon, de brander. Juno telt haar zandzakken. Zes. Ze heeft er twaalf nodig. De camera en de barometer van de Meridiaan, verstrekt als bewijs, nemen de plek in van de rest.",
+    "Het geitenmeisje drijft haar geiten tegen de menigte in over de wei, naar de noordvoet. In hun vacht hangt [[moss|een bleekgroen mos dat je op geen enkele steen in het dal hebt gezien]]. De starter klimt op de hooiwagen, met een pistool en een horloge. Nog een halfuur."
+   ],
+   "choices": [
+    {
+     "text": "Als je zandzakken leent van de bemanning van de Soeverein en in haar kielzog vliegt,",
+     "short": "Leen zand van de Soeverein",
+     "to": 20
+    },
+    {
+     "text": "Als je de lege zakken vult met stenen van de veldmuur,",
+     "short": "Vul de zakken met stenen",
+     "to": 17
+    },
+    {
+     "text": "Als je het zwaarste ding van het dal uit de achterkamer van meneer Vane haalt,",
+     "short": "Plunder de achterkamer",
+     "to": 27,
+     "hidden": true,
+     "needs": {
+      "seen": [
+       10
+      ]
+     }
+    }
+   ],
+   "nr": 30
+  },
+  "15": {
+   "chapter": "Grond · De tweede zitplaats",
+   "scene": "kites",
+   "tag": "Hoogte 0. Slaap: geen. Stoom: genoeg.",
+   "text": [
+    "Je brengt de nacht door met dingen vasthouden voor de zussen Brisk: een moersleutel, een lamp, een wrok namens Dot. Bij dageraad staat de ketel op druk en wacht het zweefvliegtuig aan het eind van een lange kabel, met de neus naar de Tafel. Nell vliegt. Dot bedient de lier en schreeuwt. Ze hebben het uitgerekend: het toestel wil ballast op de tweede zitplaats.",
+    "Jouw gewicht, precies. Dot heeft het met krijt op de vleugel gezet. Aan de overkant van de wei staat Juno op de rand van de mand je naam te roepen, op de toon die ze voor de brander gebruikt. De starter kijkt al op zijn horloge. Iemand moet aan de slinger draaien."
+   ],
+   "choices": [
+    {
+     "text": "Als je op de tweede zitplaats van het zweefvliegtuig klimt,",
+     "short": "Neem de tweede plaats",
+     "to": 29
+    },
+    {
+     "text": "Als je voor het schot terugrent naar Juno,",
+     "short": "Ren terug naar Juno",
+     "to": 14
+    },
+    {
+     "text": "Als je bij de lier blijft en hen laat vliegen,",
+     "short": "Blijf bij de lier",
+     "to": 13
+    }
+   ],
+   "nr": 22
+  },
+  "16": {
+   "chapter": "Een einde",
+   "scene": "valley",
+   "tag": "Hoogte 0, ongeveer. Knollen: veel.",
+   "text": [
+    "Je komt onder uit de wolk in een dunne grijze motregen, een mijl van waar je erin ging en nergens in de buurt van de Tafel, die ergens achter je staat als een deur die voor je neus is dichtgeslagen. Juno zegt een woord tegen Gideon dat hij nog nooit heeft gehoord.",
+    "Je landt, heel zachtjes, in een knollenveld. Het is van meneer Gall, de zandhandelaar. Hij komt je tegemoet met zijn hoed in de ene hand en Juno’s schuldbekentenis in de andere, en neemt de mand in beslag voor de schuld. Het is, vertelt hij later aan iedereen, een uitstekend kippenhok."
+   ],
+   "ending": {
+    "no": "VI",
+    "title": "Knollen",
+    "kind": "bad",
+    "epilogue": "Je kwam neer waar je nog iets schuldig was.",
+    "hint": "Omlaag kan altijd. Waar, dat is de vraag."
+   },
+   "nr": 4
+  },
+  "17": {
+   "chapter": "2000 voet · Het dal",
+   "scene": "valley",
+   "tag": "Hoogte 2000. Wind O. Stenen: twee zakken.",
+   "text": [
+    "Veldstenen krijgen je uiteindelijk omhoog, in etappes, als een hertogin die uit bad stapt. Je komt over de populieren door een zak los te snijden, en over de windhaan van de herberg met nog een. Dan gaat het dal onder je open: hooivelden gestikt als een lappendeken, de glanzende rivier, de wei, en iedereen bij wie Juno in het krijt staat, klein als kruimels.",
+    "Vooruit: de Tafel. De Soeverein bromt er in een rechte lijn op af; het zweefvliegtuig van de Brisks klimt aan zijn kabel. Bij de noordvoet [[thread|klimt een bleke draad van een pad naar de wand en houdt op]]. Hoog op de noordwand, waar onmogelijk iets kan staan, zit een wit stipje. Het is een geit."
+   ],
+   "choices": [
+    {
+     "text": "Als je de Soeverein volgt; die lijkt de weg te weten,",
+     "short": "Volg de Soeverein",
+     "to": 20
+    },
+    {
+     "text": "Als je brandt voor de wolk en over de top gaat,",
+     "short": "Klim naar de wolk",
+     "to": 21
+    },
+    {
+     "text": "Als je laag blijft en je door de dalwind laat rondvoeren,",
+     "short": "Blijf laag",
+     "to": 23
+    }
+   ],
+   "nr": 19
+  },
+  "18": {
+   "chapter": "Grond · Aan boord van de Soeverein",
+   "scene": "sovereign",
+   "tag": "Hoogte 0. Motoren warm. Kaartenmaker: aan boord.",
+   "text": [
+    "De dageraad vindt je aan de kaartentafel van de Soeverein, in een geleend wit jasje, met een honorarium in je zak en een potlood achter je oor. Voor je ligt de beste kaart die er voor geld te koop is: de koninklijke opmeting van het Velldal, elke hoogtelijn haarscherp. Sir Lucan, die gisteravond overal charmant over was en je ter plekke in dienst nam, wil een rechte lijn naar de zuidwand. “Motoren,” zegt hij, “trekken zich niets aan van wind.”",
+    "In de marge bij de noordwand heeft iemand vaag [[pencil|een potloodlijn langs de rots gezet: “de Tafel: belopen, 18—, met de kaasmakers. E.M.”]] Je kent die initialen. Je leerde van haar hoe je een potlood slijpt. Niemand aan boord heeft het gezien."
+   ],
+   "choices": [
+    {
+     "text": "Als je voor Sir Lucan zijn rechte lijn naar de zuidwand uitzet,",
+     "short": "Zet de rechte lijn uit",
+     "to": 33
+    },
+    {
+     "text": "Als je meneer Vane de potloodlijn in de marge laat zien,",
+     "short": "Toon Vane het potlood",
+     "to": 19
+    }
+   ],
+   "nr": 35
+  },
+  "19": {
+   "chapter": "Een einde",
+   "scene": "printshop",
+   "tag": "Kamer 4. Pen: aanwezig. Uitzicht: dal.",
+   "text": [
+    "Meneer Vane is opgetogen over je. Een scherp oog, zegt hij, is kostbaar, en hij wil het jouwe graag houden waar hij het kan zien. Bij zonsopgang heb je de beste kamer van de Koperen Geit, een nieuwe pen, een honorarium tweemaal zo hoog als wat Juno je schuldig is, en het exclusieve verslag van de beklimming om te schrijven, “in je eigen woorden, met een beetje hulp”.",
+    "Vanuit het raam zie je drie vaartuigen het roze in stijgen en in de wolk verdwijnen. Je schrijft de hele dag. Jouw top is overweldigend: windgeschuurd, onbetreden, verheven. De kranten in de hoofdstad drukken het een week lang af. Je komt geen moment van de grond."
+   ],
+   "ending": {
+    "no": "VII",
+    "title": "Het exclusieve verslag",
+    "kind": "strange",
+    "epilogue": "Je mooiste uitzicht, op een plek die je nooit zag.",
+    "hint": "Wie het de hoofdredacteur vraagt, vraagt het aan het verhaal."
+   },
+   "nr": 18
+  },
+  "20": {
+   "chapter": "2500 voet · In het kielzog",
+   "scene": "tablewalls",
+   "tag": "Hoogte 2500. Volgend. Mening: ingehouden.",
+   "text": [
+    "Je gaat achter de Soeverein aan als een bijbootje achter een oceaanstomer. Ze koerst in een volmaakt rechte lijn op de zuidwand af, motoren dreunend, en uit de ramen van de gondel zweeft een grammofoonmars naar je terug, dun en dapper. De wand groeit. Al gauw is het geen wand meer maar de hele lucht: grijs, geribd, nat in de naden.",
+    "Vlak bij de rots bedenkt de wind zich. De Soeverein begint scheef weg te drijven, motoren brullend, en de Leeuwerik, die geen motoren heeft en geen mening, wordt recht op de steen af geduwd. Juno kijkt je aan. Jij bent de kaartenmaker. “Nou?” zegt ze."
+   ],
+   "choices": [
+    {
+     "text": "Als je de lijn van de Soeverein aanhoudt; zij heeft motoren,",
+     "short": "Houd de lijn van de Soeverein aan",
+     "to": 22
+    },
+    {
+     "text": "Als je lucht laat ontsnappen en in de lagere wind zakt,",
+     "short": "Zak in de lagere wind",
+     "to": 23
+    },
+    {
+     "text": "Als je hard brandt voor de wolk erboven,",
+     "short": "Brand voor de wolk",
+     "to": 21
+    }
+   ],
+   "moment": {
+    "line": "De wand is nu de hele lucht.",
+    "seconds": 10,
+    "default": 22,
+    "head": "Kies voordat de wand er is",
+    "sub": "Wacht je te lang, dan kiest de wind voor je.",
+    "defaultLabel": "DE KEUZE VAN DE WIND",
+    "timeout": "De wind kiest voor je…"
+   },
+   "nr": 26
+  },
+  "21": {
+   "chapter": "4000 voet · Wit",
+   "scene": "ringwind",
+   "tag": "Hoogte 4000. Zicht: geen. IJs: een beetje.",
+   "text": [
+    "De wolk neemt je op als een ingehouden adem. Alles wordt wit en dichtbij: je ziet Juno, de brander, de touwen, maar niet de overkant van de mand. Het is ineens heel koud. IJsnaalden groeien langs het want en schitteren, al is er geen zon om bij te schitteren. Het geraas van de brander is het enige wat er bestaat.",
+    "Dan wordt het wit links van je donker door iets enorms, heel dichtbij, dat niet beweegt. Rots. Je hoort de wind erlangs gaan. Juno heeft haar hand op de klep en haar ogen op jou, en een ballon kan drie dingen doen."
+   ],
+   "choices": [
+    {
+     "text": "Als je blijft branden en er bovenuit klimt,",
+     "short": "Klim er bovenuit",
+     "to": 24
+    },
+    {
+     "text": "Als je de camera en de barometer overboord gooit,",
+     "short": "Gooi de camera eruit",
+     "to": 30
+    },
+    {
+     "text": "Als je lucht laat ontsnappen en er onderuit zakt,",
+     "short": "Zak er onderuit",
+     "to": 16
+    }
+   ],
+   "nr": 42
+  },
+  "22": {
+   "chapter": "Een einde",
+   "scene": "tablewalls",
+   "tag": "Hoogte 2500, heel even. Dan minder.",
+   "text": [
+    "Je houdt de lijn van de Soeverein aan, en de Soeverein, die motoren heeft, klauwt zich uit de valwind en weg. De Leeuwerik, die Gideon heeft, niet. Ze kust de wand met het geluid van een laken dat wordt uitgeklopt, laat een reep rode zijde op de rots achter en glijdt omlaag als een gevallen handschoen.",
+    "Het is een lange, trage, schurende, merkwaardig beleefde afdaling. Je landt in een hooiveld, met de ballon over je heen als een tafelkleed na een picknick. Hoog boven je, zwak en dapper, speelt de grammofoonmars zonder jou verder."
+   ],
+   "ending": {
+    "no": "VIII",
+    "title": "Tegen de wand",
+    "kind": "bad",
+    "epilogue": "De Soeverein hield haar lijn. Jij hield de rots.",
+    "hint": "Motoren volgen lijnen. Ballonnen volgen wind."
+   },
+   "nr": 8
+  },
+  "23": {
+   "chapter": "3000 voet · De ringwind",
+   "scene": "ringwind",
+   "tag": "Hoogte 3000. Wind: alle.",
+   "text": [
+    "De lage wind pakt je op, en de Tafel begint voorbij te glijden als een trein: wand, steunbeer, geul, wand, zo dichtbij dat je de zwaluwnesten kunt tellen. De mand draait langzaam, dan minder langzaam. Windstoten slaan van drie kanten tegelijk tegen de ballon. Juno praat met lage, kalme stem tegen Gideon, zoals je tegen een paard op een brug praat.",
+    "Verderop wordt het zweefvliegtuig van de Brisks aan zijn kabel langs de rots gesleurd als een vlieger in een heg. De Leeuwerik is te zwaar om uit de ring te klimmen. De ring voert je rond de Tafel als een blad rond een molensteen."
+   ],
+   "choices": [
+    {
+     "text": "Als je de camera en de barometer overboord gooit,",
+     "short": "Gooi de camera eruit",
+     "to": 30
+    },
+    {
+     "text": "Als je je vasthoudt en je door de ring laat rondvoeren,",
+     "short": "Laat de ring je dragen",
+     "to": 26
+    },
+    {
+     "text": "Als je brandt voor de wolk; omhoog is omhoog,",
+     "short": "Brand voor de wolk",
+     "to": 21
+    }
+   ],
+   "moment": {
+    "line": "De wand komt weer langs, dichterbij.",
+    "seconds": 10,
+    "default": 26,
+    "head": "Kies voordat de ring rond is",
+    "sub": "Wacht je te lang, dan kiest de wind voor je.",
+    "defaultLabel": "DE KEUZE VAN DE WIND",
+    "timeout": "De wind kiest voor je…"
+   },
+   "nr": 45
+  },
+  "24": {
+   "chapter": "6500 voet · De wolkenzee",
+   "scene": "cloudsea",
+   "tag": "Hoogte 6500. Kou: bijtend. Juno: zingend.",
+   "text": [
+    "Je komt uit het wit omhoog in zon, zo fel dat je hem bijna hoort. Onder je ligt de wolk vlak en verblindend tot de rand van de wereld, een vloer waarop niemand kan staan, en jij bent het enige wat erboven hangt. Juno zingt. De kou is hier een ander land: hij kruipt in je tanden, vriest je adem aan je sjaal vast en zet de barometer onder de rijp.",
+    "Waar de Tafel moet zijn, [[tablecloth|rijst de wolk op in een gladde, lage bult, als een kleed over een tafel]]. Ver weg glijdt de zilveren rug van de Soeverein erin als een lepel in room. Juno tikt tegen de petroleumkan. Die klinkt hol, eerder dan haar lief is."
+   ],
+   "choices": [
+    {
+     "text": "Als je hierboven blijft en in kaart brengt wat je ziet,",
+     "short": "Breng het in kaart",
+     "to": 25
+    },
+    {
+     "text": "Als je de Soeverein omlaag volgt, het wit in,",
+     "short": "Volg de Soeverein omlaag",
+     "to": 16
+    },
+    {
+     "text": "Als je uitrekent waar de top ligt en er langzaam op neerdaalt,",
+     "short": "Daal op de top neer",
+     "to": 30
+    }
+   ],
+   "nr": 7
+  },
+  "25": {
+   "chapter": "Een einde",
+   "scene": "cloudsea",
+   "tag": "Hoogte 7000. Land: geen. Kaart: prachtig.",
+   "text": [
+    "Je blijft boven. Het is de mooiste plek waar je ooit bent geweest, en je brengt hem netjes in kaart: de koepels en dalen van de wolk, zijn schaduwrivieren, de bult van het Tafelkleed, elke glinstering. Juno vliegt als een vrouw in de kerk. De petroleum duurt precies zo lang als de middag.",
+    "In de schemer daal je door het wit in een land met een andere taal en dezelfde koeien. Je kaart is exact, gearceerd, en klopt al niet meer voor de inkt droog is. Hij hangt in een weerkundig bureau in de hoofdstad, waar hij zeer bewonderd wordt en nooit één keer geraadpleegd."
+   ],
+   "ending": {
+    "no": "IX",
+    "title": "Weer",
+    "kind": "strange",
+    "epilogue": "Een volmaakte kaart van iets wat bewoog.",
+    "hint": "Op een uitzicht kun je niet landen."
+   },
+   "nr": 27
+  },
+  "26": {
+   "chapter": "600 voet · De noordweide",
+   "scene": "northfoot",
+   "tag": "Hoogte 600. Geland. In grote lijnen.",
+   "text": [
+    "De ring voert je naar de noordkant, waar de wind draait en langs de wand omlaag stort als water over een stuw, en de Leeuwerik stort mee. Je raakt de weide aan de voet van de wand, stuitert, sleept en ligt stil. De ballon zakt zuchtend over het puin als wasgoed. Juno gaat lachend rechtop zitten. “Een uur,” zegt ze, “om haar weer warm te krijgen.”",
+    "De Soeverein drijft scheef boven je langs, dichtbij genoeg om te roepen. Aan de overkant van de weide klimt het geitenmeisje van de wei naar de rots, met twee geiten die lege manden dragen. Ze ziet de Leeuwerik en lacht tot ze zich aan een geit moet vasthouden. Dan loopt ze een spleet in de wand in, en de geiten volgen."
+   ],
+   "choices": [
+    {
+     "text": "Als je Juno bij de ballon laat en het meisje volgt,",
+     "short": "Volg het meisje",
+     "to": 35
+    },
+    {
+     "text": "Als je Juno helpt de Leeuwerik weer de lucht in te krijgen,",
+     "short": "Help Juno opstijgen",
+     "to": 30
+    },
+    {
+     "text": "Als je de Soeverein wenkt voor een sleepje,",
+     "short": "Wenk de Soeverein",
+     "to": 37
+    }
+   ],
+   "nr": 24
+  },
+  "27": {
+   "chapter": "Grond · Het zwaarste ding",
+   "scene": "printshop",
+   "tag": "Hoogte 0. Ballast: twee zakken nieuws.",
+   "text": [
+    "De achterdeur van de Koperen Geit staat op de klink en de zettersjongen slaapt nog op het papier. Samen tillen jij en Juno het ijzeren raam van de steen en dragen het over het erf naar buiten, als een kleine, zware doodskist. Juno vraagt niet wat het is. Juno heeft wel ergere dingen uit betere gebouwen gedragen.",
+    "Gewikkeld in een paardendeken weegt het precies twee zandzakken. Het schot valt. De Leeuwerik komt met tegenzin een paar voet los, dan nog een paar, en de wei en het gejuich zakken onder je weg, en het nieuws van morgen gaat met je mee de ochtend in, ondersteboven en in spiegelschrift."
+   ],
+   "choices": [
+    {
+     "text": "Als je recht op de Tafel af klimt, zo zwaar als je bent,",
+     "short": "Klim recht erop af",
+     "to": 32
+    },
+    {
+     "text": "Als je het bij het oversteken in de rivier kiepert,",
+     "short": "Kiep het in de rivier",
+     "to": 5
+    },
+    {
+     "text": "Als je de Soeverein volgt; die lijkt de weg te weten,",
+     "short": "Volg de Soeverein",
+     "to": 20
+    }
+   ],
+   "nr": 34
+  },
+  "28": {
+   "chapter": "Een einde",
+   "scene": "northfoot",
+   "tag": "Hoogte 600. Geiten: veel. Potlood: weggeborgen.",
+   "text": [
+    "Je wacht de hele middag aan de noordvoet, met niets om naar te kijken dan de wand. Tegen de avond komen er mensen uit. Eerst geiten, dan een man met een kaas op zijn rug zo groot als een wagenwiel, dan twee vrouwen, dan het geitenmeisje van de wei: allemaal uit een spleet in de rots waar je nergens komt, pratend over het weer.",
+    "Ze geven je brood en kaas en brengen je in de schemer naar het dal, en onderweg vraagt de oudste je heel beleefd om het pad niet te tekenen. Dat doe je nooit. Het is de enige lijn die je ooit van een kaart houdt, en je weet altijd precies waar hij heen gaat."
+   ],
+   "ending": {
+    "no": "X",
+    "title": "Het pad dat je niet tekende",
+    "kind": "strange",
+    "epilogue": "De mooiste lijn die je nooit trok.",
+    "hint": "Zij kwamen naar beneden. Jij had naar boven gekund."
+   },
+   "nr": 44
+  },
+  "29": {
+   "chapter": "3000 voet · De vliegende boekenkast",
+   "scene": "northfoot",
+   "tag": "Hoogte 3000. Kabel: weg. Nell: verrukt.",
+   "text": [
+    "De kabel trekt je zo snel de ochtend in dat je maag op de wei achterblijft. Op drieduizend voet trekt Nell aan de ontkoppeling, de kabel valt weg, en er is geen geluid meer dan wind in de stijlen. “Is het niet heerlijk,” zegt Nell, zonder vraagteken. De ring neemt het zweefvliegtuig mee rond de Tafel als een blad in een stroomversnelling.",
+    "Aan de noordkant stort de lucht langs de wand omlaag, en Nell zet de boekenkast prachtig vloekend neer op de weide aan de voet ervan. Het geitenmeisje van de wei is er, met twee geiten en lege manden. Ze lacht om de vliegende boekenkast tot ze moet gaan zitten. Dan loopt ze een spleet in de rots in, geiten en al."
+   ],
+   "choices": [
+    {
+     "text": "Als je Nell bij haar zweefvliegtuig laat en het meisje volgt,",
+     "short": "Volg het meisje",
+     "to": 35
+    },
+    {
+     "text": "Als je Nell helpt het toestel op te vouwen en op hulp wacht,",
+     "short": "Wacht met Nell",
+     "to": 28
+    }
+   ],
+   "nr": 37
+  },
+  "30": {
+   "chapter": "Over de rand · Elf voet",
+   "scene": "rim",
+   "tag": "Hoogte 5280. Speling: elf voet.",
+   "text": [
+    "Eindelijk scheurt de wolk als nat papier en daar is de rand, recht onder de mand: een lip van gras, elf voet lager, en ernaast niets. Een mijl niets, loodrecht omlaag, met het dal op de bodem als een gevallen kaart. Je maag gaat over de rand en komt terug. Dan drijft de Leeuwerik boven het gras, en ligt de Tafel onder je.",
+    "Een weide. Een bergmeer, zwart en stil. Zeven stenen hutten met graszoden op het dak, de deuren dicht. Voor je uit daalt de Soeverein op het groenste stuk van allemaal, de vlag klaar in de deur van de gondel. Juno heeft haar hand op de klep. “We kunnen ze verslaan,” zegt ze. “Zeg het maar.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je flink lucht laat ontsnappen, als eerste landt en de wimpel plant,",
+     "short": "Land als eerste",
+     "to": 31
+    },
+    {
+     "text": "Als je inhoudt en de Soeverein eerst laat landen,",
+     "short": "Laat hen eerst landen",
+     "to": 36
+    },
+    {
+     "text": "Als je verder drijft en bij de hutten neerstrijkt om beter te kijken,",
+     "short": "Strijk neer bij de hutten",
+     "to": 38
+    }
+   ],
+   "nr": 14
+  },
+  "31": {
+   "chapter": "Een einde",
+   "scene": "haymeadow",
+   "tag": "Prijs: betaald. Schulden: betaald. Leeuwerik: verkocht.",
+   "text": [
+    "Je bent ze een lengte voor. De wimpel gaat erin; de Soeverein landt in een moeras; Sir Lucan, nat tot zijn middel, bevestigt het als een heer. De prijs wordt de volgende dag uitbetaald, aan de kaartenmaker, op naam. Juno wil hem alleen als lening aannemen. Ze betaalt elke schuld in Vell tot de laatste kroon, en meneer Gall, de zandhandelaar, huilt.",
+    "Dan verkoopt ze, omdat ze in haar hele leven nog nooit iets schuldig is gebleven aan een vriend, de Leeuwerik om jou terug te betalen. De Meridiaan hangt haar in de hal, opgevuld met oude kranten, om te laten zien wat een kleine ballon kan. Juno gaat werken bij een touwslager.",
+    "~ Ze is er opgewekt onder, en vliegt nooit meer."
+   ],
+   "ending": {
+    "no": "XI",
+    "title": "Tienduizend kronen",
+    "kind": "silver",
+    "epilogue": "Je won. De Leeuwerik hangt in een hal.",
+    "hint": "Eerste is een woord dat van de krant is."
+   },
+   "nr": 2
+  },
+  "32": {
+   "chapter": "3000 voet · Zwaar",
+   "scene": "ringwind",
+   "tag": "Hoogte 3000, en zakkend. Ballast: nieuws.",
+   "text": [
+    "Je koerst recht op de Tafel af en komt in een wind die in een ring om de rots waait. De ring heeft je. Met morgen aan boord, twee zandzakken zwaar, kan de Leeuwerik er niet uit klimmen; ze draait, langzaam, dan niet langzaam meer, en de wand komt langs en nog eens langs, elke keer een beetje dichterbij. Juno brandt tot Gideon gloeit. Het is niet genoeg. Er moet iets overboord, en wel nu.",
+    "Er is de camera, de barometer, de kaartenkoker, één zandzak, en de deken. De deken is verreweg het zwaarst. Juno kijkt ernaar, en dan naar jou, en zegt voor één keer in haar leven helemaal niets."
+   ],
+   "choices": [
+    {
+     "text": "Als je de camera en de barometer overboord gooit en de deken houdt,",
+     "short": "Gooi camera en barometer eruit",
+     "to": 40
+    },
+    {
+     "text": "Als je de deken overboord gooit; het is het zwaarste aan boord,",
+     "short": "Gooi de deken eruit",
+     "to": 30
+    },
+    {
+     "text": "Als je je vasthoudt en je door de ring laat rondvoeren,",
+     "short": "Laat de ring je dragen",
+     "to": 26
+    }
+   ],
+   "moment": {
+    "line": "De mand zakt naar de rots.",
+    "seconds": 10,
+    "default": 26,
+    "head": "Kies voordat de rots kiest",
+    "sub": "Wacht je te lang, dan kiest de wind voor je.",
+    "defaultLabel": "DE KEUZE VAN DE WIND",
+    "timeout": "De wind kiest voor je…"
+   },
+   "nr": 40
+  },
+  "33": {
+   "chapter": "3500 voet · Lichter",
+   "scene": "sovereign",
+   "tag": "Hoogte 3500. Te zwaar. Onder muziek.",
+   "text": [
+    "Motoren trekken zich, zo blijkt, wel degelijk iets aan van wind. De ring pakt de Soeverein bij de neus en duwt haar rond de Tafel, motoren loeiend, tot de noordwand langs de ramen schuift. Om eroverheen te klimmen, zegt de machinist, moet ze vierhonderd pond kwijt. De waterballast is weg. Het rundvlees is weg. Sir Lucan kijkt beleefd de gondel rond, op zoek naar de volgende vierhonderd pond.",
+    "Op de grammofoon speelt een mars, van een plaat met het etiket [[gramophone|“Ashby’s Bestijging, een mars, te spelen op de top”]]. “Niet de grammofoon,” zegt meneer Vane. De blik van Sir Lucan blijft vriendelijk op jou rusten, zoals hij op een zak zou rusten."
+   ],
+   "choices": [
+    {
+     "text": "Als je de grammofoon voorstelt; muziek weegt meer dan ze klinkt,",
+     "short": "Stel de grammofoon voor",
+     "to": 41
+    },
+    {
+     "text": "Als je aanbiedt om bij de noordvoet te worden afgezet,",
+     "short": "Stap van het luchtschip",
+     "to": 28
+    }
+   ],
+   "nr": 39
+  },
+  "34": {
+   "chapter": "Een einde",
+   "scene": "bog",
+   "tag": "Kaart: uitstekend. Cartouche: verbeterd.",
+   "text": [
+    "Het is een heel goede kaart. Meneer Vane zegt het zelf, en laat hem voor de voorpagina graveren onder SOEVEREIN VEROVERT DE TAFEL, met slechts kleine verbeteringen. Het moeras wordt het Ashbymeer. De zeven stenen hutten worden “ruïnes van grote ouderdom, herkomst onbekend”.",
+    "In de cartouche voegt de graveur in sierlijke kapitalen toe: Eerste beklimming, Sir Lucan Ashby. Je eigen naam staat in de hoek onderaan, heel klein, correct gespeld. In het dal is de Meridiaan binnen een uur uitverkocht. Geen enkele geitenhoedersfamilie koopt er een."
+   ],
+   "ending": {
+    "no": "XII",
+    "title": "De officiële kaart",
+    "kind": "bad",
+    "epilogue": "Elke lijn klopt. De titel niet.",
+    "hint": "Een kaart zegt wie er eerst was, of je het nu opschrijft of niet."
+   },
+   "nr": 41
+  },
+  "35": {
+   "chapter": "2000 voet · De schoorsteen",
+   "scene": "chimney",
+   "tag": "Hoogte 2000. Te voet. Geiten: voorop.",
+   "text": [
+    "De spleet loopt de wand in en draait omhoog tot een schoorsteen van grijze rots, koud als een kelder, met een reep lucht bovenaan. Het meisje, dat Ilka heet, gaat erin omhoog als op een trap, en in zekere zin is het er ook een: [[steps|treden glad gesleten als oude kerktreden]], elk in het midden uitgehold. Over het steilste stuk hangt een touw, grijs en harig onderaan, nieuw bovenaan.",
+    "Je klimt de hele ochtend. Twee keer kijk je door de spleet omlaag en zie je het dal op de bodem van een put liggen, de velden zo groot als postzegels. De geiten halen je in. Ilka wacht op richels, etend, en lacht om je techniek.",
+    "~ Maar ze wacht."
+   ],
+   "choices": [
+    {
+     "text": "Als je achter haar blijft, op geitentempo,",
+     "short": "Blijf achter haar",
+     "to": 43
+    },
+    {
+     "text": "Als je je langs haar wringt om als eerste boven te zijn,",
+     "short": "Wees als eerste boven",
+     "to": 8
+    }
+   ],
+   "nr": 3
+  },
+  "36": {
+   "chapter": "Over de rand · Na u",
+   "scene": "bog",
+   "tag": "Hoogte 5280. Tweede geland. Touw: uit.",
+   "text": [
+    "De Soeverein is het eerst geland, op het groenste stuk van de Tafel, en blijft maar landen. Het groen is mos op zwart water. Tegen de tijd dat de Leeuwerik achter haar op vaste grond neerploft, is de gondel tot de ramen weggezakt, speelt de grammofoon nog altijd en staat Sir Lucan tot zijn middel in het moeras, waar hij met grote waardigheid de wimpel plant.",
+    "Je gooit hem het sleeptouw toe en trekt. Hij komt los als een laars uit de modder, en onder zijn middel is hij dat nu ook. Hij bedankt je met volmaakte manieren. In de scheve gondel zit meneer Vane al te schrijven. Tweehonderd pas verderop, door drijvende wolk: zeven stenen hutten."
+   ],
+   "choices": [
+    {
+     "text": "Als je naar de stenen hutten loopt,",
+     "short": "Loop naar de hutten",
+     "to": 38
+    },
+    {
+     "text": "Als je met Sir Lucan poseert voor de foto van meneer Vane,",
+     "short": "Poseer voor de foto",
+     "to": 37
+    }
+   ],
+   "nr": 21
+  },
+  "37": {
+   "chapter": "Een einde",
+   "scene": "printshop",
+   "tag": "Voorpagina: van hen. Alinea zes: van jou.",
+   "text": [
+    "Het verslag van meneer Vane is een meesterwerk. Het beslaat elf alinea’s onder SOEVEREIN VEROVERT DE TAFEL, met foto. In de zesde alinea schiet de Soeverein zonder aarzelen een kleine ballon in nood te hulp, waarvan de bemanning als kranig wordt omschreven.",
+    "Juno laat het knipsel inlijsten en hangt het in de mand, ondersteboven. Sir Lucan stuurt je een heel aardige brief. Niemand in het dal leest verder dan de vijfde alinea, en men is het er algemeen over eens dat jullie gered zijn. Jarenlang zijn de mensen er heel aardig over."
+   ],
+   "ending": {
+    "no": "XIII",
+    "title": "Alinea zes",
+    "kind": "bad",
+    "epilogue": "Hulp is wat de krant zegt dat het was.",
+    "hint": "Wie de pen vasthoudt, bepaalt wie wie heeft gered."
+   },
+   "nr": 48
+  },
+  "38": {
+   "chapter": "Over de rand · Zeven hutten",
+   "scene": "summit",
+   "tag": "Hoogte 5280. Hutten: zeven. Deuren: gepind.",
+   "text": [
+    "Rond het bergmeer staan zeven hutten, laag en van steen, met graszoden op het dak, waarop het gras groeit als haar dat nodig geknipt moet worden. Elke deur is dicht met een houten pin, zoals je een deur dichtzet voor de winter. Door een kier in een ervan zie je leistenen planken, en daarop kazen, rijen kazen, in doeken gewikkeld.",
+    "[[lintel|Boven elke deur, onder het korstmos, is een merk uitgehakt, diep en zacht gesleten]], op elke hut een ander. De wind komt over het gras en neuriet in de stenen. Vanaf de noordrand van de weide loopt een geitenspoor weg en duikt over de rand."
+   ],
+   "choices": [
+    {
+     "text": "Als je elke hut in kaart brengt onder het merk boven de deur,",
+     "short": "Breng de hutten in kaart",
+     "to": 39
+    },
+    {
+     "text": "Als je de wimpel van de Meridiaan op het grootste dak hijst,",
+     "short": "Hijs de wimpel",
+     "to": 11
+    }
+   ],
+   "nr": 11
+  },
+  "39": {
+   "chapter": "Een einde",
+   "scene": "descent",
+   "tag": "Kaart: waar. Lezers: geen. Gewicht: aanzienlijk.",
+   "text": [
+    "Je tekent ze allemaal: zeven hutten, zeven merken, het bergmeer, de planken met kaas, het geitenspoor naar de noordrand. Het is de eerlijkste kaart die je ooit hebt gemaakt. ’s Avonds draag je hem de mijl lucht omlaag alsof hij zou kunnen morsen, en die nacht laat je hem in de Koperen Geit aan iedereen zien die wil kijken.",
+    "De volgende ochtend kopt de Meridiaan SOEVEREIN VEROVERT DE TAFEL, en niemand gelooft je. Alleen een geitenmeisje dat bij de deur van de herberg kaas verkoopt, kijkt lang naar je kaart en geeft je een kaas voor niets.",
+    "~ Je hebt de rest van je leven gelijk. Het wordt geen dag lichter."
+   ],
+   "ending": {
+    "no": "XIV",
+    "title": "Gelijk",
+    "kind": "silver",
+    "epilogue": "Gelijk, de rest van je leven, tegen niemand.",
+    "hint": "De waarheid reist beter met iemand naast zich."
+   },
+   "nr": 46
+  },
+  "40": {
+   "chapter": "Over de rand · Gaat u voor",
+   "scene": "rim",
+   "tag": "Hoogte 5280. Lichter. Tweede, desgewenst.",
+   "text": [
+    "Zonder de camera en de barometer schiet de Leeuwerik als een kurk langs de ring omhoog, de wolk uit en over de rand, met een handbreedte speling. Onder de mand de mijl niets; dan gras, een bergmeer, zeven hutten met graszoden. De deken ligt aan je voeten, zwaar als een hond met een schuldgevoel.",
+    "Voor je uit daalt de Soeverein op het groenste stuk van de Tafel, de vlag klaar in de deur van de gondel, de grammofoon aan. Juno heeft haar hand op de klep. Ze zou ze kunnen verslaan. Ze heeft in haar hele leven nog nooit iets zo graag gewild. “Zeg het maar,” zegt ze."
+   ],
+   "choices": [
+    {
+     "text": "Als je inhoudt en de Soeverein eerst laat landen,",
+     "short": "Laat hen eerst landen",
+     "to": 45
+    },
+    {
+     "text": "Als je flink lucht laat ontsnappen en hen voor bent,",
+     "short": "Wees hen voor",
+     "to": 31
+    }
+   ],
+   "nr": 17
+  },
+  "41": {
+   "chapter": "Over de rand · Eerste",
+   "scene": "bog",
+   "tag": "Hoogte 5280. Geland. Zakkend, langzaam.",
+   "text": [
+    "De grammofoon gaat al spelend over de rand, en de Soeverein, vierhonderd pond lichter en één mars armer, klimt over de noordrand en strijkt neer op het groenste stuk van de Tafel. Eerste! Het groen is mos op zwart water. De gondel zakt tot de ramen weg, rustig, zoals een eend gaat zitten.",
+    "Sir Lucan stapt uit en zakt tot zijn middel weg. Hij plant de wimpel toch, en neuriet de mars zelf. Meneer Vane roept een paar keer “Eerste!”, voor het geval de Tafel het had gemist. Door de drijvende wolk, tweehonderd pas verderop, zie je zeven stenen hutten."
+   ],
+   "choices": [
+    {
+     "text": "Als je de top in kaart brengt voor de Meridiaan, zoals afgesproken,",
+     "short": "Teken voor de Meridiaan",
+     "to": 34
+    },
+    {
+     "text": "Als je naar de hutten waadt om te zien wie ze heeft gebouwd,",
+     "short": "Waad naar de hutten",
+     "to": 38
+    }
+   ],
+   "nr": 16
+  },
+  "42": {
+   "chapter": "Een einde",
+   "scene": "haymeadow",
+   "tag": "Hoogte 0. Bewijs: persoonlijk afgeleverd.",
+   "text": [
+    "Je houdt hem. ’s Avonds, met het hele dal op de wei en de Soeverein weer druipend aan haar mast, wikkel je de deken los: het ijzeren raam, de loden letters, SOEVEREIN VEROVERT DE TAFEL, gezet voordat er iemand was opgestegen. De menigte houdt de adem in. Meneer Vane baant zich een weg naar voren, met uitgestoken hand.",
+    "“Dank u,” zegt hij hartelijk. “De drukvorm. We vroegen ons al af waar die gebleven was.” Hij legt de menigte uit dat een krant zich altijd op elke uitkomst voorbereidt, wat volkomen gebruikelijk is, en laat het raam naar de achterkamer dragen.",
+    "~ Bij dageraad gaat het ter perse."
+   ],
+   "ending": {
+    "no": "XV",
+    "title": "Met dank retour",
+    "kind": "bad",
+    "epilogue": "Je droeg zijn kop voor hem naar huis.",
+    "hint": "Bewijs werkt voor wie het als laatste vasthoudt."
+   },
+   "nr": 38
+  },
+  "43": {
+   "chapter": "Over de rand · De deur van de Tarrows",
+   "scene": "summit",
+   "tag": "Hoogte 5280. Te voet. Onaangekondigd.",
+   "text": [
+    "De schoorsteen laat je los op gras en wind en plotseling licht, en daar is de Tafel, gewoon: een weide, een bergmeer zwart als een pupil, zeven stenen hutten met graszoden op het dak. Ilka trekt de pin uit een deur, duikt naar binnen en komt naar buiten terwijl ze aan een kaas ruikt.",
+    "~ “Van ons,” zegt ze. Dan, al lopend, wijzend rond het meer: “Van Hask. Van Venn. Van Brack. Van Lune. Van Ashgill. Die is van Dunnet. Het dak lekt.”",
+    "Ver weg aan de overkant zit de Soeverein tot haar ramen in een moeras, en iemand plant er langzaam een vlag in. Ilka kijkt een tijdje toe, beleefd, zoals je naar de kinderen van de buren kijkt. Dan begint ze kazen te laden."
+   ],
+   "choices": [
+    {
+     "text": "Als je op een muurtje gaat zitten en alles tekent, naam voor naam,",
+     "short": "Teken alles",
+     "to": 46
+    },
+    {
+     "text": "Als je haar helpt de kazen te laden en meteen weer afdaalt,",
+     "short": "Laad de kazen",
+     "to": 44
+    }
+   ],
+   "nr": 49
+  },
+  "44": {
+   "chapter": "Een einde",
+   "scene": "descent",
+   "tag": "Hoogte: dalend. Kaas: veertig pond.",
+   "text": [
+    "Je draagt veertig pond kaas op je rug een mijl schoorsteen omlaag, achter een meisje dat er zestig draagt en zingt. Het is het zwaarste wat je ooit hebt gedaan, en ergens bij de gladgesleten treden wordt het de mooiste dag van je leven. Beneden is de race voorbij. Je vraagt niet wie er gewonnen heeft.",
+    "Je tekent de Tafel nooit. Niemand vraagt het je. Maar elke herfst daarna, als de families de laatste kazen naar beneden brengen, sta je bij dageraad aan de voet van de noordwand, met je eigen mand op je rug en nergens een potlood bij je."
+   ],
+   "ending": {
+    "no": "XVI",
+    "title": "Kaas",
+    "kind": "strange",
+    "epilogue": "Je hebt hem nooit getekend. Je draagt hem elk jaar.",
+    "hint": "Sommige dagen zijn een hele kaart waard, ongedrukt."
+   },
+   "nr": 15
+  },
+  "45": {
+   "chapter": "Over de rand · Het bergmeer",
+   "scene": "summit",
+   "tag": "Hoogte 5300. Bergmeer onder je. Deken: zwaar.",
+   "text": [
+    "De Soeverein daalt op het groenste stuk en blijft dalen; het groen is mos op zwart water. Sir Lucan plant de wimpel vanuit de deur van de gondel, tot zijn elleboog in het moeras. Meneer Vane roept “Eerste!” Juno houdt de Leeuwerik net boven het gras en laat je verder drijven over de top, traag als een wolk.",
+    "Onder de mand ligt het bergmeer: klein, rond, zwart en volkomen stil, met de lucht erin. Zeven stenen hutten staan eromheen, de deuren dicht. Een geitenspoor loopt naar de noordrand.",
+    "~ De deken ligt aan je voeten. Hij heeft nog nooit zo zwaar geleken."
+   ],
+   "choices": [
+    {
+     "text": "Als je de voorpagina van meneer Vane in het bergmeer laat vallen,",
+     "short": "Gooi hem in het meer",
+     "to": 49
+    },
+    {
+     "text": "Als je hem houdt om het dal te laten zien wat meneer Vane heeft gedaan,",
+     "short": "Houd het als bewijs",
+     "to": 42
+    },
+    {
+     "text": "Als je naast het moeras landt en hen eruit helpt,",
+     "short": "Help hen eruit",
+     "to": 36
+    }
+   ],
+   "nr": 29
+  },
+  "46": {
+   "chapter": "Omlaag · Avond",
+   "scene": "descent",
+   "tag": "Hoogte: dalend. Licht: goud. Knieën: op.",
+   "text": [
+    "Je tekent alles, zittend op het muurtje van de Tarrows, terwijl Ilka kazen laadt en je spelling van elke familienaam verbetert. Dan de lange weg naar beneden in de gouden avond, achter haar aan, de schoorsteen vol schaduw, en onderin het dal dat een voor een zijn lampen aansteekt, klein en warm, als een stad gezien vanaf een ster.",
+    "Aan de voet is de wei één en al lantaarn. Meneer Vane wacht bij de hooiwagen met de voorwaarden en een pen. De kaart zit in je jas; de cartouche, het vakje waarin een kaart zegt wie er het eerst was, is nog leeg."
+   ],
+   "choices": [
+    {
+     "text": "Als je in de cartouche zet: de geitenhoeders van Vell, datum onbekend,",
+     "short": "Vul de cartouche in",
+     "to": 48
+    },
+    {
+     "text": "Als je de kaart aan meneer Vane geeft,",
+     "short": "Geef hem aan Vane",
+     "to": 34
+    },
+    {
+     "text": "Als je de kaart aan Ilka’s grootmoeder geeft en de families laat beslissen,",
+     "short": "Geef hem aan de families",
+     "to": 47
+    }
+   ],
+   "nr": 28
+  },
+  "47": {
+   "chapter": "Een einde",
+   "scene": "haymeadow",
+   "tag": "Kaart: gegeven. La: dicht.",
+   "text": [
+    "Ilka’s grootmoeder rolt de kaart uit op haar keukentafel, onder de lamp, en de families komen een voor een binnen om hun eigen daken van bovenaf te bekijken. Ze zijn er erg mee in hun schik. Ze vinden het lek bij Dunnet. Dan rolt ze hem op, bindt er een kaastouwtje om en legt hem in de la van het dressoir.",
+    "De volgende ochtend kopt de Meridiaan SOEVEREIN VEROVERT DE TAFEL. De families lezen het bij het ontbijt en zeggen niets; ze hebben nooit een kaart nodig gehad om thuis te komen. Niemand uit de hoofdstad komt hun iets vragen. Je beste werk ligt in een la in Vell, bij de goede lepels."
+   ],
+   "ending": {
+    "no": "XVII",
+    "title": "In een la",
+    "kind": "strange",
+    "epilogue": "Veilig bewaard. Door niemand gelezen.",
+    "hint": "Sommige waarheden moeten gedrukt worden om waar te blijven."
+   },
+   "nr": 20
+  },
+  "48": {
+   "chapter": "Een einde",
+   "scene": "descent",
+   "tag": "Eerste beklimming: datum onbekend. Prijs: geen.",
+   "text": [
+    "Je schrijft het in de cartouche, in je mooiste handschrift: Eerste beklimming, de geitenhoeders van Vell, datum onbekend. Dan de zeven hutten, elk onder de naam van zijn familie. Meneer Vane leest het bij zijn lantaarn, vouwt het één keer dubbel en geeft het terug. “De Meridiaan,” zegt hij, “drukt geen rectificaties van dingen die hij nog niet heeft gedrukt.”",
+    "De zussen Brisk wel, op de handpers in hun vliegerschuur. Dot inkt, Nell maakt ruzie, en tegen de ochtend heeft elk huis in Vell een exemplaar gekocht en bij het raam gehangen dat op de Tafel uitkijkt.",
+    "~ Er is geen prijs. Juno, die de Leeuwerik in de schemer zonder petroleum en opgewekt aan de grond zette, koopt het eerste, op krediet."
+   ],
+   "ending": {
+    "no": "XVIII",
+    "title": "Datum onbekend",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Eerste beklimming: de geitenhoeders van Vell, datum onbekend.",
+    "hint": "Wie het eerst aankomt, wordt zelden het eerst gevraagd."
+   },
+   "nr": 10
+  },
+  "49": {
+   "chapter": "Een einde",
+   "scene": "summit",
+   "tag": "Voorpagina: wit. Eén regel: waar.",
+   "text": [
+    "Je laat los. Het nieuws van morgen valt door de heldere lucht, schudt zijn deken af en raakt het bergmeer met één diepe toon, en het zwarte water sluit zich boven SOEVEREIN VEROVERT DE TAFEL en elke hoofdletter S in Vell. De Leeuwerik springt omhoog. Juno zet je neer bij de hutten, en boven elke deur is een merk uitgehakt zoals de geitenhoeders dat in hun kaas drukken.",
+    "~ Om drie uur ’s nachts laat de zettersjongen je binnen in de achterkamer. Je zet één regel, in spiegelschrift, zoals graveurs dat doen. Bij dageraad gaat de Meridiaan de deur uit, wit van rand tot rand, met jouw regel boven het wit: De Tafel: elke zomer belopen door de geitenhoeders van Vell. Vraag het hun."
+   ],
+   "ending": {
+    "no": "XIX",
+    "title": "De witte pagina",
+    "kind": "good",
+    "star": true,
+    "epilogue": "De enige blanco voorpagina die de Meridiaan ooit drukte.",
+    "hint": "Het zwaarste aan boord is niet altijd zand."
+   },
+   "nr": 25
+  }
+ }
+}

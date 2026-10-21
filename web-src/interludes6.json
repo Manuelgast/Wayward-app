@@ -1,0 +1,427 @@
+{
+ "3": {
+  "type": "trace",
+  "lines": {
+   "en": [
+    "The cloud on the Table is not blowing away.",
+    "Your pencil follows it, round and round."
+   ],
+   "nl": [
+    "De wolk op de Tafel waait niet weg.",
+    "Je potlood volgt hem, rond en rond."
+   ]
+  },
+  "prompt": {
+   "en": "Trace the cloud",
+   "nl": "Volg de wolk"
+  },
+  "done": {
+   "en": "Round. And on the north side, down.",
+   "nl": "Rond. En aan de noordkant: omlaag."
+  },
+  "x": 20,
+  "y": 10.5,
+  "path": [
+   [
+    20,
+    10.5
+   ],
+   [
+    27,
+    9.5
+   ],
+   [
+    35,
+    9
+   ],
+   [
+    45,
+    9
+   ],
+   [
+    55,
+    9
+   ],
+   [
+    64,
+    9
+   ],
+   [
+    72,
+    9.5
+   ],
+   [
+    78,
+    11
+   ],
+   [
+    79,
+    14
+   ],
+   [
+    78,
+    18
+   ],
+   [
+    77,
+    22
+   ]
+  ]
+ },
+ "10": {
+  "type": "lantern",
+  "lines": {
+   "en": [
+    "Something heavy sits on the stone, under a cloth.",
+    "Your lantern finds the edge of iron."
+   ],
+   "nl": [
+    "Er ligt iets zwaars op de steen, onder een doek.",
+    "Je lantaarn vindt de rand van ijzer."
+   ]
+  },
+  "prompt": {
+   "en": "Raise your lantern",
+   "nl": "Hef je lantaarn"
+  },
+  "done": {
+   "en": "Lead letters. Backwards. Tomorrow’s date.",
+   "nl": "Loden letters. Spiegelschrift. De datum van morgen."
+  },
+  "x": 45,
+  "y": 41
+ },
+ "15": {
+  "type": "turn",
+  "lines": {
+   "en": [
+    "The boiler ticks. The cable lies slack in the grass.",
+    "Somebody has to turn the crank."
+   ],
+   "nl": [
+    "De ketel tikt. De kabel ligt slap in het gras.",
+    "Iemand moet aan de slinger draaien."
+   ]
+  },
+  "prompt": {
+   "en": "Turn the crank",
+   "nl": "Draai de slinger"
+  },
+  "done": {
+   "en": "The cable sings tight. Nell whoops.",
+   "nl": "De kabel zingt strak. Nell juicht."
+  },
+  "x": 37,
+  "y": 60
+ },
+ "17": {
+  "type": "tap",
+  "lines": {
+   "en": [
+    "Each stone bag hangs from its own cord.",
+    "The poplars are coming up rather fast."
+   ],
+   "nl": [
+    "Elke zak stenen hangt aan een eigen koord.",
+    "De populieren komen nogal snel dichterbij."
+   ]
+  },
+  "prompt": {
+   "en": "Cut the bags",
+   "nl": "Snijd de zakken los"
+  },
+  "done": {
+   "en": "Two bags gone. The poplars pass beneath.",
+   "nl": "Twee zakken weg. De populieren glijden onder je door."
+  },
+  "x": 32,
+  "y": 68
+ },
+ "18": {
+  "type": "trace",
+  "lines": {
+   "en": [
+    "Dawn at the Sovereign’s chart table, in a borrowed jacket.",
+    "By the north wall, faint, someone has drawn a line."
+   ],
+   "nl": [
+    "Dageraad aan de kaartentafel van de Soeverein, in een geleend jasje.",
+    "Bij de noordwand heeft iemand vaag een lijn gezet."
+   ]
+  },
+  "prompt": {
+   "en": "Trace the pencil line",
+   "nl": "Trek de potloodlijn na"
+  },
+  "done": {
+   "en": "Initials you know. Nobody aboard has noticed.",
+   "nl": "Je kent die initialen. Niemand aan boord merkt iets."
+  },
+  "path": [
+   [
+    18,
+    47.5
+   ],
+   [
+    24,
+    47
+   ],
+   [
+    30,
+    47.5
+   ],
+   [
+    36,
+    47
+   ],
+   [
+    42,
+    47.5
+   ],
+   [
+    48,
+    47
+   ],
+   [
+    54,
+    47.5
+   ],
+   [
+    60,
+    48
+   ],
+   [
+    66,
+    48
+   ],
+   [
+    72,
+    48.5
+   ]
+  ],
+  "x": 18,
+  "y": 47.5
+ },
+ "21": {
+  "type": "hold",
+  "lines": {
+   "en": [
+    "White. Cold. The burner’s roar is all there is.",
+    "Ice is growing on the ropes."
+   ],
+   "nl": [
+    "Wit. Koud. Het geraas van de brander is alles.",
+    "Er groeit ijs op de touwen."
+   ]
+  },
+  "prompt": {
+   "en": "Hold the burner open",
+   "nl": "Houd de brander open"
+  },
+  "done": {
+   "en": "The white is thinning. Blue, somewhere.",
+   "nl": "Het wit wordt dunner. Ergens blauw."
+  },
+  "x": 36,
+  "y": 24
+ },
+ "24": {
+  "type": "wipe",
+  "lines": {
+   "en": [
+    "Frost has furred the barometer glass.",
+    "Your fingers have stopped complaining. A bad sign."
+   ],
+   "nl": [
+    "Rijp heeft het glas van de barometer dichtgezet.",
+    "Je vingers klagen niet meer. Geen goed teken."
+   ]
+  },
+  "prompt": {
+   "en": "Wipe the glass",
+   "nl": "Veeg het glas schoon"
+  },
+  "done": {
+   "en": "Six thousand five hundred feet. Holding.",
+   "nl": "Zesduizend vijfhonderd voet. Stabiel."
+  },
+  "x": null,
+  "y": null
+ },
+ "27": {
+  "type": "hold",
+  "lines": {
+   "en": [
+    "The compositor’s boy is still asleep on the paper.",
+    "Juno takes one end of the frame. You, the other."
+   ],
+   "nl": [
+    "De zettersjongen slaapt nog op het papier.",
+    "Juno pakt het ene eind van het raam, jij het andere."
+   ]
+  },
+  "prompt": {
+   "en": "Lift it together",
+   "nl": "Til het samen op"
+  },
+  "done": {
+   "en": "Wrapped in a blanket: exactly two sandbags.",
+   "nl": "In een paardendeken: precies twee zandzakken."
+  },
+  "x": 45,
+  "y": 42
+ },
+ "35": {
+  "type": "rope",
+  "lines": {
+   "en": [
+    "The rope is grey and hairy, then suddenly new.",
+    "The girl is already above you, laughing."
+   ],
+   "nl": [
+    "Het touw is grijs en harig, en dan ineens nieuw.",
+    "Het meisje zit al boven je, lachend."
+   ]
+  },
+  "prompt": {
+   "en": "Haul yourself up",
+   "nl": "Trek je omhoog"
+  },
+  "done": {
+   "en": "Your hands go where other hands have been.",
+   "nl": "Je handen gaan waar andere handen gingen."
+  },
+  "x": 50,
+  "y": 60,
+  "bell": [
+   60,
+   25
+  ]
+ },
+ "36": {
+  "type": "rope",
+  "lines": {
+   "en": [
+    "The green is moss on black water.",
+    "Sir Lucan stands in it to his waist, with great dignity."
+   ],
+   "nl": [
+    "Het groen is mos op zwart water.",
+    "Sir Lucan staat er tot zijn middel in, vol waardigheid."
+   ]
+  },
+  "prompt": {
+   "en": "Haul him out",
+   "nl": "Trek hem eruit"
+  },
+  "done": {
+   "en": "Out he comes, like a boot out of mud.",
+   "nl": "Hij komt los als een laars uit de modder."
+  },
+  "x": 62,
+  "y": 65,
+  "bell": [
+   66,
+   56
+  ]
+ },
+ "38": {
+  "type": "wipe",
+  "lines": {
+   "en": [
+    "Lichen has crusted the stone over the door.",
+    "Something is cut there, underneath."
+   ],
+   "nl": [
+    "Korstmos heeft de steen boven de deur dichtgekorst.",
+    "Er is iets in gehakt, daaronder."
+   ]
+  },
+  "prompt": {
+   "en": "Wipe the lintel",
+   "nl": "Veeg de latei schoon"
+  },
+  "done": {
+   "en": "A mark, cut deep, worn soft.",
+   "nl": "Een merk, diep gehakt, zacht gesleten."
+  },
+  "x": null,
+  "y": null
+ },
+ "46": {
+  "type": "follow",
+  "lines": {
+   "en": [
+    "The long way down, in the gold evening.",
+    "The chimney fills with shadow. Ilka goes first, with a lamp."
+   ],
+   "nl": [
+    "De lange weg naar beneden, in de gouden avond.",
+    "De schoorsteen loopt vol schaduw. Ilka gaat voor, met een lamp."
+   ]
+  },
+  "prompt": {
+   "en": "Follow Ilka down",
+   "nl": "Volg Ilka omlaag"
+  },
+  "done": {
+   "en": "At the foot, the meadow is all lanterns.",
+   "nl": "Beneden is de wei één en al lantaarn."
+  },
+  "seconds": 5.5,
+  "path": [
+   [
+    35,
+    42
+   ],
+   [
+    35,
+    47
+   ],
+   [
+    34,
+    52
+   ],
+   [
+    34,
+    56
+   ],
+   [
+    36,
+    60
+   ],
+   [
+    39,
+    63
+   ],
+   [
+    43,
+    66
+   ],
+   [
+    48,
+    68
+   ],
+   [
+    53,
+    68
+   ],
+   [
+    57,
+    67
+   ]
+  ],
+  "door": [
+   50,
+   62,
+   63,
+   72
+  ],
+  "keep": {
+   "en": "Keep your finger on her lamp",
+   "nl": "Houd je vinger op haar lamp"
+  },
+  "x": 35,
+  "y": 42
+ }
+}

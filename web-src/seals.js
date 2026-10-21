@@ -27,5 +27,32 @@ window.WAYWARD_SEALS = [
    "en": "Grey Harbour, November, low tide",
    "nl": "Grijshaven, november, laagwater"
   }
+ },
+ {
+  "id": "seal-02",
+  "no": 2,
+  "seal": true,
+  "parent": "mirage-road",
+  "rarity": "common",
+  "wax": "black",
+  "mark": "C",
+  "file": "seal02",
+  "relics": "relics_none.json",
+  "interludes": "seal02_interludes.json",
+  "store": "wayward.seal-02.v1",
+  "coverScene": "s02cover",
+  "freeEndings": 99,
+  "title": {
+   "en": "The Old Cow",
+   "nl": "De Oude Koe"
+  },
+  "teaser": {
+   "en": "A singing dune, a straight rule, and a house in between.",
+   "nl": "Een zingende duin, een rechte regel, en een huis ertussen."
+  },
+  "postmark": {
+   "en": "Kesh, before sunrise",
+   "nl": "Kesh, voor zonsopgang"
+  }
  }
 ];

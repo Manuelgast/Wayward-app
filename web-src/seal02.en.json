@@ -1,0 +1,277 @@
+{
+ "id": "seal-02",
+ "title": "The Old Cow",
+ "series": "The Veyra Cycle · Sealed Story",
+ "imprint": "A Wayward Original",
+ "tagline": "A singing dune, a house in her way, and a guild that has measured dunes for two hundred years.",
+ "start": 1,
+ "scenes": {
+  "kesh": {
+   "title": "The Kesh caravan yard and town gate",
+   "focus": "50% 55%"
+  },
+  "dunes": {
+   "title": "A dune crest at noon",
+   "focus": "50% 55%"
+  },
+  "wellpost": {
+   "title": "A stone well with a carved post",
+   "focus": "50% 55%"
+  },
+  "sunrise": {
+   "title": "The last morning on the dunes",
+   "focus": "50% 55%"
+  },
+  "s02cover": {
+   "title": "This is also the envelope art of a collectible sealed story, shown small",
+   "focus": "50% 55%"
+  },
+  "s02cow": {
+   "title": "Noon on the Old Cow, a singing dune the size of a church and the colour of a fox",
+   "focus": "50% 55%"
+  },
+  "s02well": {
+   "title": "Imra's old stone well under three tall old date palms north of her house, aftern",
+   "focus": "50% 55%"
+  },
+  "s02dawn": {
+   "title": "Sunrise over the Ochre Waste, the sun coming up red",
+   "focus": "50% 55%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Kesh · The Caravan Yard",
+   "scene": "s02cover",
+   "tag": "Kesh. Wind: none. Dune: lowing.",
+   "text": [
+    "In the caravan yard at Kesh the guild clerk lends you a ruler and a rule. “A dune walks a mile a year,” he says. “East, straight. Put the ruler on it.” You have been hired by old Imra, whose house and date palms lie in the path of the Old Cow, the singing dune.",
+    "A Company man has offered to buy the house cheap before the Cow takes it, and will wait until sunrise, not a minute longer. In the yard Clemency Rudd, with a roll of oilcloth on her back, sells maps of everywhere but Kesh. “Tal Amira,” she says. “Very popular. Nobody buys Kesh in Kesh.”"
+   ],
+   "choices": [
+    {
+     "text": "If you take the guild’s ruler and the guild’s rule; they have measured dunes for two hundred years,",
+     "short": "Use the guild’s rule",
+     "to": 2
+    },
+    {
+     "text": "If you walk out and listen to the dune first,",
+     "short": "Listen to the dune",
+     "to": 3
+    },
+    {
+     "text": "If you ask old Imra what she remembers of the Cow,",
+     "short": "Ask Imra",
+     "to": 4
+    }
+   ],
+   "nr": 1
+  },
+  "2": {
+   "chapter": "A Mile a Year",
+   "scene": "s02cow",
+   "tag": "Crest taken. Mile a year. House: doomed.",
+   "text": [
+    "You climb the Cow’s shoulder at noon with the guild’s ruler and take her crest. By the guild’s rule she walks a mile a year, east and straight, which puts her in Imra’s kitchen by spring and in the well by summer. It is very clear arithmetic. You have seldom distrusted anything more.",
+    "Below, Imra stands in her garden among the palms her husband planted, shading her eyes and not looking at you. The Company man sits in the shade of her porch with his cheque book open on his knee. Under you the dune is humming one long low note that you feel in your teeth."
+   ],
+   "choices": [
+    {
+     "text": "If you tell her the guild is right and she had best take the money,",
+     "short": "Tell her to sell",
+     "to": 8,
+     "looks": "safe"
+    },
+    {
+     "text": "If you go down and ask Imra what the Cow has done before,",
+     "short": "Ask what came before",
+     "to": 4
+    }
+   ],
+   "nr": 4
+  },
+  "3": {
+   "chapter": "The Old Cow",
+   "scene": "s02cow",
+   "tag": "The Old Cow. Lowing. A girl on top.",
+   "text": [
+    "The Old Cow is the size of a church and the colour of a fox. When the wind slides down her face she lows, and you feel it in your palm, then your back teeth. On her crest sits Imra’s granddaughter Tali, twelve, eating dates and watching you climb as if you were a beetle with ambitions.",
+    "“She doesn’t go straight,” says Tali. “She goes round, like Gran to market.” Then, because you are clearly slow: “There’s an old brass thing under the north palms. A lady put it there, before. It says where the Cow was.” She spits a date stone down the dune. It rolls a long way."
+   ],
+   "choices": [
+    {
+     "text": "If you dig under the north palms for the brass thing,",
+     "short": "Dig for the brass",
+     "to": 5
+    },
+    {
+     "text": "If you lie down on the crest and wait to hear her sing at dawn,",
+     "short": "Wait for her song",
+     "to": 9
+    }
+   ],
+   "nr": 11
+  },
+  "4": {
+   "chapter": "Old Imra",
+   "scene": "s02well",
+   "tag": "Imra’s well. Forty springs back.",
+   "text": [
+    "Imra gives you water from her well and a long look. Forty springs ago, she says, a young surveyor came up from the coast with her boots tied up in camel rope and a brass lantern bent at the handle. She drank here, set a brass-capped post by this well, and measured the Cow from it all afternoon.",
+    "“In high summer she went on east across the Waste, for the mountains,” says Imra. “I was a bride. I thought her very rude and very clever.” The Cow, she adds, tells the patient where she is going. The post is somewhere under the north palms. Sand gets into everything."
+   ],
+   "choices": [
+    {
+     "text": "If you dig for the post under the north palms,",
+     "short": "Dig for the post",
+     "to": 5
+    },
+    {
+     "text": "If you tell her the guild has measured dunes for two hundred years, and she should sell,",
+     "short": "Tell her to sell",
+     "to": 8,
+     "looks": "safe"
+    }
+   ],
+   "nr": 7
+  },
+  "5": {
+   "chapter": "The Brass Cap",
+   "scene": "s02well",
+   "tag": "Post found. Cap cleaned. Forty years old.",
+   "text": [
+    "Two feet down, among the palm roots, your spade rings on brass. You brush the red sand away. The cap is green at the edges and bright in the middle, as if someone had polished it with a thumb: E.M. · I · and beneath, scratched small, Cow crest 40 chains N. Spring.",
+    "~ Your teacher’s initials, younger than you have ever seen them. Forty years ago the Cow’s crest stood forty chains north of this post. Today it stands half as far, and off to the east. She has come, and she has bent. Two points make a line, and this one does not run through Imra’s kitchen."
+   ],
+   "choices": [
+    {
+     "text": "If you draw her forty-year line forward from the cap tonight,",
+     "short": "Draw her line",
+     "to": 6
+    },
+    {
+     "text": "If you climb up for a fresh reading of her crest first,",
+     "short": "Take a fresh reading",
+     "to": 7
+    }
+   ],
+   "nr": 3
+  },
+  "6": {
+   "chapter": "The Line",
+   "scene": "s02dawn",
+   "tag": "Dawn. Kitchen spared. Three palms not.",
+   "text": [
+    "All night you draw her line across your sheet.",
+    "~ She is not walking east. She is coming down from the north in a long curve, like a barge on a bend, and will pass a stone’s throw from Imra’s kitchen. Her toe will take the old well, the north wall and three palms: the oldest three, the ones Imra’s husband planted.",
+    "Imra waits on her step, the Company man at the gate with his cheque book, and the sun comes up red over the Waste. Imra looks at your face, then at the north palms, then back at your face, which has never been any good at keeping things."
+   ],
+   "choices": [
+    {
+     "text": "If you tell her all of it: the house will stand, the well and the three palms will not,",
+     "short": "Tell her all of it",
+     "to": 11
+    },
+    {
+     "text": "If you tell her the house is safe, and leave the palms for another day,",
+     "short": "Tell her the house",
+     "to": 10,
+     "looks": "safe"
+    }
+   ],
+   "nr": 9
+  },
+  "7": {
+   "chapter": "The Crest",
+   "scene": "s02cow",
+   "tag": "On the crest. Third point. Humming.",
+   "text": [
+    "You climb the Cow with your instrument and take her crest from the brass post: so many chains north, so many east. She hums under your boots while you work, as if amused that anybody should ask. Now you have where she was, where she is, and the long slow bend between.",
+    "Below, Imra’s granddaughter Tali sits on the garden wall swinging her heels and watching the Company man pretend not to sweat. The sun leans west. Down by the gate Imra has stopped pretending to sweep, and is simply looking up at you, the way people look up at weather they cannot afford."
+   ],
+   "choices": [
+    {
+     "text": "If you sit up and draw her line forward through the night,",
+     "short": "Draw it tonight",
+     "to": 6
+    },
+    {
+     "text": "If you go straight down and tell Imra the house is safe,",
+     "short": "Tell her now",
+     "to": 10
+    }
+   ],
+   "nr": 6
+  },
+  "8": {
+   "chapter": "An ending",
+   "scene": "s02cover",
+   "tag": "House sold. Fence up. Rulers stored.",
+   "text": [
+    "Imra takes the Company’s money, because the guild has measured dunes for two hundred years and you have measured this one for an afternoon. She moves into two rooms above a dyer’s yard in Kesh, with her granddaughter and one palm in a pot. The Company puts a fence round her garden and waits for the Cow.",
+    "The Cow comes, slowly, the way she does everything. She passes a stone’s throw from the kitchen, takes the old well and three palms, and keeps going. The house stands empty behind its fence, sand on the step, a very good house for nobody. The Company uses it to store rulers."
+   ],
+   "ending": {
+    "no": "I",
+    "title": "Sold to the Ruler",
+    "kind": "bad",
+    "epilogue": "The rule was two hundred years old. The dune was older.",
+    "hint": "Ask the dune before you ask the ruler."
+   },
+   "nr": 10
+  },
+  "9": {
+   "chapter": "An ending",
+   "scene": "s02cow",
+   "tag": "Dawn chorus. House sold. Monograph written.",
+   "text": [
+    "You lie on the crest all night with your coat over you, and wait. Just before dawn the wind turns and slides down the Cow’s long face, and she sings: not a low but a chord, slow and wide and full of something you can only call homesickness. You have never heard anything like it.",
+    "You come down at sunrise to find the house sold and Imra packing. You stay in Kesh a year, learning the Cow’s moods, and write a monograph on singing dunes that is admired and never read.",
+    "~ Your survey of her path is one line long. It says: She is going home."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "The Cow’s Song",
+    "kind": "strange",
+    "epilogue": "You learned her song and missed her road.",
+    "hint": "Lovely things can wait until after the measuring."
+   },
+   "nr": 8
+  },
+  "10": {
+   "chapter": "An ending",
+   "scene": "s02well",
+   "tag": "House safe. Palms not mentioned. Palms gone.",
+   "text": [
+    "You tell her the house is safe, which is true, and say nothing yet of the north palms in the Cow’s path, which is kind. Imra sends the Company man away with a dignity that costs her nothing and pleases her a great deal. You leave Kesh with the family’s thanks and a basket of dates.",
+    "~ Four springs later the Cow takes the old well and the three north palms in one windy week, while Imra is at market. She comes home to sand where her husband’s trees stood. She is not angry with you. She writes to say so, which is worse. The house, as you promised, still stands."
+   ],
+   "ending": {
+    "no": "III",
+    "title": "Half the Truth",
+    "kind": "silver",
+    "epilogue": "The house stood. The palms went without a goodbye.",
+    "hint": "A kindness that keeps back half the map is still half a map."
+   },
+   "nr": 2
+  },
+  "11": {
+   "chapter": "An ending",
+   "scene": "s02dawn",
+   "tag": "Told all. Offer refused. Three cuttings.",
+   "text": [
+    "You tell her everything: the house will stand, the well and the three old palms will not, in four springs or five. Imra listens with her hands in her lap. She walks to the gate, tells the Company man to keep his cheque book, and comes back to sit with the north palms.",
+    "That spring she takes a cutting from each of the three and plants them south of the kitchen, where the Cow is not going. Her granddaughter Tali names them. When the Cow comes at last she finds the old trees waiting, and three young ones out of her way, and goes past singing, as she always does."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "The Whole Line",
+    "kind": "good",
+    "epilogue": "She chose what to lose. That is the most a map can offer.",
+    "hint": "Two points forty years apart make an honest line.",
+    "star": true
+   },
+   "nr": 5
+  }
+ }
+}
