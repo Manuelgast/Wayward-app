@@ -9,6 +9,6 @@ Short comedy videos with Bram and Pip, separate from the promo videos and posted
 
 - ent-01a / ent-01b: I Told You Not to Open That Door
 - ent-02a / ent-02b: Just One More Chapter
-- ent-03: The Bottom of a Well (follows after a new narrator voice)
+- ent-03: The Bottom of a Well
 - ent-04: The Sword That Won't Fight
-- ent-05: Dungeon Nature Documentary (follows after a new narrator voice)
+- ent-05: Dungeon Nature Documentary
