@@ -9,6 +9,10 @@ const { chromium } = require('/opt/node22/lib/node_modules/playwright');
 const { spawn } = require('child_process');
 const path = require('path'), fs = require('fs');
 const OUT = path.join(__dirname, 'out-1.2'); fs.mkdirSync(OUT, { recursive: true });
+// 1.4: the released later books and letters come from web-src (books.js without preview books, seals.js), so the
+// weekly update (one book + one letter) needs no test edits
+const RELEASED = (() => { const w = {}; global.window = w; require(path.join(__dirname, '..', 'web-src', 'books.js')); require(path.join(__dirname, '..', 'web-src', 'seals.js'));
+  return { later: w.WAYWARD_BOOKS.filter(b => !b.preview && b.no > 4).map(b => b.id), books: w.WAYWARD_BOOKS.filter(b => !b.preview).length, seals: (w.WAYWARD_SEALS || []).length }; })();
 const srv = spawn('python3', ['-m', 'http.server', '8777', '--bind', '127.0.0.1'], { cwd: path.join(__dirname, '..', 'app', 'www'), stdio: 'ignore' });
 const BASE = 'http://127.0.0.1:8777/index.html';
 let fails = 0; const ok = (n, c, x) => { console.log((c ? 'PASS ' : 'FAIL ') + n + (x !== undefined ? ' — ' + (typeof x === 'string' ? x : JSON.stringify(x)) : '')); if (!c) fails++; };
@@ -51,8 +55,8 @@ const shelf = (p) => p.evaluate(() => [...document.querySelectorAll('.shelf .boo
     const tag = `[new ${lang} ${w}]`;
     await p.evaluate(() => window.__wayward.show('library')); await p.waitForTimeout(800);
     const sh = await shelf(p);
-    ok(`${tag} shelf: Book I open, II-IV locked, nothing else`, JSON.stringify(sh) === JSON.stringify(['hollow-mountain:open', 'drowned-lighthouse:locked', 'station-nine:locked', 'ash-orchid:locked', 'mirage-road:locked']), sh); // 1.3: Book V on the shelf
-    ok(`${tag} the released sealed letter is in the library (1.3)`, await p.evaluate(() => !document.getElementById('sealRow').hidden && !document.getElementById('sealHead').hidden && document.querySelectorAll('#sealRow [data-env]').length === 1));
+    ok(`${tag} shelf: Book I open, II-IV locked, nothing else`, JSON.stringify(sh) === JSON.stringify(['hollow-mountain:open', 'drowned-lighthouse:locked', 'station-nine:locked', 'ash-orchid:locked'].concat(RELEASED.later.map(id => id + ':locked'))), sh); // the released later books on the shelf, locked
+    ok(`${tag} the released sealed letters are in the library (${RELEASED.seals})`, await p.evaluate((n) => !document.getElementById('sealRow').hidden && !document.getElementById('sealHead').hidden && document.querySelectorAll('#sealRow [data-env]').length === n, RELEASED.seals));
     ok(`${tag} shop on (store build)`, await p.evaluate(() => window.WaywardShop.enabled()));
     ok(`${tag} daily chest waits for the daily goal`, await p.evaluate(() => { const r = document.querySelector('.chest-row'); return !!r && r.classList.contains('locked'); }));
     await p.screenshot({ path: `${OUT}/library-${lang}-${w}.png` });
@@ -100,7 +104,7 @@ const shelf = (p) => p.evaluate(() => [...document.querySelectorAll('.shelf .boo
     await p.click('.tab[data-tab="relics"]'); await p.waitForTimeout(900);
     await p.evaluate(() => window.__waywardBack && window.__waywardBack()); await p.waitForTimeout(1500);
     const ov = await p.evaluate(() => ({ cur: window.__wayward.current(), books: document.querySelectorAll('#allrelicsBody .ovbook').length, art: [...document.querySelectorAll('#allrelicsBody .ovc:not(.back)')].map(e => e.style.backgroundImage) }));
-    ok(`${tag} back from relics: overview of all books (5 books)`, ov.cur === 'allrelics' && ov.books === 5, { cur: ov.cur, books: ov.books });
+    ok(`${tag} back from relics: overview of all books (${RELEASED.books} books)`, ov.cur === 'allrelics' && ov.books === RELEASED.books, { cur: ov.cur, books: ov.books });
     ok(`${tag} found cards show their pictures (small scene picture present in the app)`, ov.art.length > 0 && ov.art.every(a => /-sm\.webp/.test(a)), ov.art.slice(0, 2));
     await p.waitForTimeout(800);
     await p.screenshot({ path: `${OUT}/allrelics-${lang}-${w}.png` });
@@ -112,7 +116,7 @@ const shelf = (p) => p.evaluate(() => [...document.querySelectorAll('.shelf .boo
     await p.screenshot({ path: `${OUT}/profile-${lang}-${w}.png` });
     await p.evaluate(() => window.__wayward.show('collection')); await p.waitForTimeout(900);
     const col = await p.evaluate(() => ({ books: [...document.querySelectorAll('#colList .sb')].map(e => e.getAttribute('data-bookid')), blank: [...document.querySelectorAll('#colList .sb-cv')].filter(e => !/url\(.+\)/.test(e.style.backgroundImage)).length, seals: document.querySelectorAll('#colList .ss').length }));
-    ok(`${tag} collection: Books I-V, every cover shown, the released letter`, col.books.length === 5 && !col.blank && col.seals === 1, col); // 1.3: Book V and the first sealed letter
+    ok(`${tag} collection: ${RELEASED.books} books, every cover shown, ${RELEASED.seals} released letter(s)`, col.books.length === RELEASED.books && !col.blank && col.seals === RELEASED.seals, col); // 1.3: Book V and the first sealed letter
     await p.screenshot({ path: `${OUT}/collection-${lang}-${w}.png`, fullPage: true });
     ok(`${tag} puzzles for Books I-IV load`, await p.evaluate(async () => { const r = await fetch('puzzles.json').then(x => x.json()); return ['hollow-mountain', 'drowned-lighthouse', 'station-nine', 'ash-orchid'].every(k => r[k]); }));
     ok(`${tag} no page errors`, !log.errs.length, log.errs.slice(0, 3));
@@ -127,7 +131,7 @@ const shelf = (p) => p.evaluate(() => [...document.querySelectorAll('.shelf .boo
     const { p, ctx, log } = await page(b, 412, { lang: 'nl', owned: ['book_stardust'], store });
     await p.evaluate(() => window.__wayward.show('library')); await p.waitForTimeout(1200);
     const sh = await shelf(p);
-    ok('[1.1.3 reader] started Book II and bought Book III stay open, Books IV-V locked', JSON.stringify(sh) === JSON.stringify(['hollow-mountain:open', 'drowned-lighthouse:open', 'station-nine:open', 'ash-orchid:locked', 'mirage-road:locked']), sh);
+    ok('[1.1.3 reader] started Book II and bought Book III stay open, Books IV-V locked', JSON.stringify(sh) === JSON.stringify(['hollow-mountain:open', 'drowned-lighthouse:open', 'station-nine:open', 'ash-orchid:locked'].concat(RELEASED.later.map(id => id + ':locked'))), sh);
     const ent = await p.evaluate(() => JSON.parse(localStorage.getItem('wayward.shop.v2') || '{}'));
     ok('[1.1.3 reader] purchase restored, progress kept', ent.owned && ent.owned.book_stardust === true && (await p.evaluate(() => JSON.parse(localStorage.getItem('wayward.drowned-lighthouse.v1')).page)) === 7, { owned: ent.owned, unlocked: ent.unlocked });
     ok('[1.1.3 reader] no page errors', !log.errs.length, log.errs.slice(0, 3));

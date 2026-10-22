@@ -1,0 +1,340 @@
+{
+ "tiers": [
+  {
+   "count": 4,
+   "id": "silk",
+   "name": {
+    "en": "Silk Stripes",
+    "nl": "Zijden strepen"
+   },
+   "desc": {
+    "en": "Your page edges turn to red-and-cream silk, striped like the Lark.",
+    "nl": "De randen van je bladzijden worden rood-en-crème zijde, gestreept als de Leeuwerik."
+   }
+  },
+  {
+   "count": 8,
+   "id": "windrose",
+   "name": {
+    "en": "The Wind Rose",
+    "nl": "De windroos"
+   },
+   "desc": {
+    "en": "Your path map shows the pages you have not found yet as clouds, with the winds drawn round them.",
+    "nl": "Je padenkaart toont de bladzijden die je nog niet hebt gevonden als wolken, met de winden eromheen getekend."
+   }
+  },
+  {
+   "count": 12,
+   "id": "page0",
+   "name": {
+    "en": "Page 0 · Sealed",
+    "nl": "Bladzijde 0 · Verzegeld"
+   },
+   "desc": {
+    "en": "A page with a royal seal opens at last.",
+    "nl": "Eindelijk gaat een bladzijde met een koninklijk zegel open."
+   }
+  }
+ ],
+ "relics": [
+  {
+   "id": "ring",
+   "page": 3,
+   "where": "text",
+   "icon": "compass",
+   "name": {
+    "en": "The Ring",
+    "nl": "De ring"
+   },
+   "riddle": {
+    "en": "Watch the Table’s cloud long enough and it stops pretending to go anywhere.",
+    "nl": "Kijk lang genoeg naar de wolk op de Tafel, en hij doet niet langer alsof hij ergens heen gaat."
+   },
+   "lore": {
+    "en": "Valley children are told that the Table wears its cloud the way an old man wears a scarf: round and round, tucked in at the back. Pilots put it less kindly. Wind meets the walls, has nowhere to go but sideways, and goes round like water round a stone in a stream, quickest at the corners. On the north side it turns and falls. The smoke of Vell has drawn it for centuries, for anyone looking up.",
+    "nl": "Kinderen in het dal leren dat de Tafel zijn wolk draagt zoals een oude man een sjaal: rond en rond, achter in de kraag gestopt. Piloten zeggen het minder vriendelijk. De wind stuit op de wanden, kan alleen opzij en gaat eromheen als water om een steen in een beek, het snelst langs de hoeken. Aan de noordkant draait hij en valt. De rook van Vell tekent het al eeuwen, voor wie omhoogkijkt."
+   },
+   "rarity": "rare",
+   "find": 14.8
+  },
+  {
+   "id": "pennant",
+   "page": 4,
+   "where": "text",
+   "icon": "star",
+   "name": {
+    "en": "Tomorrow’s Pennant",
+    "nl": "De wimpel van morgen"
+   },
+   "riddle": {
+    "en": "A flag that knew the date before the day did.",
+    "nl": "Een vlag die de datum eerder wist dan de dag zelf."
+   },
+   "lore": {
+    "en": "The Meridian’s pennants are sewn in the capital by the firm that makes its funeral bunting, which is efficient. Each bears the paper’s colours, a gold star and the date of the event it marks. Mr Vane orders them well in advance, as he orders everything; confidence, he says, is half of journalism. Nobody has ever asked him about the other half, which he would also call confidence.",
+    "nl": "De wimpels van de Meridiaan worden in de hoofdstad genaaid door de firma die ook het rouwdoek van de krant levert, wat efficiënt is. Elke wimpel draagt de kleuren van de krant, een gouden ster en de datum van de gebeurtenis die hij viert. Meneer Vane bestelt ze ruim van tevoren, zoals hij alles bestelt; vertrouwen, zegt hij, is de helft van de journalistiek. Niemand heeft hem ooit naar de andere helft gevraagd, die hij ook vertrouwen zou noemen."
+   },
+   "rarity": "common",
+   "find": 33.4
+  },
+  {
+   "id": "cleft",
+   "page": 6,
+   "where": "text",
+   "icon": "compass",
+   "name": {
+    "en": "The Path to Nowhere",
+    "nl": "Het pad naar nergens"
+   },
+   "riddle": {
+    "en": "Follow the goats at dusk to a path that has very good manners and no destination.",
+    "nl": "Volg de geiten in de schemer naar een pad met uitstekende manieren en geen bestemming."
+   },
+   "lore": {
+    "en": "Every valley has a path that goes nowhere. In Vell it starts behind the Lune family’s barn, crosses the stream by a single flat stone, climbs to the north wall, walks into the rock and stops. Ask anyone where it goes and they will tell you, kindly, nowhere, and offer you cheese. The stone across the stream is dished in the middle like a saucer, and nobody can say who wore it.",
+    "nl": "Elk dal heeft een pad dat nergens heen gaat. In Vell begint het achter de schuur van de familie Lune, steekt de beek over via één platte steen, klimt naar de noordwand, loopt de rots in en houdt op. Vraag waar het heen gaat en je krijgt vriendelijk te horen: nergens, met een stuk kaas erbij. De steen in de beek is in het midden uitgesleten als een schoteltje, en niemand kan zeggen door wie."
+   },
+   "rarity": "rare",
+   "find": 16.1
+  },
+  {
+   "id": "stamp",
+   "page": 7,
+   "where": "text",
+   "icon": "chisel",
+   "name": {
+    "en": "The Cheese Mark",
+    "nl": "Het kaasmerk"
+   },
+   "riddle": {
+    "en": "Every rind in Vell is signed, if you know how to read cheese.",
+    "nl": "Elke korst in Vell is gesigneerd, als je tenminste kaas kunt lezen."
+   },
+   "lore": {
+    "en": "Vell cheese is pressed in wooden hoops and stamped while soft, each family with its own mark: a crescent, a cross-hatch, three dots. The Tarrows’ mark is the oldest, a long flat line with steep sides, cut by a great-great-grandmother whose name nobody agrees on. Buyers in the market towns think it is a loaf. The Tarrows have never corrected them; they say a loaf sells cheese very nicely.",
+    "nl": "Kaas uit Vell wordt in houten vormen geperst en gestempeld zolang hij zacht is, elke familie met een eigen merk: een maansikkel, een ruitje, drie stippen. Het merk van de Tarrows is het oudste, een lange platte lijn met steile zijkanten, gesneden door een betovergrootmoeder over wier naam niemand het eens is. Kopers in de marktsteden denken dat het een brood is. De Tarrows hebben dat nooit rechtgezet; een brood, zeggen ze, verkoopt kaas uitstekend."
+   },
+   "rarity": "common",
+   "find": 33.2
+  },
+  {
+   "id": "ious",
+   "page": 9,
+   "where": "text",
+   "icon": "quill",
+   "name": {
+    "en": "Juno’s Washing Line",
+    "nl": "Juno’s waslijn"
+   },
+   "riddle": {
+    "en": "Every peg on this basket holds a small promise, slightly damp.",
+    "nl": "Aan elke knijper op deze mand hangt een kleine belofte, nog een beetje vochtig."
+   },
+   "lore": {
+    "en": "Juno Thackeray keeps her accounts on the outside of the basket, where her creditors can see them and feel included. There are forty-one IOUs: for paraffin, silk, rope, a camera, a wedding photographer’s patience, and a pie. She has never once failed to repay a debt; she has simply never finished. A balloon that owes nothing, she says, has nothing to come home for.",
+    "nl": "Juno Thackeray houdt haar boekhouding bij aan de buitenkant van de mand, waar haar schuldeisers die kunnen zien en zich betrokken voelen. Er hangen eenenveertig schuldbekentenissen: voor petroleum, zijde, touw, een camera, het geduld van een trouwfotograaf en een pastei. Ze heeft nog nooit een schuld niet afbetaald; ze is er alleen nooit mee klaar. Een ballon die niets schuldig is, zegt ze, heeft niets om voor naar huis te komen."
+   },
+   "rarity": "common",
+   "find": 44.7
+  },
+  {
+   "id": "forme",
+   "page": 10,
+   "where": "text",
+   "icon": "quill",
+   "name": {
+    "en": "Tomorrow, in Lead",
+    "nl": "Morgen, in lood"
+   },
+   "riddle": {
+    "en": "News is usually printed after it happens, unless somebody is in a hurry.",
+    "nl": "Nieuws wordt meestal gedrukt nadat het gebeurd is, tenzij iemand haast heeft."
+   },
+   "lore": {
+    "en": "A forme is a page of type locked into an iron frame with wedges, ready for the press. Mr Vane travels with his own: a hand press, a compositor and cases of letters in every size, including one set of great capitals cut in the capital for headlines. He is very proud of them. There is not, he likes to say, another capital S that size between here and the sea.",
+    "nl": "Een drukvorm is een pagina zetsel, met wiggen vastgeklemd in een ijzeren raam, klaar voor de pers. Meneer Vane reist met een eigen pers, een zetter en kasten vol letters in alle maten, waaronder één set grote kapitalen die in de hoofdstad voor koppen zijn gesneden. Hij is er erg trots op. Er is, zegt hij graag, tussen hier en de zee geen tweede hoofdletter S van dat formaat te vinden."
+   },
+   "rarity": "common",
+   "find": 47.3
+  },
+  {
+   "id": "handpress",
+   "page": 12,
+   "where": "text",
+   "icon": "brush",
+   "name": {
+    "en": "The Updraught",
+    "nl": "De Stijgwind"
+   },
+   "riddle": {
+    "en": "The smallest newspaper in the valley prints exactly what its editors are arguing about.",
+    "nl": "Het kleinste blad van het dal drukt precies waar de redactie ruzie over maakt."
+   },
+   "lore": {
+    "en": "The Updraught is the bulletin of the Brisk Kite and Glider Club, founded by Nell and Dot Brisk at the ages of nine and eleven. It is printed on a hand press bought from a bankrupt parish, in a shed, whenever there is news or a disagreement. Every issue carries two editorials, one by each sister, contradicting each other. It has eleven subscribers and has never missed a month.",
+    "nl": "De Stijgwind is het clubblad van de Vlieger- en Zweefclub Brisk, opgericht door Nell en Dot Brisk toen ze negen en elf waren. Het wordt in een schuur gedrukt op een handpers van een failliete parochie, telkens als er nieuws is of onenigheid. Elk nummer heeft twee hoofdartikelen, één van elke zus, die elkaar tegenspreken. Het blad heeft elf abonnees en heeft nog nooit een maand overgeslagen."
+   },
+   "rarity": "common",
+   "find": 30.9
+  },
+  {
+   "id": "moss",
+   "page": 14,
+   "where": "text",
+   "icon": "eye",
+   "name": {
+    "en": "Goat Moss",
+    "nl": "Geitenmos"
+   },
+   "riddle": {
+    "en": "At dawn, look at the goats, not the balloons.",
+    "nl": "Kijk bij dageraad naar de geiten, niet naar de ballonnen."
+   },
+   "lore": {
+    "en": "Botanists from the capital have twice come to Vell to look for star moss, known from a single specimen picked off a goat at market in the year of the long frost. They searched every stone in the valley and found none. They went home and wrote that the specimen had probably been mislabelled. The goats were not consulted. Nobody in Vell thought to mention them.",
+    "nl": "Twee keer al kwamen plantkundigen uit de hoofdstad naar Vell om sterrenmos te zoeken, bekend van één exemplaar dat in het jaar van de lange vorst op de markt van een geit was geplukt. Ze doorzochten elke steen in het dal en vonden niets. Thuis schreven ze dat het exemplaar vermoedelijk verkeerd was geëtiketteerd. De geiten werden niet geraadpleegd. Niemand in Vell dacht eraan ze te noemen."
+   },
+   "rarity": "common",
+   "find": 42.8
+  },
+  {
+   "id": "thread",
+   "page": 17,
+   "where": "text",
+   "icon": "map",
+   "name": {
+    "en": "A Thread of Path",
+    "nl": "Een draad van een pad"
+   },
+   "riddle": {
+    "en": "From two thousand feet, the ground shows its habits.",
+    "nl": "Vanaf tweeduizend voet laat de grond zijn gewoonten zien."
+   },
+   "lore": {
+    "en": "From the air, paths show as paler lines, because feet and hooves keep the grass short and the stones bare. Aerial surveyors love them; a path, they say, is a valley’s handwriting. The thread at the Table’s north foot is unusually pale for a path that, by every map in the kingdom, leads to a wall and stops. Surveyors are trained not to draw what they cannot explain. None of them has.",
+    "nl": "Vanuit de lucht zijn paden bleke lijnen, omdat voeten en hoeven het gras kort en de stenen kaal houden. Luchtkarteerders zijn er dol op; een pad, zeggen ze, is het handschrift van een dal. De draad bij de noordvoet van de Tafel is opvallend bleek voor een pad dat volgens elke kaart in het koninkrijk naar een wand leidt en ophoudt. Karteerders leren niet te tekenen wat ze niet kunnen verklaren. Niet één heeft het getekend."
+   },
+   "rarity": "rare",
+   "find": 18.5
+  },
+  {
+   "id": "pencil",
+   "page": 18,
+   "where": "text",
+   "icon": "map",
+   "name": {
+    "en": "Edda’s Pencil",
+    "nl": "Edda’s potlood"
+   },
+   "riddle": {
+    "en": "The best map money can buy has a note in it that money never read.",
+    "nl": "In de beste kaart die er voor geld te koop is, staat een notitie die het geld nooit heeft gelezen."
+   },
+   "lore": {
+    "en": "Royal surveyors ink what they have measured and pencil what they have only been told. Edda Marlow pencilled a third thing: what she had walked but not measured, and whom she had walked it with. Engravers in the capital are instructed to ignore pencil. This note was copied, by accident, into eleven later editions of the Vell survey, and it has been ignored in every one of them.",
+    "nl": "Koninklijke landmeters zetten in inkt wat ze hebben gemeten en in potlood wat ze alleen hebben horen zeggen. Edda Marlow zette nog iets derdes in potlood: wat ze had belopen maar niet gemeten, en met wie. Graveurs in de hoofdstad hebben opdracht potlood te negeren. Deze notitie is per ongeluk overgenomen in elf latere edities van de opmeting van Vell, en in elk daarvan genegeerd."
+   },
+   "rarity": "common",
+   "find": 26.6
+  },
+  {
+   "id": "tablecloth",
+   "page": 24,
+   "where": "text",
+   "icon": "window",
+   "name": {
+    "en": "The Tablecloth",
+    "nl": "Het Tafelkleed"
+   },
+   "riddle": {
+    "en": "From above, a cloud keeps the shape of what it is hiding.",
+    "nl": "Van bovenaf houdt een wolk de vorm van wat hij verbergt."
+   },
+   "lore": {
+    "en": "In Vell they call the Table’s cloud the Cloth, and say it is laid fresh every morning. It forms where wet valley air is pushed up the walls and cools, and it pours over the edges and melts as it falls, so that from the valley it never seems to move. From above, it lies over the plateau like linen over the furniture in a shut-up house.",
+    "nl": "In Vell noemen ze de wolk van de Tafel het Kleed, en ze zeggen dat het elke ochtend vers wordt gelegd. Het ontstaat waar vochtige dallucht langs de wanden omhoog wordt geduwd en afkoelt; het stroomt over de randen en smelt weg terwijl het valt, zodat het vanuit het dal nooit lijkt te bewegen. Van bovenaf ligt het over het plateau als linnen over de meubels in een huis dat dicht is."
+   },
+   "rarity": "silver",
+   "find": 6.8
+  },
+  {
+   "id": "gramophone",
+   "page": 33,
+   "where": "text",
+   "icon": "moon",
+   "name": {
+    "en": "Ashby’s Ascent",
+    "nl": "Ashby’s Bestijging"
+   },
+   "riddle": {
+    "en": "A march composed for an arrival that has not happened yet.",
+    "nl": "Een mars voor een aankomst die nog niet heeft plaatsgevonden."
+   },
+   "lore": {
+    "en": "Sir Lucan Ashby commissioned the march from a bandmaster in the capital for forty crowns, with instructions that it be stirring, short, and in a key suitable for a gramophone at altitude. It was recorded the week before the race by a military band who were told only that it was for “a summit”. The bandmaster later admitted he had borrowed the middle section from a funeral march. Nobody noticed.",
+    "nl": "Sir Lucan Ashby bestelde de mars voor veertig kronen bij een kapelmeester in de hoofdstad, met de opdracht dat hij opzwepend moest zijn, kort, en in een toonsoort die geschikt was voor een grammofoon op hoogte. Hij werd de week voor de race opgenomen door een militaire kapel die alleen te horen kreeg dat het voor “een top” was. De kapelmeester gaf later toe dat hij het middenstuk uit een treurmars had geleend. Niemand merkte het."
+   },
+   "rarity": "rare",
+   "find": 13.3
+  },
+  {
+   "id": "steps",
+   "page": 35,
+   "where": "text",
+   "icon": "eye",
+   "name": {
+    "en": "Church Steps",
+    "nl": "Kerktreden"
+   },
+   "riddle": {
+    "en": "Climb behind a goatherd and watch where she puts her feet.",
+    "nl": "Klim achter een geitenhoedster aan en kijk waar ze haar voeten zet."
+   },
+   "lore": {
+    "en": "Limestone wears away by about the width of a fingernail in a lifetime of feet. The masons who restored the church steps in Vell used this to date them: three hundred years, they said, give or take a wedding. Nobody has ever measured the footholds in the north chimney. Nobody, so far as the masons know, has ever been asked to. They are deeper than the church steps.",
+    "nl": "Kalksteen slijt ongeveer een vingernagel breed in een mensenleven vol voeten. De steenhouwers die de kerktreden in Vell herstelden, gebruikten dat om ze te dateren: driehonderd jaar, zeiden ze, een bruiloft meer of minder. Niemand heeft ooit de treden in de noordelijke schoorsteen opgemeten. Niemand, voor zover de steenhouwers weten, is het ooit gevraagd. Ze zijn dieper dan de kerktreden."
+   },
+   "rarity": "gold",
+   "find": 3.6
+  },
+  {
+   "id": "lintel",
+   "page": 38,
+   "where": "text",
+   "icon": "chisel",
+   "name": {
+    "en": "The Marks",
+    "nl": "De merken"
+   },
+   "riddle": {
+    "en": "Seven doors on top of the world, and every one of them is signed.",
+    "nl": "Zeven deuren boven op de wereld, en elke deur is gesigneerd."
+   },
+   "lore": {
+    "en": "Over each hut door on the Table a mark is cut into the lintel stone: a crescent, a cross-hatch, three dots, a long flat line with steep sides. The cuts are deep and their edges soft, the way stone goes after a great many winters. Lichen grows across them at about the speed of a family, and has never yet managed to cover one.",
+    "nl": "Boven elke huttendeur op de Tafel is een merk in de lateisteen gehakt: een maansikkel, een ruitje, drie stippen, een lange platte lijn met steile zijkanten. De sneden zijn diep en de randen zacht, zoals steen wordt na heel veel winters. Korstmos groeit eroverheen met ongeveer de snelheid van een familie, en het is nog nooit gelukt er één te bedekken."
+   },
+   "rarity": "silver",
+   "find": 11.7
+  }
+ ],
+ "secret": {
+  "title": {
+   "en": "Page 0 · Sealed",
+   "nl": "Bladzijde 0 · Verzegeld"
+  },
+  "label": {
+   "en": "A royal seal",
+   "nl": "Een koninklijk zegel"
+  },
+  "text": {
+   "en": "A week after the race, when the valley has stopped arguing and the Table has put its cloud back on, a rider comes up to the Brass Goat with an envelope for you. It is heavy and cream-coloured, sealed in red wax with a crown. Inside is an invitation to a royal wedding, engraved, with your name written in by hand. And on a separate card, in a careful hand you do not know, a single word: “Ink.”",
+   "nl": "Een week na de race, als het dal is uitgeruzied en de Tafel zijn wolk weer heeft omgeslagen, komt er een ruiter naar de Koperen Geit met een envelop voor jou. Hij is zwaar en roomkleurig, verzegeld met rode lak en een kroon. Erin zit een uitnodiging voor een koninklijke bruiloft, gegraveerd, met je naam er met de hand in geschreven. En op een los kaartje, in een zorgvuldig handschrift dat je niet kent, één enkel woord: “Inkt.”"
+  },
+  "sign": {
+   "en": "The Wayward story continues.",
+   "nl": "Het Wayward-verhaal gaat verder."
+  }
+ }
+}

@@ -1,0 +1,277 @@
+{
+ "id": "seal-02",
+ "title": "De Oude Koe",
+ "series": "De Veyra-cyclus · Verzegeld verhaal",
+ "imprint": "A Wayward Original",
+ "tagline": "Een zingende duin, een huis dat in de weg staat, en een gilde dat al tweehonderd jaar duinen meet.",
+ "start": 1,
+ "scenes": {
+  "kesh": {
+   "title": "De karavaanhof en de stadspoort van Kesh",
+   "focus": "50% 55%"
+  },
+  "dunes": {
+   "title": "Een duinkam op het middaguur",
+   "focus": "50% 55%"
+  },
+  "wellpost": {
+   "title": "Een stenen put met een gesneden paal",
+   "focus": "50% 55%"
+  },
+  "sunrise": {
+   "title": "De laatste ochtend op de duinen",
+   "focus": "50% 55%"
+  },
+  "s02cover": {
+   "title": "This is also the envelope art of a collectible sealed story, shown small",
+   "focus": "50% 55%"
+  },
+  "s02cow": {
+   "title": "Noon on the Old Cow, a singing dune the size of a church and the colour of a fox",
+   "focus": "50% 55%"
+  },
+  "s02well": {
+   "title": "Imra's old stone well under three tall old date palms north of her house, aftern",
+   "focus": "50% 55%"
+  },
+  "s02dawn": {
+   "title": "Sunrise over the Ochre Waste, the sun coming up red",
+   "focus": "50% 55%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Kesh · De karavaanhof",
+   "scene": "s02cover",
+   "tag": "Kesh. Wind: geen. Duin: loeiend.",
+   "text": [
+    "Op de karavaanhof van Kesh leent de klerk van het gilde je een liniaal en een regel. “Een duin loopt een mijl per jaar,” zegt hij. “Naar het oosten, rechtdoor. Leg de liniaal erop.” Je bent ingehuurd door de oude Imra, wier huis en dadelpalmen precies in het pad liggen van de Oude Koe, de zingende duin.",
+    "Een man van de Compagnie heeft aangeboden het huis te kopen, goedkoop, voordat de Koe het neemt, en hij wacht tot zonsopgang en geen minuut langer. Op de hof verkoopt Clemency Rudd, met een rol wasdoek op haar rug, kaarten van overal behalve Kesh. “Tal Amira,” zegt ze. “Loopt goed. In Kesh koopt niemand Kesh.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je de liniaal en de regel van het gilde neemt; zij meten al tweehonderd jaar duinen,",
+     "short": "Volg de gilderegel",
+     "to": 2
+    },
+    {
+     "text": "Als je eerst naar buiten loopt en naar de duin luistert,",
+     "short": "Luister naar de duin",
+     "to": 3
+    },
+    {
+     "text": "Als je de oude Imra vraagt wat ze zich van de Koe herinnert,",
+     "short": "Vraag het Imra",
+     "to": 4
+    }
+   ],
+   "nr": 1
+  },
+  "2": {
+   "chapter": "Een mijl per jaar",
+   "scene": "s02cow",
+   "tag": "Kam gemeten. Mijl per jaar. Huis: verloren.",
+   "text": [
+    "Je klimt ’s middags met de liniaal van het gilde de schouder van de Koe op en meet haar kam. Volgens de gilderegel loopt ze een mijl per jaar, recht naar het oosten, en dan staat ze in het voorjaar in Imra’s keuken en in de zomer in haar put. Het is heel heldere rekenkunde. Je hebt zelden iets zo gewantrouwd.",
+    "Beneden staat Imra in haar tuin tussen de palmen die haar man heeft geplant, haar hand boven haar ogen, zonder naar je te kijken. De man van de Compagnie zit in de schaduw van haar veranda met zijn chequeboek open op zijn knie. Onder je bromt de duin één lange, lage toon die je in je tanden voelt."
+   ],
+   "choices": [
+    {
+     "text": "Als je haar zegt dat het gilde gelijk heeft en ze het geld beter kan nemen,",
+     "short": "Zeg dat ze verkoopt",
+     "to": 8,
+     "looks": "safe"
+    },
+    {
+     "text": "Als je naar beneden gaat en Imra vraagt wat de Koe eerder heeft gedaan,",
+     "short": "Vraag naar vroeger",
+     "to": 4
+    }
+   ],
+   "nr": 4
+  },
+  "3": {
+   "chapter": "De Oude Koe",
+   "scene": "s02cow",
+   "tag": "De Oude Koe. Loeiend. Een meisje bovenop.",
+   "text": [
+    "De Oude Koe is zo groot als een kerk en zo rood als een vos. Als de wind langs haar flank glijdt, loeit ze, en je voelt het in je handpalm, en dan in je achterste kiezen. Op haar kam zit Imra’s kleindochter Tali, twaalf, dadels te eten en te kijken hoe je klimt, alsof je een kever met ambities bent.",
+    "“Ze gaat niet rechtdoor,” zegt Tali. “Ze gaat met een bocht, zoals oma naar de markt.” En dan, omdat je duidelijk traag van begrip bent: “Onder de noordpalmen zit een oud koperen ding. Een mevrouw heeft het er gezet, vroeger. Het zegt waar de Koe stond.” Ze spuugt een dadelpit de duin af. Hij rolt heel ver."
+   ],
+   "choices": [
+    {
+     "text": "Als je onder de noordpalmen naar het koperen ding graaft,",
+     "short": "Graaf naar het koper",
+     "to": 5
+    },
+    {
+     "text": "Als je op de kam gaat liggen en wacht tot ze bij dageraad zingt,",
+     "short": "Wacht op haar lied",
+     "to": 9
+    }
+   ],
+   "nr": 11
+  },
+  "4": {
+   "chapter": "De oude Imra",
+   "scene": "s02well",
+   "tag": "Imra’s put. Veertig voorjaren terug.",
+   "text": [
+    "Imra geeft je water uit haar put en een lange blik. Veertig voorjaren geleden, zegt ze, kwam er een jonge landmeter van de kust naar boven, met laarzen die met kamelentouw bij elkaar werden gehouden en een koperen lantaarn die aan het hengsel verbogen was. Ze dronk hier, zette een paal met een koperen kap bij deze put en mat er een hele middag de Koe vanaf.",
+    "“In hartje zomer trok ze verder naar het oosten, de Woestenij door, naar de bergen,” zegt Imra. “Ik was net getrouwd. Ik vond haar erg onbeleefd en erg slim.” De Koe, voegt ze eraan toe, vertelt geduldige mensen wel waar ze heen gaat. De paal zit ergens onder de noordpalmen. Zand komt overal in."
+   ],
+   "choices": [
+    {
+     "text": "Als je onder de noordpalmen naar de paal graaft,",
+     "short": "Graaf naar de paal",
+     "to": 5
+    },
+    {
+     "text": "Als je haar zegt dat het gilde al tweehonderd jaar duinen meet en dat ze moet verkopen,",
+     "short": "Zeg dat ze verkoopt",
+     "to": 8,
+     "looks": "safe"
+    }
+   ],
+   "nr": 7
+  },
+  "5": {
+   "chapter": "De koperen kap",
+   "scene": "s02well",
+   "tag": "Paal gevonden. Kap schoon. Veertig jaar oud.",
+   "text": [
+    "Twee voet diep, tussen de palmwortels, stuit je schop op koper. Je veegt het rode zand weg. De kap is groen aan de randen en glanzend in het midden, alsof iemand hem met zijn duim heeft opgepoetst: E.M. · I · en daaronder, klein gekrast, Kam Koe 40 ketens N. Voorjaar.",
+    "~ De initialen van je leermeester, jonger dan je ze ooit hebt gezien. Veertig jaar geleden lag de kam van de Koe veertig ketens ten noorden van deze paal. Nu ligt hij half zo ver, en een eind naar het oosten. Ze is gekomen, en ze is afgebogen. Twee punten maken een lijn, en deze loopt niet door Imra’s keuken."
+   ],
+   "choices": [
+    {
+     "text": "Als je vannacht vanaf de kap haar lijn van veertig jaar doortrekt,",
+     "short": "Trek haar lijn door",
+     "to": 6
+    },
+    {
+     "text": "Als je eerst naar boven klimt voor een verse meting van haar kam,",
+     "short": "Meet haar kam opnieuw",
+     "to": 7
+    }
+   ],
+   "nr": 3
+  },
+  "6": {
+   "chapter": "De lijn",
+   "scene": "s02dawn",
+   "tag": "Dageraad. Keuken gespaard. Drie palmen niet.",
+   "text": [
+    "De hele nacht trek je haar lijn over je blad door.",
+    "~ Ze loopt niet naar het oosten. Ze komt uit het noorden in een lange boog, als een aak in een rivierbocht, en trekt op een steenworp van Imra’s keuken voorbij. Haar teen neemt de oude put, de noordmuur en drie palmen mee: de oudste drie, die Imra’s man heeft geplant.",
+    "Imra wacht op haar stoep, de man van de Compagnie bij het hek met zijn chequeboek, en de zon komt rood op boven de Woestenij. Imra kijkt naar je gezicht, dan naar de noordpalmen, en dan weer naar je gezicht, dat nooit goed is geweest in iets voor zich houden."
+   ],
+   "choices": [
+    {
+     "text": "Als je haar alles vertelt: het huis blijft staan, de put en de drie palmen niet,",
+     "short": "Vertel haar alles",
+     "to": 11
+    },
+    {
+     "text": "Als je haar zegt dat het huis veilig is, en over de palmen nog even zwijgt,",
+     "short": "Vertel haar van het huis",
+     "to": 10,
+     "looks": "safe"
+    }
+   ],
+   "nr": 9
+  },
+  "7": {
+   "chapter": "De kam",
+   "scene": "s02cow",
+   "tag": "Op de kam. Derde punt. Gebrom.",
+   "text": [
+    "Je klimt met je instrument op de Koe en meet haar kam vanaf de koperen paal: zoveel ketens naar het noorden, zoveel naar het oosten. Ze bromt onder je laarzen terwijl je werkt, alsof ze het grappig vindt dat iemand het vraagt. Nu weet je waar ze stond, waar ze staat, en de lange, trage bocht daartussen.",
+    "Beneden zit Imra’s kleindochter Tali op de tuinmuur met haar hakken te zwaaien en kijkt hoe de man van de Compagnie doet alsof hij niet zweet. De zon helt naar het westen. Bij het hek doet Imra niet langer alsof ze veegt; ze kijkt alleen nog naar je op, zoals mensen opkijken naar weer dat ze zich niet kunnen veroorloven."
+   ],
+   "choices": [
+    {
+     "text": "Als je opblijft en haar lijn vannacht doortrekt,",
+     "short": "Teken het vannacht",
+     "to": 6
+    },
+    {
+     "text": "Als je meteen naar beneden gaat en Imra zegt dat het huis veilig is,",
+     "short": "Zeg het haar nu",
+     "to": 10
+    }
+   ],
+   "nr": 6
+  },
+  "8": {
+   "chapter": "Een einde",
+   "scene": "s02cover",
+   "tag": "Huis verkocht. Hek eromheen. Linialen opgeslagen.",
+   "text": [
+    "Imra neemt het geld van de Compagnie, want het gilde meet al tweehonderd jaar duinen en jij hebt deze ene één middag gemeten. Ze verhuist naar twee kamers boven een ververij in Kesh, met haar kleindochter en één palm in een pot. De Compagnie zet een hek om haar tuin en wacht op de Koe.",
+    "De Koe komt, langzaam, zoals ze alles doet. Ze trekt op een steenworp van de keuken voorbij, neemt de oude put en drie palmen mee en loopt door. Het huis staat leeg achter zijn hek, zand op de stoep, een heel goed huis voor niemand. De Compagnie bewaart er linialen in."
+   ],
+   "ending": {
+    "no": "I",
+    "title": "Verkocht aan de liniaal",
+    "kind": "bad",
+    "epilogue": "De regel was tweehonderd jaar oud. De duin was ouder.",
+    "hint": "Vraag het de duin voordat je het de liniaal vraagt."
+   },
+   "nr": 10
+  },
+  "9": {
+   "chapter": "Een einde",
+   "scene": "s02cow",
+   "tag": "Ochtendlied. Huis verkocht. Verhandeling geschreven.",
+   "text": [
+    "Je ligt de hele nacht op de kam met je jas over je heen, en wacht. Vlak voor dageraad draait de wind en glijdt langs de lange flank van de Koe naar beneden, en ze zingt: geen geloei maar een akkoord, traag en breed en vol van iets wat je alleen heimwee kunt noemen. Je hebt nog nooit zoiets gehoord.",
+    "Bij zonsopgang kom je naar beneden en is het huis verkocht en is Imra aan het inpakken. Je blijft een jaar in Kesh om de stemmingen van de Koe te leren kennen en schrijft een verhandeling over zingende duinen die wordt bewonderd en nooit gelezen.",
+    "~ Je opmeting van haar weg is één regel lang. Er staat: Ze gaat naar huis."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "Het lied van de Koe",
+    "kind": "strange",
+    "epilogue": "Je leerde haar lied en miste haar weg.",
+    "hint": "Mooie dingen kunnen wachten tot na het meten."
+   },
+   "nr": 8
+  },
+  "10": {
+   "chapter": "Een einde",
+   "scene": "s02well",
+   "tag": "Huis veilig. Palmen niet genoemd. Palmen weg.",
+   "text": [
+    "Je zegt haar dat het huis veilig is, wat waar is, en zwijgt nog over de noordpalmen op het pad van de Koe, wat aardig is. Imra stuurt de man van de Compagnie weg met een waardigheid die haar niets kost en haar enorm bevalt. Je verlaat Kesh met de dank van de hele familie en een mand dadels.",
+    "~ Vier voorjaren later neemt de Koe de oude put en de drie noordpalmen mee in één winderige week, terwijl Imra op de markt is. Ze komt thuis bij zand waar de bomen van haar man stonden. Ze is niet boos op je. Ze schrijft het je, en dat is erger. Het huis staat, zoals je beloofde, nog altijd."
+   ],
+   "ending": {
+    "no": "III",
+    "title": "De halve waarheid",
+    "kind": "silver",
+    "epilogue": "Het huis bleef staan. De palmen gingen zonder afscheid.",
+    "hint": "Vriendelijkheid die de halve kaart achterhoudt, blijft een halve kaart."
+   },
+   "nr": 2
+  },
+  "11": {
+   "chapter": "Een einde",
+   "scene": "s02dawn",
+   "tag": "Alles verteld. Bod geweigerd. Drie stekken.",
+   "text": [
+    "Je vertelt haar alles: het huis blijft staan, de put en de drie oude palmen niet, over vier of vijf voorjaren. Imra luistert met haar handen in haar schoot. Dan loopt ze naar het hek, zegt tegen de man van de Compagnie dat hij zijn chequeboek mag houden, en komt terug om nog wat bij de noordpalmen te zitten.",
+    "Dat voorjaar neemt ze van elk van de drie een stek en plant ze ten zuiden van de keuken, waar de Koe niet heen gaat. Haar kleindochter Tali geeft ze namen. Als de Koe eindelijk komt, vindt ze de oude bomen op haar wachten, en drie jonge ruim buiten haar weg, en trekt ze zingend voorbij, zoals altijd."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "De hele lijn",
+    "kind": "good",
+    "epilogue": "Ze koos zelf wat ze kwijtraakte. Meer kan een kaart niet bieden.",
+    "hint": "Twee punten met veertig jaar ertussen maken een eerlijke lijn.",
+    "star": true
+   },
+   "nr": 5
+  }
+ }
+}

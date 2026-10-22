@@ -1,0 +1,1200 @@
+{
+ "id": "paper-sky",
+ "title": "The Paper Sky",
+ "series": "The Veyra Cycle · Book VI",
+ "imprint": "A Wayward Original",
+ "tagline": "Ten thousand crowns to the first crew to land on a mountain nobody has ever stood on. Nobody, so far as the newspaper knows.",
+ "warning": "Don’t read this book from start to finish. At the end of each page, you decide what happens next. Some choices lift you. Others are ballast.",
+ "start": 1,
+ "scenes": {
+  "haymeadow": {
+   "title": "The hay meadow below the Table",
+   "focus": "50% 55%"
+  },
+  "basket": {
+   "title": "Inside the Lark’s basket",
+   "focus": "50% 55%"
+  },
+  "sovereign": {
+   "title": "Aboard the Sovereign",
+   "focus": "50% 55%"
+  },
+  "valley": {
+   "title": "The Vell valley from above",
+   "focus": "50% 55%"
+  },
+  "tablewalls": {
+   "title": "The walls of the Table",
+   "focus": "50% 55%"
+  },
+  "cloudsea": {
+   "title": "Above the cloud sea",
+   "focus": "50% 55%"
+  },
+  "ringwind": {
+   "title": "In the ring wind",
+   "focus": "50% 55%"
+  },
+  "rim": {
+   "title": "The rim of the Table",
+   "focus": "50% 55%"
+  },
+  "summit": {
+   "title": "The meadow on top: tarn and turf huts",
+   "focus": "50% 55%"
+  },
+  "chimney": {
+   "title": "The rock chimney",
+   "focus": "50% 55%"
+  },
+  "printshop": {
+   "title": "The back room of the Brass Goat",
+   "focus": "50% 55%"
+  },
+  "kites": {
+   "title": "The Brisk sisters’ glider and winch",
+   "focus": "50% 55%"
+  },
+  "bog": {
+   "title": "The Sovereign in the summit bog",
+   "focus": "50% 55%"
+  },
+  "descent": {
+   "title": "Evening: the long way down",
+   "focus": "50% 55%"
+  },
+  "northfoot": {
+   "title": "The pasture at the foot of the Table's north wall in late light",
+   "focus": "50% 55%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Ground · The Hay Meadow",
+   "scene": "haymeadow",
+   "tag": "Alt. 0. Wind SW, light. Hay: everywhere.",
+   "text": [
+    "Above the Vell valley stands the Table: a mile of sheer rock with a cloud laid on top, like a cloth nobody has been asked to lift. From a hay cart, Mr Horace Vane of the Morning Meridian reads the terms. Ten thousand crowns to the first crew to land up there, plant his pennant and bring back a map. “No human foot,” he says, “has ever stood upon it.” The crowd cheers the foot.",
+    "Three crews: Sir Lucan Ashby’s silver Sovereign on its mast; the Brisk sisters and their box kite; and the Lark, thirty-one patches of red-and-cream silk, whose pilot, Juno Thackeray, has hired you on credit. A goatherd girl sells cheese between them and laughs at the balloons."
+   ],
+   "choices": [
+    {
+     "text": "If you help Juno patch the Lark before dark,",
+     "short": "Help Juno patch",
+     "to": 9
+    },
+    {
+     "text": "If you accept Mr Vane’s invitation to supper aboard the Sovereign,",
+     "short": "Dine aboard the Sovereign",
+     "to": 4
+    },
+    {
+     "text": "If you buy a cheese from the girl who is laughing at you,",
+     "short": "Buy a cheese",
+     "to": 7
+    }
+   ],
+   "nr": 1
+  },
+  "2": {
+   "chapter": "An ending",
+   "scene": "chimney",
+   "tag": "Alt. 410. Stuck. Morale: also stuck.",
+   "text": [
+    "The slot goes up at a friendly angle for about the length of a person. Then it narrows, and so, briefly, do you. You spend the night wedged in the dark with one arm above your head, like someone with a question nobody will take, listening to small stones arrive from somewhere far above.",
+    "At first light the goatherd girl’s uncle comes with a lamp and a pot of goat butter. He frees you without a word, which is worse than any word. You are still picking butter out of your ears when the starting pistol goes, far off, and three craft rise into the pink without you."
+   ],
+   "ending": {
+    "no": "I",
+    "title": "Wedged",
+    "kind": "bad",
+    "epilogue": "You found the way in. Not the way through.",
+    "hint": "Some ways only open in daylight, and in company."
+   },
+   "nr": 23
+  },
+  "3": {
+   "chapter": "Ground · Dusk Watch",
+   "scene": "tablewalls",
+   "tag": "Alt. 0. Smoke east. Cloud west.",
+   "text": [
+    "You sit on the hay with your notebook while the sun goes down and the Table’s walls turn the colour of a struck match. Down in the valley, smoke from the cheese fires leans east. Up on the Table, the cloud moves west. You watch it for half an hour, pencil going. [[ring|It is not blowing past the Table. It is going round it]], slow as a millstone.",
+    "On the north side, where the rock is darkest, it bends in and pours down. A balloon has no rudder. It goes where its wind goes, and steers only by choosing which wind, which means choosing a height. Down the meadow, the Sovereign’s engines cough once, as if to disagree."
+   ],
+   "choices": [
+    {
+     "text": "If you take your sketch to the Brisk sisters, though they are rivals,",
+     "short": "Show the Brisk sisters",
+     "to": 12
+    },
+    {
+     "text": "If you sleep under the basket and keep it to yourself,",
+     "short": "Keep it to yourself",
+     "to": 14
+    },
+    {
+     "text": "If you walk round to the north side before dark,",
+     "short": "Walk to the north side",
+     "to": 6
+    }
+   ],
+   "nr": 36
+  },
+  "4": {
+   "chapter": "Ground · Supper Aboard",
+   "scene": "sovereign",
+   "tag": "Alt. 0. Beef. Silver. A gramophone.",
+   "text": [
+    "The Sovereign’s gondola is a small hotel that happens to be tied to a mast: carpet, brass, six crew in white jackets, a gramophone playing something brave. Sir Lucan Ashby is handsome, and polite to everyone, including the beef. Mr Vane carves. “History wants a mapmaker,” he says. “Fly with us. Fee, byline, the lot.”",
+    "On the sideboard lies the pennant for the summit, the Meridian’s colours in [[pennant|silk, with tomorrow’s date already embroidered]] in gold thread. “Confidence,” says Sir Lucan, and fills your glass. Through the window, far off on the dark meadow, the Lark’s one lamp."
+   ],
+   "choices": [
+    {
+     "text": "If you accept, shake hands and fly with the Sovereign,",
+     "short": "Fly with the Sovereign",
+     "to": 18
+    },
+    {
+     "text": "If you thank them and walk up to the inn for a bed,",
+     "short": "Walk up to the inn",
+     "to": 10
+    },
+    {
+     "text": "If you take a plate of beef back to Juno,",
+     "short": "Take Juno some beef",
+     "to": 9
+    }
+   ],
+   "nr": 32
+  },
+  "5": {
+   "chapter": "An ending",
+   "scene": "valley",
+   "tag": "Alt. 300. River below. Conscience: lighter.",
+   "text": [
+    "Over the river you tip the blanket over the side, and tomorrow’s news drops into the Vell with a splash like a cow falling in. The Lark leaps. Juno whoops. For the rest of the morning you fly beautifully and light, and lose the race honestly, to the cloud.",
+    "The Vell is a shallow river, and the valley boys swim like otters. By noon they have fished up every letter and are selling them back to Mr Vane at a crown apiece. His headline runs a day late, with one S upside down. He calls it a sound investment."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "Late Edition",
+    "kind": "strange",
+    "epilogue": "Late, slightly upside down, and still the news.",
+    "hint": "Not every water keeps what you give it."
+   },
+   "nr": 31
+  },
+  "6": {
+   "chapter": "Ground · North Foot",
+   "scene": "northfoot",
+   "tag": "Alt. 400. Light going. Goats gone ahead.",
+   "text": [
+    "You follow a goat path off the meadow. It crosses the stream on a flat stone and climbs to the foot of the north wall, where the dusk is already thick. Here the path does an odd thing: it goes on being a path. It runs into [[cleft|a cleft in the rock, worn smooth as a stair rail]], and ends at a slot of darkness going up.",
+    "The air coming down the slot is cold and smells of goat and, faintly, cheese. A pebble comes down too, clicking from wall to wall, as if something far above had moved its feet. Behind you, down the slope, the goatherd girl is calling her goats. “That goes nowhere!” she shouts, and laughs."
+   ],
+   "choices": [
+    {
+     "text": "If you go back to the meadow before the light goes,",
+     "short": "Go back down",
+     "to": 14
+    },
+    {
+     "text": "If you squeeze into the slot to see where it goes,",
+     "short": "Squeeze into the slot",
+     "to": 2
+    }
+   ],
+   "nr": 43
+  },
+  "7": {
+   "chapter": "Ground · Cheese",
+   "scene": "haymeadow",
+   "tag": "Alt. 0. Cheese: one. Dignity: also one.",
+   "text": [
+    "Her name is Ilka, she is about fourteen, and she thinks balloons are the funniest thing that has ever happened to the valley. “They go up, they come down,” she says. “Like goats. Only dearer.” Her cheese costs more than it should and is worth it. Pressed into the rind is [[stamp|a mark: a long flat top, steep sides]].",
+    "Tomorrow, she says, she is busy. Cheese business. She whistles, and her goats come out of the dusk with their bells knocking and drift off past the meadow towards the north foot of the Table, where there is nothing but rock. She follows them without saying goodbye, still laughing at something."
+   ],
+   "choices": [
+    {
+     "text": "If you follow the goats’ path towards the Table,",
+     "short": "Follow the goats",
+     "to": 6
+    },
+    {
+     "text": "If you take the cheese to the Brisk sisters, who look hungry,",
+     "short": "Feed the Brisk sisters",
+     "to": 12
+    },
+    {
+     "text": "If you go up to the inn for a bed; it is getting dark,",
+     "short": "Go up to the inn",
+     "to": 10
+    }
+   ],
+   "nr": 47
+  },
+  "8": {
+   "chapter": "An ending",
+   "scene": "summit",
+   "tag": "Alt. 5,280. First. Alone. For a minute.",
+   "text": [
+    "At the narrowest place you say “excuse me”, and Ilka, surprised, flattens against the rock to let you by. You climb the last of the chimney with your heart going like the Sovereign’s engines and come out alone into wind and light: a meadow, a tarn, seven stone huts. First. Nobody here but you and a goat, and the goat doesn’t count.",
+    "A minute later Ilka comes up behind you, sees your face, and says, “Congratulations.” She means it. Then she unpegs her family’s door. In the valley the papers call you the first to climb the Table, and the goatherd families are polite to you, every one of them, for the rest of your life.",
+    "~ That is the worst part."
+   ],
+   "ending": {
+    "no": "III",
+    "title": "Congratulations",
+    "kind": "silver",
+    "epilogue": "First by a minute. Last by a long way.",
+    "hint": "Some races only have one runner."
+   },
+   "nr": 12
+  },
+  "9": {
+   "chapter": "Ground · The Lark",
+   "scene": "basket",
+   "tag": "Alt. 0. Patches: 31. Paid for: none.",
+   "text": [
+    "The Lark lies on the hay like a dropped petticoat while Juno darns her by lamplight and talks to the burner. The burner is called Gideon. “Don’t sulk,” she tells it. “You’ll get your paraffin.” One patch is bleached almost white, with sand still in its seams. “Last spring,” says Juno, and nothing else.",
+    "Round the basket rim, [[ious|IOUs are pegged like washing]], each in a different creditor’s hand. This afternoon Mr Gall, the sand merchant, came with a cart and took six sandbags back. Juno means to sleep in the basket tonight, so that nobody takes that too."
+   ],
+   "choices": [
+    {
+     "text": "If you sit up on the hay and watch the cloud on the Table,",
+     "short": "Watch the cloud",
+     "to": 3
+    },
+    {
+     "text": "If you walk over to the Brisk sisters’ fire to beg some sand,",
+     "short": "Beg sand from the Brisks",
+     "to": 12
+    },
+    {
+     "text": "If you go up to the inn for a proper bed,",
+     "short": "Go up to the inn",
+     "to": 10
+    }
+   ],
+   "nr": 13
+  },
+  "10": {
+   "chapter": "Ground · The Back Room",
+   "scene": "printshop",
+   "tag": "Alt. 0. Lamp oil: low. Curiosity: high.",
+   "text": [
+    "The Brass Goat is full of reporters, so the landlady gives you a cot in the back room, which turns out to be Mr Vane’s travelling print shop. It smells of ink and warm metal. A compositor’s boy sleeps on a stack of paper with his mouth open. At two in the morning, unable to sleep, you lift your lantern.",
+    "On the stone lies a whole page of lead type, locked in an iron frame, ready for the press. Type is backwards. You engrave maps; you read backwards for a living.",
+    "~ [[forme|SOVEREIGN CONQUERS THE TABLE]]. Tomorrow’s date. Beneath it, a column on “the virgin summit”, already set."
+   ],
+   "choices": [
+    {
+     "text": "If you put out the lantern and go back to the meadow before dawn,",
+     "short": "Go back to the meadow",
+     "to": 14
+    },
+    {
+     "text": "If you wake Mr Vane and ask him what this is,",
+     "short": "Wake Mr Vane",
+     "to": 19
+    },
+    {
+     "text": "If you go and tell Sir Lucan; he seems a gentleman,",
+     "short": "Tell Sir Lucan",
+     "to": 18
+    }
+   ],
+   "nr": 9
+  },
+  "11": {
+   "chapter": "An ending",
+   "scene": "summit",
+   "tag": "Alt. 5,290. Pennant: up. Highest point: yours.",
+   "text": [
+    "The biggest hut has the highest roof, and the highest roof is the highest point on the Table, so that is where the Meridian’s pennant goes, tied to the roof stone with your bootlace. It snaps out bravely in the wind. The photograph is reprinted in four countries.",
+    "Next summer someone comes up, unpegs the door, and finds a newspaper’s flag on the roof of their grandmother’s house. They take it down without fuss, fold it neatly in four, and use it, for many years, to wrap cheese. It is excellent silk. It keeps the flies off."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "Flag on the Roof",
+    "kind": "bad",
+    "epilogue": "Your claim kept the cheese clean.",
+    "hint": "The highest point is not the same as the first."
+   },
+   "nr": 33
+  },
+  "12": {
+   "chapter": "Ground · The Winch",
+   "scene": "kites",
+   "tag": "Alt. 0. Kites: six. Sisters: arguing.",
+   "text": [
+    "Nell and Dot Brisk make room for you at their fire, still arguing about a steam winch, which was the loudest thing on the meadow until they started. Behind them on the grass sits their glider: a box kite the size of a bookcase, with two seats in it, like a bookcase that has been told to expect visitors. The word sand makes them laugh. Their boiler eats sand, coal and patience.",
+    "All day they have flown kites, with a ribbon on each string every five hundred feet, and at every height the ribbons point a different way. In the shed stands [[handpress|a small hand press for their club bulletin, the Updraught]]. It has eleven subscribers. Two are Nell and Dot."
+   ],
+   "choices": [
+    {
+     "text": "If you stay and help them with the winch,",
+     "short": "Help with the winch",
+     "to": 15
+    },
+    {
+     "text": "If you go back to Juno and get some sleep,",
+     "short": "Go back to Juno",
+     "to": 14
+    },
+    {
+     "text": "If you go up to the inn for a bed,",
+     "short": "Go up to the inn",
+     "to": 10
+    }
+   ],
+   "nr": 5
+  },
+  "13": {
+   "chapter": "An ending",
+   "scene": "kites",
+   "tag": "Alt. 0. All day. Telescope: borrowed.",
+   "text": [
+    "You stay on the winch. The glider goes up the cable like a thrown book, and Dot lets you hold the telescope in exchange for the coal shovel. From the hay you watch the whole race: the Sovereign’s straight line, the Lark turning like a dropped hat, the glider riding round the wall.",
+    "Your map of the day, every track in a different ink, is the best thing the Updraught has ever printed. All eleven subscribers write in. Without leaving the meadow, you become the valley’s leading authority on other people’s flights."
+   ],
+   "ending": {
+    "no": "V",
+    "title": "Ground Crew",
+    "kind": "strange",
+    "epilogue": "You mapped every flight but your own.",
+    "hint": "A race is easier to watch than to win."
+   },
+   "nr": 6
+  },
+  "14": {
+   "chapter": "Ground · Dawn",
+   "scene": "haymeadow",
+   "tag": "Alt. 0. Sandbags: 6 of 12. Gun: sunrise.",
+   "text": [
+    "Dawn comes up pink behind the Table and finds you beside Juno. The Sovereign’s engines warm with the sound of a large man humming; the Brisk winch hisses; the Lark stands up off the hay, fat with hot air from Gideon, the burner. Juno counts her sandbags. Six. She needs twelve. The Meridian’s camera and barometer, issued for proof, take up the room the rest should have.",
+    "The goatherd girl drives her goats across the meadow, against the crowd, towards the north foot. Caught in their coats is [[moss|a pale green moss you have not seen on a single stone in the valley]]. The starter climbs onto the hay cart with a pistol and a watch. Half an hour."
+   ],
+   "choices": [
+    {
+     "text": "If you borrow sandbags from the Sovereign’s crew and fly in her wake,",
+     "short": "Borrow the Sovereign’s sand",
+     "to": 20
+    },
+    {
+     "text": "If you fill the empty bags with stones from the field wall,",
+     "short": "Fill the bags with stones",
+     "to": 17
+    },
+    {
+     "text": "If you fetch the heaviest thing in the valley from Mr Vane’s back room,",
+     "short": "Raid the back room",
+     "to": 27,
+     "hidden": true,
+     "needs": {
+      "seen": [
+       10
+      ]
+     }
+    }
+   ],
+   "nr": 30
+  },
+  "15": {
+   "chapter": "Ground · The Second Seat",
+   "scene": "kites",
+   "tag": "Alt. 0. Sleep: none. Steam: plenty.",
+   "text": [
+    "You spend the night holding things for the Brisk sisters: a spanner, a lamp, a grudge on Dot’s behalf. At dawn the boiler is up and the glider waits at the end of a long cable, nose to the Table. Nell will fly. Dot will work the winch and shout. They have done the sums, and the glider wants ballast in its second seat.",
+    "Your weight, exactly. Dot has chalked it on the wing. Across the meadow Juno is standing on the rim of the Lark’s basket, shouting your name in the voice she uses on the burner. The starter is already looking at his watch. Somebody has to turn the crank."
+   ],
+   "choices": [
+    {
+     "text": "If you climb into the glider’s second seat,",
+     "short": "Take the second seat",
+     "to": 29
+    },
+    {
+     "text": "If you run back to Juno before the gun,",
+     "short": "Run back to Juno",
+     "to": 14
+    },
+    {
+     "text": "If you stay on the winch and let them fly,",
+     "short": "Stay on the winch",
+     "to": 13
+    }
+   ],
+   "nr": 22
+  },
+  "16": {
+   "chapter": "An ending",
+   "scene": "valley",
+   "tag": "Alt. 0, approximately. Turnips: many.",
+   "text": [
+    "You come out of the bottom of the cloud into a thin grey drizzle, a mile from where you went in and nowhere near the Table, which is somewhere behind you like a door shut in your face. Juno says a word to Gideon that he has not heard before.",
+    "You land, quite gently, in a turnip field. It belongs to Mr Gall, the sand merchant. He comes out to meet you with his hat in one hand and Juno’s IOU in the other, and keeps the basket against the debt. It makes, he tells everyone later, a very good hen house."
+   ],
+   "ending": {
+    "no": "VI",
+    "title": "Turnips",
+    "kind": "bad",
+    "epilogue": "You came down where you were owed.",
+    "hint": "Down is always available. Where is the question."
+   },
+   "nr": 4
+  },
+  "17": {
+   "chapter": "2,000 ft · The Valley",
+   "scene": "valley",
+   "tag": "Alt. 2,000. Wind E. Stones: two bags.",
+   "text": [
+    "Field stones get you up eventually, in stages, like a duchess getting out of a bath. You clear the poplars by cutting a bag loose and the inn’s weathercock by cutting another. Then the valley opens below: hayfields stitched like a quilt, the river shining, the meadow, and everyone Juno owes money to, small as crumbs.",
+    "Ahead, the Table. The Sovereign drones at it in a straight line; the Brisk glider climbs on its cable. At the north foot [[thread|a pale thread of path climbs to the wall and stops]]. High on the north wall, where nothing could possibly stand, there is a white speck. It is a goat."
+   ],
+   "choices": [
+    {
+     "text": "If you follow the Sovereign; it seems to know the way,",
+     "short": "Follow the Sovereign",
+     "to": 20
+    },
+    {
+     "text": "If you burn for the cloud and go over the top,",
+     "short": "Climb for the cloud",
+     "to": 21
+    },
+    {
+     "text": "If you stay low and let the valley wind carry you round,",
+     "short": "Stay low",
+     "to": 23
+    }
+   ],
+   "nr": 19
+  },
+  "18": {
+   "chapter": "Ground · Aboard the Sovereign",
+   "scene": "sovereign",
+   "tag": "Alt. 0. Engines warm. Mapmaker: aboard.",
+   "text": [
+    "Dawn finds you at the Sovereign’s chart table in a borrowed white jacket, with a fee in your pocket and a pencil behind your ear. The best map money can buy is pinned in front of you: the royal survey of the Vell valley, every contour crisp. Sir Lucan, who was charming about everything last night and hired you on the spot, wants a straight line to the south wall. “Engines,” he says, “don’t care about wind.”",
+    "In the margin by the north wall, faint, someone has drawn [[pencil|a pencil line up the rock: “the Table: walked, 18—, with the cheese-makers. E.M.”]] You know those initials. You learned to sharpen a pencil from them. Nobody aboard has noticed."
+   ],
+   "choices": [
+    {
+     "text": "If you plot Sir Lucan his straight line to the south wall,",
+     "short": "Plot the straight line",
+     "to": 33
+    },
+    {
+     "text": "If you show Mr Vane the pencil line in the margin,",
+     "short": "Show Mr Vane the pencil",
+     "to": 19
+    }
+   ],
+   "nr": 35
+  },
+  "19": {
+   "chapter": "An ending",
+   "scene": "printshop",
+   "tag": "Room 4. Pen: provided. View: valley.",
+   "text": [
+    "Mr Vane is delighted with you. A sharp eye, he says, is a precious thing, and he would like to keep yours where he can see it. By sunrise you have the best room at the Brass Goat, a fresh pen, a fee twice what Juno owes you, and the exclusive account of the ascent to write, “in your own words, with a little help”.",
+    "From the window you watch three craft rise into the pink and vanish into the cloud. You write all day. Your summit is magnificent: wind-scoured, untrodden, sublime. The capital papers reprint it for a week. You never leave the ground."
+   ],
+   "ending": {
+    "no": "VII",
+    "title": "The Exclusive",
+    "kind": "strange",
+    "epilogue": "Your finest view, of a place you never saw.",
+    "hint": "Asking the editor is asking the story."
+   },
+   "nr": 18
+  },
+  "20": {
+   "chapter": "2,500 ft · In the Wake",
+   "scene": "tablewalls",
+   "tag": "Alt. 2,500. Following. Opinions: withheld.",
+   "text": [
+    "You fall in behind the Sovereign like a dinghy behind a liner. She goes at the south wall in a perfectly straight line, engines thudding, and from her gondola windows a gramophone march floats back to you, thin and brave. The wall grows. Soon it is not a wall but the whole sky: grey, ribbed, wet at the seams.",
+    "Near the rock the wind changes its mind. The Sovereign begins to crab sideways, engines roaring, and the Lark, which has no engines and no opinions, is being pushed straight at the stone. Juno looks at you. You are the mapmaker. “Well?” she says."
+   ],
+   "choices": [
+    {
+     "text": "If you keep to the Sovereign’s line; she has engines,",
+     "short": "Keep to the Sovereign’s line",
+     "to": 22
+    },
+    {
+     "text": "If you vent and drop into the lower wind,",
+     "short": "Drop into the lower wind",
+     "to": 23
+    },
+    {
+     "text": "If you burn hard for the cloud above,",
+     "short": "Burn for the cloud",
+     "to": 21
+    }
+   ],
+   "moment": {
+    "line": "The wall is the whole sky now.",
+    "seconds": 10,
+    "default": 22,
+    "head": "Choose before the wall",
+    "sub": "Wait too long, and the wind chooses for you.",
+    "defaultLabel": "THE WIND’S CHOICE",
+    "timeout": "The wind chooses for you…"
+   },
+   "nr": 26
+  },
+  "21": {
+   "chapter": "4,000 ft · White",
+   "scene": "ringwind",
+   "tag": "Alt. 4,000. Visibility: none. Ice: some.",
+   "text": [
+    "The cloud takes you in like a held breath. Everything goes white and close: you can see Juno, the burner, the ropes, but not the far side of the basket. It is suddenly very cold. Ice needles grow along the rigging and glitter, though there is no sun to glitter by. The burner’s roar is the only thing in the world.",
+    "Then something enormous darkens the white on your left, very close, and does not move. Rock. You can hear the wind going along it. Juno has her hand on the valve and her eyes on you, and there are three things a balloon can do."
+   ],
+   "choices": [
+    {
+     "text": "If you keep burning and climb out of the top,",
+     "short": "Climb out of the top",
+     "to": 24
+    },
+    {
+     "text": "If you heave the camera and the barometer overboard,",
+     "short": "Throw out the camera",
+     "to": 30
+    },
+    {
+     "text": "If you vent and drop out of the bottom,",
+     "short": "Drop out of the bottom",
+     "to": 16
+    }
+   ],
+   "nr": 42
+  },
+  "22": {
+   "chapter": "An ending",
+   "scene": "tablewalls",
+   "tag": "Alt. 2,500, briefly. Then less.",
+   "text": [
+    "You hold the Sovereign’s line, and the Sovereign, who has engines, claws her way out of the downdraught and away. The Lark, who has Gideon, does not. She kisses the wall with a sound like a sheet being shaken out, leaves a strip of red silk on the rock, and slides down it like a dropped glove.",
+    "It is a long, slow, scraping, oddly polite descent. You land in a hayfield with the envelope over you like a tablecloth after a picnic. High above, faint and brave, the gramophone march goes on without you."
+   ],
+   "ending": {
+    "no": "VIII",
+    "title": "Against the Wall",
+    "kind": "bad",
+    "epilogue": "The Sovereign kept her line. You kept the rock.",
+    "hint": "Engines follow lines. Balloons follow wind."
+   },
+   "nr": 8
+  },
+  "23": {
+   "chapter": "3,000 ft · The Ring Wind",
+   "scene": "ringwind",
+   "tag": "Alt. 3,000. Wind: all of them.",
+   "text": [
+    "The low wind takes you, and the Table begins to go past like a train: wall, buttress, gully, wall, close enough to count the swallows’ nests. The basket turns slowly, then less slowly. Gusts slap the envelope from three sides at once. Juno talks to Gideon in a low, steady voice, the way you would talk to a horse on a bridge.",
+    "Further round, the Brisk glider is being dragged along the rock on its cable like a kite in a hedge. The Lark is too heavy to climb out of the ring. The ring is carrying you round the Table like a leaf round a millstone."
+   ],
+   "choices": [
+    {
+     "text": "If you heave the camera and the barometer overboard,",
+     "short": "Throw out the camera",
+     "to": 30
+    },
+    {
+     "text": "If you hold on and let the ring take you round,",
+     "short": "Let the ring take you",
+     "to": 26
+    },
+    {
+     "text": "If you burn for the cloud; up is up,",
+     "short": "Burn for the cloud",
+     "to": 21
+    }
+   ],
+   "moment": {
+    "line": "The wall comes round again, closer.",
+    "seconds": 10,
+    "default": 26,
+    "head": "Choose before the ring comes round",
+    "sub": "Wait too long, and the wind chooses for you.",
+    "defaultLabel": "THE WIND’S CHOICE",
+    "timeout": "The wind chooses for you…"
+   },
+   "nr": 45
+  },
+  "24": {
+   "chapter": "6,500 ft · The Cloud Sea",
+   "scene": "cloudsea",
+   "tag": "Alt. 6,500. Cold: biting. Juno: singing.",
+   "text": [
+    "You come up out of the white into sun so hard it rings. Below, the cloud lies flat and dazzling to the edge of the world, a floor nobody could stand on, and you are the only thing above it. Juno is singing. The cold here is a different country: it gets into your teeth, freezes your breath to your scarf, furs the barometer with frost.",
+    "Where the Table must be, [[tablecloth|the cloud rises in a smooth low hump, like a cloth laid over a table]]. Far off, the Sovereign’s silver back slides into it like a spoon into cream. Juno taps the paraffin can. It answers, hollow, sooner than she likes."
+   ],
+   "choices": [
+    {
+     "text": "If you stay up here and map what you can see,",
+     "short": "Map what you can see",
+     "to": 25
+    },
+    {
+     "text": "If you follow the Sovereign down into the white,",
+     "short": "Follow the Sovereign down",
+     "to": 16
+    },
+    {
+     "text": "If you work out where the top lies and sink onto it, slowly,",
+     "short": "Sink onto the top",
+     "to": 30
+    }
+   ],
+   "nr": 7
+  },
+  "25": {
+   "chapter": "An ending",
+   "scene": "cloudsea",
+   "tag": "Alt. 7,000. Land: none. Map: lovely.",
+   "text": [
+    "You stay up. It is the most beautiful place you have ever been, and you map it properly: the domes and valleys of the cloud, its rivers of shadow, the hump of the Tablecloth, every gleam. Juno flies like a woman in church. The paraffin lasts exactly as long as the afternoon.",
+    "At dusk you come down through the white into a country with a different language and the same cows. Your map is exact, shaded, and wrong before the ink is dry. It hangs in a weather office in the capital, where it is much admired and never once consulted."
+   ],
+   "ending": {
+    "no": "IX",
+    "title": "Weather",
+    "kind": "strange",
+    "epilogue": "A perfect map of something that moved.",
+    "hint": "You can’t land on a view."
+   },
+   "nr": 27
+  },
+  "26": {
+   "chapter": "600 ft · The North Pasture",
+   "scene": "northfoot",
+   "tag": "Alt. 600. Landed. Broadly speaking.",
+   "text": [
+    "The ring carries you round to the north side, where the wind turns and pours down the wall like water over a weir, and pours the Lark with it. You hit the pasture at the foot of the wall, bounce, drag and stop. The envelope sighs over the scree like washing. Juno sits up laughing. “An hour,” she says, “to get her hot again.”",
+    "The Sovereign crabs past overhead, close enough to hail. Across the pasture, the goatherd girl from the meadow is climbing towards the rock with two goats wearing empty baskets. She sees the Lark and laughs until she has to hold a goat. Then she walks into a crack in the wall, and the goats follow."
+   ],
+   "choices": [
+    {
+     "text": "If you leave Juno with the balloon and follow the girl,",
+     "short": "Follow the girl",
+     "to": 35
+    },
+    {
+     "text": "If you help Juno get the Lark aloft again,",
+     "short": "Help Juno relaunch",
+     "to": 30
+    },
+    {
+     "text": "If you wave down the Sovereign for a tow,",
+     "short": "Wave down the Sovereign",
+     "to": 37
+    }
+   ],
+   "nr": 24
+  },
+  "27": {
+   "chapter": "Ground · The Heaviest Thing",
+   "scene": "printshop",
+   "tag": "Alt. 0. Ballast: two bags of news.",
+   "text": [
+    "The back door of the Brass Goat is on the latch, and the compositor’s boy is still asleep on the paper. Together you and Juno lift the iron frame off the stone and carry it out across the yard like a small, heavy coffin. Juno does not ask what it is. Juno has carried worse things out of better buildings.",
+    "Wrapped in a horse blanket, it weighs exactly two sandbags. The gun goes. The Lark lifts, grudgingly, a few feet, then a few more, and the meadow and the cheering drop away beneath you, and tomorrow’s news goes up into the morning with you, upside down and backwards."
+   ],
+   "choices": [
+    {
+     "text": "If you climb straight at the Table, heavy as you are,",
+     "short": "Climb straight at it",
+     "to": 32
+    },
+    {
+     "text": "If you tip it into the river as you cross,",
+     "short": "Tip it into the river",
+     "to": 5
+    },
+    {
+     "text": "If you follow the Sovereign; she seems to know the way,",
+     "short": "Follow the Sovereign",
+     "to": 20
+    }
+   ],
+   "nr": 34
+  },
+  "28": {
+   "chapter": "An ending",
+   "scene": "northfoot",
+   "tag": "Alt. 600. Goats: many. Pencil: put away.",
+   "text": [
+    "You wait at the north foot all afternoon, with nothing to look at but the wall. Towards evening, people come down out of it. First goats, then a man with a cheese on his back the size of a cartwheel, then two women, then the goatherd girl from the meadow: all out of a crack in the rock that goes nowhere, talking about the weather.",
+    "They give you bread and cheese and walk you down to the valley in the dusk, and on the way the oldest of them asks you, very politely, not to draw the path. You never do. It is the only line you ever keep off a map, and you always know exactly where it goes."
+   ],
+   "ending": {
+    "no": "X",
+    "title": "The Path Not Drawn",
+    "kind": "strange",
+    "epilogue": "The best line you never drew.",
+    "hint": "They came down. You might have gone up."
+   },
+   "nr": 44
+  },
+  "29": {
+   "chapter": "3,000 ft · The Flying Bookcase",
+   "scene": "northfoot",
+   "tag": "Alt. 3,000. Cable: gone. Nell: delighted.",
+   "text": [
+    "The cable hauls you up the morning so fast your stomach stays on the meadow. At three thousand feet Nell pulls the release, the cable falls away, and there is no sound but wind in the struts. “Isn’t it marvellous,” says Nell, not asking. The ring takes the glider round the Table like a leaf in a mill-race.",
+    "On the north side the air pours down the wall, and Nell, swearing beautifully, puts the bookcase down on the pasture at its foot. The goatherd girl from the meadow is there, with two goats carrying empty baskets. She laughs at the flying bookcase until she has to sit down. Then she walks into a crack in the rock, goats and all."
+   ],
+   "choices": [
+    {
+     "text": "If you leave Nell with her glider and follow the girl,",
+     "short": "Follow the girl",
+     "to": 35
+    },
+    {
+     "text": "If you help Nell fold the glider and wait for help,",
+     "short": "Wait with Nell",
+     "to": 28
+    }
+   ],
+   "nr": 37
+  },
+  "30": {
+   "chapter": "Over the Rim · Eleven Feet",
+   "scene": "rim",
+   "tag": "Alt. 5,280. Clearance: eleven feet.",
+   "text": [
+    "At last the cloud tears like wet paper and there is the rim, directly under the basket: a lip of turf eleven feet down, and beside it nothing. A mile of nothing, straight down, with the valley lying at the bottom of it like a dropped map. Your stomach goes over the edge and comes back. Then the Lark drifts in over grass, and the Table is under you.",
+    "A meadow. A tarn, black and still. Seven stone huts with turf roofs, doors shut. Ahead, the Sovereign is coming down on the greenest patch of all, flag ready in the gondola door. Juno has her hand on the valve. “We can beat them,” she says. “Say the word.”"
+   ],
+   "choices": [
+    {
+     "text": "If you vent hard, land first and plant the pennant,",
+     "short": "Land first",
+     "to": 31
+    },
+    {
+     "text": "If you hang back and let the Sovereign land first,",
+     "short": "Let them land first",
+     "to": 36
+    },
+    {
+     "text": "If you drift on and set down by the huts for a closer look,",
+     "short": "Set down by the huts",
+     "to": 38
+    }
+   ],
+   "nr": 14
+  },
+  "31": {
+   "chapter": "An ending",
+   "scene": "haymeadow",
+   "tag": "Prize: paid. Debts: paid. Lark: sold.",
+   "text": [
+    "You beat them down by a length. The pennant goes in; the Sovereign lands in a bog; Sir Lucan, wet to the waist, confirms it like a gentleman. The prize is paid next day, to the mapmaker, by name. Juno will only take it as a loan. She pays every debt in Vell to the last crown, and Mr Gall, the sand merchant, weeps.",
+    "Then, because she has never in her life owed a friend, she sells the Lark to pay you back. The Meridian hangs it in its front hall, stuffed with old newspaper, to show what a small balloon can do. Juno takes work at a ropemaker’s.",
+    "~ She is cheerful about it, and never flies again."
+   ],
+   "ending": {
+    "no": "XI",
+    "title": "Ten Thousand Crowns",
+    "kind": "silver",
+    "epilogue": "You won. The Lark hangs in a front hall.",
+    "hint": "First is a word the newspaper owns."
+   },
+   "nr": 2
+  },
+  "32": {
+   "chapter": "3,000 ft · Heavy",
+   "scene": "ringwind",
+   "tag": "Alt. 3,000, and sinking. Ballast: news.",
+   "text": [
+    "You head straight for the Table and into a wind that runs round the rock in a ring. The ring has you. Carrying two sandbags of tomorrow, the Lark cannot climb out of it; she turns, slowly, then not slowly, and the wall comes past and past again, each time a little nearer. Juno burns until Gideon glows. It is not enough. Something has to go over the side, and it has to go now.",
+    "There is the camera, the barometer, the map case, one sandbag, and the blanket. The blanket is by far the heaviest. Juno looks at it, and then at you, and for once in her life says nothing at all."
+   ],
+   "choices": [
+    {
+     "text": "If you throw out the camera and the barometer, and keep the blanket,",
+     "short": "Throw out camera and barometer",
+     "to": 40
+    },
+    {
+     "text": "If you throw out the blanket; it is the heaviest thing aboard,",
+     "short": "Throw out the blanket",
+     "to": 30
+    },
+    {
+     "text": "If you hold on and let the ring take you round,",
+     "short": "Let the ring take you",
+     "to": 26
+    }
+   ],
+   "moment": {
+    "line": "The basket is sinking towards the rock.",
+    "seconds": 10,
+    "default": 26,
+    "head": "Choose before the rock does",
+    "sub": "Wait too long, and the wind chooses for you.",
+    "defaultLabel": "THE WIND’S CHOICE",
+    "timeout": "The wind chooses for you…"
+   },
+   "nr": 40
+  },
+  "33": {
+   "chapter": "3,500 ft · Lighter",
+   "scene": "sovereign",
+   "tag": "Alt. 3,500. Overweight. Under music.",
+   "text": [
+    "Engines, it turns out, do care about wind. The ring takes the Sovereign by the nose and shoves her round the Table, engines bellowing, until the north wall is sliding past the windows. To climb over, says the engineer, she must lose four hundred pounds. The water ballast is gone. The beef is gone. Sir Lucan looks round the gondola, politely, for the next four hundred pounds.",
+    "On the gramophone a march is playing, from a record labelled [[gramophone|“Ashby’s Ascent, a March, to be played upon the Summit”]]. “Not the gramophone,” says Mr Vane. Sir Lucan’s eyes come to rest on you, kindly, the way they might rest on a sack."
+   ],
+   "choices": [
+    {
+     "text": "If you suggest the gramophone; music weighs more than it sounds,",
+     "short": "Suggest the gramophone",
+     "to": 41
+    },
+    {
+     "text": "If you offer to be set down at the north foot,",
+     "short": "Step off the airship",
+     "to": 28
+    }
+   ],
+   "nr": 39
+  },
+  "34": {
+   "chapter": "An ending",
+   "scene": "bog",
+   "tag": "Map: excellent. Cartouche: improved.",
+   "text": [
+    "It is a very good map. Mr Vane says so himself, and has it engraved for the front page under SOVEREIGN CONQUERS THE TABLE, with only small improvements. The bog becomes Ashby Mere. The seven stone huts become “ruins of great antiquity, origin unknown”.",
+    "In the cartouche, in elegant capitals, the engraver adds: First ascent, Sir Lucan Ashby. Your own name is in the bottom corner, very small, spelt correctly. In the valley the Meridian sells out in an hour. Not one of the goatherd families buys a copy."
+   ],
+   "ending": {
+    "no": "XII",
+    "title": "The Official Map",
+    "kind": "bad",
+    "epilogue": "Every line right. The title wrong.",
+    "hint": "A map says who was first, whether you write it or not."
+   },
+   "nr": 41
+  },
+  "35": {
+   "chapter": "2,000 ft · The Chimney",
+   "scene": "chimney",
+   "tag": "Alt. 2,000. On foot. Goats: ahead.",
+   "text": [
+    "The crack goes back into the wall and turns upward into a chimney of grey rock, cold as a cellar, with a strip of sky at the top. The girl, whose name is Ilka, goes up it like a staircase, which, in a way, it is: [[steps|footholds polished like old church steps]], each one hollowed in the middle. A rope hangs down the steepest part, grey and hairy below, new at the top.",
+    "You climb all morning. Twice you look down through the slot and see the valley at the bottom of a well, its fields the size of stamps. The goats overtake you. Ilka waits on ledges, eating, and laughs at your technique.",
+    "~ But she waits."
+   ],
+   "choices": [
+    {
+     "text": "If you stay behind her, at goat speed,",
+     "short": "Stay behind her",
+     "to": 43
+    },
+    {
+     "text": "If you squeeze past her and get to the top first,",
+     "short": "Get there first",
+     "to": 8
+    }
+   ],
+   "nr": 3
+  },
+  "36": {
+   "chapter": "Over the Rim · After You",
+   "scene": "bog",
+   "tag": "Alt. 5,280. Second down. Rope: out.",
+   "text": [
+    "The Sovereign has landed first, on the greenest patch on the Table, and is still landing. The green is moss on black water. By the time the Lark bumps down on firm turf behind her, the gondola has sunk to its windows, the gramophone is still playing, and Sir Lucan stands in the bog to his waist, planting the pennant with great dignity.",
+    "You throw him the trail rope and haul. He comes out like a boot out of mud, which, from the waist down, is what he now is. He thanks you with perfect manners. In the tilted gondola Mr Vane is already writing. Two hundred yards off, through drifting cloud, seven stone huts."
+   ],
+   "choices": [
+    {
+     "text": "If you walk over to the stone huts,",
+     "short": "Walk to the huts",
+     "to": 38
+    },
+    {
+     "text": "If you pose with Sir Lucan for Mr Vane’s photograph,",
+     "short": "Pose for the photograph",
+     "to": 37
+    }
+   ],
+   "nr": 21
+  },
+  "37": {
+   "chapter": "An ending",
+   "scene": "printshop",
+   "tag": "Front page: theirs. Paragraph six: yours.",
+   "text": [
+    "Mr Vane’s account is a masterpiece. It runs to eleven paragraphs under SOVEREIGN CONQUERS THE TABLE, with a photograph. In paragraph six, the Sovereign comes without hesitation to the aid of a small balloon in difficulties, whose crew are described as plucky.",
+    "Juno has the cutting framed and hangs it in the basket, upside down. Sir Lucan sends you a very nice letter. Nobody in the valley reads past paragraph five, and it is generally agreed that you were rescued. People are kind to you about it for years."
+   ],
+   "ending": {
+    "no": "XIII",
+    "title": "Paragraph Six",
+    "kind": "bad",
+    "epilogue": "Help is whatever the paper says it was.",
+    "hint": "Whoever holds the pen decides who rescued whom."
+   },
+   "nr": 48
+  },
+  "38": {
+   "chapter": "Over the Rim · Seven Huts",
+   "scene": "summit",
+   "tag": "Alt. 5,280. Huts: seven. Doors: pegged.",
+   "text": [
+    "Seven huts stand round the tarn, low and stone and turfed, grass growing on their roofs like hair that wants cutting. Every door is pegged shut with a wooden peg, the way you shut a door for the winter. Through a gap in one you can see slate shelves, and on them cheeses, rows of them, wrapped in cloth.",
+    "[[lintel|Over each door, under the lichen, a mark is cut deep and worn soft]], a different mark on every hut. The wind comes over the turf and hums in the stones. From the north edge of the meadow, a goat track runs off and drops over the rim."
+   ],
+   "choices": [
+    {
+     "text": "If you map every hut under the mark over its door,",
+     "short": "Map the huts",
+     "to": 39
+    },
+    {
+     "text": "If you fly the Meridian’s pennant from the biggest roof,",
+     "short": "Fly the pennant",
+     "to": 11
+    }
+   ],
+   "nr": 11
+  },
+  "39": {
+   "chapter": "An ending",
+   "scene": "descent",
+   "tag": "Map: true. Readers: none. Weight: considerable.",
+   "text": [
+    "You draw them all: seven huts, seven marks, the tarn, the shelves of cheese, the goat track to the north edge. It is the truest map you have ever made. You carry it down the mile of air at evening as if it might spill, and that night, in the Brass Goat, you show it to anyone who will look.",
+    "Next morning the Meridian runs SOVEREIGN CONQUERS THE TABLE, and nobody believes you. Only a goatherd girl, selling cheese at the inn door, looks at your map for a long time, and gives you a cheese for nothing.",
+    "~ You are right for the rest of your life. It never once gets lighter."
+   ],
+   "ending": {
+    "no": "XIV",
+    "title": "Right",
+    "kind": "silver",
+    "epilogue": "Right for the rest of your life, to nobody.",
+    "hint": "The truth travels better with someone beside it."
+   },
+   "nr": 46
+  },
+  "40": {
+   "chapter": "Over the Rim · After You, Sir",
+   "scene": "rim",
+   "tag": "Alt. 5,280. Lighter. Second, if wanted.",
+   "text": [
+    "Without the camera and the barometer the Lark goes up the ring like a cork, out of the cloud and over the rim with a hand’s breadth to spare. Under the basket, the mile of nothing; then turf, a tarn, seven turfed huts. The blanket lies at your feet, heavy as a guilty dog.",
+    "Ahead, the Sovereign is coming down on the greenest patch on the Table, flag ready in the gondola door, the gramophone going. Juno has her hand on the valve. She could beat them down. She has never wanted anything so much in her life. “Say the word,” she says."
+   ],
+   "choices": [
+    {
+     "text": "If you hold back and let the Sovereign land first,",
+     "short": "Let them land first",
+     "to": 45
+    },
+    {
+     "text": "If you vent hard and beat them down,",
+     "short": "Beat them down",
+     "to": 31
+    }
+   ],
+   "nr": 17
+  },
+  "41": {
+   "chapter": "Over the Rim · First",
+   "scene": "bog",
+   "tag": "Alt. 5,280. Landed. Sinking, slowly.",
+   "text": [
+    "The gramophone goes over the side still playing, and the Sovereign, four hundred pounds lighter and one march poorer, climbs over the north rim and settles on the greenest patch on the Table. First! The green is moss on black water. The gondola sinks to its windows, gently, the way a duck sits down.",
+    "Sir Lucan steps out and is in to the waist. He plants the pennant anyway, humming the march himself. Mr Vane shouts “First!” several times, in case the Table missed it. Through the drifting cloud, two hundred yards off, you can see seven stone huts."
+   ],
+   "choices": [
+    {
+     "text": "If you map the summit for the Meridian, as hired,",
+     "short": "Map it for the Meridian",
+     "to": 34
+    },
+    {
+     "text": "If you wade off to see who built the huts,",
+     "short": "Wade to the huts",
+     "to": 38
+    }
+   ],
+   "nr": 16
+  },
+  "42": {
+   "chapter": "An ending",
+   "scene": "haymeadow",
+   "tag": "Alt. 0. Evidence: delivered by hand.",
+   "text": [
+    "You keep it. At evening, with the whole valley on the meadow and the Sovereign back on her mast, dripping, you unwrap the blanket: the iron frame, the lead letters, SOVEREIGN CONQUERS THE TABLE, set before anybody took off. The crowd gasps. Mr Vane comes through it with his hand out.",
+    "“Thank you,” he says warmly. “The proof. We wondered where it had got to.” He explains to the crowd that newspapers always prepare for every outcome, which is perfectly usual, and has the frame carried to the back room.",
+    "~ It goes to press at dawn."
+   ],
+   "ending": {
+    "no": "XV",
+    "title": "Returned with Thanks",
+    "kind": "bad",
+    "epilogue": "You carried his headline home for him.",
+    "hint": "Proof works for whoever holds it last."
+   },
+   "nr": 38
+  },
+  "43": {
+   "chapter": "Over the Rim · The Tarrows’ Door",
+   "scene": "summit",
+   "tag": "Alt. 5,280. Arrived on foot. Unannounced.",
+   "text": [
+    "The chimney lets you out onto grass and wind and sudden light, and the Table is simply there: a meadow, a tarn black as a pupil, seven stone huts with turf roofs. Ilka unpegs a door, ducks in, and comes out sniffing a cheese.",
+    "~ “Ours,” she says. Then, pointing round the tarn as she goes: “Hask’s. Venn’s. Brack’s. Lune’s. Ashgill’s. That’s Dunnet’s. The roof leaks.”",
+    "Far off across the meadow the Sovereign sits in a bog to her windows, and someone is planting a flag in it, slowly. Ilka watches for a while, politely, the way you would watch a neighbour’s children. Then she starts loading cheeses."
+   ],
+   "choices": [
+    {
+     "text": "If you sit on a wall and draw it all, name by name,",
+     "short": "Draw it all",
+     "to": 46
+    },
+    {
+     "text": "If you help her load the cheeses and go straight back down,",
+     "short": "Load the cheeses",
+     "to": 44
+    }
+   ],
+   "nr": 49
+  },
+  "44": {
+   "chapter": "An ending",
+   "scene": "descent",
+   "tag": "Alt. falling. Cheese: forty pounds.",
+   "text": [
+    "You carry forty pounds of cheese down a mile of chimney on your back, behind a girl who carries sixty and sings. It is the hardest thing you have ever done, and somewhere around the polished steps it becomes the best day of your life. At the bottom the race is over. You don’t ask who won.",
+    "You never draw the Table. Nobody asks you to. But every autumn after that, when the families bring the last cheeses down, you are there at the foot of the north wall at dawn, with your own basket on your back and no pencil anywhere about you."
+   ],
+   "ending": {
+    "no": "XVI",
+    "title": "Cheese",
+    "kind": "strange",
+    "epilogue": "You never drew it. You carry it every year.",
+    "hint": "Some days are worth a whole map, unprinted."
+   },
+   "nr": 15
+  },
+  "45": {
+   "chapter": "Over the Rim · The Tarn",
+   "scene": "summit",
+   "tag": "Alt. 5,300. Tarn below. Blanket: heavy.",
+   "text": [
+    "The Sovereign comes down on the greenest patch and keeps going down; the green is moss on black water. Sir Lucan plants the pennant from the gondola door, in up to his elbow. Mr Vane is shouting “First!” Juno holds the Lark just off the grass and lets you drift on over the summit, slow as a cloud.",
+    "Below the basket lies the tarn: small, round, black and perfectly still, with the sky lying in it. Seven stone huts sit round it with their doors shut. A goat track runs off to the north edge.",
+    "~ The blanket is at your feet. It has never seemed heavier."
+   ],
+   "choices": [
+    {
+     "text": "If you drop Mr Vane’s front page into the tarn,",
+     "short": "Drop it in the tarn",
+     "to": 49
+    },
+    {
+     "text": "If you keep it to show the valley what Mr Vane did,",
+     "short": "Keep it as proof",
+     "to": 42
+    },
+    {
+     "text": "If you land beside the bog and help them out,",
+     "short": "Help them out",
+     "to": 36
+    }
+   ],
+   "nr": 29
+  },
+  "46": {
+   "chapter": "Coming Down · Evening",
+   "scene": "descent",
+   "tag": "Alt. falling. Light: gold. Knees: gone.",
+   "text": [
+    "You draw it all, sitting on the Tarrows’ wall while Ilka loads cheeses and corrects your spelling of every family. Then the long way down in the gold evening, behind her, the chimney full of shadow and the valley lighting its lamps one by one at the bottom of it, small and warm, like a town seen from a star.",
+    "At the foot, the meadow is all lanterns. Mr Vane is waiting by the hay cart with the terms and a pen. The map is inside your coat. In its corner is the cartouche, the little framed box where a map says what it is and who was there first, still empty."
+   ],
+   "choices": [
+    {
+     "text": "If you letter the cartouche: first ascent, the goatherds of Vell, date unknown,",
+     "short": "Letter the cartouche",
+     "to": 48
+    },
+    {
+     "text": "If you hand Mr Vane the map and leave the cartouche to him,",
+     "short": "Hand it to Mr Vane",
+     "to": 34
+    },
+    {
+     "text": "If you give it to Ilka’s grandmother and let the families decide,",
+     "short": "Give it to the families",
+     "to": 47
+    }
+   ],
+   "nr": 28
+  },
+  "47": {
+   "chapter": "An ending",
+   "scene": "haymeadow",
+   "tag": "Map: given. Drawer: shut.",
+   "text": [
+    "Ilka’s grandmother unrolls the map on her kitchen table, under the lamp, and the families come in one by one to look at their own roofs from above. They are very pleased. They find the leak in Dunnet’s. Then she rolls it up, ties it with cheese string, and puts it in the dresser drawer.",
+    "Next morning the Meridian runs SOVEREIGN CONQUERS THE TABLE. The families read it over breakfast and say nothing; they have never needed a map to go home. Nobody from the capital comes to ask them anything. Your best work lies in a drawer in Vell, with the good spoons."
+   ],
+   "ending": {
+    "no": "XVII",
+    "title": "In a Drawer",
+    "kind": "strange",
+    "epilogue": "Kept safe. Read by no one.",
+    "hint": "Some truths have to be printed to stay true."
+   },
+   "nr": 20
+  },
+  "48": {
+   "chapter": "An ending",
+   "scene": "descent",
+   "tag": "First ascent: date unknown. Prize: none.",
+   "text": [
+    "You letter it in your best hand: First ascent, the goatherds of Vell, date unknown. Then the seven huts, each under its family’s name. Mr Vane reads it by his lantern, folds it once, and gives it back. “The Meridian,” he says, “does not print corrections to things it has not yet printed.”",
+    "The Brisk sisters do, on the hand press in their kite shed. Dot inks, Nell argues, and by morning every house in Vell has bought a copy and pinned it by the window that faces the Table.",
+    "~ There is no prize. Juno, who brought the Lark down at dusk out of paraffin and cheerful, buys the first one, on credit."
+   ],
+   "ending": {
+    "no": "XVIII",
+    "title": "Date Unknown",
+    "kind": "good",
+    "star": true,
+    "epilogue": "First ascent: the goatherds of Vell, date unknown.",
+    "hint": "The first to arrive is rarely the first to be asked."
+   },
+   "nr": 10
+  },
+  "49": {
+   "chapter": "An ending",
+   "scene": "summit",
+   "tag": "Front page: white. One line: true.",
+   "text": [
+    "You let go. Tomorrow’s news drops through the bright air, shrugs off its blanket and strikes the tarn with one deep note, and the black water closes over SOVEREIGN CONQUERS THE TABLE and every capital S in Vell. The Lark leaps. Juno sets you down by the huts, and over each door is cut the kind of mark the goatherds press into their cheese.",
+    "~ At three in the morning the compositor’s boy lets you into the back room. You set one line, backwards, the way engravers do. At dawn the Meridian goes out white from edge to edge, with your line above the white: The Table: walked every summer by the goatherds of Vell. Ask them."
+   ],
+   "ending": {
+    "no": "XIX",
+    "title": "The Blank Page",
+    "kind": "good",
+    "star": true,
+    "epilogue": "The only blank front page the Meridian ever printed.",
+    "hint": "The heaviest thing aboard is not always sand."
+   },
+   "nr": 25
+  }
+ }
+}

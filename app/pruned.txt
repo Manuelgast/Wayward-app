@@ -3,7 +3,7 @@ img/age-edge.webp
 img/age-spots.webp
 img/arches-sm.webp
 img/ashfall-sm.webp
-img/basket-sm.webp
+img/bog-sm.webp
 img/brakevan-sm.webp
 img/cape-sm.webp
 img/capeattwo-sm.webp
@@ -15,6 +15,7 @@ img/compassdoor-sm.webp
 img/cottagedoor-sm.webp
 img/crater-sm.webp
 img/dawn-sm.webp
+img/descent-sm.webp
 img/drawndoor-sm.webp
 img/engine-sm.webp
 img/flats-sm.webp
@@ -32,9 +33,15 @@ img/pass-sm.webp
 img/procession-sm.webp
 img/redwind-sm.webp
 img/returnspecimen-sm.webp
+img/rim-sm.webp
+img/ringwind-sm.webp
 img/s01cape-sm.webp
 img/s01cover-sm.webp
 img/s01quay-sm.webp
+img/s02cover-sm.webp
+img/s02cow-sm.webp
+img/s02dawn-sm.webp
+img/s02well-sm.webp
 img/scriptoriumfire-sm.webp
 img/sleeper-sm.webp
 img/stair-sm.webp
