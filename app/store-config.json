@@ -19,6 +19,9 @@
     { "id": "book_sky", "type": "book", "kind": "inapp" },
     { "id": "book_sky_b", "type": "book", "kind": "inapp" },
     { "id": "book_sky_c", "type": "book", "kind": "inapp" },
+    { "id": "book_atlas", "type": "book", "kind": "inapp" },
+    { "id": "book_atlas_b", "type": "book", "kind": "inapp" },
+    { "id": "book_atlas_c", "type": "book", "kind": "inapp" },
     { "id": "pass_monthly", "type": "pass", "kind": "subs", "plan": "monthly", "period": "month" },
     { "id": "pass_lifetime", "type": "pass", "kind": "inapp", "period": "lifetime" }
   ],

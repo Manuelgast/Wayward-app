@@ -54,5 +54,32 @@ window.WAYWARD_SEALS = [
    "en": "Kesh, before sunrise",
    "nl": "Kesh, voor zonsopgang"
   }
+ },
+ {
+  "id": "seal-03",
+  "no": 3,
+  "seal": true,
+  "parent": "paper-sky",
+  "rarity": "common",
+  "wax": "black",
+  "mark": "P",
+  "file": "seal03",
+  "relics": "relics_none.json",
+  "interludes": "seal03_interludes.json",
+  "store": "wayward.seal-03.v1",
+  "coverScene": "s03cover",
+  "freeEndings": 99,
+  "title": {
+   "en": "Penny Ascents",
+   "nl": "Een stuiver de hoogte in"
+  },
+  "teaser": {
+   "en": "A penny an ascent. The wind wants rather more.",
+   "nl": "Een stuiver per keer. De wind wil wat meer."
+  },
+  "postmark": {
+   "en": "Vell, the summer fair",
+   "nl": "Vell, op de zomerkermis"
+  }
  }
 ];

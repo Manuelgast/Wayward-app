@@ -1,0 +1,428 @@
+{
+ "2": {
+  "type": "turn",
+  "lines": {
+   "en": [
+    "The pages are as big as tablecloths, and as heavy.",
+    "Plates one to six: mountains, coasts, a fleet."
+   ],
+   "nl": [
+    "De bladen zijn zo groot als tafellakens, en even zwaar.",
+    "Platen één tot zes: bergen, kusten, een vloot."
+   ]
+  },
+  "prompt": {
+   "en": "Turn to Plate 7",
+   "nl": "Blader naar Plaat 7"
+  },
+  "done": {
+   "en": "The Sorrel. One long blue stroke.",
+   "nl": "De Sorrel. Eén lange blauwe haal."
+  },
+  "x": 58,
+  "y": 37
+ },
+ "3": {
+  "type": "knock",
+  "lines": {
+   "en": [
+    "The violet carriage sets you down at the Chancery.",
+    "Behind the door, someone has been expecting you."
+   ],
+   "nl": [
+    "Het violette rijtuig zet je af bij de Kanselarij.",
+    "Achter de deur wordt er al op je gewacht."
+   ]
+  },
+  "prompt": {
+   "en": "Knock three times",
+   "nl": "Klop drie keer"
+  },
+  "done": {
+   "en": "Both hands out. “The Ink!”",
+   "nl": "Uitgestoken handen. “De Inkt!”"
+  },
+  "knocks": 3,
+  "zoom": [
+   89,
+   26
+  ],
+  "x": 89,
+  "y": 26
+ },
+ "6": {
+  "type": "trace",
+  "lines": {
+   "en": [
+    "The old bank runs off under the grass.",
+    "Dead willow after dead willow, keeping the line."
+   ],
+   "nl": [
+    "De oude oever loopt onder het gras door.",
+    "Dode wilg na dode wilg, trouw aan de lijn."
+   ]
+  },
+  "prompt": {
+   "en": "Trace the old bed",
+   "nl": "Volg de oude bedding"
+  },
+  "done": {
+   "en": "It leads to chimney smoke.",
+   "nl": "Hij leidt naar schoorsteenrook."
+  },
+  "x": 49,
+  "y": 72,
+  "path": [
+   [
+    49,
+    72
+   ],
+   [
+    48.5,
+    67
+   ],
+   [
+    48,
+    62
+   ],
+   [
+    47.5,
+    57
+   ],
+   [
+    47,
+    53
+   ],
+   [
+    46,
+    48
+   ],
+   [
+    45,
+    44
+   ],
+   [
+    45,
+    40
+   ],
+   [
+    46,
+    36
+   ],
+   [
+    48,
+    33
+   ]
+  ]
+ },
+ "8": {
+  "type": "wipe",
+  "lines": {
+   "en": [
+    "Moss on the keystone, thick as a cushion.",
+    "Something is cut into the stone beneath."
+   ],
+   "nl": [
+    "Mos op de sluitsteen, dik als een kussen.",
+    "Daaronder is iets in de steen gehakt."
+   ]
+  },
+  "prompt": {
+   "en": "Wipe the moss away",
+   "nl": "Veeg het mos weg"
+  },
+  "done": {
+   "en": "A line, a date. Thirty-eight years ago.",
+   "nl": "Een lijn, een jaartal. Achtendertig jaar geleden."
+  },
+  "x": null,
+  "y": null
+ },
+ "9": {
+  "type": "lantern",
+  "lines": {
+   "en": [
+    "Your lamp makes a small gold room around the atlas.",
+    "Above, the skylight is dark and thick with dust."
+   ],
+   "nl": [
+    "Je lamp maakt een klein gouden kamertje rond de atlas.",
+    "Boven je is het dakraam donker en dik bestoft."
+   ]
+  },
+  "prompt": {
+   "en": "Raise your lantern",
+   "nl": "Hef je lantaarn"
+  },
+  "done": {
+   "en": "One pane is clean. From outside.",
+   "nl": "Eén ruitje is schoon. Van buitenaf."
+  },
+  "x": 57,
+  "y": 10
+ },
+ "11": {
+  "type": "tap",
+  "lines": {
+   "en": [
+    "Tea with the Chancellor is an event.",
+    "On a side table sits a hatbox."
+   ],
+   "nl": [
+    "Thee bij de kanselier is een gebeurtenis.",
+    "Op een bijzettafel staat een hoedendoos."
+   ]
+  },
+  "prompt": {
+   "en": "Lift the lid",
+   "nl": "Til het deksel op"
+  },
+  "done": {
+   "en": "Crow feathers, glossy and black. A boxful.",
+   "nl": "Kraaienveren, glanzend en zwart. Een hele doos."
+  },
+  "x": 80,
+  "y": 47
+ },
+ "16": {
+  "type": "follow",
+  "lines": {
+   "en": [
+    "A plain black mask slips out by the terrace doors.",
+    "Violet cuffs, a lamp, a service stair."
+   ],
+   "nl": [
+    "Een eenvoudig zwart masker glipt door de terrasdeuren.",
+    "Violette manchetten, een lamp, een diensttrap."
+   ]
+  },
+  "prompt": {
+   "en": "Follow the cuffs",
+   "nl": "Volg de manchetten"
+  },
+  "done": {
+   "en": "By a chimney waits a woman in grey silk.",
+   "nl": "Bij een schoorsteen wacht een vrouw in grijze zijde."
+  },
+  "seconds": 5,
+  "path": [
+   [
+    55,
+    70
+   ],
+   [
+    50,
+    66
+   ],
+   [
+    47,
+    62
+   ],
+   [
+    46,
+    57
+   ],
+   [
+    46,
+    53
+   ],
+   [
+    47,
+    49
+   ],
+   [
+    45,
+    46
+   ],
+   [
+    41,
+    42
+   ],
+   [
+    38,
+    38
+   ],
+   [
+    36,
+    34
+   ]
+  ],
+  "door": [
+   30,
+   24,
+   43,
+   36
+  ],
+  "keep": {
+   "en": "Keep your finger on his lamp",
+   "nl": "Houd je vinger op zijn lamp"
+  },
+  "x": 55,
+  "y": 70
+ },
+ "19": {
+  "type": "trace",
+  "lines": {
+   "en": [
+    "Yew walls, shoulder high, every turn the same.",
+    "She never hesitates once."
+   ],
+   "nl": [
+    "Taxusmuren, schouderhoog, elke bocht hetzelfde.",
+    "Ze aarzelt geen enkele keer."
+   ]
+  },
+  "prompt": {
+   "en": "Follow her path",
+   "nl": "Volg haar route"
+  },
+  "done": {
+   "en": "The centre. She was never lost.",
+   "nl": "Het midden. Ze was nooit verdwaald."
+  },
+  "x": 57,
+  "y": 72,
+  "path": [
+   [
+    57,
+    72
+   ],
+   [
+    59,
+    68
+   ],
+   [
+    62,
+    64.5
+   ],
+   [
+    66,
+    61.5
+   ],
+   [
+    69,
+    57
+   ],
+   [
+    70,
+    52
+   ],
+   [
+    71,
+    47
+   ],
+   [
+    72,
+    42
+   ],
+   [
+    72,
+    38
+   ],
+   [
+    69,
+    36
+   ],
+   [
+    65,
+    35
+   ]
+  ]
+ },
+ "21": {
+  "type": "turn",
+  "lines": {
+   "en": [
+    "Pledges: a cello, a tiara, somebody’s false teeth.",
+    "Number seven is near the back."
+   ],
+   "nl": [
+    "Panden: een cello, een tiara, iemands kunstgebit.",
+    "Nummer zeven zit achterin."
+   ]
+  },
+  "prompt": {
+   "en": "Turn the pages",
+   "nl": "Sla de bladzijden om"
+  },
+  "done": {
+   "en": "Bett’s thimble. And a letter.",
+   "nl": "Betts vingerhoed. En een brief."
+  },
+  "x": 50,
+  "y": 45
+ },
+ "25": {
+  "type": "hold",
+  "lines": {
+   "en": [
+    "The wedding kitchens are a battlefield of meringue.",
+    "Bett ties the bride’s bouquet. Somebody has to hold it."
+   ],
+   "nl": [
+    "De bruiloftskeukens zijn een slagveld van schuimgebak.",
+    "Bett bindt het bruidsboeket. Iemand moet het vasthouden."
+   ]
+  },
+  "prompt": {
+   "en": "Hold the bouquet",
+   "nl": "Houd het boeket vast"
+  },
+  "done": {
+   "en": "One grey sprig of willow, tucked deep.",
+   "nl": "Eén grijs takje wilg, diep weggestopt."
+  },
+  "x": 45,
+  "y": 40
+ },
+ "26": {
+  "type": "rope",
+  "lines": {
+   "en": [
+    "Sixty feet of wedding lamps under your boots.",
+    "The rope hums like a plucked string."
+   ],
+   "nl": [
+    "Zestig voet bruiloftslampen onder je laarzen.",
+    "Het touw zoemt als een getokkelde snaar."
+   ]
+  },
+  "prompt": {
+   "en": "Pull hand over hand",
+   "nl": "Hand over hand"
+  },
+  "done": {
+   "en": "Lead under your knees. Cold, solid.",
+   "nl": "Lood onder je knieën. Koud, stevig."
+  },
+  "x": 64,
+  "y": 47,
+  "bell": [
+   46,
+   44
+  ]
+ },
+ "28": {
+  "type": "tap",
+  "lines": {
+   "en": [
+    "Cut threads where Plate 7 should be.",
+    "The Chancellor rises, a crow feather in her glove."
+   ],
+   "nl": [
+    "Doorgesneden draden waar Plaat 7 hoort.",
+    "De kanselier staat op, een kraaienveer in haar handschoen."
+   ]
+  },
+  "prompt": {
+   "en": "Lay down the plate",
+   "nl": "Leg de plaat neer"
+  },
+  "done": {
+   "en": "River, willows and all. She sits.",
+   "nl": "Met rivier, wilgen en al. Ze gaat zitten."
+  },
+  "x": 41,
+  "y": 43
+ }
+}

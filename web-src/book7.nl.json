@@ -1,0 +1,1177 @@
+{
+ "id": "kings-atlas",
+ "title": "De Atlas van de Koning",
+ "series": "De Veyra-cyclus · Boek VII",
+ "imprint": "Een Wayward-uitgave",
+ "tagline": "Twee koninkrijken. Eén bruiloft. Eén lijn inkt, en jij houdt de pen vast.",
+ "warning": "Lees dit boek niet van voor naar achter. Aan het eind van elke bladzijde beslis jij wat er gebeurt. Sommige keuzes staan in potlood. Andere in inkt.",
+ "start": 1,
+ "scenes": {
+  "cityweddings": {
+   "title": "Aurenne in bruiloftstooi",
+   "focus": "50% 55%"
+  },
+  "maproom": {
+   "title": "De Kaartenkamer en de geketende atlas",
+   "focus": "50% 55%"
+  },
+  "ballroom": {
+   "title": "Het gemaskerd bal",
+   "focus": "50% 55%"
+  },
+  "rooftops": {
+   "title": "De daken van Aurenne in de schemering",
+   "focus": "50% 55%"
+  },
+  "pawnshop": {
+   "title": "De lommerd onder de Stuiverbrug",
+   "focus": "50% 55%"
+  },
+  "chancery": {
+   "title": "De werkkamer van de kanselier",
+   "focus": "50% 55%"
+  },
+  "maze": {
+   "title": "Het doolhof van het paleis",
+   "focus": "50% 55%"
+  },
+  "sorrel": {
+   "title": "De Sorrel, oude bedding en nieuwe",
+   "focus": "50% 55%"
+  },
+  "marrowby": {
+   "title": "Marrowby in het Zwerfland",
+   "focus": "50% 55%"
+  },
+  "chapel": {
+   "title": "De trouwkapel",
+   "focus": "50% 55%"
+  },
+  "kitchens": {
+   "title": "De paleiskeukens",
+   "focus": "50% 55%"
+  },
+  "oldbridge": {
+   "title": "De brug over het gras",
+   "focus": "50% 55%"
+  },
+  "vault": {
+   "title": "De kluis van de atlas bij nacht",
+   "focus": "50% 55%"
+  },
+  "balcony": {
+   "title": "Het koninklijk balkon op de bruiloftsochtend",
+   "focus": "50% 55%"
+  },
+  "cloakroom": {
+   "title": "This scene is in the evening",
+   "focus": "50% 55%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Vijf dagen · Aurenne",
+   "scene": "cityweddings",
+   "tag": "Kaartenkamer, tien uur stipt. Inkt meenemen.",
+   "text": [
+    "Aurenne heeft elke vlag uitgehangen die het bezit, en er nog een paar van Corvel bij geleend. Op elk spandoek zijn het gouden hert en de zwarte kraai aan elkaar genaaid, als een stel bij zijn eerste dans. Op je uitnodiging stond één woord: “Inkt.” Over vijf dagen, op de bruiloftsochtend, zet jij de verdragslijn langs de rivier de Sorrel in inkt op Plaat 7 van de Atlas van de Koning. Veertig jaar ruzie, beslecht door jouw pen. Geen druk, hoor.",
+    "De menigte ruikt naar suikeramandelen en geruchten: de Munt slaat nieuwe kronen, bruid en bruidegom en profil, die niet vóór de bruiloft mogen worden uitgegeven. Een rijtuig in kanselarijviolet wacht met jouw naam op een kaartje. Een jongen van een jaar of negen gaat er net vandoor met je pennenkoker."
+   ],
+   "choices": [
+    {
+     "text": "Als je meteen naar de Kaartenkamer gaat, zoals je ontboden bent,",
+     "short": "Ga naar de Kaartenkamer",
+     "to": 2
+    },
+    {
+     "text": "Als je in het rijtuig van de kanselier stapt,",
+     "short": "Neem het rijtuig",
+     "to": 3
+    },
+    {
+     "text": "Als je de jongen met je pennenkoker achternazit,",
+     "short": "Zit de jongen achterna",
+     "to": 4
+    }
+   ],
+   "nr": 1
+  },
+  "2": {
+   "chapter": "Vijf dagen · De Kaartenkamer",
+   "scene": "maproom",
+   "tag": "Plaat 7. Niet op de atlas leunen.",
+   "text": [
+    "Meester Oswin Pell opent de Kaartenkamer met de vierde van zijn elf sleutels en stapt opzij, als voor een hertogin. De Atlas van de Koning ligt met een ketting aan zijn lessenaar, zo groot als een tuinhek. Je bladert naar Plaat 7: de Sorrel in één lange blauwe haal, en in de laatste bocht [[edda|twee piepkleine initialen, E.M., en in de marge, in potlood: “voorlopig”]].",
+    "“Zijne Majesteit wil de lijn langs die rivier, zoals getekend,” zegt Oswin, “en een netexemplaar voor het archief van Corvel.” De deur vliegt open voor graaf Rufus Halloran, gezant van Corvel. “De rivierlijn, Inkt! De rivier ligt waar de rivier ligt, en dat is twee mijl oostelijker!” Hij tikt met een worstje op Plaat 7. “Lunchen?”"
+   ],
+   "choices": [
+    {
+     "text": "Als je eerst naar de Sorrel rijdt,",
+     "short": "Rijd naar de rivier",
+     "to": 6
+    },
+    {
+     "text": "Als je vanavond aan het netexemplaar begint,",
+     "short": "Begin aan het netexemplaar",
+     "to": 9
+    },
+    {
+     "text": "Als je met de graaf gaat lunchen,",
+     "short": "Ga mee lunchen",
+     "to": 5
+    }
+   ],
+   "nr": 4
+  },
+  "3": {
+   "chapter": "Vijf dagen · De kanselier",
+   "scene": "chancery",
+   "tag": "Ontbijt, de kanselier. Charmant zijn. Kort.",
+   "text": [
+    "Vrouwe Seraphine Dorne, kanselier van Aurenne, ontvangt je aan haar deur met uitgestoken handen. “De Inkt! Precies zo slim als ze zeiden, en veel beter gekleed.” Haar werkkamer is verguldsel en orde. Haar klerken schrijven in [[violet|kanselarijviolet, een inkt die niemand anders mag gebruiken]]; het gaat er nooit meer uit, en hun manchetten zijn paars tot de pols.",
+    "Onder het ontbijt stelt ze je aan iedereen voor: de muntmeester, twee generaals, een hertogin met een papegaai. De gieterijen van haar familie, geeft ze toe, leveren kanonnen aan half het continent. “Vreselijk lawaaiige dingen. Ik heb er nog nooit een afgevuurd.” Ze schenkt bij. “Je moet me alles vertellen wat je hoort. Ik ben dol op roddels, en ze komen zo zelden vers binnen.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je je door haar rijtuig naar de Kaartenkamer laat brengen,",
+     "short": "Ga naar de Kaartenkamer",
+     "to": 2
+    },
+    {
+     "text": "Als je je door haar laat doorsturen naar de lunch met graaf Halloran uit Corvel,",
+     "short": "Ontmoet de graaf",
+     "to": 5
+    },
+    {
+     "text": "Als je belooft haar alles te vertellen wat je hoort,",
+     "short": "Beloof haar alles",
+     "to": 11
+    }
+   ],
+   "nr": 10
+  },
+  "4": {
+   "chapter": "Vijf dagen · Onder de Stuiverbrug",
+   "scene": "pawnshop",
+   "tag": "Pennenkoker: gestolen. Dief: een jaar of negen.",
+   "text": [
+    "De jongen leidt je onder de Stuiverbrug door, een lommerd in die naar bijenwas en andermans erfstukken ruikt. Je pennenkoker ligt al op de toonbank, gepoetst. Daarachter wacht een vrouw in grijze zijde, een juweliersloep in één oog. “Wren Ashgrove. Ze noemen me de Ekster. Mijn leerlingen oefenen op bezoekers. Vat het op als een compliment: ze pikken alleen de interessante.”",
+    "Een stille heer aan de toonbank steekt een kwitantie bij zich en vertrekt zonder je aan te kijken. Hij heeft [[cuffs|violette inkt op allebei zijn manchetten]]. De Ekster kijkt hem na. “Jij bent de Inkt,” zegt ze. “Ik heb een klus voor iemand die een plattegrond kan lezen. Eén avond. Geen geweld. Uitstekend tarief.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je haar vraagt wat voor klus het is,",
+     "short": "Vraag naar de klus",
+     "to": 10
+    },
+    {
+     "text": "Als je je pennenkoker pakt en je naar de Kaartenkamer haast,",
+     "short": "Haast je naar de Kaartenkamer",
+     "to": 2
+    },
+    {
+     "text": "Als je toch teruggaat naar het rijtuig van de kanselier,",
+     "short": "Neem het rijtuig",
+     "to": 3
+    }
+   ],
+   "nr": 15
+  },
+  "5": {
+   "chapter": "Vijf dagen · Lunch met de graaf",
+   "scene": "kitchens",
+   "tag": "Lunch, graaf Halloran. Afstand houden.",
+   "text": [
+    "Graaf Halloran luncht in de paleiskeukens, want daar is het eten, zegt hij, voordat iemand het verpest met een tafelkleed. Tussen een pastei en een patrijs door legt hij de rivierlijn uit. “Water liegt niet, Inkt. Waar de Sorrel vandaag loopt, daar ligt de grens. Simpel!” In een hoek kneedt een klein oud vrouwtje in Corvels zwart deeg alsof het haar geld schuldig is.",
+    "“Bett!” brult de graaf. “De oude kindermeid van de prinses. Uit het Zwerfland! Betaalde belasting aan ons allebei, hè Bett?” “Betaalde,” zegt Bett, “en vertrok.” Dan schuift hij een akte over tafel: een huisje in Corvel, aan de rivier, met rozen. “Een huwelijkscadeau,” zegt hij. “Daar hangt verder niets aan.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je het huisje aanneemt; het is alleen maar beleefd,",
+     "short": "Neem het huisje aan",
+     "to": 47
+    },
+    {
+     "text": "Als je morgen zelf naar zijn rivier gaat kijken,",
+     "short": "Ga zelf kijken",
+     "to": 6
+    },
+    {
+     "text": "Als je Bett de weg naar het Zwerfland vraagt,",
+     "short": "Vraag Bett de weg",
+     "to": 7
+    }
+   ],
+   "nr": 21
+  },
+  "6": {
+   "chapter": "Vier dagen · De Sorrel",
+   "scene": "sorrel",
+   "tag": "De Sorrel, een dag rijden. Laarzen aan.",
+   "text": [
+    "Tegen het middaguur sta je waar elke kaart in Aurenne de Sorrel neerlegt, en de Sorrel is er niet. Er is een wei, er zijn leeuweriken, en koeien die nog nooit van een verdrag hebben gehoord. Dwars door het gras lopen [[willows|twee rijen dode wilgen zonder rivier ertussen]], grijs en scheef, als gasten die wachten op een gastheer die nooit meer thuiskwam.",
+    "Twee mijl oostelijker vind je de rivier, bruin en bedrijvig; hij knaagt waar je bij staat aan zijn oever, en er glijdt een plak graszode in terwijl je de tijd noteert. Terug bij de wilgen volg je de oude lijn op je zakkaart. Hij loopt door, zo zuiver als op de dag dat hij werd getekend, naar een veeg schoorsteenrook."
+   ],
+   "choices": [
+    {
+     "text": "Als je de wilgen volgt naar de rook,",
+     "short": "Volg de wilgen",
+     "to": 7
+    },
+    {
+     "text": "Als je op tijd terugrijdt om je te verkleden voor het bal,",
+     "short": "Rijd terug voor het bal",
+     "to": 13
+    }
+   ],
+   "nr": 38
+  },
+  "7": {
+   "chapter": "Vier dagen · Marrowby",
+   "scene": "marrowby",
+   "tag": "Marrowby. Op geen enkele gastenlijst.",
+   "text": [
+    "Marrowby, diep in het Zwerfland, bestaat uit twee rijen huisjes die elkaar aankijken over een strook wei, als een straat die wacht tot zijn rivier thuiskomt. Halverwege gaat een stenen brug over het gras. Onderaan het dorp drijft de echte Sorrel het molenrad aan; de molenaar slaapt op de ene oever en maalt op de andere.",
+    "In de herberg tref je [[twotaxes|twee belastinginners aan één tafel, die elkaar het zout doorgeven]], een uit Aurenne en een uit Corvel, allebei aan hun tweede bord. “Elk kwartaal,” zegt de waardin. “We betalen ze allebei en voeren ze allebei, en allebei schrijven ze ons thuis op als van de ander.” Niemand in Marrowby is uitgenodigd voor de bruiloft."
+   ],
+   "choices": [
+    {
+     "text": "Als je naar de brug over het gras loopt,",
+     "short": "Loop naar de brug",
+     "to": 8
+    },
+    {
+     "text": "Als je je terughaast naar de stad voor het bal,",
+     "short": "Haast je terug",
+     "to": 13
+    },
+    {
+     "text": "Als je blijft en Marrowby een kaart van zichzelf tekent,",
+     "short": "Blijf en teken het",
+     "to": 43
+    }
+   ],
+   "nr": 41
+  },
+  "8": {
+   "chapter": "Vier dagen · De brug over het gras",
+   "scene": "oldbridge",
+   "tag": "Eén brug. Geen rivier. Koeien onverschillig.",
+   "text": [
+    "De brug is van goede grijze steen, drie bogen, gebouwd voor een rivier die haar midden in een wei heeft laten staan. Kinderen zitten op de borstwering en bungelen met hun benen boven de boterbloemen. Onder het mos op de sluitsteen vind je [[keystone|een waterlijn in de steen gehakt, met een jaartal]]: achtendertig jaar geleden, het voorjaar waarin de rivier vertrok.",
+    "Een vrouw met een schort haast zich uit het dichtstbijzijnde huisje met een pakje aan een touwtje. “Ga je naar het paleis? Geef dit dan aan mijn zus Bett, de kindermeid van de prinses. Honing, uit het Zwerfland.” Ze duwt het je in de armen. “Zeg maar dat de bijen het goed maken en dat de inners nog dezelfde zijn.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je terugrijdt naar de stad voor het bal,",
+     "short": "Rijd terug voor het bal",
+     "to": 13
+    },
+    {
+     "text": "Als je het bal overslaat en het pakje meteen naar Bett brengt,",
+     "short": "Breng Bett het pakje",
+     "to": 20
+    }
+   ],
+   "nr": 32
+  },
+  "9": {
+   "chapter": "Vijf dagen · Het netexemplaar",
+   "scene": "vault",
+   "tag": "Kluis, na donker. Plaat 7 overtekenen.",
+   "text": [
+    "Bij zonsondergang rijdt Oswin de atlas op een karretje de kluis in, stopt hem in onder een fluwelen kleed en ketent hem aan een ring in de vloer. “Welterusten,” zegt hij tegen hem, en hij sluit je bij hem op. De kluis is een stenen doos met een dakraam. Lijn voor lijn teken je Plaat 7 over: elke bocht van de rivier, elk wilgje, elk woord in potlood.",
+    "Tegen middernacht hef je je lantaarn om je ogen rust te geven en kijk je omhoog naar het dakraam. Twintig stoffige ruitjes, en [[pane|één ruitje schoongeveegd, van buitenaf]], alsof iemand de atlas beter wilde zien dan het stof toeliet. Daarachter is de nacht vol daken."
+   ],
+   "choices": [
+    {
+     "text": "Als je bij het eerste licht naar de Sorrel zelf rijdt,",
+     "short": "Rijd bij dageraad uit",
+     "to": 6
+    },
+    {
+     "text": "Als je het dakraam bij de thee ter sprake brengt bij de kanselier,",
+     "short": "Vertel het de kanselier",
+     "to": 11
+    },
+    {
+     "text": "Als je bij je kopie blijft tot elke lijn volmaakt is,",
+     "short": "Maak de kopie volmaakt",
+     "to": 42
+    }
+   ],
+   "nr": 17
+  },
+  "10": {
+   "chapter": "Vijf dagen · De achterkamer",
+   "scene": "pawnshop",
+   "tag": "Achterkamer. Thee. Niets ondertekenen.",
+   "text": [
+    "De achterkamer van de Ekster hangt vol klokken waarvan er geen twee gelijk lopen, “zodat niemand iets kan bewijzen”. Ze schenkt thee en legt uit zonder iets uit te leggen: één blad uit één boek, op de avond voor de bruiloft, uit een kamer met een dakraam. “Ik heb iemand nodig die een plaat van een bladzijde kan onderscheiden. Ik vraag klanten nooit waarom. Waarom is duur.”",
+    "Ze telt je voorschot uit in [[crowns|nieuwe kronen, bruid en bruidegom en profil]], glanzend als visjes. “Niet uit te geven vóór de bruiloft,” zegt ze, “maar klanten betalen graag vroeg.” Dan steekt ze een hand uit in een grijze handschoen. Het is een heel vaste hand, en ze heeft er geen enkele haast mee dat je hem schudt."
+   ],
+   "choices": [
+    {
+     "text": "Als je haar de hand schudt,",
+     "short": "Sla toe",
+     "to": 12
+    },
+    {
+     "text": "Als je beleefd bedankt en je er ver buiten houdt,",
+     "short": "Bedank beleefd",
+     "to": 13
+    },
+    {
+     "text": "Als je met de munten regelrecht naar de kanselier gaat,",
+     "short": "Geef het aan",
+     "to": 35
+    }
+   ],
+   "nr": 25
+  },
+  "11": {
+   "chapter": "Vier dagen · Thee op de Kanselarij",
+   "scene": "chancery",
+   "tag": "Thee, de kanselier, vier uur. Roddels.",
+   "text": [
+    "De volgende middag is thee bij de kanselier een gebeurtenis. Ze schenkt in, bewondert je manchetten en luistert naar alles wat je vertelt alsof je haar voorleest uit een heel goede roman. Op een bijzettafel staat [[feathers|een hoedendoos vol glanzende zwarte kraaienveren]]. “Voor de hoeden van de dames uit Corvel,” zegt ze. “Een kleine attentie. Corvel is zo dol op zijn kraai.”",
+    "Ze laat je de tafelschikking zien, de menu’s, de volgorde van het vuurwerk. Ze weet welke hertog snurkt en welke hertogin vals speelt met kaarten. Dan geeft ze je een zilveren masker voor het bal. “Ga bij de prinses staan,” zegt ze. “Ze zegt nooit iets. Misschien hoor je het.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je haar masker naar het bal draagt,",
+     "short": "Draag haar masker",
+     "to": 13
+    },
+    {
+     "text": "Als je haar rijtuig leent om de Sorrel te gaan zien,",
+     "short": "Leen het rijtuig",
+     "to": 6
+    }
+   ],
+   "nr": 48
+  },
+  "12": {
+   "chapter": "Vier dagen · Boven op de daken",
+   "scene": "rooftops",
+   "tag": "Dak van de klokkenmaker. Zachte schoenen. Geen vragen.",
+   "text": [
+    "Je slaat toe. De volgende dag komt de bende van de Ekster in de schemering samen op het dak van een klokkenmaker: een lantaarnopsteker, twee zussen die elkaars leugens afmaken, en de jongen van de pennenkoker, die je met een buiging je zakdoek teruggeeft. Beneden gaan de bruiloftslampen van Aurenne straat voor straat aan. Aan de overkant staat het paleis, en in het lood van zijn dak een dakraam.",
+    "“Avond voor de bruiloft, half twaalf,” zegt de Ekster. “Door het dakraam naar binnen, één blad lossnijden, om middernacht op het dak aan de man van de klant geven. Jij zegt of het het juiste blad is, en heel. Maar eerst ga je als jezelf naar het bal en tel je de wachten op de trap naar de kluis.” Ze glimlacht. “Iedereen heeft een liefhebberij nodig.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je naar het bal gaat en de wachten telt,",
+     "short": "Tel de wachten",
+     "to": 18
+    },
+    {
+     "text": "Als je hierboven blijft en de daken echt leert kennen,",
+     "short": "Leer de daken kennen",
+     "to": 46
+    }
+   ],
+   "nr": 8
+  },
+  "13": {
+   "chapter": "Drie dagen · Het gemaskerd bal",
+   "scene": "ballroom",
+   "tag": "Het gemaskerd bal. Negen uur. Maskers verstrekt.",
+   "text": [
+    "Drie avonden voor de bruiloft geeft het paleis zijn gemaskerd bal. De balzaal is zo grondig verguld dat de lakeien er ondergekleed bij lopen. Vijfhonderd maskers, één orkest, en elk gesprek gaat over de Sorrel, die geen van de aanwezigen ooit heeft gezien. De kanselier zweeft rond in zilver. Graaf Halloran schuift zijn masker omhoog om te eten en vergeet het weer omlaag te doen. Prins Aldric is zoek; volgens een lakei is hij “een rustig plekje gaan zoeken om doodsbang te zijn”.",
+    "Prinses Ysmay staat bij een zuil, gemaskerd als reiger, en kijkt naar de dansvloer zoals anderen naar het weer kijken. Bij de terrasdeuren trekt een heer met een eenvoudig zwart masker zijn manchetten recht. Ze zijn violet."
+   ],
+   "choices": [
+    {
+     "text": "Als je de prinses ten dans vraagt,",
+     "short": "Vraag de prinses ten dans",
+     "to": 14
+    },
+    {
+     "text": "Als je graaf Halloran opzoekt bij het buffet,",
+     "short": "Zoek de graaf op",
+     "to": 15
+    },
+    {
+     "text": "Als je de violette manchetten naar buiten volgt, het terras op,",
+     "short": "Volg de manchetten",
+     "to": 16
+    }
+   ],
+   "nr": 44
+  },
+  "14": {
+   "chapter": "Drie dagen · De derde wals",
+   "scene": "ballroom",
+   "tag": "Derde wals. De prinses. Niet hardop tellen.",
+   "text": [
+    "Ysmay danst zoals een landmeter een akker afloopt: nauwkeurig en zwijgend. Dan, midden in een draai: “Hoe breed is een mijl op Plaat 7?” “Ongeveer een duim.” “En een dorp?” “Een vlekje.” Ze knikt, alsof ze het opbergt. Haar [[dancecard|balboekje staat vol hoogtelijnen en bevat geen enkele naam]], heel klein getekend, in potlood.",
+    "Aan de overkant van de vloer heeft de kanselier jullie gezien. Ze komt eraan, masker omhoog, glimlach klaar, om af te tikken. Ysmays hand klemt zich iets vaster om je schouder, heel licht, zoals iemand de reling van een schip vastpakt als het dek begint te bewegen."
+   ],
+   "choices": [
+    {
+     "text": "Als je haar vlug de waarheid over de lijn vertelt,",
+     "short": "Vertel haar de waarheid",
+     "to": 19
+    },
+    {
+     "text": "Als je haar zoekgeraakte prins gaat halen,",
+     "short": "Zoek de prins",
+     "to": 17
+    },
+    {
+     "text": "Als je je sierlijk terugtrekt en naar het buffet gaat,",
+     "short": "Trek je terug",
+     "to": 15
+    }
+   ],
+   "moment": {
+    "line": "De kanselier steekt de dansvloer over, recht op je af.",
+    "seconds": 10,
+    "default": 15,
+    "head": "Kies voordat ze aftikt",
+    "sub": "Wacht je te lang, dan kiest het hof voor je.",
+    "defaultLabel": "DE KEUZE VAN HET HOF",
+    "timeout": "Het hof kiest voor je…"
+   },
+   "nr": 19
+  },
+  "15": {
+   "chapter": "Drie dagen · Het buffet",
+   "scene": "ballroom",
+   "tag": "Buffet. Graaf Halloran. Afstand houden.",
+   "text": [
+    "Graaf Halloran slaat het beleg voor het buffet. “Inkt! Proef de zwaan. Het is geen echte zwaan. Het kan een echte zwaan zijn.” Tussen twee happen door geeft hij je de roddels: de familie van de kanselier goot de kanonnen aan beide kanten van de Sorrel, “allebei de kanten, schitterende zaak”, en volgens de gewoonte [[bouquet|gaat het bruidsboeket naar wie het huwelijk heeft gekoppeld]]. “Onze kanselier heeft er al drie. Ze perst ze. Als motten.”",
+    "Hij dempt zijn stem tot een gewoon gebrul. “Het echte eten is in de keukens. Bett zit daar.” Dan wappert hij met zijn eigen masker, goud, met een kraaiensnavel. “Ruilen? Ha! Niemand zou weten wie van ons tweeën er praatte.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je de graaf naar de keukens volgt,",
+     "short": "Volg de graaf",
+     "to": 20
+    },
+    {
+     "text": "Als je de zoekgeraakte prins gaat zoeken,",
+     "short": "Zoek de prins",
+     "to": 17
+    },
+    {
+     "text": "Als je voor de grap van masker ruilt met de graaf,",
+     "short": "Ruil van masker",
+     "to": 45
+    }
+   ],
+   "nr": 34
+  },
+  "16": {
+   "chapter": "Drie dagen · Het terras",
+   "scene": "rooftops",
+   "tag": "Terras. Violette manchetten. Stilletjes volgen.",
+   "text": [
+    "De violette manchetten klimmen via een diensttrap naar het dakterras, waar de bruiloftslampen van Aurenne beneden uitgestrooid liggen als gemorste juwelen. Bij een schoorsteen wacht een vrouw in grijze zijde: de Ekster. Je drukt je plat achter een stenen urn die naar geraniums ruikt.",
+    "“De avond voor de bruiloft,” zegt de manchet. “Middernacht. Het dakraam van de kluis. Ik haal het op, op het dak.” “En het honorarium?” “Nieuwe munt, bij aflevering.” De Ekster houdt haar hoofd schuin. “Ik vraag niet waarom.” “Mooi.” Hij gaat. Zij blijft, kijkt recht naar jouw urn en heft haar glas. “Heerlijke avond,” zegt ze ertegen."
+   ],
+   "choices": [
+    {
+     "text": "Als je tevoorschijn komt en haar je diensten aanbiedt,",
+     "short": "Bied je diensten aan",
+     "to": 22
+    },
+    {
+     "text": "Als je de avond voor de bruiloft zelf bij de atlas waakt,",
+     "short": "Bewaak hem zelf",
+     "to": 36
+    },
+    {
+     "text": "Als je het meteen aan de kanselier vertelt,",
+     "short": "Vertel het de kanselier",
+     "to": 35
+    }
+   ],
+   "nr": 27
+  },
+  "17": {
+   "chapter": "Drie dagen · De garderobe",
+   "scene": "cloakroom",
+   "tag": "Garderobe, tussen de bontjassen: één prins.",
+   "text": [
+    "Je vindt prins Aldric verstopt tussen de bontjassen, met [[speech|een toespraak in potlood op de achterkant van een menukaart, vooral doorhalingen]]. Hij is vriendelijk, bijziend, en leest met de kaart een duim van zijn neus. “Ik kan elke vogel in de paleistuin bij naam noemen,” zegt hij. “Maar ik kan geen ‘welkom’ zeggen tegen veertig mensen zonder te willen gaan liggen.”",
+    "“Op de bruiloftsochtend moet ik spreken terwijl de lijn wordt getrokken. Iedereen zal naar me kijken. Ysmay zal naar me kijken.” Hij tuurt naar je op. “Jij tekent dingen voor mensen. Kun je een toespraak voor me tekenen?” Een lakei doet de deur open, ziet de prins en doet hem beleefd weer dicht."
+   ],
+   "choices": [
+    {
+     "text": "Als je hier en nu zijn toespraak voor hem schrijft,",
+     "short": "Schrijf zijn toespraak",
+     "to": 44
+    },
+    {
+     "text": "Als je belooft hem te helpen bij de repetitie in de kapel,",
+     "short": "Beloof te helpen",
+     "to": 23
+    }
+   ],
+   "nr": 46
+  },
+  "18": {
+   "chapter": "Drie dagen · Voor zaken",
+   "scene": "ballroom",
+   "tag": "Tel de wachten. Glimlach naar iedereen.",
+   "text": [
+    "Je telt de wachten op de trap naar de kluis: vier, wisseling om elf uur, eentje slaapt staand. De Ekster, onherkenbaar in pauwblauw, danst met de kanselier. “Charmante vrouw,” fluistert ze als ze langs je zwiert. “Danst als iemand die geld telt.” Je kunt niet zien wie van de twee leidt.",
+    "Bij het galerijraam bestudeert prinses Ysmay de grote geschilderde kaart van de twee koninkrijken, alsof het kan gaan regenen. “Je telt,” zegt ze, zonder zich om te draaien. “Wat tel je?” Niemand heeft je ooit verteld wat een cartograaf tegen een prinses mag zeggen. Je vermoedt: heel weinig."
+   ],
+   "choices": [
+    {
+     "text": "Als je teruggaat naar de daken voor de repetitie,",
+     "short": "Terug naar de daken",
+     "to": 22
+    },
+    {
+     "text": "Als je haar in plaats daarvan over de lijn vertelt,",
+     "short": "Vertel haar over de lijn",
+     "to": 19
+    }
+   ],
+   "nr": 13
+  },
+  "19": {
+   "chapter": "Twee dagen · Het doolhof",
+   "scene": "maze",
+   "tag": "Doolhof, tien uur. De prinses. Niet verdwalen.",
+   "text": [
+    "Gisteravond heb je een prinses meer over de verdragslijn verteld dan een cartograaf wie dan ook zou moeten vertellen. Vanochtend nodigt een briefje je uit in het doolhof van het paleis. Ysmay loopt erdoor zonder te kijken, links, links, rechts, alsof ze het zelf heeft getekend. “Bett heeft me heggen geleerd,” zegt ze. “In het Zwerfland zetten ze wilgen langs elke oever. Je kunt een wei lezen aan zijn wilgen.”",
+    "In het midden staan een stenen bank en een uitzicht op de daken van het paleis. Ze gaat zitten. “Er loopt ’s nachts iemand over het dak boven de Kaartenkamer. Al twee keer. Ik slaap niet veel.” Dan, tegen de heg en niet tegen jou: “Welke lijn ga jij trekken?”"
+   ],
+   "choices": [
+    {
+     "text": "Als je haar de lijn belooft die de koning beveelt; dat is je plicht,",
+     "short": "Beloof de koningslijn",
+     "to": 34
+    },
+    {
+     "text": "Als je vannacht het dak op gaat,",
+     "short": "Ga het dak op",
+     "to": 22
+    },
+    {
+     "text": "Als je naar de keukens gaat om Bett te ontmoeten,",
+     "short": "Ga naar Bett",
+     "to": 20
+    }
+   ],
+   "nr": 28
+  },
+  "20": {
+   "chapter": "Twee dagen · Bett",
+   "scene": "kitchens",
+   "tag": "Keukens. Bett. Derde oven vanaf de deur.",
+   "text": [
+    "Beneden in de paleiskeukens heeft Bett de derde oven vanaf de deur, en niemand spreekt haar tegen. Ze bouwt aan het bruiloftsbrood, een pot honing uit het Zwerfland naast zich, en praat vriendelijker tegen het deeg dan tegen mensen. Boven haar werkbank hangt [[bett|een merklap met een dorp, aan elk eind een brug, de ene over blauw garen, de andere over groen]]. “Marrowby,” zegt ze. “Blauw voor water, groen voor gras.”",
+    "Ze veegt haar handen af. “Ik heb mijn vingerhoed beleend voor een cadeau voor de prinses. Zilver. Onder de Stuiverbrug.” Ze geeft je het briefje: nr. 7. “De Ekster is eerlijk, voor een dief. Op de avond voor de bruiloft maak ik het boeket. Rozen voor Aurenne, heide voor Corvel.” Wat er nog meer in gaat, zegt ze niet."
+   ],
+   "choices": [
+    {
+     "text": "Als je Betts vingerhoed gaat lossen onder de Stuiverbrug,",
+     "short": "Los de vingerhoed",
+     "to": 21
+    },
+    {
+     "text": "Als je belooft op de avond voor de bruiloft te helpen met het boeket,",
+     "short": "Help met het boeket",
+     "to": 25
+    },
+    {
+     "text": "Als je naar de repetitie in de kapel gaat,",
+     "short": "Ga naar de repetitie",
+     "to": 23
+    }
+   ],
+   "nr": 12
+  },
+  "21": {
+   "chapter": "Twee dagen · Het register",
+   "scene": "pawnshop",
+   "tag": "Lommerdbriefje nr. 7. Eén zilveren vingerhoed.",
+   "text": [
+    "In de lommerd onder de Stuiverbrug heeft de Ekster het druk met een hertogin die een tiara beleent, “tijdelijk”, en wuift je naar het register op de toonbank. “Nummer zeven. Ga je gang. Dat doet iedereen.” Je slaat de zware bladzijden om, pand na pand, en bij nummer zeven vind je Betts vingerhoed en, ertussen gevouwen als een bladwijzer, [[ledger|een brief in kanselarijviolet]].",
+    "~ Niet ondertekend, in een zwierig, hoffelijk handschrift: “Plaat Zeven. De avond voor de bruiloft. De gebruikelijke voorwaarden; nieuwe munt bij aflevering.” Je kijkt op. De Ekster kijkt je aan over de tiara heen. Ze steekt haar hand er niet naar uit. “Mijn register zit erg vol deze week,” zegt ze. “Er valt weleens wat uit.” De brief gaat in je zak."
+   ],
+   "choices": [
+    {
+     "text": "Als je Bett haar vingerhoed brengt en terugkomt voor het boeket,",
+     "short": "Ga terug naar Bett",
+     "to": 25
+    },
+    {
+     "text": "Als je de Ekster vraagt naar de klus uit de brief,",
+     "short": "Vraag naar de klus",
+     "to": 22
+    },
+    {
+     "text": "Als je met de brief regelrecht naar de kanselier gaat,",
+     "short": "Breng hem naar de kanselier",
+     "to": 35
+    }
+   ],
+   "nr": 30
+  },
+  "22": {
+   "chapter": "Twee dagen · De repetitie",
+   "scene": "rooftops",
+   "tag": "Daken. Touw. Niet naar beneden kijken.",
+   "text": [
+    "Twee avonden voor de bruiloft repeteert de dievenbende van de Ekster op de daken tussen de klokkenmaker en het paleis: een touw over de kloof, een dakraam met krijt op het lood getekend, de jongen van de pennenkoker die alles klokt op een horloge dat niet van hem is. “Collega,” zegt de Ekster als je bij hen op het dak klimt, alsof je werd verwacht. “Of getuige. Ik heb liever collega’s. Die praten minder.”",
+    "Het plan is eenvoudig. Om half twaalf op de avond voor de bruiloft over het touw, door het dakraam de kluis in, één blad lossnijden, om middernacht omhoog aangeven aan de man van de klant. Nieuwe munt bij aflevering. “Ik vraag nooit waarom,” zegt ze. “Maar ik tel altijd de uitgangen.” Ze geeft je het eind van het touw."
+   ],
+   "choices": [
+    {
+     "text": "Als je je afspraak nakomt op de avond voor de bruiloft,",
+     "short": "Kom je afspraak na",
+     "to": 26
+    },
+    {
+     "text": "Als je er stilletjes van afziet en de avond met Betts boeket doorbrengt,",
+     "short": "Haak stilletjes af",
+     "to": 25
+    },
+    {
+     "text": "Als je haar vraagt je de daken echt te leren,",
+     "short": "Leer de daken kennen",
+     "to": 46
+    }
+   ],
+   "nr": 33
+  },
+  "23": {
+   "chapter": "Twee dagen · De kapel",
+   "scene": "chapel",
+   "tag": "Repetitie in de kapel, elf uur. Prins: stilstaan.",
+   "text": [
+    "De trouwkapel is wit en goud en ruikt naar boenwas en lelies. Oswin oefent hoe hij de atlas naar zijn lessenaar op het podium rijdt. Prins Aldric oefent stilstaan en het lukt hem steeds niet. De ceremoniemeester leest de volgorde voor: “De geloften. Het intekenen. De handtekeningen. De bloemen voor de koppelaar. Taart.”",
+    "De kanselier kijkt toe vanaf de voorste rij en keurt alles goed. “De atlas slaapt tot de bruiloftsochtend in de kluis,” zegt ze vriendelijk tegen je. “Volkomen veilig. Oswin heeft elf sleutels en een groot vertrouwen.” Bij de lessenaar fluistert Aldric zijn eerste zin tegen de lege kapel en wordt roze tot achter zijn oren."
+   ],
+   "choices": [
+    {
+     "text": "Als je aanbiedt om de avond voor de bruiloft bij de atlas te waken, voor de zekerheid,",
+     "short": "Waak bij de atlas",
+     "to": 36
+    },
+    {
+     "text": "Als je de avond voor de bruiloft met Bett en het boeket doorbrengt,",
+     "short": "Help met het boeket",
+     "to": 25
+    }
+   ],
+   "nr": 6
+  },
+  "24": {
+   "chapter": "De avond voor de bruiloft · De kluis",
+   "scene": "vault",
+   "tag": "Kluis. Middernacht. Zachte schoenen. Scherp mes.",
+   "text": [
+    "Je laat je aan het touw door het dakraam zakken en landt naast de atlas als een slecht geweten. De Ekster tilt het fluweel op. Jij zoekt Plaat 7, zij haalt een mes langs de draden terwijl jij het grote blad plat houdt. Met een zucht komt het los: veertig jaar rivier, in jouw handen.",
+    "In je tekenmap zit het netexemplaar van Plaat 7 dat de koning je voor het archief van Corvel liet maken, vanmiddag af, de inkt nog nauwelijks droog. Boven je klinkt een zacht gefluit: de man van de klant, op het lood. De Ekster steekt haar hand uit naar de plaat. Het is een heel vaste hand. “Nou?” zegt ze."
+   ],
+   "choices": [
+    {
+     "text": "Als je haar in plaats daarvan je netexemplaar geeft,",
+     "short": "Geef haar de kopie",
+     "to": 29
+    },
+    {
+     "text": "Als je haar de plaat geeft, zoals afgesproken,",
+     "short": "Geef haar de plaat",
+     "to": 39
+    },
+    {
+     "text": "Als je om de wacht roept,",
+     "short": "Roep de wacht",
+     "to": 33
+    }
+   ],
+   "moment": {
+    "line": "Een zacht gefluit bij het dakraam.",
+    "seconds": 10,
+    "default": 39,
+    "head": "Kies voordat hij nog eens fluit",
+    "sub": "Wacht je te lang, dan kiest het hof voor je.",
+    "defaultLabel": "DE KEUZE VAN HET HOF",
+    "timeout": "Het hof kiest voor je…"
+   },
+   "nr": 36
+  },
+  "25": {
+   "chapter": "De avond voor de bruiloft · Het boeket",
+   "scene": "kitchens",
+   "tag": "Boeket: rozen, heide, en nog iets.",
+   "text": [
+    "Op de avond voor de bruiloft zijn de keukens een slagveld van schuimgebak. Midden in het gewoel bindt Bett, de oude kindermeid van de prinses, het bruidsboeket: witte rozen voor Aurenne, paarse heide voor Corvel en, diep weggestopt, één grijs takje wilg uit het Zwerfland, “voor het geluk, en zodat niemand het ziet”. Na de geloften geeft de bruid het hele boeket volgens de gewoonte aan wie het huwelijk heeft gekoppeld.",
+    "“Onze kanselier,” zegt Bett, die bijna snuift. Boven slaat een deur; een wacht haast zich met een lamp langs de keuken en haast zich terug zonder. Boven je gaat Aurenne in zijn beste kleren naar bed. Bett geeft je een schuimpje. “Eet dat op en ga slapen. Grote dag voor je inkt.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je naar bed gaat met heide in je haar,",
+     "short": "Ga naar bed",
+     "to": 27
+    },
+    {
+     "text": "Als je in plaats daarvan bij de atlas in de kluis gaat waken,",
+     "short": "Waak bij de atlas",
+     "to": 36
+    }
+   ],
+   "nr": 23
+  },
+  "26": {
+   "chapter": "De avond voor de bruiloft · De daken",
+   "scene": "rooftops",
+   "tag": "Half twaalf. Het touw. Niet kijken.",
+   "text": [
+    "Aurenne is van eind tot eind verlicht voor de bruiloft, elke brug behangen met lampen. Hand over hand ga je aan het touw van de Ekster over de kloof, zestig voet niets onder je laarzen, terwijl de bende in het donker “goed zo, goed zo” fluistert, alsof je een schichtig paard bent. Het lood is koud. Het dakraam van de kluis gloeit zwak van de lamp van de wacht beneden.",
+    "De Ekster knielt, tilt het schone ruitje eruit als een punt taart en legt het touw vast. “Laatste kans om getuige te zijn,” zegt ze vriendelijk. “Hierna: collega.” Ver beneden gaapt de wacht op de trap naar de kluis zo luid dat je het door de steen heen hoort."
+   ],
+   "choices": [
+    {
+     "text": "Als je aan het touw de kluis in gaat,",
+     "short": "Ga naar beneden",
+     "to": 24
+    },
+    {
+     "text": "Als je terugklimt zoals je kwam en naar bed gaat,",
+     "short": "Ga terug naar bed",
+     "to": 27
+    }
+   ],
+   "nr": 3
+  },
+  "27": {
+   "chapter": "De bruiloftsochtend · De lege lessenaar",
+   "scene": "chapel",
+   "tag": "Kapel, stipt negen uur. Jij hebt de pen.",
+   "text": [
+    "Op de bruiloftsochtend is de kapel één en al verguldsel, lelies en mensen die doen alsof ze niet naar elkaar kijken. Oswin slaat de atlas open op zijn lessenaar, bladert naar Plaat 7 en houdt stil.",
+    "~ Waar de plaat zat, zit een rijtje doorgesneden draden. Op de lessenaar ligt één glanzende kraaienveer. Naast je wacht het bruidsboeket op zijn kussen.",
+    "De zaal ademt in. Graaf Halloran loopt paars aan. De koning verstijft tot steen. Prinses Ysmay staat in het wit zo stil als een ingehouden adem. De kanselier staat op, bleek en beeldschoon, de kraaienveer in haar gehandschoende hand, om namens iedereen te spreken."
+   ],
+   "choices": [
+    {
+     "text": "Als je de koning alles vertelt,",
+     "short": "Vertel het de koning",
+     "to": 38
+    },
+    {
+     "text": "Als je Plaat 7 uit je hoofd tekent,",
+     "short": "Teken hem uit je hoofd",
+     "to": 48
+    },
+    {
+     "text": "Als je je stilhoudt,",
+     "short": "Hou je stil",
+     "to": 40
+    },
+    {
+     "text": "Als je de brief in het bruidsboeket steekt,",
+     "short": "Steek de brief erin",
+     "to": 31,
+     "hidden": true,
+     "needs": {
+      "seen": [
+       21
+      ]
+     }
+    }
+   ],
+   "moment": {
+    "line": "De kanselier haalt adem om te spreken.",
+    "seconds": 10,
+    "default": 40,
+    "head": "Kies voordat ze spreekt",
+    "sub": "Wacht je te lang, dan kiest het hof voor je.",
+    "defaultLabel": "DE KEUZE VAN HET HOF",
+    "timeout": "Het hof kiest voor je…"
+   },
+   "nr": 42
+  },
+  "28": {
+   "chapter": "De bruiloftsochtend · De lessenaar",
+   "scene": "chapel",
+   "tag": "Kapel, negen uur. Plaat 7, onder je jas.",
+   "text": [
+    "Je knoopt je jas dicht. In de kapel bladert Oswin de atlas door naar Plaat 7 en vindt doorgesneden draden. De zaal ademt in. De kanselier staat op met een kraaienveer in haar gehandschoende hand: “Majesteit, ik vrees dat Corvel…” Je opent je tekenmap en legt Plaat 7 op de lessenaar, met rivier, wilgen en al. “Excuus,” zeg je. “Ik had hem mee naar huis genomen.”",
+    "De kanselier kijkt naar de plaat, en je ziet haar begrijpen dat ze hem alleen een vervalsing kan noemen als ze haar eigen brandkast openmaakt.",
+    "~ Ze gaat zitten. “Nou,” zegt de koning. “Teken hem in.” “De rivierlijn!” roept graaf Halloran, namens Corvel. “De Sorrel loopt twee mijl oostelijker!” “Mijn lijn,” zegt de koning. Prinses Ysmay zegt niets, heel duidelijk."
+   ],
+   "choices": [
+    {
+     "text": "Als je beide rivieren intekent, met “gemeengoed” ertussen,",
+     "short": "Teken beide rivieren in",
+     "to": 30
+    },
+    {
+     "text": "Als je de koningslijn intekent, zoals bevolen,",
+     "short": "Teken de koningslijn in",
+     "to": 32
+    },
+    {
+     "text": "Als je de rivierlijn van de graaf intekent,",
+     "short": "Teken de rivierlijn in",
+     "to": 37
+    }
+   ],
+   "nr": 7
+  },
+  "29": {
+   "chapter": "De bruiloftsochtend · Het balkon",
+   "scene": "balcony",
+   "tag": "Dageraad. Balkon. Iets plats onder je jas.",
+   "text": [
+    "In de kluis had de Ekster naar je kopie gekeken, toen naar jou, en gezegd: “Zelfde prijs.” Toen had ze hem door het dakraam aangegeven aan de man van de klant met de violette manchetten, haar nieuwe munt aangenomen en was ze over de daken verdwenen voor jij had uitgeademd. Nu is het dageraad, en Plaat 7 ligt plat onder je jas, als een tweede, zenuwachtig vest.",
+    "Op het koninklijk balkon oefent prins Aldric zijn toespraak op de duiven, die vertrekken. Beneden stroomt de menigte al toe. De kanselier komt naast je aan de balustrade staan, fris als een roos, en kijkt naar je jas. “Je ziet eruit alsof je de hele nacht iets hebt gedragen,” zegt ze vriendelijk. “Geef het maar aan mij. Ik breng het veilig thuis.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je hem zelf mee naar beneden neemt, naar de kapel,",
+     "short": "Hou hem zelf",
+     "to": 28
+    },
+    {
+     "text": "Als je de kanselier hem veilig thuis laat brengen,",
+     "short": "Geef hem aan haar",
+     "to": 41
+    }
+   ],
+   "nr": 39
+  },
+  "30": {
+   "chapter": "Een einde",
+   "scene": "balcony",
+   "tag": "Beide rivieren. Eén dorp. Veel handtekeningen.",
+   "text": [
+    "Je tekent de Sorrel in waar hij getekend werd en waar hij loopt, en daartussen, in je kleinste hoofdletters: GEMEENGOED. Voordat Halloran of de koning bezwaar kan maken, pakt Ysmay je pen en ondertekent, vlug en netjes. Aldric is zijn toespraak kwijt en leest voor wat er onder zijn neus ligt: “Gemeengoed.” De kapel juicht alsof het poëzie is.",
+    "Op het balkon gooit de menigte met bladgoud. De kanselier trekt zich vroeg terug met hoofdpijn en een plaat waarover ze moet zwijgen. Marrowby, tussen de rivieren, krijgt twee brieven, van elke kroon één, die hetzelfde zeggen in twee spellingen.",
+    "~ Onder de Stuiverbrug zet de Ekster één nieuwe kroon in haar etalage. Niet te koop."
+   ],
+   "ending": {
+    "no": "XVIII",
+    "title": "Gemeengoed",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Twee rivieren, één dorp, en geen lijn erdoorheen.",
+    "hint": "Een grens kan ook een plek zijn, niet alleen een lijn."
+   },
+   "nr": 22
+  },
+  "31": {
+   "chapter": "Een einde",
+   "scene": "chapel",
+   "tag": "Bloemen voor de koppelaar. Eén blad te veel.",
+   "text": [
+    "Je steekt de brief tussen de bloemen. Voor zij kan spreken, wil de koning eerst de geloften. Dan geeft Ysmay zoals het hoort haar boeket aan de vrouw die het huwelijk koppelde. De kanselier neemt het hoffelijk aan, ziet violet tussen de rozen en leest haar eigen handschrift.",
+    "~ Niemand zegt een woord; vijfhonderd mensen kijken hoe zij het niet zegt. Ze glimlacht beeldschoon, voelt zich onwel en vertrekt op eigen benen.",
+    "’s Middags ligt Plaat 7 weer op de lessenaar, “verkeerd opgeborgen op de Kanselarij”, en heeft de kanselier zich voor haar gezondheid op het land teruggetrokken. De koning vraagt je deemoedig om een lijn die niets begint. Je tekent de Sorrel in zoals hij getekend werd en zoals hij loopt, en ertussen één woord: Marrowby. Ysmay ondertekent als eerste."
+   ],
+   "ending": {
+    "no": "XIX",
+    "title": "De bloemen voor de koppelaar",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Sommige brieven bezorg je het best persoonlijk terug. Die van haar.",
+    "hint": "Sommige dingen stuur je het best terug naar de afzender."
+   },
+   "nr": 26
+  },
+  "32": {
+   "chapter": "Een einde",
+   "scene": "balcony",
+   "tag": "De koningslijn. Getekend. Toegejuicht. Exact.",
+   "text": [
+    "Je tekent de lijn van de koning in: de Sorrel precies waar hij veertig jaar geleden werd getekend. Ysmay ondertekent zonder ernaar te kijken. Aldric hakkelt door zijn toespraak en de menigte is er dol op. De vrede zal honderd jaar standhouden. Het is de mooiste lijn die je ooit hebt getrokken.",
+    "In de herfst rijd je erheen om hem in het echt te zien. In Marrowby, het dorp tussen de oude rivier en de nieuwe, loopt hij door de wei tussen de twee rijen huisjes, keurig als een scheiding in je haar. Op de brug over het gras staat nu een hek in het midden.",
+    "~ Twee buren die vroeger het zout deelden, zwaaien er beleefd naar elkaar overheen."
+   ],
+   "ending": {
+    "no": "I",
+    "title": "Keurig in tweeën",
+    "kind": "silver",
+    "epilogue": "Een volmaakte vrede, met een dorp dat dubbelgevouwen is.",
+    "hint": "Ook een ware lijn kan iets doorsnijden."
+   },
+   "nr": 40
+  },
+  "33": {
+   "chapter": "Een einde",
+   "scene": "pawnshop",
+   "tag": "Plaat gered. Winkel te huur.",
+   "text": [
+    "Je roept, en de wacht komt de trap af met lampen en verbazing. De Ekster is het touw al op voordat de deur opengaat. Bij het dakraam blijft ze staan en kijkt één keer op je neer: niet boos, ze sluit alleen een register af. Plaat 7 blijft veilig in jouw handen. De volgende dag gaat de bruiloft door, prachtig, en de kanselier kust je op beide wangen.",
+    "Binnen een week staat de lommerd van de Ekster onder de Stuiverbrug te huur, de klokken weg. Elk jaar op de trouwdag komt er een envelop zonder brief erin, alleen een lommerdbriefje op jouw naam, voor iets wat je nooit meer kunt lossen.",
+    "~ Je bewaart ze allemaal. Je weet niet zeker wat je hebt beleend."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "Nooit gelost",
+    "kind": "silver",
+    "epilogue": "De plaat werd gered. De vriendschap niet.",
+    "hint": "Het ding redden is niet altijd de dag redden."
+   },
+   "nr": 14
+  },
+  "34": {
+   "chapter": "Een einde",
+   "scene": "cityweddings",
+   "tag": "Bruiloft afgelast. Mooi weer. Bruid vertrokken.",
+   "text": [
+    "Ysmay bedankt je beleefd voor je eerlijkheid en loopt alleen het doolhof weer in. Op de bruiloftsochtend zit de kapel vol, ligt de atlas open bij Plaat 7, is je pen gevuld. De bruid komt niet. Ze is voor zonsopgang naar Corvel vertrokken, met Bett en één hutkoffer, en met een briefje voor prins Aldric dat hij een duim van zijn neus leest en heel klein opvouwt.",
+    "Geen lijn, dus geen verdrag; geen verdrag, dus geen bruiloft; en op de een of andere manier ook geen oorlog, alleen twee koninkrijken die zich in dezelfde richting schamen. Marrowby, tussen de rivieren, blijft zoals het was: heel, en twee keer belast. Op het lege balkon leest Aldric zijn toespraak voor aan de duiven.",
+    "~ Deze keer komt hij er helemaal doorheen."
+   ],
+   "ending": {
+    "no": "III",
+    "title": "De bruid gaat naar huis",
+    "kind": "silver",
+    "epilogue": "Marrowby heel, en het balkon leeg.",
+    "hint": "Plicht is niet het enige wat je een prinses kunt beloven."
+   },
+   "nr": 24
+  },
+  "35": {
+   "chapter": "Een einde",
+   "scene": "chancery",
+   "tag": "Gast van de kanselier. Op slot, van buiten.",
+   "text": [
+    "De kanselier hoort alles wat je haar brengt met stralende ogen aan. “Wat ben je dapper geweest,” zegt ze. “Jij moet volkomen veilig worden bewaard.” Haar klerken, violet tot de pols, brengen je naar een allerliefste kamer met een zacht bed, elke krant van Aurenne en een deur die van buiten op slot gaat.",
+    "De kranten vertellen je de rest. Plaat 7 is op de avond voor de bruiloft verdwenen; op de lessenaar is een kraaienveer uit Corvel gevonden; de bruiloft gaat niet door, en de kanonnengieterijen van de kanselier nemen driehonderd man aan. Op de zesde ochtend is je deur niet meer op slot. Op je kussen ligt je honorarium, in nieuwe kronen, bruid en bruidegom en profil."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "Veilig bewaard",
+    "kind": "bad",
+    "epilogue": "Volkomen veilig, en volkomen uit de weg.",
+    "hint": "Niet elk veilig paar handen is veilig."
+   },
+   "nr": 16
+  },
+  "36": {
+   "chapter": "Een einde",
+   "scene": "vault",
+   "tag": "De atlas bewaken. Koffie. Meer koffie.",
+   "text": [
+    "Je waakt bij de atlas in de kluis: een lantaarn, een pot koffie, een stoel die te hard is om in te slapen. Oswin sluit je op met oprechte bewondering. Om twee uur ben je klaarwakker. Om drie uur denk je aan het ontbijt. Om vier uur leg je, met je wang op zijn fluweel, aan de atlas uit dat je alleen even je ogen laat rusten.",
+    "Je wordt wakker van Oswins kreet. De ketting is los, Plaat 7 is keurig van zijn draden gesneden, en je eigen pennenmes ligt naast het stompje, naast een glanzende kraaienveer. Iedereen kijkt naar jou. Dan kijkt iedereen naar Corvel. Tegen de lunch is de bruiloft afgeblazen, en bij de thee zit jij op een schip."
+   ],
+   "ending": {
+    "no": "V",
+    "title": "In slaap bij de lessenaar",
+    "kind": "bad",
+    "epilogue": "Je bewaakte hem prachtig, bijna vier uur lang.",
+    "hint": "Sommige klussen zijn te groot voor één paar ogen."
+   },
+   "nr": 11
+  },
+  "37": {
+   "chapter": "Een einde",
+   "scene": "chapel",
+   "tag": "Lijn van de graaf. Gezicht van de koning.",
+   "text": [
+    "“Water liegt niet,” zeg je, en je tekent de Sorrel in waar hij vandaag loopt. Halloran kust je op beide wangen en ruikt naar ontbijt. Het gezicht van de koning doet iets wat je nog lang zult onthouden: waar vijfhonderd gasten bij staan, is er zojuist twee mijl Aurenne van Corvel geworden.",
+    "De bruiloft wordt uitgesteld “tot de gemoederen bedaard zijn”. De gemoederen bedaren niet. In het voorjaar hebben beide koninkrijken nieuwe kanonnen, allemaal uit de gieterijen van de kanselier, en is Marrowby, het dorp tussen de rivieren, doorgesneden langs zijn molentocht: de molenaar aan de ene kant, zijn meel aan de andere. In Corvel noemen ze een straat naar je. In Aurenne een hond."
+   ],
+   "ending": {
+    "no": "VI",
+    "title": "De rivierlijn",
+    "kind": "bad",
+    "epilogue": "Water liegt niet. Het stroomt gewoon verder en laat jou staan.",
+    "hint": "De luidste in de zaal tevredenstellen is nog geen verdrag."
+   },
+   "nr": 31
+  },
+  "38": {
+   "chapter": "Een einde",
+   "scene": "chapel",
+   "tag": "De koning alles verteld. Bewijs: volgt nog.",
+   "text": [
+    "Je vertelt de koning alles wat je weet en het meeste van wat je vermoedt: violette inkt, nieuwe kronen, kraaienveren. Het wordt zo stil in de kapel dat je de lelies hoort. De kanselier wacht tot je helemaal klaar bent en legt dan een zachte hand op je arm. “Majesteit, de arme Inkt heeft in vijf dagen niet geslapen. Elke klerk in Aurenne draagt violet. En wie hier heeft ooit een nieuwe kroon gezien?”",
+    "Niemand, natuurlijk, en wat je ook in je zakken hebt, zij heeft de betere stoel. Je wordt naar buiten begeleid, vriendelijk, om uit te rusten. Tegen het middaguur is de bruiloft afgeblazen en bij de thee krijgt Corvel de schuld. Later hoor je dat de kanselier je druiven heeft gestuurd."
+   ],
+   "ending": {
+    "no": "VII",
+    "title": "Eerlijk tot op het bot",
+    "kind": "bad",
+    "epilogue": "Elk woord waar, en geen enkel geloofd.",
+    "hint": "De waarheid heeft een moment nodig, en de juiste boodschapper."
+   },
+   "nr": 5
+  },
+  "39": {
+   "chapter": "Een einde",
+   "scene": "vault",
+   "tag": "Eén blad, afgeleverd. Volledig betaald.",
+   "text": [
+    "Je geeft haar de plaat. Zij geeft hem door het dakraam aan de man van de klant met de violette manchetten, en er zakt een fluwelen buideltje nieuwe munt naar beneden. Om één uur ben je over de daken en thuis, en de Ekster schenkt je een brandewijn in en vraagt niet hoe je je voelt, wat professioneel van haar is.",
+    "De volgende ochtend wordt er een kraaienveer op de lessenaar gevonden. Tegen het middaguur is de bruiloft afgeblazen; bij de thee nemen de kanonnengieterijen van de kanselier mensen aan. Niemand verdenkt jou ooit, en dat is nog het ergste. Elk jaar, op de dag dat de bruiloft had moeten zijn, haal je één nieuwe kroon tevoorschijn, bruid en bruidegom en profil, en merk je dat je hem nog steeds niet kunt uitgeven."
+   ],
+   "ending": {
+    "no": "VIII",
+    "title": "Medeplichtig",
+    "kind": "bad",
+    "epilogue": "Niemand verdenkt jou. Jij wel.",
+    "hint": "Eer onder dieven hangt af van wie de dieven betaalt."
+   },
+   "nr": 43
+  },
+  "40": {
+   "chapter": "Een einde",
+   "scene": "cityweddings",
+   "tag": "Spandoeken omlaag voor twaalven. Inkt ongebruikt.",
+   "text": [
+    "Je houdt je stil. Het is jouw ruzie niet. De kanselier houdt de veer omhoog en spreekt namens iedereen, prachtig: de kraai van Corvel, de dief van Corvel, de belediging van Corvel. Halloran brult. De koning draait zich om. Ysmay legt haar boeket heel voorzichtig op de lessenaar en loopt zonder een woord de kapel uit.",
+    "Tegen het middaguur gaan overal in Aurenne de spandoeken omlaag, het hert steek voor steek losgetornd van de kraai. Je rijdt naar huis met een pennenkoker vol ongebruikte inkt. Ergens achter je voert Marrowby, het dorp tussen de rivieren, nog altijd twee belastinginners, en straks, vermoed je, soldaten."
+   ],
+   "ending": {
+    "no": "IX",
+    "title": "Stilgehouden",
+    "kind": "bad",
+    "epilogue": "Het was jouw ruzie niet. Nu is het die van iedereen.",
+    "hint": "Zwijgen is ook een keuze, en dan houdt iemand anders de toespraak."
+   },
+   "nr": 47
+  },
+  "41": {
+   "chapter": "Een einde",
+   "scene": "balcony",
+   "tag": "Overhandigd. Veilig thuisgebracht. Nooit meer gezien.",
+   "text": [
+    "De kanselier neemt de plaat aan zo teder als een liefdesbrief, kust je op je wang en zeilt weg in de richting van de kapel. Daar komt ze nooit aan. Om negen uur slaat Oswin de atlas open bij doorgesneden draden. Om vijf over houdt de kanselier een kraaienveer omhoog. Om tien over staat graaf Halloran te schreeuwen en luistert de koning niet.",
+    "Je zegt dat je haar de plaat hebt gegeven. Zij zegt, met oprecht medelijden, dat je onder vreselijke druk hebt gestaan. De koning gelooft haar, want zij is de kanselier en jij bent een cartograaf zonder slaap en met lood van het dak op je mouw.",
+    "~ Je ziet Plaat 7 nooit meer terug. En niemand anders, daar kun je zeker van zijn, ook niet."
+   ],
+   "ending": {
+    "no": "X",
+    "title": "Veilig thuisgebracht",
+    "kind": "bad",
+    "epilogue": "Veilig thuisgebracht. Bij haar.",
+    "hint": "Geef het kostbare ding aan iemand, maar kies die iemand."
+   },
+   "nr": 45
+  },
+  "42": {
+   "chapter": "Een einde",
+   "scene": "vault",
+   "tag": "Kopie af. De wereld ging intussen door.",
+   "text": [
+    "Je blijft bij je kopie tot elke lijn volmaakt is. Vier dagen, dan drie, dan twee: de rivier, de wilgen, de nerf van het papier, het woord in potlood in de marge. Oswin brengt soep en nieuws; je negeert ze allebei. Op de bruiloftsochtend til je eindelijk je pen op. Het is de mooiste kopie die ooit is gemaakt.",
+    "~ Pas dan draai je je om. De atlas achter je ligt open bij een stompje doorgesneden draden; iemand heeft het origineel meegenomen terwijl jij aan een wilg zat te tekenen. De bruiloft gaat niet door. Jouw kopie gaat in plaats daarvan de atlas in. Honderd jaar later leren kinderen in beide koninkrijken de Sorrel uit jouw hand, en niemand weet nog dat er ooit een andere was."
+   ],
+   "ending": {
+    "no": "XI",
+    "title": "Het netexemplaar",
+    "kind": "strange",
+    "epilogue": "De beste kopie ooit gemaakt, van een ruzie die nooit werd bijgelegd.",
+    "hint": "Volmaakt werk in een afgesloten kamer verandert niets daarbuiten."
+   },
+   "nr": 9
+  },
+  "43": {
+   "chapter": "Een einde",
+   "scene": "marrowby",
+   "tag": "Gebleven in Marrowby. Twee keer avondeten per kwartaal.",
+   "text": [
+    "Je blijft. Marrowby heeft nooit een eigen kaart gehad; het is altijd alleen een vlekje geweest op de platen van anderen. Je tekent het huis voor huis: de huisjes, de brug over het gras, de molen met zijn voeten in de rivier, elke bijenkorf. Het dorp betaalt je in honing, en in een dubbele maaltijd op de dagen dat de inners komen.",
+    "Je gaat nooit terug voor de bruiloft. Je hoort dat die doorging, of niet, en dat er ergens door iemand een lijn is getrokken. Op jouw kaart van Marrowby staat helemaal geen lijn. Hij hangt aan een spijker in de herberg en is de enige kaart die iemand hier gelooft. Inners uit beide koninkrijken komen ernaar staren, en gaan in verwarring naar huis."
+   ],
+   "ending": {
+    "no": "XII",
+    "title": "Marrowby’s eigen kaart",
+    "kind": "strange",
+    "epilogue": "De enige kaart van Marrowby waar niets aan ontbreekt.",
+    "hint": "Iemand moet in de kapel nog steeds de pen vasthouden."
+   },
+   "nr": 37
+  },
+  "44": {
+   "chapter": "Een einde",
+   "scene": "cloakroom",
+   "tag": "Toespraken voor een prins. Tweede klasse.",
+   "text": [
+    "Je schrijft hem een toespraak op de achterkant van de menukaart: korte zinnen, kleine woorden, drie grapjes, waarvan één over reigers. Aldric leest hem voor aan de jassen en moet gaan zitten van opluchting. Tegen middernacht applaudisseert het voltallige garderobepersoneel. Bij dageraad ben je Koninklijk Schrijver van Toespraken, Tweede Klasse, en hij laat je geen moment meer uit het oog.",
+    "Wat er ook met Plaat 7 gebeurt, het gebeurt ergens anders, met iemand anders; jij zit in een garderobe een rijm op “welkom” te zoeken. Veertig jaar lang schrijf je kleine woorden voor een vriendelijke man. Die over de reigers wordt nog altijd geciteerd. Je zet nooit meer een lijn in inkt, en maar af en toe mis je het."
+   ],
+   "ending": {
+    "no": "XIII",
+    "title": "De toespraak van de prins",
+    "kind": "strange",
+    "epilogue": "Je gaf een prins zijn woorden en legde je eigen pen neer.",
+    "hint": "Wie één mens door een deur helpt, kan zelf buiten de zaal blijven staan."
+   },
+   "nr": 29
+  },
+  "45": {
+   "chapter": "Een einde",
+   "scene": "ballroom",
+   "tag": "Kraaienmasker. Verkeerde persoon. Goed buffet.",
+   "text": [
+    "Je ruilt van masker. Binnen een minuut heeft een hertogin uit Corvel je arm gepakt, je Rufus genoemd en je een zijkamer in geloodst vol diplomaten uit Corvel, die je mening willen over de rivierlijn. Je geeft hem. Dan willen ze je handtekening. De wijn is voortreffelijk, en de zaal applaudisseert elke keer dat je iets opschrijft.",
+    "Bij dageraad heb je als graaf Halloran ingestemd met drie handelsverdragen, één huwelijk (niet het jouwe, uiteindelijk) en het ontwerp van een herdenkingstheepot. De echte graaf heeft met jouw masker op het buffet leeggegeten en iets ondertekend op de Kanselarij. Niemand zal ooit ontwarren wie wat heeft gedaan. De theepot is erg mooi geworden."
+   ],
+   "ending": {
+    "no": "XIV",
+    "title": "Gemaskerd",
+    "kind": "strange",
+    "epilogue": "Eén nacht lang was jij de graaf. De geschiedenis heeft het opgegeven.",
+    "hint": "Hou op een gemaskerd bal je eigen gezicht."
+   },
+   "nr": 2
+  },
+  "46": {
+   "chapter": "Een einde",
+   "scene": "rooftops",
+   "tag": "Elke nacht de daken. Nooit meer kaarten.",
+   "text": [
+    "Je blijft boven op de daken. Een cartograaf, blijkt, is op papier zonde: je ziet het verval van een goot met het blote oog, de leeftijd van een dakraam aan zijn stopverf, de weg dwars door Aurenne zonder ooit een straat te raken. De Ekster neemt je echt in de leer. Je leert over een nok lopen in de regen en een slot openen met een pennenpunt.",
+    "Wat er ook gebeurt met Plaat 7 en de bruiloft, het gebeurt onder je, in kamers waar je niet meer door de deur binnenkomt. Jaren later teken je de mooiste kaart van Aurenne die ooit is gemaakt: elk dak, elke schoorsteen, elke weg naar binnen. Hij hangt in de achterkamer van de Ekster onder de Stuiverbrug, achter een klok. Er staat geen enkele straat op."
+   ],
+   "ending": {
+    "no": "XV",
+    "title": "In de leer bij de Ekster",
+    "kind": "strange",
+    "epilogue": "De mooiste kaart van Aurenne, van bovenaf getekend, voor het vak.",
+    "hint": "De daken kennen is nog niet weten waarom je erop staat."
+   },
+   "nr": 20
+  },
+  "47": {
+   "chapter": "Een einde",
+   "scene": "sorrel",
+   "tag": "Huwelijkscadeau. Aan de rivier. Verder nergens aan vast.",
+   "text": [
+    "Je steekt de akte bij je. Het is alleen maar beleefd. Het huisje blijkt allerliefst: rozen, een perenboom, de Sorrel onderaan de tuin. Bij de thee weet heel het hof het. De koning zoekt zich een andere cartograaf, en jij gaat in je cadeau wonen. Niemand vraagt je ooit nog iets in te tekenen.",
+    "Het voorjaar daarop treedt de Sorrel buiten zijn oevers en komt aan de andere kant van je huis terug: je woont nu in Aurenne. Drie jaar later verlegt hij zich weer: je woont in Corvel. Je betaalt belasting aan de inner die het eerst komt en geeft de ander thee. Elke ochtend kijk je uit je slaapkamerraam in welk koninkrijk je wakker bent geworden."
+   ],
+   "ending": {
+    "no": "XVI",
+    "title": "Een huisje aan de rivier",
+    "kind": "strange",
+    "epilogue": "Een huis aan een rivier is een huis dat verhuist.",
+    "hint": "Een cadeau met een rivier eraan is nooit alleen een huis."
+   },
+   "nr": 35
+  },
+  "48": {
+   "chapter": "Een einde",
+   "scene": "chapel",
+   "tag": "Plaat 7, uit het hoofd, in het openbaar.",
+   "text": [
+    "“Een schoon vel,” zeg je, en vijfhonderd mensen kijken toe terwijl je Plaat 7 uit je hoofd tekent op de lessenaar: elke bocht van de Sorrel, elke wilg, het woord in potlood. Het duurt een uur. Niemand gaat weg. Als je je pen optilt, applaudisseert de zaal, en de koning laat je er ter plekke zijn lijn op intekenen.",
+    "Dan merkt graaf Halloran met volle mond op dat je geheugen de Sorrel op een heel nieuwe plek heeft gelegd, een halve mijl van waar hij getekend werd en nog verder van waar hij loopt. Niemand heeft zin om ruzie te maken met een tekening waarvoor iedereen heeft geklapt. Er wordt een kanaal gegraven om de rivier gelijk te laten krijgen. Het duurt elf jaar. Het dorp Marrowby ligt in de weg."
+   ],
+   "ending": {
+    "no": "XVII",
+    "title": "Uit het hoofd",
+    "kind": "strange",
+    "epilogue": "De rivier werd verlegd naar jouw herinnering.",
+    "hint": "Een kaart uit je hoofd is een kaart van jou."
+   },
+   "nr": 18
+  }
+ }
+}
