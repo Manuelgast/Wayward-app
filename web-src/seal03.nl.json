@@ -1,0 +1,291 @@
+{
+ "id": "seal-03",
+ "title": "Een stuiver de hoogte in",
+ "series": "De Veyra-cyclus · Verzegeld verhaal",
+ "imprint": "A Wayward Original",
+ "tagline": "Een stuiver per keer, een dal om van bovenaf te tekenen, en een wind die in kringetjes draait.",
+ "start": 1,
+ "scenes": {
+  "haymeadow": {
+   "title": "De hooiweide onder de Tafel",
+   "focus": "50% 55%"
+  },
+  "valley": {
+   "title": "Het Velldal van bovenaf",
+   "focus": "50% 55%"
+  },
+  "tablewalls": {
+   "title": "De wanden van de Tafel",
+   "focus": "50% 55%"
+  },
+  "ringwind": {
+   "title": "In de ringwind",
+   "focus": "50% 55%"
+  },
+  "descent": {
+   "title": "Avond: de lange weg omlaag",
+   "focus": "50% 55%"
+  },
+  "s03cover": {
+   "title": "This is also the envelope art of a collectible sealed story, shown small",
+   "focus": "50% 55%"
+  },
+  "s03valley": {
+   "title": "From the small wicker basket of a tethered yellow balloon at five hundred feet o",
+   "focus": "50% 55%"
+  },
+  "s03wall": {
+   "title": "Torn loose",
+   "focus": "50% 55%"
+  },
+  "s03home": {
+   "title": "Sunset on the hay meadow",
+   "focus": "50% 55%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Grond · De hooiweide",
+   "scene": "s03cover",
+   "tag": "Hoogte 0. Kermis: luid. Opstijgen: een stuiver.",
+   "text": [
+    "De zomerkermis van Vell vult de hooiweide onder de Tafel: linten, kaaskramen, en de gele ballon van Ottilie Spry aan een lang touw, die op en neer gaat als een emmer in een put. Opstijgen een stuiver. Honden gratis, mits gedragen. De parochie wil ‘Vell van bovenaf’ voor haar zaal, en het enige bovenaf in het dal hangt aan haar touw.",
+    "Ottilie bewaart de opbrengst van de week in een koektrommel aan boord; ze vertrouwt de lucht meer dan een kermis. Bij de kaaskramen rolt Clemency Rudd haar wasdoek uit: kaarten van overal behalve Vell. “Hier,” zegt ze, “heeft iedereen een raam.” Op de Tafel ligt de wolk als een deksel."
+   ],
+   "choices": [
+    {
+     "text": "Als je meteen opstijgt, nu de lucht nog stil is,",
+     "short": "Stijg meteen op",
+     "to": 2
+    },
+    {
+     "text": "Als je Ottilie eerst helpt de stuivers te tellen,",
+     "short": "Tel de stuivers",
+     "to": 3
+    },
+    {
+     "text": "Als je in plaats daarvan vanaf de kerktoren tekent; die is nog nooit losgeschoten,",
+     "short": "Klim op de kerktoren",
+     "to": 8,
+     "looks": "safe"
+    }
+   ],
+   "nr": 1
+  },
+  "2": {
+   "chapter": "500 voet · Aan het touw",
+   "scene": "s03valley",
+   "tag": "Hoogte 500. Touw: strak. West: getekend.",
+   "text": [
+    "De weide zakt weg met een kraak van touw, en Vell ligt onder je uitgespreid als een lappendeken die iemand net heeft uitgeschud: hooivelden, de rivier, de kerk, de herberg tussen haar populieren. Je prikt je vel op het bord en begint in het westen, eerst de daken, dan de wegen, dan de rivier, die er eigen ideeën op nahoudt.",
+    "Ottilie neuriet en houdt de Tafel in het oog. “De wind gaat eromheen als een hond om zijn mand,” zegt ze. “Hier beneden is hij beleefd. Hogerop heeft hij meningen.” Beneden draaien twee boerenjongens de lier, klein als knopen. Onder je geeft de paal een kuchje in de zoden, dat alleen Ottilie hoort."
+   ],
+   "choices": [
+    {
+     "text": "Als je ze al het touw laat vieren voor de oostkant,",
+     "short": "Vier al het touw",
+     "to": 4
+    },
+    {
+     "text": "Als je zwaait dat ze je binnenhalen voordat de wind draait,",
+     "short": "Laat je binnenhalen",
+     "to": 5
+    }
+   ],
+   "nr": 10
+  },
+  "3": {
+   "chapter": "Grond · De koektrommel",
+   "scene": "s03cover",
+   "tag": "Hoogte 0. Stuivers: geteld. Laarzen: herinnerd.",
+   "text": [
+    "Ottilie telt stuivers in stapeltjes van twaalf op de rand. Haar vader was de schoenmaker van Vell. Veertig zomers geleden, toen zij zestien was, kwam er een jonge landmeter uit de Woestenij, zo bruin verbrand als een zadel, en op de kerktrap lieten haar beide zolen tegelijk los.",
+    "“Vader zei: niet meer te maken, en geen leer tot de herfsthuiden. Dus leenden de Tarrows haar een paar, hun merk in de hakken gebrand, net als op hun kaas. Ze zei dat ze naar Aurenne ging, om een maand lang een rivier te lopen.” Ottilie doet de trommel dicht. “In het voorjaar stuurde ze ze terug, verzoold. Met een stuiver in elke neus.”"
+   ],
+   "choices": [
+    {
+     "text": "Als je nu opstijgt, nu het licht nog goed is,",
+     "short": "Stijg nu op",
+     "to": 2
+    },
+    {
+     "text": "Als je op de middag wacht en al het touw neemt,",
+     "short": "Wacht op de middag",
+     "to": 4
+    }
+   ],
+   "nr": 7
+  },
+  "4": {
+   "chapter": "600 voet · Al het touw",
+   "scene": "s03valley",
+   "tag": "Hoogte 600. Wind: draaiend. Oost: wit.",
+   "text": [
+    "Alle zeshonderd voet touw is gevierd, en eindelijk ligt heel Vell onder je, overzichtelijk als een hand kaarten. Het westen heb je tot het laatste hek: kerk, herberg, rivier, elk veld. Het oosten is nog wit papier: de molen, de verre brug, de kaasboerderijen met hun ronde stenen melkhuizen.",
+    "Ottilie houdt de wolk op de Tafel in de gaten; die is heel langzaam gaan draaien. “Een halfuur,” zegt ze, “en dan wil hij ons hebben.” Beneden leunen de boerenjongens op de lier, wachtend op je teken. De molen is klein en vierkant en kost je tien minuten."
+   ],
+   "choices": [
+    {
+     "text": "Als je boven blijft om de laatste hoek af te maken,",
+     "short": "Maak de hoek af",
+     "to": 5
+    },
+    {
+     "text": "Als je zwaait dat ze je binnenhalen, met een half dal,",
+     "short": "Ga nu omlaag",
+     "to": 10,
+     "looks": "safe"
+    }
+   ],
+   "nr": 3
+  },
+  "5": {
+   "chapter": "800 voet · Los",
+   "scene": "s03wall",
+   "tag": "Hoogte 800, stijgend. Touw: slepend.",
+   "text": [
+    "De wind is je voor en draait in één keer. Het touw schiet strak, en beneden in de weide komt de paal uit de zoden als een rotte kies. Even hang je daar, verbluft, met twee boerenjongens die achter je touw aan rennen. Dan begint het dal weg te glijden en komt de grijze wand van de Tafel dichterbij.",
+    "Ottilie staat al bij de brander. “De ringwind heeft ons,” zegt ze, kalm, alsof ze een vogel aanwijst. “Rond de Tafel, en wij mee, tenzij we erboven komen.” Er hangt nog één zandzak aan zijn haak. De wand vult de halve lucht, gestreept en nat en veel te dichtbij."
+   ],
+   "moment": {
+    "line": "De wand komt met elke ademhaling dichterbij.",
+    "seconds": 10,
+    "default": 9,
+    "head": "Kies voordat de wand het doet",
+    "sub": "Wacht je te lang, dan kiest de ringwind voor je.",
+    "defaultLabel": "DE KEUZE VAN DE RINGWIND",
+    "timeout": "De ringwind kiest voor je…"
+   },
+   "choices": [
+    {
+     "text": "Als je de laatste zandzak overboord gooit,",
+     "short": "Gooi de zandzak",
+     "to": 7
+    },
+    {
+     "text": "Als je je vasthoudt en hoopt dat het touw ergens blijft haken,",
+     "short": "Hou vast en hoop",
+     "to": 9
+    }
+   ],
+   "nr": 6
+  },
+  "6": {
+   "chapter": "2000 voet · Een regen van stuivers",
+   "scene": "s03wall",
+   "tag": "Hoogte 2000. Wind: naar huis. Stuivers: geen.",
+   "text": [
+    "De trommel gaat overboord, verliest bij de eerste windvlaag zijn deksel, en tweeduizend stuivers vallen over Vell als hagel die lang heeft gespaard. De ballon springt omhoog. Je maag blijft achter. Je houdt je stevig vast terwijl de mand langs een uitloper van de wand schuurt, en Ottilie roept iets wat de wind meeneemt en houdt.",
+    "~ Dan ben je uit de ring, in de bovenwind, stil als een ingehouden adem, die je terugdraagt over het dal. Heel Vell ligt onder je, west en oost, de molen, de verre brug, de ronde stenen melkhuizen, elk veld klein opgevouwen als een zakdoek. Beneden rennen kinderen uit elke deur."
+   ],
+   "choices": [
+    {
+     "text": "Als je het oosten tekent terwijl de wind je rondbrengt,",
+     "short": "Teken het oosten",
+     "to": 11
+    },
+    {
+     "text": "Als je het bord wegbergt en haar helpt met de klep,",
+     "short": "Help met de klep",
+     "to": 10,
+     "looks": "safe"
+    }
+   ],
+   "nr": 5
+  },
+  "7": {
+   "chapter": "1200 voet · Rond en rond",
+   "scene": "s03wall",
+   "tag": "Hoogte 1200. Zandzakken: 0. Stuivers: veel.",
+   "text": [
+    "Je gooit de zandzak overboord, en de ballon komt omhoog, met tegenzin, als een man die uit een goede stoel moet. Niet genoeg. De ringwind heeft je bij de mand: Vell zwaait onder je voorbij, dan de wand, dan weer Vell, en het slepende touw harkt een regen steentjes van een richel. De zijde neemt de tijd.",
+    "“Lichter,” zegt Ottilie. “Een zak meel lichter, en de bovenwind brengt ons thuis.” Jullie kijken allebei naar de bodem van de mand: je bord met het westen van Vell erop, en onder haar bankje de koektrommel. Een week aan stuivers. Haar hele zomer. Hij is heel zwaar, en dat weten jullie allebei."
+   ],
+   "choices": [
+    {
+     "text": "Als je de koektrommel met stuivers overboord gooit,",
+     "short": "Gooi de stuivers",
+     "to": 6
+    },
+    {
+     "text": "Als je je tekenbord overboord gooit; het is maar papier,",
+     "short": "Gooi de tekening",
+     "to": 9
+    }
+   ],
+   "nr": 9
+  },
+  "8": {
+   "chapter": "Een einde",
+   "scene": "s03cover",
+   "tag": "Hoogte 90. Klokken: één. Wegen: kerkwaarts.",
+   "text": [
+    "De kerktoren heeft een ladder, een richel, een klok met een barst erin en een uitzicht op Vell dat vooral uit daken bestaat. Je tekent het prachtig: elke schoorsteen, elke windhaan, en elke weg die trouw bij de kerkdeur uitkomt, want van hierboven lijkt dat precies waar ze allemaal heen gaan.",
+    "De parochie hangt hem in de zaal en is verrukt. Bezoekers die hem gebruiken om de molen te vinden, komen bij de kerk uit, waar de pastoor ze thee verkoopt. De hele middag zie je vanaf je richel de gele ballon van Ottilie op en neer gaan boven de hooiweide, stuiver voor stuiver, geduldig als een slinger."
+   ],
+   "ending": {
+    "no": "I",
+    "title": "De kaart van de klokkenluider",
+    "kind": "strange",
+    "epilogue": "Op jouw kaart leidt elke weg in Vell naar de kerk.",
+    "hint": "Sommige uitzichten zijn alleen voor een stuiver te krijgen."
+   },
+   "nr": 4
+  },
+  "9": {
+   "chapter": "Een einde",
+   "scene": "s03wall",
+   "tag": "Hoogte 0, abrupt. Zijde: flarden.",
+   "text": [
+    "De ringwind neemt je toch mee rond de Tafel, als een blad op een rivier, het snelst bij de hoeken. Twee keer raakt de mand de wand, en twee keer wint de wand. Dan krijgt Ottilie de klep open en kom je neer op het puin aan de voet van de Tafel, de laatste vijftig meter op je rug.",
+    "Je strompelt bij sterrenlicht weg, tot een vrachtkar je op de weg vindt. Van ‘Vell van bovenaf’ is niets over wat het ophangen waard is. De zijde blijft in flarden op de stenen liggen; Ottilie zegt alleen dat het een goede ballon was en dat ze erg aan hem hing.",
+    "~ De koektrommel, die niemand overboord gooide, rijdt op haar knieën mee naar huis."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "Rond de Tafel",
+    "kind": "bad",
+    "epilogue": "Je hield de koektrommel, en verder weinig.",
+    "hint": "Het zwaarste aan boord is niet altijd het dierbaarste."
+   },
+   "nr": 2
+  },
+  "10": {
+   "chapter": "Een einde",
+   "scene": "s03home",
+   "tag": "Hoogte 0. West: getekend. Oost: wit.",
+   "text": [
+    "Ottilie brengt je in het late gouden licht omlaag in de hooiweide, zo zacht dat de mand het hooi nauwelijks kneust. Het westen van Vell heb je tot het laatste hek. Het oosten is wit papier: geen molen, geen verre brug, geen kaasboerderijen.",
+    "De parochie hangt ‘Vell van bovenaf’ in de zaal, half getekend, en is er bijna een jaar blij mee. Dan komt de oostkant van het dal niet meer op het oogstmaal.",
+    "~ Niemand zegt waarom. Dat hoeft ook niet. Een kaart waar je niet op staat, is een beleefde manier om je te laten weten waar je staat, en in Vell hoort men beleefdheid heel goed."
+   ],
+   "ending": {
+    "no": "III",
+    "title": "Een half dal",
+    "kind": "silver",
+    "epilogue": "Een half dal, prachtig getekend, en de andere helft merkte het.",
+    "hint": "Als het hele dal onder je ligt, gebruik het dan."
+   },
+   "nr": 11
+  },
+  "11": {
+   "chapter": "Een einde",
+   "scene": "s03home",
+   "tag": "Hoogte 0. Dal: heel. Stuivers: terug.",
+   "text": [
+    "Je tekent het oosten van Vell terwijl de bovenwind je eroverheen naar huis draagt: de molen, de verre brug, de kaasboerderijen, elk hek. Bij zonsondergang zet Ottilie de ballon neer in de hooiweide, waar het halve dal staat te wachten, met volle zakken.",
+    "De kinderen van Vell hebben de hele middag stuivers geraapt uit het hooi, de rivier, de rozen van de pastoor en elkaars haar, en ze brengen ze allemaal terug. Bij het tellen komen ze er één tekort, tot die een week later in een kaas opduikt.",
+    "~ ‘Vell van bovenaf’ hangt nog altijd in de zaal: het hele dal, en in een hoek een kleine gele ballon."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "Elke stuiver",
+    "kind": "good",
+    "epilogue": "Wat jij weggooide, droeg het dal naar huis.",
+    "hint": "Gooi overboord wat het dal je terug zou geven.",
+    "star": true
+   },
+   "nr": 8
+  }
+ }
+}

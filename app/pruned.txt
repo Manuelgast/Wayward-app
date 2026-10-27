@@ -3,6 +3,7 @@ img/age-edge.webp
 img/age-spots.webp
 img/arches-sm.webp
 img/ashfall-sm.webp
+img/balcony-sm.webp
 img/bog-sm.webp
 img/brakevan-sm.webp
 img/cape-sm.webp
@@ -25,6 +26,7 @@ img/lake-sm.webp
 img/lamproomstorm-sm.webp
 img/lanternhall-sm.webp
 img/lastmorning-sm.webp
+img/maze-sm.webp
 img/morningplain-sm.webp
 img/ninthplatform-sm.webp
 img/oasis-sm.webp
@@ -35,6 +37,7 @@ img/redwind-sm.webp
 img/returnspecimen-sm.webp
 img/rim-sm.webp
 img/ringwind-sm.webp
+img/rooftops-sm.webp
 img/s01cape-sm.webp
 img/s01cover-sm.webp
 img/s01quay-sm.webp
@@ -42,6 +45,10 @@ img/s02cover-sm.webp
 img/s02cow-sm.webp
 img/s02dawn-sm.webp
 img/s02well-sm.webp
+img/s03cover-sm.webp
+img/s03home-sm.webp
+img/s03valley-sm.webp
+img/s03wall-sm.webp
 img/scriptoriumfire-sm.webp
 img/sleeper-sm.webp
 img/stair-sm.webp

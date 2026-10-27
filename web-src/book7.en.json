@@ -1,0 +1,1177 @@
+{
+ "id": "kings-atlas",
+ "title": "The King’s Atlas",
+ "series": "The Veyra Cycle · Book VII",
+ "imprint": "A Wayward Original",
+ "tagline": "Two kingdoms. One wedding. One line of ink, and you are holding the pen.",
+ "warning": "Don’t read this book from start to finish. At the end of each page, you decide what happens next. Some choices are pencilled in. Others are inked.",
+ "start": 1,
+ "scenes": {
+  "cityweddings": {
+   "title": "Aurenne dressed for a wedding",
+   "focus": "50% 55%"
+  },
+  "maproom": {
+   "title": "The Map Room and the chained atlas",
+   "focus": "50% 55%"
+  },
+  "ballroom": {
+   "title": "The masked ball",
+   "focus": "50% 55%"
+  },
+  "rooftops": {
+   "title": "The roofs of Aurenne at dusk",
+   "focus": "50% 55%"
+  },
+  "pawnshop": {
+   "title": "The pawnshop under the Halfpenny Bridge",
+   "focus": "50% 55%"
+  },
+  "chancery": {
+   "title": "The Chancellor’s office",
+   "focus": "50% 55%"
+  },
+  "maze": {
+   "title": "The palace maze",
+   "focus": "50% 55%"
+  },
+  "sorrel": {
+   "title": "The Sorrel, old bed and new",
+   "focus": "50% 55%"
+  },
+  "marrowby": {
+   "title": "Marrowby in the Drift",
+   "focus": "50% 55%"
+  },
+  "chapel": {
+   "title": "The wedding chapel",
+   "focus": "50% 55%"
+  },
+  "kitchens": {
+   "title": "The palace kitchens",
+   "focus": "50% 55%"
+  },
+  "oldbridge": {
+   "title": "The bridge over grass",
+   "focus": "50% 55%"
+  },
+  "vault": {
+   "title": "The atlas vault at night",
+   "focus": "50% 55%"
+  },
+  "balcony": {
+   "title": "The royal balcony on the wedding morning",
+   "focus": "50% 55%"
+  },
+  "cloakroom": {
+   "title": "This scene is in the evening",
+   "focus": "50% 55%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Five Days · Aurenne",
+   "scene": "cityweddings",
+   "tag": "Map Room, ten sharp. Bring ink.",
+   "text": [
+    "Aurenne has hung out every flag it owns and borrowed several from Corvel. Gold stag and black crow are sewn together on every banner, like a couple at their first dance. Your invitation said one word: “Ink.” In five days, on the wedding morning, you will ink the treaty line along the river Sorrel on Plate 7 of the King’s Atlas. Forty years of quarrelling, ended by your pen. No pressure.",
+    "The crowd smells of sugared almonds and rumour: the Mint is striking new crowns, bride and groom in profile, not to be spent before the wedding. A carriage in Chancery violet waits with your name on a card. A boy of about nine has just walked off with your pen-case."
+   ],
+   "choices": [
+    {
+     "text": "If you go straight to the Map Room, as summoned,",
+     "short": "Go to the Map Room",
+     "to": 2
+    },
+    {
+     "text": "If you step into the Chancellor’s carriage,",
+     "short": "Take the carriage",
+     "to": 3
+    },
+    {
+     "text": "If you chase the boy with your pen-case,",
+     "short": "Chase the boy",
+     "to": 4
+    }
+   ],
+   "nr": 1
+  },
+  "2": {
+   "chapter": "Five Days · The Map Room",
+   "scene": "maproom",
+   "tag": "Plate 7. Do not lean on the atlas.",
+   "text": [
+    "Master Oswin Pell opens the Map Room with the fourth of his eleven keys and steps aside like a man presenting a duchess. The King’s Atlas lies chained to its lectern, big as a garden gate. You turn the pages to Plate 7: the Sorrel in one long blue stroke, and in its last loop [[edda|two tiny initials, E.M., and in the margin, in pencil, “for now”]].",
+    "“His Majesty wants the line along that river, as drawn,” says Oswin, “and a fair copy for Corvel’s archive.” The door bangs open on Count Rufus Halloran, Corvel’s envoy. “The river line, Ink! The river is where the river is, and that’s two miles east!” He taps Plate 7 with a sausage. “Lunch?”"
+   ],
+   "choices": [
+    {
+     "text": "If you ride out to see the Sorrel before you ink anything,",
+     "short": "Ride out to the river",
+     "to": 6
+    },
+    {
+     "text": "If you start the fair copy tonight, as the King asked,",
+     "short": "Start the fair copy",
+     "to": 9
+    },
+    {
+     "text": "If you let the Count take you to lunch,",
+     "short": "Go to lunch",
+     "to": 5
+    }
+   ],
+   "nr": 4
+  },
+  "3": {
+   "chapter": "Five Days · The Chancellor",
+   "scene": "chancery",
+   "tag": "Breakfast, the Chancellor. Be charming. Briefly.",
+   "text": [
+    "Lady Seraphine Dorne, Chancellor of Aurenne, meets you at her door with both hands out. “The Ink! Exactly as clever as they said, and far better dressed.” Her office is all gilt and order. Her clerks write in [[violet|Chancery violet, an ink no one else in the kingdom may use]]; it never washes out, and their cuffs are purple to the wrist.",
+    "Over toast she introduces you to everyone: the Mint master, two generals, a duchess with a parrot. Her family’s foundries, she admits, cast cannon for half the continent. “Dreadful noisy things. I’ve never fired one.” She refills your cup. “You must tell me everything you hear. I adore gossip, and it so rarely arrives fresh.”"
+   ],
+   "choices": [
+    {
+     "text": "If you let her carriage take you on to the Map Room,",
+     "short": "Go to the Map Room",
+     "to": 2
+    },
+    {
+     "text": "If you let her send you on to lunch with Count Halloran of Corvel,",
+     "short": "Meet the Count",
+     "to": 5
+    },
+    {
+     "text": "If you promise to tell her everything you hear,",
+     "short": "Promise her everything",
+     "to": 11
+    }
+   ],
+   "nr": 10
+  },
+  "4": {
+   "chapter": "Five Days · Under the Halfpenny Bridge",
+   "scene": "pawnshop",
+   "tag": "Pen-case: stolen. Thief: about nine.",
+   "text": [
+    "The boy leads you under the Halfpenny Bridge and into a pawnshop that smells of beeswax and other people’s heirlooms. Your pen-case is already on the counter, polished. Behind it waits a woman in grey silk, a jeweller’s glass in one eye. “Wren Ashgrove. They call me the Magpie. My apprentices practise on visitors. It’s a compliment; they only lift the interesting ones.”",
+    "A quiet gentleman at the counter pockets a receipt and leaves without a glance. He has [[cuffs|violet ink on both cuffs]]. The Magpie watches him go. “You’re the Ink,” she says. “I have a job that wants someone who can read a floor plan. One evening. No violence. Excellent rates.”"
+   ],
+   "choices": [
+    {
+     "text": "If you ask her what the job is,",
+     "short": "Ask about the job",
+     "to": 10
+    },
+    {
+     "text": "If you take your pen-case and hurry to the Map Room,",
+     "short": "Hurry to the Map Room",
+     "to": 2
+    },
+    {
+     "text": "If you go back for the Chancellor’s carriage after all,",
+     "short": "Take the carriage",
+     "to": 3
+    }
+   ],
+   "nr": 15
+  },
+  "5": {
+   "chapter": "Five Days · Lunch with the Count",
+   "scene": "kitchens",
+   "tag": "Lunch, Count Halloran. Stand well back.",
+   "text": [
+    "Count Halloran lunches in the palace kitchens, because, he says, that is where the food is before anyone ruins it with a tablecloth. Between a pie and a partridge he explains the river line. “Water doesn’t lie, Ink. Wherever the Sorrel runs today, that’s the border. Simple!” In a corner, a small old woman in Corvel black kneads bread as if it owed her money.",
+    "“Bett!” roars the Count. “The princess’s old nurse. From the Drift! Paid tax to both of us, didn’t you, Bett?” “Paid,” says Bett, “and left.” Then he slides a deed across the table: a little house in Corvel, on the river, with roses. “A wedding present,” he says. “Entirely unconnected.”"
+   ],
+   "choices": [
+    {
+     "text": "If you accept the little house; it is only manners,",
+     "short": "Accept the house",
+     "to": 47
+    },
+    {
+     "text": "If you ride out tomorrow to see his river for yourself,",
+     "short": "See the river yourself",
+     "to": 6
+    },
+    {
+     "text": "If you ask Bett the way to the Drift,",
+     "short": "Ask Bett the way",
+     "to": 7
+    }
+   ],
+   "nr": 21
+  },
+  "6": {
+   "chapter": "Four Days · The Sorrel",
+   "scene": "sorrel",
+   "tag": "Sorrel, a day’s ride east. Boots.",
+   "text": [
+    "By noon you are standing where every map in Aurenne puts the Sorrel, and the Sorrel is not there. There is a meadow, and larks, and cows who have never heard of a treaty. Across the grass march [[willows|two lines of dead willows with no river between them]], grey and leaning, like guests waiting for a host who never came back.",
+    "You find the river two miles east, brown and busy, chewing its bank as you watch; a slab of turf slides in while you note the time. Back at the willows you trace the old line on your pocket map. It runs on, true as the day it was drawn, towards a smudge of chimney smoke."
+   ],
+   "choices": [
+    {
+     "text": "If you follow the willows to the smoke,",
+     "short": "Follow the willows",
+     "to": 7
+    },
+    {
+     "text": "If you ride back in time to dress for the ball,",
+     "short": "Ride back for the ball",
+     "to": 13
+    }
+   ],
+   "nr": 38
+  },
+  "7": {
+   "chapter": "Four Days · Marrowby",
+   "scene": "marrowby",
+   "tag": "Marrowby. Not on any guest list.",
+   "text": [
+    "Marrowby, out in the Drift, is two rows of cottages facing each other across a strip of meadow, like a street waiting for its river to come home. Halfway along, a stone bridge crosses the grass. At the bottom of the village the real Sorrel turns the mill wheel; the miller sleeps on one bank and grinds on the other.",
+    "In the inn you find [[twotaxes|two tax collectors at one table, sharing the salt]], one from Aurenne and one from Corvel, both on their second helping. “Every quarter day,” says the landlady. “We pay them both and feed them both, and each of them goes home and writes us down as the other’s.” Nobody in Marrowby has been invited to the wedding."
+   ],
+   "choices": [
+    {
+     "text": "If you walk out to the bridge over the grass,",
+     "short": "Walk to the bridge",
+     "to": 8
+    },
+    {
+     "text": "If you hurry back to the city for the ball,",
+     "short": "Hurry back",
+     "to": 13
+    },
+    {
+     "text": "If you stay and draw Marrowby a map of itself,",
+     "short": "Stay and draw it",
+     "to": 43
+    }
+   ],
+   "nr": 41
+  },
+  "8": {
+   "chapter": "Four Days · The Bridge over Grass",
+   "scene": "oldbridge",
+   "tag": "One bridge. No river. Cows unimpressed.",
+   "text": [
+    "The bridge is good grey stone, three arches, built for a river that has left it standing in a meadow. Children sit on the parapet swinging their feet over the buttercups. Under the moss on the keystone you find [[keystone|a waterline cut into the stone, and a date]]: thirty-eight years ago, the spring the river left.",
+    "A woman in an apron hurries out of the nearest cottage with a parcel tied in string. “You’re for the palace? Then give this to my sister Bett, who nursed the princess. Honey, from the Drift.” She presses it into your arms. “Tell her the bees are well and the collectors are the same.”"
+   ],
+   "choices": [
+    {
+     "text": "If you ride back to the city for the ball,",
+     "short": "Ride back for the ball",
+     "to": 13
+    },
+    {
+     "text": "If you skip the ball and take the parcel straight to Bett,",
+     "short": "Take Bett the parcel",
+     "to": 20
+    }
+   ],
+   "nr": 32
+  },
+  "9": {
+   "chapter": "Five Days · The Fair Copy",
+   "scene": "vault",
+   "tag": "Vault, after dark. Copy Plate 7.",
+   "text": [
+    "At sunset Oswin wheels the atlas into the vault on a trolley, tucks a velvet cloth over it and chains it to a ring in the floor. “Goodnight,” he tells it, and locks you in with it. The vault is a stone box with a skylight. You copy Plate 7 line by line: every bend of the river, every tiny willow, every pencilled word.",
+    "Near midnight you raise your lantern to rest your eyes and look up at the skylight. Twenty dusty panes, and [[pane|one pane wiped clean, from the outside]], as if somebody had wanted a better look at the atlas than the dust allowed. Beyond it the night is full of roofs."
+   ],
+   "choices": [
+    {
+     "text": "If you ride out at first light to see the Sorrel itself,",
+     "short": "Ride out at dawn",
+     "to": 6
+    },
+    {
+     "text": "If you mention the skylight to the Chancellor at tea,",
+     "short": "Tell the Chancellor",
+     "to": 11
+    },
+    {
+     "text": "If you stay with the copy until every line is perfect,",
+     "short": "Perfect the copy",
+     "to": 42
+    }
+   ],
+   "nr": 17
+  },
+  "10": {
+   "chapter": "Five Days · The Back Room",
+   "scene": "pawnshop",
+   "tag": "Back room. Tea. Sign nothing.",
+   "text": [
+    "The Magpie’s back room is all clocks, no two agreeing, “so nobody can prove anything.” She pours tea and explains without explaining: one page from one book, on the wedding eve, from a room with a skylight. “I need someone who knows a plate from a page. I don’t ask clients why. Why is expensive.”",
+    "She counts out your advance in [[crowns|new crowns, bride and groom in profile]], bright as minnows. “Not to be spent before the wedding,” she says, “but clients like to pay early.” Then she holds out a hand in a grey glove. It is a very steady hand, and she is in no hurry at all to have it shaken."
+   ],
+   "choices": [
+    {
+     "text": "If you shake her hand,",
+     "short": "Shake on it",
+     "to": 12
+    },
+    {
+     "text": "If you decline politely and keep well out of it,",
+     "short": "Decline politely",
+     "to": 13
+    },
+    {
+     "text": "If you take the coins straight to the Chancellor,",
+     "short": "Report it",
+     "to": 35
+    }
+   ],
+   "nr": 25
+  },
+  "11": {
+   "chapter": "Four Days · Tea at the Chancery",
+   "scene": "chancery",
+   "tag": "Tea, the Chancellor, four o’clock. Gossip.",
+   "text": [
+    "The next afternoon, tea with the Chancellor is an event. She pours, admires your cuffs, and listens to everything you tell her as if you were reading her a very good novel. On a side table sits [[feathers|a hatbox full of glossy black crow feathers]]. “For the Corvel ladies’ hats,” she says. “A little courtesy. Corvel does so love its crow.”",
+    "She shows you the seating plan, the menus, the order of the fireworks. She knows which duke snores and which duchess cheats at cards. Then she hands you a silver mask for the ball. “Stand near the princess,” she says. “She never says anything. You might hear it.”"
+   ],
+   "choices": [
+    {
+     "text": "If you wear her mask to the ball,",
+     "short": "Wear her mask",
+     "to": 13
+    },
+    {
+     "text": "If you borrow her carriage to see the Sorrel,",
+     "short": "Borrow the carriage",
+     "to": 6
+    }
+   ],
+   "nr": 48
+  },
+  "12": {
+   "chapter": "Four Days · Up on the Leads",
+   "scene": "rooftops",
+   "tag": "Clockmaker’s roof. Soft shoes. No questions.",
+   "text": [
+    "You shake on it. At dusk the next day the Magpie’s crew meet on the roof of a clockmaker’s shop: a lamplighter, two sisters who finish each other’s lies, and the pen-case boy, who returns your handkerchief with a bow. Below, Aurenne’s wedding lamps come on street by street. Across the gap stands the palace, and on its leads, a skylight.",
+    "“Wedding eve, half past eleven,” says the Magpie. “In through the skylight, one page cut free, handed to the client’s man on the roof at midnight. You tell us it’s the right page and in one piece. Before that, go to the ball as yourself and count the guards on the vault stair.” She smiles. “Everyone needs a hobby.”"
+   ],
+   "choices": [
+    {
+     "text": "If you go to the ball and count the guards,",
+     "short": "Count the guards",
+     "to": 18
+    },
+    {
+     "text": "If you stay up here and learn the roofs properly,",
+     "short": "Learn the roofs",
+     "to": 46
+    }
+   ],
+   "nr": 8
+  },
+  "13": {
+   "chapter": "Three Days · The Masked Ball",
+   "scene": "ballroom",
+   "tag": "The Masked Ball. Nine. Masks provided.",
+   "text": [
+    "Three nights before the wedding, the palace holds its masked ball. The ballroom has been gilded so thoroughly that the footmen look underdressed. Five hundred masks, one orchestra, and every conversation is about the Sorrel, which nobody present has ever seen. The Chancellor glides about in silver. Count Halloran lifts his mask to eat and forgets to lower it. Prince Aldric is missing; a footman says he has gone “to find somewhere quiet to be terrified.”",
+    "Princess Ysmay stands by a pillar, masked as a heron, watching the dance floor the way other people watch weather. By the terrace doors a gentleman in a plain black mask straightens his cuffs. They are violet."
+   ],
+   "choices": [
+    {
+     "text": "If you ask the princess to dance,",
+     "short": "Ask the princess",
+     "to": 14
+    },
+    {
+     "text": "If you find Count Halloran at the buffet,",
+     "short": "Find the Count",
+     "to": 15
+    },
+    {
+     "text": "If you follow the violet cuffs out onto the terrace,",
+     "short": "Follow the cuffs",
+     "to": 16
+    }
+   ],
+   "nr": 44
+  },
+  "14": {
+   "chapter": "Three Days · The Third Waltz",
+   "scene": "ballroom",
+   "tag": "Third waltz. The princess. Don’t count aloud.",
+   "text": [
+    "Ysmay dances the way a surveyor walks a field: precisely, and in silence. Then, mid-turn: “How wide is a mile on Plate 7?” “About a thumb.” “And a village?” “A smudge.” She nods, as if filing it. Her [[dancecard|dance card is all contour lines and no names]], drawn very small in pencil.",
+    "Across the floor the Chancellor has seen you both. She is coming, mask raised, smile ready, to cut in. Ysmay’s hand tightens on your shoulder, very slightly, the way a person holds a ship’s rail when the deck begins to move."
+   ],
+   "choices": [
+    {
+     "text": "If you tell her the truth about the line, quickly,",
+     "short": "Tell her the truth",
+     "to": 19
+    },
+    {
+     "text": "If you go and find her missing prince,",
+     "short": "Find the prince",
+     "to": 17
+    },
+    {
+     "text": "If you bow out gracefully and make for the buffet,",
+     "short": "Bow out",
+     "to": 15
+    }
+   ],
+   "moment": {
+    "line": "The Chancellor is crossing the floor towards you.",
+    "seconds": 10,
+    "default": 15,
+    "head": "Choose before she cuts in",
+    "sub": "Wait too long, and the court chooses for you.",
+    "defaultLabel": "THE COURT’S CHOICE",
+    "timeout": "The court chooses for you…"
+   },
+   "nr": 19
+  },
+  "15": {
+   "chapter": "Three Days · The Buffet",
+   "scene": "ballroom",
+   "tag": "Buffet. Count Halloran. Stand well back.",
+   "text": [
+    "Count Halloran is laying siege to the buffet. “Ink! Try the swan. It isn’t a real swan. It may be a real swan.” Between mouthfuls he hands you the gossip: the Chancellor’s family cast the cannon on both sides of the Sorrel, “both sides, marvellous business,” and by custom [[bouquet|the bride’s bouquet goes to whoever made the match]]. “Our Chancellor’s had three. Presses them. Like moths.”",
+    "He lowers his voice to a mere bellow. “The real food’s in the kitchens. Bett’s down there.” Then he waggles his own mask, gold, with a crow’s beak. “Swap? Ha! Nobody would know which of us was talking.”"
+   ],
+   "choices": [
+    {
+     "text": "If you follow the Count down to the kitchens,",
+     "short": "Follow the Count",
+     "to": 20
+    },
+    {
+     "text": "If you go and find the missing prince,",
+     "short": "Find the prince",
+     "to": 17
+    },
+    {
+     "text": "If you swap masks with the Count, for a joke,",
+     "short": "Swap masks",
+     "to": 45
+    }
+   ],
+   "nr": 34
+  },
+  "16": {
+   "chapter": "Three Days · The Terrace",
+   "scene": "rooftops",
+   "tag": "Terrace. Violet cuffs. Follow quietly.",
+   "text": [
+    "The violet cuffs climb a service stair to the roof terrace, where the wedding lamps of Aurenne lie spread below like spilled jewellery. By a chimney waits a woman in grey silk: the Magpie. You flatten yourself behind a stone urn that smells of geraniums.",
+    "“Wedding eve,” says the cuffs. “Midnight. The vault skylight. I’ll collect on the roof.” “And the fee?” “New coin, on delivery.” The Magpie tilts her head. “I don’t ask why.” “Good.” He goes. She stays, looks straight at your urn and raises her glass. “Lovely evening,” she says to it."
+   ],
+   "choices": [
+    {
+     "text": "If you step out and offer her your services,",
+     "short": "Offer your services",
+     "to": 22
+    },
+    {
+     "text": "If you sit up and guard the atlas yourself on the eve,",
+     "short": "Guard it yourself",
+     "to": 36
+    },
+    {
+     "text": "If you tell the Chancellor at once,",
+     "short": "Tell the Chancellor",
+     "to": 35
+    }
+   ],
+   "nr": 27
+  },
+  "17": {
+   "chapter": "Three Days · The Cloakroom",
+   "scene": "cloakroom",
+   "tag": "Cloakroom, among the furs: one prince.",
+   "text": [
+    "You find Prince Aldric hiding among the furs with [[speech|a speech pencilled on the back of a menu, mostly crossings-out]]. He is kind, short-sighted, and reads with the menu an inch from his nose. “I can name every bird in the palace garden,” he says. “I cannot say ‘welcome’ to forty people without wanting to lie down.”",
+    "“On the wedding morning I must speak while the line is inked. Everyone will look at me. Ysmay will look at me.” He peers up at you. “You draw things for people. Could you draw me a speech?” A footman opens the door, sees the prince, and politely closes it again."
+   ],
+   "choices": [
+    {
+     "text": "If you write his speech for him, here and now,",
+     "short": "Write his speech",
+     "to": 44
+    },
+    {
+     "text": "If you promise to help him at the chapel rehearsal,",
+     "short": "Promise to help",
+     "to": 23
+    }
+   ],
+   "nr": 46
+  },
+  "18": {
+   "chapter": "Three Days · On Business",
+   "scene": "ballroom",
+   "tag": "Count the guards. Smile at everyone.",
+   "text": [
+    "You count the guards on the vault stair: four, changing at eleven, one of them asleep standing up. The Magpie, unrecognisable in peacock blue, is dancing with the Chancellor. “Charming woman,” she murmurs as she sweeps past. “Dances like someone counting money.” You cannot tell which of them is leading.",
+    "At the gallery window Princess Ysmay is studying the great painted map of the two kingdoms as if it might rain. “You’re counting,” she says, without turning round. “What are you counting?” Nobody has told you what a cartographer may say to a princess. You suspect it is very little."
+   ],
+   "choices": [
+    {
+     "text": "If you go back to the roofs for the rehearsal,",
+     "short": "Back to the roofs",
+     "to": 22
+    },
+    {
+     "text": "If you tell her about the line instead,",
+     "short": "Tell her about the line",
+     "to": 19
+    }
+   ],
+   "nr": 13
+  },
+  "19": {
+   "chapter": "Two Days · The Maze",
+   "scene": "maze",
+   "tag": "Maze, ten o’clock. The princess. Don’t get lost.",
+   "text": [
+    "Last night you told a princess more about the treaty line than a cartographer should tell anyone. This morning a note invites you to the palace maze. Ysmay walks it without looking, left, left, right, as if she drew it. “Bett taught me hedges,” she says. “In the Drift they plant willow along every bank. You can read a meadow by its willows.”",
+    "At the centre there is a stone bench and a view of the palace roofs. She sits. “Someone walks on the roof above the Map Room at night. Twice now. I don’t sleep much.” Then, to the hedge and not to you: “Which line will you ink?”"
+   ],
+   "choices": [
+    {
+     "text": "If you promise her the line the King commands; it is your duty,",
+     "short": "Promise the King’s line",
+     "to": 34
+    },
+    {
+     "text": "If you go up on the roofs tonight,",
+     "short": "Go up on the roofs",
+     "to": 22
+    },
+    {
+     "text": "If you go down to the kitchens to meet Bett,",
+     "short": "Go and meet Bett",
+     "to": 20
+    }
+   ],
+   "nr": 28
+  },
+  "20": {
+   "chapter": "Two Days · Bett",
+   "scene": "kitchens",
+   "tag": "Kitchens. Bett. Third oven from the door.",
+   "text": [
+    "Down in the palace kitchens, Bett has the third oven from the door, and nobody argues. She is building the wedding loaf, a pot of Drift honey at her elbow, and speaks to the dough more kindly than to people. Above her bench hangs [[bett|a sampler of a village with a bridge at each end, one over blue thread, one over green]]. “Marrowby,” she says. “Blue for water, green for grass.”",
+    "She wipes her hands. “I pawned my thimble to buy the princess a present. Silver. Under the Halfpenny Bridge.” She gives you the ticket: No. 7. “The Magpie’s honest, for a thief. On the wedding eve I do the bouquet. Roses for Aurenne, heather for Corvel.” She does not say what else."
+   ],
+   "choices": [
+    {
+     "text": "If you redeem Bett’s thimble under the Halfpenny Bridge,",
+     "short": "Redeem the thimble",
+     "to": 21
+    },
+    {
+     "text": "If you promise to help with the bouquet on the wedding eve,",
+     "short": "Help with the bouquet",
+     "to": 25
+    },
+    {
+     "text": "If you go up to the chapel rehearsal,",
+     "short": "Go to the rehearsal",
+     "to": 23
+    }
+   ],
+   "nr": 12
+  },
+  "21": {
+   "chapter": "Two Days · The Ledger",
+   "scene": "pawnshop",
+   "tag": "Pawn ticket No. 7. One silver thimble.",
+   "text": [
+    "In the pawnshop under the Halfpenny Bridge, the Magpie is busy with a duchess pawning a tiara, “temporarily,” and waves you at the ledger on the counter. “Number seven. Help yourself. Everyone does.” You turn the heavy pages, pledge after pledge, and at number seven find Bett’s thimble and, folded in like a bookmark, [[ledger|a letter in Chancery violet]].",
+    "~ Unsigned, in a looping, gracious hand: “Plate Seven. The wedding eve. The usual terms; new coin on delivery.” You look up. The Magpie is watching you over the tiara. She does not hold out her hand for it. “My ledger is very full this week,” she says. “Things fall out of it.” The letter goes into your pocket."
+   ],
+   "choices": [
+    {
+     "text": "If you take Bett her thimble and come back for the bouquet,",
+     "short": "Go back to Bett",
+     "to": 25
+    },
+    {
+     "text": "If you ask the Magpie about the job in the letter,",
+     "short": "Ask about the job",
+     "to": 22
+    },
+    {
+     "text": "If you take the letter straight to the Chancellor,",
+     "short": "Take it to the Chancellor",
+     "to": 35
+    }
+   ],
+   "nr": 30
+  },
+  "22": {
+   "chapter": "Two Days · The Rehearsal",
+   "scene": "rooftops",
+   "tag": "Roofs. Rope. Don’t look down.",
+   "text": [
+    "Two nights before the wedding, the Magpie’s crew of thieves rehearse on the roofs between the clockmaker’s and the palace: a rope across the gap, a skylight chalked on the leads, the pen-case boy timing everything on a watch that isn’t his. “Colleague,” says the Magpie when you climb up to them, as if you were expected. “Or witness. I prefer colleagues. They talk less.”",
+    "The plan is plain. Over the rope at half past eleven on the wedding eve, down through the vault skylight, one page cut free, handed up to the client’s man at midnight. New coin on delivery. “I never ask why,” she says. “But I always count the exits.” She hands you the end of the rope."
+   ],
+   "choices": [
+    {
+     "text": "If you keep the appointment on the wedding eve,",
+     "short": "Keep the appointment",
+     "to": 26
+    },
+    {
+     "text": "If you back out quietly and spend the eve with Bett’s bouquet,",
+     "short": "Back out quietly",
+     "to": 25
+    },
+    {
+     "text": "If you ask her to teach you the roofs properly,",
+     "short": "Learn the roofs",
+     "to": 46
+    }
+   ],
+   "nr": 33
+  },
+  "23": {
+   "chapter": "Two Days · The Chapel",
+   "scene": "chapel",
+   "tag": "Chapel rehearsal, eleven. Prince to stand still.",
+   "text": [
+    "The wedding chapel is white and gold and smells of polish and lilies. Oswin rehearses wheeling the atlas to its lectern on the dais. Prince Aldric rehearses standing still and keeps not managing it. The steward reads out the order of service: “Vows. The inking. The signatures. The matchmaker’s flowers. Cake.”",
+    "The Chancellor watches from the front row, approving of everything. “The atlas sleeps in the vault until the morning,” she tells you kindly. “Quite safe. Oswin has eleven keys and a great deal of faith.” At the lectern Aldric whispers his first line to the empty chapel and turns pink to the ears."
+   ],
+   "choices": [
+    {
+     "text": "If you offer to sit up with the atlas on the eve, to be sure,",
+     "short": "Sit up with the atlas",
+     "to": 36
+    },
+    {
+     "text": "If you spend the eve helping Bett with the bouquet,",
+     "short": "Help with the bouquet",
+     "to": 25
+    }
+   ],
+   "nr": 6
+  },
+  "24": {
+   "chapter": "The Wedding Eve · The Vault",
+   "scene": "vault",
+   "tag": "Vault. Midnight. Soft shoes. Sharp knife.",
+   "text": [
+    "You drop through the skylight on the rope and land beside the atlas like a guilty conscience. The Magpie lifts the velvet. You find Plate 7, and she runs a knife along its threads while you hold the great page flat. It comes free with a sigh: forty years of river, in your hands.",
+    "In your portfolio lies the fair copy of Plate 7 that the King asked you to make for Corvel’s archive, finished this afternoon, the ink barely dry. Overhead, a low whistle: the client’s man, on the leads. The Magpie holds out her hand for the plate. It is a very steady hand. “Well?” she says."
+   ],
+   "choices": [
+    {
+     "text": "If you hand her your fair copy instead,",
+     "short": "Hand her the copy",
+     "to": 29
+    },
+    {
+     "text": "If you hand her the plate, as agreed,",
+     "short": "Hand her the plate",
+     "to": 39
+    },
+    {
+     "text": "If you shout for the guard,",
+     "short": "Shout for the guard",
+     "to": 33
+    }
+   ],
+   "moment": {
+    "line": "A low whistle at the skylight.",
+    "seconds": 10,
+    "default": 39,
+    "head": "Choose before he whistles twice",
+    "sub": "Wait too long, and the court chooses for you.",
+    "defaultLabel": "THE COURT’S CHOICE",
+    "timeout": "The court chooses for you…"
+   },
+   "nr": 36
+  },
+  "25": {
+   "chapter": "The Wedding Eve · The Bouquet",
+   "scene": "kitchens",
+   "tag": "Bouquet: roses, heather, and one thing more.",
+   "text": [
+    "On the wedding eve the kitchens are a battlefield of meringue. In the middle of it Bett, the princess’s old nurse, ties the bride’s bouquet: white roses for Aurenne, purple heather for Corvel and, tucked deep, one grey sprig of Drift willow, “for luck, and for nobody to notice.” After the vows, by custom, the bride will give the whole bouquet to whoever made the match.",
+    "“Our Chancellor,” says Bett, very nearly sniffing. Upstairs a door bangs; a guard hurries past the kitchen with a lamp, then hurries back without it. Above you, Aurenne goes to bed in its best clothes. Bett hands you a meringue. “Eat that and get some sleep. Big day for your ink.”"
+   ],
+   "choices": [
+    {
+     "text": "If you go to bed with heather in your hair,",
+     "short": "Go to bed",
+     "to": 27
+    },
+    {
+     "text": "If you go and sit up with the atlas in the vault instead,",
+     "short": "Sit up with the atlas",
+     "to": 36
+    }
+   ],
+   "nr": 23
+  },
+  "26": {
+   "chapter": "The Wedding Eve · The Leads",
+   "scene": "rooftops",
+   "tag": "Half past eleven. The rope. Don’t look.",
+   "text": [
+    "Aurenne is lit end to end for the wedding, every bridge strung with lamps. You cross the gap hand over hand on the Magpie’s rope, sixty feet of nothing under your boots, the crew whispering “lovely, lovely” in the dark as if you were a nervous horse. The leads are cold. The vault skylight glows faintly from the guard’s lamp below.",
+    "The Magpie kneels, lifts out the clean pane like a slice of cake and ties off the rope. “Last chance to be a witness,” she says pleasantly. “After this, colleague.” Far below, the guard on the vault stair yawns loudly enough to be heard through stone."
+   ],
+   "choices": [
+    {
+     "text": "If you go down the rope into the vault,",
+     "short": "Go down the rope",
+     "to": 24
+    },
+    {
+     "text": "If you climb back the way you came and go to bed,",
+     "short": "Go back to bed",
+     "to": 27
+    }
+   ],
+   "nr": 3
+  },
+  "27": {
+   "chapter": "The Wedding Morning · The Empty Lectern",
+   "scene": "chapel",
+   "tag": "Chapel, nine sharp. The pen is yours.",
+   "text": [
+    "On the wedding morning the chapel is all gilt, lilies and people pretending not to look at each other. Oswin opens the atlas on its lectern, turns to Plate 7, and stops.",
+    "~ Where the plate was there is a row of cut threads. On the lectern lies a single glossy crow feather. At your elbow the bride’s bouquet waits on its cushion for the vows.",
+    "The room breathes in. Count Halloran goes purple. The King turns to stone. Princess Ysmay, in white, stands as still as a held breath. The Chancellor rises, pale and lovely, the crow feather in her gloved hand, to speak for everyone."
+   ],
+   "choices": [
+    {
+     "text": "If you tell the King everything you know, before she can,",
+     "short": "Tell the King",
+     "to": 38
+    },
+    {
+     "text": "If you offer to redraw Plate 7 from memory,",
+     "short": "Draw it from memory",
+     "to": 48
+    },
+    {
+     "text": "If you keep still; it is not your quarrel,",
+     "short": "Keep still",
+     "to": 40
+    },
+    {
+     "text": "If you tuck the ledger letter into the bride’s bouquet,",
+     "short": "Tuck in the letter",
+     "to": 31,
+     "hidden": true,
+     "needs": {
+      "seen": [
+       21
+      ]
+     }
+    }
+   ],
+   "moment": {
+    "line": "The Chancellor draws breath to speak.",
+    "seconds": 10,
+    "default": 40,
+    "head": "Choose before she speaks",
+    "sub": "Wait too long, and the court chooses for you.",
+    "defaultLabel": "THE COURT’S CHOICE",
+    "timeout": "The court chooses for you…"
+   },
+   "nr": 42
+  },
+  "28": {
+   "chapter": "The Wedding Morning · The Lectern",
+   "scene": "chapel",
+   "tag": "Chapel, nine. Plate 7, under your coat.",
+   "text": [
+    "You button your coat. In the chapel, Oswin turns the atlas to Plate 7 and finds cut threads. The room breathes in. The Chancellor rises with a crow feather in her gloved hand: “Majesty, I fear Corvel…” You open your portfolio and lay Plate 7 on the lectern, river, willows and all. “Forgive me,” you say. “I took it home to work on.”",
+    "The Chancellor looks at the plate, and you watch her understand that the only way to call it a forgery is to open her own strongbox.",
+    "~ She sits. “Well,” says the King. “Ink it.” “The river line!” cries Count Halloran, for Corvel. “The Sorrel runs two miles east of that!” “My line,” says the King. Princess Ysmay says nothing, very clearly."
+   ],
+   "choices": [
+    {
+     "text": "If you ink both rivers, and label the land between them “held in common”,",
+     "short": "Ink both rivers",
+     "to": 30
+    },
+    {
+     "text": "If you ink the King’s line, as commanded,",
+     "short": "Ink the King’s line",
+     "to": 32
+    },
+    {
+     "text": "If you ink the Count’s river line; water doesn’t lie,",
+     "short": "Ink the river line",
+     "to": 37
+    }
+   ],
+   "nr": 7
+  },
+  "29": {
+   "chapter": "The Wedding Morning · The Balcony",
+   "scene": "balcony",
+   "tag": "Dawn. Balcony. Something flat under your coat.",
+   "text": [
+    "In the vault the Magpie had looked at your copy, then at you, and said, “Same price.” Then she handed it up through the skylight to the client’s man in violet cuffs, took her new coin, and was gone over the roofs before you breathed out. Now it is dawn, and Plate 7 lies flat under your coat like a second, nervous waistcoat.",
+    "On the royal balcony Prince Aldric practises his speech on the pigeons, who leave. The crowd below is already gathering. The Chancellor joins you at the balustrade, fresh as a rose, and glances at your coat. “You look as if you’ve carried something all night,” she says kindly. “Give it to me. I’ll see it safely home.”"
+   ],
+   "choices": [
+    {
+     "text": "If you take it down to the chapel yourself,",
+     "short": "Keep it yourself",
+     "to": 28
+    },
+    {
+     "text": "If you let the Chancellor see it safely home,",
+     "short": "Give it to her",
+     "to": 41
+    }
+   ],
+   "nr": 39
+  },
+  "30": {
+   "chapter": "An ending",
+   "scene": "balcony",
+   "tag": "Both rivers. One village. Many signatures.",
+   "text": [
+    "You ink the Sorrel where it was drawn and where it runs, and between them, in your smallest capitals, HELD IN COMMON. Before Halloran or the King can object, Ysmay takes your pen and signs, quick and neat. Aldric, who has lost his speech, reads aloud what is under his nose: “Held in common.” The chapel cheers as if it were poetry.",
+    "On the balcony the crowd throws gold leaf. The Chancellor retires early with a headache and a plate she cannot mention. Marrowby, between the rivers, gets two letters, one from each crown, saying the same thing in two spellings.",
+    "~ Under the Halfpenny Bridge the Magpie puts one new crown in her shop window, not for sale."
+   ],
+   "ending": {
+    "no": "XVIII",
+    "title": "Held in Common",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Two rivers, one village, and no line through it.",
+    "hint": "A border can be a place, not only a line."
+   },
+   "nr": 22
+  },
+  "31": {
+   "chapter": "An ending",
+   "scene": "chapel",
+   "tag": "Matchmaker’s flowers. One leaf too many.",
+   "text": [
+    "You slip the letter among the flowers. Before she can speak, the King insists on the vows. Then Ysmay, by custom, gives her bouquet to the woman who made the match. The Chancellor takes it graciously, sees violet among the roses and reads her own hand.",
+    "~ Nobody says a word; five hundred people watch her not say it. She smiles beautifully, feels faint, and leaves on her own feet.",
+    "By noon Plate 7 is back on its lectern, “misfiled at the Chancery,” and the Chancellor has retired to the country for her health. The King asks you, rather humbly, for a line that starts nothing. You ink the Sorrel as drawn and as it runs, and between the two one word: Marrowby. Ysmay signs first."
+   ],
+   "ending": {
+    "no": "XIX",
+    "title": "The Matchmaker’s Flowers",
+    "kind": "good",
+    "star": true,
+    "epilogue": "Some letters are best returned by hand. Hers.",
+    "hint": "Some things are best returned to sender."
+   },
+   "nr": 26
+  },
+  "32": {
+   "chapter": "An ending",
+   "scene": "balcony",
+   "tag": "The King’s line. Signed. Cheered. Exact.",
+   "text": [
+    "You ink the King’s line: the Sorrel exactly where it was drawn forty years ago. Ysmay signs without looking at it. Aldric fumbles his speech and the crowd adores him for it. The peace will hold for a hundred years. It is the best line you have ever drawn.",
+    "In autumn you ride out to see it on the ground. In Marrowby, the village between the old river and the new, it runs down the meadow between the two rows of cottages, neat as a parting. The bridge over the grass has a gate in the middle now.",
+    "~ Two neighbours who used to share the salt wave to each other across it, politely."
+   ],
+   "ending": {
+    "no": "I",
+    "title": "Neatly in Two",
+    "kind": "silver",
+    "epilogue": "A perfect peace, with a village folded down the middle.",
+    "hint": "A true line can still cut something."
+   },
+   "nr": 40
+  },
+  "33": {
+   "chapter": "An ending",
+   "scene": "pawnshop",
+   "tag": "Plate saved. Shop to let.",
+   "text": [
+    "You shout, and the guard comes down the stair with lamps and astonishment. The Magpie is up the rope before the door opens. At the skylight she stops and looks down at you once: not angry, just closing a ledger. Plate 7 stays safe in your hands. Next day the wedding goes ahead, beautifully, and the Chancellor kisses you on both cheeks.",
+    "Within a week the Magpie’s pawnshop under the Halfpenny Bridge is to let, its clocks gone. Every year on the wedding day an envelope comes with no letter in it, only a pawn ticket made out in your name, for something you can never redeem.",
+    "~ You keep them all. You are not sure what you pawned."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "Unredeemed",
+    "kind": "silver",
+    "epilogue": "The plate was saved. The friendship was not.",
+    "hint": "Saving the thing is not always saving the day."
+   },
+   "nr": 14
+  },
+  "34": {
+   "chapter": "An ending",
+   "scene": "cityweddings",
+   "tag": "Wedding off. Weather fine. Bride gone.",
+   "text": [
+    "Ysmay thanks you for your honesty, politely, and walks back into the maze alone. On the wedding morning the chapel is full, the atlas open at Plate 7, your pen filled. The bride does not come. She left for Corvel before dawn with Bett and one trunk, and a note for Prince Aldric that he reads an inch from his nose and folds very small.",
+    "No line, so no treaty; no treaty, so no wedding; and somehow no war either, only two kingdoms embarrassed in the same direction. Marrowby, between the rivers, stays as it was: whole, and taxed twice. On the empty balcony Aldric reads his speech to the pigeons.",
+    "~ This time he gets all the way through."
+   ],
+   "ending": {
+    "no": "III",
+    "title": "The Bride Goes Home",
+    "kind": "silver",
+    "epilogue": "Marrowby whole, and the balcony empty.",
+    "hint": "Duty is not the only thing you can promise a princess."
+   },
+   "nr": 24
+  },
+  "35": {
+   "chapter": "An ending",
+   "scene": "chancery",
+   "tag": "Guest of the Chancellor. Door locks outside.",
+   "text": [
+    "The Chancellor hears everything you bring her with shining eyes. “How brave you’ve been,” she says. “You must be kept perfectly safe.” Her clerks, violet to the wrist, show you to a charming room with a soft bed, every newspaper in Aurenne, and a door that locks from the outside.",
+    "The newspapers tell you the rest. Plate 7 vanished on the wedding eve; a Corvel crow feather was found on the lectern; the wedding is off, and the Chancellor’s cannon foundries are taking on three hundred men. On the sixth morning your door is unlocked. On your pillow lies your fee, in new crowns, bride and groom in profile."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "Kept Safe",
+    "kind": "bad",
+    "epilogue": "Perfectly safe, and perfectly out of the way.",
+    "hint": "Not every safe pair of hands is safe."
+   },
+   "nr": 16
+  },
+  "36": {
+   "chapter": "An ending",
+   "scene": "vault",
+   "tag": "Guarding the atlas. Coffee. More coffee.",
+   "text": [
+    "You sit up with the atlas in the vault: a lantern, a pot of coffee, a chair too hard to sleep in. Oswin locks you in with real admiration. At two you are alert. At three you are thinking about breakfast. At four you are explaining to the atlas, cheek on its velvet, that you are only resting your eyes.",
+    "You wake to Oswin’s gasp. The chain is undone, Plate 7 is cut neatly from its threads, and your own penknife lies beside the stub, next to a glossy crow feather. Everyone looks at you. Then everyone looks at Corvel. The wedding is off by lunch, and you are on a ship by tea."
+   ],
+   "ending": {
+    "no": "V",
+    "title": "Asleep at the Lectern",
+    "kind": "bad",
+    "epilogue": "You guarded it beautifully, for nearly four hours.",
+    "hint": "Some jobs are too big for one pair of eyes."
+   },
+   "nr": 11
+  },
+  "37": {
+   "chapter": "An ending",
+   "scene": "chapel",
+   "tag": "The Count’s line. The King’s face.",
+   "text": [
+    "“Water doesn’t lie,” you say, and ink the Sorrel where it runs today. Halloran kisses you on both cheeks and smells of breakfast. The King’s face does something you will remember for a long time: in front of five hundred guests, two miles of Aurenne have just become Corvel’s.",
+    "The wedding is postponed “until feelings cool.” Feelings do not cool. By spring both kingdoms have new cannon, all from the Chancellor’s foundries, and Marrowby, the village between the rivers, is cut in two along its mill race, the miller on one side and his flour on the other. In Corvel they name a street after you. In Aurenne, a dog."
+   ],
+   "ending": {
+    "no": "VI",
+    "title": "The River Line",
+    "kind": "bad",
+    "epilogue": "Water doesn’t lie. It just moves on and leaves you standing there.",
+    "hint": "Pleasing the loudest person in the room is not a treaty."
+   },
+   "nr": 31
+  },
+  "38": {
+   "chapter": "An ending",
+   "scene": "chapel",
+   "tag": "Told the King everything. Proof: pending.",
+   "text": [
+    "You tell the King everything you know and most of what you suspect: violet ink, new crowns, crow feathers. The chapel goes so quiet you can hear the lilies. The Chancellor waits until you have quite finished, then lays a gentle hand on your arm. “Majesty, the poor Ink hasn’t slept in five days. Every clerk in Aurenne wears violet. And who here has ever seen a new crown?”",
+    "Nobody has, of course, and whatever is in your pockets, she has the better seat. You are escorted out, kindly, to rest. The wedding is called off by noon and Corvel is blamed by tea. You hear later that the Chancellor sent you grapes."
+   ],
+   "ending": {
+    "no": "VII",
+    "title": "Honest to a Fault",
+    "kind": "bad",
+    "epilogue": "Every word true, and not one believed.",
+    "hint": "The truth needs a moment, and the right messenger."
+   },
+   "nr": 5
+  },
+  "39": {
+   "chapter": "An ending",
+   "scene": "vault",
+   "tag": "One page, delivered. Paid in full.",
+   "text": [
+    "You hand her the plate. She hands it up through the skylight to the client’s man in violet cuffs, and a velvet bag of new coin comes down. You are over the roofs and home by one, and the Magpie pours you a brandy and does not ask how you feel, which is professional of her.",
+    "In the morning a crow feather is found on the lectern. The wedding is off by noon; the Chancellor’s cannon foundries are hiring by tea. Nobody ever suspects you, and that is the worst of it. Every year, on the day the wedding would have been, you take out one new crown, bride and groom in profile, and find you still cannot spend it."
+   ],
+   "ending": {
+    "no": "VIII",
+    "title": "Accessory",
+    "kind": "bad",
+    "epilogue": "Nobody suspects you. You do.",
+    "hint": "Honour among thieves depends on who is paying the thieves."
+   },
+   "nr": 43
+  },
+  "40": {
+   "chapter": "An ending",
+   "scene": "cityweddings",
+   "tag": "Banners down by noon. Ink unused.",
+   "text": [
+    "You keep still. It is not your quarrel. The Chancellor holds up the feather and speaks for everyone, beautifully: Corvel’s crow, Corvel’s thief, Corvel’s insult. Halloran roars. The King turns his back. Ysmay lays her bouquet very carefully on the lectern and walks out without a word.",
+    "By noon the banners are coming down all over Aurenne, the stag unpicked from the crow stitch by stitch. You ride home with a pen-case full of unused ink. Somewhere behind you Marrowby, the village between the rivers, is still feeding two tax collectors, and will soon, you suspect, be feeding soldiers."
+   ],
+   "ending": {
+    "no": "IX",
+    "title": "Kept Still",
+    "kind": "bad",
+    "epilogue": "It was not your quarrel. Now it is everyone’s.",
+    "hint": "Silence is a choice, and someone else makes the speech."
+   },
+   "nr": 47
+  },
+  "41": {
+   "chapter": "An ending",
+   "scene": "balcony",
+   "tag": "Handed over. Seen home. Not seen again.",
+   "text": [
+    "The Chancellor takes the plate as tenderly as a love letter, kisses your cheek and sweeps off towards the chapel. She never arrives. At nine Oswin opens the atlas on cut threads. At five past, the Chancellor holds up a crow feather. At ten past, Count Halloran is shouting and the King is not listening.",
+    "You say you gave her the plate. She says, with real pity, that you have been under a terrible strain. The King believes her, because she is the Chancellor and you are a cartographer with no sleep and roof-lead on your sleeve.",
+    "~ You never see Plate 7 again. Nor, quite certainly, does anybody else."
+   ],
+   "ending": {
+    "no": "X",
+    "title": "Seen Safely Home",
+    "kind": "bad",
+    "epilogue": "Seen safely home. Hers.",
+    "hint": "Hand the precious thing to someone, but choose the someone."
+   },
+   "nr": 45
+  },
+  "42": {
+   "chapter": "An ending",
+   "scene": "vault",
+   "tag": "Copy finished. World, meanwhile, continued.",
+   "text": [
+    "You stay with the copy until every line is perfect. Four days, then three, then two: the river, the willows, the grain of the paper, the pencilled words in the margin. Oswin brings soup and news; you ignore both. On the wedding morning you lift your pen at last. It is the finest copy ever made.",
+    "~ Only then do you turn round. The atlas behind you is open at a stub of cut threads; somebody took the original while you were inking a willow. The wedding is off. Your copy goes into the atlas instead. A hundred years later, children in both kingdoms learn the Sorrel from your hand, and nobody remembers there was ever another."
+   ],
+   "ending": {
+    "no": "XI",
+    "title": "The Fair Copy",
+    "kind": "strange",
+    "epilogue": "The best copy ever made, of a quarrel nobody settled.",
+    "hint": "Perfect work in a locked room changes nothing outside it."
+   },
+   "nr": 9
+  },
+  "43": {
+   "chapter": "An ending",
+   "scene": "marrowby",
+   "tag": "Stayed in Marrowby. Supper twice on quarter days.",
+   "text": [
+    "You stay. Marrowby has never had a map of its own; it has only ever been a smudge on other people’s plates. You draw it house by house: the cottages, the bridge over the grass, the mill with its feet in the river, every beehive. The village pays you in honey, and in being fed twice on quarter days.",
+    "You never go back for the wedding. You hear that it happened, or did not, and that a line was drawn somewhere by somebody. On your map of Marrowby there is no line at all. Nailed up in the inn, it is the only map anyone here believes. Collectors from both kingdoms come to stare at it, and go home confused."
+   ],
+   "ending": {
+    "no": "XII",
+    "title": "Marrowby’s Own",
+    "kind": "strange",
+    "epilogue": "The only map of Marrowby with nothing missing.",
+    "hint": "Somebody still has to hold the pen in the chapel."
+   },
+   "nr": 37
+  },
+  "44": {
+   "chapter": "An ending",
+   "scene": "cloakroom",
+   "tag": "Speechwriter to a prince. Second Class.",
+   "text": [
+    "You write him a speech on the back of the menu: short sentences, small words, three jokes, one about herons. Aldric reads it to the coats and has to sit down from relief. By midnight he has read it to the whole cloakroom staff, who applaud. By dawn you are Royal Speechwriter, Second Class, and he will not let you out of his sight.",
+    "Whatever happens to Plate 7 happens somewhere else, to someone else; you are in a cloakroom, finding a rhyme for “welcome.” You write small words for a kind man for forty years. The one about herons is still quoted. You never ink anything again, and only now and then do you miss it."
+   ],
+   "ending": {
+    "no": "XIII",
+    "title": "The Prince’s Speech",
+    "kind": "strange",
+    "epilogue": "You gave a prince his words and put down your own pen.",
+    "hint": "Helping one person through a door can keep you out of the room."
+   },
+   "nr": 29
+  },
+  "45": {
+   "chapter": "An ending",
+   "scene": "ballroom",
+   "tag": "Crow mask. Wrong person. Right buffet.",
+   "text": [
+    "You swap masks. Within a minute a Corvel duchess has taken your arm, called you Rufus and steered you into a side room full of Corvel diplomats who want your view on the river line. You give it. Then they want your signature. The wine is excellent, and the room applauds whenever you write anything.",
+    "By dawn you have, as Count Halloran, agreed three trade treaties, one marriage (not yours, in the end) and the design of a commemorative teapot. The real Count, in your mask, has eaten the buffet and signed something at the Chancery. Nobody will ever untangle who did what. The teapot is very handsome."
+   ],
+   "ending": {
+    "no": "XIV",
+    "title": "Masked",
+    "kind": "strange",
+    "epilogue": "For one night you were the Count. History has given up trying to tell.",
+    "hint": "At a masked ball, keep your own face."
+   },
+   "nr": 2
+  },
+  "46": {
+   "chapter": "An ending",
+   "scene": "rooftops",
+   "tag": "Roofs nightly. Maps never again.",
+   "text": [
+    "You stay up on the roofs. A cartographer, it turns out, is wasted on paper: you know a gutter’s fall by eye, a skylight’s age by its putty, the way across Aurenne without touching a street. The Magpie takes you on properly. You learn to walk a ridge in the rain and to pick a lock with a pen nib.",
+    "Whatever becomes of Plate 7 and the wedding happens below you, in rooms you no longer enter by the door. Years later you draw the finest map of Aurenne ever made: every roof, every chimney, every way in. It hangs in the Magpie’s back room under the Halfpenny Bridge, behind a clock. It has no streets on it at all."
+   ],
+   "ending": {
+    "no": "XV",
+    "title": "The Magpie’s Apprentice",
+    "kind": "strange",
+    "epilogue": "The finest map of Aurenne, drawn from the top, for the trade.",
+    "hint": "Learning the roofs is not the same as knowing why you are on them."
+   },
+   "nr": 20
+  },
+  "47": {
+   "chapter": "An ending",
+   "scene": "sorrel",
+   "tag": "Wedding present. Riverside. Entirely unconnected.",
+   "text": [
+    "You pocket the deed. It is only manners. The little house turns out to be charming: roses, a pear tree, the Sorrel at the bottom of the garden. Word gets about by teatime. The King finds himself another cartographer, and you go and live in your present. Nobody asks you to ink anything ever again.",
+    "The next spring the Sorrel floods and comes back round the other side of your house: you are in Aurenne now. Three years later it shifts again: you are in Corvel. You pay tax to whichever collector arrives first and give the other one tea. Every morning you look out of the bedroom window to see which kingdom you have woken up in."
+   ],
+   "ending": {
+    "no": "XVI",
+    "title": "A Little Place by the River",
+    "kind": "strange",
+    "epilogue": "A house on a river is a house on the move.",
+    "hint": "A gift with a river attached is never only a house."
+   },
+   "nr": 35
+  },
+  "48": {
+   "chapter": "An ending",
+   "scene": "chapel",
+   "tag": "Plate 7, from memory, in public.",
+   "text": [
+    "“A clean sheet,” you say, and five hundred people watch you draw Plate 7 from memory on the lectern: every bend of the Sorrel, every willow, every pencilled word. It takes an hour. Nobody leaves. When you lift your pen, the room applauds, and the King has you ink his line on it then and there.",
+    "Then Count Halloran points out, with his mouth full, that your memory has put the Sorrel somewhere new entirely, half a mile from where it was drawn and further still from where it runs. Nobody cares to argue with a drawing everyone applauded. A canal is dug to make the river agree. It takes eleven years. The village of Marrowby is in the way."
+   ],
+   "ending": {
+    "no": "XVII",
+    "title": "From Memory",
+    "kind": "strange",
+    "epilogue": "The river was moved to match your memory.",
+    "hint": "A map from memory is a map of you."
+   },
+   "nr": 18
+  }
+ }
+}

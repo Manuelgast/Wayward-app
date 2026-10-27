@@ -1,0 +1,340 @@
+{
+ "tiers": [
+  {
+   "count": 4,
+   "id": "ribbon",
+   "name": {
+    "en": "Crimson Ribbon",
+    "nl": "Karmozijnrood lint"
+   },
+   "desc": {
+    "en": "A crimson silk ribbon marks your page, and the book’s edges are tooled in gilt.",
+    "nl": "Een lint van karmozijnrode zijde markeert je bladzijde, en de randen van het boek zijn verguld en bewerkt."
+   }
+  },
+  {
+   "count": 8,
+   "id": "floorplan",
+   "name": {
+    "en": "The Palace Plan",
+    "nl": "Het paleisplan"
+   },
+   "desc": {
+    "en": "Your path map becomes a palace floor plan: the pages you have not found yet are rooms with no lamp lit.",
+    "nl": "Je padenkaart wordt een plattegrond van het paleis: de bladzijden die je nog niet hebt gevonden, zijn kamers waar nog geen lamp brandt."
+   }
+  },
+  {
+   "count": 12,
+   "id": "page0",
+   "name": {
+    "en": "Page 0 · Not on the Guest List",
+    "nl": "Bladzijde 0 · Niet op de gastenlijst"
+   },
+   "desc": {
+    "en": "One page was left off every guest list. Now it is yours.",
+    "nl": "Eén bladzijde stond op geen enkele gastenlijst. Nu is hij van jou."
+   }
+  }
+ ],
+ "relics": [
+  {
+   "id": "edda",
+   "page": 2,
+   "where": "text",
+   "icon": "map",
+   "name": {
+    "en": "For Now",
+    "nl": "Voorlopig"
+   },
+   "riddle": {
+    "en": "In the river’s last loop, someone signed very small and promised nothing.",
+    "nl": "In de laatste bocht van de rivier heeft iemand heel klein gesigneerd, en niets beloofd."
+   },
+   "lore": {
+    "en": "Edda Marlow was twenty-four when she inked Plate 7, the youngest hand ever allowed near the King’s Atlas. She walked the Sorrel for a month first, in borrowed boots, and drew it in one stroke without lifting the pen. The initials in the last loop were her habit. The pencilled words in the margin were not; she never wrote in margins. Oswin’s predecessor tried to rub them out, and could not.",
+    "nl": "Edda Marlow was vierentwintig toen ze Plaat 7 in inkt zette, de jongste hand die ooit aan de Atlas van de Koning mocht komen. Eerst liep ze een maand lang langs de Sorrel, op geleende laarzen, en daarna tekende ze hem in één haal, zonder haar pen op te tillen. De initialen in de laatste bocht waren een gewoonte van haar. Het woord in potlood niet: ze schreef nooit in marges. Oswins voorganger heeft het proberen uit te gummen. Het lukte niet."
+   },
+   "rarity": "common",
+   "find": 59.0
+  },
+  {
+   "id": "violet",
+   "page": 3,
+   "where": "text",
+   "icon": "quill",
+   "name": {
+    "en": "Chancery Violet",
+    "nl": "Kanselarijviolet"
+   },
+   "riddle": {
+    "en": "One ink in Aurenne belongs to one office, and it never quite washes out.",
+    "nl": "Eén inkt in Aurenne hoort bij één ambt, en hij gaat er nooit helemaal uit."
+   },
+   "lore": {
+    "en": "Chancery violet was mixed for the first Chancellor of Aurenne from mulberries, iron and a secret nobody has written down, which is rather the point. Only the Chancery may buy it; a merchant caught selling it loses his licence and, by tradition, his left glove. It will not wash out of linen. Chancery clerks are said to be the only men in Aurenne whose shirts can be read.",
+    "nl": "Kanselarijviolet werd voor de eerste kanselier van Aurenne gemengd uit moerbeien, ijzer en een geheim dat nooit iemand heeft opgeschreven, en daar gaat het nu juist om. Alleen de Kanselarij mag het kopen; een koopman die het verkoopt, raakt zijn vergunning kwijt en volgens de traditie ook zijn linkerhandschoen. Het gaat niet uit linnen. Men zegt dat klerken van de Kanselarij de enige mannen in Aurenne zijn van wie je het overhemd kunt lezen."
+   },
+   "rarity": "common",
+   "find": 44.4
+  },
+  {
+   "id": "cuffs",
+   "page": 4,
+   "where": "text",
+   "icon": "eye",
+   "name": {
+    "en": "Purple to the Wrist",
+    "nl": "Paars tot de pols"
+   },
+   "riddle": {
+    "en": "A quiet gentleman at a pawnshop counter wears his office on his sleeves.",
+    "nl": "Een stille heer aan de toonbank van een lommerd draagt zijn ambt op zijn mouwen."
+   },
+   "lore": {
+    "en": "In Aurenne you can tell a trade by its cuffs: chalk for tailors, flour for bakers, soot for the boys who sweep the Mint’s chimneys. The laundresses of Bridge Street charge double for violet, and treble for violet that someone has tried to scrub out at home first. For their own amusement they keep a list of whose cuffs come in. Nobody asks to see it. They do not offer.",
+    "nl": "In Aurenne herken je een vak aan de manchetten: krijt voor kleermakers, meel voor bakkers, roet voor de jongens die de schoorstenen van de Munt vegen. De wasvrouwen van de Brugstraat rekenen dubbel voor violet, en driedubbel voor violet dat iemand thuis eerst zelf heeft proberen uit te schrobben. Voor hun eigen plezier houden ze bij wiens manchetten er binnenkomen. Niemand vraagt naar die lijst. Zij bieden hem ook niet aan."
+   },
+   "rarity": "common",
+   "find": 33.4
+  },
+  {
+   "id": "willows",
+   "page": 6,
+   "where": "text",
+   "icon": "compass",
+   "name": {
+    "en": "The Willow Lines",
+    "nl": "De wilgenrijen"
+   },
+   "riddle": {
+    "en": "Two rows of trees keep a promise to a river that has moved out.",
+    "nl": "Twee rijen bomen houden zich aan een belofte aan een rivier die is verhuisd."
+   },
+   "lore": {
+    "en": "Drift farmers plant willow along every bank, because willow drinks, holds the soil and makes good baskets. When the Sorrel moved, it left the trees standing in a meadow, two straight lines with nothing to drink between them. They took years to die, and a few still put out leaves each spring, out of habit. The cows walk the gap between them carefully, as if it were still wet.",
+    "nl": "In het Zwerfland zetten boeren wilgen langs elke oever, want wilgen drinken, houden de grond vast en leveren goede tenen voor manden. Toen de Sorrel verhuisde, bleven de bomen achter midden in een wei: twee rechte rijen, met niets te drinken ertussen. Het duurde jaren voor ze doodgingen, en een paar lopen elk voorjaar nog wat uit, uit gewoonte. De koeien stappen voorzichtig door de strook ertussen, alsof die nog nat is."
+   },
+   "rarity": "common",
+   "find": 48.4
+  },
+  {
+   "id": "twotaxes",
+   "page": 7,
+   "where": "text",
+   "icon": "window",
+   "name": {
+    "en": "Two Collectors, One Salt",
+    "nl": "Twee inners, één zoutvaatje"
+   },
+   "riddle": {
+    "en": "At one table in Marrowby, two kingdoms pass the salt.",
+    "nl": "Aan één tafel in Marrowby geven twee koninkrijken elkaar het zout door."
+   },
+   "lore": {
+    "en": "Aurenne’s collector and Corvel’s collector have arrived in Marrowby on the same quarter day for thirty-eight years. At first they argued. Then they ate. Now they share a pie, compare ledgers and agree, every time, that the village belongs to the other one. Each takes the tax anyway. The landlady keeps their usual seats warm and has never once charged either of them for the salt.",
+    "nl": "De inner van Aurenne en die van Corvel komen al achtendertig jaar op dezelfde dag in Marrowby aan. Eerst maakten ze ruzie. Toen gingen ze eten. Nu delen ze een pastei, vergelijken ze hun boeken en zijn ze het elke keer eens dat het dorp van de ander is. Allebei nemen ze de belasting toch mee. De waardin houdt hun vaste plaatsen warm en heeft geen van beiden ooit het zout aangerekend."
+   },
+   "rarity": "common",
+   "find": 35.6
+  },
+  {
+   "id": "keystone",
+   "page": 8,
+   "where": "text",
+   "icon": "chisel",
+   "name": {
+    "en": "The Waterline",
+    "nl": "De waterlijn"
+   },
+   "riddle": {
+    "en": "A bridge in a meadow remembers, in stone, exactly how high the water came.",
+    "nl": "Een brug in een wei weet nog, in steen, precies hoe hoog het water kwam."
+   },
+   "lore": {
+    "en": "In the spring of the Great Wet, thirty-eight years ago, the Sorrel rose to the keystone of the Marrowby bridge and then, overnight, went somewhere else. The mason’s son cut the line and the date into the stone so that nobody could say he had exaggerated. Nobody did. Children sit above it now, swinging their feet over the buttercups, a good nine feet from the nearest water.",
+    "nl": "In het voorjaar van het Hoge Water, achtendertig jaar geleden, steeg de Sorrel tot aan de sluitsteen van de brug van Marrowby en ging toen in één nacht ergens anders heen. De zoon van de metselaar hakte de lijn en het jaartal in de steen, zodat niemand kon zeggen dat hij overdreef. Niemand deed het. Nu zitten er kinderen boven, bungelend boven de boterbloemen, een goede negen voet van het dichtstbijzijnde water."
+   },
+   "rarity": "silver",
+   "find": 11.9
+  },
+  {
+   "id": "pane",
+   "page": 9,
+   "where": "text",
+   "icon": "lantern",
+   "name": {
+    "en": "One Clean Pane",
+    "nl": "Eén schoon ruitje"
+   },
+   "riddle": {
+    "en": "Twenty panes of dust over the vault, and one somebody wanted to see through.",
+    "nl": "Twintig ruitjes stof boven de kluis, en één waar iemand doorheen wilde kijken."
+   },
+   "lore": {
+    "en": "The vault skylight was last cleaned for the coronation, by a glazier who sneezed on the atlas and was never allowed back. Since then it has been left alone: dust, the palace believes, discourages curiosity and keeps the light soft on old paper. Oswin Pell agrees. He has never once looked up at that skylight, which, he says, is how you know a room is safe.",
+    "nl": "Het dakraam van de kluis is voor het laatst gelapt voor de kroning, door een glazenmaker die op de atlas nieste en nooit meer terug mocht komen. Sindsdien laat men het met rust: stof, meent het paleis, ontmoedigt nieuwsgierigheid en houdt het licht zacht op oud papier. Oswin Pell is het daarmee eens. Hij heeft nog nooit naar dat dakraam omhooggekeken, en zo, zegt hij, weet je dat een kamer veilig is."
+   },
+   "rarity": "rare",
+   "find": 19.4
+  },
+  {
+   "id": "crowns",
+   "page": 10,
+   "where": "text",
+   "icon": "star",
+   "name": {
+    "en": "New Crowns",
+    "nl": "Nieuwe kronen"
+   },
+   "riddle": {
+    "en": "Money that is not supposed to exist yet spends perfectly well in a back room.",
+    "nl": "Geld dat nog niet hoort te bestaan, laat zich in een achterkamer prima uitgeven."
+   },
+   "lore": {
+    "en": "The wedding crowns were struck in secret at the Royal Mint: the prince on one side, the princess on the other, each politely looking away. Ten thousand were made and locked in the Treasury, which answers to the Chancery, to be thrown from the balcony on the wedding morning. The Mint master counted them in, and then counted them again. He will tell you, if asked, that the second count was shorter.",
+    "nl": "De bruiloftskronen werden in het geheim geslagen in de Koninklijke Munt: de prins op de ene kant, de prinses op de andere, allebei beleefd de andere kant op kijkend. Er werden er tienduizend gemaakt en opgeborgen in de Schatkist, die onder de Kanselarij valt, om op de bruiloftsochtend van het balkon te worden gestrooid. De muntmeester telde ze in, en telde ze daarna nog eens. Hij vertelt je, als je het vraagt, dat de tweede telling lager uitviel."
+   },
+   "rarity": "silver",
+   "find": 11.3
+  },
+  {
+   "id": "feathers",
+   "page": 11,
+   "where": "text",
+   "icon": "moon",
+   "name": {
+    "en": "A Hatbox of Crows",
+    "nl": "Een hoedendoos vol kraaien"
+   },
+   "riddle": {
+    "en": "A gracious host keeps a box of Corvel’s pride, for other people’s hats.",
+    "nl": "Een gulle gastvrouw bewaart een doos vol trots van Corvel, voor de hoeden van anderen."
+   },
+   "lore": {
+    "en": "Corvel’s crow is a serious bird: black, clever and on every Corvel flag, coin and teething spoon. Corvel ladies wear one crow feather at court as Aurenne ladies wear a stag-horn pin, and would no more lose it than lose an earring. A crow feather found where it should not be is a small scandal in Corvel. In Aurenne, nobody has ever quite worked out why.",
+    "nl": "De kraai van Corvel is een ernstige vogel: zwart, slim, en te vinden op elke vlag, munt en bijtlepel van Corvel. Dames uit Corvel dragen aan het hof één kraaienveer, zoals dames uit Aurenne een speld van hertshoorn, en ze zouden hem net zo min verliezen als een oorbel. Een kraaienveer die ligt waar hij niet hoort, is in Corvel een klein schandaal. In Aurenne heeft nog nooit iemand precies begrepen waarom."
+   },
+   "rarity": "common",
+   "find": 21.5
+  },
+  {
+   "id": "dancecard",
+   "page": 14,
+   "where": "text",
+   "icon": "map",
+   "name": {
+    "en": "Contour Lines",
+    "nl": "Hoogtelijnen"
+   },
+   "riddle": {
+    "en": "A princess fills her dance card with everything except names.",
+    "nl": "Een prinses vult haar balboekje met alles behalve namen."
+   },
+   "lore": {
+    "en": "Corvel princesses are taught to dance, to curtsey and to say nothing in four languages. Ysmay learned all of it, and also, from her nurse, how to read a field by its hedges. Her governesses despaired of her dance cards: never a name, always lines, rings within rings, the shape of hills she had once been driven past in a carriage and remembered exactly, down to the sheep.",
+    "nl": "Prinsessen van Corvel leren dansen, buigen en zwijgen in vier talen. Ysmay leerde het allemaal, en van haar kindermeid ook nog hoe je een akker leest aan zijn heggen. Haar gouvernantes wanhoopten over haar balboekjes: nooit een naam, altijd lijnen, ringen in ringen, de vorm van heuvels waar ze ooit één keer in een rijtuig langs was gereden en die ze precies had onthouden, tot de schapen aan toe."
+   },
+   "rarity": "rare",
+   "find": 19.0
+  },
+  {
+   "id": "bouquet",
+   "page": 15,
+   "where": "text",
+   "icon": "brush",
+   "name": {
+    "en": "The Matchmaker’s Flowers",
+    "nl": "De bloemen voor de koppelaar"
+   },
+   "riddle": {
+    "en": "By old custom, a bride’s flowers are given away before the cake is cut.",
+    "nl": "Volgens oud gebruik wordt het boeket van de bruid weggegeven voordat de taart wordt aangesneden."
+   },
+   "lore": {
+    "en": "In Aurenne a bride does not throw her bouquet. She gives it, after the vows, to whoever made the match: an aunt, a neighbour, now and then a horse-dealer. It is a thank-you and a receipt. Matchmakers press the flowers and hang them up; a good one may have a whole wall. To refuse the bouquet is unheard of. To drop it is a story people tell for years.",
+    "nl": "In Aurenne gooit een bruid haar boeket niet. Ze geeft het na de geloften aan wie het huwelijk heeft gekoppeld: een tante, een buurvrouw, af en toe een paardenhandelaar. Het is een bedankje en een kwitantie tegelijk. Koppelaars persen de bloemen en hangen ze op; een goede heeft er een hele muur vol van. Het boeket weigeren is ongehoord. Het laten vallen is een verhaal dat mensen jarenlang blijven vertellen."
+   },
+   "rarity": "common",
+   "find": 24.9
+  },
+  {
+   "id": "speech",
+   "page": 17,
+   "where": "text",
+   "icon": "quill",
+   "name": {
+    "en": "A Speech on a Menu",
+    "nl": "Een toespraak op een menukaart"
+   },
+   "riddle": {
+    "en": "A prince has written something important where the soup should be.",
+    "nl": "Een prins heeft iets belangrijks geschreven waar de soep hoort te staan."
+   },
+   "lore": {
+    "en": "Prince Aldric has written forty-one speeches for his wedding and lost forty of them. The survivor is on the back of the ball menu, between the swan and the ices: “Welcome. I am very glad. Ysmay is”, and then a thicket of crossings-out. He is so short-sighted that he reads with his nose nearly on the page, so whatever he says in public, he will read off whatever lies directly under it.",
+    "nl": "Prins Aldric heeft voor zijn bruiloft eenenveertig toespraken geschreven en er veertig van verloren. De overlevende staat op de achterkant van de menukaart van het bal, tussen de zwaan en het ijs: “Welkom. Ik ben heel blij. Ysmay is”, en dan een dichte struik doorhalingen. Hij is zo bijziend dat hij leest met zijn neus bijna op het papier, dus wat hij in het openbaar ook zegt, hij leest het af van wat er recht onder zijn neus ligt."
+   },
+   "rarity": "rare",
+   "find": 14.7
+  },
+  {
+   "id": "bett",
+   "page": 20,
+   "where": "text",
+   "icon": "window",
+   "name": {
+    "en": "Bett’s Sampler",
+    "nl": "Betts merklap"
+   },
+   "riddle": {
+    "en": "A nurse has stitched her village with a bridge at each end.",
+    "nl": "Een kindermeid heeft haar dorp geborduurd, met aan elk eind een brug."
+   },
+   "lore": {
+    "en": "Bett Sallow went into service in Corvel at fourteen and took one thing from Marrowby: a sampler she stitched in her last winter there. Two rows of cottages, a bridge over green thread, a bridge over blue. She has hung it above every bench she has worked at since. Princess Ysmay learned her letters underneath it, and, before her letters, the shape of a place she had never been.",
+    "nl": "Bett Sallow ging op haar veertiende in Corvel in dienst en nam maar één ding mee uit Marrowby: een merklap die ze in haar laatste winter daar had geborduurd. Twee rijen huisjes, een brug over groen garen, een brug over blauw. Sindsdien heeft hij boven elke werkbank gehangen waaraan ze heeft gestaan. Prinses Ysmay leerde eronder haar letters, en nog vóór haar letters de vorm van een plek waar ze nooit was geweest."
+   },
+   "rarity": "rare",
+   "find": 16.5
+  },
+  {
+   "id": "ledger",
+   "page": 21,
+   "where": "text",
+   "icon": "eye",
+   "name": {
+    "en": "Folded Like a Bookmark",
+    "nl": "Gevouwen als een bladwijzer"
+   },
+   "riddle": {
+    "en": "In a thief’s ledger, between a tiara and a thimble, a letter waits to be found.",
+    "nl": "In het register van een dief, tussen een tiara en een vingerhoed, ligt een brief te wachten."
+   },
+   "lore": {
+    "en": "The Magpie’s ledger goes back eleven years and has never been shown to a magistrate. Every pledge is in it, every ticket, every commission, in a hand so small it is practically a whisper. She files letters from clients between the pages of the week they arrived. “Paper forgets nothing,” she says, “and people remember wrongly. A ledger is only dangerous to the people in it.”",
+    "nl": "Het register van de Ekster gaat elf jaar terug en is nog nooit aan een magistraat getoond. Elk pand staat erin, elk briefje, elke opdracht, in een handschrift zo klein dat het bijna fluistert. Brieven van klanten bewaart ze tussen de bladzijden van de week waarin ze binnenkwamen. “Papier vergeet niets,” zegt ze, “en mensen herinneren zich alles verkeerd. Een register is alleen gevaarlijk voor wie erin staat.”"
+   },
+   "rarity": "gold",
+   "find": 5.6
+  }
+ ],
+ "secret": {
+  "title": {
+   "en": "Page 0 · Not on the Guest List",
+   "nl": "Bladzijde 0 · Niet op de gastenlijst"
+  },
+  "label": {
+   "en": "A letter in pencil",
+   "nl": "Een brief in potlood"
+  },
+  "text": {
+   "en": "The banners are down and the gold leaf has been swept into the gutters of Aurenne. Among the congratulations on your desk lies one envelope addressed in pencil, in a child’s careful capitals, each letter standing on its own ruled line. Inside: “Dear Map Person. Our town is going to be moved, all of it, houses and all, on rollers, and we need somebody to remember where everything was. I have drawn the cracks. Please come soon.” Under the signature is a small, neat drawing of a crack, with a name written beside it.",
+   "nl": "De spandoeken zijn omlaag en het bladgoud is de goten van Aurenne in geveegd. Tussen de felicitaties op je bureau ligt één envelop, met potlood geadresseerd in de zorgvuldige hoofdletters van een kind, elke letter op zijn eigen liniaallijntje. Erin staat: “Beste Kaartmens. Ons dorp gaat verhuizen, helemaal, met huizen en al, op rollen, en we hebben iemand nodig die onthoudt waar alles stond. Ik heb de scheuren getekend. Kom alsjeblieft gauw.” Onder de handtekening staat een klein, netjes getekend scheurtje, met een naam erbij."
+  },
+  "sign": {
+   "en": "The Wayward story continues.",
+   "nl": "Het Wayward-verhaal gaat verder."
+  }
+ }
+}

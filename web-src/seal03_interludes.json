@@ -1,0 +1,121 @@
+{
+ "2": {
+  "type": "trace",
+  "lines": {
+   "en": [
+    "Five hundred feet up, on a creaking rope.",
+    "Below, the whole west of Vell, very small."
+   ],
+   "nl": [
+    "Vijfhonderd voet hoog, aan een krakend touw.",
+    "Beneden ligt het hele westen van Vell, heel klein."
+   ]
+  },
+  "prompt": {
+   "en": "Draw the river",
+   "nl": "Teken de rivier"
+  },
+  "done": {
+   "en": "Roofs, roads, and a river with ideas.",
+   "nl": "Daken, wegen en een rivier met eigen ideeën."
+  },
+  "path": [
+   [
+    32,
+    62.5
+   ],
+   [
+    37,
+    62.5
+   ],
+   [
+    42,
+    63
+   ],
+   [
+    47,
+    63.5
+   ],
+   [
+    52,
+    64
+   ],
+   [
+    57,
+    64.5
+   ],
+   [
+    62,
+    65.5
+   ],
+   [
+    66,
+    66.5
+   ],
+   [
+    70,
+    67
+   ],
+   [
+    75,
+    67.5
+   ],
+   [
+    80,
+    67.5
+   ],
+   [
+    84,
+    68
+   ]
+  ],
+  "x": 32,
+  "y": 62.5
+ },
+ "6": {
+  "type": "hold",
+  "lines": {
+   "en": [
+    "The basket swings hard at a spur of the wall.",
+    "One hand for the rope. One for your board."
+   ],
+   "nl": [
+    "De mand zwaait hard naar een uitloper van de wand.",
+    "Eén hand voor het touw. Eén voor je bord."
+   ]
+  },
+  "prompt": {
+   "en": "Hold on tight",
+   "nl": "Hou je vast"
+  },
+  "done": {
+   "en": "Clear of the stone, board and all.",
+   "nl": "Los van de rots, met bord en al."
+  },
+  "x": 45,
+  "y": 38
+ },
+ "7": {
+  "type": "turn",
+  "lines": {
+   "en": [
+    "The last sandbag hangs on its hook.",
+    "The grey wall fills half the sky."
+   ],
+   "nl": [
+    "De laatste zandzak hangt aan zijn haak.",
+    "De grijze wand vult de halve lucht."
+   ]
+  },
+  "prompt": {
+   "en": "Heave it over",
+   "nl": "Gooi hem overboord"
+  },
+  "done": {
+   "en": "The balloon lifts, grudgingly. Not enough.",
+   "nl": "De ballon komt omhoog, met tegenzin. Niet genoeg."
+  },
+  "x": 28,
+  "y": 43
+ }
+}

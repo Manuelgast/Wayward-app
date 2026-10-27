@@ -1,0 +1,291 @@
+{
+ "id": "seal-03",
+ "title": "Penny Ascents",
+ "series": "The Veyra Cycle · Sealed Story",
+ "imprint": "A Wayward Original",
+ "tagline": "A penny an ascent, a valley to draw from above, and a wind that goes round in circles.",
+ "start": 1,
+ "scenes": {
+  "haymeadow": {
+   "title": "The hay meadow below the Table",
+   "focus": "50% 55%"
+  },
+  "valley": {
+   "title": "The Vell valley from above",
+   "focus": "50% 55%"
+  },
+  "tablewalls": {
+   "title": "The walls of the Table",
+   "focus": "50% 55%"
+  },
+  "ringwind": {
+   "title": "In the ring wind",
+   "focus": "50% 55%"
+  },
+  "descent": {
+   "title": "Evening: the long way down",
+   "focus": "50% 55%"
+  },
+  "s03cover": {
+   "title": "This is also the envelope art of a collectible sealed story, shown small",
+   "focus": "50% 55%"
+  },
+  "s03valley": {
+   "title": "From the small wicker basket of a tethered yellow balloon at five hundred feet o",
+   "focus": "50% 55%"
+  },
+  "s03wall": {
+   "title": "Torn loose",
+   "focus": "50% 55%"
+  },
+  "s03home": {
+   "title": "Sunset on the hay meadow",
+   "focus": "50% 55%"
+  }
+ },
+ "sections": {
+  "1": {
+   "chapter": "Ground · The Hay Meadow",
+   "scene": "s03cover",
+   "tag": "Alt. 0. Fair: loud. Ascents: a penny.",
+   "text": [
+    "The Vell summer fair fills the hay meadow under the Table: ribbons, cheese stalls, and Ottilie Spry’s yellow balloon on a long rope, going up and down like a bucket in a well. Ascents a penny. Dogs free if carried. The parish wants “Vell from Above” for its hall, and the only above in the valley hangs on her rope.",
+    "Ottilie keeps the week’s takings in a biscuit tin aboard; she trusts the sky more than a fair. At the cheese stalls Clemency Rudd unrolls her oilcloth: maps of everywhere but Vell. “Here,” she says, “everybody has a window.” On the Table the cloud sits like a lid."
+   ],
+   "choices": [
+    {
+     "text": "If you go up at once, while the air is still,",
+     "short": "Go up now",
+     "to": 2
+    },
+    {
+     "text": "If you help Ottilie count the penny tin first,",
+     "short": "Count the pennies",
+     "to": 3
+    },
+    {
+     "text": "If you draw from the church tower instead; it has never once come loose,",
+     "short": "Climb the church tower",
+     "to": 8,
+     "looks": "safe"
+    }
+   ],
+   "nr": 1
+  },
+  "2": {
+   "chapter": "500 ft · On the Rope",
+   "scene": "s03valley",
+   "tag": "Alt. 500. Rope: taut. West: drawn.",
+   "text": [
+    "The meadow drops away with a creak of rope, and Vell spreads out below like a quilt somebody has just shaken: hayfields, the river, the church, the inn among its poplars. You pin your sheet to the board and start in the west, roofs first, then roads, then the river, which has ideas of its own.",
+    "Ottilie hums and watches the Table. “The wind goes round it like a dog round its basket,” she says. “Down here it’s polite. Higher up, it has opinions.” Two farm boys work the winch below, small as buttons. Under you the stake gives a little cough in the turf, which only Ottilie hears."
+   ],
+   "choices": [
+    {
+     "text": "If you have them pay out all the rope for the east side,",
+     "short": "Pay out all the rope",
+     "to": 4
+    },
+    {
+     "text": "If you wave to be hauled down before the wind turns,",
+     "short": "Wave to come down",
+     "to": 5
+    }
+   ],
+   "nr": 10
+  },
+  "3": {
+   "chapter": "Ground · The Penny Tin",
+   "scene": "s03cover",
+   "tag": "Alt. 0. Pennies: counted. Boots: remembered.",
+   "text": [
+    "Ottilie counts pennies into stacks of twelve on the rim. Her father was the Vell cobbler. Forty summers ago, when she was sixteen, a young surveyor came in from the Waste, burnt brown as a saddle, and on the church steps both her soles came away at once.",
+    "“Father said past mending, and no leather till the autumn hides. So the Tarrows lent her a pair, their mark burnt in the heels, same as on their cheese. She said she was off to Aurenne, to walk a river for a month.” Ottilie shuts the tin. “Sent them back in the spring, resoled. With a penny in each toe.”"
+   ],
+   "choices": [
+    {
+     "text": "If you go up now, while the light is good,",
+     "short": "Go up now",
+     "to": 2
+    },
+    {
+     "text": "If you wait for the afternoon and take all the rope,",
+     "short": "Wait for the afternoon",
+     "to": 4
+    }
+   ],
+   "nr": 7
+  },
+  "4": {
+   "chapter": "600 ft · All the Rope",
+   "scene": "s03valley",
+   "tag": "Alt. 600. Wind: turning. East: white.",
+   "text": [
+    "All six hundred feet of rope are out, and the whole of Vell lies under you at last, plain as a hand of cards. You have the west to the last gatepost: church, inn, river, every field. The east is still white paper: the mill, the far bridge, the cheese farms with their round stone dairies.",
+    "Ottilie is watching the cloud on the Table, which has begun, very slowly, to turn. “Half an hour,” she says, “and then it will want us.” Below, the farm boys lean on the winch, waiting for your wave. The mill is small and square and would take you ten minutes."
+   ],
+   "choices": [
+    {
+     "text": "If you stay up to finish the last corner,",
+     "short": "Finish the corner",
+     "to": 5
+    },
+    {
+     "text": "If you wave to be hauled in with half a valley,",
+     "short": "Come down now",
+     "to": 10,
+     "looks": "safe"
+    }
+   ],
+   "nr": 3
+  },
+  "5": {
+   "chapter": "800 ft · Loose",
+   "scene": "s03wall",
+   "tag": "Alt. 800, rising. Rope: trailing.",
+   "text": [
+    "The wind turns first, and all at once. The rope snaps tight, and down in the meadow the stake comes out of the turf like a bad tooth. For a moment you hang there, astonished, with two farm boys running after your rope. Then the valley begins to slide away, and the grey wall of the Table to come nearer.",
+    "Ottilie is already at the burner. “Ring wind’s got us,” she says, calmly, as if naming a bird. “Round the Table, and us with it, unless we get above it.” One sandbag is left on its hook. The wall fills half the sky, streaked and wet and much too close."
+   ],
+   "moment": {
+    "line": "The wall comes nearer with every breath.",
+    "seconds": 10,
+    "default": 9,
+    "head": "Choose before the wall does",
+    "sub": "Wait too long, and the ring wind chooses for you.",
+    "defaultLabel": "THE RING WIND’S CHOICE",
+    "timeout": "The ring wind chooses for you…"
+   },
+   "choices": [
+    {
+     "text": "If you throw the last sandbag over,",
+     "short": "Throw the sandbag",
+     "to": 7
+    },
+    {
+     "text": "If you hold on and hope the rope snags on something,",
+     "short": "Hold on and hope",
+     "to": 9
+    }
+   ],
+   "nr": 6
+  },
+  "6": {
+   "chapter": "2,000 ft · A Rain of Pennies",
+   "scene": "s03wall",
+   "tag": "Alt. 2,000. Wind: home. Pennies: none.",
+   "text": [
+    "The tin goes over, loses its lid on the first gust, and two thousand pennies go down over Vell like hail that has been saving up. The balloon leaps. Your stomach stays behind. You hold on tight as the basket scrapes past a spur of the wall, and Ottilie shouts something the wind takes and keeps.",
+    "~ Then you are out of the ring, into the top wind, quiet as a held breath, carrying you back over the valley. All of Vell lies under you, west and east, the mill, the far bridge, the round stone dairies, every field folded small as a handkerchief. Below, children run out of every door."
+   ],
+   "choices": [
+    {
+     "text": "If you draw the east while the wind brings you round,",
+     "short": "Draw the east",
+     "to": 11
+    },
+    {
+     "text": "If you put the board away and help her with the valve,",
+     "short": "Help with the valve",
+     "to": 10,
+     "looks": "safe"
+    }
+   ],
+   "nr": 5
+  },
+  "7": {
+   "chapter": "1,200 ft · Round and Round",
+   "scene": "s03wall",
+   "tag": "Alt. 1,200. Sandbags: 0. Pennies: many.",
+   "text": [
+    "You heave the sandbag over and the balloon lifts, grudgingly, like a man getting out of a good chair. Not enough. The ring wind has you by the basket: Vell swings past below, then the wall, then Vell again, and the trailing rope rakes a spray of stones from a ledge. The silk takes its time.",
+    "“Lighter,” says Ottilie. “A sack of meal lighter, and the top wind takes us home.” You both look at the basket floor: your board with the west of Vell on it, and under her seat the biscuit tin. A week of pennies. Her whole summer. It is very heavy, and you both know it."
+   ],
+   "choices": [
+    {
+     "text": "If you heave the penny tin over the side,",
+     "short": "Throw the pennies",
+     "to": 6
+    },
+    {
+     "text": "If you throw your drawing board over; it is only paper,",
+     "short": "Throw the drawing",
+     "to": 9
+    }
+   ],
+   "nr": 9
+  },
+  "8": {
+   "chapter": "An ending",
+   "scene": "s03cover",
+   "tag": "Alt. 90. Bells: one. Roads: churchward.",
+   "text": [
+    "The church tower has a ladder, a ledge, a bell with a crack in it and a view of Vell made mostly of roofs. You draw it beautifully: every chimney, every weathercock, and every road arriving faithfully at the church door, since from up here that is where they all seem to go.",
+    "The parish hangs it in the hall and is delighted. Visitors who use it to find the mill arrive at the church, where the vicar sells them tea. All afternoon, from your ledge, you watch Ottilie’s yellow balloon go up and down over the hay meadow, a penny at a time, patient as a pendulum."
+   ],
+   "ending": {
+    "no": "I",
+    "title": "The Bell-Ringer’s Map",
+    "kind": "strange",
+    "epilogue": "On your map, every road in Vell leads to church.",
+    "hint": "Some views can only be had for a penny."
+   },
+   "nr": 4
+  },
+  "9": {
+   "chapter": "An ending",
+   "scene": "s03wall",
+   "tag": "Alt. 0, abruptly. Silk: ribbons.",
+   "text": [
+    "The ring wind takes you round the Table all the same, like a leaf in a river, fastest at the corners. Twice the basket meets the wall, and twice the wall wins. Then Ottilie gets the valve open and you come down on the scree at the Table’s foot, the last fifty yards on your back.",
+    "You limp out by starlight until a carrier’s cart finds you. Of “Vell from Above” nothing is left worth hanging. The silk stays in ribbons on the stones; Ottilie says only that it was a good balloon and she was fond of it.",
+    "~ The biscuit tin, which nobody threw, rides home on her knees."
+   ],
+   "ending": {
+    "no": "II",
+    "title": "Round the Table",
+    "kind": "bad",
+    "epilogue": "You kept the biscuit tin, and not much else.",
+    "hint": "The heaviest thing aboard is not always the dearest."
+   },
+   "nr": 2
+  },
+  "10": {
+   "chapter": "An ending",
+   "scene": "s03home",
+   "tag": "Alt. 0. West: drawn. East: white.",
+   "text": [
+    "Ottilie brings you down into the hay meadow in the late gold light, so gently the basket barely bruises the hay. You have the west of Vell to the last gatepost. The east is white paper: no mill, no far bridge, no cheese farms.",
+    "The parish hangs “Vell from Above” in the hall, half drawn, and is pleased with it for nearly a year. Then the east of the valley stops coming to the harvest supper.",
+    "~ Nobody says why. Nobody needs to. A map that leaves you off is a polite way of telling you where you stand, and Vell hears politeness very clearly."
+   ],
+   "ending": {
+    "no": "III",
+    "title": "Half a Valley",
+    "kind": "silver",
+    "epilogue": "Half a valley, beautifully drawn, and the other half noticed.",
+    "hint": "When the whole valley lies under you, use it."
+   },
+   "nr": 11
+  },
+  "11": {
+   "chapter": "An ending",
+   "scene": "s03home",
+   "tag": "Alt. 0. Valley: whole. Pennies: returned.",
+   "text": [
+    "You draw the east of Vell as the top wind carries you home across it: the mill, the far bridge, the cheese farms, every gate. Ottilie brings the balloon down into the hay meadow at sunset, where half the valley is waiting, pockets full.",
+    "The children of Vell spent the afternoon picking pennies out of the hay, the river, the vicar’s roses and each other’s hair, and bring back every one. The count comes out one short, until a week later the last one turns up in a cheese.",
+    "~ “Vell from Above” still hangs in the hall: the whole valley, and in one corner a small yellow balloon."
+   ],
+   "ending": {
+    "no": "IV",
+    "title": "Every Penny",
+    "kind": "good",
+    "epilogue": "What you threw away, the valley carried home.",
+    "hint": "Throw over what the valley would give back.",
+    "star": true
+   },
+   "nr": 8
+  }
+ }
+}

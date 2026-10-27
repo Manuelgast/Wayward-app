@@ -7,7 +7,7 @@ const { spawn } = require('child_process');
 const path = require('path');
 const PORT = 8773;
 const srv = spawn('python3', ['-m', 'http.server', String(PORT), '--bind', '127.0.0.1'], { cwd: path.join(__dirname, '..', 'app', 'www'), stdio: 'ignore' });
-const BOOKS = [['shelfBook', 'hollow-mountain'], ['shelfBook2', 'drowned-lighthouse'], ['shelfBook3', 'station-nine'], ['shelfBook4', 'ash-orchid'], ['shelfBook5', 'mirage-road'], ['shelfBook6', 'paper-sky']]; // 1.3: Book V, 1.4: Book VI
+const BOOKS = [['shelfBook', 'hollow-mountain'], ['shelfBook2', 'drowned-lighthouse'], ['shelfBook3', 'station-nine'], ['shelfBook4', 'ash-orchid'], ['shelfBook5', 'mirage-road'], ['shelfBook6', 'paper-sky'], ['shelfBook7', 'kings-atlas']]; // 1.3: Book V, 1.4: Book VI, 1.5: Book VII
 let fails = 0; const ok = (n, c, x) => { console.log((c ? 'PASS ' : 'FAIL ') + n + (x ? ' — ' + x : '')); if (!c) fails++; };
 
 // one step through the reader: skip a scene, finish the ink, turn a page, or (when wanted) pick a choice

@@ -5,7 +5,9 @@ const { spawn } = require('child_process');
 const path = require('path'), fs = require('fs');
 const WWW = process.env.WWW || path.join(__dirname, '..', 'app', 'www');
 const srv = spawn('python3', ['-m', 'http.server', '8778', '--bind', '127.0.0.1'], { cwd: WWW, stdio: 'ignore' });
-const BOOKS = [['hollow-mountain', 'book.en.json'], ['drowned-lighthouse', 'book2.en.json'], ['station-nine', 'book3.en.json'], ['ash-orchid', 'book4.en.json']];
+// 1.5: every released book and sealed letter (books.js without preview books, seals.js), so the weekly update is walked too
+const BOOKS = (() => { const w = {}; global.window = w; require(path.join(WWW, 'books.js')); require(path.join(WWW, 'seals.js'));
+  return w.WAYWARD_BOOKS.filter(b => !b.preview).map(b => [b.id, b.file + '.en.json']).concat((w.WAYWARD_SEALS || []).map(s => [s.id, s.file + '.en.json'])); })();
 let fails = 0; const ok = (n, c, x) => { console.log((c ? 'PASS ' : 'FAIL ') + n + (x ? ' — ' + x : '')); if (!c) fails++; };
 (async () => {
   await new Promise(r => setTimeout(r, 800));
