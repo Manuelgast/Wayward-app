@@ -22,3 +22,14 @@ video (hook test: B on all channels, A on Instagram). The Fish Said Lean is a st
 - ent-07: The Fish Said Lean (Book II)
 - ent-08a / ent-08b: The Bouquet (Book IV)
 - ent-09: The Fish Said Lean, part 2 (Book II)
+
+### Batch 2 (approved by Manuel 03-11-2026)
+
+Book-world stories in which the app appears early, inside the story. Three versions per video: `b` for TikTok and
+YouTube Shorts (ends with "Search it on Google Play"), `b-ig` for Instagram (ends with "Link in bio"), `a` opens in the
+app (hook test on Instagram).
+
+- ent-10a / ent-10b / ent-10b-ig: Don't Say Your Name (Book III)
+- ent-11a / ent-11b / ent-11b-ig: The Ink Bridge (Book I)
+- ent-12a / ent-12b / ent-12b-ig: The Lookout (Book II)
+- ent-13a / ent-13b / ent-13b-ig: Do Not Kneel (Book IV)
