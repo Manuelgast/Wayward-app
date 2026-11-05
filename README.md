@@ -33,3 +33,16 @@ app (hook test on Instagram).
 - ent-11a / ent-11b / ent-11b-ig: The Ink Bridge (Book I)
 - ent-12a / ent-12b / ent-12b-ig: The Lookout (Book II)
 - ent-13a / ent-13b / ent-13b-ig: Do Not Kneel (Book IV)
+
+### Batches 3, 4 and 5 (approved by Manuel 05-11-2026)
+
+Short comedy episodes (22-28 s) in the books' painted worlds, one version per video for TikTok and Instagram. The chalk
+tally on Bram's shield counts on in posting order (56-89). `ent-31` / `ent-33` / `ent-35` are one series in three parts.
+
+- ent-14: Getting Lower (Book IV) · ent-15: Are You a Map? (Book I) · ent-16: Duck. (Book III) · ent-17: The Flame Said No (Book II)
+- ent-18: Pip's Island Vlog (Book IV) · ent-19: Rest Area (Book I) · ent-20: Guaranteed (Book IV) · ent-21: Overdue (Book II)
+- ent-22: Which One Are You? (Book I) · ent-23: Neither Side (Book III) · ent-24: The Narrator Lies (Book II) · ent-25: Do Not Read Aloud (Book I)
+- ent-26: You Have 5 Seconds (Book II) · ent-27: Ten Minutes (Book III) · ent-28: The Critic (Book II) · ent-29: Signs You're a Pip (Books I-IV)
+- ent-30: Two O'Clock Tide (Book II) · ent-31: Pip's Wrong Turn 1, The Net (Book IV) · ent-32: The Sword Won't Fight (Book I)
+- ent-33: Pip's Wrong Turn 2, The Lagoon (Book IV) · ent-34: One More Chapter (Books I-IV) · ent-35: Pip's Wrong Turn 3, Deep Water (Book IV)
+- ent-36: Bram's Top 3 Disasters (Books I, IV, III) · ent-37: Wonder First: Somebody Missed Him (Book III)
