@@ -46,3 +46,7 @@ tally on Bram's shield counts on in posting order (56-89). `ent-31` / `ent-33` /
 - ent-30: Two O'Clock Tide (Book II) · ent-31: Pip's Wrong Turn 1, The Net (Book IV) · ent-32: The Sword Won't Fight (Book I)
 - ent-33: Pip's Wrong Turn 2, The Lagoon (Book IV) · ent-34: One More Chapter (Books I-IV) · ent-35: Pip's Wrong Turn 3, Deep Water (Book IV)
 - ent-36: Bram's Top 3 Disasters (Books I, IV, III) · ent-37: Wonder First: Somebody Missed Him (Book III)
+
+New opening (07-11-2026, approved by Manuel 08-11): the narrator states a strange, true rule of the book's world at
+once, over that book's painting, then Bram and Pip react (the Bouquet A pattern). `-v2` files carry it and replace the
+first version in the schedule: ent-14-getting-lower-v2, ent-15-are-you-a-map-v2, ent-16-duck-v2.
