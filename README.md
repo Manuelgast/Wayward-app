@@ -50,3 +50,13 @@ tally on Bram's shield counts on in posting order (56-89). `ent-31` / `ent-33` /
 New opening (07-11-2026, approved by Manuel 08-11): the narrator states a strange, true rule of the book's world at
 once, over that book's painting, then Bram and Pip react (the Bouquet A pattern). `-v2` files carry it and replace the
 first version in the schedule: ent-14-getting-lower-v2, ent-15-are-you-a-map-v2, ent-16-duck-v2.
+
+### Book-world remakes (made 16-11-2026; Manuel 16-11: "daarna mag je ze in Metricool zetten")
+
+Living shots of the books' own paintings (no talking mouths), one story each, ending on the app's real choice page where
+the narrator says "Your turn. What will you do next?". Tightened the same evening (fewer pauses, as Manuel asked). They
+replace the earlier versions in the same Metricool posts (18:00):
+
+- ent-17-flame-said-no-v3 (18-11) · ent-18-island-vlog-v2 (21-11) · ent-19-rest-area-v2 (24-11) · ent-20-guaranteed-v2 (27-11)
+- ent-21-overdue-v2 (30-11) · ent-23-neither-side-v2 (1-12) · ent-24-keeping-watch (3-12) · ent-25-politely-removed (4-12)
+- ent-26-the-marigold (6-12) · ent-27-harrow-buns (7-12) · ent-32-the-mountain-breathes (15-12) · ent-37-lost-property (22-12)
