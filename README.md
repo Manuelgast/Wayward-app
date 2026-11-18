@@ -60,3 +60,18 @@ replace the earlier versions in the same Metricool posts (18:00):
 - ent-17-flame-said-no-v3b (18-11) · ent-18-island-vlog-v2 (21-11) · ent-19-rest-area-v3 (24-11) · ent-20-guaranteed-v3 (27-11)
 - ent-21-overdue-v2 (30-11) · ent-23-neither-side-v3 (1-12) · ent-24-keeping-watch-v2 (3-12) · ent-25-politely-removed (4-12)
 - ent-26-the-marigold-v2 (6-12) · ent-27-harrow-buns (7-12) · ent-32-the-mountain-breathes (15-12) · ent-37-lost-property-v2 (22-12)
+
+### December in the book-world form (approved by Manuel 18-11-2026: "Ja deze zijn goed")
+
+The nine December posts that still had the comedy style, remade in the book-world form with Bram and Pip in the
+books' paintings. They replace the earlier files in the same Metricool posts:
+
+- ent-22-which-one-are-you-v2 (1-12 12:30) · ent-28-the-critic-v2 (9-12) · ent-29-signs-youre-a-pip-v2 (10-12)
+- ent-30-the-black-river (12-12, was Two O'Clock Tide) · ent-31-wrong-turn-1-v2 (13-12, The Net)
+- ent-33-wrong-turn-2-v2 (16-12, The Lagoon) · ent-34-one-more-chapter-v2 (18-12)
+- ent-35-wrong-turn-3-v2 (19-12, Every Bloom) · ent-36-top-3-disasters-v2 (21-12)
+
+Batch 6, four new episodes that end on the app's real choice page (18:00):
+
+- ent-38-ninety-four-ships (23-12, Book IV) · ent-39-the-twelfth-stripe (26-12, Book III)
+- ent-40-never-delivered (29-12, Book II) · ent-41-thirty-years-at-the-rope (31-12, Book I, the real fog timer)
