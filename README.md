@@ -82,3 +82,9 @@ the earlier files in the same Metricool posts (date, time and text unchanged):
 
 - ent-19-rest-area-v4 (24-11) · ent-20-guaranteed-v4 (27-11) · ent-32-the-mountain-breathes-v2 (15-12)
 - Signs You're a Pip (10-12) and Bram's Top 3 Disasters (21-12) follow with the app ending.
+
+January 2027 (approved 21-11-2026), with the app ending (Pip asks viewers to pick a choice in Wayward, Bram adds one dry
+line, the app card holds to the end), 18:00:
+
+- ent-42-next-tuesday (2-1, Book I) · ent-43-a-good-price (4-1, Book II)
+- ent-44-out-of-the-habit (7-1, Book III) · ent-45-proof-of-visit (8-1, Book I)
