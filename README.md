@@ -75,3 +75,10 @@ Batch 6, four new episodes that end on the app's real choice page (18:00):
 
 - ent-38-ninety-four-ships (23-12, Book IV) · ent-39-the-twelfth-stripe (26-12, Book III)
 - ent-40-never-delivered (29-12, Book II) · ent-41-thirty-years-at-the-rope (31-12, Book I, the real fog timer)
+
+New music (approved 21-11-2026): five scheduled videos had the same music as a video that is already online. Picture,
+voices, texts and sound effects are unchanged; only the music track is new (CC0, used in no other video). They replace
+the earlier files in the same Metricool posts (date, time and text unchanged):
+
+- ent-19-rest-area-v4 (24-11) · ent-20-guaranteed-v4 (27-11) · ent-32-the-mountain-breathes-v2 (15-12)
+- Signs You're a Pip (10-12) and Bram's Top 3 Disasters (21-12) follow with the app ending.
