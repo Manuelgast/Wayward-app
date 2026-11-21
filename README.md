@@ -88,3 +88,17 @@ line, the app card holds to the end), 18:00:
 
 - ent-42-next-tuesday (2-1, Book I) · ent-43-a-good-price (4-1, Book II)
 - ent-44-out-of-the-habit (7-1, Book III) · ent-45-proof-of-visit (8-1, Book I)
+
+### December with the app ending (approved 21-11-2026: "1. Ja 2. A")
+
+The thirteen December book-world videos now end like the January ones: after the choices Pip asks viewers to pick one in
+Wayward, Bram adds one dry line about the episode, and the app card holds to the end. Hooktest A: six of them go out with
+their second opening (Bram and Pip's own line first, then the narrator). Signs You're a Pip and Bram's Top 3 Disasters
+also carry their new music. They replace the earlier files in the same Metricool posts (date, time and text unchanged):
+
+- second opening + ending: ent-22-which-one-are-you-v3b (1-12) · ent-29-signs-youre-a-pip-v3b (10-12)
+  · ent-31-wrong-turn-1-v3b (13-12, The Net) · ent-35-wrong-turn-3-v3b (19-12, Every Bloom)
+  · ent-38-ninety-four-ships-v3b (23-12) · ent-40-never-delivered-v3b (29-12)
+- normal opening + ending: ent-28-the-critic-v3 (9-12) · ent-30-the-black-river-v3 (12-12) · ent-33-wrong-turn-2-v3 (16-12)
+  · ent-34-one-more-chapter-v3 (18-12) · ent-36-top-3-disasters-v3 (21-12) · ent-39-the-twelfth-stripe-v3 (26-12)
+  · ent-41-thirty-years-at-the-rope-v3 (31-12)
