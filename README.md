@@ -89,6 +89,11 @@ line, the app card holds to the end), 18:00:
 - ent-42-next-tuesday (2-1, Book I) · ent-43-a-good-price (4-1, Book II)
 - ent-44-out-of-the-habit (7-1, Book III) · ent-45-proof-of-visit (8-1, Book I)
 
+Batch 8 (approved 24-11-2026: "batch 8 alles ja"), six book-world episodes from Books V-VII with the app ending, 18:00:
+
+- ent-46-tomorrows-news (10-1, Book VI) · ent-47-the-missing-river (12-1, Book VII) · ent-48-morning-city (14-1, Book V)
+- ent-49-no-human-foot (16-1, Book VI) · ent-50-violet-cuffs (18-1, Book VII) · ent-51-machine-parts (20-1, Book V)
+
 ### December with the app ending (approved 21-11-2026: "1. Ja 2. A")
 
 The thirteen December book-world videos now end like the January ones: after the choices Pip asks viewers to pick one in
